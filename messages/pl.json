@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Ułatw sobie dzisiejszy dzień",
+      "description": "Prosty reset dla rodziców, którzy mają za dużo na głowie. Uporządkuj, co jest ważne dziś, co może poczekać, a co możesz odpuścić."
+    },
+    "reset": {
+      "title": "Zacznij mój reset – Parent Reset",
+      "description": "Dwuminutowe podsumowanie, które zamienia pełną głowę w krótką listę na dziś."
+    },
+    "result": {
+      "title": "Twój reset – Parent Reset",
+      "description": "Twoja krótka lista na dziś, co może poczekać do tego tygodnia i co możesz odpuścić."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Przejdź do treści",
+    "back": "Wstecz",
+    "continue": "Dalej",
+    "close": "Zamknij",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
+    "language": "Język",
+    "optional": "Opcjonalne",
+    "loading": "Chwileczkę…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Start",
+    "startReset": "Zacznij mój reset",
+    "howItWorks": "Jak to działa",
+    "menuTitle": "Menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Dla rodziców, którzy mają za dużo na głowie",
+      "title": "Życie to dużo. Ułatwmy sobie dzisiejszy dzień.",
+      "subtitle": "Prosty reset dla rodziców, którzy mają za dużo na głowie.",
+      "primaryCta": "Zacznij mój reset",
+      "secondaryCta": "Zobacz, jak to działa",
+      "trust": "Bez konta. Około dwóch minut. Nic nie jest udostępniane."
+    },
+    "steps": {
+      "title": "Jak to działa",
+      "subtitle": "Trzy krótkie kroki. Bez instalowania aplikacji, bez budowania nawyków.",
+      "one": {
+        "title": "Powiedz nam, co cię przytłacza",
+        "body": "Jak pełny wydaje się dzisiejszy dzień, co zajmuje najwięcej miejsca i ile czasu naprawdę masz."
+      },
+      "two": {
+        "title": "Uporządkuj, co ważne",
+        "body": "Dzielimy to na to, co musi się wydarzyć dziś, co może poczekać i co może poczekać dłużej."
+      },
+      "three": {
+        "title": "Zmniejsz dzisiejszy dzień",
+        "body": "Wychodzisz z krótką listą, którą naprawdę da się skończyć. O to właśnie chodzi."
+      }
+    },
+    "buckets": {
+      "title": "Co dostajesz",
+      "subtitle": "Jedna strona. Trzy listy. Żadnych pulpitów.",
+      "today": {
+        "label": "Dziś",
+        "body": "Maksymalnie trzy rzeczy, które naprawdę liczą się dziś. Nie wszystko, tylko tyle, ile trzeba."
+      },
+      "thisWeek": {
+        "label": "W tym tygodniu",
+        "body": "Rzeczy, które się liczą, ale nie muszą być załatwione przed snem."
+      },
+      "letGo": {
+        "label": "Odpuść",
+        "body": "Pozwolenie, żeby na razie zostawić resztę w spokoju. Jutro nadal tu będzie."
+      }
+    },
+    "reassurance": {
+      "title": "Praktycznie, nie klinicznie",
+      "items": {
+        "notTherapy": "To nie jest terapia ani porada medyczna. To sposób na uporządkowanie zabieganego dnia.",
+        "private": "Twoje odpowiedzi zostają na twoim urządzeniu, chyba że założysz konto i zdecydujesz się je zapisać.",
+        "languages": "Dostępne w twoim języku, na telefonie, jedną ręką."
+      }
+    },
+    "finalCta": {
+      "title": "Gotowe, kiedy ty będziesz.",
+      "body": "Dwie minuty teraz mogą sprawić, że reszta dnia będzie lżejsza.",
+      "cta": "Zacznij mój reset"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Krok {current} z {total}",
+    "hint": {
+      "oneHand": "Odpowiadaj szczerze. Nie ma złych odpowiedzi i nic nie jest oceniane."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Jak bardzo przytłacza cię dzisiejszy dzień?",
+        "help": "1 to spokój, 10 to całkowite przeciążenie.",
+        "low": "Spokój",
+        "high": "Przeciążenie",
+        "selected": "Wybrano {value} z 10"
+      },
+      "areas": {
+        "title": "Co zajmuje najwięcej miejsca w twojej głowie?",
+        "help": "Zaznacz wszystko, co pasuje.",
+        "options": {
+          "kids": "Dzieci",
+          "money": "Pieniądze",
+          "work": "Praca",
+          "home": "Dom",
+          "relationship": "Związek",
+          "health": "Zdrowie / energia",
+          "other": "Coś innego"
+        }
+      },
+      "time": {
+        "title": "Ile czasu do wykorzystania realnie masz dziś?",
+        "help": "Czas, który naprawdę jest twój, a nie taki, który teoretycznie masz mieć.",
+        "options": {
+          "under30": "Mniej niż 30 minut",
+          "30to60": "30–60 minut",
+          "1to2h": "1–2 godziny",
+          "over2h": "Ponad 2 godziny"
+        }
+      },
+      "money": {
+        "title": "Czy presja finansowa jest częścią dzisiejszego stresu?",
+        "help": "To zmienia tylko sposób, w jaki układamy twoją listę.",
+        "yes": "Tak",
+        "no": "Nie"
+      },
+      "must": {
+        "title": "Co koniecznie musi się wydarzyć dziś?",
+        "help": "Najłatwiej jedna rzecz w linijce. Zostaw tylko to, co naprawdę nie może poczekać.",
+        "placeholder": "Zapłacić rachunek za prąd\nOdebrać dzieci o 16\nZadzwonić do dentysty"
+      },
+      "onMind": {
+        "title": "Co jeszcze chodzi ci po głowie?",
+        "help": "Cokolwiek. Możesz to zostawić puste.",
+        "placeholder": "W pracy ze wszystkim w tyle. Urodziny wciąż nieogarnięte."
+      }
+    },
+    "errors": {
+      "required": "Dodaj przynajmniej jedną rzecz.",
+      "tooLong": "To trochę za długie. Skróć do {max} znaków.",
+      "areasRequired": "Zaznacz przynajmniej jedną opcję.",
+      "generic": "Coś poszło nie tak. Spróbuj ponownie.",
+      "rateLimited": "Za dużo resetów w krótkim czasie. Odczekaj minutę i spróbuj ponownie."
+    },
+    "submit": "Pokaż mój reset",
+    "submitting": "Układamy twój dzień…",
+    "resumeDraft": "Zachowaliśmy twoje wcześniejsze odpowiedzi.",
+    "startOver": "Zacznij od nowa"
+  },
+  "result": {
+    "title": "Twój reset",
+    "dateLabel": "Reset z {date}",
+    "today": {
+      "label": "Dziś",
+      "intro": "Tylko to. Jeśli to skończysz, dzień się liczył."
+    },
+    "thisWeek": {
+      "label": "W tym tygodniu",
+      "intro": "Ważne, ale nie trzeba tego załatwiać dziś."
+    },
+    "letGo": {
+      "label": "Odpuść",
+      "intro": "Nie dziś. Naprawdę."
+    },
+    "savedLocally": "Zapisano na tym urządzeniu. Załóż konto później, żeby zachować historię na wszystkich urządzeniach.",
+    "newReset": "Zacznij nowy reset",
+    "backHome": "Wróć na start",
+    "notFound": {
+      "title": "Nie znaleźliśmy tego resetu",
+      "body": "Mógł zostać utworzony na innym urządzeniu albo usunięty z tej przeglądarki.",
+      "cta": "Zacznij nowy reset"
+    },
+    "disclaimer": "Parent Reset to praktyczne narzędzie do planowania, a nie porada medyczna ani terapeutyczna."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Dzisiejszy dzień wydaje się do ogarnięcia. Niech tak zostanie, z krótką listą.",
+      "busy": "Sporo rzeczy walczy dziś o twoją uwagę. Oto, co zostawić, co może poczekać, a co odpuścić.",
+      "heavy": "Bardzo dużo rzeczy walczy dziś o twoją uwagę. Dzisiejsza lista jest celowo mała."
+    },
+    "time": {
+      "under30": "Masz mniej niż 30 minut naprawdę dla siebie, więc dzisiejsza lista jest bardzo krótka.",
+      "30to60": "Przy pół godziny do godziny trzy rzeczy to realny limit.",
+      "1to2h": "Masz jedną do dwóch godzin, wystarczająco na kilka rzeczy zrobionych dobrze.",
+      "over2h": "Masz dziś trochę prawdziwego czasu. Wykorzystaj go na to, co ważne, a nie na wszystko."
+    },
+    "today": {
+      "moneyCheck": "Sprawdź, która płatność naprawdę jest pierwsza. Zajmij się tylko nią.",
+      "pickOne": "Wybierz jedną rzecz, dzięki której dzisiejszy dzień będzie ogarnięty, i zrób tylko to.",
+      "breather": "Weź dziesięć minut bez żadnych planów. To też liczy się jako zadanie."
+    },
+    "week": {
+      "area": {
+        "kids": "Wybierz jedną sprawę związaną z dziećmi do załatwienia w tym tygodniu, nie wszystkie.",
+        "money": "Spójrz raz na finanse całego miesiąca, a potem przestań.",
+        "work": "Wybierz jedną rzecz z pracy, która zdjęłaby najwięcej presji.",
+        "home": "Jedno zadanie domowe, dzięki któremu w domu będzie spokojniej.",
+        "relationship": "Znajdź w tym tygodniu chwilę na rozmowę, kiedy żadne z was nie jest wykończone.",
+        "health": "Jedna mała rzecz dla twojej energii: sen, jedzenie, spacer.",
+        "other": "Ta inna sprawa w twojej głowie dostaje miejsce w tym tygodniu, nie dziś."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Dom nie musi być dziś posprzątany.",
+      "moneyWhole": "Nie musisz dziś rozwiązać całej sytuacji finansowej. Jeden krok wystarczy.",
+      "relationshipTalk": "Poważne rozmowy mogą poczekać na dzień z większą ilością energii.",
+      "kidsExtra": "Dodatkowe zajęcia, idealne posiłki i poczucie winy za czas przed ekranem.",
+      "workExtra": "Wszystko w pracy, co jest miłe do zrobienia, a nie naprawdę na termin.",
+      "healthAllOrNothing": "Plan „wszystko albo nic”. Małe kroki też się liczą.",
+      "everythingElse": "Wszystko, czego nie ma na dzisiejszej liście. Jutro nadal tu będzie.",
+      "onMind": "Część tego, co masz w głowie, może poczekać, aż się uspokoi."
+    },
+    "notes": {
+      "movedForTime": "Przeniesione tutaj, bo dziś masz mało czasu do wykorzystania.",
+      "movedForFocus": "Przeniesione tutaj, żeby dziś zostały trzy rzeczy.",
+      "fromYou": "Z tego, co jeszcze chodzi ci po głowie"
+    }
+  },
+  "safety": {
+    "title": "Zanim cokolwiek innego",
+    "body": "Część twoich odpowiedzi brzmi jak coś więcej niż zabiegany dzień. Parent Reset nie może z tym pomóc, ale ludzie mogą.",
+    "emergency": "Jeśli ty lub ktoś inny jest w bezpośrednim niebezpieczeństwie, skontaktuj się z lokalnymi służbami ratunkowymi.",
+    "trustedPerson": "Odezwij się do kogoś, komu ufasz, i powiedz, jak naprawdę wygląda dzisiejszy dzień.",
+    "support": "W większości krajów działają bezpłatne i poufne telefony wsparcia w kryzysie. Poszukaj takiego w swoim kraju albo zapytaj lekarza.",
+    "continue": "Przejdź do swojej listy"
+  },
+  "footer": {
+    "tagline": "Prosty reset dla rodziców, którzy mają za dużo na głowie.",
+    "notMedical": "Parent Reset nie jest usługą medyczną ani terapeutyczną.",
+    "madeWithCare": "Stworzone z troską dla zabieganych rodziców.",
+    "language": "Język"
+  },
+  "notFound": {
+    "title": "Ta strona nie istnieje",
+    "body": "Link może być stary albo błędnie wpisany.",
+    "cta": "Przejdź na start"
+  }
+}

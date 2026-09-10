@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Ať je dnešek lehčí",
+      "description": "Jednoduchý reset pro rodiče, kteří toho mají v hlavě příliš. Roztřiď si, co je dnes důležité, co počká a co můžeš nechat být."
+    },
+    "reset": {
+      "title": "Začít můj reset – Parent Reset",
+      "description": "Dvouminutová zastávka, která promění plnou hlavu v krátký seznam na dnešek."
+    },
+    "result": {
+      "title": "Tvůj reset – Parent Reset",
+      "description": "Tvůj krátký seznam na dnešek, co počká do konce týdne a co můžeš nechat být."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Přejít na obsah",
+    "back": "Zpět",
+    "continue": "Pokračovat",
+    "close": "Zavřít",
+    "openMenu": "Otevřít menu",
+    "closeMenu": "Zavřít menu",
+    "language": "Jazyk",
+    "optional": "Nepovinné",
+    "loading": "Chviličku…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Domů",
+    "startReset": "Začít můj reset",
+    "howItWorks": "Jak to funguje",
+    "menuTitle": "Menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Pro rodiče, kteří toho mají v hlavě příliš",
+      "title": "Život je náročný. Pojďme si dnešek ulehčit.",
+      "subtitle": "Jednoduchý reset pro rodiče, kteří toho mají v hlavě příliš.",
+      "primaryCta": "Začít můj reset",
+      "secondaryCta": "Podívej se, jak to funguje",
+      "trust": "Bez účtu. Zhruba dvě minuty. Nic se nesdílí."
+    },
+    "steps": {
+      "title": "Jak to funguje",
+      "subtitle": "Tři krátké kroky. Žádné aplikace k nastavování, žádné návyky k budování.",
+      "one": {
+        "title": "Řekni nám, co tě tíží",
+        "body": "Jak plný ti dnešek připadá, co zabírá nejvíc místa a kolik času opravdu máš."
+      },
+      "two": {
+        "title": "Roztřiď, na čem záleží",
+        "body": "Rozdělíme to na to, co se musí stát dnes, co počká a co počká klidně i déle."
+      },
+      "three": {
+        "title": "Zmenši si dnešek",
+        "body": "Odejdeš s krátkým seznamem, který opravdu zvládneš. O to tu jde."
+      }
+    },
+    "buckets": {
+      "title": "Co získáš",
+      "subtitle": "Jedna stránka. Tři seznamy. Žádné přehledy.",
+      "today": {
+        "label": "Dnes",
+        "body": "Nejvýš tři věci, na kterých dnes opravdu záleží. Ne všechno, jen tak akorát."
+      },
+      "thisWeek": {
+        "label": "Tento týden",
+        "body": "Věci, které jsou důležité, ale nemusí se vyřešit před spaním."
+      },
+      "letGo": {
+        "label": "Nech to být",
+        "body": "Dovolení nechat zbytek prozatím být. Zítra tu bude pořád."
+      }
+    },
+    "reassurance": {
+      "title": "Praktické, ne klinické",
+      "items": {
+        "notTherapy": "Tohle není terapie ani lékařská rada. Je to způsob, jak si roztřídit náročný den.",
+        "private": "Tvoje odpovědi zůstávají ve tvém zařízení, pokud si nevytvoříš účet a nerozhodneš se je uložit.",
+        "languages": "Ve tvém jazyce, na telefonu, jednou rukou."
+      }
+    },
+    "finalCta": {
+      "title": "Jsme tu, až budeš chtít.",
+      "body": "Dvě minuty teď můžou zbytek dne zlehčit.",
+      "cta": "Začít můj reset"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Krok {current} z {total}",
+    "hint": {
+      "oneHand": "Odpovídej upřímně. Neexistují špatné odpovědi a nic se neboduje."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Jak moc toho na tebe dnes je?",
+        "help": "1 je klid, 10 je úplně na hraně.",
+        "low": "Klid",
+        "high": "Na hraně",
+        "selected": "Tvoje volba: {value} z 10"
+      },
+      "areas": {
+        "title": "Co ti zabírá nejvíc místa v hlavě?",
+        "help": "Vyber vše, co sedí.",
+        "options": {
+          "kids": "Děti",
+          "money": "Peníze",
+          "work": "Práce",
+          "home": "Domácnost",
+          "relationship": "Vztah",
+          "health": "Zdraví / energie",
+          "other": "Něco jiného"
+        }
+      },
+      "time": {
+        "title": "Kolik využitelného času dnes reálně máš?",
+        "help": "Čas, který je opravdu tvůj, ne ten, který by ti teoreticky měl zbývat.",
+        "options": {
+          "under30": "Méně než 30 minut",
+          "30to60": "30–60 minut",
+          "1to2h": "1–2 hodiny",
+          "over2h": "Více než 2 hodiny"
+        }
+      },
+      "money": {
+        "title": "Je součástí dnešního stresu i tlak kvůli penězům?",
+        "help": "Ovlivní to jen způsob, jakým seznam roztřídíme.",
+        "yes": "Ano",
+        "no": "Ne"
+      },
+      "must": {
+        "title": "Co se dnes musí bezpodmínečně stát?",
+        "help": "Nejjednodušší je jedna věc na řádek. Nech tam jen to, co opravdu nepočká.",
+        "placeholder": "Zaplatit elektřinu\nVyzvednout děti ve 4\nZavolat zubaři"
+      },
+      "onMind": {
+        "title": "Co dalšího ti leží v hlavě?",
+        "help": "Cokoli. Můžeš to nechat prázdné.",
+        "placeholder": "Mám pocit, že v práci všechno nestíhám. Pořád nemám vyřešené narozeniny."
+      }
+    },
+    "errors": {
+      "required": "Přidej prosím aspoň jednu věc.",
+      "tooLong": "Je to trochu dlouhé. Zkrať to prosím na {max} znaků.",
+      "areasRequired": "Vyber prosím aspoň jednu možnost.",
+      "generic": "Něco se pokazilo. Zkus to prosím znovu.",
+      "rateLimited": "Příliš mnoho resetů v krátkém čase. Chvilku počkej a zkus to znovu."
+    },
+    "submit": "Ukázat můj reset",
+    "submitting": "Třídíme tvůj den…",
+    "resumeDraft": "Tvoje dřívější odpovědi jsme uchovali.",
+    "startOver": "Začít znovu"
+  },
+  "result": {
+    "title": "Tvůj reset",
+    "dateLabel": "Reset z {date}",
+    "today": {
+      "label": "Dnes",
+      "intro": "Jen tohle. Když to zvládneš, den se počítá."
+    },
+    "thisWeek": {
+      "label": "Tento týden",
+      "intro": "Důležité, ale nemusí se řešit dnes."
+    },
+    "letGo": {
+      "label": "Nech to být",
+      "intro": "Dnes ne. Vážně."
+    },
+    "savedLocally": "Uloženo v tomto zařízení. Účet si můžeš vytvořit později a mít historii na všech zařízeních.",
+    "newReset": "Začít nový reset",
+    "backHome": "Zpět na úvod",
+    "notFound": {
+      "title": "Tento reset jsme nenašli",
+      "body": "Možná vznikl v jiném zařízení nebo byl z tohoto prohlížeče smazán.",
+      "cta": "Začít nový reset"
+    },
+    "disclaimer": "Parent Reset je praktický plánovací nástroj, ne lékařská ani terapeutická rada."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Dnešek vypadá zvládnutelně. Ať to tak zůstane – s krátkým seznamem.",
+      "busy": "Dnes se o tvou pozornost uchází docela dost věcí. Tady je, co si nechat, co počká a co nechat být.",
+      "heavy": "Dnes se o tvou pozornost uchází opravdu hodně věcí. Dnešní seznam je schválně malý."
+    },
+    "time": {
+      "under30": "Máš méně než 30 minut opravdu pro sebe, takže dnešní seznam je hodně krátký.",
+      "30to60": "S půlhodinou až hodinou jsou tři věci reálný strop.",
+      "1to2h": "Máš jednu až dvě hodiny – dost na pár věcí udělaných pořádně.",
+      "over2h": "Dnes máš opravdu nějaký čas. Využij ho na to, na čem záleží, ne na všechno."
+    },
+    "today": {
+      "moneyCheck": "Zjisti, která platba je opravdu splatná jako první. Vyřiď jen tu.",
+      "pickOne": "Vyber tu jednu věc, po které by dnešek působil zvládnutě, a udělej jen tu.",
+      "breather": "Dej si deset minut bez plánu. Počítá se to jako úkol."
+    },
+    "week": {
+      "area": {
+        "kids": "Vyber jednu věc kolem dětí, kterou tento týden vyřešíš, ne všechny.",
+        "money": "Podívej se jednou na peníze za celý měsíc a pak přestaň.",
+        "work": "Vyber tu jednu pracovní věc, která by ti nejvíc ulevila.",
+        "home": "Jeden úkol v domácnosti, po kterém bude doma klidněji.",
+        "relationship": "Najděte si tento týden chvíli na rozhovor, až nebudete oba vyčerpaní.",
+        "health": "Jedna malá věc pro vlastní energii: spánek, jídlo, procházka.",
+        "other": "Ta další věc v hlavě dostane místo tento týden, ne dnes."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Dnes nemusí být doma uklizeno.",
+      "moneyWhole": "Nemusíš dnes vyřešit celou finanční situaci. Jeden krok stačí.",
+      "relationshipTalk": "Velké rozhovory počkají na den, kdy bude víc sil.",
+      "kidsExtra": "Kroužky navíc, dokonalá jídla a výčitky kvůli času u obrazovky.",
+      "workExtra": "Cokoli v práci, co by bylo fajn udělat, ale opravdu to nehoří.",
+      "healthAllOrNothing": "Plán všechno, nebo nic. I málo se počítá.",
+      "everythingElse": "Všechno, co není na dnešním seznamu. Zítra tu bude pořád.",
+      "onMind": "Část toho, co máš v hlavě, může počkat, až se věci uklidní."
+    },
+    "notes": {
+      "movedForTime": "Přesunuto sem, protože dnes je využitelného času málo.",
+      "movedForFocus": "Přesunuto sem, aby dnešek zůstal u tří věcí.",
+      "fromYou": "Z toho, co dalšího ti leží v hlavě"
+    }
+  },
+  "safety": {
+    "title": "Nejdřív to nejdůležitější",
+    "body": "Něco z toho, co tu stojí, zní jako víc než jen náročný den. Parent Reset s tím nepomůže, ale lidé ano.",
+    "emergency": "Pokud jsi ty nebo někdo jiný v bezprostředním ohrožení, kontaktuj místní tísňovou linku.",
+    "trustedPerson": "Ozvi se někomu, komu důvěřuješ, a řekni mu, jaký dnešek opravdu je.",
+    "support": "Ve většině zemí existují krizové linky, které jsou bezplatné a důvěrné. Najdi si tu ve své zemi nebo se zeptej svého lékaře.",
+    "continue": "Pokračovat k seznamu"
+  },
+  "footer": {
+    "tagline": "Jednoduchý reset pro rodiče, kteří toho mají v hlavě příliš.",
+    "notMedical": "Parent Reset není lékařská ani terapeutická služba.",
+    "madeWithCare": "Vytvořeno s péčí pro zaneprázdněné rodiče.",
+    "language": "Jazyk"
+  },
+  "notFound": {
+    "title": "Tato stránka neexistuje",
+    "body": "Odkaz může být starý nebo špatně zadaný.",
+    "cta": "Přejít na začátek"
+  }
+}

@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/*
+  Parent Reset design tokens.
+  Warm, calm, premium. No medical blue, no neon, no generic AI gradients.
+*/
+@theme {
+  --color-cream: #faf6ef;
+  --color-sand: #f2ebe0;
+  --color-paper: #ffffff;
+  --color-line: #e5dccf;
+  --color-ink: #2a2420;
+  --color-ink-soft: #6b605a;
+  --color-ink-muted: #9a8f87;
+
+  --color-clay: #c4664a;
+  --color-clay-deep: #a5523a;
+  --color-clay-soft: #f6e5dc;
+
+  --color-honey: #b98a35;
+  --color-honey-soft: #f7ecd4;
+
+  --color-moss: #6b8566;
+  --color-moss-soft: #e7eee3;
+
+  --font-sans:
+    var(--font-body), "Manrope", "Segoe UI", "Helvetica Neue", Arial,
+    "Noto Sans", "PingFang SC", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Microsoft YaHei", "Yu Gothic", "Meiryo", sans-serif;
+  --font-display:
+    var(--font-display), "Source Serif 4", Georgia, "Times New Roman",
+    "Noto Serif", "Songti SC", "Hiragino Mincho ProN", "Yu Mincho", serif;
+
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.75rem;
+  --radius-3xl: 2.25rem;
+
+  --shadow-soft: 0 1px 2px rgba(42, 36, 32, 0.04), 0 10px 30px -12px rgba(42, 36, 32, 0.18);
+  --shadow-lift: 0 2px 4px rgba(42, 36, 32, 0.05), 0 18px 40px -16px rgba(42, 36, 32, 0.25);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background: var(--color-cream);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  min-height: 100dvh;
+}
+
+/* CJK text should wrap by character, never rely on spaces. */
+:lang(ja),
+:lang(zh) {
+  line-break: strict;
+  word-break: normal;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+}
+
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--color-clay) 55%, transparent);
+  outline-offset: 3px;
+}
+
+/* Tap-friendly, one-handed. Never a fixed width based on English. */
+.tap {
+  min-height: 3rem;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.fade-in {
+  animation: fade-in 260ms ease-out both;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Gör dagen lättare",
+      "description": "En enkel reset för föräldrar som bär för mycket i huvudet. Sortera vad som är viktigt i dag, vad som kan vänta och vad du kan släppa."
+    },
+    "reset": {
+      "title": "Starta min reset – Parent Reset",
+      "description": "En tvåminuters avstämning som gör ett fullt huvud till en kort lista för i dag."
+    },
+    "result": {
+      "title": "Din reset – Parent Reset",
+      "description": "Din korta lista för i dag, vad som kan vänta till den här veckan och vad du kan släppa."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Hoppa till innehållet",
+    "back": "Tillbaka",
+    "continue": "Fortsätt",
+    "close": "Stäng",
+    "openMenu": "Öppna menyn",
+    "closeMenu": "Stäng menyn",
+    "language": "Språk",
+    "optional": "Valfritt",
+    "loading": "Ett ögonblick…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Hem",
+    "startReset": "Starta min reset",
+    "howItWorks": "Så funkar det",
+    "menuTitle": "Meny"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "För föräldrar med för mycket i huvudet",
+      "title": "Livet är mycket. Låt oss göra dagen lättare.",
+      "subtitle": "En enkel reset för föräldrar som bär för mycket i huvudet.",
+      "primaryCta": "Starta min reset",
+      "secondaryCta": "Se hur det funkar",
+      "trust": "Inget konto behövs. Ungefär två minuter. Inget delas."
+    },
+    "steps": {
+      "title": "Så funkar det",
+      "subtitle": "Tre korta steg. Inga appar att installera, inga vanor att bygga.",
+      "one": {
+        "title": "Berätta vad som tynger dig",
+        "body": "Hur full dagen känns, vad som tar mest plats och hur mycket tid du faktiskt har."
+      },
+      "two": {
+        "title": "Sortera det som är viktigt",
+        "body": "Vi delar upp det i vad som måste hända i dag, vad som kan vänta och vad som kan vänta länge."
+      },
+      "three": {
+        "title": "Gör dagen mindre",
+        "body": "Du går därifrån med en kort lista som du faktiskt kan bli klar med. Det är hela poängen."
+      }
+    },
+    "buckets": {
+      "title": "Det här får du",
+      "subtitle": "En sida. Tre listor. Inga instrumentpaneler.",
+      "today": {
+        "label": "I dag",
+        "body": "Upp till tre saker som verkligen är viktiga i dag. Inte allt, bara tillräckligt."
+      },
+      "thisWeek": {
+        "label": "Den här veckan",
+        "body": "Saker som räknas men inte behöver lösas före läggdags."
+      },
+      "letGo": {
+        "label": "Släpp det",
+        "body": "Tillåtelse att lämna resten i fred just nu. Det finns kvar i morgon."
+      }
+    },
+    "reassurance": {
+      "title": "Praktiskt, inte kliniskt",
+      "items": {
+        "notTherapy": "Det här är inte terapi eller medicinsk rådgivning. Det är ett sätt att sortera en fullspäckad dag.",
+        "private": "Dina svar stannar på din enhet om du inte skapar ett konto och väljer att spara dem.",
+        "languages": "Finns på ditt språk, i mobilen, med en hand."
+      }
+    },
+    "finalCta": {
+      "title": "Redo när du är det.",
+      "body": "Två minuter nu kan göra resten av dagen lättare.",
+      "cta": "Starta min reset"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Steg {current} av {total}",
+    "hint": {
+      "oneHand": "Svara ärligt. Det finns inga fel svar och inget poängsätts."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Hur överväldigad känner du dig i dag?",
+        "help": "1 är lugn, 10 är helt slut.",
+        "low": "Lugn",
+        "high": "Helt slut",
+        "selected": "Du valde {value} av 10"
+      },
+      "areas": {
+        "title": "Vad tar mest plats i huvudet?",
+        "help": "Välj allt som stämmer.",
+        "options": {
+          "kids": "Barnen",
+          "money": "Pengar",
+          "work": "Jobbet",
+          "home": "Hemmet",
+          "relationship": "Relationen",
+          "health": "Hälsa / energi",
+          "other": "Något annat"
+        }
+      },
+      "time": {
+        "title": "Hur mycket användbar tid har du realistiskt sett i dag?",
+        "help": "Tid som faktiskt är din, inte tid du borde ha.",
+        "options": {
+          "under30": "Mindre än 30 minuter",
+          "30to60": "30–60 minuter",
+          "1to2h": "1–2 timmar",
+          "over2h": "Mer än 2 timmar"
+        }
+      },
+      "money": {
+        "title": "Är pengapress en del av dagens stress?",
+        "help": "Det här ändrar bara hur vi sorterar din lista.",
+        "yes": "Ja",
+        "no": "Nej"
+      },
+      "must": {
+        "title": "Vad måste absolut hända i dag?",
+        "help": "En sak per rad är enklast. Håll dig till det som verkligen inte kan vänta.",
+        "placeholder": "Betala elräkningen\nHämta barnen klockan 4\nRinga tandläkaren"
+      },
+      "onMind": {
+        "title": "Vad mer har du i tankarna?",
+        "help": "Vad som helst. Du kan lämna det tomt.",
+        "placeholder": "Känner mig efter med allt på jobbet. Har fortfarande inte fixat födelsedagen."
+      }
+    },
+    "errors": {
+      "required": "Lägg till minst en sak.",
+      "tooLong": "Det är lite för långt. Korta ner det till {max} tecken.",
+      "areasRequired": "Välj minst ett alternativ.",
+      "generic": "Något gick fel. Försök igen.",
+      "rateLimited": "För många resets på kort tid. Vänta en minut och försök igen."
+    },
+    "submit": "Visa min reset",
+    "submitting": "Sorterar din dag…",
+    "resumeDraft": "Vi sparade dina svar från tidigare.",
+    "startOver": "Börja om"
+  },
+  "result": {
+    "title": "Din reset",
+    "dateLabel": "Reset från {date}",
+    "today": {
+      "label": "I dag",
+      "intro": "Bara de här. Om du blir klar med dem har dagen räknats."
+    },
+    "thisWeek": {
+      "label": "Den här veckan",
+      "intro": "Viktigt, men behöver inte lösas i dag."
+    },
+    "letGo": {
+      "label": "Släpp det",
+      "intro": "Inte i dag. På riktigt."
+    },
+    "savedLocally": "Sparat på den här enheten. Skapa ett konto senare för att behålla din historik på alla enheter.",
+    "newReset": "Starta en ny reset",
+    "backHome": "Tillbaka till start",
+    "notFound": {
+      "title": "Vi hittade inte den reseten",
+      "body": "Den kan ha skapats på en annan enhet eller rensats från den här webbläsaren.",
+      "cta": "Starta en ny reset"
+    },
+    "disclaimer": "Parent Reset är ett praktiskt planeringsverktyg, inte medicinsk eller terapeutisk rådgivning."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Dagen känns hanterbar. Låt oss hålla den så med en kort lista.",
+      "busy": "Du har en hel del som konkurrerar om din uppmärksamhet i dag. Här är vad du behåller, vad som kan vänta och vad du låter vara.",
+      "heavy": "Du har väldigt mycket som konkurrerar om din uppmärksamhet i dag. Dagens lista är liten med flit."
+    },
+    "time": {
+      "under30": "Du har mindre än 30 minuter som verkligen är dina, så dagens lista är väldigt kort.",
+      "30to60": "Med en halvtimme till en timme är tre saker det realistiska taket.",
+      "1to2h": "Du har en till två timmar, tillräckligt för några saker gjorda ordentligt.",
+      "over2h": "Du har lite riktig tid i dag. Använd den till det som är viktigt, inte till allt."
+    },
+    "today": {
+      "moneyCheck": "Kolla vilken betalning som faktiskt förfaller först. Ta bara hand om den.",
+      "pickOne": "Välj den enda sak som skulle få dagen att kännas avklarad, och gör bara den.",
+      "breather": "Ta tio minuter utan något planerat. Det räknas som en uppgift."
+    },
+    "week": {
+      "area": {
+        "kids": "Välj en barnrelaterad sak att reda ut den här veckan, inte alla.",
+        "money": "Titta på hela månadens ekonomi en gång, och sluta sedan.",
+        "work": "Välj den jobbgrej som skulle ta bort mest press.",
+        "home": "En hushållssyssla som skulle få hemmet att kännas lugnare.",
+        "relationship": "Hitta en stund den här veckan att prata när ingen av er är helt slut.",
+        "health": "En liten sak för din egen energi: sömn, mat, en promenad.",
+        "other": "Det andra du har i tankarna får en plats den här veckan, inte i dag."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Huset behöver inte vara städat i dag.",
+      "moneyWhole": "Du behöver inte lösa hela pengasituationen i dag. Ett steg räcker.",
+      "relationshipTalk": "Stora samtal kan vänta till en dag med mer energi.",
+      "kidsExtra": "Extra aktiviteter, perfekta måltider och dåligt samvete över skärmtid.",
+      "workExtra": "Allt på jobbet som är trevligt att göra men inte faktiskt måste.",
+      "healthAllOrNothing": "Allt-eller-inget-planen. Litet räknas.",
+      "everythingElse": "Allt som inte står på dagens lista. Det finns kvar i morgon.",
+      "onMind": "En del av det du har i tankarna kan vila tills det lugnar ner sig."
+    },
+    "notes": {
+      "movedForTime": "Flyttad hit eftersom dagens användbara tid är kort.",
+      "movedForFocus": "Flyttad hit så att dagen stannar vid tre saker.",
+      "fromYou": "Från det du har i tankarna"
+    }
+  },
+  "safety": {
+    "title": "Först av allt",
+    "body": "En del av det du skrev låter som mer än en fullspäckad dag. Parent Reset kan inte hjälpa till med det, men det kan människor.",
+    "emergency": "Om du eller någon annan är i omedelbar fara, ring nödnumret där du är.",
+    "trustedPerson": "Hör av dig till någon du litar på och berätta hur dagen verkligen är.",
+    "support": "Stödlinjer finns i de flesta länder och är gratis och konfidentiella. Sök efter en i ditt land eller fråga din läkare.",
+    "continue": "Fortsätt till din lista"
+  },
+  "footer": {
+    "tagline": "En enkel reset för föräldrar som bär för mycket i huvudet.",
+    "notMedical": "Parent Reset är inte en medicinsk tjänst eller terapitjänst.",
+    "madeWithCare": "Gjord med omsorg för upptagna föräldrar.",
+    "language": "Språk"
+  },
+  "notFound": {
+    "title": "Den sidan finns inte",
+    "body": "Länken kan vara gammal eller felskriven.",
+    "cta": "Gå till start"
+  }
+}

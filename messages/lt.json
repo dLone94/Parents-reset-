@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Palengvinkime šią dieną",
+      "description": "Paprastas būdas susidėlioti dieną tėvams, kurių galvoje per daug visko. Išsirūšiuokite, kas svarbu šiandien, kas gali palaukti ir ką galite paleisti."
+    },
+    "reset": {
+      "title": "Susidėlioti dieną – Parent Reset",
+      "description": "Dviejų minučių pasitikrinimas, kuris pilną galvą paverčia trumpu šiandienos sąrašu."
+    },
+    "result": {
+      "title": "Jūsų diena – Parent Reset",
+      "description": "Jūsų trumpas šiandienos sąrašas, kas gali palaukti iki savaitės pabaigos ir ką galite paleisti."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Pereiti prie turinio",
+    "back": "Atgal",
+    "continue": "Tęsti",
+    "close": "Uždaryti",
+    "openMenu": "Atidaryti meniu",
+    "closeMenu": "Uždaryti meniu",
+    "language": "Kalba",
+    "optional": "Neprivaloma",
+    "loading": "Akimirką…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Pradžia",
+    "startReset": "Susidėlioti dieną",
+    "howItWorks": "Kaip tai veikia",
+    "menuTitle": "Meniu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Tėvams, kurių galvoje per daug visko",
+      "title": "Visko daug. Palengvinkime šią dieną.",
+      "subtitle": "Paprastas būdas susidėlioti dieną tėvams, kurių galvoje per daug visko.",
+      "primaryCta": "Susidėlioti dieną",
+      "secondaryCta": "Kaip tai veikia",
+      "trust": "Paskyros nereikia. Užtruks apie dvi minutes. Niekuo nesidalijama."
+    },
+    "steps": {
+      "title": "Kaip tai veikia",
+      "subtitle": "Trys trumpi žingsniai. Jokių programėlių, jokių įpročių, kuriuos reikėtų ugdyti.",
+      "one": {
+        "title": "Papasakokite, kas jus slegia",
+        "body": "Kiek pilna atrodo ši diena, kas užima daugiausia vietos ir kiek laiko iš tiesų turite."
+      },
+      "two": {
+        "title": "Išsirūšiuokite, kas svarbu",
+        "body": "Suskirstome į tai, kas turi įvykti šiandien, kas gali palaukti ir kas gali palaukti dar ilgiau."
+      },
+      "three": {
+        "title": "Sumažinkite šią dieną",
+        "body": "Išeinate su trumpu sąrašu, kurį tikrai galite įvykdyti. Tai ir yra esmė."
+      }
+    },
+    "buckets": {
+      "title": "Ką gausite",
+      "subtitle": "Vienas puslapis. Trys sąrašai. Jokių suvestinių.",
+      "today": {
+        "label": "Šiandien",
+        "body": "Iki trijų dalykų, kurie šiandien tikrai svarbūs. Ne viskas – tik tiek, kiek reikia."
+      },
+      "thisWeek": {
+        "label": "Šią savaitę",
+        "body": "Dalykai, kurie svarbūs, bet neturi būti išspręsti iki vakaro."
+      },
+      "letGo": {
+        "label": "Paleiskite",
+        "body": "Leidimas visa kita kol kas palikti ramybėje. Rytoj tai niekur nedings."
+      }
+    },
+    "reassurance": {
+      "title": "Praktiška, ne klinikiška",
+      "items": {
+        "notTherapy": "Tai ne terapija ir ne medicininis patarimas. Tai būdas susitvarkyti įtemptą dieną.",
+        "private": "Jūsų atsakymai lieka jūsų įrenginyje, nebent susikursite paskyrą ir nuspręsite juos išsaugoti.",
+        "languages": "Jūsų kalba, jūsų telefone, viena ranka."
+      }
+    },
+    "finalCta": {
+      "title": "Kai būsite pasiruošę.",
+      "body": "Dvi minutės dabar gali palengvinti likusią dieną.",
+      "cta": "Susidėlioti dieną"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "{current} žingsnis iš {total}",
+    "hint": {
+      "oneHand": "Atsakykite atvirai. Nėra neteisingų atsakymų ir niekas nevertinama."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Kiek šiandien jaučiatės perkrauti?",
+        "help": "1 – ramu, 10 – visiškai ant ribos.",
+        "low": "Ramu",
+        "high": "Ant ribos",
+        "selected": "Pasirinkote {value} iš 10"
+      },
+      "areas": {
+        "title": "Kas užima daugiausia vietos galvoje?",
+        "help": "Pažymėkite viską, kas tinka.",
+        "options": {
+          "kids": "Vaikai",
+          "money": "Pinigai",
+          "work": "Darbas",
+          "home": "Namai",
+          "relationship": "Santykiai",
+          "health": "Sveikata / energija",
+          "other": "Kas nors kita"
+        }
+      },
+      "time": {
+        "title": "Kiek laiko šiandien realiai turite sau?",
+        "help": "Laikas, kuris iš tiesų jūsų, o ne tas, kurį turėtumėte turėti.",
+        "options": {
+          "under30": "Mažiau nei 30 minučių",
+          "30to60": "30–60 minučių",
+          "1to2h": "1–2 valandos",
+          "over2h": "Daugiau nei 2 valandos"
+        }
+      },
+      "money": {
+        "title": "Ar pinigų spaudimas yra šiandienos streso dalis?",
+        "help": "Tai keičia tik tai, kaip surūšiuosime jūsų sąrašą.",
+        "yes": "Taip",
+        "no": "Ne"
+      },
+      "must": {
+        "title": "Kas šiandien būtinai turi įvykti?",
+        "help": "Lengviausia – po vieną dalyką eilutėje. Rašykite tik tai, kas tikrai negali laukti.",
+        "placeholder": "Sumokėti už elektrą\nPasiimti vaikus 16 val.\nPaskambinti odontologui"
+      },
+      "onMind": {
+        "title": "Kas dar sukasi galvoje?",
+        "help": "Bet kas. Galite palikti tuščią.",
+        "placeholder": "Jaučiuosi atsilikęs nuo visko darbe. Vis dar nesutvarkiau gimtadienio."
+      }
+    },
+    "errors": {
+      "required": "Įrašykite bent vieną dalyką.",
+      "tooLong": "Šiek tiek per ilga. Sutrumpinkite iki {max} simbolių.",
+      "areasRequired": "Pasirinkite bent vieną.",
+      "generic": "Kažkas nepavyko. Bandykite dar kartą.",
+      "rateLimited": "Per daug bandymų per trumpą laiką. Palaukite minutę ir bandykite dar kartą."
+    },
+    "submit": "Rodyti mano sąrašą",
+    "submitting": "Dėliojame jūsų dieną…",
+    "resumeDraft": "Išsaugojome ankstesnius jūsų atsakymus.",
+    "startOver": "Pradėti iš naujo"
+  },
+  "result": {
+    "title": "Jūsų diena",
+    "dateLabel": "Susidėliota {date}",
+    "today": {
+      "label": "Šiandien",
+      "intro": "Tik šie. Jei juos padarysite, diena pavyko."
+    },
+    "thisWeek": {
+      "label": "Šią savaitę",
+      "intro": "Svarbu, bet šiandien spręsti nereikia."
+    },
+    "letGo": {
+      "label": "Paleiskite",
+      "intro": "Ne šiandien. Tikrai."
+    },
+    "savedLocally": "Išsaugota šiame įrenginyje. Vėliau susikūrę paskyrą, išsaugosite istoriją visuose įrenginiuose.",
+    "newReset": "Susidėlioti dieną iš naujo",
+    "backHome": "Į pradžią",
+    "notFound": {
+      "title": "Nepavyko rasti šio sąrašo",
+      "body": "Jis galėjo būti sukurtas kitame įrenginyje arba ištrintas iš šios naršyklės.",
+      "cta": "Susidėlioti dieną iš naujo"
+    },
+    "disclaimer": "Parent Reset yra praktiškas planavimo įrankis, o ne medicininis ar terapinis patarimas."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Ši diena atrodo įveikiama. Tegul tokia ir lieka – su trumpu sąrašu.",
+      "busy": "Šiandien nemažai dalykų varžosi dėl jūsų dėmesio. Štai ką pasilikti, kas gali palaukti ir ką palikti ramybėje.",
+      "heavy": "Šiandien labai daug kas varžosi dėl jūsų dėmesio. Šiandienos sąrašas tyčia trumpas."
+    },
+    "time": {
+      "under30": "Turite mažiau nei 30 minučių, kurios tikrai jūsų, todėl šiandienos sąrašas labai trumpas.",
+      "30to60": "Turint nuo pusvalandžio iki valandos, trys dalykai – reali riba.",
+      "1to2h": "Turite vieną–dvi valandas – užtenka keliems dalykams padaryti gerai.",
+      "over2h": "Šiandien turite tikrai laiko. Skirkite jį tam, kas svarbu, o ne viskam."
+    },
+    "today": {
+      "moneyCheck": "Patikrinkite, kurį mokėjimą iš tiesų reikia sumokėti pirmiausia. Sutvarkykite tik jį.",
+      "pickOne": "Išsirinkite vieną dalyką, po kurio diena atrodytų sutvarkyta, ir padarykite tik jį.",
+      "breather": "Skirkite dešimt minučių be jokių planų. Tai irgi užduotis."
+    },
+    "week": {
+      "area": {
+        "kids": "Šią savaitę sutvarkykite vieną su vaikais susijusį dalyką, ne visus.",
+        "money": "Vieną kartą peržvelkite viso mėnesio pinigų vaizdą ir tuo apsiribokite.",
+        "work": "Pasirinkite vieną darbo reikalą, kuris labiausiai sumažintų spaudimą.",
+        "home": "Vienas namų darbas, po kurio erdvė atrodytų ramesnė.",
+        "relationship": "Šią savaitę raskite akimirką pasikalbėti, kai nė vienas nesate išsekę.",
+        "health": "Vienas mažas dalykas jūsų energijai: miegas, maistas, pasivaikščiojimas.",
+        "other": "Tas kitas dalykas galvoje gauna vietą šią savaitę, ne šiandien."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Namai šiandien neturi būti tvarkingi.",
+      "moneyWhole": "Nereikia šiandien išspręsti visos pinigų situacijos. Užtenka vieno žingsnio.",
+      "relationshipTalk": "Rimti pokalbiai gali palaukti dienos, kai bus daugiau jėgų.",
+      "kidsExtra": "Papildomi būreliai, tobuli patiekalai ir kaltė dėl ekranų.",
+      "workExtra": "Viskas darbe, ką būtų gražu padaryti, bet nėra iš tikrųjų būtina.",
+      "healthAllOrNothing": "Planas „viskas arba nieko“. Maži žingsniai irgi skaičiuojasi.",
+      "everythingElse": "Viskas, ko nėra šiandienos sąraše. Rytoj tai niekur nedings.",
+      "onMind": "Dalis to, kas sukasi galvoje, gali palaukti, kol viskas aprims."
+    },
+    "notes": {
+      "movedForTime": "Perkelta čia, nes šiandien turite mažai laiko.",
+      "movedForFocus": "Perkelta čia, kad šiandien liktų trys dalykai.",
+      "fromYou": "Iš to, kas dar sukasi galvoje"
+    }
+  },
+  "safety": {
+    "title": "Pirmiausia",
+    "body": "Dalis to, ką parašėte, skamba kaip daugiau nei tiesiog įtempta diena. Parent Reset čia padėti negali, bet žmonės gali.",
+    "emergency": "Jei jums ar kam nors kitam gresia tiesioginis pavojus, kreipkitės į vietos pagalbos tarnybas.",
+    "trustedPerson": "Kreipkitės į žmogų, kuriuo pasitikite, ir pasakykite, kokia iš tiesų ši diena.",
+    "support": "Daugumoje šalių veikia nemokamos ir konfidencialios pagalbos linijos. Suraskite ją savo šalyje arba paklauskite gydytojo.",
+    "continue": "Pereiti prie sąrašo"
+  },
+  "footer": {
+    "tagline": "Paprastas būdas susidėlioti dieną tėvams, kurių galvoje per daug visko.",
+    "notMedical": "Parent Reset nėra medicinos ar terapijos paslauga.",
+    "madeWithCare": "Sukurta su rūpesčiu užimtiems tėvams.",
+    "language": "Kalba"
+  },
+  "notFound": {
+    "title": "Tokio puslapio nėra",
+    "body": "Nuoroda gali būti pasenusi arba su klaida.",
+    "cta": "Į pradžią"
+  }
+}

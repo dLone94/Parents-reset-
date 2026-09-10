@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Legyen könnyebb a mai nap",
+      "description": "Egyszerű újraindítás szülőknek, akiknek túl sok minden jár a fejében. Rendezd, mi számít ma, mi várhat, és mit engedhetsz el."
+    },
+    "reset": {
+      "title": "Kezdem az újraindítást – Parent Reset",
+      "description": "Kétperces átgondolás, ami a zsúfolt fejből rövid mai listát csinál."
+    },
+    "result": {
+      "title": "Az újraindításod – Parent Reset",
+      "description": "A rövid mai listád, ami várhat a hétre, és amit elengedhetsz."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Ugrás a tartalomra",
+    "back": "Vissza",
+    "continue": "Tovább",
+    "close": "Bezárás",
+    "openMenu": "Menü megnyitása",
+    "closeMenu": "Menü bezárása",
+    "language": "Nyelv",
+    "optional": "Nem kötelező",
+    "loading": "Egy pillanat…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Kezdőlap",
+    "startReset": "Kezdem az újraindítást",
+    "howItWorks": "Hogyan működik",
+    "menuTitle": "Menü"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Szülőknek, akiknek túl sok jár a fejében",
+      "title": "Az élet sok. Tegyük könnyebbé a mai napot.",
+      "subtitle": "Egyszerű újraindítás szülőknek, akiknek túl sok minden jár a fejében.",
+      "primaryCta": "Kezdem az újraindítást",
+      "secondaryCta": "Nézd meg, hogyan működik",
+      "trust": "Nem kell fiók. Körülbelül két perc. Semmit nem osztunk meg."
+    },
+    "steps": {
+      "title": "Hogyan működik",
+      "subtitle": "Három rövid lépés. Nincs mit beállítani, nincs szokás, amit ki kellene alakítani.",
+      "one": {
+        "title": "Mondd el, mi nyomaszt",
+        "body": "Mennyire zsúfolt a mai nap, mi foglalja a legtöbb helyet, és mennyi időd van valójában."
+      },
+      "two": {
+        "title": "Rendezd, mi számít",
+        "body": "Szétválogatjuk: minek kell ma megtörténnie, mi várhat, és mi várhat még sokáig."
+      },
+      "three": {
+        "title": "Legyen kisebb a mai nap",
+        "body": "Egy rövid listával távozol, amit tényleg be tudsz fejezni. Ez az egész lényege."
+      }
+    },
+    "buckets": {
+      "title": "Ezt kapod",
+      "subtitle": "Egy oldal. Három lista. Semmi műszerfal.",
+      "today": {
+        "label": "Ma",
+        "body": "Legfeljebb három dolog, ami ma tényleg számít. Nem minden, csak épp elég."
+      },
+      "thisWeek": {
+        "label": "Ezen a héten",
+        "body": "Dolgok, amik számítanak, de nem kell lefekvés előtt megoldani őket."
+      },
+      "letGo": {
+        "label": "Engedd el",
+        "body": "Engedély arra, hogy a többit egyelőre békén hagyd. Holnap is ott lesz."
+      }
+    },
+    "reassurance": {
+      "title": "Gyakorlatias, nem klinikai",
+      "items": {
+        "notTherapy": "Ez nem terápia és nem orvosi tanács. Egy módszer, hogy rendet tegyél egy zsúfolt napban.",
+        "private": "A válaszaid az eszközödön maradnak, hacsak nem hozol létre fiókot, és nem döntesz úgy, hogy elmented őket.",
+        "languages": "A saját nyelveden, a telefonodon, egy kézzel is."
+      }
+    },
+    "finalCta": {
+      "title": "Amikor készen állsz.",
+      "body": "Két perc most könnyebbé teheti a nap hátralévő részét.",
+      "cta": "Kezdem az újraindítást"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "{current}. lépés / {total}",
+    "hint": {
+      "oneHand": "Válaszolj őszintén. Nincsenek rossz válaszok, és semmit nem pontozunk."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Mennyire érzed magad túlterheltnek ma?",
+        "help": "Az 1 nyugodt, a 10 teljesen tele.",
+        "low": "Nyugodt",
+        "high": "Teljesen tele",
+        "selected": "Választásod: {value} a 10-ből"
+      },
+      "areas": {
+        "title": "Mi foglalja a legtöbb helyet a fejedben?",
+        "help": "Jelöld be mindet, ami igaz.",
+        "options": {
+          "kids": "Gyerekek",
+          "money": "Pénz",
+          "work": "Munka",
+          "home": "Otthon",
+          "relationship": "Párkapcsolat",
+          "health": "Egészség / energia",
+          "other": "Valami más"
+        }
+      },
+      "time": {
+        "title": "Mennyi használható időd van ma reálisan?",
+        "help": "Az az idő, ami tényleg a tiéd, nem az, aminek lennie kellene.",
+        "options": {
+          "under30": "Kevesebb mint 30 perc",
+          "30to60": "30–60 perc",
+          "1to2h": "1–2 óra",
+          "over2h": "Több mint 2 óra"
+        }
+      },
+      "money": {
+        "title": "A pénzügyi nyomás is része a mai stressznek?",
+        "help": "Ez csak azt befolyásolja, hogyan rendezzük a listádat.",
+        "yes": "Igen",
+        "no": "Nem"
+      },
+      "must": {
+        "title": "Minek kell ma mindenképpen megtörténnie?",
+        "help": "Soronként egy dolog a legegyszerűbb. Csak az kerüljön ide, ami tényleg nem várhat.",
+        "placeholder": "Befizetni a villanyszámlát\nElhozni a gyerekeket 4-kor\nFelhívni a fogorvost"
+      },
+      "onMind": {
+        "title": "Mi más jár még a fejedben?",
+        "help": "Bármi. Üresen is hagyhatod.",
+        "placeholder": "Úgy érzem, mindennel le vagyok maradva a munkában. A szülinapot még mindig nem intéztem el."
+      }
+    },
+    "errors": {
+      "required": "Kérlek, adj meg legalább egy dolgot.",
+      "tooLong": "Ez egy kicsit túl hosszú. Kérlek, rövidítsd {max} karakterre.",
+      "areasRequired": "Kérlek, válassz legalább egyet.",
+      "generic": "Valami hiba történt. Kérlek, próbáld újra.",
+      "rateLimited": "Túl sok újraindítás rövid idő alatt. Kérlek, várj egy percet, és próbáld újra."
+    },
+    "submit": "Mutasd az újraindításom",
+    "submitting": "Rendezzük a napodat…",
+    "resumeDraft": "Megőriztük a korábbi válaszaidat.",
+    "startOver": "Kezdd elölről"
+  },
+  "result": {
+    "title": "Az újraindításod",
+    "dateLabel": "Újraindítás: {date}",
+    "today": {
+      "label": "Ma",
+      "intro": "Csak ezek. Ha ezekkel megvagy, a nap számított."
+    },
+    "thisWeek": {
+      "label": "Ezen a héten",
+      "intro": "Számít, de nem kell ma megoldani."
+    },
+    "letGo": {
+      "label": "Engedd el",
+      "intro": "Ma nem. Tényleg."
+    },
+    "savedLocally": "Elmentve ezen az eszközön. Később fiókot hozhatsz létre, hogy az előzményeid több eszközön is megmaradjanak.",
+    "newReset": "Új újraindítás",
+    "backHome": "Vissza a kezdőlapra",
+    "notFound": {
+      "title": "Nem találjuk ezt az újraindítást",
+      "body": "Lehet, hogy másik eszközön készült, vagy törölték ebből a böngészőből.",
+      "cta": "Új újraindítás"
+    },
+    "disclaimer": "A Parent Reset gyakorlati tervezőeszköz, nem orvosi vagy terápiás tanács."
+  },
+  "planner": {
+    "summary": {
+      "calm": "A mai nap kezelhetőnek tűnik. Tartsuk is így egy rövid listával.",
+      "busy": "Ma elég sok minden verseng a figyelmedért. Íme, mit tarts meg, mi várhat, és mit hagyj békén.",
+      "heavy": "Ma nagyon sok minden verseng a figyelmedért. A mai lista szándékosan rövid."
+    },
+    "time": {
+      "under30": "Kevesebb mint 30 perced van, ami tényleg a tiéd, ezért a mai lista nagyon rövid.",
+      "30to60": "Fél órától egy óráig terjedő idővel három dolog a reális felső határ.",
+      "1to2h": "Egy-két órád van, ami elég néhány dolgot jól megcsinálni.",
+      "over2h": "Ma van valódi időd. Használd arra, ami számít, ne mindenre."
+    },
+    "today": {
+      "moneyCheck": "Nézd meg, melyik befizetés esedékes tényleg először. Csak azzal foglalkozz.",
+      "pickOne": "Válaszd ki azt az egy dolgot, amitől a mai nap rendben lenne, és csak azt csináld meg.",
+      "breather": "Tarts tíz percet, amikor semmit nem tervezel. Ez is feladatnak számít."
+    },
+    "week": {
+      "area": {
+        "kids": "Válassz egy gyerekekkel kapcsolatos dolgot, amit ezen a héten elintézel, ne mindet.",
+        "money": "Nézd át egyszer az egész hónap pénzügyi képét, aztán hagyd abba.",
+        "work": "Válaszd ki azt az egy munkás dolgot, ami a legtöbb nyomást venné le rólad.",
+        "home": "Egy házimunka, amitől nyugodtabbnak érződne a tér.",
+        "relationship": "Találj egy pillanatot ezen a héten a beszélgetésre, amikor egyikőtök sem kimerült.",
+        "health": "Egy apró dolog a saját energiádért: alvás, étel, egy séta.",
+        "other": "A másik dolog, ami a fejedben jár, ezen a héten kap helyet, nem ma."
+      }
+    },
+    "letGo": {
+      "homePerfect": "A lakásnak nem kell ma rendben lennie.",
+      "moneyWhole": "Nem kell ma megoldanod az egész pénzügyi helyzetet. Egy lépés elég.",
+      "relationshipTalk": "A nagy beszélgetések várhatnak egy olyan napra, amikor több az energia.",
+      "kidsExtra": "Plusz programok, tökéletes ételek és a képernyőidő miatti bűntudat.",
+      "workExtra": "Bármi a munkában, amit jó lenne megcsinálni, de nem tényleg esedékes.",
+      "healthAllOrNothing": "A mindent vagy semmit terv. A kicsi is számít.",
+      "everythingElse": "Minden, ami nincs a mai listán. Holnap is ott lesz.",
+      "onMind": "Abból, ami a fejedben jár, egy rész pihenhet, amíg a dolgok lenyugszanak."
+    },
+    "notes": {
+      "movedForTime": "Ide került, mert a mai használható idő rövid.",
+      "movedForFocus": "Ide került, hogy a mai nap három dolognál maradjon.",
+      "fromYou": "Abból, ami még a fejedben jár"
+    }
+  },
+  "safety": {
+    "title": "Mindenekelőtt",
+    "body": "Abból, amit írtál, valami többnek hangzik egy zsúfolt napnál. A Parent Reset ebben nem tud segíteni, de emberek igen.",
+    "emergency": "Ha te vagy valaki más közvetlen veszélyben van, hívd a helyi segélyhívó számot.",
+    "trustedPerson": "Keress valakit, akiben megbízol, és mondd el neki, milyen ma valójában.",
+    "support": "A legtöbb országban működnek ingyenes és bizalmas krízisvonalak. Keress egyet a saját országodban, vagy kérdezd meg az orvosodat.",
+    "continue": "Tovább a listádhoz"
+  },
+  "footer": {
+    "tagline": "Egyszerű újraindítás szülőknek, akiknek túl sok minden jár a fejében.",
+    "notMedical": "A Parent Reset nem orvosi vagy terápiás szolgáltatás.",
+    "madeWithCare": "Gondoskodással, elfoglalt szülőknek.",
+    "language": "Nyelv"
+  },
+  "notFound": {
+    "title": "Ez az oldal nem létezik",
+    "body": "A link lehet, hogy régi vagy elgépelt.",
+    "cta": "Ugrás a kezdőlapra"
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – 让今天轻松一点",
+      "description": "为脑子里装了太多事的父母准备的简单整理。分清今天要紧的、可以等的，以及可以放下的。"
+    },
+    "reset": {
+      "title": "开始我的整理 – Parent Reset",
+      "description": "两分钟的小整理，把满脑子的事变成今天的一张短清单。"
+    },
+    "result": {
+      "title": "你的整理 – Parent Reset",
+      "description": "你今天的短清单，可以等到本周再说的事，以及可以放下的事。"
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "跳到正文",
+    "back": "返回",
+    "continue": "继续",
+    "close": "关闭",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "language": "语言",
+    "optional": "选填",
+    "loading": "请稍候…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "首页",
+    "startReset": "开始我的整理",
+    "howItWorks": "使用方法",
+    "menuTitle": "菜单"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "写给脑子里装了太多事的父母",
+      "title": "生活不容易。让今天轻松一点。",
+      "subtitle": "为脑子里装了太多事的父母准备的简单整理。",
+      "primaryCta": "开始我的整理",
+      "secondaryCta": "看看怎么用",
+      "trust": "无需注册。大约两分钟。不会分享任何内容。"
+    },
+    "steps": {
+      "title": "使用方法",
+      "subtitle": "三个小步骤。不用装应用，也不用养成习惯。",
+      "one": {
+        "title": "说说是什么压着你",
+        "body": "今天感觉有多满，什么最占心思，以及你真正有多少时间。"
+      },
+      "two": {
+        "title": "分清轻重",
+        "body": "我们把它分成三类：今天必须做的、可以等的，以及可以再等等的。"
+      },
+      "three": {
+        "title": "让今天小一点",
+        "body": "你会带走一张真的能做完的短清单。这就是全部意义。"
+      }
+    },
+    "buckets": {
+      "title": "你会得到什么",
+      "subtitle": "一个页面。三张清单。没有仪表盘。",
+      "today": {
+        "label": "今天",
+        "body": "最多三件今天真正要紧的事。不是全部，刚好够用。"
+      },
+      "thisWeek": {
+        "label": "本周",
+        "body": "重要，但不必在睡前解决的事。"
+      },
+      "letGo": {
+        "label": "放下",
+        "body": "允许你暂时把其余的事放一放。明天它们还会在。"
+      }
+    },
+    "reassurance": {
+      "title": "实用，不谈病理",
+      "items": {
+        "notTherapy": "这不是心理治疗，也不是医疗建议。它只是帮你理清忙碌一天的方法。",
+        "private": "除非你注册账号并选择保存，否则你的回答只留在你的设备上。",
+        "languages": "支持你的语言，在手机上单手就能用。"
+      }
+    },
+    "finalCta": {
+      "title": "你准备好了就开始。",
+      "body": "现在花两分钟，能让剩下的一天轻松一些。",
+      "cta": "开始我的整理"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "第 {current} 步，共 {total} 步",
+    "hint": {
+      "oneHand": "如实回答就好。没有错误答案，也不会打分。"
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "今天你感觉有多不堪重负？",
+        "help": "1 是平静，10 是完全撑不住。",
+        "low": "平静",
+        "high": "撑不住",
+        "selected": "你选了 {value}，满分 10"
+      },
+      "areas": {
+        "title": "什么最占你的心思？",
+        "help": "选出所有符合的。",
+        "options": {
+          "kids": "孩子",
+          "money": "钱",
+          "work": "工作",
+          "home": "家务",
+          "relationship": "伴侣关系",
+          "health": "健康 / 精力",
+          "other": "其他"
+        }
+      },
+      "time": {
+        "title": "今天你实际能用的时间有多少？",
+        "help": "真正属于你的时间，而不是你本该有的时间。",
+        "options": {
+          "under30": "不到 30 分钟",
+          "30to60": "30–60 分钟",
+          "1to2h": "1–2 小时",
+          "over2h": "超过 2 小时"
+        }
+      },
+      "money": {
+        "title": "钱的压力是今天压力的一部分吗？",
+        "help": "这只会影响我们怎么给清单排序。",
+        "yes": "是",
+        "no": "否"
+      },
+      "must": {
+        "title": "今天有什么绝对必须做的？",
+        "help": "一行写一件最方便。只写真的不能等的事。",
+        "placeholder": "交电费\n4 点接孩子\n给牙医打电话"
+      },
+      "onMind": {
+        "title": "还有什么在你心里？",
+        "help": "什么都可以。也可以留空。",
+        "placeholder": "感觉工作上什么都落后了。生日的事还没安排好。"
+      }
+    },
+    "errors": {
+      "required": "请至少写一件事。",
+      "tooLong": "有点太长了。请缩短到 {max} 个字符以内。",
+      "areasRequired": "请至少选一项。",
+      "generic": "出了点问题。请再试一次。",
+      "rateLimited": "短时间内整理次数太多。请等一分钟再试。"
+    },
+    "submit": "看我的整理结果",
+    "submitting": "正在整理你的一天…",
+    "resumeDraft": "我们保留了你之前的回答。",
+    "startOver": "重新开始"
+  },
+  "result": {
+    "title": "你的整理",
+    "dateLabel": "{date} 的整理",
+    "today": {
+      "label": "今天",
+      "intro": "只做这些。做完了，今天就算数。"
+    },
+    "thisWeek": {
+      "label": "本周",
+      "intro": "重要，但今天不用解决。"
+    },
+    "letGo": {
+      "label": "放下",
+      "intro": "今天不管。真的。"
+    },
+    "savedLocally": "已保存在此设备上。以后可以注册账号，在不同设备间保留记录。",
+    "newReset": "重新整理一次",
+    "backHome": "回到首页",
+    "notFound": {
+      "title": "找不到这次整理",
+      "body": "它可能是在其他设备上创建的，或已从此浏览器中清除。",
+      "cta": "重新整理一次"
+    },
+    "disclaimer": "Parent Reset 是一个实用的规划工具，不是医疗或心理治疗建议。"
+  },
+  "planner": {
+    "summary": {
+      "calm": "今天看起来应付得来。用一张短清单保持这样。",
+      "busy": "今天有不少事在争夺你的注意力。这是要留下的、可以等的，以及可以放一放的。",
+      "heavy": "今天有很多事在争夺你的注意力。今天的清单特意做得很小。"
+    },
+    "time": {
+      "under30": "真正属于你的时间不到 30 分钟，所以今天的清单非常短。",
+      "30to60": "有半小时到一小时，三件事是现实的上限。",
+      "1to2h": "你有一到两小时，足够把几件事做好。",
+      "over2h": "今天你有一些真正的时间。用在要紧的事上，而不是所有事上。"
+    },
+    "today": {
+      "moneyCheck": "看看哪笔款项真的最先到期。只处理那一笔。",
+      "pickOne": "挑一件做完就会觉得今天有交代的事，只做那一件。",
+      "breather": "留十分钟什么都不安排。这也算一项任务。"
+    },
+    "week": {
+      "area": {
+        "kids": "本周挑一件和孩子有关的事来处理，不是全部。",
+        "money": "把整个月的钱看一遍，然后就停。",
+        "work": "选一件最能减轻压力的工作上的事。",
+        "home": "一件能让家里感觉更平静的家务。",
+        "relationship": "本周找一个你们俩都不累的时候聊聊。",
+        "health": "为自己的精力做一件小事：睡觉、吃饭、散步。",
+        "other": "你心里那件别的事，本周安排时间，今天不管。"
+      }
+    },
+    "letGo": {
+      "homePerfect": "今天家里不必整洁。",
+      "moneyWhole": "今天不必解决全部的钱的问题。走一步就够了。",
+      "relationshipTalk": "重要的谈话可以等精力更好的一天。",
+      "kidsExtra": "额外的活动、完美的饭菜，以及对屏幕时间的愧疚。",
+      "workExtra": "工作上锦上添花而非真正到期的事。",
+      "healthAllOrNothing": "全有或全无的计划。小步也算数。",
+      "everythingElse": "不在今天清单上的一切。明天它们还会在。",
+      "onMind": "你心里的一些事可以先歇着，等一切平静下来再说。"
+    },
+    "notes": {
+      "movedForTime": "移到这里，因为今天能用的时间很短。",
+      "movedForFocus": "移到这里，让今天只留三件事。",
+      "fromYou": "来自你心里的其他事"
+    }
+  },
+  "safety": {
+    "title": "先说最要紧的",
+    "body": "你写的一些内容听起来不只是忙碌的一天。Parent Reset 帮不了这个，但有人可以。",
+    "emergency": "如果你或他人正处于紧急危险中，请联系当地的紧急服务。",
+    "trustedPerson": "联系一个你信任的人，告诉他们今天真实的情况。",
+    "support": "大多数国家都有免费且保密的危机支持热线。搜索你所在国家的热线，或询问你的医生。",
+    "continue": "继续查看你的清单"
+  },
+  "footer": {
+    "tagline": "为脑子里装了太多事的父母准备的简单整理。",
+    "notMedical": "Parent Reset 不是医疗或心理治疗服务。",
+    "madeWithCare": "用心为忙碌的父母而做。",
+    "language": "语言"
+  },
+  "notFound": {
+    "title": "这个页面不存在",
+    "body": "链接可能已过期或输入有误。",
+    "cta": "回到开始"
+  }
+}

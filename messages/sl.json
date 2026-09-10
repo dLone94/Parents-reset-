@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Naj bo današnji dan lažji",
+      "description": "Preprost reset za starše, ki imajo v glavi preveč. Razvrsti, kaj je danes pomembno, kaj lahko počaka in kaj lahko spustiš."
+    },
+    "reset": {
+      "title": "Začni moj reset – Parent Reset",
+      "description": "Dvominutni premislek, ki polno glavo spremeni v kratek seznam za danes."
+    },
+    "result": {
+      "title": "Tvoj reset – Parent Reset",
+      "description": "Tvoj kratek seznam za danes, kaj lahko počaka do konca tedna in kaj lahko spustiš."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Preskoči na vsebino",
+    "back": "Nazaj",
+    "continue": "Naprej",
+    "close": "Zapri",
+    "openMenu": "Odpri meni",
+    "closeMenu": "Zapri meni",
+    "language": "Jezik",
+    "optional": "Neobvezno",
+    "loading": "Trenutek…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Domov",
+    "startReset": "Začni moj reset",
+    "howItWorks": "Kako deluje",
+    "menuTitle": "Meni"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Za starše, ki imajo v glavi preveč",
+      "title": "Življenje je veliko. Naredimo današnji dan lažji.",
+      "subtitle": "Preprost reset za starše, ki imajo v glavi preveč.",
+      "primaryCta": "Začni moj reset",
+      "secondaryCta": "Poglej, kako deluje",
+      "trust": "Brez računa. Približno dve minuti. Nič se ne deli."
+    },
+    "steps": {
+      "title": "Kako deluje",
+      "subtitle": "Trije kratki koraki. Brez nastavljanja aplikacij, brez gradnje navad.",
+      "one": {
+        "title": "Povej nam, kaj te teži",
+        "body": "Kako poln se ti zdi današnji dan, kaj zavzema največ prostora in koliko časa zares imaš."
+      },
+      "two": {
+        "title": "Razvrsti, kar je pomembno",
+        "body": "Razdelimo na tisto, kar se mora zgoditi danes, kar lahko počaka in kar lahko počaka še precej dlje."
+      },
+      "three": {
+        "title": "Naredi današnji dan manjši",
+        "body": "Odideš s kratkim seznamom, ki ga zares lahko dokončaš. To je bistvo."
+      }
+    },
+    "buckets": {
+      "title": "Kaj dobiš",
+      "subtitle": "Ena stran. Trije seznami. Brez nadzornih plošč.",
+      "today": {
+        "label": "Danes",
+        "body": "Največ tri stvari, ki so danes zares pomembne. Ne vse, le dovolj."
+      },
+      "thisWeek": {
+        "label": "Ta teden",
+        "body": "Stvari, ki štejejo, a jih ni treba rešiti pred spanjem."
+      },
+      "letGo": {
+        "label": "Spusti",
+        "body": "Dovoljenje, da ostalo za zdaj pustiš pri miru. Jutri bo še vedno tu."
+      }
+    },
+    "reassurance": {
+      "title": "Praktično, ne klinično",
+      "items": {
+        "notTherapy": "To ni terapija ali zdravniški nasvet. Je način, kako urediti naporen dan.",
+        "private": "Tvoji odgovori ostanejo na tvoji napravi, razen če ustvariš račun in jih shraniš.",
+        "languages": "Na voljo v tvojem jeziku, na telefonu, z eno roko."
+      }
+    },
+    "finalCta": {
+      "title": "Začni, ko ti ustreza.",
+      "body": "Dve minuti zdaj lahko preostanek dneva naredita lažji.",
+      "cta": "Začni moj reset"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Korak {current} od {total}",
+    "hint": {
+      "oneHand": "Odgovarjaj iskreno. Napačnih odgovorov ni in nič se ne ocenjuje."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Kako preobremenjeno se počutiš danes?",
+        "help": "1 je mirno, 10 je čisto na koncu z močmi.",
+        "low": "Mirno",
+        "high": "Na koncu z močmi",
+        "selected": "Tvoja izbira: {value} od 10"
+      },
+      "areas": {
+        "title": "Kaj ti zavzema največ prostora v glavi?",
+        "help": "Izberi vse, kar velja.",
+        "options": {
+          "kids": "Otroci",
+          "money": "Denar",
+          "work": "Služba",
+          "home": "Dom",
+          "relationship": "Partnerski odnos",
+          "health": "Zdravje / energija",
+          "other": "Nekaj drugega"
+        }
+      },
+      "time": {
+        "title": "Koliko uporabnega časa danes realno imaš?",
+        "help": "Čas, ki je zares tvoj, ne čas, ki naj bi ti ostal.",
+        "options": {
+          "under30": "Manj kot 30 minut",
+          "30to60": "30–60 minut",
+          "1to2h": "1–2 uri",
+          "over2h": "Več kot 2 uri"
+        }
+      },
+      "money": {
+        "title": "Je del današnjega stresa tudi denarna stiska?",
+        "help": "To vpliva le na to, kako razvrstimo tvoj seznam.",
+        "yes": "Da",
+        "no": "Ne"
+      },
+      "must": {
+        "title": "Kaj se danes nujno mora zgoditi?",
+        "help": "Najlažje je ena stvar na vrstico. Obdrži le tisto, kar zares ne more počakati.",
+        "placeholder": "Plačati račun za elektriko\nPobrati otroke ob 4h\nPoklicati zobozdravnika"
+      },
+      "onMind": {
+        "title": "Kaj še imaš v mislih?",
+        "help": "Karkoli. Lahko pustiš prazno.",
+        "placeholder": "Občutek, da v službi zaostajam z vsem. Rojstni dan še vedno ni urejen."
+      }
+    },
+    "errors": {
+      "required": "Dodaj vsaj eno stvar.",
+      "tooLong": "To je malo predolgo. Skrajšaj na {max} znakov.",
+      "areasRequired": "Izberi vsaj eno možnost.",
+      "generic": "Nekaj je šlo narobe. Poskusi znova.",
+      "rateLimited": "Preveč resetov v kratkem času. Počakaj minuto in poskusi znova."
+    },
+    "submit": "Pokaži moj reset",
+    "submitting": "Urejamo tvoj dan…",
+    "resumeDraft": "Tvoje prejšnje odgovore smo shranili.",
+    "startOver": "Začni znova"
+  },
+  "result": {
+    "title": "Tvoj reset",
+    "dateLabel": "Reset z dne {date}",
+    "today": {
+      "label": "Danes",
+      "intro": "Samo to. Če dokončaš, je dan štel."
+    },
+    "thisWeek": {
+      "label": "Ta teden",
+      "intro": "Pomembno, a ni treba rešiti danes."
+    },
+    "letGo": {
+      "label": "Spusti",
+      "intro": "Ne danes. Zares."
+    },
+    "savedLocally": "Shranjeno na tej napravi. Račun lahko ustvariš pozneje, da zgodovino ohraniš na vseh napravah.",
+    "newReset": "Začni nov reset",
+    "backHome": "Nazaj na začetek",
+    "notFound": {
+      "title": "Tega reseta nismo našli",
+      "body": "Morda je bil ustvarjen na drugi napravi ali izbrisan iz tega brskalnika.",
+      "cta": "Začni nov reset"
+    },
+    "disclaimer": "Parent Reset je praktično orodje za načrtovanje, ne zdravniški ali terapevtski nasvet."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Današnji dan se zdi obvladljiv. Naj tako tudi ostane – s kratkim seznamom.",
+      "busy": "Danes se za tvojo pozornost poteguje kar nekaj stvari. Tu je, kaj obdržati, kaj lahko počaka in kaj pustiti pri miru.",
+      "heavy": "Danes se za tvojo pozornost poteguje zelo veliko stvari. Današnji seznam je namenoma kratek."
+    },
+    "time": {
+      "under30": "Zares svojega časa imaš manj kot 30 minut, zato je današnji seznam zelo kratek.",
+      "30to60": "S pol ure do ene ure so tri stvari realna zgornja meja.",
+      "1to2h": "Imaš eno do dve uri – dovolj za nekaj stvari, narejenih dobro.",
+      "over2h": "Danes imaš nekaj pravega časa. Uporabi ga za tisto, kar je pomembno, ne za vse."
+    },
+    "today": {
+      "moneyCheck": "Preveri, katero plačilo zares zapade prvo. Uredi samo tisto.",
+      "pickOne": "Izberi tisto eno stvar, po kateri bi bil današnji dan videti urejen, in naredi samo to.",
+      "breather": "Vzemi si deset minut brez načrta. Šteje kot opravilo."
+    },
+    "week": {
+      "area": {
+        "kids": "Ena stvar v zvezi z otroki, ki jo ta teden urediš – ne vse.",
+        "money": "Enkrat poglej celotno mesečno finančno sliko, potem pa nehaj.",
+        "work": "Izberi tisto eno službeno stvar, ki bi najbolj zmanjšala pritisk.",
+        "home": "Eno gospodinjsko opravilo, po katerem bo dom videti mirnejši.",
+        "relationship": "Ta teden poiščita trenutek za pogovor, ko nista oba izčrpana.",
+        "health": "Ena majhna stvar za lastno energijo: spanje, hrana, sprehod.",
+        "other": "Tista druga stvar v tvojih mislih dobi mesto ta teden, ne danes."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Danes ni treba, da je dom pospravljen.",
+      "moneyWhole": "Danes ti ni treba rešiti celotne finančne situacije. En korak je dovolj.",
+      "relationshipTalk": "Veliki pogovori lahko počakajo na dan z več energije.",
+      "kidsExtra": "Dodatne dejavnosti, popolni obroki in slaba vest zaradi zaslonov.",
+      "healthAllOrNothing": "Načrt vse ali nič. Tudi malo šteje.",
+      "workExtra": "Vse v službi, kar bi bilo lepo narediti, a ni zares nujno.",
+      "everythingElse": "Vse, česar ni na današnjem seznamu. Jutri bo še vedno tu.",
+      "onMind": "Nekaj od tega, kar imaš v mislih, lahko počiva, dokler se stvari ne umirijo."
+    },
+    "notes": {
+      "movedForTime": "Premaknjeno sem, ker je danes uporabnega časa malo.",
+      "movedForFocus": "Premaknjeno sem, da današnji dan ostane pri treh stvareh.",
+      "fromYou": "Iz tega, kar še imaš v mislih"
+    }
+  },
+  "safety": {
+    "title": "Najprej najpomembnejše",
+    "body": "Nekaj od zapisanega zveni kot več kot le naporen dan. Parent Reset pri tem ne more pomagati, ljudje pa lahko.",
+    "emergency": "Če si ti ali kdo drug v neposredni nevarnosti, pokliči lokalno številko za nujne primere.",
+    "trustedPerson": "Obrni se na nekoga, ki mu zaupaš, in mu povej, kakšen je današnji dan zares.",
+    "support": "V večini držav obstajajo brezplačne in zaupne telefonske linije za pomoč v stiski. Poišči tisto v svoji državi ali vprašaj svojega zdravnika.",
+    "continue": "Nadaljuj na svoj seznam"
+  },
+  "footer": {
+    "tagline": "Preprost reset za starše, ki imajo v glavi preveč.",
+    "notMedical": "Parent Reset ni zdravstvena ali terapevtska storitev.",
+    "madeWithCare": "Narejeno s skrbjo za zaposlene starše.",
+    "language": "Jezik"
+  },
+  "notFound": {
+    "title": "Ta stran ne obstaja",
+    "body": "Povezava je morda stara ali napačno vnesena.",
+    "cta": "Pojdi na začetek"
+  }
+}
