@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 import { locales } from "@/i18n/locales";
 
+/**
+ * Public site URL for canonical links, hreflang and the sitemap.
+ * Order: explicit NEXT_PUBLIC_SITE_URL, then the address Vercel assigns to
+ * the deployment (production domain first, then the preview URL), then
+ * localhost for development.
+ */
 export function getSiteUrl(): string {
-  return process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "http://localhost:3000";
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (explicit) return explicit.replace(/\/$/, "");
+  const vercel =
+    process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim() || process.env.VERCEL_URL?.trim();
+  if (vercel) return `https://${vercel.replace(/^https?:\/\//, "").replace(/\/$/, "")}`;
+  return "http://localhost:3000";
 }
 
 /**
