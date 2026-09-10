@@ -25,8 +25,17 @@ Done in this milestone:
 - Tests for the planner, validation, persistence, locale handling, formatting
   and the guest reset flow
 
-Not yet built (waiting for approval): Family Load, Community, accounts and
-history.
+## Status: Milestone 2A (Family Load)
+
+- `/load` page: six areas (Kids, Money, Home, Work, Relationship, Me), each
+  with a load level derived from its open items
+- Add an item, mark it done, push it to tomorrow ("Later"), bring it back,
+  move it to another area, clear done items
+- Guest persistence on the device via `LoadRepository`; a Supabase
+  implementation is ready for accounts
+- Fully translated in all 26 locales (machine-generated, unreviewed)
+
+Not yet built (waiting for approval): Community, accounts and history.
 
 ## Run it
 
@@ -64,12 +73,18 @@ src/
       page.tsx          Landing page
       reset/page.tsx    Reset flow
       reset/[id]/       Result page (reads the saved reset on the device)
+      load/page.tsx     Family Load
     robots.ts, sitemap.ts
   components/
     ui/                 Button, Card, Textarea, OptionButton, ProgressBar...
     layout/             Header (mobile sheet), Footer, LanguageSwitcher
   features/
     landing/            Landing page sections
+    load/
+      logic.ts          Load score, levels, postponed-until behaviour
+      schema.ts         Zod validation for item titles
+      useFamilyLoad.ts  State layer over LoadRepository
+      components/       FamilyLoad, CategoryCard, LoadMeter, AddItemForm, LoadItemRow
     reset/
       planner/          ResetPlanner interface + DeterministicResetPlanner
       components/       ResetFlow, steps, ResultView, SafetyNotice
@@ -90,7 +105,7 @@ src/
     seo.ts              Canonical + hreflang builder
     supabase/           Browser and server clients (null when not configured)
   services/
-    persistence/        ResetRepository interface, Local and Supabase impls
+    persistence/        ResetRepository + LoadRepository interfaces, Local and Supabase impls
   types/                Shared domain types
 messages/               One JSON file per locale (en.json is the source)
 supabase/migrations/    SQL schema with RLS
@@ -157,3 +172,18 @@ The app is not a medical or therapy service and says so. If free text
 suggests immediate danger, the result page shows a generic safety pathway
 (local emergency services, a trusted person, crisis support) without inventing
 country-specific numbers. Ordinary stress is never medicalised.
+
+## Family Load
+
+Intentionally lightweight: an item is a title, an area and a status. There
+are no due dates, priorities, assignees or projects.
+
+- **Load level** per area is derived, never stored: open items count 1,
+  postponed items count 0.5. 0 = clear, up to 2 = light, up to 4 = busy,
+  above = heavy.
+- **Later** sets `postponedUntil` to 24 hours ahead. When that time passes the
+  item shows as open again without any background job; the UI derives the
+  effective status at render time.
+- **Done** items stay visible in a "Done" group with undo, and can be cleared
+  per area.
+- **Move** uses a native select so it works one-handed on any phone.

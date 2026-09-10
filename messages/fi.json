@@ -18,6 +18,10 @@
     "result": {
       "title": "Sinun nollauksesi – Parent Reset",
       "description": "Lyhyt lista tälle päivälle, se mikä voi odottaa tähän viikkoon, ja se mistä voit päästää irti."
+    },
+    "load": {
+      "title": "Perheen kuorma – Parent Reset",
+      "description": "Yksinkertainen näkymä siihen, mikä vie tilaa päässäsi: lapset, raha, koti, työ, parisuhde ja sinä itse."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Etusivu",
     "startReset": "Aloita nollaus",
     "howItWorks": "Miten se toimii",
-    "menuTitle": "Valikko"
+    "menuTitle": "Valikko",
+    "familyLoad": "Perheen kuorma"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Tuota sivua ei ole olemassa",
     "body": "Linkki voi olla vanha tai kirjoitettu väärin.",
     "cta": "Siirry alkuun"
+  },
+  "load": {
+    "title": "Perheen kuorma",
+    "subtitle": "Mikä vie tilaa päässäsi, alueittain. Lisää se, hoida se pois tai siirrä huomiseen.",
+    "summary": "{count, plural, =0 {Ei mitään avoinna juuri nyt.} one {# avoin asia kaikilla alueilla yhteensä.} other {# avointa asiaa kaikilla alueilla yhteensä.}}",
+    "categories": {
+      "kids": "Lapset",
+      "money": "Raha",
+      "home": "Koti",
+      "work": "Työ",
+      "relationship": "Parisuhde",
+      "me": "Minä"
+    },
+    "levels": {
+      "clear": "Tyhjä",
+      "light": "Kevyt",
+      "busy": "Kiireinen",
+      "heavy": "Raskas"
+    },
+    "openCount": "{count, plural, =0 {Ei avoimia} one {# avoinna} other {# avoinna}}",
+    "selectCategory": "Valitse alue",
+    "add": {
+      "label": "Lisää kohtaan {category}",
+      "placeholder": "Mitä sinulla on mielessä?",
+      "button": "Lisää",
+      "hint": "Lyhyt riittää. Pari sanaa on parempi kuin kappale."
+    },
+    "examples": {
+      "kids": "Uudet kengät, koulumaksu, hammaslääkäriaika",
+      "money": "Sähkölasku, ruokaostokset, autovakuutus",
+      "home": "Pyykit, siivous, se rikkinäinen lamppu",
+      "work": "Vastaus esihenkilölle, tuntikirjaus, torstain palaveri",
+      "relationship": "Yhteinen ilta, keskustelu viikonlopuista",
+      "me": "Uni, kävely, soitto ystävälle"
+    },
+    "empty": {
+      "title": "Täällä ei ole vielä mitään",
+      "body": "Lisää se, mikä pyörii mielessä. Esimerkiksi: {examples}."
+    },
+    "actions": {
+      "done": "Valmis",
+      "undo": "Kumoa",
+      "postpone": "Myöhemmin",
+      "bringBack": "Palauta",
+      "move": "Siirrä",
+      "remove": "Poista",
+      "clearDone": "Tyhjennä valmiit"
+    },
+    "sections": {
+      "open": "Avoinna",
+      "postponed": "Siirretty",
+      "done": "Valmiit"
+    },
+    "postponedUntil": "Palaa {date}",
+    "completedOn": "Valmis {date}",
+    "errors": {
+      "required": "Kirjoita ensin jotain.",
+      "tooLong": "Enintään {max} merkkiä, kiitos."
+    },
+    "savedLocally": "Tallennettu tälle laitteelle. Luo tili myöhemmin, niin tiedot säilyvät kaikilla laitteillasi.",
+    "notProjectTool": "Tämä ei ole tehtävälistajärjestelmä. Tämä on paikka, johon voit laskea asiat, jotta ne lakkaavat pyörimästä mielessä."
   }
 }

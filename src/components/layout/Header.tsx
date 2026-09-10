@@ -41,6 +41,15 @@ export function Header() {
         {/* Desktop */}
         <nav aria-label={t("nav.menuTitle")} className="hidden items-center gap-2 md:flex">
           <Link
+            href="/load"
+            className={cn(
+              "tap focus-ring inline-flex items-center rounded-full px-4 text-base hover:text-ink",
+              pathname.startsWith("/load") ? "text-ink font-semibold" : "text-ink-soft",
+            )}
+          >
+            {t("nav.familyLoad")}
+          </Link>
+          <Link
             href="/#how-it-works"
             className="tap focus-ring inline-flex items-center rounded-full px-4 text-base text-ink-soft hover:text-ink"
           >
@@ -83,6 +92,13 @@ export function Header() {
               className="tap focus-ring flex items-center rounded-2xl px-4 text-lg text-ink hover:bg-sand"
             >
               {t("nav.home")}
+            </Link>
+            <Link
+              href="/load"
+              onClick={close}
+              className="tap focus-ring flex items-center rounded-2xl px-4 text-lg text-ink hover:bg-sand"
+            >
+              {t("nav.familyLoad")}
             </Link>
             <Link
               href="/#how-it-works"

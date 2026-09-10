@@ -18,6 +18,10 @@
     "result": {
       "title": "Jouw reset – Parent Reset",
       "description": "Je korte lijst voor vandaag, wat tot deze week kan wachten en wat je kunt loslaten."
+    },
+    "load": {
+      "title": "Gezinslast – Parent Reset",
+      "description": "Een simpel overzicht van wat ruimte inneemt in je hoofd: kinderen, geld, thuis, werk, relatie en jij."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Home",
     "startReset": "Start mijn reset",
     "howItWorks": "Hoe het werkt",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Gezinslast"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Die pagina bestaat niet",
     "body": "De link is misschien oud of verkeerd getypt.",
     "cta": "Naar het begin"
+  },
+  "load": {
+    "title": "Gezinslast",
+    "subtitle": "Wat ruimte inneemt in je hoofd, per gebied. Voeg het toe, rond het af of schuif het door naar morgen.",
+    "summary": "{count, plural, =0 {Niets open op dit moment.} one {# ding open in alle gebieden.} other {# dingen open in alle gebieden.}}",
+    "categories": {
+      "kids": "Kinderen",
+      "money": "Geld",
+      "home": "Thuis",
+      "work": "Werk",
+      "relationship": "Relatie",
+      "me": "Ik"
+    },
+    "levels": {
+      "clear": "Rustig",
+      "light": "Licht",
+      "busy": "Druk",
+      "heavy": "Zwaar"
+    },
+    "openCount": "{count, plural, =0 {Niets open} one {# open} other {# open}}",
+    "selectCategory": "Kies een gebied",
+    "add": {
+      "label": "Toevoegen aan {category}",
+      "placeholder": "Wat speelt er in je hoofd?",
+      "button": "Toevoegen",
+      "hint": "Kort is prima. Een paar woorden zijn beter dan een alinea."
+    },
+    "examples": {
+      "kids": "Nieuwe schoenen, schoolbijdrage, tandartsafspraak",
+      "money": "Energierekening, boodschappen, autoverzekering",
+      "home": "De was, schoonmaken, de kapotte lamp",
+      "work": "Antwoord aan de manager, urenregistratie, de vergadering van donderdag",
+      "relationship": "Een avond samen plannen, het gesprek over de weekenden",
+      "me": "Slaap, een wandeling, een vriend bellen"
+    },
+    "empty": {
+      "title": "Nog niets hier",
+      "body": "Zet neer wat blijft rondcirkelen. Bijvoorbeeld: {examples}."
+    },
+    "actions": {
+      "done": "Klaar",
+      "undo": "Ongedaan maken",
+      "postpone": "Later",
+      "bringBack": "Terughalen",
+      "move": "Verplaatsen naar",
+      "remove": "Verwijderen",
+      "clearDone": "Klaar opruimen"
+    },
+    "sections": {
+      "open": "Open",
+      "postponed": "Uitgesteld",
+      "done": "Klaar"
+    },
+    "postponedUntil": "Terug op {date}",
+    "completedOn": "Klaar op {date}",
+    "errors": {
+      "required": "Typ eerst iets.",
+      "tooLong": "Houd het onder de {max} tekens."
+    },
+    "savedLocally": "Opgeslagen op dit apparaat. Maak later een account aan om het op al je apparaten te bewaren.",
+    "notProjectTool": "Dit is geen to-do-systeem. Het is een plek om dingen neer te zetten, zodat ze niet blijven rondcirkelen."
   }
 }

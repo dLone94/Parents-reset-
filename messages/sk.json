@@ -18,6 +18,10 @@
     "result": {
       "title": "Tvoj reset – Parent Reset",
       "description": "Tvoj krátky zoznam na dnes, čo počká do konca týždňa a čo môžeš nechať tak."
+    },
+    "load": {
+      "title": "Rodinné starosti – Parent Reset",
+      "description": "Jednoduchý prehľad toho, čo ti zaberá miesto v hlave: deti, peniaze, domov, práca, vzťah a ty."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Domov",
     "startReset": "Začať môj reset",
     "howItWorks": "Ako to funguje",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Rodinné starosti"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Táto stránka neexistuje",
     "body": "Odkaz môže byť starý alebo nesprávne zadaný.",
     "cta": "Prejsť na začiatok"
+  },
+  "load": {
+    "title": "Rodinné starosti",
+    "subtitle": "Čo ti zaberá miesto v hlave, podľa oblastí. Pridaj to, dokonči to alebo to odlož na zajtra.",
+    "summary": "{count, plural, =0 {Teraz nie je nič otvorené.} one {# otvorená vec naprieč všetkými oblasťami.} few {# otvorené veci naprieč všetkými oblasťami.} many {# otvorenej veci naprieč všetkými oblasťami.} other {# otvorených vecí naprieč všetkými oblasťami.}}",
+    "categories": {
+      "kids": "Deti",
+      "money": "Peniaze",
+      "home": "Domov",
+      "work": "Práca",
+      "relationship": "Vzťah",
+      "me": "Ja"
+    },
+    "levels": {
+      "clear": "Čisto",
+      "light": "Ľahké",
+      "busy": "Rušné",
+      "heavy": "Ťažké"
+    },
+    "openCount": "{count, plural, =0 {Nič otvorené} one {# otvorená} few {# otvorené} many {# otvorenej} other {# otvorených}}",
+    "selectCategory": "Vyber oblasť",
+    "add": {
+      "label": "Pridať do oblasti {category}",
+      "placeholder": "Čo ti leží v hlave?",
+      "button": "Pridať",
+      "hint": "Stručne stačí. Pár slov je lepších ako odsek."
+    },
+    "examples": {
+      "kids": "Nové topánky, platba za školu, zubár",
+      "money": "Účet za elektrinu, nákup, poistenie auta",
+      "home": "Bielizeň, upratovanie, tá pokazená lampa",
+      "work": "Odpovedať nadriadenému, výkaz hodín, štvrtková porada",
+      "relationship": "Naplánovať spoločný večer, rozhovor o víkendoch",
+      "me": "Spánok, prechádzka, telefonát s niekým blízkym"
+    },
+    "empty": {
+      "title": "Zatiaľ tu nič nie je",
+      "body": "Pridaj čokoľvek, čo sa ti stále vracia. Napríklad: {examples}."
+    },
+    "actions": {
+      "done": "Hotovo",
+      "undo": "Späť",
+      "postpone": "Neskôr",
+      "bringBack": "Vrátiť",
+      "move": "Presunúť do",
+      "remove": "Odstrániť",
+      "clearDone": "Vymazať hotové"
+    },
+    "sections": {
+      "open": "Otvorené",
+      "postponed": "Odložené",
+      "done": "Hotové"
+    },
+    "postponedUntil": "Vráti sa {date}",
+    "completedOn": "Hotovo {date}",
+    "errors": {
+      "required": "Najprv niečo napíš.",
+      "tooLong": "Skús to prosím do {max} znakov."
+    },
+    "savedLocally": "Uložené v tomto zariadení. Účet si môžeš vytvoriť neskôr, aby ti to zostalo aj na ďalších zariadeniach.",
+    "notProjectTool": "Toto nie je systém na úlohy. Je to miesto, kam si veci odložíš, aby sa ti prestali točiť v hlave."
   }
 }

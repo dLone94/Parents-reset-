@@ -18,6 +18,10 @@
     "result": {
       "title": "Jūsų diena – Parent Reset",
       "description": "Jūsų trumpas šiandienos sąrašas, kas gali palaukti iki savaitės pabaigos ir ką galite paleisti."
+    },
+    "load": {
+      "title": "Šeimos rūpesčiai – Parent Reset",
+      "description": "Paprastas vaizdas, kas užima vietą jūsų galvoje: vaikai, pinigai, namai, darbas, santykiai ir jūs."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Pradžia",
     "startReset": "Susidėlioti dieną",
     "howItWorks": "Kaip tai veikia",
-    "menuTitle": "Meniu"
+    "menuTitle": "Meniu",
+    "familyLoad": "Šeimos rūpesčiai"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Tokio puslapio nėra",
     "body": "Nuoroda gali būti pasenusi arba su klaida.",
     "cta": "Į pradžią"
+  },
+  "load": {
+    "title": "Šeimos rūpesčiai",
+    "subtitle": "Kas užima vietą jūsų galvoje, pagal sritis. Įrašykite, atlikite arba nukelkite rytdienai.",
+    "summary": "{count, plural, =0 {Šiuo metu niekas nelaukia.} one {# dalykas laukia visose srityse.} few {# dalykai laukia visose srityse.} many {# dalyko laukia visose srityse.} other {# dalykų laukia visose srityse.}}",
+    "categories": {
+      "kids": "Vaikai",
+      "money": "Pinigai",
+      "home": "Namai",
+      "work": "Darbas",
+      "relationship": "Santykiai",
+      "me": "Aš"
+    },
+    "levels": {
+      "clear": "Tuščia",
+      "light": "Lengva",
+      "busy": "Užimta",
+      "heavy": "Sunku"
+    },
+    "openCount": "{count, plural, =0 {Niekas nelaukia} one {# laukia} few {# laukia} many {# laukia} other {# laukia}}",
+    "selectCategory": "Pasirinkite sritį",
+    "add": {
+      "label": "Pridėti: {category}",
+      "placeholder": "Kas sukasi galvoje?",
+      "button": "Pridėti",
+      "hint": "Trumpai – puiku. Keli žodžiai geriau nei pastraipa."
+    },
+    "examples": {
+      "kids": "Nauji batai, mokėjimas mokyklai, vizitas pas odontologą",
+      "money": "Sąskaita už elektrą, maisto pirkiniai, automobilio draudimas",
+      "home": "Skalbiniai, tvarkymasis, sugedusi lempa",
+      "work": "Atsakyti vadovui, darbo laiko apskaita, ketvirtadienio susitikimas",
+      "relationship": "Suplanuoti vakarą dviese, pokalbis apie savaitgalius",
+      "me": "Miegas, pasivaikščiojimas, paskambinti draugui"
+    },
+    "empty": {
+      "title": "Kol kas nieko nėra",
+      "body": "Įrašykite viską, kas vis sukasi galvoje. Pavyzdžiui: {examples}."
+    },
+    "actions": {
+      "done": "Atlikta",
+      "undo": "Atšaukti",
+      "postpone": "Vėliau",
+      "bringBack": "Grąžinti",
+      "move": "Perkelti į",
+      "remove": "Pašalinti",
+      "clearDone": "Išvalyti atliktus"
+    },
+    "sections": {
+      "open": "Laukia",
+      "postponed": "Atidėta",
+      "done": "Atlikta"
+    },
+    "postponedUntil": "Grįš {date}",
+    "completedOn": "Atlikta {date}",
+    "errors": {
+      "required": "Pirmiausia ką nors įrašykite.",
+      "tooLong": "Prašome neviršyti {max} simbolių."
+    },
+    "savedLocally": "Išsaugota šiame įrenginyje. Vėliau susikurkite paskyrą, kad išliktų visuose įrenginiuose.",
+    "notProjectTool": "Tai ne užduočių sistema. Tai vieta padėti dalykus, kad jie nustotų suktis galvoje."
   }
 }

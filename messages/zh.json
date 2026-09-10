@@ -18,6 +18,10 @@
     "result": {
       "title": "你的整理 – Parent Reset",
       "description": "你今天的短清单，可以等到本周再说的事，以及可以放下的事。"
+    },
+    "load": {
+      "title": "家里的事 – Parent Reset",
+      "description": "简单看清脑子里都装着什么：孩子、钱、家、工作、伴侣和你自己。"
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "首页",
     "startReset": "开始我的整理",
     "howItWorks": "使用方法",
-    "menuTitle": "菜单"
+    "menuTitle": "菜单",
+    "familyLoad": "家里的事"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "这个页面不存在",
     "body": "链接可能已过期或输入有误。",
     "cta": "回到开始"
+  },
+  "load": {
+    "title": "家里的事",
+    "subtitle": "按区域看看脑子里都装着什么。记下来、做完它，或者放到明天。",
+    "summary": "{count, plural, =0 {目前没有未完成的事。} other {所有区域共有#件事未完成。}}",
+    "categories": {
+      "kids": "孩子",
+      "money": "钱",
+      "home": "家",
+      "work": "工作",
+      "relationship": "伴侣",
+      "me": "我自己"
+    },
+    "levels": {
+      "clear": "空",
+      "light": "轻",
+      "busy": "忙",
+      "heavy": "重"
+    },
+    "openCount": "{count, plural, =0 {没有未完成} other {#件未完成}}",
+    "selectCategory": "选一个区域",
+    "add": {
+      "label": "添加到{category}",
+      "placeholder": "你在想什么？",
+      "button": "添加",
+      "hint": "简短就好。几个字胜过一大段。"
+    },
+    "examples": {
+      "kids": "新鞋子、学校缴费、看牙医",
+      "money": "电费、买菜、车险",
+      "home": "洗衣服、打扫、坏了的台灯",
+      "work": "回复经理、工时表、周四的会议",
+      "relationship": "安排一个两人的晚上、聊聊周末的安排",
+      "me": "睡觉、散步、给朋友打电话"
+    },
+    "empty": {
+      "title": "这里还没有内容",
+      "body": "把一直在脑子里转的事记下来。比如：{examples}。"
+    },
+    "actions": {
+      "done": "完成",
+      "undo": "撤销",
+      "postpone": "稍后",
+      "bringBack": "取回",
+      "move": "移到",
+      "remove": "删除",
+      "clearDone": "清除已完成"
+    },
+    "sections": {
+      "open": "未完成",
+      "postponed": "已推迟",
+      "done": "已完成"
+    },
+    "postponedUntil": "{date}回来",
+    "completedOn": "{date}完成",
+    "errors": {
+      "required": "先写点什么。",
+      "tooLong": "请不要超过{max}个字。"
+    },
+    "savedLocally": "已保存在这台设备上。以后可以创建账号，在各个设备间保留。",
+    "notProjectTool": "这不是待办事项系统。这里是把事情放下的地方，让它们不再在脑子里打转。"
   }
 }

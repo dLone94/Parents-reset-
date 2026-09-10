@@ -18,6 +18,10 @@
     "result": {
       "title": "Tavs restarts – Parent Reset",
       "description": "Tavs īsais saraksts šodienai, kas var pagaidīt līdz nedēļas beigām un ko vari atlaist."
+    },
+    "load": {
+      "title": "Ģimenes slodze – Parent Reset",
+      "description": "Vienkāršs skats uz to, kas aizņem vietu tavā galvā: bērni, nauda, mājas, darbs, attiecības un tu."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Sākums",
     "startReset": "Sākt manu restartu",
     "howItWorks": "Kā tas darbojas",
-    "menuTitle": "Izvēlne"
+    "menuTitle": "Izvēlne",
+    "familyLoad": "Ģimenes slodze"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Šāda lapa neeksistē",
     "body": "Saite var būt novecojusi vai nepareizi ierakstīta.",
     "cta": "Uz sākumu"
+  },
+  "load": {
+    "title": "Ģimenes slodze",
+    "subtitle": "Kas aizņem vietu tavā galvā, pa jomām. Pievieno, pabeidz vai atliec uz rītdienu.",
+    "summary": "{count, plural, =0 {Šobrīd nekas nav atvērts.} zero {# atvērtu lietu visās jomās.} one {# atvērta lieta visās jomās.} other {# atvērtas lietas visās jomās.}}",
+    "categories": {
+      "kids": "Bērni",
+      "money": "Nauda",
+      "home": "Mājas",
+      "work": "Darbs",
+      "relationship": "Attiecības",
+      "me": "Es"
+    },
+    "levels": {
+      "clear": "Brīvi",
+      "light": "Viegli",
+      "busy": "Saspringti",
+      "heavy": "Smagi"
+    },
+    "openCount": "{count, plural, =0 {Nekas nav atvērts} zero {# atvērtu} one {# atvērta} other {# atvērtas}}",
+    "selectCategory": "Izvēlies jomu",
+    "add": {
+      "label": "Pievienot: {category}",
+      "placeholder": "Kas tev ir prātā?",
+      "button": "Pievienot",
+      "hint": "Īsi ir labi. Daži vārdi ir labāk nekā vesela rindkopa."
+    },
+    "examples": {
+      "kids": "Jaunas kurpes, skolas maksājums, zobārsta vizīte",
+      "money": "Elektrības rēķins, pārtika, auto apdrošināšana",
+      "home": "Veļa, uzkopšana, salauztā lampa",
+      "work": "Atbilde vadītājam, darba laika uzskaite, ceturtdienas sapulce",
+      "relationship": "Saplānot kopīgu vakaru, saruna par nedēļas nogalēm",
+      "me": "Miegs, pastaiga, piezvanīt draugam"
+    },
+    "empty": {
+      "title": "Šeit vēl nekā nav",
+      "body": "Pievieno to, kas visu laiku griežas galvā. Piemēram: {examples}."
+    },
+    "actions": {
+      "done": "Izdarīts",
+      "undo": "Atsaukt",
+      "postpone": "Vēlāk",
+      "bringBack": "Atgriezt",
+      "move": "Pārvietot uz",
+      "remove": "Noņemt",
+      "clearDone": "Notīrīt izdarīto"
+    },
+    "sections": {
+      "open": "Atvērts",
+      "postponed": "Atlikts",
+      "done": "Izdarīts"
+    },
+    "postponedUntil": "Atgriezīsies {date}",
+    "completedOn": "Izdarīts {date}",
+    "errors": {
+      "required": "Vispirms kaut ko uzraksti.",
+      "tooLong": "Lūdzu, ne vairāk par {max} rakstzīmēm."
+    },
+    "savedLocally": "Saglabāts šajā ierīcē. Vēlāk izveido kontu, lai tas būtu pieejams arī citās ierīcēs.",
+    "notProjectTool": "Šī nav uzdevumu sistēma. Šī ir vieta, kur nolikt lietas, lai tās vairs negrieztos galvā."
   }
 }

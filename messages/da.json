@@ -18,6 +18,10 @@
     "result": {
       "title": "Din reset – Parent Reset",
       "description": "Din korte liste for i dag, hvad der kan vente til i denne uge, og hvad du kan give slip på."
+    },
+    "load": {
+      "title": "Alt du bærer på – Parent Reset",
+      "description": "Et enkelt overblik over, hvad der fylder i hovedet: børn, penge, hjem, arbejde, parforhold og dig selv."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Forside",
     "startReset": "Start min reset",
     "howItWorks": "Sådan virker det",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Alt du bærer på"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Den side findes ikke",
     "body": "Linket kan være gammelt eller stavet forkert.",
     "cta": "Gå til start"
+  },
+  "load": {
+    "title": "Alt du bærer på",
+    "subtitle": "Hvad der fylder i hovedet, område for område. Tilføj det, gør det færdigt eller skub det til i morgen.",
+    "summary": "{count, plural, =0 {Intet åbent lige nu.} one {# ting åben på tværs af alle områder.} other {# ting åbne på tværs af alle områder.}}",
+    "categories": {
+      "kids": "Børn",
+      "money": "Penge",
+      "home": "Hjem",
+      "work": "Arbejde",
+      "relationship": "Parforhold",
+      "me": "Mig"
+    },
+    "levels": {
+      "clear": "Tomt",
+      "light": "Let",
+      "busy": "Travlt",
+      "heavy": "Tungt"
+    },
+    "openCount": "{count, plural, =0 {Intet åbent} one {# åben} other {# åbne}}",
+    "selectCategory": "Vælg et område",
+    "add": {
+      "label": "Tilføj til {category}",
+      "placeholder": "Hvad fylder i hovedet?",
+      "button": "Tilføj",
+      "hint": "Kort er fint. Et par ord slår et helt afsnit."
+    },
+    "examples": {
+      "kids": "Nye sko, betaling til skolen, tandlægetid",
+      "money": "Elregningen, indkøb, bilforsikringen",
+      "home": "Vasketøj, rengøring, den ødelagte lampe",
+      "work": "Svar til chefen, timeseddel, torsdagsmødet",
+      "relationship": "Planlæg en aften sammen, snakken om weekenderne",
+      "me": "Søvn, en gåtur, ring til en ven"
+    },
+    "empty": {
+      "title": "Intet her endnu",
+      "body": "Tilføj det, der bliver ved med at kredse. For eksempel: {examples}."
+    },
+    "actions": {
+      "done": "Færdig",
+      "undo": "Fortryd",
+      "postpone": "Senere",
+      "bringBack": "Hent tilbage",
+      "move": "Flyt til",
+      "remove": "Fjern",
+      "clearDone": "Ryd færdige"
+    },
+    "sections": {
+      "open": "Åbne",
+      "postponed": "Udskudt",
+      "done": "Færdige"
+    },
+    "postponedUntil": "Tilbage {date}",
+    "completedOn": "Færdig {date}",
+    "errors": {
+      "required": "Skriv noget først.",
+      "tooLong": "Hold det under {max} tegn."
+    },
+    "savedLocally": "Gemt på denne enhed. Opret en konto senere for at beholde det på alle enheder.",
+    "notProjectTool": "Det her er ikke et to-do-system. Det er et sted at lægge ting fra sig, så de holder op med at kredse."
   }
 }

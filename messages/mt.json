@@ -18,6 +18,10 @@
     "result": {
       "title": "Il-ġurnata tiegħek – Parent Reset",
       "description": "Il-lista qasira tiegħek għal-lum, x'jista' jistenna sa din il-ġimgħa, u x'tista' tħalli."
+    },
+    "load": {
+      "title": "Il-piż tal-familja – Parent Reset",
+      "description": "Ħarsa sempliċi lejn x'qed jieħu spazju f'rasek: it-tfal, il-flus, id-dar, ix-xogħol, ir-relazzjoni u int."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Paġna ewlenija",
     "startReset": "Irranġa l-ġurnata tiegħi",
     "howItWorks": "Kif jaħdem",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Il-piż tal-familja"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Dik il-paġna ma teżistix",
     "body": "Il-link jista' jkun antik jew miktub ħażin.",
     "cta": "Mur għall-bidu"
+  },
+  "load": {
+    "title": "Il-piż tal-familja",
+    "subtitle": "X'qed jieħu spazju f'rasek, skont il-qasam. Żidu, lestih, jew ħallih għal għada.",
+    "summary": "{count, plural, =0 {Bħalissa m'hemm xejn miftuħ.} one {# ħaġa miftuħa fl-oqsma kollha.} few {# affarijiet miftuħa fl-oqsma kollha.} many {# ħaġa miftuħa fl-oqsma kollha.} other {# ħaġa miftuħa fl-oqsma kollha.}}",
+    "categories": {
+      "kids": "It-tfal",
+      "money": "Il-flus",
+      "home": "Id-dar",
+      "work": "Ix-xogħol",
+      "relationship": "Ir-relazzjoni",
+      "me": "Jien"
+    },
+    "levels": {
+      "clear": "Vojt",
+      "light": "Ħafif",
+      "busy": "Mimli",
+      "heavy": "Tqil"
+    },
+    "openCount": "{count, plural, =0 {Xejn miftuħ} one {# miftuħa} few {# miftuħa} many {# miftuħa} other {# miftuħa}}",
+    "selectCategory": "Agħżel qasam",
+    "add": {
+      "label": "Żid: {category}",
+      "placeholder": "X'għandek f'moħħok?",
+      "button": "Żid",
+      "hint": "Qasir huwa tajjeb. Ftit kliem aħjar minn paragrafu."
+    },
+    "examples": {
+      "kids": "Żraben ġodda, ħlas tal-iskola, appuntament għand id-dentist",
+      "money": "Kont tad-dawl, xirja tal-ikel, assigurazzjoni tal-karozza",
+      "home": "Ħasil tal-ħwejjeġ, tindif, il-lampa mkissra",
+      "work": "Wieġeb lill-manager, timesheet, il-laqgħa tal-Ħamis",
+      "relationship": "Ippjana lejla flimkien, id-diskursata dwar il-weekends",
+      "me": "Irqad, mixja, ċempel lil ħabib"
+    },
+    "empty": {
+      "title": "Għad m'hawn xejn",
+      "body": "Żid kull ma jibqa' jdur f'rasek. Pereżempju: {examples}."
+    },
+    "actions": {
+      "done": "Lest",
+      "undo": "Annulla",
+      "postpone": "Aktar tard",
+      "bringBack": "Ġib lura",
+      "move": "Mexxi għal",
+      "remove": "Neħħi",
+      "clearDone": "Naddaf il-lesti"
+    },
+    "sections": {
+      "open": "Miftuħ",
+      "postponed": "Għal aktar tard",
+      "done": "Lesti"
+    },
+    "postponedUntil": "Lura nhar {date}",
+    "completedOn": "Lest nhar {date}",
+    "errors": {
+      "required": "Ikteb xi ħaġa l-ewwel.",
+      "tooLong": "Jekk jogħġbok żommu taħt {max} karattru."
+    },
+    "savedLocally": "Salvat fuq dan l-apparat. Oħloq kont aktar tard biex iżżommu fuq l-apparati kollha.",
+    "notProjectTool": "Din mhix sistema ta' affarijiet x'tagħmel. Hija post fejn tpoġġi l-affarijiet biex jieqfu jduru f'rasek."
   }
 }

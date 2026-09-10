@@ -18,6 +18,10 @@
     "result": {
       "title": "Tvoj reset – Parent Reset",
       "description": "Tvoj kratak popis za danas, što može pričekati do kraja tjedna i što možeš pustiti."
+    },
+    "load": {
+      "title": "Obiteljske brige – Parent Reset",
+      "description": "Jednostavan pregled onoga što ti zauzima mjesto u glavi: djeca, novac, dom, posao, veza i ti."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Početna",
     "startReset": "Započni moj reset",
     "howItWorks": "Kako funkcionira",
-    "menuTitle": "Izbornik"
+    "menuTitle": "Izbornik",
+    "familyLoad": "Obiteljske brige"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Ta stranica ne postoji",
     "body": "Poveznica je možda stara ili krivo upisana.",
     "cta": "Idi na početak"
+  },
+  "load": {
+    "title": "Obiteljske brige",
+    "subtitle": "Što ti zauzima mjesto u glavi, po područjima. Dodaj, riješi ili prebaci na sutra.",
+    "summary": "{count, plural, =0 {Trenutno nema ništa otvoreno.} one {# otvorena stvar u svim područjima zajedno.} few {# otvorene stvari u svim područjima zajedno.} other {# otvorenih stvari u svim područjima zajedno.}}",
+    "categories": {
+      "kids": "Djeca",
+      "money": "Novac",
+      "home": "Dom",
+      "work": "Posao",
+      "relationship": "Veza",
+      "me": "Ja"
+    },
+    "levels": {
+      "clear": "Prazno",
+      "light": "Lagano",
+      "busy": "Užurbano",
+      "heavy": "Teško"
+    },
+    "openCount": "{count, plural, =0 {Ništa otvoreno} one {# otvorena} few {# otvorene} other {# otvorenih}}",
+    "selectCategory": "Odaberi područje",
+    "add": {
+      "label": "Dodaj u područje {category}",
+      "placeholder": "Što ti je na pameti?",
+      "button": "Dodaj",
+      "hint": "Kratko je dovoljno. Nekoliko riječi bolje je od odlomka."
+    },
+    "examples": {
+      "kids": "Nove cipele, uplata za školu, zubar",
+      "money": "Račun za struju, namirnice, osiguranje auta",
+      "home": "Rublje, čišćenje, ona pokvarena lampa",
+      "work": "Odgovoriti šefu, evidencija sati, sastanak u četvrtak",
+      "relationship": "Isplanirati zajedničku večer, razgovor o vikendima",
+      "me": "San, šetnja, nazvati nekog bliskog"
+    },
+    "empty": {
+      "title": "Ovdje još nema ničega",
+      "body": "Dodaj sve što ti se stalno vraća. Na primjer: {examples}."
+    },
+    "actions": {
+      "done": "Gotovo",
+      "undo": "Poništi",
+      "postpone": "Kasnije",
+      "bringBack": "Vrati",
+      "move": "Premjesti u",
+      "remove": "Ukloni",
+      "clearDone": "Očisti gotovo"
+    },
+    "sections": {
+      "open": "Otvoreno",
+      "postponed": "Odgođeno",
+      "done": "Gotovo"
+    },
+    "postponedUntil": "Vraća se {date}",
+    "completedOn": "Gotovo {date}",
+    "errors": {
+      "required": "Prvo nešto napiši.",
+      "tooLong": "Molimo, ostani ispod {max} znakova."
+    },
+    "savedLocally": "Spremljeno na ovom uređaju. Račun možeš napraviti kasnije da ti ostane na svim uređajima.",
+    "notProjectTool": "Ovo nije sustav za zadatke. Ovo je mjesto gdje stvari odložiš da ti se prestanu vrtjeti po glavi."
   }
 }

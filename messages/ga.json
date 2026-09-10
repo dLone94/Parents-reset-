@@ -18,6 +18,10 @@
     "result": {
       "title": "Do lá in ord – Parent Reset",
       "description": "Do liosta gearr don lá inniu, an rud ar féidir leis fanacht go dtí an tseachtain seo, agus an rud is féidir leat a ligean uait."
+    },
+    "load": {
+      "title": "Cúraimí an teaghlaigh – Parent Reset",
+      "description": "Léargas simplí ar a bhfuil ag glacadh spáis i do cheann: páistí, airgead, baile, obair, caidreamh agus tú féin."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Baile",
     "startReset": "Cuir ord ar mo lá",
     "howItWorks": "Conas a oibríonn sé",
-    "menuTitle": "Roghchlár"
+    "menuTitle": "Roghchlár",
+    "familyLoad": "Cúraimí an teaghlaigh"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Níl an leathanach sin ann",
     "body": "B'fhéidir go bhfuil an nasc as dáta nó mílitrithe.",
     "cta": "Téigh chuig an tús"
+  },
+  "load": {
+    "title": "Cúraimí an teaghlaigh",
+    "subtitle": "A bhfuil ag glacadh spáis i do cheann, de réir réimse. Cuir leis é, críochnaigh é, nó cuir siar go dtí amárach é.",
+    "summary": "{count, plural, =0 {Níl aon rud ar oscailt faoi láthair.} one {# rud amháin ar oscailt ar fud na réimsí uile.} two {# rud ar oscailt ar fud na réimsí uile.} few {# rud ar oscailt ar fud na réimsí uile.} many {# rud ar oscailt ar fud na réimsí uile.} other {# rud ar oscailt ar fud na réimsí uile.}}",
+    "categories": {
+      "kids": "Páistí",
+      "money": "Airgead",
+      "home": "Baile",
+      "work": "Obair",
+      "relationship": "Caidreamh",
+      "me": "Mise"
+    },
+    "levels": {
+      "clear": "Glan",
+      "light": "Éadrom",
+      "busy": "Gnóthach",
+      "heavy": "Trom"
+    },
+    "openCount": "{count, plural, =0 {Níl aon rud ar oscailt} one {# ar oscailt} two {# ar oscailt} few {# ar oscailt} many {# ar oscailt} other {# ar oscailt}}",
+    "selectCategory": "Roghnaigh réimse",
+    "add": {
+      "label": "Cuir le {category}",
+      "placeholder": "Cad atá ar d'intinn?",
+      "button": "Cuir leis",
+      "hint": "Tá gearr go breá. Is fearr cúpla focal ná alt iomlán."
+    },
+    "examples": {
+      "kids": "Bróga nua, íocaíocht scoile, coinne fiaclóra",
+      "money": "Bille leictreachais, siopadóireacht, árachas cairr",
+      "home": "Níochán, glanadh, an lampa briste",
+      "work": "Freagra don bhainisteoir, bileog ama, cruinniú an Déardaoin",
+      "relationship": "Tráthnóna le chéile a phleanáil, an comhrá faoi na deirí seachtaine",
+      "me": "Codladh, siúlóid, glaoch ar chara"
+    },
+    "empty": {
+      "title": "Níl aon rud anseo fós",
+      "body": "Cuir leis pé rud a bhíonn ag casadh i do cheann. Mar shampla: {examples}."
+    },
+    "actions": {
+      "done": "Déanta",
+      "undo": "Cealaigh",
+      "postpone": "Níos déanaí",
+      "bringBack": "Tabhair ar ais",
+      "move": "Bog go",
+      "remove": "Bain",
+      "clearDone": "Glan na cinn déanta"
+    },
+    "sections": {
+      "open": "Ar oscailt",
+      "postponed": "Curtha siar",
+      "done": "Déanta"
+    },
+    "postponedUntil": "Ar ais ar {date}",
+    "completedOn": "Déanta ar {date}",
+    "errors": {
+      "required": "Clóscríobh rud éigin ar dtús.",
+      "tooLong": "Coinnigh faoi {max} carachtar é, le do thoil."
+    },
+    "savedLocally": "Sábháilte ar an ngléas seo. Cruthaigh cuntas níos déanaí chun é a choinneáil ar gach gléas.",
+    "notProjectTool": "Ní córas le déanamh é seo. Is áit í le rudaí a leagan síos ionas go stopfaidh siad ag casadh i do cheann."
   }
 }

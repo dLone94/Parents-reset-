@@ -18,6 +18,10 @@
     "result": {
       "title": "Tu reset – Parent Reset",
       "description": "Tu lista corta para hoy, lo que puede esperar hasta esta semana y lo que puedes soltar."
+    },
+    "load": {
+      "title": "Carga familiar – Parent Reset",
+      "description": "Una vista sencilla de lo que ocupa espacio en tu cabeza: hijos, dinero, casa, trabajo, pareja y tú."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Inicio",
     "startReset": "Empezar mi reset",
     "howItWorks": "Cómo funciona",
-    "menuTitle": "Menú"
+    "menuTitle": "Menú",
+    "familyLoad": "Carga familiar"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Esa página no existe",
     "body": "Puede que el enlace sea antiguo o esté mal escrito.",
     "cta": "Ir al inicio"
+  },
+  "load": {
+    "title": "Carga familiar",
+    "subtitle": "Lo que ocupa espacio en tu cabeza, por área. Añádelo, termínalo o déjalo para mañana.",
+    "summary": "{count, plural, =0 {Ahora mismo no hay nada pendiente.} one {# cosa pendiente entre todas las áreas.} other {# cosas pendientes entre todas las áreas.}}",
+    "categories": {
+      "kids": "Hijos",
+      "money": "Dinero",
+      "home": "Casa",
+      "work": "Trabajo",
+      "relationship": "Pareja",
+      "me": "Yo"
+    },
+    "levels": {
+      "clear": "Despejado",
+      "light": "Ligero",
+      "busy": "Cargado",
+      "heavy": "Pesado"
+    },
+    "openCount": "{count, plural, =0 {Nada pendiente} one {# pendiente} other {# pendientes}}",
+    "selectCategory": "Elige un área",
+    "add": {
+      "label": "Añadir a {category}",
+      "placeholder": "¿Qué tienes en la cabeza?",
+      "button": "Añadir",
+      "hint": "Corto está bien. Unas pocas palabras valen más que un párrafo."
+    },
+    "examples": {
+      "kids": "Zapatos nuevos, pago del colegio, cita con el dentista",
+      "money": "Factura de la luz, la compra, seguro del coche",
+      "home": "Colada, limpieza, la lámpara rota",
+      "work": "Responder al jefe, hoja de horas, la reunión del jueves",
+      "relationship": "Planear una noche juntos, la charla sobre los fines de semana",
+      "me": "Dormir, un paseo, llamar a un amigo"
+    },
+    "empty": {
+      "title": "Aquí no hay nada todavía",
+      "body": "Añade lo que no deja de dar vueltas. Por ejemplo: {examples}."
+    },
+    "actions": {
+      "done": "Hecho",
+      "undo": "Deshacer",
+      "postpone": "Más tarde",
+      "bringBack": "Recuperar",
+      "move": "Mover a",
+      "remove": "Quitar",
+      "clearDone": "Borrar lo hecho"
+    },
+    "sections": {
+      "open": "Pendiente",
+      "postponed": "Aplazado",
+      "done": "Hecho"
+    },
+    "postponedUntil": "Vuelve el {date}",
+    "completedOn": "Hecho el {date}",
+    "errors": {
+      "required": "Escribe algo primero.",
+      "tooLong": "Procura no pasar de {max} caracteres."
+    },
+    "savedLocally": "Guardado en este dispositivo. Crea una cuenta más adelante para tenerlo en todos tus dispositivos.",
+    "notProjectTool": "Esto no es un sistema de tareas. Es un sitio donde soltar las cosas para que dejen de dar vueltas."
   }
 }

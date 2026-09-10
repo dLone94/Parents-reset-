@@ -18,6 +18,10 @@
     "result": {
       "title": "Twój reset – Parent Reset",
       "description": "Twoja krótka lista na dziś, co może poczekać do tego tygodnia i co możesz odpuścić."
+    },
+    "load": {
+      "title": "Sprawy rodzinne – Parent Reset",
+      "description": "Prosty podgląd tego, co zajmuje miejsce w twojej głowie: dzieci, pieniądze, dom, praca, związek i ty."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Start",
     "startReset": "Zacznij mój reset",
     "howItWorks": "Jak to działa",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Sprawy rodzinne"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Ta strona nie istnieje",
     "body": "Link może być stary albo błędnie wpisany.",
     "cta": "Przejdź na start"
+  },
+  "load": {
+    "title": "Sprawy rodzinne",
+    "subtitle": "Co zajmuje miejsce w twojej głowie, według obszarów. Dodaj, odhacz albo przesuń na jutro.",
+    "summary": "{count, plural, =0 {Nic otwartego w tej chwili.} one {# otwarta sprawa we wszystkich obszarach.} few {# otwarte sprawy we wszystkich obszarach.} many {# otwartych spraw we wszystkich obszarach.} other {# otwartej sprawy we wszystkich obszarach.}}",
+    "categories": {
+      "kids": "Dzieci",
+      "money": "Pieniądze",
+      "home": "Dom",
+      "work": "Praca",
+      "relationship": "Związek",
+      "me": "Ja"
+    },
+    "levels": {
+      "clear": "Pusto",
+      "light": "Lekko",
+      "busy": "Sporo",
+      "heavy": "Ciężko"
+    },
+    "openCount": "{count, plural, =0 {Nic otwartego} one {# otwarta} few {# otwarte} many {# otwartych} other {# otwartej}}",
+    "selectCategory": "Wybierz obszar",
+    "add": {
+      "label": "Dodaj do: {category}",
+      "placeholder": "Co chodzi ci po głowie?",
+      "button": "Dodaj",
+      "hint": "Krótko wystarczy. Kilka słów jest lepszych niż akapit."
+    },
+    "examples": {
+      "kids": "Nowe buty, opłata za szkołę, wizyta u dentysty",
+      "money": "Rachunek za prąd, zakupy, ubezpieczenie auta",
+      "home": "Pranie, sprzątanie, zepsuta lampa",
+      "work": "Odpowiedź dla szefa, ewidencja godzin, czwartkowe spotkanie",
+      "relationship": "Zaplanować wspólny wieczór, rozmowa o weekendach",
+      "me": "Sen, spacer, telefon do przyjaciela"
+    },
+    "empty": {
+      "title": "Jeszcze nic tu nie ma",
+      "body": "Dodaj to, co ciągle wraca. Na przykład: {examples}."
+    },
+    "actions": {
+      "done": "Zrobione",
+      "undo": "Cofnij",
+      "postpone": "Później",
+      "bringBack": "Przywróć",
+      "move": "Przenieś do",
+      "remove": "Usuń",
+      "clearDone": "Wyczyść zrobione"
+    },
+    "sections": {
+      "open": "Otwarte",
+      "postponed": "Odłożone",
+      "done": "Zrobione"
+    },
+    "postponedUntil": "Wraca {date}",
+    "completedOn": "Zrobione {date}",
+    "errors": {
+      "required": "Najpierw coś wpisz.",
+      "tooLong": "Zmieść się w {max} znakach."
+    },
+    "savedLocally": "Zapisane na tym urządzeniu. Załóż konto później, żeby mieć to na wszystkich urządzeniach.",
+    "notProjectTool": "To nie jest system do zadań. To miejsce, w którym możesz odłożyć sprawy, żeby przestały krążyć w głowie."
   }
 }

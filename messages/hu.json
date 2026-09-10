@@ -18,6 +18,10 @@
     "result": {
       "title": "Az újraindításod – Parent Reset",
       "description": "A rövid mai listád, ami várhat a hétre, és amit elengedhetsz."
+    },
+    "load": {
+      "title": "Családi terhek – Parent Reset",
+      "description": "Egyszerű áttekintés arról, mi foglal helyet a fejedben: gyerekek, pénz, otthon, munka, párkapcsolat és te magad."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Kezdőlap",
     "startReset": "Kezdem az újraindítást",
     "howItWorks": "Hogyan működik",
-    "menuTitle": "Menü"
+    "menuTitle": "Menü",
+    "familyLoad": "Családi terhek"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Ez az oldal nem létezik",
     "body": "A link lehet, hogy régi vagy elgépelt.",
     "cta": "Ugrás a kezdőlapra"
+  },
+  "load": {
+    "title": "Családi terhek",
+    "subtitle": "Ami helyet foglal a fejedben, területenként. Add hozzá, pipáld ki, vagy told át holnapra.",
+    "summary": "{count, plural, =0 {Most nincs semmi nyitva.} one {# nyitott dolog az összes területen.} other {# nyitott dolog az összes területen.}}",
+    "categories": {
+      "kids": "Gyerekek",
+      "money": "Pénz",
+      "home": "Otthon",
+      "work": "Munka",
+      "relationship": "Párkapcsolat",
+      "me": "Én"
+    },
+    "levels": {
+      "clear": "Tiszta",
+      "light": "Könnyű",
+      "busy": "Sűrű",
+      "heavy": "Nehéz"
+    },
+    "openCount": "{count, plural, =0 {Nincs nyitott} one {# nyitott} other {# nyitott}}",
+    "selectCategory": "Válassz területet",
+    "add": {
+      "label": "Hozzáadás ide: {category}",
+      "placeholder": "Mi jár a fejedben?",
+      "button": "Hozzáadás",
+      "hint": "Rövid is jó. Pár szó többet ér egy bekezdésnél."
+    },
+    "examples": {
+      "kids": "Új cipő, iskolai befizetés, fogorvosi időpont",
+      "money": "Villanyszámla, bevásárlás, autóbiztosítás",
+      "home": "Mosás, takarítás, a rossz lámpa",
+      "work": "Válasz a főnöknek, jelenléti ív, a csütörtöki megbeszélés",
+      "relationship": "Egy közös este megtervezése, a beszélgetés a hétvégékről",
+      "me": "Alvás, egy séta, felhívni egy barátot"
+    },
+    "empty": {
+      "title": "Még nincs itt semmi",
+      "body": "Írd be, ami folyton visszatér. Például: {examples}."
+    },
+    "actions": {
+      "done": "Kész",
+      "undo": "Visszavonás",
+      "postpone": "Később",
+      "bringBack": "Visszahozás",
+      "move": "Áthelyezés",
+      "remove": "Törlés",
+      "clearDone": "Készek törlése"
+    },
+    "sections": {
+      "open": "Nyitott",
+      "postponed": "Elhalasztva",
+      "done": "Kész"
+    },
+    "postponedUntil": "Visszatér: {date}",
+    "completedOn": "Kész: {date}",
+    "errors": {
+      "required": "Előbb írj be valamit.",
+      "tooLong": "Kérlek, maradj {max} karakter alatt."
+    },
+    "savedLocally": "Ezen az eszközön mentve. Később fiókot hozhatsz létre, hogy más eszközökön is meglegyen.",
+    "notProjectTool": "Ez nem feladatkezelő rendszer. Egy hely, ahová leteheted a dolgokat, hogy ne kavarogjanak tovább a fejedben."
   }
 }

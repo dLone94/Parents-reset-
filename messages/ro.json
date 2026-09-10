@@ -18,6 +18,10 @@
     "result": {
       "title": "Resetul tău – Parent Reset",
       "description": "Lista ta scurtă pentru azi, ce poate aștepta până săptămâna asta și la ce poți renunța."
+    },
+    "load": {
+      "title": "Grijile familiei – Parent Reset",
+      "description": "O privire simplă asupra a ce îți ocupă mintea: copii, bani, casă, muncă, relație și tu."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Acasă",
     "startReset": "Începe resetul meu",
     "howItWorks": "Cum funcționează",
-    "menuTitle": "Meniu"
+    "menuTitle": "Meniu",
+    "familyLoad": "Grijile familiei"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Pagina asta nu există",
     "body": "Linkul poate fi vechi sau scris greșit.",
     "cta": "Mergi la început"
+  },
+  "load": {
+    "title": "Grijile familiei",
+    "subtitle": "Ce îți ocupă mintea, pe zone. Adaugă, bifează ca gata sau amână pe mâine.",
+    "summary": "{count, plural, =0 {Nimic deschis acum.} one {# lucru deschis în toate zonele.} few {# lucruri deschise în toate zonele.} other {# de lucruri deschise în toate zonele.}}",
+    "categories": {
+      "kids": "Copii",
+      "money": "Bani",
+      "home": "Casă",
+      "work": "Muncă",
+      "relationship": "Relație",
+      "me": "Eu"
+    },
+    "levels": {
+      "clear": "Liber",
+      "light": "Ușor",
+      "busy": "Aglomerat",
+      "heavy": "Greu"
+    },
+    "openCount": "{count, plural, =0 {Nimic deschis} one {# deschis} few {# deschise} other {# de deschise}}",
+    "selectCategory": "Alege o zonă",
+    "add": {
+      "label": "Adaugă la {category}",
+      "placeholder": "Ce ai în minte?",
+      "button": "Adaugă",
+      "hint": "Scurt e bine. Câteva cuvinte sunt mai bune decât un paragraf."
+    },
+    "examples": {
+      "kids": "Pantofi noi, plata la școală, programare la dentist",
+      "money": "Factura la curent, cumpărăturile, asigurarea mașinii",
+      "home": "Rufele, curățenia, lampa stricată",
+      "work": "Răspuns pentru manager, pontajul, ședința de joi",
+      "relationship": "O seară împreună, discuția despre weekenduri",
+      "me": "Somn, o plimbare, un telefon unui prieten"
+    },
+    "empty": {
+      "title": "Nimic aici încă",
+      "body": "Adaugă orice îți tot revine în minte. De exemplu: {examples}."
+    },
+    "actions": {
+      "done": "Gata",
+      "undo": "Anulează",
+      "postpone": "Mai târziu",
+      "bringBack": "Adu înapoi",
+      "move": "Mută la",
+      "remove": "Șterge",
+      "clearDone": "Curăță finalizate"
+    },
+    "sections": {
+      "open": "Deschise",
+      "postponed": "Amânate",
+      "done": "Gata"
+    },
+    "postponedUntil": "Revine pe {date}",
+    "completedOn": "Gata pe {date}",
+    "errors": {
+      "required": "Scrie ceva mai întâi.",
+      "tooLong": "Te rugăm să rămâi sub {max} caractere."
+    },
+    "savedLocally": "Salvat pe acest dispozitiv. Creează un cont mai târziu ca să-l păstrezi pe toate dispozitivele.",
+    "notProjectTool": "Nu e un sistem de to-do. E un loc unde pui lucrurile jos, ca să nu-ți mai revină în minte."
   }
 }

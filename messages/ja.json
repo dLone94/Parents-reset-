@@ -18,6 +18,10 @@
     "result": {
       "title": "あなたのリセット – Parent Reset",
       "description": "今日の短いリスト、今週まで待てること、そして手放せることです。"
+    },
+    "load": {
+      "title": "家族のこと – Parent Reset",
+      "description": "頭の中を占めていることをシンプルに眺めます。子ども、お金、家、仕事、パートナー、そして自分のこと。"
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "ホーム",
     "startReset": "リセットを始める",
     "howItWorks": "使い方",
-    "menuTitle": "メニュー"
+    "menuTitle": "メニュー",
+    "familyLoad": "家族のこと"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "そのページは存在しません",
     "body": "リンクが古いか、入力に誤りがあるかもしれません。",
     "cta": "最初のページへ"
+  },
+  "load": {
+    "title": "家族のこと",
+    "subtitle": "頭の中を占めていることを、分野ごとに。書き出して、終わらせるか、明日に回しましょう。",
+    "summary": "{count, plural, =0 {今は残っていることはありません。} other {すべての分野で#件が残っています。}}",
+    "categories": {
+      "kids": "子ども",
+      "money": "お金",
+      "home": "家",
+      "work": "仕事",
+      "relationship": "パートナー",
+      "me": "自分"
+    },
+    "levels": {
+      "clear": "なし",
+      "light": "軽め",
+      "busy": "多め",
+      "heavy": "重め"
+    },
+    "openCount": "{count, plural, =0 {残りなし} other {残り#件}}",
+    "selectCategory": "分野を選んでください",
+    "add": {
+      "label": "{category}に追加",
+      "placeholder": "気になっていることは？",
+      "button": "追加",
+      "hint": "短くて大丈夫です。数語のほうが長文より役に立ちます。"
+    },
+    "examples": {
+      "kids": "新しい靴、学校の支払い、歯医者の予約",
+      "money": "電気代、食料品、自動車保険",
+      "home": "洗濯、掃除、壊れたランプ",
+      "work": "上司への返信、勤務表、木曜日の会議",
+      "relationship": "ふたりの夜の予定、週末についての話し合い",
+      "me": "睡眠、散歩、友だちに電話"
+    },
+    "empty": {
+      "title": "まだ何もありません",
+      "body": "頭の中でぐるぐるしていることを書き出しましょう。例：{examples}。"
+    },
+    "actions": {
+      "done": "完了",
+      "undo": "元に戻す",
+      "postpone": "あとで",
+      "bringBack": "戻す",
+      "move": "移動先",
+      "remove": "削除",
+      "clearDone": "完了分を消す"
+    },
+    "sections": {
+      "open": "残り",
+      "postponed": "先送り中",
+      "done": "完了"
+    },
+    "postponedUntil": "{date}に戻ります",
+    "completedOn": "{date}に完了",
+    "errors": {
+      "required": "まず何か入力してください。",
+      "tooLong": "{max}文字以内にしてください。"
+    },
+    "savedLocally": "この端末に保存しました。あとでアカウントを作ると、ほかの端末でも使えます。",
+    "notProjectTool": "これはタスク管理システムではありません。頭の中でぐるぐるしていることを、いったん置いておく場所です。"
   }
 }

@@ -18,6 +18,10 @@
     "result": {
       "title": "Tvoj reset – Parent Reset",
       "description": "Tvoj kratek seznam za danes, kaj lahko počaka do konca tedna in kaj lahko spustiš."
+    },
+    "load": {
+      "title": "Družinske skrbi – Parent Reset",
+      "description": "Preprost pregled tega, kar ti zaseda prostor v glavi: otroci, denar, dom, služba, odnos in ti."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Domov",
     "startReset": "Začni moj reset",
     "howItWorks": "Kako deluje",
-    "menuTitle": "Meni"
+    "menuTitle": "Meni",
+    "familyLoad": "Družinske skrbi"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Ta stran ne obstaja",
     "body": "Povezava je morda stara ali napačno vnesena.",
     "cta": "Pojdi na začetek"
+  },
+  "load": {
+    "title": "Družinske skrbi",
+    "subtitle": "Kaj ti zaseda prostor v glavi, po področjih. Dodaj, opravi ali prestavi na jutri.",
+    "summary": "{count, plural, =0 {Trenutno ni nič odprtega.} one {# odprta stvar na vseh področjih skupaj.} two {# odprti stvari na vseh področjih skupaj.} few {# odprte stvari na vseh področjih skupaj.} other {# odprtih stvari na vseh področjih skupaj.}}",
+    "categories": {
+      "kids": "Otroci",
+      "money": "Denar",
+      "home": "Dom",
+      "work": "Služba",
+      "relationship": "Odnos",
+      "me": "Jaz"
+    },
+    "levels": {
+      "clear": "Prazno",
+      "light": "Lahko",
+      "busy": "Živahno",
+      "heavy": "Težko"
+    },
+    "openCount": "{count, plural, =0 {Nič odprtega} one {# odprta} two {# odprti} few {# odprte} other {# odprtih}}",
+    "selectCategory": "Izberi področje",
+    "add": {
+      "label": "Dodaj na področje {category}",
+      "placeholder": "Kaj ti hodi po glavi?",
+      "button": "Dodaj",
+      "hint": "Kratko je dovolj. Nekaj besed je boljših kot odstavek."
+    },
+    "examples": {
+      "kids": "Novi čevlji, plačilo za šolo, zobozdravnik",
+      "money": "Račun za elektriko, nakupi, zavarovanje avta",
+      "home": "Perilo, čiščenje, tista pokvarjena svetilka",
+      "work": "Odgovoriti vodji, evidenca ur, četrtkov sestanek",
+      "relationship": "Načrtovati skupen večer, pogovor o vikendih",
+      "me": "Spanje, sprehod, klic nekomu bližnjemu"
+    },
+    "empty": {
+      "title": "Tukaj še ni ničesar",
+      "body": "Dodaj karkoli, kar se ti kar naprej vrača. Na primer: {examples}."
+    },
+    "actions": {
+      "done": "Opravljeno",
+      "undo": "Razveljavi",
+      "postpone": "Pozneje",
+      "bringBack": "Vrni",
+      "move": "Premakni v",
+      "remove": "Odstrani",
+      "clearDone": "Počisti opravljeno"
+    },
+    "sections": {
+      "open": "Odprto",
+      "postponed": "Preloženo",
+      "done": "Opravljeno"
+    },
+    "postponedUntil": "Nazaj {date}",
+    "completedOn": "Opravljeno {date}",
+    "errors": {
+      "required": "Najprej nekaj napiši.",
+      "tooLong": "Prosimo, ostani pod {max} znaki."
+    },
+    "savedLocally": "Shranjeno na tej napravi. Račun lahko ustvariš pozneje, da ti ostane na vseh napravah.",
+    "notProjectTool": "To ni sistem za opravila. To je prostor, kamor stvari odložiš, da se ti nehajo vrteti po glavi."
   }
 }

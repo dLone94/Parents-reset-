@@ -18,6 +18,10 @@
     "result": {
       "title": "Il tuo reset – Parent Reset",
       "description": "La tua lista corta per oggi, ciò che può aspettare fino a questa settimana e ciò che puoi lasciare andare."
+    },
+    "load": {
+      "title": "Carico di famiglia – Parent Reset",
+      "description": "Una vista semplice di ciò che occupa spazio nella tua testa: figli, soldi, casa, lavoro, coppia e tu."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Home",
     "startReset": "Inizia il mio reset",
     "howItWorks": "Come funziona",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Carico di famiglia"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Questa pagina non esiste",
     "body": "Il link potrebbe essere vecchio o scritto male.",
     "cta": "Vai all'inizio"
+  },
+  "load": {
+    "title": "Carico di famiglia",
+    "subtitle": "Ciò che occupa spazio nella tua testa, per area. Aggiungilo, concludilo o rimandalo a domani.",
+    "summary": "{count, plural, =0 {In questo momento non c'è nulla in sospeso.} one {# cosa in sospeso tra tutte le aree.} other {# cose in sospeso tra tutte le aree.}}",
+    "categories": {
+      "kids": "Figli",
+      "money": "Soldi",
+      "home": "Casa",
+      "work": "Lavoro",
+      "relationship": "Coppia",
+      "me": "Io"
+    },
+    "levels": {
+      "clear": "Libero",
+      "light": "Leggero",
+      "busy": "Pieno",
+      "heavy": "Pesante"
+    },
+    "openCount": "{count, plural, =0 {Nulla in sospeso} one {# in sospeso} other {# in sospeso}}",
+    "selectCategory": "Scegli un'area",
+    "add": {
+      "label": "Aggiungi a {category}",
+      "placeholder": "Cosa ti gira per la testa?",
+      "button": "Aggiungi",
+      "hint": "Breve va benissimo. Poche parole valgono più di un paragrafo."
+    },
+    "examples": {
+      "kids": "Scarpe nuove, pagamento della scuola, appuntamento dal dentista",
+      "money": "Bolletta della luce, spesa, assicurazione dell'auto",
+      "home": "Bucato, pulizie, la lampada rotta",
+      "work": "Rispondere al capo, foglio ore, la riunione di giovedì",
+      "relationship": "Organizzare una serata insieme, il discorso sui fine settimana",
+      "me": "Dormire, una passeggiata, chiamare un amico"
+    },
+    "empty": {
+      "title": "Qui non c'è ancora nulla",
+      "body": "Aggiungi tutto ciò che continua a girare. Per esempio: {examples}."
+    },
+    "actions": {
+      "done": "Fatto",
+      "undo": "Annulla",
+      "postpone": "Più tardi",
+      "bringBack": "Riprendi",
+      "move": "Sposta in",
+      "remove": "Rimuovi",
+      "clearDone": "Cancella fatti"
+    },
+    "sections": {
+      "open": "In sospeso",
+      "postponed": "Rimandato",
+      "done": "Fatto"
+    },
+    "postponedUntil": "Torna il {date}",
+    "completedOn": "Fatto il {date}",
+    "errors": {
+      "required": "Scrivi prima qualcosa.",
+      "tooLong": "Resta sotto i {max} caratteri, per favore."
+    },
+    "savedLocally": "Salvato su questo dispositivo. Crea un account più avanti per ritrovarlo su tutti i tuoi dispositivi.",
+    "notProjectTool": "Non è un sistema di cose da fare. È un posto dove appoggiare le cose, così smettono di girare."
   }
 }

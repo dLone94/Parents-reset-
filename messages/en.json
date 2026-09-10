@@ -16,6 +16,10 @@
     "result": {
       "title": "Your reset – Parent Reset",
       "description": "Your short list for today, what can wait until this week, and what you can let go."
+    },
+    "load": {
+      "title": "Family load – Parent Reset",
+      "description": "A simple view of what is taking up space in your head: kids, money, home, work, relationship and you."
     }
   },
   "common": {
@@ -35,7 +39,8 @@
     "home": "Home",
     "startReset": "Start my reset",
     "howItWorks": "How it works",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Family load"
   },
   "home": {
     "hero": {
@@ -245,5 +250,66 @@
     "title": "That page does not exist",
     "body": "The link may be old or mistyped.",
     "cta": "Go to the start"
+  },
+  "load": {
+    "title": "Family load",
+    "subtitle": "What is taking up space in your head, by area. Add it, finish it, or push it to tomorrow.",
+    "summary": "{count, plural, =0 {Nothing open right now.} one {# thing open across all areas.} other {# things open across all areas.}}",
+    "categories": {
+      "kids": "Kids",
+      "money": "Money",
+      "home": "Home",
+      "work": "Work",
+      "relationship": "Relationship",
+      "me": "Me"
+    },
+    "levels": {
+      "clear": "Clear",
+      "light": "Light",
+      "busy": "Busy",
+      "heavy": "Heavy"
+    },
+    "openCount": "{count, plural, =0 {Nothing open} one {# open} other {# open}}",
+    "selectCategory": "Choose an area",
+    "add": {
+      "label": "Add to {category}",
+      "placeholder": "What is on your mind?",
+      "button": "Add",
+      "hint": "Short is fine. A few words beat a paragraph."
+    },
+    "examples": {
+      "kids": "New shoes, school payment, dentist appointment",
+      "money": "Electricity bill, groceries, car insurance",
+      "home": "Laundry, cleaning, the broken lamp",
+      "work": "Reply to the manager, timesheet, the Thursday meeting",
+      "relationship": "Plan an evening together, the talk about weekends",
+      "me": "Sleep, a walk, call a friend"
+    },
+    "empty": {
+      "title": "Nothing here yet",
+      "body": "Add whatever keeps circling. For example: {examples}."
+    },
+    "actions": {
+      "done": "Done",
+      "undo": "Undo",
+      "postpone": "Later",
+      "bringBack": "Bring back",
+      "move": "Move to",
+      "remove": "Remove",
+      "clearDone": "Clear done"
+    },
+    "sections": {
+      "open": "Open",
+      "postponed": "Postponed",
+      "done": "Done"
+    },
+    "postponedUntil": "Back on {date}",
+    "completedOn": "Done on {date}",
+    "errors": {
+      "required": "Type something first.",
+      "tooLong": "Please keep it under {max} characters."
+    },
+    "savedLocally": "Saved on this device. Create an account later to keep it across devices.",
+    "notProjectTool": "This is not a to-do system. It is a place to put things down so they stop circling."
   }
 }

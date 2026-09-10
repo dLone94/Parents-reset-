@@ -18,6 +18,10 @@
     "result": {
       "title": "Dein Reset – Parent Reset",
       "description": "Deine kurze Liste für heute, was bis diese Woche warten kann und was du loslassen darfst."
+    },
+    "load": {
+      "title": "Familienlast – Parent Reset",
+      "description": "Ein einfacher Blick auf das, was gerade Platz in deinem Kopf einnimmt: Kinder, Geld, Zuhause, Arbeit, Beziehung und du."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Start",
     "startReset": "Reset starten",
     "howItWorks": "So funktioniert es",
-    "menuTitle": "Menü"
+    "menuTitle": "Menü",
+    "familyLoad": "Familienlast"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Diese Seite gibt es nicht",
     "body": "Der Link ist vielleicht veraltet oder falsch geschrieben.",
     "cta": "Zur Startseite"
+  },
+  "load": {
+    "title": "Familienlast",
+    "subtitle": "Was gerade Platz in deinem Kopf einnimmt, nach Bereich. Trag es ein, hak es ab oder schieb es auf morgen.",
+    "summary": "{count, plural, =0 {Gerade ist nichts offen.} one {# Sache offen über alle Bereiche.} other {# Sachen offen über alle Bereiche.}}",
+    "categories": {
+      "kids": "Kinder",
+      "money": "Geld",
+      "home": "Zuhause",
+      "work": "Arbeit",
+      "relationship": "Beziehung",
+      "me": "Ich"
+    },
+    "levels": {
+      "clear": "Frei",
+      "light": "Leicht",
+      "busy": "Voll",
+      "heavy": "Schwer"
+    },
+    "openCount": "{count, plural, =0 {Nichts offen} one {# offen} other {# offen}}",
+    "selectCategory": "Wähle einen Bereich",
+    "add": {
+      "label": "Zu {category} hinzufügen",
+      "placeholder": "Was geht dir durch den Kopf?",
+      "button": "Hinzufügen",
+      "hint": "Kurz reicht. Ein paar Worte sind besser als ein Absatz."
+    },
+    "examples": {
+      "kids": "Neue Schuhe, Schulgeld, Zahnarzttermin",
+      "money": "Stromrechnung, Einkaufen, Autoversicherung",
+      "home": "Wäsche, Putzen, die kaputte Lampe",
+      "work": "Der Chefin antworten, Stundenzettel, das Meeting am Donnerstag",
+      "relationship": "Einen Abend zu zweit planen, das Gespräch über die Wochenenden",
+      "me": "Schlaf, ein Spaziergang, eine Freundin anrufen"
+    },
+    "empty": {
+      "title": "Hier ist noch nichts",
+      "body": "Trag ein, was dir immer wieder durch den Kopf geht. Zum Beispiel: {examples}."
+    },
+    "actions": {
+      "done": "Erledigt",
+      "undo": "Rückgängig",
+      "postpone": "Später",
+      "bringBack": "Zurückholen",
+      "move": "Verschieben nach",
+      "remove": "Entfernen",
+      "clearDone": "Erledigtes löschen"
+    },
+    "sections": {
+      "open": "Offen",
+      "postponed": "Verschoben",
+      "done": "Erledigt"
+    },
+    "postponedUntil": "Wieder da am {date}",
+    "completedOn": "Erledigt am {date}",
+    "errors": {
+      "required": "Schreib zuerst etwas.",
+      "tooLong": "Bitte bleib unter {max} Zeichen."
+    },
+    "savedLocally": "Auf diesem Gerät gespeichert. Erstell später ein Konto, um es auf allen Geräten zu behalten.",
+    "notProjectTool": "Das ist kein To-do-System. Es ist ein Ort, an dem du Dinge ablegen kannst, damit sie nicht mehr kreisen."
   }
 }

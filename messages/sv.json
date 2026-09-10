@@ -18,6 +18,10 @@
     "result": {
       "title": "Din reset – Parent Reset",
       "description": "Din korta lista för i dag, vad som kan vänta till den här veckan och vad du kan släppa."
+    },
+    "load": {
+      "title": "Allt du bär på – Parent Reset",
+      "description": "En enkel överblick över vad som tar plats i huvudet: barn, pengar, hem, jobb, relation och du själv."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Hem",
     "startReset": "Starta min reset",
     "howItWorks": "Så funkar det",
-    "menuTitle": "Meny"
+    "menuTitle": "Meny",
+    "familyLoad": "Allt du bär på"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Den sidan finns inte",
     "body": "Länken kan vara gammal eller felskriven.",
     "cta": "Gå till start"
+  },
+  "load": {
+    "title": "Allt du bär på",
+    "subtitle": "Vad som tar plats i huvudet, område för område. Lägg till, bocka av eller skjut till i morgon.",
+    "summary": "{count, plural, =0 {Inget öppet just nu.} one {# sak öppen i alla områden.} other {# saker öppna i alla områden.}}",
+    "categories": {
+      "kids": "Barn",
+      "money": "Pengar",
+      "home": "Hem",
+      "work": "Jobb",
+      "relationship": "Relation",
+      "me": "Jag"
+    },
+    "levels": {
+      "clear": "Tomt",
+      "light": "Lätt",
+      "busy": "Fullt",
+      "heavy": "Tungt"
+    },
+    "openCount": "{count, plural, =0 {Inget öppet} one {# öppen} other {# öppna}}",
+    "selectCategory": "Välj ett område",
+    "add": {
+      "label": "Lägg till i {category}",
+      "placeholder": "Vad snurrar i huvudet?",
+      "button": "Lägg till",
+      "hint": "Kort räcker. Några ord slår ett helt stycke."
+    },
+    "examples": {
+      "kids": "Nya skor, skolavgift, tandläkartid",
+      "money": "Elräkningen, matinköp, bilförsäkringen",
+      "home": "Tvätten, städningen, den trasiga lampan",
+      "work": "Svara chefen, tidrapporten, torsdagsmötet",
+      "relationship": "Planera en kväll ihop, samtalet om helgerna",
+      "me": "Sömn, en promenad, ringa en vän"
+    },
+    "empty": {
+      "title": "Inget här än",
+      "body": "Lägg in det som snurrar. Till exempel: {examples}."
+    },
+    "actions": {
+      "done": "Klar",
+      "undo": "Ångra",
+      "postpone": "Senare",
+      "bringBack": "Ta tillbaka",
+      "move": "Flytta till",
+      "remove": "Ta bort",
+      "clearDone": "Rensa klara"
+    },
+    "sections": {
+      "open": "Öppna",
+      "postponed": "Uppskjutna",
+      "done": "Klara"
+    },
+    "postponedUntil": "Tillbaka {date}",
+    "completedOn": "Klar {date}",
+    "errors": {
+      "required": "Skriv något först.",
+      "tooLong": "Håll det under {max} tecken."
+    },
+    "savedLocally": "Sparat på den här enheten. Skapa ett konto senare för att ha det kvar på alla enheter.",
+    "notProjectTool": "Det här är inget att göra-system. Det är en plats att lägga ner saker på, så att de slutar snurra."
   }
 }

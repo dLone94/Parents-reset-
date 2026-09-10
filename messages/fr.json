@@ -18,6 +18,10 @@
     "result": {
       "title": "Votre reset – Parent Reset",
       "description": "Votre courte liste pour aujourd'hui, ce qui peut attendre cette semaine et ce que vous pouvez laisser de côté."
+    },
+    "load": {
+      "title": "Charge familiale – Parent Reset",
+      "description": "Une vue simple de ce qui prend de la place dans votre tête : enfants, argent, maison, travail, couple et vous."
     }
   },
   "common": {
@@ -37,7 +41,8 @@
     "home": "Accueil",
     "startReset": "Commencer mon reset",
     "howItWorks": "Comment ça marche",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Charge familiale"
   },
   "home": {
     "hero": {
@@ -247,5 +252,66 @@
     "title": "Cette page n'existe pas",
     "body": "Le lien est peut-être ancien ou mal écrit.",
     "cta": "Retour au début"
+  },
+  "load": {
+    "title": "Charge familiale",
+    "subtitle": "Ce qui prend de la place dans votre tête, par domaine. Ajoutez-le, terminez-le ou remettez-le à demain.",
+    "summary": "{count, plural, =0 {Rien d'ouvert pour le moment.} one {# chose ouverte, tous domaines confondus.} other {# choses ouvertes, tous domaines confondus.}}",
+    "categories": {
+      "kids": "Enfants",
+      "money": "Argent",
+      "home": "Maison",
+      "work": "Travail",
+      "relationship": "Couple",
+      "me": "Moi"
+    },
+    "levels": {
+      "clear": "Dégagé",
+      "light": "Léger",
+      "busy": "Chargé",
+      "heavy": "Lourd"
+    },
+    "openCount": "{count, plural, =0 {Rien d'ouvert} one {# ouverte} other {# ouvertes}}",
+    "selectCategory": "Choisissez un domaine",
+    "add": {
+      "label": "Ajouter à {category}",
+      "placeholder": "Qu'est-ce qui vous trotte dans la tête ?",
+      "button": "Ajouter",
+      "hint": "Court, c'est très bien. Quelques mots valent mieux qu'un paragraphe."
+    },
+    "examples": {
+      "kids": "Nouvelles chaussures, paiement de l'école, rendez-vous chez le dentiste",
+      "money": "Facture d'électricité, courses, assurance auto",
+      "home": "Lessive, ménage, la lampe cassée",
+      "work": "Répondre au manager, feuille d'heures, la réunion de jeudi",
+      "relationship": "Prévoir une soirée à deux, la discussion sur les week-ends",
+      "me": "Dormir, une promenade, appeler un ami"
+    },
+    "empty": {
+      "title": "Rien ici pour l'instant",
+      "body": "Ajoutez tout ce qui continue de tourner. Par exemple : {examples}."
+    },
+    "actions": {
+      "done": "Fait",
+      "undo": "Annuler",
+      "postpone": "Plus tard",
+      "bringBack": "Ramener",
+      "move": "Déplacer vers",
+      "remove": "Supprimer",
+      "clearDone": "Effacer le fait"
+    },
+    "sections": {
+      "open": "En cours",
+      "postponed": "Remis à plus tard",
+      "done": "Fait"
+    },
+    "postponedUntil": "De retour le {date}",
+    "completedOn": "Fait le {date}",
+    "errors": {
+      "required": "Écrivez d'abord quelque chose.",
+      "tooLong": "Merci de rester sous {max} caractères."
+    },
+    "savedLocally": "Enregistré sur cet appareil. Créez un compte plus tard pour le retrouver sur tous vos appareils.",
+    "notProjectTool": "Ce n'est pas un système de tâches. C'est un endroit où poser les choses pour qu'elles arrêtent de tourner."
   }
 }
