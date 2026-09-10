@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Fă-ți ziua de azi mai ușoară",
+      "description": "Un reset simplu pentru părinții care poartă prea multe în minte. Sortează ce contează azi, ce poate aștepta și la ce poți renunța."
+    },
+    "reset": {
+      "title": "Începe resetul meu – Parent Reset",
+      "description": "O verificare de două minute care transformă o minte plină într-o listă scurtă pentru azi."
+    },
+    "result": {
+      "title": "Resetul tău – Parent Reset",
+      "description": "Lista ta scurtă pentru azi, ce poate aștepta până săptămâna asta și la ce poți renunța."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Sari la conținut",
+    "back": "Înapoi",
+    "continue": "Continuă",
+    "close": "Închide",
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
+    "language": "Limbă",
+    "optional": "Opțional",
+    "loading": "O clipă…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Acasă",
+    "startReset": "Începe resetul meu",
+    "howItWorks": "Cum funcționează",
+    "menuTitle": "Meniu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Pentru părinți cu prea multe în minte",
+      "title": "Viața e multă. Hai să facem ziua de azi mai ușoară.",
+      "subtitle": "Un reset simplu pentru părinții care poartă prea multe în minte.",
+      "primaryCta": "Începe resetul meu",
+      "secondaryCta": "Vezi cum funcționează",
+      "trust": "Fără cont. Cam două minute. Nimic nu se partajează."
+    },
+    "steps": {
+      "title": "Cum funcționează",
+      "subtitle": "Trei pași scurți. Fără aplicații de instalat, fără obiceiuri de construit.",
+      "one": {
+        "title": "Spune-ne ce te apasă",
+        "body": "Cât de plină pare ziua de azi, ce ocupă cel mai mult loc și cât timp ai cu adevărat."
+      },
+      "two": {
+        "title": "Sortează ce contează",
+        "body": "Împărțim totul în ce trebuie să se întâmple azi, ce poate aștepta și ce poate aștepta mult."
+      },
+      "three": {
+        "title": "Fă ziua de azi mai mică",
+        "body": "Pleci cu o listă scurtă pe care chiar o poți termina. Ăsta e tot rostul."
+      }
+    },
+    "buckets": {
+      "title": "Ce primești",
+      "subtitle": "O pagină. Trei liste. Fără panouri de control.",
+      "today": {
+        "label": "Azi",
+        "body": "Cel mult trei lucruri care contează cu adevărat azi. Nu totul, doar cât trebuie."
+      },
+      "thisWeek": {
+        "label": "Săptămâna asta",
+        "body": "Lucruri care contează, dar nu trebuie rezolvate până la culcare."
+      },
+      "letGo": {
+        "label": "Lasă deoparte",
+        "body": "Permisiunea de a lăsa restul în pace deocamdată. Va fi tot acolo și mâine."
+      }
+    },
+    "reassurance": {
+      "title": "Practic, nu clinic",
+      "items": {
+        "notTherapy": "Nu este terapie și nici sfat medical. Este un mod de a pune ordine într-o zi aglomerată.",
+        "private": "Răspunsurile tale rămân pe dispozitivul tău, dacă nu îți creezi un cont și alegi să le salvezi.",
+        "languages": "Disponibil în limba ta, pe telefon, cu o singură mână."
+      }
+    },
+    "finalCta": {
+      "title": "Când ești gata.",
+      "body": "Două minute acum pot face restul zilei să pară mai ușor.",
+      "cta": "Începe resetul meu"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Pasul {current} din {total}",
+    "hint": {
+      "oneHand": "Răspunde sincer. Nu există răspunsuri greșite și nimic nu e punctat."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Cât de mult te copleșește ziua de azi?",
+        "help": "1 înseamnă calm, 10 înseamnă complet la limită.",
+        "low": "Calm",
+        "high": "La limită",
+        "selected": "Ai ales {value} din 10"
+      },
+      "areas": {
+        "title": "Ce îți ocupă cel mai mult loc în minte?",
+        "help": "Alege tot ce se aplică.",
+        "options": {
+          "kids": "Copiii",
+          "money": "Banii",
+          "work": "Munca",
+          "home": "Casa",
+          "relationship": "Relația",
+          "health": "Sănătate / energie",
+          "other": "Altceva"
+        }
+      },
+      "time": {
+        "title": "Cât timp util ai, realist, azi?",
+        "help": "Timp care e cu adevărat al tău, nu timpul pe care ar trebui să-l ai.",
+        "options": {
+          "under30": "Sub 30 de minute",
+          "30to60": "30–60 de minute",
+          "1to2h": "1–2 ore",
+          "over2h": "Peste 2 ore"
+        }
+      },
+      "money": {
+        "title": "Presiunea banilor face parte din stresul de azi?",
+        "help": "Asta schimbă doar felul în care îți sortăm lista.",
+        "yes": "Da",
+        "no": "Nu"
+      },
+      "must": {
+        "title": "Ce trebuie neapărat să se întâmple azi?",
+        "help": "Cel mai simplu e un lucru pe fiecare rând. Păstrează doar ce chiar nu poate aștepta.",
+        "placeholder": "Plătesc factura la curent\nIau copiii la 4\nSun la dentist"
+      },
+      "onMind": {
+        "title": "Ce altceva te mai preocupă?",
+        "help": "Orice. Poți lăsa câmpul gol.",
+        "placeholder": "Mă simt în urmă cu tot la serviciu. Încă n-am rezolvat cu ziua de naștere."
+      }
+    },
+    "errors": {
+      "required": "Te rugăm să adaugi cel puțin un lucru.",
+      "tooLong": "E puțin cam lung. Te rugăm să-l scurtezi la {max} caractere.",
+      "areasRequired": "Te rugăm să alegi cel puțin una.",
+      "generic": "Ceva n-a mers. Te rugăm să încerci din nou.",
+      "rateLimited": "Prea multe resetări într-un timp scurt. Te rugăm să aștepți un minut și să încerci din nou."
+    },
+    "submit": "Arată-mi resetul",
+    "submitting": "Îți sortăm ziua…",
+    "resumeDraft": "Ți-am păstrat răspunsurile de mai devreme.",
+    "startOver": "Ia-o de la capăt"
+  },
+  "result": {
+    "title": "Resetul tău",
+    "dateLabel": "Reset din {date}",
+    "today": {
+      "label": "Azi",
+      "intro": "Doar astea. Dacă le termini, ziua a contat."
+    },
+    "thisWeek": {
+      "label": "Săptămâna asta",
+      "intro": "Contează, dar nu trebuie rezolvat azi."
+    },
+    "letGo": {
+      "label": "Lasă deoparte",
+      "intro": "Nu azi. Serios."
+    },
+    "savedLocally": "Salvat pe acest dispozitiv. Creează un cont mai târziu ca să-ți păstrezi istoricul pe toate dispozitivele.",
+    "newReset": "Începe un reset nou",
+    "backHome": "Înapoi acasă",
+    "notFound": {
+      "title": "Nu am găsit acel reset",
+      "body": "Poate a fost creat pe alt dispozitiv sau șters din acest browser.",
+      "cta": "Începe un reset nou"
+    },
+    "disclaimer": "Parent Reset este un instrument practic de planificare, nu un sfat medical sau terapeutic."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Ziua de azi pare gestionabilă. Hai s-o ținem așa, cu o listă scurtă.",
+      "busy": "Ai destule lucruri care îți cer atenția azi. Iată ce păstrezi, ce poate aștepta și ce lași deoparte.",
+      "heavy": "Ai multe lucruri care îți cer atenția azi. Lista de azi e mică intenționat."
+    },
+    "time": {
+      "under30": "Ai mai puțin de 30 de minute cu adevărat ale tale, așa că lista de azi e foarte scurtă.",
+      "30to60": "Cu o jumătate de oră până la o oră, trei lucruri e plafonul realist.",
+      "1to2h": "Ai una-două ore, destul pentru câteva lucruri făcute bine.",
+      "over2h": "Ai ceva timp real azi. Folosește-l pentru ce contează, nu pentru tot."
+    },
+    "today": {
+      "moneyCheck": "Verifică ce plată e de fapt scadentă prima. Ocupă-te doar de aceea.",
+      "pickOne": "Alege singurul lucru care ar face ziua de azi să pară rezolvată și fă doar atât.",
+      "breather": "Ia-ți zece minute fără nimic planificat. Se pune ca sarcină."
+    },
+    "week": {
+      "area": {
+        "kids": "Alege un singur lucru legat de copii de rezolvat săptămâna asta, nu pe toate.",
+        "money": "Uită-te o singură dată la situația banilor pe toată luna, apoi oprește-te.",
+        "work": "Alege singurul lucru de la muncă care ar lua cea mai mare presiune de pe tine.",
+        "home": "O singură treabă în casă care ar face spațiul să pară mai liniștit.",
+        "relationship": "Găsește un moment săptămâna asta să vorbiți, când niciunul dintre voi nu e epuizat.",
+        "health": "Un lucru mic pentru energia ta: somn, mâncare, o plimbare.",
+        "other": "Celălalt lucru care te preocupă primește un loc săptămâna asta, nu azi."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Casa nu trebuie să fie ordonată azi.",
+      "moneyWhole": "Nu trebuie să rezolvi toată situația banilor azi. Un pas e de ajuns.",
+      "relationshipTalk": "Discuțiile mari pot aștepta o zi cu mai multă energie.",
+      "kidsExtra": "Activitățile în plus, mesele perfecte și vinovăția pentru timpul la ecran.",
+      "workExtra": "Orice de la muncă e mai degrabă „bine de făcut” decât chiar scadent.",
+      "healthAllOrNothing": "Planul totul-sau-nimic. Și puțin contează.",
+      "everythingElse": "Tot ce nu e pe lista de azi. Va fi tot acolo și mâine.",
+      "onMind": "O parte din ce te preocupă poate aștepta până se liniștesc lucrurile."
+    },
+    "notes": {
+      "movedForTime": "Mutat aici pentru că timpul util de azi e scurt.",
+      "movedForFocus": "Mutat aici ca ziua de azi să rămână la trei lucruri.",
+      "fromYou": "Din ce altceva te preocupă"
+    }
+  },
+  "safety": {
+    "title": "Înainte de orice altceva",
+    "body": "O parte din ce ai scris sună ca mai mult decât o zi aglomerată. Parent Reset nu poate ajuta cu asta, dar oamenii pot.",
+    "emergency": "Dacă tu sau altcineva sunteți în pericol imediat, contactează serviciile de urgență locale.",
+    "trustedPerson": "Vorbește cu cineva în care ai încredere și spune-i cum e ziua de azi cu adevărat.",
+    "support": "În majoritatea țărilor există linii de sprijin în situații de criză, gratuite și confidențiale. Caută una în țara ta sau întreabă-ți medicul.",
+    "continue": "Continuă spre lista ta"
+  },
+  "footer": {
+    "tagline": "Un reset simplu pentru părinții care poartă prea multe în minte.",
+    "notMedical": "Parent Reset nu este un serviciu medical sau de terapie.",
+    "madeWithCare": "Făcut cu grijă pentru părinți ocupați.",
+    "language": "Limbă"
+  },
+  "notFound": {
+    "title": "Pagina asta nu există",
+    "body": "Linkul poate fi vechi sau scris greșit.",
+    "cta": "Mergi la început"
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Tee tänane päev kergemaks",
+      "description": "Lihtne taaskäivitus vanematele, kellel on peas liiga palju. Sorteeri, mis on täna oluline, mis võib oodata ja millest võid lahti lasta."
+    },
+    "reset": {
+      "title": "Alusta taaskäivitust – Parent Reset",
+      "description": "Kaheminutiline enesekontroll, mis muudab täis pea lühikeseks tänaseks nimekirjaks."
+    },
+    "result": {
+      "title": "Sinu taaskäivitus – Parent Reset",
+      "description": "Sinu lühike nimekiri tänaseks, mis võib oodata selle nädala jooksul ja millest võid lahti lasta."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Liigu sisu juurde",
+    "back": "Tagasi",
+    "continue": "Edasi",
+    "close": "Sulge",
+    "openMenu": "Ava menüü",
+    "closeMenu": "Sulge menüü",
+    "language": "Keel",
+    "optional": "Valikuline",
+    "loading": "Üks hetk…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Avaleht",
+    "startReset": "Alusta taaskäivitust",
+    "howItWorks": "Kuidas see töötab",
+    "menuTitle": "Menüü"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Vanematele, kellel on peas liiga palju",
+      "title": "Elu on palju. Teeme tänase päeva kergemaks.",
+      "subtitle": "Lihtne taaskäivitus vanematele, kellel on peas liiga palju.",
+      "primaryCta": "Alusta taaskäivitust",
+      "secondaryCta": "Vaata, kuidas see töötab",
+      "trust": "Kontot pole vaja. Umbes kaks minutit. Midagi ei jagata."
+    },
+    "steps": {
+      "title": "Kuidas see töötab",
+      "subtitle": "Kolm lühikest sammu. Pole rakendusi, mida seadistada, ega harjumusi, mida kujundada.",
+      "one": {
+        "title": "Räägi, mis sind koormab",
+        "body": "Kui täis tänane päev tundub, mis võtab kõige rohkem ruumi ja kui palju aega sul tegelikult on."
+      },
+      "two": {
+        "title": "Sorteeri, mis on oluline",
+        "body": "Jagame selle kolmeks: mis peab täna juhtuma, mis võib oodata ja mis võib oodata kaua."
+      },
+      "three": {
+        "title": "Tee tänane päev väiksemaks",
+        "body": "Lahkud lühikese nimekirjaga, mille päriselt lõpuni teed. See ongi kogu mõte."
+      }
+    },
+    "buckets": {
+      "title": "Mida sa saad",
+      "subtitle": "Üks leht. Kolm nimekirja. Ei mingeid töölaudu.",
+      "today": {
+        "label": "Täna",
+        "body": "Kuni kolm asja, mis täna tõesti loevad. Mitte kõik, vaid täpselt piisavalt."
+      },
+      "thisWeek": {
+        "label": "Sel nädalal",
+        "body": "Asjad, mis loevad, aga mida ei pea enne magamaminekut lahendama."
+      },
+      "letGo": {
+        "label": "Lase lahti",
+        "body": "Luba jätta ülejäänu praegu rahule. See on homme ikka alles."
+      }
+    },
+    "reassurance": {
+      "title": "Praktiline, mitte kliiniline",
+      "items": {
+        "notTherapy": "See ei ole teraapia ega meditsiiniline nõuanne. See on viis, kuidas kiire päev korda seada.",
+        "private": "Sinu vastused jäävad sinu seadmesse, kui sa just kontot ei loo ja neid salvestada ei otsusta.",
+        "languages": "Saadaval sinu keeles, sinu telefonis, ühe käega."
+      }
+    },
+    "finalCta": {
+      "title": "Kui sa valmis oled.",
+      "body": "Kaks minutit praegu võivad muuta ülejäänud päeva kergemaks.",
+      "cta": "Alusta taaskäivitust"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Samm {current} / {total}",
+    "hint": {
+      "oneHand": "Vasta ausalt. Valesid vastuseid pole ja midagi ei hinnata."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Kui ülekoormatuna sa end täna tunned?",
+        "help": "1 on rahulik, 10 on täiesti piiril.",
+        "low": "Rahulik",
+        "high": "Täiesti piiril",
+        "selected": "Valisid {value} 10-st"
+      },
+      "areas": {
+        "title": "Mis võtab su peas kõige rohkem ruumi?",
+        "help": "Vali kõik, mis sobib.",
+        "options": {
+          "kids": "Lapsed",
+          "money": "Raha",
+          "work": "Töö",
+          "home": "Kodu",
+          "relationship": "Suhe",
+          "health": "Tervis / energia",
+          "other": "Midagi muud"
+        }
+      },
+      "time": {
+        "title": "Kui palju kasutatavat aega sul täna realistlikult on?",
+        "help": "Aeg, mis on päriselt sinu oma, mitte aeg, mis sul justkui olema peaks.",
+        "options": {
+          "under30": "Alla 30 minuti",
+          "30to60": "30–60 minutit",
+          "1to2h": "1–2 tundi",
+          "over2h": "Üle 2 tunni"
+        }
+      },
+      "money": {
+        "title": "Kas rahamure on osa tänasest stressist?",
+        "help": "See muudab ainult seda, kuidas me su nimekirja sorteerime.",
+        "yes": "Jah",
+        "no": "Ei"
+      },
+      "must": {
+        "title": "Mis peab täna kindlasti juhtuma?",
+        "help": "Üks asi rea kohta on kõige lihtsam. Kirjuta ainult see, mis tõesti ei saa oodata.",
+        "placeholder": "Maksta elektriarve\nTuua lapsed kell 4 ära\nHelistada hambaarstile"
+      },
+      "onMind": {
+        "title": "Mis sul veel mõttes on?",
+        "help": "Ükskõik mis. Võid selle ka tühjaks jätta.",
+        "placeholder": "Tunnen, et olen tööl kõigega maha jäänud. Sünnipäev on ikka korraldamata."
+      }
+    },
+    "errors": {
+      "required": "Palun lisa vähemalt üks asi.",
+      "tooLong": "See on natuke liiga pikk. Palun lühenda {max} tähemärgini.",
+      "areasRequired": "Palun vali vähemalt üks.",
+      "generic": "Midagi läks valesti. Palun proovi uuesti.",
+      "rateLimited": "Liiga palju taaskäivitusi lühikese aja jooksul. Palun oota minut ja proovi uuesti."
+    },
+    "submit": "Näita mu taaskäivitust",
+    "submitting": "Sorteerime su päeva…",
+    "resumeDraft": "Hoidsime su varasemad vastused alles.",
+    "startOver": "Alusta uuesti"
+  },
+  "result": {
+    "title": "Sinu taaskäivitus",
+    "dateLabel": "Taaskäivitus: {date}",
+    "today": {
+      "label": "Täna",
+      "intro": "Ainult need. Kui need tehtud saad, on päev korda läinud."
+    },
+    "thisWeek": {
+      "label": "Sel nädalal",
+      "intro": "Loeb, aga ei vaja täna lahendamist."
+    },
+    "letGo": {
+      "label": "Lase lahti",
+      "intro": "Mitte täna. Päriselt."
+    },
+    "savedLocally": "Salvestatud sellesse seadmesse. Loo hiljem konto, et hoida ajalugu alles kõigis seadmetes.",
+    "newReset": "Alusta uut taaskäivitust",
+    "backHome": "Tagasi avalehele",
+    "notFound": {
+      "title": "Me ei leidnud seda taaskäivitust",
+      "body": "See võis olla loodud teises seadmes või sellest brauserist kustutatud.",
+      "cta": "Alusta uut taaskäivitust"
+    },
+    "disclaimer": "Parent Reset on praktiline planeerimistööriist, mitte meditsiiniline ega terapeutiline nõuanne."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Tänane päev tundub jõukohane. Hoiame selle lühikese nimekirjaga nii.",
+      "busy": "Sul on täna päris palju asju, mis su tähelepanu eest võistlevad. Siin on, mida hoida, mis võib oodata ja mis rahule jätta.",
+      "heavy": "Sul on täna väga palju asju, mis su tähelepanu eest võistlevad. Tänane nimekiri on meelega väike."
+    },
+    "time": {
+      "under30": "Sul on alla 30 minuti, mis on päriselt sinu oma, seega on tänane nimekiri väga lühike.",
+      "30to60": "Umbes poole tunni kuni tunniga on kolm asja realistlik ülempiir.",
+      "1to2h": "Sul on üks kuni kaks tundi, piisavalt, et teha mõned asjad hästi.",
+      "over2h": "Sul on täna päriselt aega. Kasuta seda selleks, mis loeb, mitte kõigeks."
+    },
+    "today": {
+      "moneyCheck": "Vaata, milline makse on tegelikult esimesena tähtajaks. Tegele ainult sellega.",
+      "pickOne": "Vali see üks asi, mille tegemisel tunduks päev korras, ja tee ainult seda.",
+      "breather": "Võta kümme minutit ilma ühegi plaanita. See loeb ülesandena."
+    },
+    "week": {
+      "area": {
+        "kids": "Vali sel nädalal üks lastega seotud asi, mis korda ajada, mitte kõik.",
+        "money": "Vaata korra üle kogu kuu rahapilt ja siis lõpeta.",
+        "work": "Vali see üks tööasi, mis võtaks kõige rohkem survet maha.",
+        "home": "Üks kodune toimetus, mis muudaks ruumi rahulikumaks.",
+        "relationship": "Leia sel nädalal hetk rääkimiseks, kui kumbki teist pole kurnatud.",
+        "health": "Üks väike asi sinu enda energia heaks: uni, toit, jalutuskäik.",
+        "other": "See teine asi, mis sul mõttes on, saab koha sel nädalal, mitte täna."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Kodu ei pea täna korras olema.",
+      "moneyWhole": "Sa ei pea täna kogu rahaolukorda lahendama. Ühest sammust piisab.",
+      "relationshipTalk": "Suured vestlused võivad oodata päeva, mil on rohkem energiat.",
+      "kidsExtra": "Lisategevused, täiuslikud toidud ja süütunne ekraaniaja pärast.",
+      "workExtra": "Kõik tööasjad, mida oleks tore teha, aga mille tähtaeg pole päriselt käes.",
+      "healthAllOrNothing": "Plaan „kõik või mitte midagi“. Väike loeb ka.",
+      "everythingElse": "Kõik, mis tänases nimekirjas pole. See on homme ikka alles.",
+      "onMind": "Osa sellest, mis sul mõttes on, võib puhata, kuni asjad rahunevad."
+    },
+    "notes": {
+      "movedForTime": "Toodud siia, sest tänast kasutatavat aega on vähe.",
+      "movedForFocus": "Toodud siia, et tänasesse jääks kolm asja.",
+      "fromYou": "Sellest, mis sul veel mõttes on"
+    }
+  },
+  "safety": {
+    "title": "Enne kõike muud",
+    "body": "Osa sellest, mida kirjutasid, kõlab rohkem kui lihtsalt kiire päev. Parent Reset ei saa sellega aidata, aga inimesed saavad.",
+    "emergency": "Kui sina või keegi teine on vahetus ohus, võta ühendust kohaliku hädaabiga.",
+    "trustedPerson": "Pöördu kellegi poole, keda usaldad, ja räägi talle, milline tänane päev päriselt on.",
+    "support": "Enamikus riikides on tasuta ja konfidentsiaalsed kriisiabi liinid. Otsi oma riigi oma või küsi oma arstilt.",
+    "continue": "Edasi oma nimekirja juurde"
+  },
+  "footer": {
+    "tagline": "Lihtne taaskäivitus vanematele, kellel on peas liiga palju.",
+    "notMedical": "Parent Reset ei ole meditsiini- ega teraapiateenus.",
+    "madeWithCare": "Tehtud hoolega kiiretele vanematele.",
+    "language": "Keel"
+  },
+  "notFound": {
+    "title": "Seda lehte ei ole olemas",
+    "body": "Link võib olla vana või valesti kirjutatud.",
+    "cta": "Mine algusesse"
+  }
+}

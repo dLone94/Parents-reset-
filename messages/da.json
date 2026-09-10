@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Gør dagen lettere",
+      "description": "En enkel reset til forældre, der har for meget i hovedet. Sortér hvad der er vigtigt i dag, hvad der kan vente, og hvad du kan give slip på."
+    },
+    "reset": {
+      "title": "Start min reset – Parent Reset",
+      "description": "Et to-minutters tjek, der gør et fyldt hoved til en kort liste for i dag."
+    },
+    "result": {
+      "title": "Din reset – Parent Reset",
+      "description": "Din korte liste for i dag, hvad der kan vente til i denne uge, og hvad du kan give slip på."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Spring til indhold",
+    "back": "Tilbage",
+    "continue": "Fortsæt",
+    "close": "Luk",
+    "openMenu": "Åbn menu",
+    "closeMenu": "Luk menu",
+    "language": "Sprog",
+    "optional": "Valgfrit",
+    "loading": "Et øjeblik…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Forside",
+    "startReset": "Start min reset",
+    "howItWorks": "Sådan virker det",
+    "menuTitle": "Menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Til forældre med for meget i hovedet",
+      "title": "Livet er meget. Lad os gøre dagen lettere.",
+      "subtitle": "En enkel reset til forældre, der har for meget i hovedet.",
+      "primaryCta": "Start min reset",
+      "secondaryCta": "Se hvordan det virker",
+      "trust": "Ingen konto nødvendig. Cirka to minutter. Intet bliver delt."
+    },
+    "steps": {
+      "title": "Sådan virker det",
+      "subtitle": "Tre korte trin. Ingen apps at sætte op, ingen vaner at opbygge.",
+      "one": {
+        "title": "Fortæl os, hvad der tynger dig",
+        "body": "Hvor fyldt dagen føles, hvad der fylder mest, og hvor meget tid du reelt har."
+      },
+      "two": {
+        "title": "Sortér det vigtige",
+        "body": "Vi deler det op i det, der skal ske i dag, det, der kan vente, og det, der kan vente længe."
+      },
+      "three": {
+        "title": "Gør dagen mindre",
+        "body": "Du går derfra med en kort liste, du faktisk kan nå. Det er hele pointen."
+      }
+    },
+    "buckets": {
+      "title": "Det får du",
+      "subtitle": "Én side. Tre lister. Ingen dashboards.",
+      "today": {
+        "label": "I dag",
+        "body": "Op til tre ting, der virkelig betyder noget i dag. Ikke alt, bare nok."
+      },
+      "thisWeek": {
+        "label": "Denne uge",
+        "body": "Ting, der tæller, men ikke skal løses inden sengetid."
+      },
+      "letGo": {
+        "label": "Giv slip",
+        "body": "Lov til at lade resten ligge for nu. Det er der stadig i morgen."
+      }
+    },
+    "reassurance": {
+      "title": "Praktisk, ikke klinisk",
+      "items": {
+        "notTherapy": "Det her er ikke terapi eller lægelig rådgivning. Det er en måde at sortere en travl dag på.",
+        "private": "Dine svar bliver på din enhed, medmindre du opretter en konto og vælger at gemme dem.",
+        "languages": "Fås på dit sprog, på din telefon, med én hånd."
+      }
+    },
+    "finalCta": {
+      "title": "Klar, når du er.",
+      "body": "To minutter nu kan gøre resten af dagen lettere.",
+      "cta": "Start min reset"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Trin {current} af {total}",
+    "hint": {
+      "oneHand": "Svar ærligt. Der er ingen forkerte svar, og intet bliver bedømt."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Hvor overvældet føler du dig i dag?",
+        "help": "1 er rolig, 10 er helt på grænsen.",
+        "low": "Rolig",
+        "high": "På grænsen",
+        "selected": "Du valgte {value} ud af 10"
+      },
+      "areas": {
+        "title": "Hvad fylder mest i hovedet?",
+        "help": "Vælg alt det, der passer.",
+        "options": {
+          "kids": "Børnene",
+          "money": "Penge",
+          "work": "Arbejde",
+          "home": "Hjemmet",
+          "relationship": "Parforholdet",
+          "health": "Helbred / energi",
+          "other": "Noget andet"
+        }
+      },
+      "time": {
+        "title": "Hvor meget brugbar tid har du realistisk set i dag?",
+        "help": "Tid, der faktisk er din, ikke tid du burde have.",
+        "options": {
+          "under30": "Under 30 minutter",
+          "30to60": "30–60 minutter",
+          "1to2h": "1–2 timer",
+          "over2h": "Over 2 timer"
+        }
+      },
+      "money": {
+        "title": "Er pengepres en del af dagens stress?",
+        "help": "Det ændrer kun, hvordan vi sorterer din liste.",
+        "yes": "Ja",
+        "no": "Nej"
+      },
+      "must": {
+        "title": "Hvad skal absolut ske i dag?",
+        "help": "Én ting pr. linje er nemmest. Hold dig til det, der virkelig ikke kan vente.",
+        "placeholder": "Betale elregningen\nHente børnene klokken 16\nRinge til tandlægen"
+      },
+      "onMind": {
+        "title": "Hvad ellers fylder i hovedet?",
+        "help": "Hvad som helst. Du kan lade feltet stå tomt.",
+        "placeholder": "Føler mig bagud med alt på arbejdet. Har stadig ikke styr på fødselsdagen."
+      }
+    },
+    "errors": {
+      "required": "Tilføj mindst én ting.",
+      "tooLong": "Det er lidt for langt. Kort det ned til {max} tegn.",
+      "areasRequired": "Vælg mindst én.",
+      "generic": "Noget gik galt. Prøv igen.",
+      "rateLimited": "For mange resets på kort tid. Vent et minut, og prøv igen."
+    },
+    "submit": "Vis min reset",
+    "submitting": "Sorterer din dag…",
+    "resumeDraft": "Vi har gemt dine svar fra tidligere.",
+    "startOver": "Start forfra"
+  },
+  "result": {
+    "title": "Din reset",
+    "dateLabel": "Reset fra {date}",
+    "today": {
+      "label": "I dag",
+      "intro": "Kun de her. Hvis du når dem, har dagen talt."
+    },
+    "thisWeek": {
+      "label": "Denne uge",
+      "intro": "Vigtigt, men skal ikke løses i dag."
+    },
+    "letGo": {
+      "label": "Giv slip",
+      "intro": "Ikke i dag. Helt seriøst."
+    },
+    "savedLocally": "Gemt på denne enhed. Opret en konto senere for at beholde din historik på tværs af enheder.",
+    "newReset": "Start en ny reset",
+    "backHome": "Tilbage til forsiden",
+    "notFound": {
+      "title": "Vi kunne ikke finde den reset",
+      "body": "Den er måske oprettet på en anden enhed eller slettet fra denne browser.",
+      "cta": "Start en ny reset"
+    },
+    "disclaimer": "Parent Reset er et praktisk planlægningsværktøj, ikke lægelig eller terapeutisk rådgivning."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Dagen føles overskuelig. Lad os holde den sådan med en kort liste.",
+      "busy": "Der er en del, der kæmper om din opmærksomhed i dag. Her er, hvad du beholder, hvad der kan vente, og hvad du lader ligge.",
+      "heavy": "Der er rigtig meget, der kæmper om din opmærksomhed i dag. Dagens liste er lille med vilje."
+    },
+    "time": {
+      "under30": "Du har under 30 minutter, der virkelig er dine, så dagens liste er meget kort.",
+      "30to60": "Med en halv til en hel time er tre ting det realistiske loft.",
+      "1to2h": "Du har en til to timer, nok til et par ting gjort ordentligt.",
+      "over2h": "Du har noget reel tid i dag. Brug den på det, der betyder noget, ikke på alt."
+    },
+    "today": {
+      "moneyCheck": "Tjek hvilken betaling der faktisk forfalder først. Tag dig kun af den.",
+      "pickOne": "Vælg den ene ting, der ville få dagen til at føles håndteret, og gør kun det.",
+      "breather": "Tag ti minutter uden noget planlagt. Det tæller som en opgave."
+    },
+    "week": {
+      "area": {
+        "kids": "Vælg én ting med børnene at få styr på i denne uge, ikke dem alle.",
+        "money": "Kig på hele månedens økonomi én gang, og stop så.",
+        "work": "Vælg den ene arbejdsting, der ville tage mest pres af.",
+        "home": "Én huslig opgave, der ville få hjemmet til at føles roligere.",
+        "relationship": "Find et øjeblik i denne uge til at tale sammen, hvor ingen af jer er udkørte.",
+        "health": "Én lille ting for din egen energi: søvn, mad, en gåtur.",
+        "other": "Den anden ting i hovedet får en plads i denne uge, ikke i dag."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Huset behøver ikke være ryddet op i dag.",
+      "moneyWhole": "Du behøver ikke løse hele pengesituationen i dag. Ét skridt er nok.",
+      "relationshipTalk": "Store samtaler kan vente til en dag med mere energi.",
+      "kidsExtra": "Ekstra aktiviteter, perfekte måltider og dårlig samvittighed over skærmtid.",
+      "workExtra": "Alt på arbejdet, der er rart at gøre, men ikke reelt skal gøres.",
+      "healthAllOrNothing": "Alt-eller-intet-planen. Småt tæller også.",
+      "everythingElse": "Alt, der ikke står på dagens liste. Det er der stadig i morgen.",
+      "onMind": "Noget af det, der fylder i hovedet, kan hvile, til tingene falder til ro."
+    },
+    "notes": {
+      "movedForTime": "Flyttet hertil, fordi dagens brugbare tid er kort.",
+      "movedForFocus": "Flyttet hertil, så dagen bliver ved tre ting.",
+      "fromYou": "Fra det, der ellers fylder i hovedet"
+    }
+  },
+  "safety": {
+    "title": "Før alt andet",
+    "body": "Noget af det, du skrev, lyder som mere end en travl dag. Parent Reset kan ikke hjælpe med det, men det kan mennesker.",
+    "emergency": "Hvis du eller en anden er i umiddelbar fare, så kontakt det lokale alarmnummer.",
+    "trustedPerson": "Ræk ud til en, du stoler på, og fortæl, hvordan dagen virkelig er.",
+    "support": "Der findes gratis og fortrolige krisetelefoner i de fleste lande. Søg efter en i dit land, eller spørg din læge.",
+    "continue": "Fortsæt til din liste"
+  },
+  "footer": {
+    "tagline": "En enkel reset til forældre, der har for meget i hovedet.",
+    "notMedical": "Parent Reset er ikke en lægelig tjeneste eller terapi.",
+    "madeWithCare": "Lavet med omhu til travle forældre.",
+    "language": "Sprog"
+  },
+  "notFound": {
+    "title": "Den side findes ikke",
+    "body": "Linket kan være gammelt eller stavet forkert.",
+    "cta": "Gå til start"
+  }
+}

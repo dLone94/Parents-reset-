@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Ħa nagħmlu l-ġurnata tal-lum eħfef",
+      "description": "Waqfa sempliċi għall-ġenituri li għandhom wisq f'rashom. Qassam x'inhu importanti llum, x'jista' jistenna, u x'tista' tħalli."
+    },
+    "reset": {
+      "title": "Irranġa l-ġurnata tiegħi – Parent Reset",
+      "description": "Ċekkjata ta' żewġ minuti li tibdel ras mimlija f'lista qasira għal-lum."
+    },
+    "result": {
+      "title": "Il-ġurnata tiegħek – Parent Reset",
+      "description": "Il-lista qasira tiegħek għal-lum, x'jista' jistenna sa din il-ġimgħa, u x'tista' tħalli."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Aqbeż għall-kontenut",
+    "back": "Lura",
+    "continue": "Kompli",
+    "close": "Agħlaq",
+    "openMenu": "Iftaħ il-menu",
+    "closeMenu": "Agħlaq il-menu",
+    "language": "Lingwa",
+    "optional": "Mhux obbligatorju",
+    "loading": "Mument wieħed…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Paġna ewlenija",
+    "startReset": "Irranġa l-ġurnata tiegħi",
+    "howItWorks": "Kif jaħdem",
+    "menuTitle": "Menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Għall-ġenituri li għandhom wisq f'rashom",
+      "title": "Il-ħajja hi ħafna. Ħa nagħmlu l-ġurnata tal-lum eħfef.",
+      "subtitle": "Waqfa sempliċi għall-ġenituri li għandhom wisq f'rashom.",
+      "primaryCta": "Irranġa l-ġurnata tiegħi",
+      "secondaryCta": "Ara kif jaħdem",
+      "trust": "M'hemmx bżonn kont. Madwar żewġ minuti. Xejn ma jiġi kondiviż."
+    },
+    "steps": {
+      "title": "Kif jaħdem",
+      "subtitle": "Tliet passi qosra. L-ebda app x'tinstalla, l-ebda drawwa x'tibni.",
+      "one": {
+        "title": "Għidilna x'qed itaqqlek",
+        "body": "Kemm tħossha mimlija l-ġurnata tal-lum, x'qed jieħu l-aktar spazju, u kemm għandek ħin tassew."
+      },
+      "two": {
+        "title": "Qassam x'inhu importanti",
+        "body": "Naqsmuh f'dak li jrid isir illum, dak li jista' jistenna, u dak li jista' jistenna ħafna."
+      },
+      "three": {
+        "title": "Agħmel il-ġurnata tal-lum iżgħar",
+        "body": "Toħroġ b'lista qasira li tista' tlesti tassew. Dan hu l-punt kollu."
+      }
+    },
+    "buckets": {
+      "title": "X'tikseb",
+      "subtitle": "Paġna waħda. Tliet listi. L-ebda dashboard.",
+      "today": {
+        "label": "Illum",
+        "body": "Sa tliet affarijiet li tassew huma importanti llum. Mhux kollox, biżżejjed biss."
+      },
+      "thisWeek": {
+        "label": "Din il-ġimgħa",
+        "body": "Affarijiet li jgħoddu imma m'għandhomx bżonn jissolvew qabel il-ħin tal-irqad."
+      },
+      "letGo": {
+        "label": "Ħalliha",
+        "body": "Permess li tħalli l-bqija għalissa. Xorta se tkun hemm għada."
+      }
+    },
+    "reassurance": {
+      "title": "Prattiku, mhux kliniku",
+      "items": {
+        "notTherapy": "Din mhijiex terapija u lanqas parir mediku. Hija mod kif tqassam ġurnata mimlija.",
+        "private": "It-tweġibiet tiegħek jibqgħu fuq l-apparat tiegħek sakemm ma toħloqx kont u tagħżel li ssalvahom.",
+        "languages": "Disponibbli bil-lingwa tiegħek, fuq it-telefown tiegħek, b'id waħda."
+      }
+    },
+    "finalCta": {
+      "title": "Lest meta tkun int.",
+      "body": "Żewġ minuti issa jistgħu jagħmlu l-bqija tal-ġurnata eħfef.",
+      "cta": "Irranġa l-ġurnata tiegħi"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Pass {current} minn {total}",
+    "hint": {
+      "oneHand": "Wieġeb bl-onestà. M'hemmx tweġibiet ħżiena u xejn ma jingħata punti."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Kemm tħossok mgħobbi żżejjed illum?",
+        "help": "1 hu kalm, 10 hu mimli sal-aħħar.",
+        "low": "Kalm",
+        "high": "Mimli sal-aħħar",
+        "selected": "Għażilt {value} minn 10"
+      },
+      "areas": {
+        "title": "X'qed jieħu l-aktar spazju f'rasek?",
+        "help": "Agħżel kull ma japplika.",
+        "options": {
+          "kids": "It-tfal",
+          "money": "Il-flus",
+          "work": "Ix-xogħol",
+          "home": "Id-dar",
+          "relationship": "Ir-relazzjoni",
+          "health": "Is-saħħa / l-enerġija",
+          "other": "Xi ħaġa oħra"
+        }
+      },
+      "time": {
+        "title": "Kemm għandek ħin li tista' tuża tassew illum?",
+        "help": "Ħin li hu tiegħek tassew, mhux ħin li suppost għandek.",
+        "options": {
+          "under30": "Inqas minn 30 minuta",
+          "30to60": "30–60 minuta",
+          "1to2h": "1–2 sigħat",
+          "over2h": "Aktar minn sagħtejn"
+        }
+      },
+      "money": {
+        "title": "Il-pressjoni tal-flus hija parti mill-istress tal-lum?",
+        "help": "Dan ibiddel biss kif inqassmu l-lista tiegħek.",
+        "yes": "Iva",
+        "no": "Le"
+      },
+      "must": {
+        "title": "X'irid isir bilfors illum?",
+        "help": "Ħaġa waħda f'kull linja hi l-eħfef. Żomm biss dak li tassew ma jistax jistenna.",
+        "placeholder": "Ħallas il-kont tad-dawl\nIġbor it-tfal fl-4\nĊempel lid-dentist"
+      },
+      "onMind": {
+        "title": "X'hemm iktar f'moħħok?",
+        "help": "Kwalunkwe ħaġa. Tista' tħalli dan vojt.",
+        "placeholder": "Qed inħossni lura f'kollox fuq ix-xogħol. Għadni ma rranġajtx il-birthday."
+      }
+    },
+    "errors": {
+      "required": "Jekk jogħġbok żid mill-inqas ħaġa waħda.",
+      "tooLong": "Dan ftit twil wisq. Jekk jogħġbok qassru għal {max} karattru.",
+      "areasRequired": "Jekk jogħġbok agħżel mill-inqas waħda.",
+      "generic": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova.",
+      "rateLimited": "Wisq tentattivi f'ħin qasir. Jekk jogħġbok stenna minuta u erġa' pprova."
+    },
+    "submit": "Urini l-lista tiegħi",
+    "submitting": "Qed inqassmu l-ġurnata tiegħek…",
+    "resumeDraft": "Żammejna t-tweġibiet tiegħek ta' qabel.",
+    "startOver": "Ibda mill-ġdid"
+  },
+  "result": {
+    "title": "Il-ġurnata tiegħek",
+    "dateLabel": "Lista ta' {date}",
+    "today": {
+      "label": "Illum",
+      "intro": "Dawn biss. Jekk tlestihom, il-ġurnata għoddha."
+    },
+    "thisWeek": {
+      "label": "Din il-ġimgħa",
+      "intro": "Importanti, imma m'għandux bżonn jissolva llum."
+    },
+    "letGo": {
+      "label": "Ħalliha",
+      "intro": "Mhux illum. Tassew."
+    },
+    "savedLocally": "Salvat fuq dan l-apparat. Oħloq kont aktar tard biex iżżomm l-istorja tiegħek fuq l-apparati kollha.",
+    "newReset": "Erġa' rranġa l-ġurnata",
+    "backHome": "Lura għall-paġna ewlenija",
+    "notFound": {
+      "title": "Ma stajniex insibu dik il-lista",
+      "body": "Jista' jkun li nħolqot fuq apparat ieħor jew tħassret minn dan il-browser.",
+      "cta": "Erġa' rranġa l-ġurnata"
+    },
+    "disclaimer": "Parent Reset huwa għodda prattika ta' ppjanar, mhux parir mediku jew terapewtiku."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Il-ġurnata tal-lum tidher li tista' tlaħħaq magħha. Ħa nżommuha hekk b'lista qasira.",
+      "busy": "Għandek ammont ġust ta' affarijiet jikkompetu għall-attenzjoni tiegħek illum. Hawn x'iżżomm, x'jista' jistenna, u x'tħalli.",
+      "heavy": "Għandek ħafna affarijiet jikkompetu għall-attenzjoni tiegħek illum. Il-lista tal-lum hi żgħira apposta."
+    },
+    "time": {
+      "under30": "Għandek inqas minn 30 minuta li huma tassew tiegħek, allura l-lista tal-lum hi qasira ħafna.",
+      "30to60": "B'madwar nofs siegħa sa siegħa, tliet affarijiet hu l-limitu realistiku.",
+      "1to2h": "Għandek siegħa sa sagħtejn, biżżejjed għal ftit affarijiet magħmula sew.",
+      "over2h": "Għandek ftit ħin tassew illum. Użah għal dak li hu importanti, mhux għal kollox."
+    },
+    "today": {
+      "moneyCheck": "Iċċekkja liema ħlas tassew jiskadi l-ewwel. Ħu ħsieb dak biss.",
+      "pickOne": "Agħżel il-ħaġa waħda li tagħmel il-ġurnata tal-lum tħossha taħt kontroll, u agħmel dik biss.",
+      "breather": "Ħu għaxar minuti bla xejn ippjanat. Jgħodd bħala biċċa xogħol."
+    },
+    "week": {
+      "area": {
+        "kids": "Agħżel ħaġa waħda relatata mat-tfal biex tirranġa din il-ġimgħa, mhux kollha.",
+        "money": "Ħares lejn l-istampa tal-flus tax-xahar kollu darba, imbagħad ieqaf.",
+        "work": "Agħżel il-ħaġa waħda tax-xogħol li tneħħi l-aktar pressjoni.",
+        "home": "Biċċa xogħol waħda tad-dar li tagħmel l-ispazju jħossu aktar kalm.",
+        "relationship": "Sib mument din il-ġimgħa biex titkellmu meta ħadd minnkom ma jkun eżawrit.",
+        "health": "Ħaġa żgħira waħda għall-enerġija tiegħek: irqad, ikel, mixja.",
+        "other": "Il-ħaġa l-oħra f'moħħok tieħu post din il-ġimgħa, mhux illum."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Id-dar m'għandhiex bżonn tkun fl-ordni llum.",
+      "moneyWhole": "M'għandekx għalfejn issolvi s-sitwazzjoni tal-flus kollha llum. Pass wieħed biżżejjed.",
+      "relationshipTalk": "Il-konverżazzjonijiet kbar jistgħu jistennew ġurnata b'aktar enerġija.",
+      "kidsExtra": "Attivitajiet żejda, ikliet perfetti, u l-ħtija tal-ħin quddiem l-iskrin.",
+      "workExtra": "Kull ħaġa fuq ix-xogħol li hi sabiħa li ssir minflok li tassew hi dovuta.",
+      "healthAllOrNothing": "Il-pjan ta' kollox jew xejn. Il-ftit jgħodd.",
+      "everythingElse": "Kull ħaġa li mhix fuq il-lista tal-lum. Xorta se tkun hemm għada.",
+      "onMind": "Parti minn dak li għandek f'moħħok tista' tistrieħ sakemm l-affarijiet jikkalmaw."
+    },
+    "notes": {
+      "movedForTime": "Imċaqlaq hawn għax il-ħin li tista' tuża llum hu qasir.",
+      "movedForFocus": "Imċaqlaq hawn biex illum jibqa' fi tliet affarijiet.",
+      "fromYou": "Minn dak li hemm iktar f'moħħok"
+    }
+  },
+  "safety": {
+    "title": "Qabel kull ħaġa oħra",
+    "body": "Parti minn dak li ktibt tinstema' aktar minn ġurnata mimlija. Parent Reset ma jistax jgħin b'dan, imma n-nies jistgħu.",
+    "emergency": "Jekk int jew xi ħadd ieħor tinsabu f'periklu immedjat, ikkuntattja s-servizzi tal-emerġenza lokali tiegħek.",
+    "trustedPerson": "Ikkuntattja lil xi ħadd li tafda u għidlu kif inhi tassew il-ġurnata tal-lum.",
+    "support": "Linji ta' appoġġ fi kriżi jeżistu f'ħafna pajjiżi u huma b'xejn u kunfidenzjali. Fittex waħda f'pajjiżek jew staqsi lit-tabib tiegħek.",
+    "continue": "Kompli għal-lista tiegħek"
+  },
+  "footer": {
+    "tagline": "Waqfa sempliċi għall-ġenituri li għandhom wisq f'rashom.",
+    "notMedical": "Parent Reset mhuwiex servizz mediku jew ta' terapija.",
+    "madeWithCare": "Magħmul b'attenzjoni għall-ġenituri impenjati.",
+    "language": "Lingwa"
+  },
+  "notFound": {
+    "title": "Dik il-paġna ma teżistix",
+    "body": "Il-link jista' jkun antik jew miktub ħażin.",
+    "cta": "Mur għall-bidu"
+  }
+}

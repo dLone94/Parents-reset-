@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Neka današnji dan bude lakši",
+      "description": "Jednostavan reset za roditelje kojima je previše toga u glavi. Razvrstaj što je danas važno, što može pričekati i što možeš pustiti."
+    },
+    "reset": {
+      "title": "Započni moj reset – Parent Reset",
+      "description": "Dvominutna provjera koja punu glavu pretvara u kratak popis za danas."
+    },
+    "result": {
+      "title": "Tvoj reset – Parent Reset",
+      "description": "Tvoj kratak popis za danas, što može pričekati do kraja tjedna i što možeš pustiti."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Preskoči na sadržaj",
+    "back": "Natrag",
+    "continue": "Nastavi",
+    "close": "Zatvori",
+    "openMenu": "Otvori izbornik",
+    "closeMenu": "Zatvori izbornik",
+    "language": "Jezik",
+    "optional": "Neobavezno",
+    "loading": "Samo trenutak…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Početna",
+    "startReset": "Započni moj reset",
+    "howItWorks": "Kako funkcionira",
+    "menuTitle": "Izbornik"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Za roditelje kojima je previše toga u glavi",
+      "title": "Život je puno toga. Olakšajmo današnji dan.",
+      "subtitle": "Jednostavan reset za roditelje kojima je previše toga u glavi.",
+      "primaryCta": "Započni moj reset",
+      "secondaryCta": "Pogledaj kako funkcionira",
+      "trust": "Bez računa. Oko dvije minute. Ništa se ne dijeli."
+    },
+    "steps": {
+      "title": "Kako funkcionira",
+      "subtitle": "Tri kratka koraka. Bez aplikacija za postavljanje, bez navika za građenje.",
+      "one": {
+        "title": "Reci nam što te opterećuje",
+        "body": "Koliko ti je današnji dan pun, što zauzima najviše prostora i koliko vremena stvarno imaš."
+      },
+      "two": {
+        "title": "Razvrstaj što je važno",
+        "body": "Podijelimo to na ono što se mora dogoditi danas, što može pričekati i što može pričekati još dulje."
+      },
+      "three": {
+        "title": "Smanji današnji dan",
+        "body": "Odlaziš s kratkim popisom koji stvarno možeš dovršiti. U tome je cijela poanta."
+      }
+    },
+    "buckets": {
+      "title": "Što dobivaš",
+      "subtitle": "Jedna stranica. Tri popisa. Bez nadzornih ploča.",
+      "today": {
+        "label": "Danas",
+        "body": "Najviše tri stvari koje su danas stvarno važne. Ne sve, samo dovoljno."
+      },
+      "thisWeek": {
+        "label": "Ovaj tjedan",
+        "body": "Stvari koje su važne, ali ne moraju biti riješene prije spavanja."
+      },
+      "letGo": {
+        "label": "Pusti",
+        "body": "Dopuštenje da ostalo zasad ostaviš na miru. Sutra će i dalje biti tu."
+      }
+    },
+    "reassurance": {
+      "title": "Praktično, ne klinički",
+      "items": {
+        "notTherapy": "Ovo nije terapija ni liječnički savjet. To je način da razvrstaš naporan dan.",
+        "private": "Tvoji odgovori ostaju na tvom uređaju, osim ako ne otvoriš račun i odlučiš ih spremiti.",
+        "languages": "Dostupno na tvom jeziku, na mobitelu, jednom rukom."
+      }
+    },
+    "finalCta": {
+      "title": "Tu smo kad ti odgovara.",
+      "body": "Dvije minute sada mogu ostatak dana učiniti lakšim.",
+      "cta": "Započni moj reset"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Korak {current} od {total}",
+    "hint": {
+      "oneHand": "Odgovaraj iskreno. Nema pogrešnih odgovora i ništa se ne boduje."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Koliko se danas osjećaš preopterećeno?",
+        "help": "1 je mirno, 10 je potpuno na rubu.",
+        "low": "Mirno",
+        "high": "Na rubu",
+        "selected": "Tvoj odabir: {value} od 10"
+      },
+      "areas": {
+        "title": "Što ti zauzima najviše prostora u glavi?",
+        "help": "Odaberi sve što vrijedi.",
+        "options": {
+          "kids": "Djeca",
+          "money": "Novac",
+          "work": "Posao",
+          "home": "Dom",
+          "relationship": "Veza",
+          "health": "Zdravlje / energija",
+          "other": "Nešto drugo"
+        }
+      },
+      "time": {
+        "title": "Koliko iskoristivog vremena danas realno imaš?",
+        "help": "Vrijeme koje je stvarno tvoje, a ne ono koje bi ti navodno trebalo ostati.",
+        "options": {
+          "under30": "Manje od 30 minuta",
+          "30to60": "30–60 minuta",
+          "1to2h": "1–2 sata",
+          "over2h": "Više od 2 sata"
+        }
+      },
+      "money": {
+        "title": "Je li i pritisak oko novca dio današnjeg stresa?",
+        "help": "Ovo samo mijenja način na koji razvrstavamo tvoj popis.",
+        "yes": "Da",
+        "no": "Ne"
+      },
+      "must": {
+        "title": "Što se danas apsolutno mora dogoditi?",
+        "help": "Najlakše je jedna stvar po retku. Zadrži samo ono što stvarno ne može čekati.",
+        "placeholder": "Platiti račun za struju\nPokupiti djecu u 4\nNazvati zubara"
+      },
+      "onMind": {
+        "title": "Što ti je još na umu?",
+        "help": "Bilo što. Možeš ostaviti prazno.",
+        "placeholder": "Osjećam da kasnim sa svime na poslu. Rođendan još uvijek nije sređen."
+      }
+    },
+    "errors": {
+      "required": "Dodaj barem jednu stvar.",
+      "tooLong": "To je malo predugačko. Skrati na {max} znakova.",
+      "areasRequired": "Odaberi barem jednu opciju.",
+      "generic": "Nešto je pošlo po zlu. Pokušaj ponovno.",
+      "rateLimited": "Previše reseta u kratkom vremenu. Pričekaj minutu i pokušaj ponovno."
+    },
+    "submit": "Prikaži moj reset",
+    "submitting": "Razvrstavamo tvoj dan…",
+    "resumeDraft": "Sačuvali smo tvoje ranije odgovore.",
+    "startOver": "Počni ispočetka"
+  },
+  "result": {
+    "title": "Tvoj reset",
+    "dateLabel": "Reset od {date}",
+    "today": {
+      "label": "Danas",
+      "intro": "Samo ovo. Ako to dovršiš, dan se računa."
+    },
+    "thisWeek": {
+      "label": "Ovaj tjedan",
+      "intro": "Važno, ali ne mora se riješiti danas."
+    },
+    "letGo": {
+      "label": "Pusti",
+      "intro": "Ne danas. Stvarno."
+    },
+    "savedLocally": "Spremljeno na ovom uređaju. Račun možeš otvoriti kasnije da povijest zadržiš na svim uređajima.",
+    "newReset": "Započni novi reset",
+    "backHome": "Natrag na početnu",
+    "notFound": {
+      "title": "Nismo mogli pronaći taj reset",
+      "body": "Možda je napravljen na drugom uređaju ili obrisan iz ovog preglednika.",
+      "cta": "Započni novi reset"
+    },
+    "disclaimer": "Parent Reset je praktičan alat za planiranje, a ne liječnički ili terapijski savjet."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Današnji dan djeluje podnošljivo. Neka tako i ostane – uz kratak popis.",
+      "busy": "Danas se za tvoju pažnju natječe poprilično stvari. Evo što zadržati, što može pričekati i što ostaviti na miru.",
+      "heavy": "Danas se za tvoju pažnju natječe jako puno stvari. Današnji je popis namjerno malen."
+    },
+    "time": {
+      "under30": "Imaš manje od 30 minuta stvarno svog vremena, pa je današnji popis vrlo kratak.",
+      "30to60": "S pola sata do sat vremena tri su stvari realan maksimum.",
+      "1to2h": "Imaš jedan do dva sata – dovoljno za nekoliko stvari napravljenih kako treba.",
+      "over2h": "Danas imaš pravog vremena. Iskoristi ga za ono što je važno, a ne za sve."
+    },
+    "today": {
+      "moneyCheck": "Provjeri koje plaćanje stvarno dospijeva prvo. Riješi samo to.",
+      "pickOne": "Odaberi onu jednu stvar nakon koje bi današnji dan djelovao riješeno i napravi samo to.",
+      "breather": "Uzmi deset minuta bez ikakvog plana. Računa se kao zadatak."
+    },
+    "week": {
+      "area": {
+        "kids": "Odaberi jednu stvar vezanu uz djecu koju ćeš srediti ovaj tjedan, ne sve.",
+        "money": "Jednom pogledaj cijelu mjesečnu financijsku sliku, a onda stani.",
+        "work": "Odaberi onu jednu poslovnu stvar koja bi najviše smanjila pritisak.",
+        "home": "Jedan kućanski zadatak nakon kojeg bi prostor djelovao mirnije.",
+        "relationship": "Nađite ovaj tjedan trenutak za razgovor kad nijedno od vas nije iscrpljeno.",
+        "health": "Jedna mala stvar za vlastitu energiju: san, hrana, šetnja.",
+        "other": "Ona druga stvar koja ti je na umu dobiva mjesto ovaj tjedan, ne danas."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Kuća danas ne mora biti pospremljena.",
+      "moneyWhole": "Ne moraš danas riješiti cijelu financijsku situaciju. Jedan je korak dovoljan.",
+      "relationshipTalk": "Veliki razgovori mogu pričekati dan s više energije.",
+      "kidsExtra": "Dodatne aktivnosti, savršeni obroci i grižnja savjesti zbog ekrana.",
+      "workExtra": "Sve na poslu što bi bilo lijepo napraviti, a zapravo nije hitno.",
+      "healthAllOrNothing": "Plan sve ili ništa. I malo se računa.",
+      "everythingElse": "Sve što nije na današnjem popisu. Sutra će i dalje biti tu.",
+      "onMind": "Nešto od onoga što ti je na umu može mirovati dok se stvari ne smire."
+    },
+    "notes": {
+      "movedForTime": "Premješteno ovdje jer je danas iskoristivog vremena malo.",
+      "movedForFocus": "Premješteno ovdje da današnji dan ostane na tri stvari.",
+      "fromYou": "Iz onoga što ti je još na umu"
+    }
+  },
+  "safety": {
+    "title": "Prije svega ostalog",
+    "body": "Nešto od napisanog zvuči kao više od napornog dana. Parent Reset tu ne može pomoći, ali ljudi mogu.",
+    "emergency": "Ako si ti ili netko drugi u neposrednoj opasnosti, nazovi lokalnu hitnu službu.",
+    "trustedPerson": "Javi se nekome kome vjeruješ i reci mu kakav je današnji dan zapravo.",
+    "support": "U većini zemalja postoje besplatne i povjerljive linije za pomoć u krizi. Potraži onu u svojoj zemlji ili pitaj svog liječnika.",
+    "continue": "Nastavi na svoj popis"
+  },
+  "footer": {
+    "tagline": "Jednostavan reset za roditelje kojima je previše toga u glavi.",
+    "notMedical": "Parent Reset nije medicinska ni terapijska usluga.",
+    "madeWithCare": "Napravljeno s pažnjom za zaposlene roditelje.",
+    "language": "Jezik"
+  },
+  "notFound": {
+    "title": "Ta stranica ne postoji",
+    "body": "Poveznica je možda stara ili krivo upisana.",
+    "cta": "Idi na početak"
+  }
+}

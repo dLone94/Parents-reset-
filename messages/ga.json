@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Déan an lá inniu níos éasca",
+      "description": "Sos simplí do thuismitheoirí a bhfuil an iomarca ina gceann acu. Sórtáil an rud atá tábhachtach inniu, an rud ar féidir leis fanacht, agus an rud is féidir leat a ligean uait."
+    },
+    "reset": {
+      "title": "Cuir ord ar mo lá – Parent Reset",
+      "description": "Seiceáil dhá nóiméad a dhéanann liosta gearr don lá inniu as ceann lán."
+    },
+    "result": {
+      "title": "Do lá in ord – Parent Reset",
+      "description": "Do liosta gearr don lá inniu, an rud ar féidir leis fanacht go dtí an tseachtain seo, agus an rud is féidir leat a ligean uait."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Léim chuig an ábhar",
+    "back": "Siar",
+    "continue": "Lean ar aghaidh",
+    "close": "Dún",
+    "openMenu": "Oscail an roghchlár",
+    "closeMenu": "Dún an roghchlár",
+    "language": "Teanga",
+    "optional": "Roghnach",
+    "loading": "Nóiméad amháin…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Baile",
+    "startReset": "Cuir ord ar mo lá",
+    "howItWorks": "Conas a oibríonn sé",
+    "menuTitle": "Roghchlár"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Do thuismitheoirí a bhfuil an iomarca ina gceann acu",
+      "title": "Is mór an rud é an saol. Déanaimis an lá inniu níos éasca.",
+      "subtitle": "Sos simplí do thuismitheoirí a bhfuil an iomarca ina gceann acu.",
+      "primaryCta": "Cuir ord ar mo lá",
+      "secondaryCta": "Féach conas a oibríonn sé",
+      "trust": "Ní gá cuntas. Thart ar dhá nóiméad. Ní roinntear rud ar bith."
+    },
+    "steps": {
+      "title": "Conas a oibríonn sé",
+      "subtitle": "Trí chéim ghearra. Gan aipeanna le socrú, gan nósanna le tógáil.",
+      "one": {
+        "title": "Inis dúinn cad atá ag cur ualaigh ort",
+        "body": "Cé chomh lán is atá an lá inniu, cad atá ag tógáil an spáis is mó, agus cé mhéad ama atá agat i ndáiríre."
+      },
+      "two": {
+        "title": "Sórtáil an rud atá tábhachtach",
+        "body": "Roinnimid é ina thrí chuid: an rud a chaithfidh tarlú inniu, an rud ar féidir leis fanacht, agus an rud ar féidir leis fanacht i bhfad."
+      },
+      "three": {
+        "title": "Déan an lá inniu níos lú",
+        "body": "Imíonn tú le liosta gearr is féidir leat a chríochnú i ndáiríre. Sin an pointe ar fad."
+      }
+    },
+    "buckets": {
+      "title": "An rud a gheobhaidh tú",
+      "subtitle": "Leathanach amháin. Trí liosta. Gan deais ar bith.",
+      "today": {
+        "label": "Inniu",
+        "body": "Suas le trí rud atá tábhachtach i ndáiríre inniu. Ní gach rud, díreach a dhóthain."
+      },
+      "thisWeek": {
+        "label": "An tseachtain seo",
+        "body": "Rudaí atá tábhachtach ach nach gá a réiteach roimh am codlata."
+      },
+      "letGo": {
+        "label": "Lig uait é",
+        "body": "Cead an chuid eile a fhágáil faoi láthair. Beidh sé ann fós amárach."
+      }
+    },
+    "reassurance": {
+      "title": "Praiticiúil, ní cliniciúil",
+      "items": {
+        "notTherapy": "Ní teiripe ná comhairle leighis é seo. Bealach é chun lá gnóthach a shórtáil.",
+        "private": "Fanann do fhreagraí ar do ghléas mura gcruthaíonn tú cuntas agus mura roghnaíonn tú iad a shábháil.",
+        "languages": "Ar fáil i do theanga féin, ar do ghuthán, le lámh amháin."
+      }
+    },
+    "finalCta": {
+      "title": "Réidh nuair a bheidh tú féin réidh.",
+      "body": "Is féidir le dhá nóiméad anois an chuid eile den lá a dhéanamh níos éadroime.",
+      "cta": "Cuir ord ar mo lá"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Céim {current} de {total}",
+    "hint": {
+      "oneHand": "Freagair go macánta. Níl aon fhreagra mícheart ann agus ní thugtar scór ar rud ar bith."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Cé chomh faoi bhrú a mhothaíonn tú inniu?",
+        "help": "Is é 1 ciúin, is é 10 lán go barr.",
+        "low": "Ciúin",
+        "high": "Lán go barr",
+        "selected": "Roghnaigh tú {value} as 10"
+      },
+      "areas": {
+        "title": "Cad atá ag tógáil an spáis is mó i do cheann?",
+        "help": "Roghnaigh gach rud a bhaineann leat.",
+        "options": {
+          "kids": "Páistí",
+          "money": "Airgead",
+          "work": "Obair",
+          "home": "Baile",
+          "relationship": "Caidreamh",
+          "health": "Sláinte / fuinneamh",
+          "other": "Rud éigin eile"
+        }
+      },
+      "time": {
+        "title": "Cé mhéad ama úsáideach atá agat i ndáiríre inniu?",
+        "help": "Am atá agatsa i ndáiríre, ní an t-am ba cheart a bheith agat.",
+        "options": {
+          "under30": "Níos lú ná 30 nóiméad",
+          "30to60": "30–60 nóiméad",
+          "1to2h": "1–2 uair an chloig",
+          "over2h": "Níos mó ná 2 uair an chloig"
+        }
+      },
+      "money": {
+        "title": "An cuid de strus an lae inniu é brú airgid?",
+        "help": "Ní athraíonn sé seo ach an bealach a shórtálaimid do liosta.",
+        "yes": "Is ea",
+        "no": "Ní hea"
+      },
+      "must": {
+        "title": "Cad a chaithfidh tarlú inniu gan teip?",
+        "help": "Rud amháin in aghaidh na líne is éasca. Coinnigh leis an rud nach féidir leis fanacht i ndáiríre.",
+        "placeholder": "Íoc an bille leictreachais\nBailigh na páistí ag a 4\nCuir glao ar an bhfiaclóir"
+      },
+      "onMind": {
+        "title": "Cad eile atá ar d'intinn?",
+        "help": "Rud ar bith. Is féidir leat é seo a fhágáil folamh.",
+        "placeholder": "Mothaím chun deiridh ar gach rud ag an obair. Níl an lá breithe socraithe agam fós."
+      }
+    },
+    "errors": {
+      "required": "Cuir rud amháin ar a laghad isteach, le do thoil.",
+      "tooLong": "Tá sé sin beagán rófhada. Giorraigh é go {max} carachtar, le do thoil.",
+      "areasRequired": "Roghnaigh ceann amháin ar a laghad, le do thoil.",
+      "generic": "Chuaigh rud éigin amú. Bain triail eile as, le do thoil.",
+      "rateLimited": "An iomarca iarrachtaí in achar gearr. Fan nóiméad agus bain triail eile as, le do thoil."
+    },
+    "submit": "Taispeáin mo liosta",
+    "submitting": "Ag sórtáil do lae…",
+    "resumeDraft": "Choinníomar do fhreagraí ó níos luaithe.",
+    "startOver": "Tosaigh arís"
+  },
+  "result": {
+    "title": "Do lá in ord",
+    "dateLabel": "Ó {date}",
+    "today": {
+      "label": "Inniu",
+      "intro": "Iad seo amháin. Má chríochnaíonn tú iad, b'fhiú an lá."
+    },
+    "thisWeek": {
+      "label": "An tseachtain seo",
+      "intro": "Tábhachtach, ach ní gá é a réiteach inniu."
+    },
+    "letGo": {
+      "label": "Lig uait é",
+      "intro": "Ní inniu. I ndáiríre."
+    },
+    "savedLocally": "Sábháilte ar an ngléas seo. Cruthaigh cuntas níos déanaí chun do stair a choinneáil ar gach gléas.",
+    "newReset": "Tosaigh as an nua",
+    "backHome": "Ar ais go baile",
+    "notFound": {
+      "title": "Níorbh fhéidir linn an liosta sin a aimsiú",
+      "body": "B'fhéidir gur cruthaíodh ar ghléas eile é nó gur glanadh ón mbrabhsálaí seo é.",
+      "cta": "Tosaigh as an nua"
+    },
+    "disclaimer": "Uirlis phraiticiúil phleanála is ea Parent Reset, ní comhairle leighis ná teiripe."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Tá cuma inláimhsithe ar an lá inniu. Coinnímis mar sin é le liosta gearr.",
+      "busy": "Tá go leor ag iomaíocht ar d'aird inniu. Seo an rud le coinneáil, an rud ar féidir leis fanacht, agus an rud le fágáil.",
+      "heavy": "Tá an-chuid ag iomaíocht ar d'aird inniu. Tá liosta an lae inniu beag d'aon ghnó."
+    },
+    "time": {
+      "under30": "Tá níos lú ná 30 nóiméad agat atá agatsa i ndáiríre, mar sin tá liosta an lae inniu an-ghearr.",
+      "30to60": "Le thart ar leathuair go huair an chloig, is é trí rud an teorainn réalaíoch.",
+      "1to2h": "Tá uair nó dhó agat, go leor do chúpla rud déanta go maith.",
+      "over2h": "Tá am ceart agat inniu. Úsáid é don rud atá tábhachtach, ní do gach rud."
+    },
+    "today": {
+      "moneyCheck": "Seiceáil cén íocaíocht atá dlite ar dtús i ndáiríre. Déileáil leis an gceann sin amháin.",
+      "pickOne": "Roghnaigh an rud amháin a chuirfeadh cuma láimhsithe ar an lá inniu, agus déan é sin amháin.",
+      "breather": "Tóg deich nóiméad gan rud ar bith pleanáilte. Comhaireann sé mar thasc."
+    },
+    "week": {
+      "area": {
+        "kids": "Roghnaigh rud amháin a bhaineann leis na páistí le socrú an tseachtain seo, ní gach ceann acu.",
+        "money": "Féach ar phictiúr airgid na míosa ar fad uair amháin, ansin stad.",
+        "work": "Roghnaigh an rud amháin ag an obair a bhainfeadh an brú is mó díot.",
+        "home": "Tasc tí amháin a chuirfeadh cuma níos ciúine ar an spás.",
+        "relationship": "Faigh nóiméad an tseachtain seo le labhairt nuair nach bhfuil ceachtar agaibh traochta.",
+        "health": "Rud beag amháin do d'fhuinneamh féin: codladh, bia, siúlóid.",
+        "other": "Faigheann an rud eile atá ar d'intinn a spás an tseachtain seo, ní inniu."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Ní gá don teach a bheith néata inniu.",
+      "moneyWhole": "Ní gá duit an scéal airgid ar fad a réiteach inniu. Is leor céim amháin.",
+      "relationshipTalk": "Is féidir le comhráite móra fanacht le lá a mbeidh níos mó fuinnimh ann.",
+      "kidsExtra": "Gníomhaíochtaí breise, béilí foirfe, agus ciontacht faoi am scáileáin.",
+      "workExtra": "Rud ar bith ag an obair atá deas le déanamh seachas dlite i ndáiríre.",
+      "healthAllOrNothing": "An plean uile-nó-faic. Comhaireann rudaí beaga.",
+      "everythingElse": "Gach rud nach bhfuil ar liosta an lae inniu. Beidh sé ann fós amárach.",
+      "onMind": "Is féidir le cuid den rud atá ar d'intinn scíth a ligean go dtí go socraíonn rudaí."
+    },
+    "notes": {
+      "movedForTime": "Bogtha anseo toisc go bhfuil am úsáideach an lae inniu gearr.",
+      "movedForFocus": "Bogtha anseo ionas go bhfanann an lá inniu ag trí rud.",
+      "fromYou": "Ón rud eile atá ar d'intinn"
+    }
+  },
+  "safety": {
+    "title": "Roimh rud ar bith eile",
+    "body": "Tá cuid den rud a scríobh tú ag fuaimniú mar níos mó ná lá gnóthach. Ní féidir le Parent Reset cabhrú leis sin, ach is féidir le daoine.",
+    "emergency": "Má tá tú féin nó duine eile i mbaol láithreach, déan teagmháil le do sheirbhísí éigeandála áitiúla.",
+    "trustedPerson": "Téigh i dteagmháil le duine a bhfuil muinín agat as agus inis dó nó di conas atá an lá inniu i ndáiríre.",
+    "support": "Tá línte tacaíochta géarchéime ann i bhformhór na dtíortha agus tá siad saor in aisce agus faoi rún. Cuardaigh ceann i do thír féin nó cuir ceist ar do dhochtúir.",
+    "continue": "Lean ar aghaidh chuig do liosta"
+  },
+  "footer": {
+    "tagline": "Sos simplí do thuismitheoirí a bhfuil an iomarca ina gceann acu.",
+    "notMedical": "Ní seirbhís leighis ná teiripe é Parent Reset.",
+    "madeWithCare": "Déanta le cúram do thuismitheoirí gnóthacha.",
+    "language": "Teanga"
+  },
+  "notFound": {
+    "title": "Níl an leathanach sin ann",
+    "body": "B'fhéidir go bhfuil an nasc as dáta nó mílitrithe.",
+    "cta": "Téigh chuig an tús"
+  }
+}

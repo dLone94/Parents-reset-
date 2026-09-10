@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Maak vandaag makkelijker",
+      "description": "Een simpele reset voor ouders met te veel in hun hoofd. Sorteer wat vandaag telt, wat kan wachten en wat je kunt loslaten."
+    },
+    "reset": {
+      "title": "Start mijn reset – Parent Reset",
+      "description": "Een check-in van twee minuten die een vol hoofd omzet in een korte lijst voor vandaag."
+    },
+    "result": {
+      "title": "Jouw reset – Parent Reset",
+      "description": "Je korte lijst voor vandaag, wat tot deze week kan wachten en wat je kunt loslaten."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Ga naar inhoud",
+    "back": "Terug",
+    "continue": "Verder",
+    "close": "Sluiten",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "language": "Taal",
+    "optional": "Optioneel",
+    "loading": "Momentje…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Home",
+    "startReset": "Start mijn reset",
+    "howItWorks": "Hoe het werkt",
+    "menuTitle": "Menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Voor ouders met te veel in hun hoofd",
+      "title": "Het leven is veel. Laten we vandaag makkelijker maken.",
+      "subtitle": "Een simpele reset voor ouders met te veel in hun hoofd.",
+      "primaryCta": "Start mijn reset",
+      "secondaryCta": "Bekijk hoe het werkt",
+      "trust": "Geen account nodig. Ongeveer twee minuten. Er wordt niets gedeeld."
+    },
+    "steps": {
+      "title": "Hoe het werkt",
+      "subtitle": "Drie korte stappen. Geen apps om in te stellen, geen gewoontes om op te bouwen.",
+      "one": {
+        "title": "Vertel ons wat er op je drukt",
+        "body": "Hoe vol vandaag voelt, wat de meeste ruimte inneemt en hoeveel tijd je echt hebt."
+      },
+      "two": {
+        "title": "Sorteer wat telt",
+        "body": "We verdelen het in wat vandaag moet gebeuren, wat kan wachten en wat lang kan wachten."
+      },
+      "three": {
+        "title": "Maak vandaag kleiner",
+        "body": "Je vertrekt met een korte lijst die je echt af kunt maken. Daar gaat het om."
+      }
+    },
+    "buckets": {
+      "title": "Wat je krijgt",
+      "subtitle": "Eén pagina. Drie lijsten. Geen dashboards.",
+      "today": {
+        "label": "Vandaag",
+        "body": "Maximaal drie dingen die vandaag echt tellen. Niet alles, net genoeg."
+      },
+      "thisWeek": {
+        "label": "Deze week",
+        "body": "Dingen die tellen, maar niet voor bedtijd opgelost hoeven te zijn."
+      },
+      "letGo": {
+        "label": "Laat los",
+        "body": "Toestemming om de rest voorlopig te laten liggen. Het is er morgen nog."
+      }
+    },
+    "reassurance": {
+      "title": "Praktisch, niet klinisch",
+      "items": {
+        "notTherapy": "Dit is geen therapie of medisch advies. Het is een manier om een drukke dag te ordenen.",
+        "private": "Je antwoorden blijven op je apparaat, tenzij je een account aanmaakt en ervoor kiest ze op te slaan.",
+        "languages": "Beschikbaar in jouw taal, op je telefoon, met één hand."
+      }
+    },
+    "finalCta": {
+      "title": "Klaar wanneer jij het bent.",
+      "body": "Twee minuten nu kunnen de rest van de dag lichter laten voelen.",
+      "cta": "Start mijn reset"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Stap {current} van {total}",
+    "hint": {
+      "oneHand": "Antwoord eerlijk. Er zijn geen foute antwoorden en niets wordt beoordeeld."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Hoe overweldigd voel je je vandaag?",
+        "help": "1 is rustig, 10 is helemaal op.",
+        "low": "Rustig",
+        "high": "Helemaal op",
+        "selected": "Je koos {value} van de 10"
+      },
+      "areas": {
+        "title": "Wat neemt de meeste ruimte in je hoofd in?",
+        "help": "Kies alles wat van toepassing is.",
+        "options": {
+          "kids": "Kinderen",
+          "money": "Geld",
+          "work": "Werk",
+          "home": "Huis",
+          "relationship": "Relatie",
+          "health": "Gezondheid / energie",
+          "other": "Iets anders"
+        }
+      },
+      "time": {
+        "title": "Hoeveel bruikbare tijd heb je vandaag realistisch gezien?",
+        "help": "Tijd die echt van jou is, niet de tijd die je zou moeten hebben.",
+        "options": {
+          "under30": "Minder dan 30 minuten",
+          "30to60": "30–60 minuten",
+          "1to2h": "1–2 uur",
+          "over2h": "Meer dan 2 uur"
+        }
+      },
+      "money": {
+        "title": "Hoort gelddruk bij de stress van vandaag?",
+        "help": "Dit verandert alleen hoe we je lijst sorteren.",
+        "yes": "Ja",
+        "no": "Nee"
+      },
+      "must": {
+        "title": "Wat moet er vandaag absoluut gebeuren?",
+        "help": "Eén ding per regel is het makkelijkst. Houd het bij wat echt niet kan wachten.",
+        "placeholder": "De energierekening betalen\nDe kinderen om 4 uur ophalen\nDe tandarts bellen"
+      },
+      "onMind": {
+        "title": "Wat houdt je verder bezig?",
+        "help": "Wat dan ook. Je mag dit leeg laten.",
+        "placeholder": "Het gevoel dat ik op werk overal achterloop. De verjaardag is nog steeds niet geregeld."
+      }
+    },
+    "errors": {
+      "required": "Voeg minstens één ding toe.",
+      "tooLong": "Dat is wat te lang. Kort het in tot {max} tekens.",
+      "areasRequired": "Kies er minstens één.",
+      "generic": "Er ging iets mis. Probeer het opnieuw.",
+      "rateLimited": "Te veel resets in korte tijd. Wacht een minuutje en probeer het opnieuw."
+    },
+    "submit": "Toon mijn reset",
+    "submitting": "Je dag wordt gesorteerd…",
+    "resumeDraft": "We hebben je antwoorden van eerder bewaard.",
+    "startOver": "Opnieuw beginnen"
+  },
+  "result": {
+    "title": "Jouw reset",
+    "dateLabel": "Reset van {date}",
+    "today": {
+      "label": "Vandaag",
+      "intro": "Alleen deze. Als je ze afmaakt, heeft de dag geteld."
+    },
+    "thisWeek": {
+      "label": "Deze week",
+      "intro": "Telt wel, maar hoeft vandaag niet opgelost."
+    },
+    "letGo": {
+      "label": "Laat los",
+      "intro": "Niet vandaag. Echt niet."
+    },
+    "savedLocally": "Opgeslagen op dit apparaat. Maak later een account aan om je geschiedenis op al je apparaten te bewaren.",
+    "newReset": "Nieuwe reset starten",
+    "backHome": "Terug naar home",
+    "notFound": {
+      "title": "We konden die reset niet vinden",
+      "body": "Misschien is hij op een ander apparaat gemaakt of uit deze browser gewist.",
+      "cta": "Nieuwe reset starten"
+    },
+    "disclaimer": "Parent Reset is een praktisch planhulpmiddel, geen medisch of therapeutisch advies."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Vandaag voelt te doen. Laten we het zo houden met een korte lijst.",
+      "busy": "Er vraagt vandaag behoorlijk wat om je aandacht. Dit is wat je houdt, wat kan wachten en wat je laat liggen.",
+      "heavy": "Er vraagt vandaag heel veel om je aandacht. De lijst van vandaag is met opzet klein."
+    },
+    "time": {
+      "under30": "Je hebt minder dan 30 minuten die echt van jou zijn, dus de lijst van vandaag is heel kort.",
+      "30to60": "Met een half uur tot een uur zijn drie dingen het realistische maximum.",
+      "1to2h": "Je hebt een tot twee uur, genoeg voor een paar dingen die je goed doet.",
+      "over2h": "Je hebt vandaag echt wat tijd. Gebruik die voor wat telt, niet voor alles."
+    },
+    "today": {
+      "moneyCheck": "Kijk welke betaling echt als eerste moet. Regel alleen die.",
+      "pickOne": "Kies het ene ding waardoor vandaag geregeld zou voelen, en doe alleen dat.",
+      "breather": "Neem tien minuten zonder plannen. Dat telt als taak."
+    },
+    "week": {
+      "area": {
+        "kids": "Kies één ding rond de kinderen om deze week te regelen, niet alles.",
+        "money": "Bekijk het geldplaatje van de hele maand één keer, en stop dan.",
+        "work": "Kies het ene werkding dat de meeste druk zou wegnemen.",
+        "home": "Eén huishoudelijke klus die de ruimte rustiger laat voelen.",
+        "relationship": "Zoek deze week een moment om te praten wanneer jullie geen van beiden uitgeput zijn.",
+        "health": "Eén klein ding voor je eigen energie: slaap, eten, een wandeling.",
+        "other": "Dat andere in je hoofd krijgt deze week een plek, niet vandaag."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Het huis hoeft vandaag niet opgeruimd te zijn.",
+      "moneyWhole": "Je hoeft de hele geldsituatie vandaag niet op te lossen. Eén stap is genoeg.",
+      "relationshipTalk": "Grote gesprekken kunnen wachten tot een dag met meer energie.",
+      "kidsExtra": "Extra activiteiten, perfecte maaltijden en schuldgevoel over schermtijd.",
+      "workExtra": "Alles op werk dat leuk is om te doen maar niet echt moet.",
+      "healthAllOrNothing": "Het alles-of-niets-plan. Klein telt ook.",
+      "everythingElse": "Alles wat niet op de lijst van vandaag staat. Het is er morgen nog.",
+      "onMind": "Een deel van wat je bezighoudt mag rusten tot het rustiger wordt."
+    },
+    "notes": {
+      "movedForTime": "Hierheen verplaatst omdat je bruikbare tijd vandaag kort is.",
+      "movedForFocus": "Hierheen verplaatst zodat vandaag bij drie dingen blijft.",
+      "fromYou": "Uit wat je verder bezighoudt"
+    }
+  },
+  "safety": {
+    "title": "Eerst dit",
+    "body": "Een deel van wat je schreef klinkt als meer dan een drukke dag. Parent Reset kan daar niet bij helpen, maar mensen wel.",
+    "emergency": "Als jij of iemand anders in direct gevaar is, bel dan de lokale hulpdiensten.",
+    "trustedPerson": "Zoek contact met iemand die je vertrouwt en vertel hoe vandaag echt is.",
+    "support": "In de meeste landen bestaan hulplijnen die gratis en vertrouwelijk zijn. Zoek er een in jouw land of vraag het je huisarts.",
+    "continue": "Verder naar je lijst"
+  },
+  "footer": {
+    "tagline": "Een simpele reset voor ouders met te veel in hun hoofd.",
+    "notMedical": "Parent Reset is geen medische of therapeutische dienst.",
+    "madeWithCare": "Met zorg gemaakt voor drukke ouders.",
+    "language": "Taal"
+  },
+  "notFound": {
+    "title": "Die pagina bestaat niet",
+    "body": "De link is misschien oud of verkeerd getypt.",
+    "cta": "Naar het begin"
+  }
+}

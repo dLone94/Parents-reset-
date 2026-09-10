@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Padari šo dienu vieglāku",
+      "description": "Vienkāršs restarts vecākiem, kuriem galvā ir par daudz. Sakārto, kas ir svarīgs šodien, kas var pagaidīt un ko vari atlaist."
+    },
+    "reset": {
+      "title": "Sākt manu restartu – Parent Reset",
+      "description": "Divu minūšu ieskats, kas pārvērš pilnu galvu īsā sarakstā šodienai."
+    },
+    "result": {
+      "title": "Tavs restarts – Parent Reset",
+      "description": "Tavs īsais saraksts šodienai, kas var pagaidīt līdz nedēļas beigām un ko vari atlaist."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Pāriet uz saturu",
+    "back": "Atpakaļ",
+    "continue": "Turpināt",
+    "close": "Aizvērt",
+    "openMenu": "Atvērt izvēlni",
+    "closeMenu": "Aizvērt izvēlni",
+    "language": "Valoda",
+    "optional": "Pēc izvēles",
+    "loading": "Vienu mirkli…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Sākums",
+    "startReset": "Sākt manu restartu",
+    "howItWorks": "Kā tas darbojas",
+    "menuTitle": "Izvēlne"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Vecākiem, kuriem galvā ir par daudz",
+      "title": "Dzīve ir pilna. Padarīsim šodienu vieglāku.",
+      "subtitle": "Vienkāršs restarts vecākiem, kuriem galvā ir par daudz.",
+      "primaryCta": "Sākt manu restartu",
+      "secondaryCta": "Skatīt, kā tas darbojas",
+      "trust": "Konts nav vajadzīgs. Apmēram divas minūtes. Nekas netiek kopīgots."
+    },
+    "steps": {
+      "title": "Kā tas darbojas",
+      "subtitle": "Trīs īsi soļi. Nav jāiestata lietotnes, nav jāveido ieradumi.",
+      "one": {
+        "title": "Pastāsti, kas tevi nomāc",
+        "body": "Cik pilna šķiet šī diena, kas aizņem visvairāk vietas un cik daudz laika tev patiešām ir."
+      },
+      "two": {
+        "title": "Sakārto svarīgo",
+        "body": "Mēs to sadalām: kam jānotiek šodien, kas var pagaidīt un kas var pagaidīt ilgi."
+      },
+      "three": {
+        "title": "Padari šodienu mazāku",
+        "body": "Tu aizej ar īsu sarakstu, ko tiešām vari pabeigt. Tā ir visa jēga."
+      }
+    },
+    "buckets": {
+      "title": "Ko tu saņem",
+      "subtitle": "Viena lapa. Trīs saraksti. Nekādu paneļu.",
+      "today": {
+        "label": "Šodien",
+        "body": "Līdz trim lietām, kas šodien patiešām ir svarīgas. Ne viss, tikai pietiekami."
+      },
+      "thisWeek": {
+        "label": "Šonedēļ",
+        "body": "Lietas, kas ir svarīgas, bet nav jāatrisina pirms gulētiešanas."
+      },
+      "letGo": {
+        "label": "Atlaid to",
+        "body": "Atļauja pārējo pagaidām atstāt mierā. Rīt tas joprojām būs tepat."
+      }
+    },
+    "reassurance": {
+      "title": "Praktiski, ne klīniski",
+      "items": {
+        "notTherapy": "Tā nav terapija vai medicīnisks padoms. Tas ir veids, kā sakārtot piepildītu dienu.",
+        "private": "Tavas atbildes paliek tavā ierīcē, ja vien neizveido kontu un neizvēlies tās saglabāt.",
+        "languages": "Pieejams tavā valodā, tavā telefonā, ar vienu roku."
+      }
+    },
+    "finalCta": {
+      "title": "Kad vien vēlies.",
+      "body": "Divas minūtes tagad var padarīt atlikušo dienu vieglāku.",
+      "cta": "Sākt manu restartu"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "{current}. solis no {total}",
+    "hint": {
+      "oneHand": "Atbildi godīgi. Nav nepareizu atbilžu, un nekas netiek vērtēts."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Cik lielu pārslodzi tu šodien jūti?",
+        "help": "1 ir mierīgi, 10 ir pilnīgi uz robežas.",
+        "low": "Mierīgi",
+        "high": "Uz robežas",
+        "selected": "Tu izvēlējies {value} no 10"
+      },
+      "areas": {
+        "title": "Kas aizņem visvairāk vietas tavā galvā?",
+        "help": "Atzīmē visu, kas attiecas.",
+        "options": {
+          "kids": "Bērni",
+          "money": "Nauda",
+          "work": "Darbs",
+          "home": "Mājas",
+          "relationship": "Attiecības",
+          "health": "Veselība / enerģija",
+          "other": "Kaut kas cits"
+        }
+      },
+      "time": {
+        "title": "Cik daudz izmantojama laika tev šodien reāli ir?",
+        "help": "Laiks, kas patiešām ir tavs, nevis laiks, kam it kā vajadzētu būt.",
+        "options": {
+          "under30": "Mazāk par 30 minūtēm",
+          "30to60": "30–60 minūtes",
+          "1to2h": "1–2 stundas",
+          "over2h": "Vairāk par 2 stundām"
+        }
+      },
+      "money": {
+        "title": "Vai naudas spiediens ir daļa no šodienas stresa?",
+        "help": "Tas maina tikai to, kā mēs sakārtojam tavu sarakstu.",
+        "yes": "Jā",
+        "no": "Nē"
+      },
+      "must": {
+        "title": "Kam šodien noteikti jānotiek?",
+        "help": "Vienkāršāk ir rakstīt vienu lietu katrā rindā. Tikai to, kas tiešām nevar pagaidīt.",
+        "placeholder": "Samaksāt elektrības rēķinu\nPaņemt bērnus plkst. 16\nPiezvanīt zobārstam"
+      },
+      "onMind": {
+        "title": "Kas vēl tev ir prātā?",
+        "help": "Jebkas. Vari atstāt tukšu.",
+        "placeholder": "Šķiet, ka darbā atpalieku ar visu. Dzimšanas diena joprojām nav sakārtota."
+      }
+    },
+    "errors": {
+      "required": "Lūdzu, pievieno vismaz vienu lietu.",
+      "tooLong": "Tas ir mazliet par garu. Lūdzu, saīsini līdz {max} rakstzīmēm.",
+      "areasRequired": "Lūdzu, izvēlies vismaz vienu.",
+      "generic": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz.",
+      "rateLimited": "Pārāk daudz restartu īsā laikā. Lūdzu, pagaidi minūti un mēģini vēlreiz."
+    },
+    "submit": "Rādīt manu restartu",
+    "submitting": "Kārtojam tavu dienu…",
+    "resumeDraft": "Mēs saglabājām tavas iepriekšējās atbildes.",
+    "startOver": "Sākt no jauna"
+  },
+  "result": {
+    "title": "Tavs restarts",
+    "dateLabel": "Restarts no {date}",
+    "today": {
+      "label": "Šodien",
+      "intro": "Tikai šīs. Ja tās paveiksi, diena ir izdevusies."
+    },
+    "thisWeek": {
+      "label": "Šonedēļ",
+      "intro": "Svarīgi, bet nav jāatrisina šodien."
+    },
+    "letGo": {
+      "label": "Atlaid to",
+      "intro": "Ne šodien. Tiešām."
+    },
+    "savedLocally": "Saglabāts šajā ierīcē. Vēlāk izveido kontu, lai saglabātu vēsturi visās ierīcēs.",
+    "newReset": "Sākt jaunu restartu",
+    "backHome": "Atpakaļ uz sākumu",
+    "notFound": {
+      "title": "Mēs nevarējām atrast šo restartu",
+      "body": "Iespējams, tas izveidots citā ierīcē vai izdzēsts no šī pārlūka.",
+      "cta": "Sākt jaunu restartu"
+    },
+    "disclaimer": "Parent Reset ir praktisks plānošanas rīks, nevis medicīnisks vai terapeitisks padoms."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Šī diena šķiet paveicama. Saglabāsim to tādu ar īsu sarakstu.",
+      "busy": "Šodien tavu uzmanību prasa diezgan daudz kas. Lūk, ko paturēt, kas var pagaidīt un ko atstāt mierā.",
+      "heavy": "Šodien tavu uzmanību prasa ļoti daudz kas. Šodienas saraksts ir mazs ar nolūku."
+    },
+    "time": {
+      "under30": "Tev ir mazāk par 30 minūtēm, kas patiešām ir tavas, tāpēc šodienas saraksts ir ļoti īss.",
+      "30to60": "Ar apmēram pusstundu līdz stundu trīs lietas ir reālistiskais maksimums.",
+      "1to2h": "Tev ir viena līdz divas stundas, pietiekami, lai dažas lietas paveiktu labi.",
+      "over2h": "Šodien tev ir īsts laiks. Izmanto to svarīgajam, ne visam."
+    },
+    "today": {
+      "moneyCheck": "Pārbaudi, kurš maksājums patiešām ir pirmais pēc termiņa. Nokārto tikai to.",
+      "pickOne": "Izvēlies to vienu lietu, kas liktu dienai šķist sakārtotai, un dari tikai to.",
+      "breather": "Paņem desmit minūtes bez jebkādiem plāniem. Tas skaitās kā uzdevums."
+    },
+    "week": {
+      "area": {
+        "kids": "Izvēlies vienu ar bērniem saistītu lietu, ko sakārtot šonedēļ, ne visas.",
+        "money": "Vienreiz apskati visa mēneša naudas ainu, tad apstājies.",
+        "work": "Izvēlies to vienu darba lietu, kas noņemtu vislielāko spiedienu.",
+        "home": "Viens mājas darbs, kas padarītu telpu mierīgāku.",
+        "relationship": "Atrodi šonedēļ brīdi sarunai, kad neviens no jums nav pārguris.",
+        "health": "Viena maza lieta tavai enerģijai: miegs, ēdiens, pastaiga.",
+        "other": "Tā otra lieta, kas tev prātā, dabū vietu šonedēļ, ne šodien."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Mājām šodien nav jābūt sakoptām.",
+      "moneyWhole": "Tev šodien nav jāatrisina visa naudas situācija. Pietiek ar vienu soli.",
+      "relationshipTalk": "Lielās sarunas var pagaidīt dienu, kad būs vairāk enerģijas.",
+      "kidsExtra": "Papildu nodarbības, perfektas maltītes un vainas sajūta par ekrāna laiku.",
+      "workExtra": "Viss darbā, ko būtu jauki izdarīt, bet kam termiņš vēl nav pienācis.",
+      "healthAllOrNothing": "Plāns „viss vai nekas”. Mazais arī skaitās.",
+      "everythingElse": "Viss, kas nav šodienas sarakstā. Rīt tas joprojām būs tepat.",
+      "onMind": "Daļa no tā, kas tev prātā, var pagaidīt, līdz viss nomierinās."
+    },
+    "notes": {
+      "movedForTime": "Pārcelts šeit, jo šodien izmantojamā laika ir maz.",
+      "movedForFocus": "Pārcelts šeit, lai šodien paliktu trīs lietas.",
+      "fromYou": "No tā, kas vēl tev ir prātā"
+    }
+  },
+  "safety": {
+    "title": "Vispirms par galveno",
+    "body": "Daļa no tā, ko uzrakstīji, izklausās pēc kaut kā vairāk nekā piepildīta diena. Parent Reset ar to nevar palīdzēt, bet cilvēki var.",
+    "emergency": "Ja tu vai kāds cits ir tiešās briesmās, sazinies ar vietējiem neatliekamās palīdzības dienestiem.",
+    "trustedPerson": "Sazinies ar kādu, kam uzticies, un pastāsti, kāda šī diena patiesībā ir.",
+    "support": "Vairumā valstu ir krīzes atbalsta tālruņi, kas ir bezmaksas un konfidenciāli. Sameklē tādu savā valstī vai pajautā savam ārstam.",
+    "continue": "Turpināt uz savu sarakstu"
+  },
+  "footer": {
+    "tagline": "Vienkāršs restarts vecākiem, kuriem galvā ir par daudz.",
+    "notMedical": "Parent Reset nav medicīnas vai terapijas pakalpojums.",
+    "madeWithCare": "Veidots ar rūpēm aizņemtiem vecākiem.",
+    "language": "Valoda"
+  },
+  "notFound": {
+    "title": "Šāda lapa neeksistē",
+    "body": "Saite var būt novecojusi vai nepareizi ierakstīta.",
+    "cta": "Uz sākumu"
+  }
+}

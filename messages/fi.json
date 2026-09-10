@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "status": "unreviewed",
+    "source": "machine-generated",
+    "sourceLocale": "en",
+    "note": "Initial translation generated automatically. Needs review by a native speaker before launch."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Tee tästä päivästä helpompi",
+      "description": "Yksinkertainen nollaus vanhemmille, joilla on liikaa mielessä. Lajittele, mikä on tänään tärkeää, mikä voi odottaa ja mistä voit päästää irti."
+    },
+    "reset": {
+      "title": "Aloita nollaus – Parent Reset",
+      "description": "Kahden minuutin pysähdys, joka muuttaa täyden pään lyhyeksi listaksi tälle päivälle."
+    },
+    "result": {
+      "title": "Sinun nollauksesi – Parent Reset",
+      "description": "Lyhyt lista tälle päivälle, se mikä voi odottaa tähän viikkoon, ja se mistä voit päästää irti."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Siirry sisältöön",
+    "back": "Takaisin",
+    "continue": "Jatka",
+    "close": "Sulje",
+    "openMenu": "Avaa valikko",
+    "closeMenu": "Sulje valikko",
+    "language": "Kieli",
+    "optional": "Valinnainen",
+    "loading": "Hetki…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Etusivu",
+    "startReset": "Aloita nollaus",
+    "howItWorks": "Miten se toimii",
+    "menuTitle": "Valikko"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Vanhemmille, joilla on liikaa mielessä",
+      "title": "Elämä on paljon. Tehdään tästä päivästä helpompi.",
+      "subtitle": "Yksinkertainen nollaus vanhemmille, joilla on liikaa mielessä.",
+      "primaryCta": "Aloita nollaus",
+      "secondaryCta": "Katso, miten se toimii",
+      "trust": "Ei tiliä. Noin kaksi minuuttia. Mitään ei jaeta."
+    },
+    "steps": {
+      "title": "Miten se toimii",
+      "subtitle": "Kolme lyhyttä vaihetta. Ei sovelluksia asennettavaksi, ei uusia rutiineja.",
+      "one": {
+        "title": "Kerro, mikä painaa mieltäsi",
+        "body": "Kuinka täydeltä tämä päivä tuntuu, mikä vie eniten tilaa ja paljonko aikaa sinulla oikeasti on."
+      },
+      "two": {
+        "title": "Lajittele tärkeät asiat",
+        "body": "Jaamme ne siihen, minkä täytyy tapahtua tänään, mikä voi odottaa ja mikä voi odottaa pitkäänkin."
+      },
+      "three": {
+        "title": "Tee päivästä pienempi",
+        "body": "Saat lyhyen listan, jonka oikeasti ehdit tehdä. Se on koko idea."
+      }
+    },
+    "buckets": {
+      "title": "Mitä saat",
+      "subtitle": "Yksi sivu. Kolme listaa. Ei hallintapaneeleja.",
+      "today": {
+        "label": "Tänään",
+        "body": "Enintään kolme asiaa, joilla on tänään oikeasti väliä. Ei kaikkea, vain riittävästi."
+      },
+      "thisWeek": {
+        "label": "Tällä viikolla",
+        "body": "Asiat, jotka ovat tärkeitä, mutta joita ei tarvitse ratkaista ennen nukkumaanmenoa."
+      },
+      "letGo": {
+        "label": "Päästä irti",
+        "body": "Lupa jättää loput rauhaan toistaiseksi. Ne ovat vielä huomennakin olemassa."
+      }
+    },
+    "reassurance": {
+      "title": "Käytännöllinen, ei kliininen",
+      "items": {
+        "notTherapy": "Tämä ei ole terapiaa eikä lääketieteellistä neuvontaa. Se on tapa järjestää kiireinen päivä.",
+        "private": "Vastauksesi pysyvät laitteellasi, ellet luo tiliä ja päätä tallentaa niitä.",
+        "languages": "Saatavilla omalla kielelläsi, puhelimessa, yhdellä kädellä."
+      }
+    },
+    "finalCta": {
+      "title": "Valmiina, kun sinä olet.",
+      "body": "Kaksi minuuttia nyt voi tehdä loppupäivästä kevyemmän.",
+      "cta": "Aloita nollaus"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Vaihe {current} / {total}",
+    "hint": {
+      "oneHand": "Vastaa rehellisesti. Vääriä vastauksia ei ole, eikä mitään pisteytetä."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "Kuinka kuormittuneelta olosi tuntuu tänään?",
+        "help": "1 on rauhallinen, 10 on täysin äärirajoilla.",
+        "low": "Rauhallinen",
+        "high": "Äärirajoilla",
+        "selected": "Valitsit {value} / 10"
+      },
+      "areas": {
+        "title": "Mikä vie eniten tilaa mielessäsi?",
+        "help": "Valitse kaikki sopivat.",
+        "options": {
+          "kids": "Lapset",
+          "money": "Raha",
+          "work": "Työ",
+          "home": "Koti",
+          "relationship": "Parisuhde",
+          "health": "Terveys / jaksaminen",
+          "other": "Jokin muu"
+        }
+      },
+      "time": {
+        "title": "Paljonko käytettävää aikaa sinulla realistisesti on tänään?",
+        "help": "Aikaa, joka on oikeasti sinun, ei aikaa, jota sinulla pitäisi olla.",
+        "options": {
+          "under30": "Alle 30 minuuttia",
+          "30to60": "30–60 minuuttia",
+          "1to2h": "1–2 tuntia",
+          "over2h": "Yli 2 tuntia"
+        }
+      },
+      "money": {
+        "title": "Onko rahahuoli osa tämän päivän stressiä?",
+        "help": "Tämä vaikuttaa vain siihen, miten lajittelemme listasi.",
+        "yes": "Kyllä",
+        "no": "Ei"
+      },
+      "must": {
+        "title": "Minkä on ehdottomasti tapahduttava tänään?",
+        "help": "Yksi asia per rivi on helpointa. Pidä mukana vain se, mikä ei oikeasti voi odottaa.",
+        "placeholder": "Maksa sähkölasku\nHae lapset neljältä\nSoita hammaslääkärille"
+      },
+      "onMind": {
+        "title": "Mitä muuta mielessäsi on?",
+        "help": "Ihan mitä vain. Voit jättää tämän tyhjäksi.",
+        "placeholder": "Tuntuu, että olen jäljessä kaikesta töissä. Synttäreitä ei ole vieläkään hoidettu."
+      }
+    },
+    "errors": {
+      "required": "Lisää ainakin yksi asia.",
+      "tooLong": "Tuo on hieman liian pitkä. Lyhennä se {max} merkkiin.",
+      "areasRequired": "Valitse ainakin yksi.",
+      "generic": "Jokin meni pieleen. Yritä uudelleen.",
+      "rateLimited": "Liian monta nollausta lyhyessä ajassa. Odota hetki ja yritä uudelleen."
+    },
+    "submit": "Näytä nollaukseni",
+    "submitting": "Järjestetään päivääsi…",
+    "resumeDraft": "Säilytimme aiemmat vastauksesi.",
+    "startOver": "Aloita alusta"
+  },
+  "result": {
+    "title": "Sinun nollauksesi",
+    "dateLabel": "Nollaus {date}",
+    "today": {
+      "label": "Tänään",
+      "intro": "Vain nämä. Jos saat ne tehtyä, päivä on onnistunut."
+    },
+    "thisWeek": {
+      "label": "Tällä viikolla",
+      "intro": "Tärkeää, mutta ei tarvitse ratkaista tänään."
+    },
+    "letGo": {
+      "label": "Päästä irti",
+      "intro": "Ei tänään. Ihan oikeasti."
+    },
+    "savedLocally": "Tallennettu tälle laitteelle. Luo tili myöhemmin, niin historiasi säilyy eri laitteilla.",
+    "newReset": "Aloita uusi nollaus",
+    "backHome": "Takaisin etusivulle",
+    "notFound": {
+      "title": "Emme löytäneet tuota nollausta",
+      "body": "Se on ehkä tehty toisella laitteella tai poistettu tästä selaimesta.",
+      "cta": "Aloita uusi nollaus"
+    },
+    "disclaimer": "Parent Reset on käytännön suunnittelutyökalu, ei lääketieteellistä tai terapeuttista neuvontaa."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Tämä päivä tuntuu hallittavalta. Pidetään se sellaisena lyhyellä listalla.",
+      "busy": "Huomiostasi kilpailee tänään aika moni asia. Tässä on se, mikä kannattaa pitää, mikä voi odottaa ja minkä voi jättää rauhaan.",
+      "heavy": "Huomiostasi kilpailee tänään todella paljon. Tämän päivän lista on tarkoituksella pieni."
+    },
+    "time": {
+      "under30": "Sinulla on alle 30 minuuttia oikeasti omaa aikaa, joten tämän päivän lista on hyvin lyhyt.",
+      "30to60": "Puolesta tunnista tuntiin riittää realistisesti enintään kolmeen asiaan.",
+      "1to2h": "Sinulla on yhdestä kahteen tuntia – tarpeeksi muutamaan hyvin tehtyyn asiaan.",
+      "over2h": "Sinulla on tänään oikeasti aikaa. Käytä se siihen, millä on väliä, älä kaikkeen."
+    },
+    "today": {
+      "moneyCheck": "Tarkista, mikä maksu oikeasti erääntyy ensin. Hoida vain se.",
+      "pickOne": "Valitse se yksi asia, jonka jälkeen päivä tuntuisi hoidetulta, ja tee vain se.",
+      "breather": "Ota kymmenen minuuttia ilman mitään suunniteltua. Se lasketaan tehtäväksi."
+    },
+    "week": {
+      "area": {
+        "kids": "Valitse yksi lapsiin liittyvä asia hoidettavaksi tällä viikolla, ei kaikkia.",
+        "money": "Katso koko kuukauden rahatilanne kerran ja lopeta sitten.",
+        "work": "Valitse se yksi työasia, joka helpottaisi painetta eniten.",
+        "home": "Yksi kotityö, joka tekisi kodista rauhallisemman.",
+        "relationship": "Etsi tällä viikolla hetki jutella, kun kumpikaan ei ole aivan lopussa.",
+        "health": "Yksi pieni teko oman jaksamisen hyväksi: uni, ruoka, kävely.",
+        "other": "Se toinen asia mielessäsi saa paikkansa tällä viikolla, ei tänään."
+      }
+    },
+    "letGo": {
+      "homePerfect": "Kodin ei tarvitse olla siisti tänään.",
+      "moneyWhole": "Sinun ei tarvitse ratkaista koko rahatilannetta tänään. Yksi askel riittää.",
+      "relationshipTalk": "Isot keskustelut voivat odottaa päivää, jolloin on enemmän voimia.",
+      "kidsExtra": "Ylimääräiset harrastukset, täydelliset ateriat ja ruutuaikasyyllisyys.",
+      "workExtra": "Kaikki työssä, mikä olisi kiva tehdä mutta ei oikeasti ole vielä ajankohtaista.",
+      "healthAllOrNothing": "Kaikki tai ei mitään -suunnitelma. Pienikin riittää.",
+      "everythingElse": "Kaikki, mikä ei ole tämän päivän listalla. Se on vielä huomennakin olemassa.",
+      "onMind": "Osa siitä, mitä mielessäsi on, voi levätä, kunnes tilanne rauhoittuu."
+    },
+    "notes": {
+      "movedForTime": "Siirretty tänne, koska tänään on vain vähän käytettävää aikaa.",
+      "movedForFocus": "Siirretty tänne, jotta tänään pysyy kolmessa asiassa.",
+      "fromYou": "Siitä, mitä muuta mielessäsi on"
+    }
+  },
+  "safety": {
+    "title": "Ennen kaikkea muuta",
+    "body": "Osa siitä, mitä kirjoitit, kuulostaa enemmältä kuin kiireiseltä päivältä. Parent Reset ei voi auttaa siinä, mutta ihmiset voivat.",
+    "emergency": "Jos sinä tai joku muu on välittömässä vaarassa, soita hätänumeroon.",
+    "trustedPerson": "Ota yhteyttä johonkuhun, johon luotat, ja kerro, millainen tämä päivä oikeasti on.",
+    "support": "Useimmissa maissa on maksuttomia ja luottamuksellisia tukipuhelimia. Etsi oman maasi numero tai kysy lääkäriltäsi.",
+    "continue": "Jatka listaasi"
+  },
+  "footer": {
+    "tagline": "Yksinkertainen nollaus vanhemmille, joilla on liikaa mielessä.",
+    "notMedical": "Parent Reset ei ole lääketieteellinen palvelu eikä terapiaa.",
+    "madeWithCare": "Tehty välittäen kiireisille vanhemmille.",
+    "language": "Kieli"
+  },
+  "notFound": {
+    "title": "Tuota sivua ei ole olemassa",
+    "body": "Linkki voi olla vanha tai kirjoitettu väärin.",
+    "cta": "Siirry alkuun"
+  }
+}

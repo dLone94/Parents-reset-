@@ -1,0 +1,249 @@
+{
+  "_meta": {
+    "status": "source",
+    "note": "English is the source language. All other files fall back to these strings for any missing key."
+  },
+  "meta": {
+    "siteName": "Parent Reset",
+    "home": {
+      "title": "Parent Reset – Make today easier",
+      "description": "A simple reset for parents carrying too much in their head. Sort what matters today, what can wait, and what you can let go."
+    },
+    "reset": {
+      "title": "Start my reset – Parent Reset",
+      "description": "A two-minute check-in that turns a full head into a short list for today."
+    },
+    "result": {
+      "title": "Your reset – Parent Reset",
+      "description": "Your short list for today, what can wait until this week, and what you can let go."
+    }
+  },
+  "common": {
+    "appName": "Parent Reset",
+    "skipToContent": "Skip to content",
+    "back": "Back",
+    "continue": "Continue",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "optional": "Optional",
+    "loading": "One moment…",
+    "characters": "{count} / {max}"
+  },
+  "nav": {
+    "home": "Home",
+    "startReset": "Start my reset",
+    "howItWorks": "How it works",
+    "menuTitle": "Menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "For parents with too much in their head",
+      "title": "Life is a lot. Let's make today easier.",
+      "subtitle": "A simple reset for parents carrying too much in their head.",
+      "primaryCta": "Start my reset",
+      "secondaryCta": "See how it works",
+      "trust": "No account needed. About two minutes. Nothing is shared."
+    },
+    "steps": {
+      "title": "How it works",
+      "subtitle": "Three short steps. No apps to set up, no habits to build.",
+      "one": {
+        "title": "Tell us what's weighing on you",
+        "body": "How full today feels, what's taking the most space, and how much time you really have."
+      },
+      "two": {
+        "title": "Sort what matters",
+        "body": "We split it into what has to happen today, what can wait, and what can wait a lot."
+      },
+      "three": {
+        "title": "Make today smaller",
+        "body": "You leave with a short list you can actually finish. That's the whole point."
+      }
+    },
+    "buckets": {
+      "title": "What you get",
+      "subtitle": "One page. Three lists. No dashboards.",
+      "today": {
+        "label": "Today",
+        "body": "Up to three things that truly matter today. Not everything, just enough."
+      },
+      "thisWeek": {
+        "label": "This week",
+        "body": "Things that count but do not need to be solved before bedtime."
+      },
+      "letGo": {
+        "label": "Let it go",
+        "body": "Permission to leave the rest alone for now. It will still be there tomorrow."
+      }
+    },
+    "reassurance": {
+      "title": "Practical, not clinical",
+      "items": {
+        "notTherapy": "This is not therapy or medical advice. It is a way to sort a busy day.",
+        "private": "Your answers stay on your device unless you create an account and choose to save them.",
+        "languages": "Available in your language, on your phone, one-handed."
+      }
+    },
+    "finalCta": {
+      "title": "Ready when you are.",
+      "body": "Two minutes now can make the rest of the day feel lighter.",
+      "cta": "Start my reset"
+    }
+  },
+  "reset": {
+    "title": "Parent Reset",
+    "progress": "Step {current} of {total}",
+    "hint": {
+      "oneHand": "Answer honestly. There are no wrong answers and nothing is scored."
+    },
+    "questions": {
+      "overwhelmed": {
+        "title": "How overwhelmed do you feel today?",
+        "help": "1 is calm, 10 is completely maxed out.",
+        "low": "Calm",
+        "high": "Maxed out",
+        "selected": "You picked {value} out of 10"
+      },
+      "areas": {
+        "title": "What is taking the most mental space?",
+        "help": "Pick everything that applies.",
+        "options": {
+          "kids": "Kids",
+          "money": "Money",
+          "work": "Work",
+          "home": "Home",
+          "relationship": "Relationship",
+          "health": "Health / energy",
+          "other": "Something else"
+        }
+      },
+      "time": {
+        "title": "How much usable time do you realistically have today?",
+        "help": "Time that is actually yours, not time you are supposed to have.",
+        "options": {
+          "under30": "Less than 30 minutes",
+          "30to60": "30–60 minutes",
+          "1to2h": "1–2 hours",
+          "over2h": "More than 2 hours"
+        }
+      },
+      "money": {
+        "title": "Is money pressure part of today's stress?",
+        "help": "This only changes how we sort your list.",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "must": {
+        "title": "What absolutely needs to happen today?",
+        "help": "One thing per line is easiest. Keep it to what really cannot wait.",
+        "placeholder": "Pay the electricity bill\nPick up the kids at 4\nCall the dentist"
+      },
+      "onMind": {
+        "title": "What else is on your mind?",
+        "help": "Anything at all. You can leave this empty.",
+        "placeholder": "Feeling behind on everything at work. Still haven't sorted the birthday."
+      }
+    },
+    "errors": {
+      "required": "Please add at least one thing.",
+      "tooLong": "That is a bit too long. Please shorten it to {max} characters.",
+      "areasRequired": "Please pick at least one.",
+      "generic": "Something went wrong. Please try again.",
+      "rateLimited": "Too many resets in a short time. Please wait a minute and try again."
+    },
+    "submit": "Show my reset",
+    "submitting": "Sorting your day…",
+    "resumeDraft": "We kept your answers from earlier.",
+    "startOver": "Start over"
+  },
+  "result": {
+    "title": "Your reset",
+    "dateLabel": "Reset from {date}",
+    "today": {
+      "label": "Today",
+      "intro": "Only these. If you finish them, the day counted."
+    },
+    "thisWeek": {
+      "label": "This week",
+      "intro": "Matters, but does not need solving today."
+    },
+    "letGo": {
+      "label": "Let it go",
+      "intro": "Not today. Really."
+    },
+    "savedLocally": "Saved on this device. Create an account later to keep your history across devices.",
+    "newReset": "Start a new reset",
+    "backHome": "Back to home",
+    "notFound": {
+      "title": "We could not find that reset",
+      "body": "It may have been created on another device or cleared from this browser.",
+      "cta": "Start a new reset"
+    },
+    "disclaimer": "Parent Reset is a practical planning tool, not medical or therapeutic advice."
+  },
+  "planner": {
+    "summary": {
+      "calm": "Today feels manageable. Let's keep it that way with a short list.",
+      "busy": "You have a fair amount competing for your attention today. Here is what to keep, what can wait, and what to leave alone.",
+      "heavy": "You have a lot competing for your attention today. Today's list is small on purpose."
+    },
+    "time": {
+      "under30": "You have less than 30 minutes that are really yours, so today's list is very short.",
+      "30to60": "With about half an hour to an hour, three things is the realistic ceiling.",
+      "1to2h": "You have one to two hours, enough for a few things done well.",
+      "over2h": "You have some real time today. Use it for what matters, not for everything."
+    },
+    "today": {
+      "moneyCheck": "Check which payment is actually due first. Handle that one only.",
+      "pickOne": "Pick the one thing that would make today feel handled, and do just that.",
+      "breather": "Take ten minutes with nothing planned. It counts as a task."
+    },
+    "week": {
+      "area": {
+        "kids": "Pick one kid-related thing to sort out this week, not all of them.",
+        "money": "Look at the whole month's money picture once, then stop.",
+        "work": "Choose the one work thing that would take the most pressure off.",
+        "home": "One household task that would make the space feel calmer.",
+        "relationship": "Find a moment this week to talk when neither of you is exhausted.",
+        "health": "One small thing for your own energy: sleep, food, a walk.",
+        "other": "The other thing on your mind gets a slot this week, not today."
+      }
+    },
+    "letGo": {
+      "homePerfect": "The house does not need to be tidy today.",
+      "moneyWhole": "You do not have to solve the whole money situation today. One step is enough.",
+      "relationshipTalk": "Big conversations can wait for a day with more energy.",
+      "kidsExtra": "Extra activities, perfect meals, and screen-time guilt.",
+      "workExtra": "Anything at work that is nice to do rather than actually due.",
+      "healthAllOrNothing": "The all-or-nothing plan. Small counts.",
+      "everythingElse": "Everything not on today's list. It will still be there tomorrow.",
+      "onMind": "Some of what is on your mind can rest until things calm down."
+    },
+    "notes": {
+      "movedForTime": "Moved here because today's usable time is short.",
+      "movedForFocus": "Moved here so today stays at three things.",
+      "fromYou": "From what else is on your mind"
+    }
+  },
+  "safety": {
+    "title": "Before anything else",
+    "body": "Some of what you wrote sounds like more than a busy day. Parent Reset cannot help with that, but people can.",
+    "emergency": "If you or someone else is in immediate danger, contact your local emergency services.",
+    "trustedPerson": "Reach out to someone you trust and tell them how today really is.",
+    "support": "Crisis support lines exist in most countries and are free and confidential. Search for one in your country or ask your doctor.",
+    "continue": "Continue to your list"
+  },
+  "footer": {
+    "tagline": "A simple reset for parents carrying too much in their head.",
+    "notMedical": "Parent Reset is not a medical or therapy service.",
+    "madeWithCare": "Made with care for busy parents.",
+    "language": "Language"
+  },
+  "notFound": {
+    "title": "That page does not exist",
+    "body": "The link may be old or mistyped.",
+    "cta": "Go to the start"
+  }
+}
