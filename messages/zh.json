@@ -22,6 +22,18 @@
     "load": {
       "title": "家里的事 – Parent Reset",
       "description": "简单看清脑子里都装着什么：孩子、钱、家、工作、伴侣和你自己。"
+    },
+    "account": {
+      "title": "你的账号 – Parent Reset",
+      "description": "登录后，你的整理记录和家里的事会在所有设备上同步。"
+    },
+    "history": {
+      "title": "你的记录 – Parent Reset",
+      "description": "过去的整理，以及日子有没有变得轻松一些。"
+    },
+    "community": {
+      "title": "社区 – Parent Reset",
+      "description": "一个小小的、默认匿名的地方，让父母把心里话说出来。"
     }
   },
   "common": {
@@ -42,7 +54,19 @@
     "startReset": "开始我的整理",
     "howItWorks": "使用方法",
     "menuTitle": "菜单",
-    "familyLoad": "家里的事"
+    "familyLoad": "家里的事",
+    "community": "社区",
+    "history": "记录",
+    "account": "账号",
+    "signIn": "登录",
+    "tabs": {
+      "label": "主导航",
+      "home": "首页",
+      "reset": "整理",
+      "load": "家事",
+      "community": "社区",
+      "account": "我"
+    }
   },
   "home": {
     "hero": {
@@ -97,6 +121,25 @@
       "title": "你准备好了就开始。",
       "body": "现在花两分钟，能让剩下的一天轻松一些。",
       "cta": "开始我的整理"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "早上好",
+        "afternoon": "下午好",
+        "evening": "晚上好",
+        "night": "还没睡呀？"
+      },
+      "title": "欢迎回来。想从哪里开始？",
+      "todayDone": "今天已经整理过了。很好。",
+      "lastReset": "上次整理：{date}",
+      "progress": "今日清单已完成 {percent}%",
+      "openLast": "打开那次整理",
+      "loadLabel": "家里的事",
+      "openItems": "{count, plural, =0 {目前没有待办} other {# 件待办}}",
+      "openLoad": "打开家里的事",
+      "cta": "开始今天的整理",
+      "ctaAgain": "再整理一次",
+      "history": "记录（{count}）"
     }
   },
   "reset": {
@@ -170,7 +213,11 @@
     "dateLabel": "{date} 的整理",
     "today": {
       "label": "今天",
-      "intro": "只做这些。做完了，今天就算数。"
+      "intro": "只做这些。做完了，今天就算数。",
+      "allDone": "全部完成。今天就到这里。",
+      "markDone": "标记为完成",
+      "undo": "标记为未完成",
+      "focus": "一件一件来"
     },
     "thisWeek": {
       "label": "本周",
@@ -188,7 +235,12 @@
       "body": "它可能是在其他设备上创建的，或已从此浏览器中清除。",
       "cta": "重新整理一次"
     },
-    "disclaimer": "Parent Reset 是一个实用的规划工具，不是医疗或心理治疗建议。"
+    "disclaimer": "Parent Reset 是一个实用的规划工具，不是医疗或心理治疗建议。",
+    "addToLoad": "加入家里的事",
+    "addedShort": "已加入",
+    "addedToLoad": "已加入「{area}」",
+    "goToLoad": "打开家里的事",
+    "savedToAccount": "已保存到你的账号。"
   },
   "planner": {
     "summary": {
@@ -312,6 +364,200 @@
       "tooLong": "请不要超过{max}个字。"
     },
     "savedLocally": "已保存在这台设备上。以后可以创建账号，在各个设备间保留。",
-    "notProjectTool": "这不是待办事项系统。这里是把事情放下的地方，让它们不再在脑子里打转。"
+    "notProjectTool": "这不是待办事项系统。这里是把事情放下的地方，让它们不再在脑子里打转。",
+    "savedToAccount": "已保存到你的账号。你登录的每台设备上都能看到。"
+  },
+  "focus": {
+    "title": "一次只做一件事",
+    "close": "关闭",
+    "progress": "已完成 {done}/{total}",
+    "next": "现在，只做这一件：",
+    "hint": "在这件事完成或跳过之前，其他的都不存在。",
+    "skip": "先跳过",
+    "done": "完成",
+    "allDone": {
+      "title": "今天的事搞定了。",
+      "body": "其他的都可以等。去做点不是任务的事吧。",
+      "cta": "回到我的整理"
+    }
+  },
+  "account": {
+    "title": "账号",
+    "unavailable": {
+      "title": "这里还没有开启账号功能",
+      "body": "这份 Parent Reset 没有连接数据库。你做的一切都保存在这台设备上，这样也很好用。连接 Supabase 之后，账号、跨设备记录和社区就会出现。"
+    },
+    "signedOut": {
+      "title": "把你的整理随身带着",
+      "body": "账号会把你的整理记录和家里的事同步到所有设备。不注册也能正常使用。"
+    },
+    "signedIn": {
+      "title": "你的账号",
+      "body": "你的整理记录和家里的事保存在这里，你登录的每台设备上都能看到。"
+    },
+    "auth": {
+      "modeLabel": "登录或创建账号",
+      "signIn": {
+        "tab": "登录",
+        "submit": "登录"
+      },
+      "signUp": {
+        "tab": "创建账号",
+        "submit": "创建账号"
+      },
+      "email": "邮箱",
+      "password": "密码",
+      "passwordHint": "至少 8 个字符。",
+      "working": "请稍等…",
+      "privacy": "我们只保存你的邮箱和整理记录。不会分享，也不会出售。",
+      "checkEmail": {
+        "title": "请查看邮箱",
+        "body": "我们给你发了一封确认邮件。请在这台设备上打开链接，完成注册。"
+      },
+      "errors": {
+        "invalid": "请输入有效的邮箱和至少 8 个字符的密码。",
+        "credentials": "邮箱和密码不匹配。",
+        "exists": "这个邮箱已经注册过了。试试直接登录。",
+        "rateLimited": "尝试次数太多。请等一分钟。",
+        "unavailable": "此部署不支持账号功能。",
+        "generic": "出了点问题。请再试一次。",
+        "link": "这个登录链接无效。请重新申请一个。"
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "个人资料",
+        "displayName": "社区昵称",
+        "displayNameHint": "在你的社区帖子上显示，代替你的邮箱。点“换一个”随机生成。",
+        "shuffle": "换一个",
+        "save": "保存",
+        "saved": "已保存。",
+        "invalid": "请使用 2 到 40 个字母、数字或空格。"
+      },
+      "data": {
+        "title": "你的数据",
+        "body": "下载我们保存的关于你的全部内容，或者清除记录但保留账号。",
+        "export": "下载我的数据",
+        "deleteHistory": "删除我的记录"
+      },
+      "exportDone": "你的数据已下载。",
+      "deleteHistoryConfirm": "删除所有整理记录和家里的事？删除后无法恢复。",
+      "deleteHistoryDone": "记录已删除。",
+      "genericError": "出了点问题。请再试一次。",
+      "signOut": "退出登录",
+      "danger": {
+        "title": "删除账号",
+        "body": "会删除你的账号和其中的一切，包括社区帖子。无法恢复。",
+        "delete": "删除我的账号",
+        "confirm": "是的，全部删除",
+        "cancel": "保留我的账号"
+      }
+    },
+    "sync": {
+      "merged": "已把这台设备上的 {resets} 次整理和 {items} 件家里的事移到你的账号。"
+    }
+  },
+  "history": {
+    "title": "记录",
+    "subtitle": "这些日子过得怎么样。",
+    "count": "{count, plural, =0 {还没有整理记录。} other {到目前为止整理了 # 次。}}",
+    "trend": {
+      "label": "更轻松的日子",
+      "chartLabel": "最近几次整理时的压力程度",
+      "average": "最近平均：{value} / 10",
+      "needMore": "再整理几次，你就能看到日子有没有变轻松。",
+      "lighter": "比之前轻松了。不管你在做什么，它在起作用。",
+      "heavier": "比之前更重了。眼下事情很多。这不是对你的评判。",
+      "steady": "和之前差不多。",
+      "frequentAreas": "最常占心思的：{areas}"
+    },
+    "empty": {
+      "title": "还没有整理记录",
+      "body": "第一次只要两分钟。",
+      "cta": "开始我的整理"
+    },
+    "overwhelm": "压力 {value} / 10",
+    "completion": "今日清单已完成 {percent}%",
+    "open": "打开",
+    "delete": "删除",
+    "guestNote": "这份记录只保存在这台设备上。",
+    "guestCta": "创建账号来保留它。"
+  },
+  "community": {
+    "title": "社区",
+    "subtitle": "把心里话说出来。",
+    "intro": "一个小小的、默认匿名的父母空间。没有粉丝，没有刷不完的信息流，没有完美家庭。",
+    "write": "写一篇",
+    "anonymousNote": "帖子只显示随机昵称，绝不显示你的邮箱。",
+    "categoriesLabel": "分类",
+    "all": "全部",
+    "categories": {
+      "toddlers": "幼儿",
+      "school_age": "学龄孩子",
+      "money_stress": "钱的压力",
+      "no_time": "没时间",
+      "relationships": "伴侣关系",
+      "dads": "爸爸们",
+      "mums": "妈妈们",
+      "single_parents": "单亲父母",
+      "moving": "搬家",
+      "general": "综合"
+    },
+    "support": "{count, plural, =0 {支持} other {# 人支持}}",
+    "comments": "{count, plural, =0 {还没有评论} other {# 条评论}}",
+    "back": "返回社区",
+    "delete": "删除帖子",
+    "deleteConfirm": "删除这篇帖子和它的评论？",
+    "unavailable": {
+      "title": "这里还没有开启社区",
+      "body": "这份 Parent Reset 连接 Supabase 之后社区就会出现。其他功能不受影响。"
+    },
+    "empty": {
+      "title": "这里还什么都没有",
+      "body": "做第一个吧。哪怕一句真心话，也能帮到下一位读到的父母。"
+    },
+    "safetyNote": "如果某篇帖子让你担心有人的安全，请提醒对方联系当地紧急服务。这里是聊天的地方，不是危机救助服务。",
+    "new": {
+      "heading": "写一篇",
+      "intro": "你此刻真实的感受是什么？想写多短或多长都可以。",
+      "category": "分类",
+      "title": "标题",
+      "titlePlaceholder": "没人告诉我第二年会更难",
+      "body": "你的帖子",
+      "bodyPlaceholder": "发生了什么，你试过什么，你需要什么。",
+      "guidelines": "请友善。不要写别人的名字、地址，也不要给医疗建议。帖子是公开的。",
+      "posting": "发布中…",
+      "submit": "发布"
+    },
+    "comment": {
+      "label": "回复",
+      "placeholder": "几句温和、真诚的话。",
+      "posting": "发送中…",
+      "submit": "回复",
+      "empty": "还没有回复。你的可以是第一条。",
+      "signInPrompt": "登录后可以回复和支持帖子。",
+      "signIn": "登录"
+    },
+    "report": {
+      "button": "举报",
+      "reasons": {
+        "spam": "垃圾信息或广告",
+        "harmful": "有害或不友善",
+        "personal_info": "泄露个人信息",
+        "other": "其他"
+      },
+      "thanks": "谢谢。我们会看一下。",
+      "failed": "举报发送失败。请再试一次。"
+    },
+    "errors": {
+      "invalid": "请填写标题和内容。",
+      "titleTooLong": "标题有点长。请控制在 140 个字符以内。",
+      "bodyTooLong": "内容有点长。请控制在 4000 个字符以内。",
+      "tooLong": "内容有点长。请控制在 2000 个字符以内。",
+      "rejected": "无法发布。请删掉链接后再试一次。",
+      "rateLimited": "你发得有点快。请等几分钟。",
+      "signIn": "请先登录。",
+      "generic": "出了点问题。请再试一次。"
+    }
   }
 }

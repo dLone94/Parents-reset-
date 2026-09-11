@@ -17,6 +17,34 @@ function flatten(obj: Record<string, unknown>, prefix = ""): Record<string, stri
   return out;
 }
 
+/**
+ * Names of the top-level ICU arguments in a message, e.g. `{count}` or
+ * `{count, plural, ...}`. Branch bodies such as `=0 {Support}` are skipped
+ * so translated plural text is not mistaken for a placeholder.
+ */
+function icuArguments(message: string): string[] {
+  const names: string[] = [];
+  let i = 0;
+  while (i < message.length) {
+    if (message[i] !== "{") {
+      i += 1;
+      continue;
+    }
+    let j = i + 1;
+    while (j < message.length && /[a-zA-Z0-9_]/.test(message[j])) j += 1;
+    const name = message.slice(i + 1, j);
+    if (name) names.push(name);
+    let depth = 1;
+    i = j;
+    while (i < message.length && depth > 0) {
+      if (message[i] === "{") depth += 1;
+      if (message[i] === "}") depth -= 1;
+      i += 1;
+    }
+  }
+  return names.sort();
+}
+
 describe("message files", () => {
   it("exist for every supported locale", () => {
     const files = readdirSync(dir).filter((f) => f.endsWith(".json")).map((f) => f.replace(".json", ""));
@@ -25,7 +53,7 @@ describe("message files", () => {
 
   it("use stable dotted keys, never English sentences as keys", () => {
     for (const key of Object.keys(flatten(en))) {
-      expect(key).toMatch(/^[a-zA-Z0-9.]+$/);
+      expect(key).toMatch(/^[a-zA-Z0-9._]+$/);
       expect(key).not.toMatch(/\s/);
     }
   });
@@ -38,8 +66,8 @@ describe("message files", () => {
       expect(missing, `${locale} missing keys`).toEqual([]);
       const flat = flatten(data);
       for (const [key, value] of Object.entries(enFlat)) {
-        const placeholders = (value.match(/\{[a-zA-Z]+\}/g) ?? []).sort();
-        const got = (flat[key]?.match(/\{[a-zA-Z]+\}/g) ?? []).sort();
+        const placeholders = icuArguments(value);
+        const got = icuArguments(flat[key] ?? "");
         expect(got, `${locale}:${key} placeholders`).toEqual(placeholders);
       }
       if (locale !== "en") {
