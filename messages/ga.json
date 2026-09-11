@@ -22,6 +22,18 @@
     "load": {
       "title": "Cúraimí an teaghlaigh – Parent Reset",
       "description": "Léargas simplí ar a bhfuil ag glacadh spáis i do cheann: páistí, airgead, baile, obair, caidreamh agus tú féin."
+    },
+    "account": {
+      "title": "Do chuntas – Parent Reset",
+      "description": "Sínigh isteach chun do laethanta in ord agus cúraimí an teaghlaigh a choinneáil ar gach gléas."
+    },
+    "history": {
+      "title": "Do stair – Parent Reset",
+      "description": "Laethanta a chuir tú in ord roimhe seo, agus an bhfuil na laethanta ag éirí níos éadroime."
+    },
+    "community": {
+      "title": "Pobal – Parent Reset",
+      "description": "Áit bheag, gan ainm ar dtús, do thuismitheoirí an rud nach ndeirtear a rá os ard."
     }
   },
   "common": {
@@ -42,7 +54,19 @@
     "startReset": "Cuir ord ar mo lá",
     "howItWorks": "Conas a oibríonn sé",
     "menuTitle": "Roghchlár",
-    "familyLoad": "Cúraimí an teaghlaigh"
+    "familyLoad": "Cúraimí an teaghlaigh",
+    "community": "Pobal",
+    "history": "Stair",
+    "account": "Cuntas",
+    "signIn": "Sínigh isteach",
+    "tabs": {
+      "label": "Príomhnascleanúint",
+      "home": "Baile",
+      "reset": "Mo lá",
+      "load": "Cúraimí",
+      "community": "Pobal",
+      "account": "Tusa"
+    }
   },
   "home": {
     "hero": {
@@ -97,6 +121,25 @@
       "title": "Réidh nuair a bheidh tú féin réidh.",
       "body": "Is féidir le dhá nóiméad anois an chuid eile den lá a dhéanamh níos éadroime.",
       "cta": "Cuir ord ar mo lá"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Maidin mhaith",
+        "afternoon": "Tráthnóna maith",
+        "evening": "Tráthnóna maith",
+        "night": "Fós i do shuí?"
+      },
+      "title": "Fáilte ar ais. Cá dtosóidh tú?",
+      "todayDone": "Chuir tú do lá in ord inniu cheana. Maith thú.",
+      "lastReset": "An uair dheireanach: {date}",
+      "progress": "{percent}% de liosta an lae inniu déanta",
+      "openLast": "Oscail an lá sin",
+      "loadLabel": "Cúraimí an teaghlaigh",
+      "openItems": "{count, plural, =0 {Níl rud ar bith fágtha faoi láthair} one {# rud fágtha} two {# rud fágtha} few {# rud fágtha} many {# rud fágtha} other {# rud fágtha}}",
+      "openLoad": "Oscail cúraimí an teaghlaigh",
+      "cta": "Cuir ord ar an lá inniu",
+      "ctaAgain": "Cuir ord air arís",
+      "history": "Stair ({count})"
     }
   },
   "reset": {
@@ -170,7 +213,11 @@
     "dateLabel": "Ó {date}",
     "today": {
       "label": "Inniu",
-      "intro": "Iad seo amháin. Má chríochnaíonn tú iad, b'fhiú an lá."
+      "intro": "Iad seo amháin. Má chríochnaíonn tú iad, b'fhiú an lá.",
+      "allDone": "Gach rud déanta. Sin an lá.",
+      "markDone": "Marcáil mar dhéanta",
+      "undo": "Marcáil mar gan déanamh",
+      "focus": "Déan ceann ar cheann iad"
     },
     "thisWeek": {
       "label": "An tseachtain seo",
@@ -188,7 +235,12 @@
       "body": "B'fhéidir gur cruthaíodh ar ghléas eile é nó gur glanadh ón mbrabhsálaí seo é.",
       "cta": "Tosaigh as an nua"
     },
-    "disclaimer": "Uirlis phraiticiúil phleanála is ea Parent Reset, ní comhairle leighis ná teiripe."
+    "disclaimer": "Uirlis phraiticiúil phleanála is ea Parent Reset, ní comhairle leighis ná teiripe.",
+    "addToLoad": "Cuir le cúraimí an teaghlaigh",
+    "addedShort": "Curtha leis",
+    "addedToLoad": "Curtha le {area}",
+    "goToLoad": "Oscail cúraimí an teaghlaigh",
+    "savedToAccount": "Sábháilte i do chuntas."
   },
   "planner": {
     "summary": {
@@ -312,6 +364,200 @@
       "tooLong": "Coinnigh faoi {max} carachtar é, le do thoil."
     },
     "savedLocally": "Sábháilte ar an ngléas seo. Cruthaigh cuntas níos déanaí chun é a choinneáil ar gach gléas.",
-    "notProjectTool": "Ní córas le déanamh é seo. Is áit í le rudaí a leagan síos ionas go stopfaidh siad ag casadh i do cheann."
+    "notProjectTool": "Ní córas le déanamh é seo. Is áit í le rudaí a leagan síos ionas go stopfaidh siad ag casadh i do cheann.",
+    "savedToAccount": "Sábháilte i do chuntas. Ar fáil ar gach gléas a síníonn tú isteach air."
+  },
+  "focus": {
+    "title": "Rud amháin ag an am",
+    "close": "Dún",
+    "progress": "{done} as {total} déanta",
+    "next": "Anois díreach, é seo amháin:",
+    "hint": "Níl rud ar bith eile ann go dtí go mbeidh sé seo déanta nó scipeáilte.",
+    "skip": "Scipeáil anois",
+    "done": "Déanta",
+    "allDone": {
+      "title": "Sin an lá inniu réitithe.",
+      "body": "Is féidir le gach rud eile fanacht. Imigh agus déan rud éigin nach tasc é.",
+      "cta": "Ar ais go dtí mo lá"
+    }
+  },
+  "account": {
+    "title": "Cuntas",
+    "unavailable": {
+      "title": "Níl cuntais curtha ar siúl anseo fós",
+      "body": "Ritheann an chóip seo de Parent Reset gan bhunachar sonraí. Sábháiltear gach rud a dhéanann tú ar an ngléas seo, agus oibríonn sé sin go breá. Tagann cuntais, stair ar gach gléas agus an pobal chun cinn nuair a bheidh Supabase ceangailte."
+    },
+    "signedOut": {
+      "title": "Coinnigh do laethanta leat",
+      "body": "Sábhálann cuntas do laethanta in ord agus cúraimí an teaghlaigh ar gach gléas. Ní gá cuntas chun an aip a úsáid."
+    },
+    "signedIn": {
+      "title": "Do chuntas",
+      "body": "Tá do laethanta in ord agus cúraimí an teaghlaigh sábháilte anseo agus ar gach gléas a síníonn tú isteach air."
+    },
+    "auth": {
+      "modeLabel": "Sínigh isteach nó cruthaigh cuntas",
+      "signIn": {
+        "tab": "Sínigh isteach",
+        "submit": "Sínigh isteach"
+      },
+      "signUp": {
+        "tab": "Cruthaigh cuntas",
+        "submit": "Cruthaigh cuntas"
+      },
+      "email": "Ríomhphost",
+      "password": "Pasfhocal",
+      "passwordHint": "8 gcarachtar ar a laghad.",
+      "working": "Nóiméad amháin…",
+      "privacy": "Stórálaimid do ríomhphost agus do laethanta sábháilte. Ní roinntear ná ní dhíoltar rud ar bith.",
+      "checkEmail": {
+        "title": "Féach ar do bhosca isteach",
+        "body": "Sheolamar nasc chugat chun do ríomhphost a dheimhniú. Oscail ar an ngléas seo é chun an clárú a chríochnú."
+      },
+      "errors": {
+        "invalid": "Cuir isteach ríomhphost bailí agus pasfhocal le 8 gcarachtar ar a laghad, le do thoil.",
+        "credentials": "Ní mheaitseálann an ríomhphost agus an pasfhocal sin.",
+        "exists": "Tá cuntas leis an ríomhphost sin ann cheana. Bain triail as síniú isteach.",
+        "rateLimited": "An iomarca iarrachtaí. Fan nóiméad, le do thoil.",
+        "unavailable": "Níl cuntais ar fáil ar an imscaradh seo.",
+        "generic": "Chuaigh rud éigin amú. Bain triail eile as, le do thoil.",
+        "link": "Níor oibrigh an nasc sínithe isteach sin. Iarr ceann nua, le do thoil."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Próifíl",
+        "displayName": "Ainm sa phobal",
+        "displayNameHint": "Taispeántar é ar do phostálacha sa phobal in ionad do ríomhphoist. Suaith le ceann randamach a fháil.",
+        "shuffle": "Suaith",
+        "save": "Sábháil",
+        "saved": "Sábháilte.",
+        "invalid": "Úsáid idir 2 agus 40 litir, uimhir nó spás."
+      },
+      "data": {
+        "title": "Do shonraí",
+        "body": "Íoslódáil gach rud atá againn fút, nó glan do stair agus coinnigh an cuntas.",
+        "export": "Íoslódáil mo shonraí",
+        "deleteHistory": "Scrios mo stair"
+      },
+      "exportDone": "Tá do shonraí íoslódáilte.",
+      "deleteHistoryConfirm": "Scrios do laethanta in ord agus cúraimí an teaghlaigh ar fad? Ní féidir é seo a chealú.",
+      "deleteHistoryDone": "Stair scriosta.",
+      "genericError": "Chuaigh rud éigin amú. Bain triail eile as, le do thoil.",
+      "signOut": "Sínigh amach",
+      "danger": {
+        "title": "Scrios an cuntas",
+        "body": "Baineann sé seo do chuntas agus gach rud ann, postálacha sa phobal san áireamh. Níl aon bhealach ar ais.",
+        "delete": "Scrios mo chuntas",
+        "confirm": "Scrios gach rud, cinnte",
+        "cancel": "Coinnigh mo chuntas"
+      }
+    },
+    "sync": {
+      "merged": "Bogadh {resets} lá in ord agus {items} cúram teaghlaigh ón ngléas seo isteach i do chuntas."
+    }
+  },
+  "history": {
+    "title": "Stair",
+    "subtitle": "Conas atá ag éirí leis na laethanta.",
+    "count": "{count, plural, =0 {Níl aon lá curtha in ord fós.} one {# lá curtha in ord go dtí seo.} two {# lá curtha in ord go dtí seo.} few {# lá curtha in ord go dtí seo.} many {# lá curtha in ord go dtí seo.} other {# lá curtha in ord go dtí seo.}}",
+    "trend": {
+      "label": "Laethanta níos éadroime",
+      "chartLabel": "An brú thar na laethanta is déanaí a chuir tú in ord",
+      "average": "Meán le déanaí: {value} / 10",
+      "needMore": "Tar éis cúpla lá eile feicfidh tú an bhfuil na laethanta ag éirí níos éadroime.",
+      "lighter": "Níos éadroime ná roimhe seo. Cibé rud atá á dhéanamh agat, tá sé ag cabhrú.",
+      "heavier": "Níos troime ná roimhe seo. Tá a lán ar siúl faoi láthair. Ní breithiúnas ort é sin.",
+      "steady": "Timpeall mar a chéile le roimhe seo.",
+      "frequentAreas": "Is minice ar d'intinn: {areas}"
+    },
+    "empty": {
+      "title": "Níl aon lá curtha in ord fós",
+      "body": "Tógann an chéad cheann dhá nóiméad.",
+      "cta": "Cuir ord ar mo lá"
+    },
+    "overwhelm": "Brú {value} as 10",
+    "completion": "{percent}% de liosta an lae inniu déanta",
+    "open": "Oscail",
+    "delete": "Scrios",
+    "guestNote": "Ní mhaireann an stair seo ach ar an ngléas seo.",
+    "guestCta": "Cruthaigh cuntas chun í a choinneáil."
+  },
+  "community": {
+    "title": "Pobal",
+    "subtitle": "Abair os ard an rud nach ndeirtear.",
+    "intro": "Áit bheag, gan ainm ar dtús, do thuismitheoirí. Gan leantóirí, gan fothaí gan deireadh, gan teaghlaigh fhoirfe.",
+    "write": "Scríobh postáil",
+    "anonymousNote": "Taispeánann postálacha ainm randamach, ní do ríomhphost riamh.",
+    "categoriesLabel": "Catagóirí",
+    "all": "Gach ceann",
+    "categories": {
+      "toddlers": "Lapadáin",
+      "school_age": "Páistí scoile",
+      "money_stress": "Strus airgid",
+      "no_time": "Gan am",
+      "relationships": "Caidrimh",
+      "dads": "Daideanna",
+      "mums": "Mamaithe",
+      "single_parents": "Tuismitheoirí aonair",
+      "moving": "Bogadh tí",
+      "general": "Ginearálta"
+    },
+    "support": "{count, plural, =0 {Tacaigh} one {# thacaíocht} two {# thacaíocht} few {# thacaíocht} many {# dtacaíocht} other {# tacaíocht}}",
+    "comments": "{count, plural, =0 {Gan nóta tráchta fós} one {# nóta tráchta} two {# nóta tráchta} few {# nóta tráchta} many {# nóta tráchta} other {# nóta tráchta}}",
+    "back": "Ar ais go dtí an pobal",
+    "delete": "Scrios an phostáil",
+    "deleteConfirm": "Scrios an phostáil seo agus a nótaí tráchta?",
+    "unavailable": {
+      "title": "Níl an pobal curtha ar siúl anseo fós",
+      "body": "Tagann sé chun cinn nuair a bheidh an chóip seo de Parent Reset ceangailte le Supabase. Oibríonn gach rud eile gan é."
+    },
+    "empty": {
+      "title": "Níl rud ar bith anseo fós",
+      "body": "Bí ar an gcéad duine. Cabhraíonn fiú abairt mhacánta amháin leis an gcéad tuismitheoir eile a léann í."
+    },
+    "safetyNote": "Má chuireann postáil imní ort faoi shábháilteacht duine, abair leo dul i dteagmháil leis na seirbhísí éigeandála áitiúla. Áit chun labhairt í seo, ní seirbhís ghéarchéime.",
+    "new": {
+      "heading": "Scríobh postáil",
+      "intro": "Cad atá fíor duitse anois díreach? Coinnigh chomh gearr nó chomh fada is gá é.",
+      "category": "Catagóir",
+      "title": "Teideal",
+      "titlePlaceholder": "Níor dhúirt éinne liom go mbeadh an dara bliain níos deacra",
+      "body": "Do phostáil",
+      "bodyPlaceholder": "Cad atá ar siúl, cad a thriail tú, cad atá uait.",
+      "guidelines": "Bí cineálta. Gan ainmneacha daoine eile, gan seoltaí, gan comhairle leighis. Tá postálacha poiblí.",
+      "posting": "Á phostáil…",
+      "submit": "Postáil"
+    },
+    "comment": {
+      "label": "Freagair",
+      "placeholder": "Cúpla focal cineálta, macánta.",
+      "posting": "Á sheoladh…",
+      "submit": "Freagair",
+      "empty": "Gan freagra fós. D'fhéadfadh do cheannsa a bheith ar an gcéad cheann.",
+      "signInPrompt": "Sínigh isteach chun freagra a thabhairt agus tacú le postálacha.",
+      "signIn": "Sínigh isteach"
+    },
+    "report": {
+      "button": "Tuairiscigh",
+      "reasons": {
+        "spam": "Turscar nó fógraíocht",
+        "harmful": "Díobhálach nó míchineálta",
+        "personal_info": "Roinneann sé eolas pearsanta",
+        "other": "Rud éigin eile"
+      },
+      "thanks": "Go raibh maith agat. Féachfaimid air.",
+      "failed": "Níorbh fhéidir an tuairisc a sheoladh. Bain triail eile as, le do thoil."
+    },
+    "errors": {
+      "invalid": "Líon isteach teideal agus teachtaireacht, le do thoil.",
+      "titleTooLong": "Tá an teideal beagán fada. Coinnigh faoi 140 carachtar é, le do thoil.",
+      "bodyTooLong": "Tá sé sin beagán fada. Coinnigh faoi 4000 carachtar é, le do thoil.",
+      "tooLong": "Tá sé sin beagán fada. Coinnigh faoi 2000 carachtar é, le do thoil.",
+      "rejected": "Níorbh fhéidir linn é sin a phostáil. Bain aon nasc de agus bain triail eile as, le do thoil.",
+      "rateLimited": "Tá tú ag postáil go tapa. Fan cúpla nóiméad, le do thoil.",
+      "signIn": "Sínigh isteach ar dtús, le do thoil.",
+      "generic": "Chuaigh rud éigin amú. Bain triail eile as, le do thoil."
+    }
   }
 }

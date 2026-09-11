@@ -127,9 +127,9 @@
         "morning": "Bonjour",
         "afternoon": "Bon après-midi",
         "evening": "Bonsoir",
-        "night": "Pas encore couché ?"
+        "night": "Toujours debout ?"
       },
-      "title": "Content de vous revoir. Par où voulez-vous commencer ?",
+      "title": "Vous revoilà. Par où voulez-vous commencer ?",
       "todayDone": "Vous avez déjà fait votre reset aujourd'hui. Bien joué.",
       "lastReset": "Dernier reset : {date}",
       "progress": "{percent}% de la liste du jour terminée",
@@ -525,7 +525,7 @@
       "titlePlaceholder": "Personne ne m'avait dit que la deuxième année serait plus dure",
       "body": "Votre publication",
       "bodyPlaceholder": "Ce qui se passe, ce que vous avez essayé, ce dont vous avez besoin.",
-      "guidelines": "Restez bienveillant. Pas de noms d'autres personnes, pas d'adresses, pas de conseils médicaux. Les publications sont publiques.",
+      "guidelines": "Avec bienveillance. Pas de noms d'autres personnes, pas d'adresses, pas de conseils médicaux. Les publications sont publiques.",
       "posting": "Publication…",
       "submit": "Publier"
     },
