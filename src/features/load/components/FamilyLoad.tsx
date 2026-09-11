@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import type { LoadRepository } from "@/services/persistence";
+import { useRepositories } from "@/services/persistence/PersistenceProvider";
 import { loadCategories, type LoadCategory, type LoadItem } from "@/types/load";
 import { effectiveStatus, scoresByCategory, sortForDisplay } from "../logic";
 import { useFamilyLoad } from "../useFamilyLoad";
@@ -14,7 +15,8 @@ import { LoadItemRow } from "./LoadItemRow";
 export function FamilyLoad({ repository }: { repository?: LoadRepository }) {
   const t = useTranslations("load");
   const tc = useTranslations("common");
-  const { items, loading, add, complete, reopen, postpone, move, remove, clearDone } = useFamilyLoad(repository);
+  const repos = useRepositories();
+  const { items, loading, add, complete, reopen, postpone, move, remove, clearDone } = useFamilyLoad(repository ?? repos.load);
   const [selected, setSelected] = useState<LoadCategory>("kids");
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -113,7 +115,7 @@ export function FamilyLoad({ repository }: { repository?: LoadRepository }) {
 
           <div className="space-y-1 text-sm text-ink-muted">
             <p>{t("notProjectTool")}</p>
-            <p>{t("savedLocally")}</p>
+            <p>{repos.userId ? t("savedToAccount") : t("savedLocally")}</p>
           </div>
         </section>
       </div>

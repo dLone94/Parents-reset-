@@ -20,6 +20,18 @@
     "load": {
       "title": "Family load – Parent Reset",
       "description": "A simple view of what is taking up space in your head: kids, money, home, work, relationship and you."
+    },
+    "account": {
+      "title": "Your account – Parent Reset",
+      "description": "Sign in to keep your resets and family load across devices."
+    },
+    "history": {
+      "title": "Your history – Parent Reset",
+      "description": "Previous resets and whether days have been getting lighter."
+    },
+    "community": {
+      "title": "Community – Parent Reset",
+      "description": "A small, anonymous-first place for parents to say the quiet part out loud."
     }
   },
   "common": {
@@ -40,7 +52,19 @@
     "startReset": "Start my reset",
     "howItWorks": "How it works",
     "menuTitle": "Menu",
-    "familyLoad": "Family load"
+    "familyLoad": "Family load",
+    "community": "Community",
+    "history": "History",
+    "account": "Account",
+    "signIn": "Sign in",
+    "tabs": {
+      "label": "Main navigation",
+      "home": "Home",
+      "reset": "Reset",
+      "load": "Load",
+      "community": "Community",
+      "account": "You"
+    }
   },
   "home": {
     "hero": {
@@ -95,6 +119,25 @@
       "title": "Ready when you are.",
       "body": "Two minutes now can make the rest of the day feel lighter.",
       "cta": "Start my reset"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Good morning",
+        "afternoon": "Good afternoon",
+        "evening": "Good evening",
+        "night": "Still up?"
+      },
+      "title": "Welcome back. Where do you want to start?",
+      "todayDone": "You already reset today. Nice.",
+      "lastReset": "Last reset: {date}",
+      "progress": "{percent}% of today's list done",
+      "openLast": "Open that reset",
+      "loadLabel": "Family load",
+      "openItems": "{count, plural, =0 {Nothing open right now} one {# thing open} other {# things open}}",
+      "openLoad": "Open family load",
+      "cta": "Start today's reset",
+      "ctaAgain": "Reset again",
+      "history": "History ({count})"
     }
   },
   "reset": {
@@ -168,7 +211,11 @@
     "dateLabel": "Reset from {date}",
     "today": {
       "label": "Today",
-      "intro": "Only these. If you finish them, the day counted."
+      "intro": "Only these. If you finish them, the day counted.",
+      "allDone": "All done. That was the day.",
+      "markDone": "Mark as done",
+      "undo": "Mark as not done",
+      "focus": "Do them one at a time"
     },
     "thisWeek": {
       "label": "This week",
@@ -186,7 +233,12 @@
       "body": "It may have been created on another device or cleared from this browser.",
       "cta": "Start a new reset"
     },
-    "disclaimer": "Parent Reset is a practical planning tool, not medical or therapeutic advice."
+    "disclaimer": "Parent Reset is a practical planning tool, not medical or therapeutic advice.",
+    "addToLoad": "Add to family load",
+    "addedShort": "Added",
+    "addedToLoad": "Added to {area}",
+    "goToLoad": "Open family load",
+    "savedToAccount": "Saved to your account."
   },
   "planner": {
     "summary": {
@@ -310,6 +362,200 @@
       "tooLong": "Please keep it under {max} characters."
     },
     "savedLocally": "Saved on this device. Create an account later to keep it across devices.",
-    "notProjectTool": "This is not a to-do system. It is a place to put things down so they stop circling."
+    "notProjectTool": "This is not a to-do system. It is a place to put things down so they stop circling.",
+    "savedToAccount": "Saved to your account. Available on every device you sign in on."
+  },
+  "focus": {
+    "title": "One thing at a time",
+    "close": "Close",
+    "progress": "{done} of {total} done",
+    "next": "Right now, only this:",
+    "hint": "Nothing else exists until this one is done or skipped.",
+    "skip": "Skip for now",
+    "done": "Done",
+    "allDone": {
+      "title": "That's today handled.",
+      "body": "Everything else can wait. Go do something that is not a task.",
+      "cta": "Back to my reset"
+    }
+  },
+  "account": {
+    "title": "Account",
+    "unavailable": {
+      "title": "Accounts are not switched on here yet",
+      "body": "This copy of Parent Reset runs without a database. Everything you do is saved on this device, and that works fine. Accounts, history across devices and the community appear once Supabase is connected."
+    },
+    "signedOut": {
+      "title": "Keep your resets with you",
+      "body": "An account saves your resets and family load across devices. No account is needed to use the app."
+    },
+    "signedIn": {
+      "title": "Your account",
+      "body": "Your resets and family load are saved here and on every device you sign in on."
+    },
+    "auth": {
+      "modeLabel": "Sign in or create an account",
+      "signIn": {
+        "tab": "Sign in",
+        "submit": "Sign in"
+      },
+      "signUp": {
+        "tab": "Create account",
+        "submit": "Create account"
+      },
+      "email": "Email",
+      "password": "Password",
+      "passwordHint": "At least 8 characters.",
+      "working": "One moment…",
+      "privacy": "We store your email and your saved resets. Nothing is shared or sold.",
+      "checkEmail": {
+        "title": "Check your inbox",
+        "body": "We sent you a link to confirm your email. Open it on this device to finish signing up."
+      },
+      "errors": {
+        "invalid": "Please enter a valid email and a password of at least 8 characters.",
+        "credentials": "That email and password do not match.",
+        "exists": "There is already an account with that email. Try signing in.",
+        "rateLimited": "Too many attempts. Please wait a minute.",
+        "unavailable": "Accounts are not available on this deployment.",
+        "generic": "Something went wrong. Please try again.",
+        "link": "That sign-in link did not work. Please request a new one."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profile",
+        "displayName": "Community name",
+        "displayNameHint": "Shown on your community posts instead of your email. Shuffle for a random one.",
+        "shuffle": "Shuffle",
+        "save": "Save",
+        "saved": "Saved.",
+        "invalid": "Use 2 to 40 letters, numbers or spaces."
+      },
+      "data": {
+        "title": "Your data",
+        "body": "Download everything we hold about you, or wipe your history while keeping the account.",
+        "export": "Download my data",
+        "deleteHistory": "Delete my history"
+      },
+      "exportDone": "Your data has been downloaded.",
+      "deleteHistoryConfirm": "Delete all your resets and family load items? This cannot be undone.",
+      "deleteHistoryDone": "History deleted.",
+      "genericError": "Something went wrong. Please try again.",
+      "signOut": "Sign out",
+      "danger": {
+        "title": "Delete account",
+        "body": "Removes your account and everything in it, including community posts. There is no way back.",
+        "delete": "Delete my account",
+        "confirm": "Yes, delete everything",
+        "cancel": "Keep my account"
+      }
+    },
+    "sync": {
+      "merged": "Moved {resets} resets and {items} family load items from this device into your account."
+    }
+  },
+  "history": {
+    "title": "History",
+    "subtitle": "How the days have been going.",
+    "count": "{count, plural, =0 {No resets yet.} one {# reset so far.} other {# resets so far.}}",
+    "trend": {
+      "label": "Lighter days",
+      "chartLabel": "Overwhelm over your recent resets",
+      "average": "Recent average: {value} / 10",
+      "needMore": "After a few more resets you will see whether days are getting lighter.",
+      "lighter": "Lighter than before. Whatever you are doing, it is helping.",
+      "heavier": "Heavier than before. A lot on right now. That is not a verdict on you.",
+      "steady": "About the same as before.",
+      "frequentAreas": "Most often on your mind: {areas}"
+    },
+    "empty": {
+      "title": "No resets yet",
+      "body": "Your first one takes two minutes.",
+      "cta": "Start my reset"
+    },
+    "overwhelm": "Overwhelm {value} out of 10",
+    "completion": "{percent}% of today's list done",
+    "open": "Open",
+    "delete": "Delete",
+    "guestNote": "This history lives on this device only.",
+    "guestCta": "Create an account to keep it."
+  },
+  "community": {
+    "title": "Community",
+    "subtitle": "Say the quiet part out loud.",
+    "intro": "A small, anonymous-first place for parents. No followers, no feeds that never end, no perfect families.",
+    "write": "Write a post",
+    "anonymousNote": "Posts show a random name, never your email.",
+    "categoriesLabel": "Categories",
+    "all": "All",
+    "categories": {
+      "toddlers": "Toddlers",
+      "school_age": "School-age kids",
+      "money_stress": "Money stress",
+      "no_time": "No time",
+      "relationships": "Relationships",
+      "dads": "Dads",
+      "mums": "Mums",
+      "single_parents": "Single parents",
+      "moving": "Moving / relocation",
+      "general": "General"
+    },
+    "support": "{count, plural, =0 {Support} one {# support} other {# support}}",
+    "comments": "{count, plural, =0 {No comments yet} one {# comment} other {# comments}}",
+    "back": "Back to community",
+    "delete": "Delete post",
+    "deleteConfirm": "Delete this post and its comments?",
+    "unavailable": {
+      "title": "The community is not switched on here yet",
+      "body": "It appears once this copy of Parent Reset is connected to Supabase. Everything else works without it."
+    },
+    "empty": {
+      "title": "Nothing here yet",
+      "body": "Be the first. Even one honest sentence helps the next parent who reads it."
+    },
+    "safetyNote": "If a post makes you worried for someone's safety, tell them to contact local emergency services. This is a place to talk, not a crisis service.",
+    "new": {
+      "heading": "Write a post",
+      "intro": "What is true for you right now? Keep it as short or as long as it needs to be.",
+      "category": "Category",
+      "title": "Title",
+      "titlePlaceholder": "Nobody told me the second year would be harder",
+      "body": "Your post",
+      "bodyPlaceholder": "What is going on, what you have tried, what you need.",
+      "guidelines": "Be kind. No names of other people, no addresses, no medical advice. Posts are public.",
+      "posting": "Posting…",
+      "submit": "Post"
+    },
+    "comment": {
+      "label": "Reply",
+      "placeholder": "A few kind, honest words.",
+      "posting": "Sending…",
+      "submit": "Reply",
+      "empty": "No replies yet. Yours could be the first.",
+      "signInPrompt": "Sign in to reply and to support posts.",
+      "signIn": "Sign in"
+    },
+    "report": {
+      "button": "Report",
+      "reasons": {
+        "spam": "Spam or advertising",
+        "harmful": "Harmful or unkind",
+        "personal_info": "Shares personal information",
+        "other": "Something else"
+      },
+      "thanks": "Thanks. We will take a look.",
+      "failed": "Could not send the report. Please try again."
+    },
+    "errors": {
+      "invalid": "Please fill in a title and a message.",
+      "titleTooLong": "The title is a bit long. Please keep it under 140 characters.",
+      "bodyTooLong": "That is a bit long. Please keep it under 4000 characters.",
+      "tooLong": "That is a bit long. Please keep it under 2000 characters.",
+      "rejected": "We could not post that. Please remove any links and try again.",
+      "rateLimited": "You are posting quickly. Please wait a few minutes.",
+      "signIn": "Please sign in first.",
+      "generic": "Something went wrong. Please try again."
+    }
   }
 }

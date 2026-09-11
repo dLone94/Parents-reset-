@@ -1,12 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope, Source_Serif_4 } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { ToastProvider } from "@/components/feedback/Toast";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { MobileTabBar } from "@/components/layout/MobileTabBar";
 import { routing } from "@/i18n/routing";
 import { buildAlternates, getSiteUrl } from "@/lib/seo";
+import { getCurrentUser } from "@/lib/supabase/user";
+import { PersistenceProvider } from "@/services/persistence/PersistenceProvider";
 import "../globals.css";
 
 const body = Manrope({
@@ -26,11 +30,14 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
+export const viewport: Viewport = {
+  themeColor: "#faf6ef",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
@@ -41,6 +48,12 @@ export async function generateMetadata({
     },
     description: t("home.description"),
     applicationName: t("siteName"),
+    manifest: "/manifest.webmanifest",
+    appleWebApp: { capable: true, statusBarStyle: "default", title: t("siteName") },
+    icons: {
+      icon: [{ url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" }],
+      apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    },
     alternates: buildAlternates(locale, "/"),
     openGraph: {
       siteName: t("siteName"),
@@ -61,22 +74,28 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "common" });
+  const user = await getCurrentUser();
 
   return (
     <html lang={locale} className={`${body.variable} ${display.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col pb-16 md:pb-0">
         <NextIntlClientProvider>
-          <a
-            href="#content"
-            className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-paper focus:px-4 focus:py-2"
-          >
-            {t("skipToContent")}
-          </a>
-          <Header />
-          <main id="content" className="flex flex-1 flex-col">
-            {children}
-          </main>
-          <Footer />
+          <ToastProvider>
+            <PersistenceProvider userId={user?.id ?? null}>
+              <a
+                href="#content"
+                className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-paper focus:px-4 focus:py-2"
+              >
+                {t("skipToContent")}
+              </a>
+              <Header userEmail={user?.email ?? null} />
+              <main id="content" className="flex flex-1 flex-col">
+                {children}
+              </main>
+              <Footer />
+              <MobileTabBar />
+            </PersistenceProvider>
+          </ToastProvider>
         </NextIntlClientProvider>
       </body>
     </html>

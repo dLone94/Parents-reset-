@@ -32,6 +32,7 @@ export class SupabaseResetRepository implements ResetRepository {
       summary_key: record.plan.summaryKey,
       time_key: record.plan.timeKey,
       safety_flag: record.safetyFlag,
+      completed_item_ids: record.completedItemIds ?? [],
     });
     if (error) throw error;
 
@@ -108,6 +109,7 @@ interface ResetRow {
   summary_key: string;
   time_key: string;
   safety_flag: boolean;
+  completed_item_ids: string[] | null;
   reset_items: ResetItemRow[];
 }
 
@@ -143,5 +145,6 @@ function rowToRecord(row: ResetRow): ResetRecord {
       letGo: items.filter((i) => i.bucket === "letGo"),
     },
     safetyFlag: row.safety_flag,
+    completedItemIds: row.completed_item_ids ?? [],
   };
 }

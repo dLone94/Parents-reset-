@@ -47,7 +47,7 @@ describe("LanguageSwitcher", () => {
 
 describe("mobile menu", () => {
   it("opens from the hamburger and contains the language selector", async () => {
-    wrap(<Header />);
+    wrap(<Header userEmail={null} />);
     const menu = document.getElementById("mobile-menu") as HTMLElement;
     expect(menu).toHaveAttribute("hidden");
     await userEvent.click(screen.getByRole("button", { name: en.common.openMenu }));

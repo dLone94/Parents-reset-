@@ -1,27 +1,37 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
-import { buttonClassName } from "@/components/ui/Button";
+import { useCallback, useEffect, useState } from "react";
+import { useToast } from "@/components/feedback/Toast";
+import { Button, buttonClassName } from "@/components/ui/Button";
 import { Narrow } from "@/components/ui/Container";
 import { Link } from "@/i18n/navigation";
 import { formatDate } from "@/lib/intl/format";
 import { cn } from "@/lib/utils/cn";
-import { getResetRepository } from "@/services/persistence";
+import { createId } from "@/lib/utils/id";
+import { useRepositories } from "@/services/persistence/PersistenceProvider";
 import type { PlanItem, ResetRecord } from "@/types/reset";
+import { areaToLoadCategory } from "../loadBridge";
+import { FocusMode } from "./FocusMode";
 import { SafetyNotice } from "./SafetyNotice";
 
 type State = { status: "loading" } | { status: "missing" } | { status: "ready"; record: ResetRecord };
 
 export function ResultView({ id }: { id: string }) {
   const t = useTranslations("result");
+  const tp = useTranslations("planner");
   const tc = useTranslations("common");
+  const tl = useTranslations("load.categories");
   const locale = useLocale();
+  const { toast } = useToast();
+  const { resets, load } = useRepositories();
   const [state, setState] = useState<State>({ status: "loading" });
+  const [focus, setFocus] = useState(false);
+  const [added, setAdded] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     let cancelled = false;
-    getResetRepository()
+    resets
       .get(id)
       .then((record) => {
         if (cancelled) return;
@@ -31,7 +41,33 @@ export function ResultView({ id }: { id: string }) {
     return () => {
       cancelled = true;
     };
-  }, [id]);
+  }, [id, resets]);
+
+  const plannerText = useCallback(
+    (key: string) => tp(key as Parameters<typeof tp>[0]),
+    [tp],
+  );
+
+  const toggleDone = useCallback(
+    async (itemId: string) => {
+      if (state.status !== "ready") return;
+      const current = state.record.completedItemIds ?? [];
+      const next = current.includes(itemId) ? current.filter((i) => i !== itemId) : [...current, itemId];
+      const record = { ...state.record, completedItemIds: next };
+      setState({ status: "ready", record });
+      await resets.save(record);
+    },
+    [resets, state],
+  );
+
+  async function addToLoad(item: PlanItem) {
+    const category = areaToLoadCategory(item.area);
+    const title = item.source === "user" ? (item.text ?? "") : plannerText(item.messageKey ?? "");
+    const now = new Date().toISOString();
+    await load.add({ id: createId(), category, title, status: "open", createdAt: now, updatedAt: now });
+    setAdded((prev) => new Set(prev).add(item.id));
+    toast(t("addedToLoad", { area: tl(category) }), "success");
+  }
 
   if (state.status === "loading") {
     return (
@@ -57,25 +93,87 @@ export function ResultView({ id }: { id: string }) {
 
   const { record } = state;
   const { plan } = record;
+  const completed = record.completedItemIds ?? [];
+  const allDone = plan.today.length > 0 && plan.today.every((i) => completed.includes(i.id));
+  const renderItem = (item: PlanItem) => (item.source === "user" ? item.text : plannerText(item.messageKey ?? ""));
 
   return (
     <Narrow className="flex flex-col gap-8 py-8 md:py-14">
       <header className="space-y-3">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-clay">{t("title")}</p>
         <p className="text-sm text-ink-muted">{t("dateLabel", { date: formatDate(record.createdAt, locale) })}</p>
-        <h1 className="font-display text-3xl leading-tight md:text-4xl">
-          <PlannerText messageKey={plan.summaryKey} />
-        </h1>
-        <p className="text-lg text-ink-soft">
-          <PlannerText messageKey={plan.timeKey} />
-        </p>
+        <h1 className="font-display text-3xl leading-tight md:text-4xl">{plannerText(plan.summaryKey)}</h1>
+        <p className="text-lg text-ink-soft">{plannerText(plan.timeKey)}</p>
       </header>
 
       {record.safetyFlag && <SafetyNotice />}
 
-      <Bucket tone="clay" label={t("today.label")} intro={t("today.intro")} items={plan.today} numbered />
-      <Bucket tone="honey" label={t("thisWeek.label")} intro={t("thisWeek.intro")} items={plan.thisWeek} />
-      <Bucket tone="moss" label={t("letGo.label")} intro={t("letGo.intro")} items={plan.letGo} />
+      {/* Today: tickable, with focus mode */}
+      <section aria-label={t("today.label")} className="rounded-2xl border border-clay/30 bg-paper p-5 shadow-soft md:p-6">
+        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <span className="inline-block rounded-full bg-clay-soft px-3 py-1 text-sm font-semibold text-clay-deep">
+            {t("today.label")}
+          </span>
+          <p className="text-base text-ink-soft">{allDone ? t("today.allDone") : t("today.intro")}</p>
+        </div>
+        <ol className="mt-4 space-y-3">
+          {plan.today.map((item, index) => {
+            const done = completed.includes(item.id);
+            return (
+              <li key={item.id} className="flex items-start gap-3">
+                <button
+                  type="button"
+                  onClick={() => toggleDone(item.id)}
+                  aria-pressed={done}
+                  aria-label={done ? t("today.undo") : t("today.markDone")}
+                  className={cn(
+                    "tap focus-ring flex h-8 w-8 shrink-0 items-center justify-center rounded-full border font-display text-base transition-colors",
+                    done ? "border-moss bg-moss text-paper" : "border-clay bg-clay text-paper hover:bg-clay-deep",
+                  )}
+                  style={{ minHeight: "2rem" }}
+                >
+                  {done ? (
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" aria-hidden>
+                      <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  ) : (
+                    index + 1
+                  )}
+                </button>
+                <p className={cn("flex-1 text-lg leading-snug", done && "text-ink-muted line-through")}>{renderItem(item)}</p>
+              </li>
+            );
+          })}
+        </ol>
+        {!allDone && plan.today.length > 0 && (
+          <Button size="lg" className="mt-5 w-full sm:w-auto" onClick={() => setFocus(true)}>
+            {t("today.focus")}
+          </Button>
+        )}
+      </section>
+
+      <Bucket
+        tone="honey"
+        label={t("thisWeek.label")}
+        intro={t("thisWeek.intro")}
+        items={plan.thisWeek}
+        renderItem={renderItem}
+        noteText={(key) => plannerText(key)}
+        action={(item) =>
+          added.has(item.id) ? (
+            <span className="text-sm text-moss">{t("addedShort")}</span>
+          ) : (
+            <button
+              type="button"
+              onClick={() => addToLoad(item)}
+              className="focus-ring rounded-full border border-line bg-paper px-3 py-1 text-sm font-semibold text-ink-soft hover:border-ink-muted hover:text-ink"
+            >
+              {t("addToLoad")}
+            </button>
+          )
+        }
+      />
+      <Bucket tone="moss" label={t("letGo.label")} intro={t("letGo.intro")} items={plan.letGo} renderItem={renderItem} noteText={(key) => plannerText(key)} />
 
       <p className="text-base text-ink-muted">{t("savedLocally")}</p>
 
@@ -83,18 +181,27 @@ export function ResultView({ id }: { id: string }) {
         <Link href="/reset" className={buttonClassName("primary", "lg")}>
           {t("newReset")}
         </Link>
-        <Link href="/" className={buttonClassName("secondary", "lg")}>
-          {t("backHome")}
+        <Link href="/load" className={buttonClassName("secondary", "lg")}>
+          {t("goToLoad")}
         </Link>
       </div>
 
       <p className="text-sm text-ink-muted">{t("disclaimer")}</p>
+
+      {focus && (
+        <FocusMode
+          items={plan.today}
+          completedIds={completed}
+          onComplete={toggleDone}
+          onClose={() => setFocus(false)}
+          renderItem={renderItem}
+        />
+      )}
     </Narrow>
   );
 }
 
 const tones = {
-  clay: { chip: "bg-clay-soft text-clay-deep", dot: "bg-clay", border: "border-clay/30" },
   honey: { chip: "bg-honey-soft text-honey", dot: "bg-honey", border: "border-honey/30" },
   moss: { chip: "bg-moss-soft text-moss", dot: "bg-moss", border: "border-moss/30" },
 } as const;
@@ -104,55 +211,37 @@ function Bucket({
   label,
   intro,
   items,
-  numbered,
+  renderItem,
+  noteText,
+  action,
 }: {
   tone: keyof typeof tones;
   label: string;
   intro: string;
   items: PlanItem[];
-  numbered?: boolean;
+  renderItem: (item: PlanItem) => React.ReactNode;
+  noteText: (key: string) => string;
+  action?: (item: PlanItem) => React.ReactNode;
 }) {
   const styles = tones[tone];
-  const List = numbered ? "ol" : "ul";
   return (
     <section aria-label={label} className={cn("rounded-2xl border bg-paper p-5 shadow-soft md:p-6", styles.border)}>
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
         <span className={cn("inline-block rounded-full px-3 py-1 text-sm font-semibold", styles.chip)}>{label}</span>
         <p className="text-base text-ink-soft">{intro}</p>
       </div>
-      <List className="mt-4 space-y-3">
-        {items.map((item, index) => (
+      <ul className="mt-4 space-y-3">
+        {items.map((item) => (
           <li key={item.id} className="flex gap-3">
-            {numbered ? (
-              <span
-                aria-hidden
-                className={cn("font-display flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-base text-paper", styles.dot)}
-              >
-                {index + 1}
-              </span>
-            ) : (
-              <span aria-hidden className={cn("mt-2.5 h-2 w-2 shrink-0 rounded-full", styles.dot)} />
-            )}
-            <div className="min-w-0 flex-1 space-y-0.5">
-              <p className="text-lg leading-snug">
-                {item.source === "user" ? item.text : <PlannerText messageKey={item.messageKey ?? ""} />}
-              </p>
-              {item.noteKey && (
-                <p className="text-sm text-ink-muted">
-                  <PlannerText messageKey={item.noteKey} />
-                </p>
-              )}
+            <span aria-hidden className={cn("mt-2.5 h-2 w-2 shrink-0 rounded-full", styles.dot)} />
+            <div className="min-w-0 flex-1 space-y-1">
+              <p className="text-lg leading-snug">{renderItem(item)}</p>
+              {item.noteKey && <p className="text-sm text-ink-muted">{noteText(item.noteKey)}</p>}
+              {action && <div>{action(item)}</div>}
             </div>
           </li>
         ))}
-      </List>
+      </ul>
     </section>
   );
-}
-
-/** Resolves a planner message key ("today.moneyCheck") through the planner namespace. */
-function PlannerText({ messageKey }: { messageKey: string }) {
-  const t = useTranslations("planner");
-  // Keys are produced by our own planner, never by users; the cast is safe.
-  return <>{t(messageKey as Parameters<typeof t>[0])}</>;
 }

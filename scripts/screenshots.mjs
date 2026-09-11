@@ -84,6 +84,42 @@ async function runLoad(page, locale, prefix) {
 
 const loadLocales = { mobile: ["en", "de", "bg", "fi", "ja"], desktop: ["en", "de", "ja"] };
 
+// Milestone 3 screens. History and the welcome-back hub need saved data, so we
+// run a reset first and then visit the pages in the same browser context.
+const m3Locales = { mobile: ["en", "de", "ja"], desktop: ["en", "de"] };
+
+async function runMilestone3(context, locale, prefix) {
+  const m = messagesFor(locale);
+  const page = await context.newPage();
+  await page.emulateMedia({ reducedMotion: "reduce" });
+
+  // Account (signed out or "not switched on" state) and community list.
+  await page.goto(`${BASE_URL}/${locale}/account`, { waitUntil: "networkidle" });
+  await shot(page, `${prefix}${locale}-account`);
+  await page.goto(`${BASE_URL}/${locale}/community`, { waitUntil: "networkidle" });
+  await shot(page, `${prefix}${locale}-community`);
+
+  // Run a reset so history and the hub have something to show.
+  await runFlow(page, locale, `${prefix}m3-`);
+  // Tick one item, then open focus mode.
+  const result = { ...en.result, ...(m.result ?? {}), today: { ...en.result.today, ...(m.result?.today ?? {}) } };
+  await page.getByRole("button", { name: result.today.markDone }).first().click();
+  await page.waitForTimeout(200);
+  await page.getByRole("button", { name: result.today.focus }).click();
+  await page.waitForTimeout(300);
+  await shot(page, `${prefix}${locale}-focus`);
+  await page.keyboard.press("Escape");
+
+  await page.goto(`${BASE_URL}/${locale}/history`, { waitUntil: "networkidle" });
+  await page.waitForTimeout(400);
+  await shot(page, `${prefix}${locale}-history`, true);
+
+  await page.goto(`${BASE_URL}/${locale}`, { waitUntil: "networkidle" });
+  await page.waitForTimeout(400);
+  await shot(page, `${prefix}${locale}-home-returning`);
+  await page.close();
+}
+
 const browser = await chromium.launch(executablePath ? { executablePath } : {});
 
 async function shot(page, name, fullPage = false) {
@@ -158,6 +194,10 @@ for (const [device, options] of Object.entries(viewports)) {
       await loadPage.emulateMedia({ reducedMotion: "reduce" });
       await runLoad(loadPage, locale, prefix);
       await loadPage.close();
+    }
+
+    if (m3Locales[device].includes(locale)) {
+      await runMilestone3(context, locale, prefix);
     }
     await context.close();
   }

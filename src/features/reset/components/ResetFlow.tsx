@@ -8,7 +8,7 @@ import { ProgressBar } from "@/components/ui/ProgressBar";
 import { useRouter } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/locales";
 import { createId } from "@/lib/utils/id";
-import { getResetRepository } from "@/services/persistence";
+import { useRepositories } from "@/services/persistence/PersistenceProvider";
 import { limits } from "@/types/reset";
 import { submitReset } from "../actions";
 import { countCharacters } from "../schema";
@@ -27,6 +27,7 @@ export function ResetFlow() {
   const locale = useLocale() as Locale;
   const router = useRouter();
   const { draft, update, reset, restored } = useResetDraft();
+  const { resets } = useRepositories();
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
@@ -87,7 +88,7 @@ export function ResetFlow() {
           return;
         }
         const id = createId();
-        await getResetRepository().save({
+        await resets.save({
           id,
           createdAt: new Date().toISOString(),
           locale,
