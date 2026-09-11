@@ -22,6 +22,18 @@
     "load": {
       "title": "Gezinslast – Parent Reset",
       "description": "Een simpel overzicht van wat ruimte inneemt in je hoofd: kinderen, geld, thuis, werk, relatie en jij."
+    },
+    "account": {
+      "title": "Je account – Parent Reset",
+      "description": "Log in om je resets en gezinslast op al je apparaten te bewaren."
+    },
+    "history": {
+      "title": "Je geschiedenis – Parent Reset",
+      "description": "Eerdere resets en of de dagen lichter zijn geworden."
+    },
+    "community": {
+      "title": "Community – Parent Reset",
+      "description": "Een kleine, anonieme plek waar ouders hardop kunnen zeggen wat ze meestal voor zich houden."
     }
   },
   "common": {
@@ -42,7 +54,19 @@
     "startReset": "Start mijn reset",
     "howItWorks": "Hoe het werkt",
     "menuTitle": "Menu",
-    "familyLoad": "Gezinslast"
+    "familyLoad": "Gezinslast",
+    "community": "Community",
+    "history": "Geschiedenis",
+    "account": "Account",
+    "signIn": "Inloggen",
+    "tabs": {
+      "label": "Hoofdnavigatie",
+      "home": "Home",
+      "reset": "Reset",
+      "load": "Gezin",
+      "community": "Community",
+      "account": "Jij"
+    }
   },
   "home": {
     "hero": {
@@ -97,6 +121,25 @@
       "title": "Klaar wanneer jij het bent.",
       "body": "Twee minuten nu kunnen de rest van de dag lichter laten voelen.",
       "cta": "Start mijn reset"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Goedemorgen",
+        "afternoon": "Goedemiddag",
+        "evening": "Goedenavond",
+        "night": "Nog wakker?"
+      },
+      "title": "Welkom terug. Waar wil je beginnen?",
+      "todayDone": "Je hebt vandaag al een reset gedaan. Mooi.",
+      "lastReset": "Laatste reset: {date}",
+      "progress": "{percent}% van je lijst voor vandaag is klaar",
+      "openLast": "Open die reset",
+      "loadLabel": "Gezinslast",
+      "openItems": "{count, plural, =0 {Niets open op dit moment} one {# ding open} other {# dingen open}}",
+      "openLoad": "Open gezinslast",
+      "cta": "Start de reset van vandaag",
+      "ctaAgain": "Opnieuw resetten",
+      "history": "Geschiedenis ({count})"
     }
   },
   "reset": {
@@ -170,7 +213,11 @@
     "dateLabel": "Reset van {date}",
     "today": {
       "label": "Vandaag",
-      "intro": "Alleen deze. Als je ze afmaakt, heeft de dag geteld."
+      "intro": "Alleen deze. Als je ze afmaakt, heeft de dag geteld.",
+      "allDone": "Alles klaar. Dat was de dag.",
+      "markDone": "Markeer als klaar",
+      "undo": "Markeer als niet klaar",
+      "focus": "Doe ze één voor één"
     },
     "thisWeek": {
       "label": "Deze week",
@@ -188,7 +235,12 @@
       "body": "Misschien is hij op een ander apparaat gemaakt of uit deze browser gewist.",
       "cta": "Nieuwe reset starten"
     },
-    "disclaimer": "Parent Reset is een praktisch planhulpmiddel, geen medisch of therapeutisch advies."
+    "disclaimer": "Parent Reset is een praktisch planhulpmiddel, geen medisch of therapeutisch advies.",
+    "addToLoad": "Toevoegen aan gezinslast",
+    "addedShort": "Toegevoegd",
+    "addedToLoad": "Toegevoegd aan {area}",
+    "goToLoad": "Open gezinslast",
+    "savedToAccount": "Opgeslagen in je account."
   },
   "planner": {
     "summary": {
@@ -312,6 +364,200 @@
       "tooLong": "Houd het onder de {max} tekens."
     },
     "savedLocally": "Opgeslagen op dit apparaat. Maak later een account aan om het op al je apparaten te bewaren.",
-    "notProjectTool": "Dit is geen to-do-systeem. Het is een plek om dingen neer te zetten, zodat ze niet blijven rondcirkelen."
+    "notProjectTool": "Dit is geen to-do-systeem. Het is een plek om dingen neer te zetten, zodat ze niet blijven rondcirkelen.",
+    "savedToAccount": "Opgeslagen in je account. Beschikbaar op elk apparaat waarop je inlogt."
+  },
+  "focus": {
+    "title": "Eén ding tegelijk",
+    "close": "Sluiten",
+    "progress": "{done} van {total} klaar",
+    "next": "Nu alleen dit:",
+    "hint": "Er bestaat niets anders tot dit klaar is of overgeslagen.",
+    "skip": "Even overslaan",
+    "done": "Klaar",
+    "allDone": {
+      "title": "Vandaag is geregeld.",
+      "body": "Al het andere kan wachten. Ga iets doen wat geen taak is.",
+      "cta": "Terug naar mijn reset"
+    }
+  },
+  "account": {
+    "title": "Account",
+    "unavailable": {
+      "title": "Accounts staan hier nog niet aan",
+      "body": "Deze versie van Parent Reset draait zonder database. Alles wat je doet wordt op dit apparaat opgeslagen, en dat werkt prima. Accounts, geschiedenis op meerdere apparaten en de community verschijnen zodra Supabase is gekoppeld."
+    },
+    "signedOut": {
+      "title": "Houd je resets bij je",
+      "body": "Een account bewaart je resets en gezinslast op al je apparaten. Je hebt geen account nodig om de app te gebruiken."
+    },
+    "signedIn": {
+      "title": "Je account",
+      "body": "Je resets en gezinslast worden hier bewaard en op elk apparaat waarop je inlogt."
+    },
+    "auth": {
+      "modeLabel": "Inloggen of een account aanmaken",
+      "signIn": {
+        "tab": "Inloggen",
+        "submit": "Inloggen"
+      },
+      "signUp": {
+        "tab": "Account aanmaken",
+        "submit": "Account aanmaken"
+      },
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "passwordHint": "Minimaal 8 tekens.",
+      "working": "Momentje…",
+      "privacy": "We bewaren je e-mailadres en je opgeslagen resets. Er wordt niets gedeeld of verkocht.",
+      "checkEmail": {
+        "title": "Kijk in je inbox",
+        "body": "We hebben je een link gestuurd om je e-mailadres te bevestigen. Open die op dit apparaat om de aanmelding af te ronden."
+      },
+      "errors": {
+        "invalid": "Vul een geldig e-mailadres en een wachtwoord van minimaal 8 tekens in.",
+        "credentials": "Dat e-mailadres en wachtwoord horen niet bij elkaar.",
+        "exists": "Er is al een account met dit e-mailadres. Probeer in te loggen.",
+        "rateLimited": "Te veel pogingen. Wacht even een minuutje.",
+        "unavailable": "Accounts zijn niet beschikbaar in deze versie.",
+        "generic": "Er ging iets mis. Probeer het opnieuw.",
+        "link": "Die inloglink werkte niet. Vraag een nieuwe aan."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profiel",
+        "displayName": "Communitynaam",
+        "displayNameHint": "Wordt bij je communityposts getoond in plaats van je e-mailadres. Schud voor een willekeurige naam.",
+        "shuffle": "Schud",
+        "save": "Opslaan",
+        "saved": "Opgeslagen.",
+        "invalid": "Gebruik 2 tot 40 letters, cijfers of spaties."
+      },
+      "data": {
+        "title": "Je gegevens",
+        "body": "Download alles wat we van je hebben, of wis je geschiedenis en houd je account.",
+        "export": "Download mijn gegevens",
+        "deleteHistory": "Wis mijn geschiedenis"
+      },
+      "exportDone": "Je gegevens zijn gedownload.",
+      "deleteHistoryConfirm": "Al je resets en gezinslast-items wissen? Dit kan niet ongedaan worden gemaakt.",
+      "deleteHistoryDone": "Geschiedenis gewist.",
+      "genericError": "Er ging iets mis. Probeer het opnieuw.",
+      "signOut": "Uitloggen",
+      "danger": {
+        "title": "Account verwijderen",
+        "body": "Verwijdert je account en alles erin, inclusief communityposts. Er is geen weg terug.",
+        "delete": "Verwijder mijn account",
+        "confirm": "Ja, verwijder alles",
+        "cancel": "Mijn account houden"
+      }
+    },
+    "sync": {
+      "merged": "{resets} resets en {items} gezinslast-items van dit apparaat zijn naar je account verplaatst."
+    }
+  },
+  "history": {
+    "title": "Geschiedenis",
+    "subtitle": "Hoe de dagen zijn gegaan.",
+    "count": "{count, plural, =0 {Nog geen resets.} one {# reset tot nu toe.} other {# resets tot nu toe.}}",
+    "trend": {
+      "label": "Lichtere dagen",
+      "chartLabel": "Hoe overweldigd je was bij je recente resets",
+      "average": "Recent gemiddelde: {value} / 10",
+      "needMore": "Na nog een paar resets zie je of de dagen lichter worden.",
+      "lighter": "Lichter dan eerst. Wat je ook doet, het helpt.",
+      "heavier": "Zwaarder dan eerst. Er speelt nu veel. Dat zegt niets over jou.",
+      "steady": "Ongeveer hetzelfde als eerst.",
+      "frequentAreas": "Het vaakst in je hoofd: {areas}"
+    },
+    "empty": {
+      "title": "Nog geen resets",
+      "body": "Je eerste duurt twee minuten.",
+      "cta": "Start mijn reset"
+    },
+    "overwhelm": "Overweldigd: {value} van de 10",
+    "completion": "{percent}% van je lijst voor vandaag is klaar",
+    "open": "Openen",
+    "delete": "Verwijderen",
+    "guestNote": "Deze geschiedenis staat alleen op dit apparaat.",
+    "guestCta": "Maak een account aan om hem te bewaren."
+  },
+  "community": {
+    "title": "Community",
+    "subtitle": "Zeg hardop wat je meestal voor je houdt.",
+    "intro": "Een kleine, anonieme plek voor ouders. Geen volgers, geen eindeloze feeds, geen perfecte gezinnen.",
+    "write": "Schrijf een post",
+    "anonymousNote": "Posts tonen een willekeurige naam, nooit je e-mailadres.",
+    "categoriesLabel": "Categorieën",
+    "all": "Alles",
+    "categories": {
+      "toddlers": "Peuters",
+      "school_age": "Schoolkinderen",
+      "money_stress": "Geldzorgen",
+      "no_time": "Geen tijd",
+      "relationships": "Relaties",
+      "dads": "Vaders",
+      "mums": "Moeders",
+      "single_parents": "Alleenstaande ouders",
+      "moving": "Verhuizen",
+      "general": "Algemeen"
+    },
+    "support": "{count, plural, =0 {Steun} one {# steun} other {# steun}}",
+    "comments": "{count, plural, =0 {Nog geen reacties} one {# reactie} other {# reacties}}",
+    "back": "Terug naar community",
+    "delete": "Post verwijderen",
+    "deleteConfirm": "Deze post en de reacties erop verwijderen?",
+    "unavailable": {
+      "title": "De community staat hier nog niet aan",
+      "body": "Die verschijnt zodra deze versie van Parent Reset aan Supabase is gekoppeld. Al het andere werkt ook zonder."
+    },
+    "empty": {
+      "title": "Nog niets hier",
+      "body": "Wees de eerste. Zelfs één eerlijke zin helpt de volgende ouder die het leest."
+    },
+    "safetyNote": "Maak je je door een post zorgen om iemands veiligheid, zeg diegene dan contact op te nemen met de lokale hulpdiensten. Dit is een plek om te praten, geen crisisdienst.",
+    "new": {
+      "heading": "Schrijf een post",
+      "intro": "Wat is er nu echt aan de hand bij jou? Maak het zo kort of zo lang als nodig is.",
+      "category": "Categorie",
+      "title": "Titel",
+      "titlePlaceholder": "Niemand zei me dat het tweede jaar zwaarder zou zijn",
+      "body": "Je post",
+      "bodyPlaceholder": "Wat er speelt, wat je hebt geprobeerd, wat je nodig hebt.",
+      "guidelines": "Wees lief. Geen namen van anderen, geen adressen, geen medisch advies. Posts zijn openbaar.",
+      "posting": "Plaatsen…",
+      "submit": "Plaatsen"
+    },
+    "comment": {
+      "label": "Reageren",
+      "placeholder": "Een paar lieve, eerlijke woorden.",
+      "posting": "Versturen…",
+      "submit": "Reageren",
+      "empty": "Nog geen reacties. De jouwe kan de eerste zijn.",
+      "signInPrompt": "Log in om te reageren en posts te steunen.",
+      "signIn": "Inloggen"
+    },
+    "report": {
+      "button": "Melden",
+      "reasons": {
+        "spam": "Spam of reclame",
+        "harmful": "Kwetsend of onaardig",
+        "personal_info": "Deelt persoonlijke informatie",
+        "other": "Iets anders"
+      },
+      "thanks": "Bedankt. We kijken ernaar.",
+      "failed": "De melding kon niet worden verstuurd. Probeer het opnieuw."
+    },
+    "errors": {
+      "invalid": "Vul een titel en een bericht in.",
+      "titleTooLong": "De titel is wat lang. Houd hem onder de 140 tekens.",
+      "bodyTooLong": "Dat is wat lang. Houd het onder de 4000 tekens.",
+      "tooLong": "Dat is wat lang. Houd het onder de 2000 tekens.",
+      "rejected": "We konden dit niet plaatsen. Verwijder eventuele links en probeer het opnieuw.",
+      "rateLimited": "Je plaatst snel achter elkaar. Wacht een paar minuten.",
+      "signIn": "Log eerst in.",
+      "generic": "Er ging iets mis. Probeer het opnieuw."
+    }
   }
 }

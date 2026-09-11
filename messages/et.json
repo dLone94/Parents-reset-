@@ -22,6 +22,18 @@
     "load": {
       "title": "Pere koorem – Parent Reset",
       "description": "Lihtne ülevaade sellest, mis su peas ruumi võtab: lapsed, raha, kodu, töö, suhe ja sina ise."
+    },
+    "account": {
+      "title": "Sinu konto – Parent Reset",
+      "description": "Logi sisse, et hoida oma taaskäivitused ja pere koorem alles kõigis seadmetes."
+    },
+    "history": {
+      "title": "Sinu ajalugu – Parent Reset",
+      "description": "Varasemad taaskäivitused ja kas päevad on läinud kergemaks."
+    },
+    "community": {
+      "title": "Kogukond – Parent Reset",
+      "description": "Väike, vaikimisi anonüümne koht vanematele, kus öelda välja see, mis tavaliselt jääb ütlemata."
     }
   },
   "common": {
@@ -42,7 +54,19 @@
     "startReset": "Alusta taaskäivitust",
     "howItWorks": "Kuidas see töötab",
     "menuTitle": "Menüü",
-    "familyLoad": "Pere koorem"
+    "familyLoad": "Pere koorem",
+    "community": "Kogukond",
+    "history": "Ajalugu",
+    "account": "Konto",
+    "signIn": "Logi sisse",
+    "tabs": {
+      "label": "Peamine navigeerimine",
+      "home": "Avaleht",
+      "reset": "Reset",
+      "load": "Koorem",
+      "community": "Kogukond",
+      "account": "Sina"
+    }
   },
   "home": {
     "hero": {
@@ -97,6 +121,25 @@
       "title": "Kui sa valmis oled.",
       "body": "Kaks minutit praegu võivad muuta ülejäänud päeva kergemaks.",
       "cta": "Alusta taaskäivitust"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Tere hommikust",
+        "afternoon": "Tere päevast",
+        "evening": "Tere õhtust",
+        "night": "Ikka veel üleval?"
+      },
+      "title": "Tere tulemast tagasi. Kust soovid alustada?",
+      "todayDone": "Täna oled taaskäivituse juba teinud. Tubli.",
+      "lastReset": "Viimane taaskäivitus: {date}",
+      "progress": "{percent}% tänasest nimekirjast tehtud",
+      "openLast": "Ava see taaskäivitus",
+      "loadLabel": "Pere koorem",
+      "openItems": "{count, plural, =0 {Praegu pole midagi pooleli} one {# asi pooleli} other {# asja pooleli}}",
+      "openLoad": "Ava pere koorem",
+      "cta": "Alusta tänast taaskäivitust",
+      "ctaAgain": "Taaskäivita uuesti",
+      "history": "Ajalugu ({count})"
     }
   },
   "reset": {
@@ -170,7 +213,11 @@
     "dateLabel": "Taaskäivitus: {date}",
     "today": {
       "label": "Täna",
-      "intro": "Ainult need. Kui need tehtud saad, on päev korda läinud."
+      "intro": "Ainult need. Kui need tehtud saad, on päev korda läinud.",
+      "allDone": "Kõik tehtud. See oligi tänane päev.",
+      "markDone": "Märgi tehtuks",
+      "undo": "Märgi tegemata",
+      "focus": "Tee neid ükshaaval"
     },
     "thisWeek": {
       "label": "Sel nädalal",
@@ -188,7 +235,12 @@
       "body": "See võis olla loodud teises seadmes või sellest brauserist kustutatud.",
       "cta": "Alusta uut taaskäivitust"
     },
-    "disclaimer": "Parent Reset on praktiline planeerimistööriist, mitte meditsiiniline ega terapeutiline nõuanne."
+    "disclaimer": "Parent Reset on praktiline planeerimistööriist, mitte meditsiiniline ega terapeutiline nõuanne.",
+    "addToLoad": "Lisa pere koormasse",
+    "addedShort": "Lisatud",
+    "addedToLoad": "Lisatud: {area}",
+    "goToLoad": "Ava pere koorem",
+    "savedToAccount": "Salvestatud sinu kontole."
   },
   "planner": {
     "summary": {
@@ -312,6 +364,200 @@
       "tooLong": "Palun hoia see alla {max} tähemärgi."
     },
     "savedLocally": "Salvestatud sellesse seadmesse. Loo hiljem konto, et see oleks alles ka teistes seadmetes.",
-    "notProjectTool": "See ei ole ülesannete süsteem. See on koht, kuhu asjad maha panna, et need enam peas ei keerleks."
+    "notProjectTool": "See ei ole ülesannete süsteem. See on koht, kuhu asjad maha panna, et need enam peas ei keerleks.",
+    "savedToAccount": "Salvestatud sinu kontole. Saadaval igas seadmes, kus sisse logid."
+  },
+  "focus": {
+    "title": "Üks asi korraga",
+    "close": "Sulge",
+    "progress": "{done} / {total} tehtud",
+    "next": "Praegu ainult see:",
+    "hint": "Midagi muud ei ole olemas, kuni see on tehtud või vahele jäetud.",
+    "skip": "Jäta praegu vahele",
+    "done": "Tehtud",
+    "allDone": {
+      "title": "Tänane päev on tehtud.",
+      "body": "Kõik muu võib oodata. Mine tee midagi, mis ei ole ülesanne.",
+      "cta": "Tagasi mu taaskäivituse juurde"
+    }
+  },
+  "account": {
+    "title": "Konto",
+    "unavailable": {
+      "title": "Kontod pole siin veel sisse lülitatud",
+      "body": "Parent Reset töötab siin ilma andmebaasita. Kõik, mida teed, salvestatakse sellesse seadmesse ja see töötab hästi. Kontod, seadmeülene ajalugu ja kogukond ilmuvad siis, kui Supabase on ühendatud."
+    },
+    "signedOut": {
+      "title": "Võta oma taaskäivitused endaga kaasa",
+      "body": "Konto salvestab su taaskäivitused ja pere koorma kõigis seadmetes. Rakenduse kasutamiseks pole kontot vaja."
+    },
+    "signedIn": {
+      "title": "Sinu konto",
+      "body": "Su taaskäivitused ja pere koorem salvestatakse siin ja igas seadmes, kus sisse logid."
+    },
+    "auth": {
+      "modeLabel": "Logi sisse või loo konto",
+      "signIn": {
+        "tab": "Logi sisse",
+        "submit": "Logi sisse"
+      },
+      "signUp": {
+        "tab": "Loo konto",
+        "submit": "Loo konto"
+      },
+      "email": "E-post",
+      "password": "Parool",
+      "passwordHint": "Vähemalt 8 tähemärki.",
+      "working": "Üks hetk…",
+      "privacy": "Hoiame su e-posti aadressi ja salvestatud taaskäivitusi. Midagi ei jagata ega müüda.",
+      "checkEmail": {
+        "title": "Vaata oma postkasti",
+        "body": "Saatsime sulle lingi e-posti kinnitamiseks. Ava see selles seadmes, et registreerumine lõpetada."
+      },
+      "errors": {
+        "invalid": "Palun sisesta kehtiv e-posti aadress ja vähemalt 8 tähemärgi pikkune parool.",
+        "credentials": "See e-post ja parool ei sobi kokku.",
+        "exists": "Selle e-postiga on konto juba olemas. Proovi sisse logida.",
+        "rateLimited": "Liiga palju katseid. Palun oota minut.",
+        "unavailable": "Kontod pole selles paigalduses saadaval.",
+        "generic": "Midagi läks valesti. Palun proovi uuesti.",
+        "link": "See sisselogimislink ei töötanud. Palun küsi uus."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profiil",
+        "displayName": "Nimi kogukonnas",
+        "displayNameHint": "Kuvatakse su kogukonna postitustel e-posti asemel. Loosi juhuslik nimi.",
+        "shuffle": "Loosi",
+        "save": "Salvesta",
+        "saved": "Salvestatud.",
+        "invalid": "Kasuta 2 kuni 40 tähte, numbrit või tühikut."
+      },
+      "data": {
+        "title": "Sinu andmed",
+        "body": "Laadi alla kõik, mida me sinu kohta hoiame, või kustuta oma ajalugu ja jäta konto alles.",
+        "export": "Laadi mu andmed alla",
+        "deleteHistory": "Kustuta mu ajalugu"
+      },
+      "exportDone": "Su andmed on alla laaditud.",
+      "deleteHistoryConfirm": "Kas kustutada kõik su taaskäivitused ja pere koorma kirjed? Seda ei saa tagasi võtta.",
+      "deleteHistoryDone": "Ajalugu kustutatud.",
+      "genericError": "Midagi läks valesti. Palun proovi uuesti.",
+      "signOut": "Logi välja",
+      "danger": {
+        "title": "Kustuta konto",
+        "body": "Eemaldab su konto ja kõik selles oleva, ka kogukonna postitused. Tagasiteed ei ole.",
+        "delete": "Kustuta mu konto",
+        "confirm": "Jah, kustuta kõik",
+        "cancel": "Jäta mu konto alles"
+      }
+    },
+    "sync": {
+      "merged": "Sellest seadmest liigutati su kontole {resets} taaskäivitust ja {items} pere koorma kirjet."
+    }
+  },
+  "history": {
+    "title": "Ajalugu",
+    "subtitle": "Kuidas päevad on läinud.",
+    "count": "{count, plural, =0 {Taaskäivitusi pole veel.} one {Seni # taaskäivitus.} other {Seni # taaskäivitust.}}",
+    "trend": {
+      "label": "Kergemad päevad",
+      "chartLabel": "Ülekoormus su viimastes taaskäivitustes",
+      "average": "Viimase aja keskmine: {value} / 10",
+      "needMore": "Pärast veel paari taaskäivitust näed, kas päevad lähevad kergemaks.",
+      "lighter": "Kergem kui enne. Mida iganes sa teed, see aitab.",
+      "heavier": "Raskem kui enne. Praegu on palju korraga. See ei ole hinnang sinule.",
+      "steady": "Umbes sama mis enne.",
+      "frequentAreas": "Kõige sagedamini mõttes: {areas}"
+    },
+    "empty": {
+      "title": "Taaskäivitusi pole veel",
+      "body": "Esimene võtab kaks minutit.",
+      "cta": "Alusta taaskäivitust"
+    },
+    "overwhelm": "Ülekoormus {value} 10-st",
+    "completion": "{percent}% tänasest nimekirjast tehtud",
+    "open": "Ava",
+    "delete": "Kustuta",
+    "guestNote": "See ajalugu elab ainult selles seadmes.",
+    "guestCta": "Loo konto, et see alles hoida."
+  },
+  "community": {
+    "title": "Kogukond",
+    "subtitle": "Ütle välja see, mis tavaliselt jääb ütlemata.",
+    "intro": "Väike, vaikimisi anonüümne koht vanematele. Ei jälgijaid, ei lõputuid voogusid, ei täiuslikke peresid.",
+    "write": "Kirjuta postitus",
+    "anonymousNote": "Postitustel kuvatakse juhuslik nimi, mitte kunagi su e-post.",
+    "categoriesLabel": "Kategooriad",
+    "all": "Kõik",
+    "categories": {
+      "toddlers": "Väikelapsed",
+      "school_age": "Koolilapsed",
+      "money_stress": "Rahamure",
+      "no_time": "Pole aega",
+      "relationships": "Suhted",
+      "dads": "Isad",
+      "mums": "Emad",
+      "single_parents": "Üksikvanemad",
+      "moving": "Kolimine",
+      "general": "Üldine"
+    },
+    "support": "{count, plural, =0 {Toeta} one {# toetus} other {# toetust}}",
+    "comments": "{count, plural, =0 {Kommentaare pole veel} one {# kommentaar} other {# kommentaari}}",
+    "back": "Tagasi kogukonda",
+    "delete": "Kustuta postitus",
+    "deleteConfirm": "Kas kustutada see postitus ja selle kommentaarid?",
+    "unavailable": {
+      "title": "Kogukond pole siin veel sisse lülitatud",
+      "body": "See ilmub siis, kui Supabase on siin ühendatud. Kõik muu töötab ilma selleta."
+    },
+    "empty": {
+      "title": "Siin pole veel midagi",
+      "body": "Ole esimene. Isegi üks aus lause aitab järgmist vanemat, kes seda loeb."
+    },
+    "safetyNote": "Kui mõni postitus paneb sind kellegi turvalisuse pärast muretsema, palu tal võtta ühendust kohaliku hädaabiga. See on koht rääkimiseks, mitte kriisiabi.",
+    "new": {
+      "heading": "Kirjuta postitus",
+      "intro": "Mis on sinu jaoks praegu tõsi? Olgu see nii lühike või pikk, kui vaja.",
+      "category": "Kategooria",
+      "title": "Pealkiri",
+      "titlePlaceholder": "Keegi ei öelnud, et teine aasta on raskem",
+      "body": "Sinu postitus",
+      "bodyPlaceholder": "Mis toimub, mida oled proovinud, mida vajad.",
+      "guidelines": "Ole lahke. Ei teiste inimeste nimesid, ei aadresse, ei meditsiinilisi nõuandeid. Postitused on avalikud.",
+      "posting": "Postitan…",
+      "submit": "Postita"
+    },
+    "comment": {
+      "label": "Vasta",
+      "placeholder": "Paar lahket, ausat sõna.",
+      "posting": "Saadan…",
+      "submit": "Vasta",
+      "empty": "Vastuseid pole veel. Sinu oma võib olla esimene.",
+      "signInPrompt": "Logi sisse, et vastata ja postitusi toetada.",
+      "signIn": "Logi sisse"
+    },
+    "report": {
+      "button": "Teata",
+      "reasons": {
+        "spam": "Rämpspost või reklaam",
+        "harmful": "Kahjulik või ebasõbralik",
+        "personal_info": "Jagab isikuandmeid",
+        "other": "Midagi muud"
+      },
+      "thanks": "Aitäh. Vaatame üle.",
+      "failed": "Teadet ei õnnestunud saata. Palun proovi uuesti."
+    },
+    "errors": {
+      "invalid": "Palun täida pealkiri ja sõnum.",
+      "titleTooLong": "Pealkiri on natuke pikk. Palun hoia see alla 140 tähemärgi.",
+      "bodyTooLong": "See on natuke pikk. Palun hoia see alla 4000 tähemärgi.",
+      "tooLong": "See on natuke pikk. Palun hoia see alla 2000 tähemärgi.",
+      "rejected": "Seda ei õnnestunud postitada. Palun eemalda lingid ja proovi uuesti.",
+      "rateLimited": "Postitad kiiresti. Palun oota paar minutit.",
+      "signIn": "Palun logi enne sisse.",
+      "generic": "Midagi läks valesti. Palun proovi uuesti."
+    }
   }
 }

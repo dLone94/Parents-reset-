@@ -22,6 +22,18 @@
     "load": {
       "title": "Rodinné starosti – Parent Reset",
       "description": "Jednoduchý přehled toho, co ti zabírá místo v hlavě: děti, peníze, domov, práce, vztah a ty."
+    },
+    "account": {
+      "title": "Tvůj účet – Parent Reset",
+      "description": "Přihlas se a měj své resety a rodinné starosti na všech zařízeních."
+    },
+    "history": {
+      "title": "Tvoje historie – Parent Reset",
+      "description": "Předchozí resety a to, jestli jsou dny lehčí."
+    },
+    "community": {
+      "title": "Komunita – Parent Reset",
+      "description": "Malé, především anonymní místo, kde rodiče můžou nahlas říct to, o čem se mlčí."
     }
   },
   "common": {
@@ -42,7 +54,19 @@
     "startReset": "Začít můj reset",
     "howItWorks": "Jak to funguje",
     "menuTitle": "Menu",
-    "familyLoad": "Rodinné starosti"
+    "familyLoad": "Rodinné starosti",
+    "community": "Komunita",
+    "history": "Historie",
+    "account": "Účet",
+    "signIn": "Přihlásit se",
+    "tabs": {
+      "label": "Hlavní navigace",
+      "home": "Domů",
+      "reset": "Reset",
+      "load": "Starosti",
+      "community": "Komunita",
+      "account": "Ty"
+    }
   },
   "home": {
     "hero": {
@@ -97,6 +121,25 @@
       "title": "Jsme tu, až budeš chtít.",
       "body": "Dvě minuty teď můžou zbytek dne zlehčit.",
       "cta": "Začít můj reset"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Dobré ráno",
+        "afternoon": "Dobré odpoledne",
+        "evening": "Dobrý večer",
+        "night": "Ještě vzhůru?"
+      },
+      "title": "Vítej zpátky. Kde chceš začít?",
+      "todayDone": "Dnes už máš reset za sebou. Pěkné.",
+      "lastReset": "Poslední reset: {date}",
+      "progress": "{percent} % dnešního seznamu hotovo",
+      "openLast": "Otevřít ten reset",
+      "loadLabel": "Rodinné starosti",
+      "openItems": "{count, plural, =0 {Teď není nic otevřené} one {# otevřená věc} few {# otevřené věci} many {# otevřené věci} other {# otevřených věcí}}",
+      "openLoad": "Otevřít rodinné starosti",
+      "cta": "Začít dnešní reset",
+      "ctaAgain": "Resetovat znovu",
+      "history": "Historie ({count})"
     }
   },
   "reset": {
@@ -170,7 +213,11 @@
     "dateLabel": "Reset z {date}",
     "today": {
       "label": "Dnes",
-      "intro": "Jen tohle. Když to zvládneš, den se počítá."
+      "intro": "Jen tohle. Když to zvládneš, den se počítá.",
+      "allDone": "Všechno hotovo. To byl dnešek.",
+      "markDone": "Označit jako hotové",
+      "undo": "Označit jako nehotové",
+      "focus": "Udělat je po jednom"
     },
     "thisWeek": {
       "label": "Tento týden",
@@ -188,7 +235,12 @@
       "body": "Možná vznikl v jiném zařízení nebo byl z tohoto prohlížeče smazán.",
       "cta": "Začít nový reset"
     },
-    "disclaimer": "Parent Reset je praktický plánovací nástroj, ne lékařská ani terapeutická rada."
+    "disclaimer": "Parent Reset je praktický plánovací nástroj, ne lékařská ani terapeutická rada.",
+    "addToLoad": "Přidat do rodinných starostí",
+    "addedShort": "Přidáno",
+    "addedToLoad": "Přidáno do: {area}",
+    "goToLoad": "Otevřít rodinné starosti",
+    "savedToAccount": "Uloženo do tvého účtu."
   },
   "planner": {
     "summary": {
@@ -312,6 +364,200 @@
       "tooLong": "Zkus to prosím do {max} znaků."
     },
     "savedLocally": "Uloženo v tomto zařízení. Účet si můžeš založit později, aby ti to zůstalo i na dalších zařízeních.",
-    "notProjectTool": "Tohle není systém na úkoly. Je to místo, kam si věci odložíš, aby se ti přestaly točit v hlavě."
+    "notProjectTool": "Tohle není systém na úkoly. Je to místo, kam si věci odložíš, aby se ti přestaly točit v hlavě.",
+    "savedToAccount": "Uloženo do tvého účtu. K dispozici na každém zařízení, kde se přihlásíš."
+  },
+  "focus": {
+    "title": "Jedna věc po druhé",
+    "close": "Zavřít",
+    "progress": "{done} z {total} hotovo",
+    "next": "Teď jen tohle:",
+    "hint": "Nic jiného neexistuje, dokud tohle není hotové nebo přeskočené.",
+    "skip": "Teď přeskočit",
+    "done": "Hotovo",
+    "allDone": {
+      "title": "Dnešek je vyřešený.",
+      "body": "Všechno ostatní počká. Jdi dělat něco, co není úkol.",
+      "cta": "Zpět na můj reset"
+    }
+  },
+  "account": {
+    "title": "Účet",
+    "unavailable": {
+      "title": "Účty tu zatím nejsou zapnuté",
+      "body": "Tahle kopie Parent Reset běží bez databáze. Všechno, co děláš, se ukládá v tomto zařízení, a to funguje dobře. Účty, historie napříč zařízeními a komunita se objeví, jakmile bude připojen Supabase."
+    },
+    "signedOut": {
+      "title": "Měj své resety u sebe",
+      "body": "Účet ukládá tvé resety a rodinné starosti napříč zařízeními. K používání aplikace účet nepotřebuješ."
+    },
+    "signedIn": {
+      "title": "Tvůj účet",
+      "body": "Tvé resety a rodinné starosti se ukládají sem a na každé zařízení, kde se přihlásíš."
+    },
+    "auth": {
+      "modeLabel": "Přihlásit se nebo vytvořit účet",
+      "signIn": {
+        "tab": "Přihlásit se",
+        "submit": "Přihlásit se"
+      },
+      "signUp": {
+        "tab": "Vytvořit účet",
+        "submit": "Vytvořit účet"
+      },
+      "email": "E-mail",
+      "password": "Heslo",
+      "passwordHint": "Alespoň 8 znaků.",
+      "working": "Moment…",
+      "privacy": "Ukládáme tvůj e-mail a uložené resety. Nic se nesdílí ani neprodává.",
+      "checkEmail": {
+        "title": "Podívej se do e-mailu",
+        "body": "Poslali jsme ti odkaz pro potvrzení e-mailu. Otevři ho v tomto zařízení a registrace bude hotová."
+      },
+      "errors": {
+        "invalid": "Zadej platný e-mail a heslo s alespoň 8 znaky.",
+        "credentials": "Tento e-mail a heslo k sobě nepasují.",
+        "exists": "S tímto e-mailem už účet existuje. Zkus se přihlásit.",
+        "rateLimited": "Příliš mnoho pokusů. Počkej prosím minutu.",
+        "unavailable": "Účty nejsou v této instalaci k dispozici.",
+        "generic": "Něco se pokazilo. Zkus to prosím znovu.",
+        "link": "Tento přihlašovací odkaz nefungoval. Požádej prosím o nový."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "displayName": "Jméno v komunitě",
+        "displayNameHint": "Zobrazuje se u tvých příspěvků v komunitě místo e-mailu. Zamíchej pro náhodné jméno.",
+        "shuffle": "Zamíchat",
+        "save": "Uložit",
+        "saved": "Uloženo.",
+        "invalid": "Použij 2 až 40 písmen, číslic nebo mezer."
+      },
+      "data": {
+        "title": "Tvoje data",
+        "body": "Stáhni si všechno, co o tobě máme, nebo smaž svou historii a účet si nech.",
+        "export": "Stáhnout moje data",
+        "deleteHistory": "Smazat moji historii"
+      },
+      "exportDone": "Tvoje data byla stažena.",
+      "deleteHistoryConfirm": "Smazat všechny tvé resety a položky rodinných starostí? Tohle nejde vrátit.",
+      "deleteHistoryDone": "Historie smazána.",
+      "genericError": "Něco se pokazilo. Zkus to prosím znovu.",
+      "signOut": "Odhlásit se",
+      "danger": {
+        "title": "Smazat účet",
+        "body": "Odstraní tvůj účet a všechno v něm, včetně příspěvků v komunitě. Není cesty zpět.",
+        "delete": "Smazat můj účet",
+        "confirm": "Ano, smazat všechno",
+        "cancel": "Nechat si účet"
+      }
+    },
+    "sync": {
+      "merged": "Z tohoto zařízení jsme do tvého účtu přesunuli resety ({resets}) a položky rodinných starostí ({items})."
+    }
+  },
+  "history": {
+    "title": "Historie",
+    "subtitle": "Jak se dny vyvíjejí.",
+    "count": "{count, plural, =0 {Zatím žádný reset.} one {Zatím # reset.} few {Zatím # resety.} many {Zatím # resetu.} other {Zatím # resetů.}}",
+    "trend": {
+      "label": "Lehčí dny",
+      "chartLabel": "Zátěž v posledních resetech",
+      "average": "Nedávný průměr: {value} / 10",
+      "needMore": "Po pár dalších resetech uvidíš, jestli jsou dny lehčí.",
+      "lighter": "Lehčí než dřív. Ať děláš cokoli, pomáhá to.",
+      "heavier": "Těžší než dřív. Je toho teď hodně. Není to soud nad tebou.",
+      "steady": "Zhruba stejné jako dřív.",
+      "frequentAreas": "Nejčastěji ti leží v hlavě: {areas}"
+    },
+    "empty": {
+      "title": "Zatím žádné resety",
+      "body": "První zabere dvě minuty.",
+      "cta": "Začít můj reset"
+    },
+    "overwhelm": "Zátěž {value} z 10",
+    "completion": "{percent} % dnešního seznamu hotovo",
+    "open": "Otevřít",
+    "delete": "Smazat",
+    "guestNote": "Tahle historie je jen v tomto zařízení.",
+    "guestCta": "Vytvoř si účet a zůstane ti."
+  },
+  "community": {
+    "title": "Komunita",
+    "subtitle": "Řekni nahlas to, o čem se mlčí.",
+    "intro": "Malé, především anonymní místo pro rodiče. Žádní sledující, žádné nekonečné feedy, žádné dokonalé rodiny.",
+    "write": "Napsat příspěvek",
+    "anonymousNote": "U příspěvků se zobrazuje náhodné jméno, nikdy tvůj e-mail.",
+    "categoriesLabel": "Kategorie",
+    "all": "Vše",
+    "categories": {
+      "toddlers": "Batolata",
+      "school_age": "Školáci",
+      "money_stress": "Peníze",
+      "no_time": "Nedostatek času",
+      "relationships": "Vztahy",
+      "dads": "Tátové",
+      "mums": "Mámy",
+      "single_parents": "Samoživitelé",
+      "moving": "Stěhování",
+      "general": "Obecné"
+    },
+    "support": "{count, plural, =0 {Podpořit} one {# podpora} few {# podpory} many {# podpory} other {# podpor}}",
+    "comments": "{count, plural, =0 {Zatím žádné komentáře} one {# komentář} few {# komentáře} many {# komentáře} other {# komentářů}}",
+    "back": "Zpět do komunity",
+    "delete": "Smazat příspěvek",
+    "deleteConfirm": "Smazat tento příspěvek i s komentáři?",
+    "unavailable": {
+      "title": "Komunita tu zatím není zapnutá",
+      "body": "Objeví se, jakmile bude tahle kopie Parent Reset připojena k Supabase. Všechno ostatní funguje i bez toho."
+    },
+    "empty": {
+      "title": "Zatím tu nic není",
+      "body": "Začni ty. I jedna upřímná věta pomůže dalšímu rodiči, který si ji přečte."
+    },
+    "safetyNote": "Pokud tě příspěvek znepokojí kvůli něčí bezpečnosti, řekni dotyčnému, ať kontaktuje místní tísňové služby. Tohle je místo na povídání, ne krizová služba.",
+    "new": {
+      "heading": "Napsat příspěvek",
+      "intro": "Co pro tebe teď platí? Piš tak krátce nebo dlouze, jak je potřeba.",
+      "category": "Kategorie",
+      "title": "Název",
+      "titlePlaceholder": "Nikdo mi neřekl, že druhý rok bude těžší",
+      "body": "Tvůj příspěvek",
+      "bodyPlaceholder": "Co se děje, jaké pokusy už máš za sebou, co potřebuješ.",
+      "guidelines": "Laskavost především. Žádná jména jiných lidí, žádné adresy, žádné lékařské rady. Příspěvky jsou veřejné.",
+      "posting": "Odesílám…",
+      "submit": "Zveřejnit"
+    },
+    "comment": {
+      "label": "Odpovědět",
+      "placeholder": "Pár laskavých, upřímných slov.",
+      "posting": "Odesílám…",
+      "submit": "Odpovědět",
+      "empty": "Zatím žádné odpovědi. Ta tvoje může být první.",
+      "signInPrompt": "Pro odpovědi a podporu příspěvků se přihlas.",
+      "signIn": "Přihlásit se"
+    },
+    "report": {
+      "button": "Nahlásit",
+      "reasons": {
+        "spam": "Spam nebo reklama",
+        "harmful": "Škodlivé nebo nelaskavé",
+        "personal_info": "Sdílí osobní údaje",
+        "other": "Něco jiného"
+      },
+      "thanks": "Díky. Podíváme se na to.",
+      "failed": "Nahlášení se nepodařilo odeslat. Zkus to prosím znovu."
+    },
+    "errors": {
+      "invalid": "Vyplň prosím název a zprávu.",
+      "titleTooLong": "Název je trochu dlouhý. Drž ho prosím pod 140 znaky.",
+      "bodyTooLong": "Je to trochu dlouhé. Drž to prosím pod 4000 znaky.",
+      "tooLong": "Je to trochu dlouhé. Drž to prosím pod 2000 znaky.",
+      "rejected": "Tohle jsme nemohli zveřejnit. Odstraň prosím odkazy a zkus to znovu.",
+      "rateLimited": "Přispíváš rychle. Počkej prosím pár minut.",
+      "signIn": "Nejdřív se prosím přihlas.",
+      "generic": "Něco se pokazilo. Zkus to prosím znovu."
+    }
   }
 }

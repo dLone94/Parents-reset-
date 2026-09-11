@@ -22,6 +22,18 @@
     "load": {
       "title": "Familienlast – Parent Reset",
       "description": "Ein einfacher Blick auf das, was gerade Platz in deinem Kopf einnimmt: Kinder, Geld, Zuhause, Arbeit, Beziehung und du."
+    },
+    "account": {
+      "title": "Dein Konto – Parent Reset",
+      "description": "Melde dich an, um deine Resets und deine Familienlast auf allen Geräten zu behalten."
+    },
+    "history": {
+      "title": "Dein Verlauf – Parent Reset",
+      "description": "Frühere Resets und ob die Tage leichter geworden sind."
+    },
+    "community": {
+      "title": "Community – Parent Reset",
+      "description": "Ein kleiner, anonymer Ort für Eltern, um das auszusprechen, was sonst keiner sagt."
     }
   },
   "common": {
@@ -42,7 +54,19 @@
     "startReset": "Reset starten",
     "howItWorks": "So funktioniert es",
     "menuTitle": "Menü",
-    "familyLoad": "Familienlast"
+    "familyLoad": "Familienlast",
+    "community": "Community",
+    "history": "Verlauf",
+    "account": "Konto",
+    "signIn": "Anmelden",
+    "tabs": {
+      "label": "Hauptnavigation",
+      "home": "Start",
+      "reset": "Reset",
+      "load": "Last",
+      "community": "Community",
+      "account": "Du"
+    }
   },
   "home": {
     "hero": {
@@ -97,6 +121,25 @@
       "title": "Wann immer du bereit bist.",
       "body": "Zwei Minuten jetzt können den Rest des Tages leichter machen.",
       "cta": "Reset starten"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Guten Morgen",
+        "afternoon": "Guten Tag",
+        "evening": "Guten Abend",
+        "night": "Noch wach?"
+      },
+      "title": "Willkommen zurück. Wo möchtest du anfangen?",
+      "todayDone": "Du hast heute schon einen Reset gemacht. Schön.",
+      "lastReset": "Letzter Reset: {date}",
+      "progress": "{percent}% der heutigen Liste erledigt",
+      "openLast": "Diesen Reset öffnen",
+      "loadLabel": "Familienlast",
+      "openItems": "{count, plural, =0 {Gerade nichts offen} one {# Sache offen} other {# Sachen offen}}",
+      "openLoad": "Familienlast öffnen",
+      "cta": "Reset für heute starten",
+      "ctaAgain": "Noch einmal resetten",
+      "history": "Verlauf ({count})"
     }
   },
   "reset": {
@@ -170,7 +213,11 @@
     "dateLabel": "Reset vom {date}",
     "today": {
       "label": "Heute",
-      "intro": "Nur das hier. Wenn du das schaffst, hat der Tag gezählt."
+      "intro": "Nur das hier. Wenn du das schaffst, hat der Tag gezählt.",
+      "allDone": "Alles erledigt. Das war der Tag.",
+      "markDone": "Als erledigt markieren",
+      "undo": "Als nicht erledigt markieren",
+      "focus": "Eins nach dem anderen"
     },
     "thisWeek": {
       "label": "Diese Woche",
@@ -188,7 +235,12 @@
       "body": "Vielleicht wurde er auf einem anderen Gerät erstellt oder aus diesem Browser gelöscht.",
       "cta": "Neuen Reset starten"
     },
-    "disclaimer": "Parent Reset ist ein praktisches Planungswerkzeug, kein medizinischer oder therapeutischer Rat."
+    "disclaimer": "Parent Reset ist ein praktisches Planungswerkzeug, kein medizinischer oder therapeutischer Rat.",
+    "addToLoad": "Zur Familienlast hinzufügen",
+    "addedShort": "Hinzugefügt",
+    "addedToLoad": "Zu {area} hinzugefügt",
+    "goToLoad": "Familienlast öffnen",
+    "savedToAccount": "In deinem Konto gespeichert."
   },
   "planner": {
     "summary": {
@@ -312,6 +364,200 @@
       "tooLong": "Bitte bleib unter {max} Zeichen."
     },
     "savedLocally": "Auf diesem Gerät gespeichert. Erstell später ein Konto, um es auf allen Geräten zu behalten.",
-    "notProjectTool": "Das ist kein To-do-System. Es ist ein Ort, an dem du Dinge ablegen kannst, damit sie nicht mehr kreisen."
+    "notProjectTool": "Das ist kein To-do-System. Es ist ein Ort, an dem du Dinge ablegen kannst, damit sie nicht mehr kreisen.",
+    "savedToAccount": "In deinem Konto gespeichert. Verfügbar auf jedem Gerät, auf dem du dich anmeldest."
+  },
+  "focus": {
+    "title": "Eins nach dem anderen",
+    "close": "Schließen",
+    "progress": "{done} von {total} erledigt",
+    "next": "Jetzt gerade nur das:",
+    "hint": "Nichts anderes zählt, bis das hier erledigt oder übersprungen ist.",
+    "skip": "Später",
+    "done": "Erledigt",
+    "allDone": {
+      "title": "Heute ist geschafft.",
+      "body": "Alles andere kann warten. Mach jetzt etwas, das keine Aufgabe ist.",
+      "cta": "Zurück zu meinem Reset"
+    }
+  },
+  "account": {
+    "title": "Konto",
+    "unavailable": {
+      "title": "Konten sind hier noch nicht eingeschaltet",
+      "body": "Diese Version von Parent Reset läuft ohne Datenbank. Alles, was du machst, wird auf diesem Gerät gespeichert – und das funktioniert gut. Konten, Verlauf über mehrere Geräte und die Community kommen, sobald Supabase verbunden ist."
+    },
+    "signedOut": {
+      "title": "Nimm deine Resets mit",
+      "body": "Ein Konto speichert deine Resets und deine Familienlast auf allen Geräten. Du brauchst kein Konto, um die App zu nutzen."
+    },
+    "signedIn": {
+      "title": "Dein Konto",
+      "body": "Deine Resets und deine Familienlast sind hier gespeichert – und auf jedem Gerät, auf dem du dich anmeldest."
+    },
+    "auth": {
+      "modeLabel": "Anmelden oder Konto erstellen",
+      "signIn": {
+        "tab": "Anmelden",
+        "submit": "Anmelden"
+      },
+      "signUp": {
+        "tab": "Konto erstellen",
+        "submit": "Konto erstellen"
+      },
+      "email": "E-Mail",
+      "password": "Passwort",
+      "passwordHint": "Mindestens 8 Zeichen.",
+      "working": "Einen Moment…",
+      "privacy": "Wir speichern deine E-Mail-Adresse und deine gespeicherten Resets. Nichts wird geteilt oder verkauft.",
+      "checkEmail": {
+        "title": "Schau in dein Postfach",
+        "body": "Wir haben dir einen Link geschickt, um deine E-Mail-Adresse zu bestätigen. Öffne ihn auf diesem Gerät, um die Registrierung abzuschließen."
+      },
+      "errors": {
+        "invalid": "Bitte gib eine gültige E-Mail-Adresse und ein Passwort mit mindestens 8 Zeichen ein.",
+        "credentials": "E-Mail und Passwort passen nicht zusammen.",
+        "exists": "Mit dieser E-Mail-Adresse gibt es schon ein Konto. Versuch dich anzumelden.",
+        "rateLimited": "Zu viele Versuche. Bitte warte eine Minute.",
+        "unavailable": "Konten sind in dieser Version nicht verfügbar.",
+        "generic": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal.",
+        "link": "Dieser Anmeldelink hat nicht funktioniert. Bitte fordere einen neuen an."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "displayName": "Name in der Community",
+        "displayNameHint": "Wird bei deinen Community-Beiträgen statt deiner E-Mail angezeigt. Mischen für einen zufälligen Namen.",
+        "shuffle": "Mischen",
+        "save": "Speichern",
+        "saved": "Gespeichert.",
+        "invalid": "Verwende 2 bis 40 Buchstaben, Zahlen oder Leerzeichen."
+      },
+      "data": {
+        "title": "Deine Daten",
+        "body": "Lade alles herunter, was wir über dich gespeichert haben, oder lösche deinen Verlauf und behalte das Konto.",
+        "export": "Meine Daten herunterladen",
+        "deleteHistory": "Meinen Verlauf löschen"
+      },
+      "exportDone": "Deine Daten wurden heruntergeladen.",
+      "deleteHistoryConfirm": "Alle deine Resets und Einträge der Familienlast löschen? Das lässt sich nicht rückgängig machen.",
+      "deleteHistoryDone": "Verlauf gelöscht.",
+      "genericError": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal.",
+      "signOut": "Abmelden",
+      "danger": {
+        "title": "Konto löschen",
+        "body": "Entfernt dein Konto und alles darin, auch Community-Beiträge. Das lässt sich nicht rückgängig machen.",
+        "delete": "Mein Konto löschen",
+        "confirm": "Ja, alles löschen",
+        "cancel": "Konto behalten"
+      }
+    },
+    "sync": {
+      "merged": "{resets} Resets und {items} Einträge der Familienlast wurden von diesem Gerät in dein Konto übernommen."
+    }
+  },
+  "history": {
+    "title": "Verlauf",
+    "subtitle": "Wie die Tage so gelaufen sind.",
+    "count": "{count, plural, =0 {Noch keine Resets.} one {Bisher # Reset.} other {Bisher # Resets.}}",
+    "trend": {
+      "label": "Leichtere Tage",
+      "chartLabel": "Überforderung über deine letzten Resets",
+      "average": "Durchschnitt zuletzt: {value} / 10",
+      "needMore": "Nach ein paar weiteren Resets siehst du, ob die Tage leichter werden.",
+      "lighter": "Leichter als vorher. Was auch immer du machst, es hilft.",
+      "heavier": "Schwerer als vorher. Gerade ist viel los. Das sagt nichts über dich aus.",
+      "steady": "Ungefähr wie vorher.",
+      "frequentAreas": "Am häufigsten im Kopf: {areas}"
+    },
+    "empty": {
+      "title": "Noch keine Resets",
+      "body": "Der erste dauert zwei Minuten.",
+      "cta": "Meinen Reset starten"
+    },
+    "overwhelm": "Überforderung {value} von 10",
+    "completion": "{percent}% der Liste erledigt",
+    "open": "Öffnen",
+    "delete": "Löschen",
+    "guestNote": "Dieser Verlauf ist nur auf diesem Gerät gespeichert.",
+    "guestCta": "Erstelle ein Konto, um ihn zu behalten."
+  },
+  "community": {
+    "title": "Community",
+    "subtitle": "Sprich aus, was sonst keiner sagt.",
+    "intro": "Ein kleiner, anonymer Ort für Eltern. Keine Follower, keine endlosen Feeds, keine perfekten Familien.",
+    "write": "Beitrag schreiben",
+    "anonymousNote": "Beiträge zeigen einen zufälligen Namen, nie deine E-Mail.",
+    "categoriesLabel": "Kategorien",
+    "all": "Alle",
+    "categories": {
+      "toddlers": "Kleinkinder",
+      "school_age": "Schulkinder",
+      "money_stress": "Geldsorgen",
+      "no_time": "Keine Zeit",
+      "relationships": "Beziehung",
+      "dads": "Väter",
+      "mums": "Mütter",
+      "single_parents": "Alleinerziehend",
+      "moving": "Umzug",
+      "general": "Allgemein"
+    },
+    "support": "{count, plural, =0 {Unterstützen} one {# Unterstützung} other {# Unterstützungen}}",
+    "comments": "{count, plural, =0 {Noch keine Kommentare} one {# Kommentar} other {# Kommentare}}",
+    "back": "Zurück zur Community",
+    "delete": "Beitrag löschen",
+    "deleteConfirm": "Diesen Beitrag und seine Kommentare löschen?",
+    "unavailable": {
+      "title": "Die Community ist hier noch nicht eingeschaltet",
+      "body": "Sie erscheint, sobald diese Version von Parent Reset mit Supabase verbunden ist. Alles andere funktioniert auch ohne."
+    },
+    "empty": {
+      "title": "Hier ist noch nichts",
+      "body": "Mach den Anfang. Schon ein ehrlicher Satz hilft dem nächsten Elternteil, der ihn liest."
+    },
+    "safetyNote": "Wenn dich ein Beitrag um jemandes Sicherheit fürchten lässt, sag der Person, dass sie sich an den örtlichen Notruf wenden soll. Das hier ist ein Ort zum Reden, kein Notdienst.",
+    "new": {
+      "heading": "Beitrag schreiben",
+      "intro": "Was ist gerade wahr für dich? So kurz oder so lang, wie es sein muss.",
+      "category": "Kategorie",
+      "title": "Titel",
+      "titlePlaceholder": "Niemand hat mir gesagt, dass das zweite Jahr schwerer wird",
+      "body": "Dein Beitrag",
+      "bodyPlaceholder": "Was los ist, was du versucht hast, was du brauchst.",
+      "guidelines": "Sei freundlich. Keine Namen anderer Personen, keine Adressen, keine medizinischen Ratschläge. Beiträge sind öffentlich.",
+      "posting": "Wird veröffentlicht…",
+      "submit": "Posten"
+    },
+    "comment": {
+      "label": "Antworten",
+      "placeholder": "Ein paar freundliche, ehrliche Worte.",
+      "posting": "Wird gesendet…",
+      "submit": "Antworten",
+      "empty": "Noch keine Antworten. Deine könnte die erste sein.",
+      "signInPrompt": "Melde dich an, um zu antworten und Beiträge zu unterstützen.",
+      "signIn": "Anmelden"
+    },
+    "report": {
+      "button": "Melden",
+      "reasons": {
+        "spam": "Spam oder Werbung",
+        "harmful": "Verletzend oder unfreundlich",
+        "personal_info": "Teilt persönliche Daten",
+        "other": "Etwas anderes"
+      },
+      "thanks": "Danke. Wir schauen es uns an.",
+      "failed": "Die Meldung konnte nicht gesendet werden. Bitte versuch es noch einmal."
+    },
+    "errors": {
+      "invalid": "Bitte gib einen Titel und eine Nachricht ein.",
+      "titleTooLong": "Der Titel ist etwas lang. Bitte bleib unter 140 Zeichen.",
+      "bodyTooLong": "Das ist etwas lang. Bitte bleib unter 4000 Zeichen.",
+      "tooLong": "Das ist etwas lang. Bitte bleib unter 2000 Zeichen.",
+      "rejected": "Das konnten wir nicht veröffentlichen. Bitte entferne Links und versuch es noch einmal.",
+      "rateLimited": "Du postest sehr schnell. Bitte warte ein paar Minuten.",
+      "signIn": "Bitte melde dich zuerst an.",
+      "generic": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal."
+    }
   }
 }

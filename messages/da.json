@@ -22,6 +22,18 @@
     "load": {
       "title": "Alt du bærer på – Parent Reset",
       "description": "Et enkelt overblik over, hvad der fylder i hovedet: børn, penge, hjem, arbejde, parforhold og dig selv."
+    },
+    "account": {
+      "title": "Din konto – Parent Reset",
+      "description": "Log ind for at beholde dine resets og alt du bærer på, på tværs af enheder."
+    },
+    "history": {
+      "title": "Din historik – Parent Reset",
+      "description": "Tidligere resets, og om dagene er blevet lettere."
+    },
+    "community": {
+      "title": "Fællesskab – Parent Reset",
+      "description": "Et lille, anonymt sted, hvor forældre kan sige det højt, som ellers bliver usagt."
     }
   },
   "common": {
@@ -42,7 +54,19 @@
     "startReset": "Start min reset",
     "howItWorks": "Sådan virker det",
     "menuTitle": "Menu",
-    "familyLoad": "Alt du bærer på"
+    "familyLoad": "Alt du bærer på",
+    "community": "Fællesskab",
+    "history": "Historik",
+    "account": "Konto",
+    "signIn": "Log ind",
+    "tabs": {
+      "label": "Hovednavigation",
+      "home": "Forside",
+      "reset": "Reset",
+      "load": "Familie",
+      "community": "Forum",
+      "account": "Dig"
+    }
   },
   "home": {
     "hero": {
@@ -97,6 +121,25 @@
       "title": "Klar, når du er.",
       "body": "To minutter nu kan gøre resten af dagen lettere.",
       "cta": "Start min reset"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Godmorgen",
+        "afternoon": "God eftermiddag",
+        "evening": "Godaften",
+        "night": "Stadig vågen?"
+      },
+      "title": "Velkommen tilbage. Hvor vil du starte?",
+      "todayDone": "Du har allerede lavet en reset i dag. Flot.",
+      "lastReset": "Seneste reset: {date}",
+      "progress": "{percent}% af dagens liste er færdig",
+      "openLast": "Åbn den reset",
+      "loadLabel": "Alt du bærer på",
+      "openItems": "{count, plural, =0 {Intet åbent lige nu} one {# ting åben} other {# ting åbne}}",
+      "openLoad": "Åbn alt du bærer på",
+      "cta": "Start dagens reset",
+      "ctaAgain": "Lav en ny reset",
+      "history": "Historik ({count})"
     }
   },
   "reset": {
@@ -170,7 +213,11 @@
     "dateLabel": "Reset fra {date}",
     "today": {
       "label": "I dag",
-      "intro": "Kun de her. Hvis du når dem, har dagen talt."
+      "intro": "Kun de her. Hvis du når dem, har dagen talt.",
+      "allDone": "Alt er færdigt. Det var dagen.",
+      "markDone": "Markér som færdig",
+      "undo": "Markér som ikke færdig",
+      "focus": "Tag dem én ad gangen"
     },
     "thisWeek": {
       "label": "Denne uge",
@@ -188,7 +235,12 @@
       "body": "Den er måske oprettet på en anden enhed eller slettet fra denne browser.",
       "cta": "Start en ny reset"
     },
-    "disclaimer": "Parent Reset er et praktisk planlægningsværktøj, ikke lægelig eller terapeutisk rådgivning."
+    "disclaimer": "Parent Reset er et praktisk planlægningsværktøj, ikke lægelig eller terapeutisk rådgivning.",
+    "addToLoad": "Føj til alt du bærer på",
+    "addedShort": "Tilføjet",
+    "addedToLoad": "Tilføjet under {area}",
+    "goToLoad": "Åbn alt du bærer på",
+    "savedToAccount": "Gemt på din konto."
   },
   "planner": {
     "summary": {
@@ -312,6 +364,200 @@
       "tooLong": "Hold det under {max} tegn."
     },
     "savedLocally": "Gemt på denne enhed. Opret en konto senere for at beholde det på alle enheder.",
-    "notProjectTool": "Det her er ikke et to-do-system. Det er et sted at lægge ting fra sig, så de holder op med at kredse."
+    "notProjectTool": "Det her er ikke et to-do-system. Det er et sted at lægge ting fra sig, så de holder op med at kredse.",
+    "savedToAccount": "Gemt på din konto. Tilgængeligt på alle enheder, hvor du logger ind."
+  },
+  "focus": {
+    "title": "Én ting ad gangen",
+    "close": "Luk",
+    "progress": "{done} af {total} færdige",
+    "next": "Lige nu, kun det her:",
+    "hint": "Intet andet findes, før den her er færdig eller sprunget over.",
+    "skip": "Spring over",
+    "done": "Færdig",
+    "allDone": {
+      "title": "Så er dagen klaret.",
+      "body": "Alt andet kan vente. Gå ud og lav noget, der ikke er en opgave.",
+      "cta": "Tilbage til min reset"
+    }
+  },
+  "account": {
+    "title": "Konto",
+    "unavailable": {
+      "title": "Konti er ikke slået til her endnu",
+      "body": "Denne udgave af Parent Reset kører uden database. Alt, hvad du gør, gemmes på denne enhed, og det fungerer fint. Konti, historik på tværs af enheder og fællesskabet dukker op, når Supabase er forbundet."
+    },
+    "signedOut": {
+      "title": "Hav dine resets med dig",
+      "body": "En konto gemmer dine resets og alt du bærer på, på tværs af enheder. Du behøver ikke en konto for at bruge appen."
+    },
+    "signedIn": {
+      "title": "Din konto",
+      "body": "Dine resets og alt du bærer på gemmes her og på alle enheder, hvor du logger ind."
+    },
+    "auth": {
+      "modeLabel": "Log ind eller opret en konto",
+      "signIn": {
+        "tab": "Log ind",
+        "submit": "Log ind"
+      },
+      "signUp": {
+        "tab": "Opret konto",
+        "submit": "Opret konto"
+      },
+      "email": "E-mail",
+      "password": "Adgangskode",
+      "passwordHint": "Mindst 8 tegn.",
+      "working": "Et øjeblik…",
+      "privacy": "Vi gemmer din e-mail og dine gemte resets. Intet bliver delt eller solgt.",
+      "checkEmail": {
+        "title": "Tjek din indbakke",
+        "body": "Vi har sendt dig et link til at bekræfte din e-mail. Åbn det på denne enhed for at færdiggøre oprettelsen."
+      },
+      "errors": {
+        "invalid": "Indtast en gyldig e-mail og en adgangskode på mindst 8 tegn.",
+        "credentials": "E-mail og adgangskode passer ikke sammen.",
+        "exists": "Der findes allerede en konto med den e-mail. Prøv at logge ind.",
+        "rateLimited": "For mange forsøg. Vent et minut.",
+        "unavailable": "Konti er ikke tilgængelige i denne installation.",
+        "generic": "Noget gik galt. Prøv igen.",
+        "link": "Login-linket virkede ikke. Bed om et nyt."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "displayName": "Navn i fællesskabet",
+        "displayNameHint": "Vises på dine opslag i stedet for din e-mail. Bland for at få et tilfældigt.",
+        "shuffle": "Bland",
+        "save": "Gem",
+        "saved": "Gemt.",
+        "invalid": "Brug 2 til 40 bogstaver, tal eller mellemrum."
+      },
+      "data": {
+        "title": "Dine data",
+        "body": "Download alt, hvad vi har om dig, eller slet din historik og behold kontoen.",
+        "export": "Download mine data",
+        "deleteHistory": "Slet min historik"
+      },
+      "exportDone": "Dine data er downloadet.",
+      "deleteHistoryConfirm": "Slet alle dine resets og alt du bærer på? Det kan ikke fortrydes.",
+      "deleteHistoryDone": "Historik slettet.",
+      "genericError": "Noget gik galt. Prøv igen.",
+      "signOut": "Log ud",
+      "danger": {
+        "title": "Slet konto",
+        "body": "Fjerner din konto og alt i den, inklusive opslag i fællesskabet. Der er ingen vej tilbage.",
+        "delete": "Slet min konto",
+        "confirm": "Ja, slet det hele",
+        "cancel": "Behold min konto"
+      }
+    },
+    "sync": {
+      "merged": "Flyttede {resets} resets og {items} ting du bærer på fra denne enhed til din konto."
+    }
+  },
+  "history": {
+    "title": "Historik",
+    "subtitle": "Hvordan dagene er gået.",
+    "count": "{count, plural, =0 {Ingen resets endnu.} one {# reset indtil nu.} other {# resets indtil nu.}}",
+    "trend": {
+      "label": "Lettere dage",
+      "chartLabel": "Hvor overvældet du har været i dine seneste resets",
+      "average": "Gennemsnit på det seneste: {value} / 10",
+      "needMore": "Efter et par resets mere kan du se, om dagene bliver lettere.",
+      "lighter": "Lettere end før. Hvad du end gør, så hjælper det.",
+      "heavier": "Tungere end før. Der er meget på lige nu. Det siger ikke noget om dig.",
+      "steady": "Nogenlunde som før.",
+      "frequentAreas": "Oftest i tankerne: {areas}"
+    },
+    "empty": {
+      "title": "Ingen resets endnu",
+      "body": "Din første tager to minutter.",
+      "cta": "Start min reset"
+    },
+    "overwhelm": "Overvældet {value} ud af 10",
+    "completion": "{percent}% af dagens liste er færdig",
+    "open": "Åbn",
+    "delete": "Slet",
+    "guestNote": "Denne historik findes kun på denne enhed.",
+    "guestCta": "Opret en konto for at beholde den."
+  },
+  "community": {
+    "title": "Fællesskab",
+    "subtitle": "Sig det højt, som ellers bliver usagt.",
+    "intro": "Et lille, anonymt sted for forældre. Ingen følgere, ingen endeløse feeds, ingen perfekte familier.",
+    "write": "Skriv et opslag",
+    "anonymousNote": "Opslag viser et tilfældigt navn, aldrig din e-mail.",
+    "categoriesLabel": "Kategorier",
+    "all": "Alle",
+    "categories": {
+      "toddlers": "Småbørn",
+      "school_age": "Skolebørn",
+      "money_stress": "Pengebekymringer",
+      "no_time": "Ingen tid",
+      "relationships": "Parforhold",
+      "dads": "Fædre",
+      "mums": "Mødre",
+      "single_parents": "Eneforældre",
+      "moving": "Flytning",
+      "general": "Generelt"
+    },
+    "support": "{count, plural, =0 {Støt} one {# støtter} other {# støtter}}",
+    "comments": "{count, plural, =0 {Ingen kommentarer endnu} one {# kommentar} other {# kommentarer}}",
+    "back": "Tilbage til fællesskabet",
+    "delete": "Slet opslag",
+    "deleteConfirm": "Slet dette opslag og dets kommentarer?",
+    "unavailable": {
+      "title": "Fællesskabet er ikke slået til her endnu",
+      "body": "Det dukker op, når denne udgave af Parent Reset er forbundet til Supabase. Alt andet virker uden."
+    },
+    "empty": {
+      "title": "Her er tomt endnu",
+      "body": "Vær den første. Selv én ærlig sætning hjælper den næste forælder, der læser den."
+    },
+    "safetyNote": "Hvis et opslag gør dig bekymret for nogens sikkerhed, så bed dem kontakte de lokale nødtjenester. Det her er et sted at tale, ikke en krisehjælp.",
+    "new": {
+      "heading": "Skriv et opslag",
+      "intro": "Hvad er sandt for dig lige nu? Gør det så kort eller så langt, som det skal være.",
+      "category": "Kategori",
+      "title": "Titel",
+      "titlePlaceholder": "Ingen fortalte mig, at det andet år ville blive hårdere",
+      "body": "Dit opslag",
+      "bodyPlaceholder": "Hvad der sker, hvad du har prøvet, hvad du har brug for.",
+      "guidelines": "Vær venlig. Ingen navne på andre, ingen adresser, ingen medicinske råd. Opslag er offentlige.",
+      "posting": "Sender…",
+      "submit": "Slå op"
+    },
+    "comment": {
+      "label": "Svar",
+      "placeholder": "Et par venlige, ærlige ord.",
+      "posting": "Sender…",
+      "submit": "Svar",
+      "empty": "Ingen svar endnu. Dit kan blive det første.",
+      "signInPrompt": "Log ind for at svare og støtte opslag.",
+      "signIn": "Log ind"
+    },
+    "report": {
+      "button": "Anmeld",
+      "reasons": {
+        "spam": "Spam eller reklame",
+        "harmful": "Sårende eller uvenligt",
+        "personal_info": "Deler personlige oplysninger",
+        "other": "Noget andet"
+      },
+      "thanks": "Tak. Vi kigger på det.",
+      "failed": "Anmeldelsen kunne ikke sendes. Prøv igen."
+    },
+    "errors": {
+      "invalid": "Udfyld en titel og en besked.",
+      "titleTooLong": "Titlen er lidt lang. Hold den under 140 tegn.",
+      "bodyTooLong": "Det er lidt langt. Hold det under 4000 tegn.",
+      "tooLong": "Det er lidt langt. Hold det under 2000 tegn.",
+      "rejected": "Vi kunne ikke slå det op. Fjern eventuelle links og prøv igen.",
+      "rateLimited": "Du slår op hurtigt. Vent et par minutter.",
+      "signIn": "Log ind først.",
+      "generic": "Noget gik galt. Prøv igen."
+    }
   }
 }
