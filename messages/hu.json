@@ -18,6 +18,22 @@
     "result": {
       "title": "Az újraindításod – Parent Reset",
       "description": "A rövid mai listád, ami várhat a hétre, és amit elengedhetsz."
+    },
+    "load": {
+      "title": "Családi terhek – Parent Reset",
+      "description": "Egyszerű áttekintés arról, mi foglal helyet a fejedben: gyerekek, pénz, otthon, munka, párkapcsolat és te magad."
+    },
+    "account": {
+      "title": "A fiókod – Parent Reset",
+      "description": "Jelentkezz be, hogy az újraindításaid és a családi terhek minden eszközön megmaradjanak."
+    },
+    "history": {
+      "title": "Az előzményeid – Parent Reset",
+      "description": "Korábbi újraindítások, és hogy könnyebbek lettek-e a napok."
+    },
+    "community": {
+      "title": "Közösség – Parent Reset",
+      "description": "Egy kis, alapból névtelen hely szülőknek, ahol ki lehet mondani, amit máshol nem."
     }
   },
   "common": {
@@ -37,7 +53,20 @@
     "home": "Kezdőlap",
     "startReset": "Kezdem az újraindítást",
     "howItWorks": "Hogyan működik",
-    "menuTitle": "Menü"
+    "menuTitle": "Menü",
+    "familyLoad": "Családi terhek",
+    "community": "Közösség",
+    "history": "Előzmények",
+    "account": "Fiók",
+    "signIn": "Bejelentkezés",
+    "tabs": {
+      "label": "Fő navigáció",
+      "home": "Kezdőlap",
+      "reset": "Reset",
+      "load": "Terhek",
+      "community": "Közösség",
+      "account": "Te"
+    }
   },
   "home": {
     "hero": {
@@ -92,6 +121,25 @@
       "title": "Amikor készen állsz.",
       "body": "Két perc most könnyebbé teheti a nap hátralévő részét.",
       "cta": "Kezdem az újraindítást"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Jó reggelt",
+        "afternoon": "Jó napot",
+        "evening": "Jó estét",
+        "night": "Még fent vagy?"
+      },
+      "title": "Üdv újra. Hol szeretnéd kezdeni?",
+      "todayDone": "Ma már újraindítottál. Szép.",
+      "lastReset": "Utolsó újraindítás: {date}",
+      "progress": "A mai lista {percent}%-a kész",
+      "openLast": "Megnyitom azt az újraindítást",
+      "loadLabel": "Családi terhek",
+      "openItems": "{count, plural, =0 {Most nincs semmi nyitva} one {# nyitott dolog} other {# nyitott dolog}}",
+      "openLoad": "Családi terhek megnyitása",
+      "cta": "Kezdem a mai újraindítást",
+      "ctaAgain": "Újraindítás még egyszer",
+      "history": "Előzmények ({count})"
     }
   },
   "reset": {
@@ -165,7 +213,11 @@
     "dateLabel": "Újraindítás: {date}",
     "today": {
       "label": "Ma",
-      "intro": "Csak ezek. Ha ezekkel megvagy, a nap számított."
+      "intro": "Csak ezek. Ha ezekkel megvagy, a nap számított.",
+      "allDone": "Minden kész. Ez volt a mai nap.",
+      "markDone": "Késznek jelölöm",
+      "undo": "Mégsem kész",
+      "focus": "Egyesével csinálom"
     },
     "thisWeek": {
       "label": "Ezen a héten",
@@ -183,7 +235,12 @@
       "body": "Lehet, hogy másik eszközön készült, vagy törölték ebből a böngészőből.",
       "cta": "Új újraindítás"
     },
-    "disclaimer": "A Parent Reset gyakorlati tervezőeszköz, nem orvosi vagy terápiás tanács."
+    "disclaimer": "A Parent Reset gyakorlati tervezőeszköz, nem orvosi vagy terápiás tanács.",
+    "addToLoad": "Hozzáadás a családi terhekhez",
+    "addedShort": "Hozzáadva",
+    "addedToLoad": "Hozzáadva ide: {area}",
+    "goToLoad": "Családi terhek megnyitása",
+    "savedToAccount": "Elmentve a fiókodba."
   },
   "planner": {
     "summary": {
@@ -247,5 +304,260 @@
     "title": "Ez az oldal nem létezik",
     "body": "A link lehet, hogy régi vagy elgépelt.",
     "cta": "Ugrás a kezdőlapra"
+  },
+  "load": {
+    "title": "Családi terhek",
+    "subtitle": "Ami helyet foglal a fejedben, területenként. Add hozzá, pipáld ki, vagy told át holnapra.",
+    "summary": "{count, plural, =0 {Most nincs semmi nyitva.} one {# nyitott dolog az összes területen.} other {# nyitott dolog az összes területen.}}",
+    "categories": {
+      "kids": "Gyerekek",
+      "money": "Pénz",
+      "home": "Otthon",
+      "work": "Munka",
+      "relationship": "Párkapcsolat",
+      "me": "Én"
+    },
+    "levels": {
+      "clear": "Tiszta",
+      "light": "Könnyű",
+      "busy": "Sűrű",
+      "heavy": "Nehéz"
+    },
+    "openCount": "{count, plural, =0 {Nincs nyitott} one {# nyitott} other {# nyitott}}",
+    "selectCategory": "Válassz területet",
+    "add": {
+      "label": "Hozzáadás ide: {category}",
+      "placeholder": "Mi jár a fejedben?",
+      "button": "Hozzáadás",
+      "hint": "Rövid is jó. Pár szó többet ér egy bekezdésnél."
+    },
+    "examples": {
+      "kids": "Új cipő, iskolai befizetés, fogorvosi időpont",
+      "money": "Villanyszámla, bevásárlás, autóbiztosítás",
+      "home": "Mosás, takarítás, a rossz lámpa",
+      "work": "Válasz a főnöknek, jelenléti ív, a csütörtöki megbeszélés",
+      "relationship": "Egy közös este megtervezése, a beszélgetés a hétvégékről",
+      "me": "Alvás, egy séta, felhívni egy barátot"
+    },
+    "empty": {
+      "title": "Még nincs itt semmi",
+      "body": "Írd be, ami folyton visszatér. Például: {examples}."
+    },
+    "actions": {
+      "done": "Kész",
+      "undo": "Visszavonás",
+      "postpone": "Később",
+      "bringBack": "Visszahozás",
+      "move": "Áthelyezés",
+      "remove": "Törlés",
+      "clearDone": "Készek törlése"
+    },
+    "sections": {
+      "open": "Nyitott",
+      "postponed": "Elhalasztva",
+      "done": "Kész"
+    },
+    "postponedUntil": "Visszatér: {date}",
+    "completedOn": "Kész: {date}",
+    "errors": {
+      "required": "Előbb írj be valamit.",
+      "tooLong": "Kérlek, maradj {max} karakter alatt."
+    },
+    "savedLocally": "Ezen az eszközön mentve. Később fiókot hozhatsz létre, hogy más eszközökön is meglegyen.",
+    "notProjectTool": "Ez nem feladatkezelő rendszer. Egy hely, ahová leteheted a dolgokat, hogy ne kavarogjanak tovább a fejedben.",
+    "savedToAccount": "Elmentve a fiókodba. Elérhető minden eszközön, ahol bejelentkezel."
+  },
+  "focus": {
+    "title": "Egyszerre csak egyet",
+    "close": "Bezárás",
+    "progress": "{done} / {total} kész",
+    "next": "Most csak ez:",
+    "hint": "Semmi más nem létezik, amíg ez nincs kész vagy kihagyva.",
+    "skip": "Most kihagyom",
+    "done": "Kész",
+    "allDone": {
+      "title": "A mai nap el van intézve.",
+      "body": "Minden más várhat. Csinálj valamit, ami nem feladat.",
+      "cta": "Vissza az újraindításomhoz"
+    }
+  },
+  "account": {
+    "title": "Fiók",
+    "unavailable": {
+      "title": "A fiókok itt még nincsenek bekapcsolva",
+      "body": "A Parent Reset ezen példánya adatbázis nélkül fut. Minden, amit csinálsz, ezen az eszközön mentődik, és ez így is jól működik. A fiókok, az eszközök közötti előzmények és a közösség akkor jelennek meg, amikor a Supabase csatlakoztatva van."
+    },
+    "signedOut": {
+      "title": "Vidd magaddal az újraindításaidat",
+      "body": "A fiók elmenti az újraindításaidat és a családi terheket minden eszközre. Az app használatához nem kell fiók."
+    },
+    "signedIn": {
+      "title": "A fiókod",
+      "body": "Az újraindításaid és a családi terhek itt és minden eszközön elmentődnek, ahol bejelentkezel."
+    },
+    "auth": {
+      "modeLabel": "Bejelentkezés vagy fiók létrehozása",
+      "signIn": {
+        "tab": "Bejelentkezés",
+        "submit": "Bejelentkezés"
+      },
+      "signUp": {
+        "tab": "Fiók létrehozása",
+        "submit": "Fiók létrehozása"
+      },
+      "email": "E-mail",
+      "password": "Jelszó",
+      "passwordHint": "Legalább 8 karakter.",
+      "working": "Egy pillanat…",
+      "privacy": "Az e-mail-címedet és a mentett újraindításaidat tároljuk. Semmit nem osztunk meg és nem adunk el.",
+      "checkEmail": {
+        "title": "Nézd meg a postaládádat",
+        "body": "Küldtünk egy linket az e-mail-címed megerősítéséhez. Nyisd meg ezen az eszközön a regisztráció befejezéséhez."
+      },
+      "errors": {
+        "invalid": "Kérlek, adj meg egy érvényes e-mail-címet és egy legalább 8 karakteres jelszót.",
+        "credentials": "Ez az e-mail-cím és jelszó nem illik össze.",
+        "exists": "Ezzel az e-mail-címmel már van fiók. Próbálj bejelentkezni.",
+        "rateLimited": "Túl sok próbálkozás. Kérlek, várj egy percet.",
+        "unavailable": "Ezen a telepítésen nem érhetők el fiókok.",
+        "generic": "Valami hiba történt. Kérlek, próbáld újra.",
+        "link": "Ez a bejelentkezési link nem működött. Kérlek, kérj újat."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "displayName": "Közösségi név",
+        "displayNameHint": "Ez jelenik meg a közösségi bejegyzéseiden az e-mail-címed helyett. Keverj egy véletlenszerűt.",
+        "shuffle": "Keverés",
+        "save": "Mentés",
+        "saved": "Elmentve.",
+        "invalid": "2–40 betűt, számot vagy szóközt használj."
+      },
+      "data": {
+        "title": "Az adataid",
+        "body": "Töltsd le mindent, amit rólad tárolunk, vagy töröld az előzményeidet a fiók megtartásával.",
+        "export": "Adataim letöltése",
+        "deleteHistory": "Előzményeim törlése"
+      },
+      "exportDone": "Az adataid letöltődtek.",
+      "deleteHistoryConfirm": "Törlöd az összes újraindításodat és a családi terhek elemeit? Ezt nem lehet visszavonni.",
+      "deleteHistoryDone": "Előzmények törölve.",
+      "genericError": "Valami hiba történt. Kérlek, próbáld újra.",
+      "signOut": "Kijelentkezés",
+      "danger": {
+        "title": "Fiók törlése",
+        "body": "Eltávolítja a fiókodat és mindent, ami benne van, a közösségi bejegyzéseket is. Nincs visszaút.",
+        "delete": "Fiókom törlése",
+        "confirm": "Igen, törölj mindent",
+        "cancel": "Megtartom a fiókom"
+      }
+    },
+    "sync": {
+      "merged": "{resets} újraindítás és {items} elem a családi terhekből átkerült erről az eszközről a fiókodba."
+    }
+  },
+  "history": {
+    "title": "Előzmények",
+    "subtitle": "Hogy mennek a napok.",
+    "count": "{count, plural, =0 {Még nincs újraindítás.} one {Eddig # újraindítás.} other {Eddig # újraindítás.}}",
+    "trend": {
+      "label": "Könnyebb napok",
+      "chartLabel": "Túlterheltség a legutóbbi újraindításaidban",
+      "average": "Friss átlag: {value} / 10",
+      "needMore": "Néhány további újraindítás után látni fogod, könnyebbek lettek-e a napok.",
+      "lighter": "Könnyebb, mint korábban. Bármit is csinálsz, működik.",
+      "heavier": "Nehezebb, mint korábban. Sok van most rajtad. Ez nem ítélet rólad.",
+      "steady": "Nagyjából ugyanolyan, mint korábban.",
+      "frequentAreas": "Ami a legtöbbször jár a fejedben: {areas}"
+    },
+    "empty": {
+      "title": "Még nincs újraindítás",
+      "body": "Az első két percet vesz igénybe.",
+      "cta": "Kezdem az újraindítást"
+    },
+    "overwhelm": "Túlterheltség: {value} a 10-ből",
+    "completion": "A mai lista {percent}%-a kész",
+    "open": "Megnyitás",
+    "delete": "Törlés",
+    "guestNote": "Ezek az előzmények csak ezen az eszközön élnek.",
+    "guestCta": "Hozz létre fiókot, hogy megmaradjanak."
+  },
+  "community": {
+    "title": "Közösség",
+    "subtitle": "Mondd ki, amit máshol nem.",
+    "intro": "Egy kis, alapból névtelen hely szülőknek. Nincsenek követők, nincsenek végtelen hírfolyamok, nincsenek tökéletes családok.",
+    "write": "Írok egy bejegyzést",
+    "anonymousNote": "A bejegyzéseken egy véletlen név jelenik meg, soha nem az e-mail-címed.",
+    "categoriesLabel": "Kategóriák",
+    "all": "Mind",
+    "categories": {
+      "toddlers": "Kicsik",
+      "school_age": "Iskolások",
+      "money_stress": "Pénzgondok",
+      "no_time": "Nincs idő",
+      "relationships": "Párkapcsolat",
+      "dads": "Apák",
+      "mums": "Anyák",
+      "single_parents": "Egyedülálló szülők",
+      "moving": "Költözés",
+      "general": "Általános"
+    },
+    "support": "{count, plural, =0 {Támogatom} one {# támogatás} other {# támogatás}}",
+    "comments": "{count, plural, =0 {Még nincs hozzászólás} one {# hozzászólás} other {# hozzászólás}}",
+    "back": "Vissza a közösséghez",
+    "delete": "Bejegyzés törlése",
+    "deleteConfirm": "Törlöd ezt a bejegyzést a hozzászólásaival együtt?",
+    "unavailable": {
+      "title": "A közösség itt még nincs bekapcsolva",
+      "body": "Akkor jelenik meg, amikor a Parent Reset ezen példánya csatlakozik a Supabase-hez. Minden más működik nélküle is."
+    },
+    "empty": {
+      "title": "Itt még nincs semmi",
+      "body": "Legyél az első. Már egy őszinte mondat is segít a következő szülőnek, aki elolvassa."
+    },
+    "safetyNote": "Ha egy bejegyzés miatt aggódsz valaki biztonságáért, kérd meg, hogy hívja a helyi segélyhívót. Ez egy hely a beszélgetésre, nem krízisszolgálat.",
+    "new": {
+      "heading": "Írok egy bejegyzést",
+      "intro": "Mi igaz rád most? Legyen olyan rövid vagy hosszú, amilyennek lennie kell.",
+      "category": "Kategória",
+      "title": "Cím",
+      "titlePlaceholder": "Senki nem mondta, hogy a második év nehezebb lesz",
+      "body": "A bejegyzésed",
+      "bodyPlaceholder": "Mi történik, mit próbáltál már, mire lenne szükséged.",
+      "guidelines": "Légy kedves. Ne írj mások nevét, címeket, orvosi tanácsokat. A bejegyzések nyilvánosak.",
+      "posting": "Közzététel…",
+      "submit": "Közzététel"
+    },
+    "comment": {
+      "label": "Válasz",
+      "placeholder": "Néhány kedves, őszinte szó.",
+      "posting": "Küldés…",
+      "submit": "Válasz",
+      "empty": "Még nincs válasz. A tiéd lehet az első.",
+      "signInPrompt": "Jelentkezz be, hogy válaszolhass és támogathass bejegyzéseket.",
+      "signIn": "Bejelentkezés"
+    },
+    "report": {
+      "button": "Jelentés",
+      "reasons": {
+        "spam": "Spam vagy reklám",
+        "harmful": "Bántó vagy káros",
+        "personal_info": "Személyes adatokat oszt meg",
+        "other": "Valami más"
+      },
+      "thanks": "Köszönjük. Megnézzük.",
+      "failed": "Nem sikerült elküldeni a jelentést. Kérlek, próbáld újra."
+    },
+    "errors": {
+      "invalid": "Kérlek, adj meg címet és üzenetet.",
+      "titleTooLong": "A cím kicsit hosszú. Kérlek, maradj 140 karakter alatt.",
+      "bodyTooLong": "Ez kicsit hosszú. Kérlek, maradj 4000 karakter alatt.",
+      "tooLong": "Ez kicsit hosszú. Kérlek, maradj 2000 karakter alatt.",
+      "rejected": "Ezt nem tudtuk közzétenni. Kérlek, távolítsd el a linkeket, és próbáld újra.",
+      "rateLimited": "Gyorsan posztolsz. Kérlek, várj néhány percet.",
+      "signIn": "Kérlek, először jelentkezz be.",
+      "generic": "Valami hiba történt. Kérlek, próbáld újra."
+    }
   }
 }

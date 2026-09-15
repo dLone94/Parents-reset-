@@ -18,6 +18,22 @@
     "result": {
       "title": "Votre reset – Parent Reset",
       "description": "Votre courte liste pour aujourd'hui, ce qui peut attendre cette semaine et ce que vous pouvez laisser de côté."
+    },
+    "load": {
+      "title": "Charge familiale – Parent Reset",
+      "description": "Une vue simple de ce qui prend de la place dans votre tête : enfants, argent, maison, travail, couple et vous."
+    },
+    "account": {
+      "title": "Votre compte – Parent Reset",
+      "description": "Connectez-vous pour garder vos resets et votre charge familiale sur tous vos appareils."
+    },
+    "history": {
+      "title": "Votre historique – Parent Reset",
+      "description": "Vos resets précédents et si les journées deviennent plus légères."
+    },
+    "community": {
+      "title": "Communauté – Parent Reset",
+      "description": "Un petit espace, anonyme avant tout, où les parents peuvent dire tout haut ce qu'ils gardent pour eux."
     }
   },
   "common": {
@@ -37,7 +53,20 @@
     "home": "Accueil",
     "startReset": "Commencer mon reset",
     "howItWorks": "Comment ça marche",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Charge familiale",
+    "community": "Communauté",
+    "history": "Historique",
+    "account": "Compte",
+    "signIn": "Se connecter",
+    "tabs": {
+      "label": "Navigation principale",
+      "home": "Accueil",
+      "reset": "Reset",
+      "load": "Charge",
+      "community": "Entraide",
+      "account": "Vous"
+    }
   },
   "home": {
     "hero": {
@@ -92,6 +121,25 @@
       "title": "Quand vous voulez.",
       "body": "Deux minutes maintenant peuvent rendre le reste de la journée plus léger.",
       "cta": "Commencer mon reset"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Bonjour",
+        "afternoon": "Bon après-midi",
+        "evening": "Bonsoir",
+        "night": "Toujours debout ?"
+      },
+      "title": "Vous revoilà. Par où voulez-vous commencer ?",
+      "todayDone": "Vous avez déjà fait votre reset aujourd'hui. Bien joué.",
+      "lastReset": "Dernier reset : {date}",
+      "progress": "{percent}% de la liste du jour terminée",
+      "openLast": "Ouvrir ce reset",
+      "loadLabel": "Charge familiale",
+      "openItems": "{count, plural, =0 {Rien en cours pour l'instant} one {# chose en cours} other {# choses en cours}}",
+      "openLoad": "Ouvrir la charge familiale",
+      "cta": "Commencer le reset du jour",
+      "ctaAgain": "Refaire un reset",
+      "history": "Historique ({count})"
     }
   },
   "reset": {
@@ -165,7 +213,11 @@
     "dateLabel": "Reset du {date}",
     "today": {
       "label": "Aujourd'hui",
-      "intro": "Seulement ça. Si vous les terminez, la journée a compté."
+      "intro": "Seulement ça. Si vous les terminez, la journée a compté.",
+      "allDone": "Tout est fait. C'était ça, la journée.",
+      "markDone": "Marquer comme fait",
+      "undo": "Marquer comme non fait",
+      "focus": "Une chose à la fois"
     },
     "thisWeek": {
       "label": "Cette semaine",
@@ -183,7 +235,12 @@
       "body": "Il a peut-être été créé sur un autre appareil ou effacé de ce navigateur.",
       "cta": "Commencer un nouveau reset"
     },
-    "disclaimer": "Parent Reset est un outil pratique de planification, pas un avis médical ou thérapeutique."
+    "disclaimer": "Parent Reset est un outil pratique de planification, pas un avis médical ou thérapeutique.",
+    "addToLoad": "Ajouter à la charge familiale",
+    "addedShort": "Ajouté",
+    "addedToLoad": "Ajouté à {area}",
+    "goToLoad": "Ouvrir la charge familiale",
+    "savedToAccount": "Enregistré dans votre compte."
   },
   "planner": {
     "summary": {
@@ -247,5 +304,260 @@
     "title": "Cette page n'existe pas",
     "body": "Le lien est peut-être ancien ou mal écrit.",
     "cta": "Retour au début"
+  },
+  "load": {
+    "title": "Charge familiale",
+    "subtitle": "Ce qui prend de la place dans votre tête, par domaine. Ajoutez-le, terminez-le ou remettez-le à demain.",
+    "summary": "{count, plural, =0 {Rien d'ouvert pour le moment.} one {# chose ouverte, tous domaines confondus.} other {# choses ouvertes, tous domaines confondus.}}",
+    "categories": {
+      "kids": "Enfants",
+      "money": "Argent",
+      "home": "Maison",
+      "work": "Travail",
+      "relationship": "Couple",
+      "me": "Moi"
+    },
+    "levels": {
+      "clear": "Dégagé",
+      "light": "Léger",
+      "busy": "Chargé",
+      "heavy": "Lourd"
+    },
+    "openCount": "{count, plural, =0 {Rien d'ouvert} one {# ouverte} other {# ouvertes}}",
+    "selectCategory": "Choisissez un domaine",
+    "add": {
+      "label": "Ajouter à {category}",
+      "placeholder": "Qu'est-ce qui vous trotte dans la tête ?",
+      "button": "Ajouter",
+      "hint": "Court, c'est très bien. Quelques mots valent mieux qu'un paragraphe."
+    },
+    "examples": {
+      "kids": "Nouvelles chaussures, paiement de l'école, rendez-vous chez le dentiste",
+      "money": "Facture d'électricité, courses, assurance auto",
+      "home": "Lessive, ménage, la lampe cassée",
+      "work": "Répondre au manager, feuille d'heures, la réunion de jeudi",
+      "relationship": "Prévoir une soirée à deux, la discussion sur les week-ends",
+      "me": "Dormir, une promenade, appeler un ami"
+    },
+    "empty": {
+      "title": "Rien ici pour l'instant",
+      "body": "Ajoutez tout ce qui continue de tourner. Par exemple : {examples}."
+    },
+    "actions": {
+      "done": "Fait",
+      "undo": "Annuler",
+      "postpone": "Plus tard",
+      "bringBack": "Ramener",
+      "move": "Déplacer vers",
+      "remove": "Supprimer",
+      "clearDone": "Effacer le fait"
+    },
+    "sections": {
+      "open": "En cours",
+      "postponed": "Remis à plus tard",
+      "done": "Fait"
+    },
+    "postponedUntil": "De retour le {date}",
+    "completedOn": "Fait le {date}",
+    "errors": {
+      "required": "Écrivez d'abord quelque chose.",
+      "tooLong": "Merci de rester sous {max} caractères."
+    },
+    "savedLocally": "Enregistré sur cet appareil. Créez un compte plus tard pour le retrouver sur tous vos appareils.",
+    "notProjectTool": "Ce n'est pas un système de tâches. C'est un endroit où poser les choses pour qu'elles arrêtent de tourner.",
+    "savedToAccount": "Enregistré dans votre compte. Disponible sur chaque appareil où vous vous connectez."
+  },
+  "focus": {
+    "title": "Une chose à la fois",
+    "close": "Fermer",
+    "progress": "{done} sur {total} fait",
+    "next": "Là, tout de suite, seulement ceci :",
+    "hint": "Rien d'autre n'existe tant que celle-ci n'est pas faite ou passée.",
+    "skip": "Plus tard",
+    "done": "Fait",
+    "allDone": {
+      "title": "Voilà, la journée est gérée.",
+      "body": "Tout le reste peut attendre. Allez faire quelque chose qui n'est pas une tâche.",
+      "cta": "Retour à mon reset"
+    }
+  },
+  "account": {
+    "title": "Compte",
+    "unavailable": {
+      "title": "Les comptes ne sont pas encore activés ici",
+      "body": "Cette version de Parent Reset fonctionne sans base de données. Tout ce que vous faites est enregistré sur cet appareil, et ça marche très bien. Les comptes, l'historique entre appareils et la communauté apparaîtront une fois Supabase connecté."
+    },
+    "signedOut": {
+      "title": "Gardez vos resets avec vous",
+      "body": "Un compte enregistre vos resets et votre charge familiale sur tous vos appareils. Aucun compte n'est nécessaire pour utiliser l'app."
+    },
+    "signedIn": {
+      "title": "Votre compte",
+      "body": "Vos resets et votre charge familiale sont enregistrés ici et sur chaque appareil où vous vous connectez."
+    },
+    "auth": {
+      "modeLabel": "Se connecter ou créer un compte",
+      "signIn": {
+        "tab": "Se connecter",
+        "submit": "Se connecter"
+      },
+      "signUp": {
+        "tab": "Créer un compte",
+        "submit": "Créer un compte"
+      },
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "passwordHint": "Au moins 8 caractères.",
+      "working": "Un instant…",
+      "privacy": "Nous conservons votre e-mail et vos resets enregistrés. Rien n'est partagé ni vendu.",
+      "checkEmail": {
+        "title": "Regardez votre boîte mail",
+        "body": "Nous vous avons envoyé un lien pour confirmer votre e-mail. Ouvrez-le sur cet appareil pour terminer l'inscription."
+      },
+      "errors": {
+        "invalid": "Veuillez saisir un e-mail valide et un mot de passe d'au moins 8 caractères.",
+        "credentials": "Cet e-mail et ce mot de passe ne correspondent pas.",
+        "exists": "Un compte existe déjà avec cet e-mail. Essayez de vous connecter.",
+        "rateLimited": "Trop de tentatives. Veuillez patienter une minute.",
+        "unavailable": "Les comptes ne sont pas disponibles sur cette version.",
+        "generic": "Quelque chose n'a pas fonctionné. Veuillez réessayer.",
+        "link": "Ce lien de connexion n'a pas fonctionné. Veuillez en demander un nouveau."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "displayName": "Nom dans la communauté",
+        "displayNameHint": "Affiché sur vos publications à la place de votre e-mail. Mélangez pour en obtenir un au hasard.",
+        "shuffle": "Mélanger",
+        "save": "Enregistrer",
+        "saved": "Enregistré.",
+        "invalid": "Utilisez de 2 à 40 lettres, chiffres ou espaces."
+      },
+      "data": {
+        "title": "Vos données",
+        "body": "Téléchargez tout ce que nous conservons à votre sujet, ou effacez votre historique en gardant le compte.",
+        "export": "Télécharger mes données",
+        "deleteHistory": "Supprimer mon historique"
+      },
+      "exportDone": "Vos données ont été téléchargées.",
+      "deleteHistoryConfirm": "Supprimer tous vos resets et les éléments de votre charge familiale ? Cette action est définitive.",
+      "deleteHistoryDone": "Historique supprimé.",
+      "genericError": "Quelque chose n'a pas fonctionné. Veuillez réessayer.",
+      "signOut": "Se déconnecter",
+      "danger": {
+        "title": "Supprimer le compte",
+        "body": "Supprime votre compte et tout ce qu'il contient, y compris vos publications dans la communauté. Il n'y a pas de retour en arrière.",
+        "delete": "Supprimer mon compte",
+        "confirm": "Oui, tout supprimer",
+        "cancel": "Garder mon compte"
+      }
+    },
+    "sync": {
+      "merged": "{resets} resets et {items} éléments de charge familiale ont été transférés de cet appareil vers votre compte."
+    }
+  },
+  "history": {
+    "title": "Historique",
+    "subtitle": "Comment se passent les journées.",
+    "count": "{count, plural, =0 {Aucun reset pour l'instant.} one {# reset jusqu'ici.} other {# resets jusqu'ici.}}",
+    "trend": {
+      "label": "Journées plus légères",
+      "chartLabel": "Surcharge au fil de vos derniers resets",
+      "average": "Moyenne récente : {value} / 10",
+      "needMore": "Après quelques resets de plus, vous verrez si les journées deviennent plus légères.",
+      "lighter": "Plus léger qu'avant. Quoi que vous fassiez, ça aide.",
+      "heavier": "Plus lourd qu'avant. Il y a beaucoup en ce moment. Ce n'est pas un jugement sur vous.",
+      "steady": "À peu près comme avant.",
+      "frequentAreas": "Ce qui revient le plus souvent : {areas}"
+    },
+    "empty": {
+      "title": "Aucun reset pour l'instant",
+      "body": "Le premier prend deux minutes.",
+      "cta": "Commencer mon reset"
+    },
+    "overwhelm": "Surcharge {value} sur 10",
+    "completion": "{percent}% de la liste du jour terminée",
+    "open": "Ouvrir",
+    "delete": "Supprimer",
+    "guestNote": "Cet historique n'existe que sur cet appareil.",
+    "guestCta": "Créez un compte pour le conserver."
+  },
+  "community": {
+    "title": "Communauté",
+    "subtitle": "Dites tout haut ce que vous gardez pour vous.",
+    "intro": "Un petit espace, anonyme avant tout, pour les parents. Pas d'abonnés, pas de fil sans fin, pas de familles parfaites.",
+    "write": "Écrire une publication",
+    "anonymousNote": "Les publications affichent un nom aléatoire, jamais votre e-mail.",
+    "categoriesLabel": "Catégories",
+    "all": "Tout",
+    "categories": {
+      "toddlers": "Tout-petits",
+      "school_age": "Enfants scolarisés",
+      "money_stress": "Stress financier",
+      "no_time": "Pas le temps",
+      "relationships": "Couple",
+      "dads": "Papas",
+      "mums": "Mamans",
+      "single_parents": "Parents solo",
+      "moving": "Déménagement",
+      "general": "Général"
+    },
+    "support": "{count, plural, =0 {Soutenir} one {# soutien} other {# soutiens}}",
+    "comments": "{count, plural, =0 {Pas encore de commentaire} one {# commentaire} other {# commentaires}}",
+    "back": "Retour à la communauté",
+    "delete": "Supprimer la publication",
+    "deleteConfirm": "Supprimer cette publication et ses commentaires ?",
+    "unavailable": {
+      "title": "La communauté n'est pas encore activée ici",
+      "body": "Elle apparaîtra une fois cette version de Parent Reset connectée à Supabase. Tout le reste fonctionne sans."
+    },
+    "empty": {
+      "title": "Rien ici pour l'instant",
+      "body": "Lancez-vous. Même une seule phrase honnête aide le prochain parent qui la lira."
+    },
+    "safetyNote": "Si une publication vous inquiète pour la sécurité de quelqu'un, dites-lui de contacter les services d'urgence locaux. C'est un endroit pour parler, pas un service d'urgence.",
+    "new": {
+      "heading": "Écrire une publication",
+      "intro": "Qu'est-ce qui est vrai pour vous en ce moment ? Aussi court ou aussi long que nécessaire.",
+      "category": "Catégorie",
+      "title": "Titre",
+      "titlePlaceholder": "Personne ne m'avait dit que la deuxième année serait plus dure",
+      "body": "Votre publication",
+      "bodyPlaceholder": "Ce qui se passe, ce que vous avez essayé, ce dont vous avez besoin.",
+      "guidelines": "Avec bienveillance. Pas de noms d'autres personnes, pas d'adresses, pas de conseils médicaux. Les publications sont publiques.",
+      "posting": "Publication…",
+      "submit": "Publier"
+    },
+    "comment": {
+      "label": "Répondre",
+      "placeholder": "Quelques mots gentils et sincères.",
+      "posting": "Envoi…",
+      "submit": "Répondre",
+      "empty": "Pas encore de réponse. La vôtre pourrait être la première.",
+      "signInPrompt": "Connectez-vous pour répondre et soutenir des publications.",
+      "signIn": "Se connecter"
+    },
+    "report": {
+      "button": "Signaler",
+      "reasons": {
+        "spam": "Spam ou publicité",
+        "harmful": "Blessant ou malveillant",
+        "personal_info": "Partage des informations personnelles",
+        "other": "Autre chose"
+      },
+      "thanks": "Merci. Nous allons regarder.",
+      "failed": "Impossible d'envoyer le signalement. Veuillez réessayer."
+    },
+    "errors": {
+      "invalid": "Veuillez renseigner un titre et un message.",
+      "titleTooLong": "Le titre est un peu long. Restez sous 140 caractères.",
+      "bodyTooLong": "C'est un peu long. Restez sous 4000 caractères.",
+      "tooLong": "C'est un peu long. Restez sous 2000 caractères.",
+      "rejected": "Nous n'avons pas pu publier ceci. Retirez les liens et réessayez.",
+      "rateLimited": "Vous publiez vite. Veuillez patienter quelques minutes.",
+      "signIn": "Veuillez d'abord vous connecter.",
+      "generic": "Quelque chose n'a pas fonctionné. Veuillez réessayer."
+    }
   }
 }

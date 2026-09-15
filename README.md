@@ -25,8 +25,33 @@ Done in this milestone:
 - Tests for the planner, validation, persistence, locale handling, formatting
   and the guest reset flow
 
-Not yet built (waiting for approval): Family Load, Community, accounts and
-history.
+## Status: Milestone 2A (Family Load)
+
+- `/load` page: six areas (Kids, Money, Home, Work, Relationship, Me), each
+  with a load level derived from its open items
+- Add an item, mark it done, push it to tomorrow ("Later"), bring it back,
+  move it to another area, clear done items
+- Guest persistence on the device via `LoadRepository`; a Supabase
+  implementation is ready for accounts
+- Fully translated in all 26 locales (machine-generated, unreviewed)
+
+## Status: Milestone 3 (accounts, history, community, polish)
+
+- **Accounts** with Supabase Auth: email sign-up, sign-in, sign-out,
+  community name, data export, delete history, delete account
+- **Cloud sync**: resets and Family Load live in the account when signed in.
+  On the first sign-in on a device, everything saved locally is merged in.
+- **History** with a "lighter days" trend and completion of each day's list
+- **Focus mode** on the result page: one thing at a time, full screen
+- **Tickable Today items** and one-tap "add to family load" from the plan
+- **Welcome back** hub on the home page for returning parents
+- **Community**: anonymous-first posts, comments, Support, reporting, ten
+  categories, guest-readable, posting needs an account
+- App-style bottom tab bar on phones, installable (web app manifest + icons)
+
+Everything above degrades gracefully: without Supabase the app is fully
+usable as a guest, and the account and community pages explain why they are
+not available on that deployment.
 
 ## Run it
 
@@ -51,8 +76,9 @@ Other commands:
 | `npm run i18n:status` | Translation coverage and review status        |
 | `npm run screenshots` | Playwright screenshots (app must be running)  |
 
-No environment variables are required for Milestone 1. Copy `.env.example` to
-`.env.local` when you set up Supabase (see `supabase/README.md`).
+No environment variables are required to run as a guest. Accounts, history
+across devices and the community need Supabase: copy `.env.example` to
+`.env.local` and follow `supabase/README.md`.
 
 ## Architecture
 
@@ -64,15 +90,30 @@ src/
       page.tsx          Landing page
       reset/page.tsx    Reset flow
       reset/[id]/       Result page (reads the saved reset on the device)
+      load/page.tsx     Family Load
+      history/          Previous resets and trend
+      account/          Sign in / sign up / settings
+      community/        List, new post, post detail
+    api/auth/callback   Supabase email-confirmation callback
+    manifest.ts         PWA manifest
     robots.ts, sitemap.ts
   components/
     ui/                 Button, Card, Textarea, OptionButton, ProgressBar...
     layout/             Header (mobile sheet), Footer, LanguageSwitcher
   features/
-    landing/            Landing page sections
+    account/            Auth actions, schema, pseudonyms, forms, settings
+    community/          Queries (server), actions, schema, components
+    history/            Summary maths and the history view
+    landing/            Landing page sections + Welcome-back hub
+    load/
+      logic.ts          Load score, levels, postponed-until behaviour
+      schema.ts         Zod validation for item titles
+      useFamilyLoad.ts  State layer over LoadRepository
+      components/       FamilyLoad, CategoryCard, LoadMeter, AddItemForm, LoadItemRow
     reset/
       planner/          ResetPlanner interface + DeterministicResetPlanner
-      components/       ResetFlow, steps, ResultView, SafetyNotice
+      components/       ResetFlow, steps, ResultView, FocusMode, SafetyNotice
+      loadBridge.ts     Maps plan items onto Family Load areas
       actions.ts        Server action: validation, rate limit, moderation, plan
       schema.ts         Zod schema (character limits count code points)
       safety.ts         Conservative danger-phrase detection
@@ -85,12 +126,14 @@ src/
     messages.ts         mergeMessages / findMissingKeys
   lib/
     intl/format.ts      Intl date, number and currency helpers
+    supabase/           env, browser/server clients, session refresh, current user
     rate-limit.ts       In-memory limiter with a documented upgrade path
     moderation.ts       Moderation hook used by server actions
     seo.ts              Canonical + hreflang builder
     supabase/           Browser and server clients (null when not configured)
   services/
-    persistence/        ResetRepository interface, Local and Supabase impls
+    persistence/        Repository interfaces, Local and Supabase impls,
+                        PersistenceProvider (guest vs account, local merge)
   types/                Shared domain types
 messages/               One JSON file per locale (en.json is the source)
 supabase/migrations/    SQL schema with RLS
@@ -157,3 +200,40 @@ The app is not a medical or therapy service and says so. If free text
 suggests immediate danger, the result page shows a generic safety pathway
 (local emergency services, a trusted person, crisis support) without inventing
 country-specific numbers. Ordinary stress is never medicalised.
+
+## Family Load
+
+Intentionally lightweight: an item is a title, an area and a status. There
+are no due dates, priorities, assignees or projects.
+
+- **Load level** per area is derived, never stored: open items count 1,
+  postponed items count 0.5. 0 = clear, up to 2 = light, up to 4 = busy,
+  above = heavy.
+- **Later** sets `postponedUntil` to 24 hours ahead. When that time passes the
+  item shows as open again without any background job; the UI derives the
+  effective status at render time.
+- **Done** items stay visible in a "Done" group with undo, and can be cleared
+  per area.
+- **Move** uses a native select so it works one-handed on any phone.
+
+## Accounts and sync
+
+- Guests: everything in localStorage, nothing leaves the device.
+- Signed in: `PersistenceProvider` swaps the repositories for Supabase-backed
+  ones. Row Level Security keeps every user inside their own rows.
+- First sign-in on a device merges local resets and load items into the
+  account once (tracked per user id in localStorage) and shows a toast.
+- Deleting history removes resets and load items. Deleting the account also
+  removes community content and the profile; the auth user itself is removed
+  when `SUPABASE_SERVICE_ROLE_KEY` is set on the server, otherwise it can be
+  deleted from the Supabase dashboard.
+- Data export is a JSON download built client-side from the repositories.
+
+## Community
+
+Public to read, account required to post, comment, support or report. Posts
+carry the author's community name at posting time, never the email. Text is
+stored exactly as written in whatever language the parent used. Server
+actions validate with Zod, apply per-user rate limits and the moderation
+hook, and RLS enforces ownership. Reports land in `community_reports` for a
+future moderation view.

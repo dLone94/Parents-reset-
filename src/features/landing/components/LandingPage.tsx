@@ -3,12 +3,14 @@ import { buttonClassName } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
+import { WelcomeBack } from "./WelcomeBack";
 
 export function LandingPage() {
   const t = useTranslations("home");
 
   return (
     <>
+      <WelcomeBack />
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div

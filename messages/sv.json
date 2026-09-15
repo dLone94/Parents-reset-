@@ -18,6 +18,22 @@
     "result": {
       "title": "Din reset – Parent Reset",
       "description": "Din korta lista för i dag, vad som kan vänta till den här veckan och vad du kan släppa."
+    },
+    "load": {
+      "title": "Allt du bär på – Parent Reset",
+      "description": "En enkel överblick över vad som tar plats i huvudet: barn, pengar, hem, jobb, relation och du själv."
+    },
+    "account": {
+      "title": "Ditt konto – Parent Reset",
+      "description": "Logga in för att behålla dina resets och allt du bär på över alla enheter."
+    },
+    "history": {
+      "title": "Din historik – Parent Reset",
+      "description": "Tidigare resets och om dagarna har blivit lättare."
+    },
+    "community": {
+      "title": "Gemenskap – Parent Reset",
+      "description": "En liten, anonym plats där föräldrar kan säga högt det som annars förblir osagt."
     }
   },
   "common": {
@@ -37,7 +53,20 @@
     "home": "Hem",
     "startReset": "Starta min reset",
     "howItWorks": "Så funkar det",
-    "menuTitle": "Meny"
+    "menuTitle": "Meny",
+    "familyLoad": "Allt du bär på",
+    "community": "Gemenskap",
+    "history": "Historik",
+    "account": "Konto",
+    "signIn": "Logga in",
+    "tabs": {
+      "label": "Huvudnavigering",
+      "home": "Hem",
+      "reset": "Reset",
+      "load": "Familj",
+      "community": "Gemenskap",
+      "account": "Du"
+    }
   },
   "home": {
     "hero": {
@@ -92,6 +121,25 @@
       "title": "Redo när du är det.",
       "body": "Två minuter nu kan göra resten av dagen lättare.",
       "cta": "Starta min reset"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "God morgon",
+        "afternoon": "God eftermiddag",
+        "evening": "God kväll",
+        "night": "Fortfarande vaken?"
+      },
+      "title": "Välkommen tillbaka. Var vill du börja?",
+      "todayDone": "Du har redan gjort en reset i dag. Bra jobbat.",
+      "lastReset": "Senaste reset: {date}",
+      "progress": "{percent}% av dagens lista klar",
+      "openLast": "Öppna den reseten",
+      "loadLabel": "Allt du bär på",
+      "openItems": "{count, plural, =0 {Inget öppet just nu} one {# sak öppen} other {# saker öppna}}",
+      "openLoad": "Öppna allt du bär på",
+      "cta": "Starta dagens reset",
+      "ctaAgain": "Gör en ny reset",
+      "history": "Historik ({count})"
     }
   },
   "reset": {
@@ -165,7 +213,11 @@
     "dateLabel": "Reset från {date}",
     "today": {
       "label": "I dag",
-      "intro": "Bara de här. Om du blir klar med dem har dagen räknats."
+      "intro": "Bara de här. Om du blir klar med dem har dagen räknats.",
+      "allDone": "Allt klart. Det var dagen.",
+      "markDone": "Markera som klar",
+      "undo": "Markera som inte klar",
+      "focus": "Ta dem en i taget"
     },
     "thisWeek": {
       "label": "Den här veckan",
@@ -183,7 +235,12 @@
       "body": "Den kan ha skapats på en annan enhet eller rensats från den här webbläsaren.",
       "cta": "Starta en ny reset"
     },
-    "disclaimer": "Parent Reset är ett praktiskt planeringsverktyg, inte medicinsk eller terapeutisk rådgivning."
+    "disclaimer": "Parent Reset är ett praktiskt planeringsverktyg, inte medicinsk eller terapeutisk rådgivning.",
+    "addToLoad": "Lägg till i allt du bär på",
+    "addedShort": "Tillagd",
+    "addedToLoad": "Tillagd under {area}",
+    "goToLoad": "Öppna allt du bär på",
+    "savedToAccount": "Sparat på ditt konto."
   },
   "planner": {
     "summary": {
@@ -247,5 +304,260 @@
     "title": "Den sidan finns inte",
     "body": "Länken kan vara gammal eller felskriven.",
     "cta": "Gå till start"
+  },
+  "load": {
+    "title": "Allt du bär på",
+    "subtitle": "Vad som tar plats i huvudet, område för område. Lägg till, bocka av eller skjut till i morgon.",
+    "summary": "{count, plural, =0 {Inget öppet just nu.} one {# sak öppen i alla områden.} other {# saker öppna i alla områden.}}",
+    "categories": {
+      "kids": "Barn",
+      "money": "Pengar",
+      "home": "Hem",
+      "work": "Jobb",
+      "relationship": "Relation",
+      "me": "Jag"
+    },
+    "levels": {
+      "clear": "Tomt",
+      "light": "Lätt",
+      "busy": "Fullt",
+      "heavy": "Tungt"
+    },
+    "openCount": "{count, plural, =0 {Inget öppet} one {# öppen} other {# öppna}}",
+    "selectCategory": "Välj ett område",
+    "add": {
+      "label": "Lägg till i {category}",
+      "placeholder": "Vad snurrar i huvudet?",
+      "button": "Lägg till",
+      "hint": "Kort räcker. Några ord slår ett helt stycke."
+    },
+    "examples": {
+      "kids": "Nya skor, skolavgift, tandläkartid",
+      "money": "Elräkningen, matinköp, bilförsäkringen",
+      "home": "Tvätten, städningen, den trasiga lampan",
+      "work": "Svara chefen, tidrapporten, torsdagsmötet",
+      "relationship": "Planera en kväll ihop, samtalet om helgerna",
+      "me": "Sömn, en promenad, ringa en vän"
+    },
+    "empty": {
+      "title": "Inget här än",
+      "body": "Lägg in det som snurrar. Till exempel: {examples}."
+    },
+    "actions": {
+      "done": "Klar",
+      "undo": "Ångra",
+      "postpone": "Senare",
+      "bringBack": "Ta tillbaka",
+      "move": "Flytta till",
+      "remove": "Ta bort",
+      "clearDone": "Rensa klara"
+    },
+    "sections": {
+      "open": "Öppna",
+      "postponed": "Uppskjutna",
+      "done": "Klara"
+    },
+    "postponedUntil": "Tillbaka {date}",
+    "completedOn": "Klar {date}",
+    "errors": {
+      "required": "Skriv något först.",
+      "tooLong": "Håll det under {max} tecken."
+    },
+    "savedLocally": "Sparat på den här enheten. Skapa ett konto senare för att ha det kvar på alla enheter.",
+    "notProjectTool": "Det här är inget att göra-system. Det är en plats att lägga ner saker på, så att de slutar snurra.",
+    "savedToAccount": "Sparat på ditt konto. Finns på alla enheter där du loggar in."
+  },
+  "focus": {
+    "title": "En sak i taget",
+    "close": "Stäng",
+    "progress": "{done} av {total} klara",
+    "next": "Just nu, bara det här:",
+    "hint": "Inget annat finns förrän den här är klar eller överhoppad.",
+    "skip": "Hoppa över",
+    "done": "Klar",
+    "allDone": {
+      "title": "Så, i dag är avklarat.",
+      "body": "Allt annat kan vänta. Gå och gör något som inte är en uppgift.",
+      "cta": "Tillbaka till min reset"
+    }
+  },
+  "account": {
+    "title": "Konto",
+    "unavailable": {
+      "title": "Konton är inte påslagna här ännu",
+      "body": "Den här kopian av Parent Reset kör utan databas. Allt du gör sparas på den här enheten, och det fungerar fint. Konton, historik över flera enheter och gemenskapen dyker upp när Supabase är anslutet."
+    },
+    "signedOut": {
+      "title": "Ha dina resets med dig",
+      "body": "Ett konto sparar dina resets och allt du bär på över alla enheter. Du behöver inget konto för att använda appen."
+    },
+    "signedIn": {
+      "title": "Ditt konto",
+      "body": "Dina resets och allt du bär på sparas här och på alla enheter där du loggar in."
+    },
+    "auth": {
+      "modeLabel": "Logga in eller skapa ett konto",
+      "signIn": {
+        "tab": "Logga in",
+        "submit": "Logga in"
+      },
+      "signUp": {
+        "tab": "Skapa konto",
+        "submit": "Skapa konto"
+      },
+      "email": "E-post",
+      "password": "Lösenord",
+      "passwordHint": "Minst 8 tecken.",
+      "working": "Ett ögonblick…",
+      "privacy": "Vi sparar din e-post och dina sparade resets. Inget delas eller säljs.",
+      "checkEmail": {
+        "title": "Kolla din inkorg",
+        "body": "Vi har skickat en länk för att bekräfta din e-post. Öppna den på den här enheten för att slutföra registreringen."
+      },
+      "errors": {
+        "invalid": "Ange en giltig e-postadress och ett lösenord på minst 8 tecken.",
+        "credentials": "E-posten och lösenordet stämmer inte överens.",
+        "exists": "Det finns redan ett konto med den e-postadressen. Prova att logga in.",
+        "rateLimited": "För många försök. Vänta en minut.",
+        "unavailable": "Konton är inte tillgängliga i den här installationen.",
+        "generic": "Något gick fel. Försök igen.",
+        "link": "Inloggningslänken fungerade inte. Be om en ny."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "displayName": "Namn i gemenskapen",
+        "displayNameHint": "Visas på dina inlägg i stället för din e-post. Slumpa fram ett nytt om du vill.",
+        "shuffle": "Slumpa",
+        "save": "Spara",
+        "saved": "Sparat.",
+        "invalid": "Använd 2 till 40 bokstäver, siffror eller mellanslag."
+      },
+      "data": {
+        "title": "Dina uppgifter",
+        "body": "Ladda ner allt vi har om dig, eller rensa din historik men behåll kontot.",
+        "export": "Ladda ner mina uppgifter",
+        "deleteHistory": "Radera min historik"
+      },
+      "exportDone": "Dina uppgifter har laddats ner.",
+      "deleteHistoryConfirm": "Radera alla dina resets och allt du bär på? Det går inte att ångra.",
+      "deleteHistoryDone": "Historiken är raderad.",
+      "genericError": "Något gick fel. Försök igen.",
+      "signOut": "Logga ut",
+      "danger": {
+        "title": "Radera konto",
+        "body": "Tar bort ditt konto och allt i det, inklusive inlägg i gemenskapen. Det går inte att ångra.",
+        "delete": "Radera mitt konto",
+        "confirm": "Ja, radera allt",
+        "cancel": "Behåll mitt konto"
+      }
+    },
+    "sync": {
+      "merged": "Flyttade {resets} resets och {items} saker du bär på från den här enheten till ditt konto."
+    }
+  },
+  "history": {
+    "title": "Historik",
+    "subtitle": "Hur dagarna har varit.",
+    "count": "{count, plural, =0 {Inga resets ännu.} one {# reset hittills.} other {# resets hittills.}}",
+    "trend": {
+      "label": "Lättare dagar",
+      "chartLabel": "Hur överväldigad du varit i dina senaste resets",
+      "average": "Snitt på sistone: {value} / 10",
+      "needMore": "Efter några resets till ser du om dagarna blir lättare.",
+      "lighter": "Lättare än förut. Vad du än gör så hjälper det.",
+      "heavier": "Tyngre än förut. Mycket på gång just nu. Det säger inget om dig.",
+      "steady": "Ungefär som förut.",
+      "frequentAreas": "Oftast i tankarna: {areas}"
+    },
+    "empty": {
+      "title": "Inga resets ännu",
+      "body": "Din första tar två minuter.",
+      "cta": "Starta min reset"
+    },
+    "overwhelm": "Överväldigad {value} av 10",
+    "completion": "{percent}% av dagens lista klar",
+    "open": "Öppna",
+    "delete": "Radera",
+    "guestNote": "Den här historiken finns bara på den här enheten.",
+    "guestCta": "Skapa ett konto för att behålla den."
+  },
+  "community": {
+    "title": "Gemenskap",
+    "subtitle": "Säg högt det som annars förblir osagt.",
+    "intro": "En liten, anonym plats för föräldrar. Inga följare, inga oändliga flöden, inga perfekta familjer.",
+    "write": "Skriv ett inlägg",
+    "anonymousNote": "Inlägg visar ett slumpat namn, aldrig din e-post.",
+    "categoriesLabel": "Kategorier",
+    "all": "Alla",
+    "categories": {
+      "toddlers": "Småbarn",
+      "school_age": "Skolbarn",
+      "money_stress": "Pengaoro",
+      "no_time": "Ingen tid",
+      "relationships": "Relationer",
+      "dads": "Pappor",
+      "mums": "Mammor",
+      "single_parents": "Ensamstående",
+      "moving": "Flytt",
+      "general": "Allmänt"
+    },
+    "support": "{count, plural, =0 {Stötta} one {# stöttar} other {# stöttar}}",
+    "comments": "{count, plural, =0 {Inga kommentarer ännu} one {# kommentar} other {# kommentarer}}",
+    "back": "Tillbaka till gemenskapen",
+    "delete": "Radera inlägg",
+    "deleteConfirm": "Radera det här inlägget och dess kommentarer?",
+    "unavailable": {
+      "title": "Gemenskapen är inte påslagen här ännu",
+      "body": "Den dyker upp när den här kopian av Parent Reset är ansluten till Supabase. Allt annat fungerar utan."
+    },
+    "empty": {
+      "title": "Inget här ännu",
+      "body": "Var först. Även en enda ärlig mening hjälper nästa förälder som läser den."
+    },
+    "safetyNote": "Om ett inlägg gör dig orolig för någons säkerhet, be personen kontakta lokala nödtjänster. Det här är en plats att prata på, inte en krisjour.",
+    "new": {
+      "heading": "Skriv ett inlägg",
+      "intro": "Vad är sant för dig just nu? Gör det så kort eller så långt som det behöver vara.",
+      "category": "Kategori",
+      "title": "Rubrik",
+      "titlePlaceholder": "Ingen sa att andra året skulle bli tyngre",
+      "body": "Ditt inlägg",
+      "bodyPlaceholder": "Vad som händer, vad du har provat, vad du behöver.",
+      "guidelines": "Var snäll. Inga namn på andra personer, inga adresser, inga medicinska råd. Inlägg är offentliga.",
+      "posting": "Publicerar…",
+      "submit": "Publicera"
+    },
+    "comment": {
+      "label": "Svara",
+      "placeholder": "Några snälla, ärliga ord.",
+      "posting": "Skickar…",
+      "submit": "Svara",
+      "empty": "Inga svar ännu. Ditt kan bli det första.",
+      "signInPrompt": "Logga in för att svara och stötta inlägg.",
+      "signIn": "Logga in"
+    },
+    "report": {
+      "button": "Rapportera",
+      "reasons": {
+        "spam": "Spam eller reklam",
+        "harmful": "Sårande eller elakt",
+        "personal_info": "Delar personuppgifter",
+        "other": "Något annat"
+      },
+      "thanks": "Tack. Vi tittar på det.",
+      "failed": "Rapporten kunde inte skickas. Försök igen."
+    },
+    "errors": {
+      "invalid": "Fyll i en rubrik och ett meddelande.",
+      "titleTooLong": "Rubriken är lite lång. Håll den under 140 tecken.",
+      "bodyTooLong": "Det blev lite långt. Håll det under 4000 tecken.",
+      "tooLong": "Det blev lite långt. Håll det under 2000 tecken.",
+      "rejected": "Vi kunde inte publicera det. Ta bort eventuella länkar och försök igen.",
+      "rateLimited": "Du publicerar snabbt. Vänta några minuter.",
+      "signIn": "Logga in först.",
+      "generic": "Något gick fel. Försök igen."
+    }
   }
 }

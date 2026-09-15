@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
+import { updateProfileLocale } from "@/features/account/actions";
 import { localeNames, locales, type Locale } from "@/i18n/locales";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
@@ -29,6 +30,9 @@ export function LanguageSwitcher({
     startTransition(() => {
       router.replace(pathname, { locale: next as Locale });
     });
+    // Remember the choice on the profile for signed-in users. Guests are
+    // covered by the cookie the proxy sets. Best effort, never blocking.
+    void updateProfileLocale(next).catch(() => {});
   }
 
   return (

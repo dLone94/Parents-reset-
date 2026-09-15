@@ -18,6 +18,22 @@
     "result": {
       "title": "Tvoj reset – Parent Reset",
       "description": "Tvoj kratek seznam za danes, kaj lahko počaka do konca tedna in kaj lahko spustiš."
+    },
+    "load": {
+      "title": "Družinske skrbi – Parent Reset",
+      "description": "Preprost pregled tega, kar ti zaseda prostor v glavi: otroci, denar, dom, služba, odnos in ti."
+    },
+    "account": {
+      "title": "Tvoj račun – Parent Reset",
+      "description": "Prijavi se in obdrži svoje resete in družinske skrbi na vseh napravah."
+    },
+    "history": {
+      "title": "Tvoja zgodovina – Parent Reset",
+      "description": "Prejšnji reseti in to, ali so dnevi postali lažji."
+    },
+    "community": {
+      "title": "Skupnost – Parent Reset",
+      "description": "Majhen, predvsem anonimen prostor, kjer starši lahko naglas povedo tisto, o čemer se molči."
     }
   },
   "common": {
@@ -37,7 +53,20 @@
     "home": "Domov",
     "startReset": "Začni moj reset",
     "howItWorks": "Kako deluje",
-    "menuTitle": "Meni"
+    "menuTitle": "Meni",
+    "familyLoad": "Družinske skrbi",
+    "community": "Skupnost",
+    "history": "Zgodovina",
+    "account": "Račun",
+    "signIn": "Prijava",
+    "tabs": {
+      "label": "Glavna navigacija",
+      "home": "Domov",
+      "reset": "Reset",
+      "load": "Skrbi",
+      "community": "Skupnost",
+      "account": "Ti"
+    }
   },
   "home": {
     "hero": {
@@ -92,6 +121,25 @@
       "title": "Začni, ko ti ustreza.",
       "body": "Dve minuti zdaj lahko preostanek dneva naredita lažji.",
       "cta": "Začni moj reset"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Dobro jutro",
+        "afternoon": "Dober dan",
+        "evening": "Dober večer",
+        "night": "Še pokonci?"
+      },
+      "title": "Lepo, da si nazaj. Kje želiš začeti?",
+      "todayDone": "Današnji reset je že opravljen. Lepo.",
+      "lastReset": "Zadnji reset: {date}",
+      "progress": "{percent} % današnjega seznama opravljeno",
+      "openLast": "Odpri ta reset",
+      "loadLabel": "Družinske skrbi",
+      "openItems": "{count, plural, =0 {Trenutno ni nič odprtega} one {# odprta stvar} two {# odprti stvari} few {# odprte stvari} other {# odprtih stvari}}",
+      "openLoad": "Odpri družinske skrbi",
+      "cta": "Začni današnji reset",
+      "ctaAgain": "Ponovi reset",
+      "history": "Zgodovina ({count})"
     }
   },
   "reset": {
@@ -165,7 +213,11 @@
     "dateLabel": "Reset z dne {date}",
     "today": {
       "label": "Danes",
-      "intro": "Samo to. Če dokončaš, je dan štel."
+      "intro": "Samo to. Če dokončaš, je dan štel.",
+      "allDone": "Vse opravljeno. To je bil današnji dan.",
+      "markDone": "Označi kot opravljeno",
+      "undo": "Označi kot neopravljeno",
+      "focus": "Opravi jih eno po eno"
     },
     "thisWeek": {
       "label": "Ta teden",
@@ -183,7 +235,12 @@
       "body": "Morda je bil ustvarjen na drugi napravi ali izbrisan iz tega brskalnika.",
       "cta": "Začni nov reset"
     },
-    "disclaimer": "Parent Reset je praktično orodje za načrtovanje, ne zdravniški ali terapevtski nasvet."
+    "disclaimer": "Parent Reset je praktično orodje za načrtovanje, ne zdravniški ali terapevtski nasvet.",
+    "addToLoad": "Dodaj med družinske skrbi",
+    "addedShort": "Dodano",
+    "addedToLoad": "Dodano v: {area}",
+    "goToLoad": "Odpri družinske skrbi",
+    "savedToAccount": "Shranjeno v tvoj račun."
   },
   "planner": {
     "summary": {
@@ -247,5 +304,260 @@
     "title": "Ta stran ne obstaja",
     "body": "Povezava je morda stara ali napačno vnesena.",
     "cta": "Pojdi na začetek"
+  },
+  "load": {
+    "title": "Družinske skrbi",
+    "subtitle": "Kaj ti zaseda prostor v glavi, po področjih. Dodaj, opravi ali prestavi na jutri.",
+    "summary": "{count, plural, =0 {Trenutno ni nič odprtega.} one {# odprta stvar na vseh področjih skupaj.} two {# odprti stvari na vseh področjih skupaj.} few {# odprte stvari na vseh področjih skupaj.} other {# odprtih stvari na vseh področjih skupaj.}}",
+    "categories": {
+      "kids": "Otroci",
+      "money": "Denar",
+      "home": "Dom",
+      "work": "Služba",
+      "relationship": "Odnos",
+      "me": "Jaz"
+    },
+    "levels": {
+      "clear": "Prazno",
+      "light": "Lahko",
+      "busy": "Živahno",
+      "heavy": "Težko"
+    },
+    "openCount": "{count, plural, =0 {Nič odprtega} one {# odprta} two {# odprti} few {# odprte} other {# odprtih}}",
+    "selectCategory": "Izberi področje",
+    "add": {
+      "label": "Dodaj na področje {category}",
+      "placeholder": "Kaj ti hodi po glavi?",
+      "button": "Dodaj",
+      "hint": "Kratko je dovolj. Nekaj besed je boljših kot odstavek."
+    },
+    "examples": {
+      "kids": "Novi čevlji, plačilo za šolo, zobozdravnik",
+      "money": "Račun za elektriko, nakupi, zavarovanje avta",
+      "home": "Perilo, čiščenje, tista pokvarjena svetilka",
+      "work": "Odgovoriti vodji, evidenca ur, četrtkov sestanek",
+      "relationship": "Načrtovati skupen večer, pogovor o vikendih",
+      "me": "Spanje, sprehod, klic nekomu bližnjemu"
+    },
+    "empty": {
+      "title": "Tukaj še ni ničesar",
+      "body": "Dodaj karkoli, kar se ti kar naprej vrača. Na primer: {examples}."
+    },
+    "actions": {
+      "done": "Opravljeno",
+      "undo": "Razveljavi",
+      "postpone": "Pozneje",
+      "bringBack": "Vrni",
+      "move": "Premakni v",
+      "remove": "Odstrani",
+      "clearDone": "Počisti opravljeno"
+    },
+    "sections": {
+      "open": "Odprto",
+      "postponed": "Preloženo",
+      "done": "Opravljeno"
+    },
+    "postponedUntil": "Nazaj {date}",
+    "completedOn": "Opravljeno {date}",
+    "errors": {
+      "required": "Najprej nekaj napiši.",
+      "tooLong": "Prosimo, ostani pod {max} znaki."
+    },
+    "savedLocally": "Shranjeno na tej napravi. Račun lahko ustvariš pozneje, da ti ostane na vseh napravah.",
+    "notProjectTool": "To ni sistem za opravila. To je prostor, kamor stvari odložiš, da se ti nehajo vrteti po glavi.",
+    "savedToAccount": "Shranjeno v tvoj račun. Na voljo na vsaki napravi, kjer se prijaviš."
+  },
+  "focus": {
+    "title": "Ena stvar naenkrat",
+    "close": "Zapri",
+    "progress": "{done} od {total} opravljeno",
+    "next": "Zdaj samo to:",
+    "hint": "Nič drugega ne obstaja, dokler to ni opravljeno ali preskočeno.",
+    "skip": "Preskoči za zdaj",
+    "done": "Opravljeno",
+    "allDone": {
+      "title": "Današnji dan je urejen.",
+      "body": "Vse ostalo lahko počaka. Pojdi delat nekaj, kar ni naloga.",
+      "cta": "Nazaj na moj reset"
+    }
+  },
+  "account": {
+    "title": "Račun",
+    "unavailable": {
+      "title": "Računi tukaj še niso vklopljeni",
+      "body": "Ta kopija Parent Reset deluje brez podatkovne baze. Vse, kar narediš, se shrani na tej napravi, in to deluje dobro. Računi, zgodovina na več napravah in skupnost se pojavijo, ko bo povezan Supabase."
+    },
+    "signedOut": {
+      "title": "Obdrži svoje resete pri sebi",
+      "body": "Račun shrani tvoje resete in družinske skrbi na vseh napravah. Za uporabo aplikacije račun ni potreben."
+    },
+    "signedIn": {
+      "title": "Tvoj račun",
+      "body": "Tvoji reseti in družinske skrbi so shranjeni tukaj in na vsaki napravi, kjer se prijaviš."
+    },
+    "auth": {
+      "modeLabel": "Prijava ali ustvarjanje računa",
+      "signIn": {
+        "tab": "Prijava",
+        "submit": "Prijavi se"
+      },
+      "signUp": {
+        "tab": "Ustvari račun",
+        "submit": "Ustvari račun"
+      },
+      "email": "E-pošta",
+      "password": "Geslo",
+      "passwordHint": "Vsaj 8 znakov.",
+      "working": "Trenutek…",
+      "privacy": "Shranimo tvoj e-naslov in shranjene resete. Nič se ne deli in ne prodaja.",
+      "checkEmail": {
+        "title": "Preveri svoj e-poštni predal",
+        "body": "Poslali smo ti povezavo za potrditev e-naslova. Odpri jo na tej napravi in registracija bo končana."
+      },
+      "errors": {
+        "invalid": "Vnesi veljaven e-naslov in geslo z vsaj 8 znaki.",
+        "credentials": "Ta e-naslov in geslo se ne ujemata.",
+        "exists": "S tem e-naslovom račun že obstaja. Poskusi se prijaviti.",
+        "rateLimited": "Preveč poskusov. Počakaj minuto, prosim.",
+        "unavailable": "Računi na tej namestitvi niso na voljo.",
+        "generic": "Nekaj je šlo narobe. Poskusi znova, prosim.",
+        "link": "Ta povezava za prijavo ni delovala. Zahtevaj novo, prosim."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "displayName": "Ime v skupnosti",
+        "displayNameHint": "Prikaže se pri tvojih objavah v skupnosti namesto e-naslova. Premešaj za naključno ime.",
+        "shuffle": "Premešaj",
+        "save": "Shrani",
+        "saved": "Shranjeno.",
+        "invalid": "Uporabi 2 do 40 črk, številk ali presledkov."
+      },
+      "data": {
+        "title": "Tvoji podatki",
+        "body": "Prenesi vse, kar imamo o tebi, ali izbriši svojo zgodovino in obdrži račun.",
+        "export": "Prenesi moje podatke",
+        "deleteHistory": "Izbriši mojo zgodovino"
+      },
+      "exportDone": "Tvoji podatki so preneseni.",
+      "deleteHistoryConfirm": "Izbrišem vse tvoje resete in družinske skrbi? Tega ni mogoče razveljaviti.",
+      "deleteHistoryDone": "Zgodovina izbrisana.",
+      "genericError": "Nekaj je šlo narobe. Poskusi znova, prosim.",
+      "signOut": "Odjava",
+      "danger": {
+        "title": "Izbriši račun",
+        "body": "Odstrani tvoj račun in vse v njem, vključno z objavami v skupnosti. Poti nazaj ni.",
+        "delete": "Izbriši moj račun",
+        "confirm": "Da, izbriši vse",
+        "cancel": "Obdrži moj račun"
+      }
+    },
+    "sync": {
+      "merged": "S te naprave smo v tvoj račun prenesli resete ({resets}) in družinske skrbi ({items})."
+    }
+  },
+  "history": {
+    "title": "Zgodovina",
+    "subtitle": "Kako gredo dnevi.",
+    "count": "{count, plural, =0 {Še ni resetov.} one {Doslej # reset.} two {Doslej # reseta.} few {Doslej # reseti.} other {Doslej # resetov.}}",
+    "trend": {
+      "label": "Lažji dnevi",
+      "chartLabel": "Obremenjenost v zadnjih resetih",
+      "average": "Nedavno povprečje: {value} / 10",
+      "needMore": "Po nekaj dodatnih resetih se bo pokazalo, ali dnevi postajajo lažji.",
+      "lighter": "Lažje kot prej. Karkoli že delaš, pomaga.",
+      "heavier": "Težje kot prej. Trenutno je veliko. To ni sodba o tebi.",
+      "steady": "Približno enako kot prej.",
+      "frequentAreas": "Najpogosteje v tvojih mislih: {areas}"
+    },
+    "empty": {
+      "title": "Še ni resetov",
+      "body": "Prvi vzame dve minuti.",
+      "cta": "Začni moj reset"
+    },
+    "overwhelm": "Obremenjenost {value} od 10",
+    "completion": "{percent} % današnjega seznama opravljeno",
+    "open": "Odpri",
+    "delete": "Izbriši",
+    "guestNote": "Ta zgodovina je samo na tej napravi.",
+    "guestCta": "Ustvari račun, da jo obdržiš."
+  },
+  "community": {
+    "title": "Skupnost",
+    "subtitle": "Povej naglas tisto, o čemer se molči.",
+    "intro": "Majhen, predvsem anonimen prostor za starše. Brez sledilcev, brez neskončnih objav, brez popolnih družin.",
+    "write": "Napiši objavo",
+    "anonymousNote": "Pri objavah se prikaže naključno ime, nikoli tvoj e-naslov.",
+    "categoriesLabel": "Kategorije",
+    "all": "Vse",
+    "categories": {
+      "toddlers": "Malčki",
+      "school_age": "Šolarji",
+      "money_stress": "Denar",
+      "no_time": "Ni časa",
+      "relationships": "Odnosi",
+      "dads": "Očetje",
+      "mums": "Mame",
+      "single_parents": "Samohranilci",
+      "moving": "Selitev",
+      "general": "Splošno"
+    },
+    "support": "{count, plural, =0 {Podpri} one {# podpora} two {# podpori} few {# podpore} other {# podpor}}",
+    "comments": "{count, plural, =0 {Še ni komentarjev} one {# komentar} two {# komentarja} few {# komentarji} other {# komentarjev}}",
+    "back": "Nazaj v skupnost",
+    "delete": "Izbriši objavo",
+    "deleteConfirm": "Izbrišem to objavo in njene komentarje?",
+    "unavailable": {
+      "title": "Skupnost tukaj še ni vklopljena",
+      "body": "Pojavi se, ko bo ta kopija Parent Reset povezana s Supabase. Vse ostalo deluje tudi brez tega."
+    },
+    "empty": {
+      "title": "Tukaj še ni ničesar",
+      "body": "Začni ti. Že en iskren stavek pomaga naslednjemu staršu, ki ga prebere."
+    },
+    "safetyNote": "Če te objava skrbi glede varnosti koga, tej osebi povej, naj se obrne na lokalne nujne službe. To je prostor za pogovor, ne krizna služba.",
+    "new": {
+      "heading": "Napiši objavo",
+      "intro": "Kaj zate drži prav zdaj? Naj bo tako kratko ali dolgo, kot je treba.",
+      "category": "Kategorija",
+      "title": "Naslov",
+      "titlePlaceholder": "Nihče mi ni povedal, da bo drugo leto težje",
+      "body": "Tvoja objava",
+      "bodyPlaceholder": "Kaj se dogaja, kaj je bilo že poskušeno, kaj potrebuješ.",
+      "guidelines": "Prijaznost predvsem. Brez imen drugih ljudi, brez naslovov, brez zdravniških nasvetov. Objave so javne.",
+      "posting": "Objavljam…",
+      "submit": "Objavi"
+    },
+    "comment": {
+      "label": "Odgovori",
+      "placeholder": "Nekaj prijaznih, iskrenih besed.",
+      "posting": "Pošiljam…",
+      "submit": "Odgovori",
+      "empty": "Še ni odgovorov. Tvoj je lahko prvi.",
+      "signInPrompt": "Za odgovarjanje in podporo objavam se prijavi.",
+      "signIn": "Prijava"
+    },
+    "report": {
+      "button": "Prijavi vsebino",
+      "reasons": {
+        "spam": "Neželena vsebina ali oglaševanje",
+        "harmful": "Škodljivo ali neprijazno",
+        "personal_info": "Deli osebne podatke",
+        "other": "Nekaj drugega"
+      },
+      "thanks": "Hvala. Bomo pogledali.",
+      "failed": "Prijave ni bilo mogoče poslati. Poskusi znova, prosim."
+    },
+    "errors": {
+      "invalid": "Izpolni naslov in sporočilo, prosim.",
+      "titleTooLong": "Naslov je malo predolg. Naj bo krajši od 140 znakov.",
+      "bodyTooLong": "To je malo predolgo. Naj bo krajše od 4000 znakov.",
+      "tooLong": "To je malo predolgo. Naj bo krajše od 2000 znakov.",
+      "rejected": "Tega nismo mogli objaviti. Odstrani povezave in poskusi znova.",
+      "rateLimited": "Objavljaš hitro. Počakaj nekaj minut, prosim.",
+      "signIn": "Najprej se prijavi, prosim.",
+      "generic": "Nekaj je šlo narobe. Poskusi znova, prosim."
+    }
   }
 }

@@ -9,11 +9,15 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
-export function Header() {
+interface HeaderProps {
+  /** Signed-in user's email, or null for guests. */
+  userEmail: string | null;
+}
+
+export function Header({ userEmail }: HeaderProps) {
   const t = useTranslations();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-
   const close = () => setOpen(false);
 
   useEffect(() => {
@@ -30,6 +34,12 @@ export function Header() {
   }, [open]);
 
   const inReset = pathname.startsWith("/reset");
+  const links = [
+    { href: "/load", label: t("nav.familyLoad") },
+    { href: "/community", label: t("nav.community") },
+    { href: "/history", label: t("nav.history") },
+  ] as const;
+  const initial = userEmail ? userEmail.slice(0, 1).toUpperCase() : null;
 
   return (
     <header className="sticky top-0 z-30 border-b border-line/70 bg-cream/85 backdrop-blur">
@@ -39,16 +49,37 @@ export function Header() {
         </Link>
 
         {/* Desktop */}
-        <nav aria-label={t("nav.menuTitle")} className="hidden items-center gap-2 md:flex">
-          <Link
-            href="/#how-it-works"
-            className="tap focus-ring inline-flex items-center rounded-full px-4 text-base text-ink-soft hover:text-ink"
-          >
-            {t("nav.howItWorks")}
-          </Link>
+        <nav aria-label={t("nav.menuTitle")} className="hidden items-center gap-1 md:flex">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "tap focus-ring inline-flex items-center rounded-full px-3.5 text-base hover:text-ink",
+                pathname.startsWith(link.href) ? "font-semibold text-ink" : "text-ink-soft",
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
           <LanguageSwitcher id="language-switcher-desktop" />
+          <Link
+            href="/account"
+            aria-label={t("nav.account")}
+            className={cn(
+              "tap focus-ring ml-1 inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-paper text-sm font-semibold",
+              pathname.startsWith("/account") ? "border-clay text-clay-deep" : "text-ink-soft",
+            )}
+          >
+            {initial ?? (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 20a8 8 0 0116 0" strokeLinecap="round" />
+              </svg>
+            )}
+          </Link>
           {!inReset && (
-            <Link href="/reset" className={buttonClassName("primary", "md")}>
+            <Link href="/reset" className={cn(buttonClassName("primary", "md"), "ml-1")}>
               {t("nav.startReset")}
             </Link>
           )}
@@ -70,31 +101,27 @@ export function Header() {
       </Container>
 
       {/* Mobile sheet */}
-      <div
-        id="mobile-menu"
-        hidden={!open}
-        className={cn("md:hidden", open && "fade-in")}
-      >
+      <div id="mobile-menu" hidden={!open} className={cn("md:hidden", open && "fade-in")}>
         <div className="border-t border-line bg-cream">
-          <Container className="flex flex-col gap-3 py-5">
-            <Link
-              href="/"
-              onClick={close}
-              className="tap focus-ring flex items-center rounded-2xl px-4 text-lg text-ink hover:bg-sand"
-            >
+          <Container className="flex flex-col gap-2 py-5">
+            <Link href="/" onClick={close} className="tap focus-ring flex items-center rounded-2xl px-4 text-lg text-ink hover:bg-sand">
               {t("nav.home")}
             </Link>
-            <Link
-              href="/#how-it-works"
-              onClick={close}
-              className="tap focus-ring flex items-center rounded-2xl px-4 text-lg text-ink hover:bg-sand"
-            >
+            {links.map((link) => (
+              <Link key={link.href} href={link.href} onClick={close} className="tap focus-ring flex items-center rounded-2xl px-4 text-lg text-ink hover:bg-sand">
+                {link.label}
+              </Link>
+            ))}
+            <Link href="/account" onClick={close} className="tap focus-ring flex items-center rounded-2xl px-4 text-lg text-ink hover:bg-sand">
+              {userEmail ? t("nav.account") : t("nav.signIn")}
+            </Link>
+            <Link href="/#how-it-works" onClick={close} className="tap focus-ring flex items-center rounded-2xl px-4 text-lg text-ink hover:bg-sand">
               {t("nav.howItWorks")}
             </Link>
-            <Link href="/reset" onClick={close} className={cn(buttonClassName("primary", "lg"), "w-full")}>
+            <Link href="/reset" onClick={close} className={cn(buttonClassName("primary", "lg"), "mt-2 w-full")}>
               {t("nav.startReset")}
             </Link>
-            <div className="flex items-center justify-between gap-3 border-t border-line pt-4">
+            <div className="mt-2 flex items-center justify-between gap-3 border-t border-line pt-4">
               <span className="text-base text-ink-soft">{t("common.language")}</span>
               <LanguageSwitcher id="language-switcher-mobile" />
             </div>

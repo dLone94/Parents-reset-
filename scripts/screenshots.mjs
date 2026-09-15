@@ -47,6 +47,79 @@ const sampleOnMind = {
   ja: "仕事で何もかも遅れている気がします。",
 };
 
+const sampleLoad = {
+  en: { kids: ["Buy new shoes", "School payment", "Dentist appointment"], money: ["Electricity bill", "Car insurance"], home: ["Laundry"] },
+  de: { kids: ["Neue Schuhe kaufen", "Schulgeld überweisen", "Zahnarzttermin"], money: ["Stromrechnung", "Autoversicherung"], home: ["Wäsche"] },
+  bg: { kids: ["Нови обувки", "Училищна такса"], money: ["Сметка за ток"], home: ["Пране"] },
+  fr: { kids: ["Nouvelles chaussures", "Paiement de l'école"], money: ["Facture d'électricité"], home: ["Lessive"] },
+  fi: { kids: ["Uudet kengät", "Koulumaksu"], money: ["Sähkölasku"], home: ["Pyykit"] },
+  zh: { kids: ["买新鞋", "学费"], money: ["电费"], home: ["洗衣服"] },
+  ja: { kids: ["新しい靴を買う", "学校の支払い", "歯医者の予約"], money: ["電気代", "自動車保険"], home: ["洗濯"] },
+};
+
+async function runLoad(page, locale, prefix) {
+  const m = messagesFor(locale);
+  const load = { ...en.load, ...(m.load ?? {}) };
+  const categories = { ...en.load.categories, ...(m.load?.categories ?? {}) };
+  await page.goto(`${BASE_URL}/${locale}/load`, { waitUntil: "networkidle" });
+  await shot(page, `${prefix}${locale}-load-empty`);
+  const samples = sampleLoad[locale] ?? sampleLoad.en;
+  for (const [category, titles] of Object.entries(samples)) {
+    await page.getByRole("button", { name: new RegExp(`^${categories[category]}`) }).click();
+    for (const title of titles) {
+      await page.getByRole("textbox").fill(title);
+      await page.getByRole("button", { name: load.add.button, exact: true }).click();
+      await page.getByText(title, { exact: true }).waitFor();
+    }
+  }
+  // Show one postponed and one done item in Kids.
+  await page.getByRole("button", { name: new RegExp(`^${categories.kids}`) }).click();
+  const rows = page.locator("li");
+  await rows.nth(0).getByRole("button", { name: load.actions.postpone, exact: true }).click();
+  await rows.nth(0).getByRole("button", { name: load.actions.done, exact: true }).click();
+  await page.waitForTimeout(300);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await shot(page, `${prefix}${locale}-load`, true);
+}
+
+const loadLocales = { mobile: ["en", "de", "bg", "fi", "ja"], desktop: ["en", "de", "ja"] };
+
+// Milestone 3 screens. History and the welcome-back hub need saved data, so we
+// run a reset first and then visit the pages in the same browser context.
+const m3Locales = { mobile: ["en", "de", "ja"], desktop: ["en", "de"] };
+
+async function runMilestone3(context, locale, prefix) {
+  const m = messagesFor(locale);
+  const page = await context.newPage();
+  await page.emulateMedia({ reducedMotion: "reduce" });
+
+  // Account (signed out or "not switched on" state) and community list.
+  await page.goto(`${BASE_URL}/${locale}/account`, { waitUntil: "networkidle" });
+  await shot(page, `${prefix}${locale}-account`);
+  await page.goto(`${BASE_URL}/${locale}/community`, { waitUntil: "networkidle" });
+  await shot(page, `${prefix}${locale}-community`);
+
+  // Run a reset so history and the hub have something to show.
+  await runFlow(page, locale, `${prefix}m3-`);
+  // Tick one item, then open focus mode.
+  const result = { ...en.result, ...(m.result ?? {}), today: { ...en.result.today, ...(m.result?.today ?? {}) } };
+  await page.getByRole("button", { name: result.today.markDone }).first().click();
+  await page.waitForTimeout(200);
+  await page.getByRole("button", { name: result.today.focus }).click();
+  await page.waitForTimeout(300);
+  await shot(page, `${prefix}${locale}-focus`);
+  await page.keyboard.press("Escape");
+
+  await page.goto(`${BASE_URL}/${locale}/history`, { waitUntil: "networkidle" });
+  await page.waitForTimeout(400);
+  await shot(page, `${prefix}${locale}-history`, true);
+
+  await page.goto(`${BASE_URL}/${locale}`, { waitUntil: "networkidle" });
+  await page.waitForTimeout(400);
+  await shot(page, `${prefix}${locale}-home-returning`);
+  await page.close();
+}
+
 const browser = await chromium.launch(executablePath ? { executablePath } : {});
 
 async function shot(page, name, fullPage = false) {
@@ -114,6 +187,17 @@ for (const [device, options] of Object.entries(viewports)) {
       await flowPage.emulateMedia({ reducedMotion: "reduce" });
       await runFlow(flowPage, locale, prefix);
       await flowPage.close();
+    }
+
+    if (loadLocales[device].includes(locale)) {
+      const loadPage = await context.newPage();
+      await loadPage.emulateMedia({ reducedMotion: "reduce" });
+      await runLoad(loadPage, locale, prefix);
+      await loadPage.close();
+    }
+
+    if (m3Locales[device].includes(locale)) {
+      await runMilestone3(context, locale, prefix);
     }
     await context.close();
   }

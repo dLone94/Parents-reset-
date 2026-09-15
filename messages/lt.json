@@ -18,6 +18,22 @@
     "result": {
       "title": "Jūsų diena – Parent Reset",
       "description": "Jūsų trumpas šiandienos sąrašas, kas gali palaukti iki savaitės pabaigos ir ką galite paleisti."
+    },
+    "load": {
+      "title": "Šeimos rūpesčiai – Parent Reset",
+      "description": "Paprastas vaizdas, kas užima vietą jūsų galvoje: vaikai, pinigai, namai, darbas, santykiai ir jūs."
+    },
+    "account": {
+      "title": "Jūsų paskyra – Parent Reset",
+      "description": "Prisijunkite, kad jūsų susidėliotos dienos ir šeimos rūpesčiai būtų pasiekiami visuose įrenginiuose."
+    },
+    "history": {
+      "title": "Jūsų istorija – Parent Reset",
+      "description": "Ankstesnės susidėliotos dienos ir ar dienos darosi lengvesnės."
+    },
+    "community": {
+      "title": "Bendruomenė – Parent Reset",
+      "description": "Maža, pirmiausia anonimiška vieta tėvams garsiai pasakyti tai, kas nutylima."
     }
   },
   "common": {
@@ -37,7 +53,20 @@
     "home": "Pradžia",
     "startReset": "Susidėlioti dieną",
     "howItWorks": "Kaip tai veikia",
-    "menuTitle": "Meniu"
+    "menuTitle": "Meniu",
+    "familyLoad": "Šeimos rūpesčiai",
+    "community": "Bendruomenė",
+    "history": "Istorija",
+    "account": "Paskyra",
+    "signIn": "Prisijungti",
+    "tabs": {
+      "label": "Pagrindinė navigacija",
+      "home": "Pradžia",
+      "reset": "Diena",
+      "load": "Rūpesčiai",
+      "community": "Bendruomenė",
+      "account": "Jūs"
+    }
   },
   "home": {
     "hero": {
@@ -92,6 +121,25 @@
       "title": "Kai būsite pasiruošę.",
       "body": "Dvi minutės dabar gali palengvinti likusią dieną.",
       "cta": "Susidėlioti dieną"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Labas rytas",
+        "afternoon": "Laba diena",
+        "evening": "Labas vakaras",
+        "night": "Dar nemiegate?"
+      },
+      "title": "Sveiki sugrįžę. Nuo ko norite pradėti?",
+      "todayDone": "Šiandien dieną jau susidėliojote. Puiku.",
+      "lastReset": "Paskutinį kartą: {date}",
+      "progress": "Atlikta {percent}% šiandienos sąrašo",
+      "openLast": "Atidaryti tą dieną",
+      "loadLabel": "Šeimos rūpesčiai",
+      "openItems": "{count, plural, =0 {Šiuo metu nieko neatlikto} one {# neatliktas dalykas} few {# neatlikti dalykai} many {# neatlikto dalyko} other {# neatliktų dalykų}}",
+      "openLoad": "Atidaryti šeimos rūpesčius",
+      "cta": "Susidėlioti šiandienos dieną",
+      "ctaAgain": "Susidėlioti iš naujo",
+      "history": "Istorija ({count})"
     }
   },
   "reset": {
@@ -165,7 +213,11 @@
     "dateLabel": "Susidėliota {date}",
     "today": {
       "label": "Šiandien",
-      "intro": "Tik šie. Jei juos padarysite, diena pavyko."
+      "intro": "Tik šie. Jei juos padarysite, diena pavyko.",
+      "allDone": "Viskas atlikta. Tokia buvo ši diena.",
+      "markDone": "Pažymėti kaip atliktą",
+      "undo": "Pažymėti kaip neatliktą",
+      "focus": "Daryti po vieną"
     },
     "thisWeek": {
       "label": "Šią savaitę",
@@ -183,7 +235,12 @@
       "body": "Jis galėjo būti sukurtas kitame įrenginyje arba ištrintas iš šios naršyklės.",
       "cta": "Susidėlioti dieną iš naujo"
     },
-    "disclaimer": "Parent Reset yra praktiškas planavimo įrankis, o ne medicininis ar terapinis patarimas."
+    "disclaimer": "Parent Reset yra praktiškas planavimo įrankis, o ne medicininis ar terapinis patarimas.",
+    "addToLoad": "Pridėti prie šeimos rūpesčių",
+    "addedShort": "Pridėta",
+    "addedToLoad": "Pridėta prie: {area}",
+    "goToLoad": "Atidaryti šeimos rūpesčius",
+    "savedToAccount": "Išsaugota jūsų paskyroje."
   },
   "planner": {
     "summary": {
@@ -247,5 +304,260 @@
     "title": "Tokio puslapio nėra",
     "body": "Nuoroda gali būti pasenusi arba su klaida.",
     "cta": "Į pradžią"
+  },
+  "load": {
+    "title": "Šeimos rūpesčiai",
+    "subtitle": "Kas užima vietą jūsų galvoje, pagal sritis. Įrašykite, atlikite arba nukelkite rytdienai.",
+    "summary": "{count, plural, =0 {Šiuo metu niekas nelaukia.} one {# dalykas laukia visose srityse.} few {# dalykai laukia visose srityse.} many {# dalyko laukia visose srityse.} other {# dalykų laukia visose srityse.}}",
+    "categories": {
+      "kids": "Vaikai",
+      "money": "Pinigai",
+      "home": "Namai",
+      "work": "Darbas",
+      "relationship": "Santykiai",
+      "me": "Aš"
+    },
+    "levels": {
+      "clear": "Tuščia",
+      "light": "Lengva",
+      "busy": "Užimta",
+      "heavy": "Sunku"
+    },
+    "openCount": "{count, plural, =0 {Niekas nelaukia} one {# laukia} few {# laukia} many {# laukia} other {# laukia}}",
+    "selectCategory": "Pasirinkite sritį",
+    "add": {
+      "label": "Pridėti: {category}",
+      "placeholder": "Kas sukasi galvoje?",
+      "button": "Pridėti",
+      "hint": "Trumpai – puiku. Keli žodžiai geriau nei pastraipa."
+    },
+    "examples": {
+      "kids": "Nauji batai, mokėjimas mokyklai, vizitas pas odontologą",
+      "money": "Sąskaita už elektrą, maisto pirkiniai, automobilio draudimas",
+      "home": "Skalbiniai, tvarkymasis, sugedusi lempa",
+      "work": "Atsakyti vadovui, darbo laiko apskaita, ketvirtadienio susitikimas",
+      "relationship": "Suplanuoti vakarą dviese, pokalbis apie savaitgalius",
+      "me": "Miegas, pasivaikščiojimas, paskambinti draugui"
+    },
+    "empty": {
+      "title": "Kol kas nieko nėra",
+      "body": "Įrašykite viską, kas vis sukasi galvoje. Pavyzdžiui: {examples}."
+    },
+    "actions": {
+      "done": "Atlikta",
+      "undo": "Atšaukti",
+      "postpone": "Vėliau",
+      "bringBack": "Grąžinti",
+      "move": "Perkelti į",
+      "remove": "Pašalinti",
+      "clearDone": "Išvalyti atliktus"
+    },
+    "sections": {
+      "open": "Laukia",
+      "postponed": "Atidėta",
+      "done": "Atlikta"
+    },
+    "postponedUntil": "Grįš {date}",
+    "completedOn": "Atlikta {date}",
+    "errors": {
+      "required": "Pirmiausia ką nors įrašykite.",
+      "tooLong": "Prašome neviršyti {max} simbolių."
+    },
+    "savedLocally": "Išsaugota šiame įrenginyje. Vėliau susikurkite paskyrą, kad išliktų visuose įrenginiuose.",
+    "notProjectTool": "Tai ne užduočių sistema. Tai vieta padėti dalykus, kad jie nustotų suktis galvoje.",
+    "savedToAccount": "Išsaugota jūsų paskyroje. Pasiekiama kiekviename įrenginyje, kuriame prisijungsite."
+  },
+  "focus": {
+    "title": "Po vieną dalyką",
+    "close": "Uždaryti",
+    "progress": "Atlikta {done} iš {total}",
+    "next": "Dabar – tik tai:",
+    "hint": "Niekas kitas neegzistuoja, kol šis dalykas neatliktas arba nepraleistas.",
+    "skip": "Kol kas praleisti",
+    "done": "Atlikta",
+    "allDone": {
+      "title": "Šiandiena sutvarkyta.",
+      "body": "Visa kita gali palaukti. Eikite nuveikti ko nors, kas nėra užduotis.",
+      "cta": "Grįžti į mano dieną"
+    }
+  },
+  "account": {
+    "title": "Paskyra",
+    "unavailable": {
+      "title": "Paskyros čia dar neįjungtos",
+      "body": "Ši Parent Reset kopija veikia be duomenų bazės. Viskas, ką darote, išsaugoma šiame įrenginyje, ir tai puikiai veikia. Paskyros, istorija visuose įrenginiuose ir bendruomenė atsiras, kai bus prijungtas Supabase."
+    },
+    "signedOut": {
+      "title": "Turėkite savo dienas visada su savimi",
+      "body": "Paskyra išsaugo jūsų susidėliotas dienas ir šeimos rūpesčius visuose įrenginiuose. Programėlei naudoti paskyros nereikia."
+    },
+    "signedIn": {
+      "title": "Jūsų paskyra",
+      "body": "Jūsų susidėliotos dienos ir šeimos rūpesčiai išsaugomi čia ir kiekviename įrenginyje, kuriame prisijungsite."
+    },
+    "auth": {
+      "modeLabel": "Prisijunkite arba susikurkite paskyrą",
+      "signIn": {
+        "tab": "Prisijungti",
+        "submit": "Prisijungti"
+      },
+      "signUp": {
+        "tab": "Sukurti paskyrą",
+        "submit": "Sukurti paskyrą"
+      },
+      "email": "El. paštas",
+      "password": "Slaptažodis",
+      "passwordHint": "Bent 8 simboliai.",
+      "working": "Akimirką…",
+      "privacy": "Saugome jūsų el. paštą ir išsaugotas dienas. Niekuo nesidalijama ir niekas neparduodama.",
+      "checkEmail": {
+        "title": "Patikrinkite pašto dėžutę",
+        "body": "Išsiuntėme nuorodą el. paštui patvirtinti. Atidarykite ją šiame įrenginyje, kad užbaigtumėte registraciją."
+      },
+      "errors": {
+        "invalid": "Įveskite galiojantį el. pašto adresą ir bent 8 simbolių slaptažodį.",
+        "credentials": "Šis el. paštas ir slaptažodis nesutampa.",
+        "exists": "Paskyra su šiuo el. paštu jau yra. Pabandykite prisijungti.",
+        "rateLimited": "Per daug bandymų. Palaukite minutę.",
+        "unavailable": "Šiame diegime paskyros nepasiekiamos.",
+        "generic": "Kažkas nepavyko. Bandykite dar kartą.",
+        "link": "Ši prisijungimo nuoroda nesuveikė. Paprašykite naujos."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profilis",
+        "displayName": "Vardas bendruomenėje",
+        "displayNameHint": "Rodomas prie jūsų bendruomenės įrašų vietoj el. pašto. Sumaišykite, jei norite atsitiktinio.",
+        "shuffle": "Sumaišyti",
+        "save": "Išsaugoti",
+        "saved": "Išsaugota.",
+        "invalid": "Naudokite nuo 2 iki 40 raidžių, skaičių ar tarpų."
+      },
+      "data": {
+        "title": "Jūsų duomenys",
+        "body": "Atsisiųskite viską, ką apie jus saugome, arba ištrinkite istoriją, paskyrą palikdami.",
+        "export": "Atsisiųsti duomenis",
+        "deleteHistory": "Ištrinti istoriją"
+      },
+      "exportDone": "Jūsų duomenys atsisiųsti.",
+      "deleteHistoryConfirm": "Ištrinti visas susidėliotas dienas ir šeimos rūpesčius? To atšaukti nebus galima.",
+      "deleteHistoryDone": "Istorija ištrinta.",
+      "genericError": "Kažkas nepavyko. Bandykite dar kartą.",
+      "signOut": "Atsijungti",
+      "danger": {
+        "title": "Ištrinti paskyrą",
+        "body": "Pašalina jūsų paskyrą ir viską joje, įskaitant bendruomenės įrašus. Kelio atgal nėra.",
+        "delete": "Ištrinti mano paskyrą",
+        "confirm": "Taip, ištrinti viską",
+        "cancel": "Palikti paskyrą"
+      }
+    },
+    "sync": {
+      "merged": "Iš šio įrenginio į jūsų paskyrą perkelta susidėliotų dienų: {resets}, šeimos rūpesčių: {items}."
+    }
+  },
+  "history": {
+    "title": "Istorija",
+    "subtitle": "Kaip sekėsi dienos.",
+    "count": "{count, plural, =0 {Kol kas nė vienos susidėliotos dienos.} one {Iki šiol susidėliota # diena.} few {Iki šiol susidėliotos # dienos.} many {Iki šiol susidėliota # dienos.} other {Iki šiol susidėliota # dienų.}}",
+    "trend": {
+      "label": "Lengvesnės dienos",
+      "chartLabel": "Perkrova per pastarąsias susidėliotas dienas",
+      "average": "Pastarasis vidurkis: {value} / 10",
+      "needMore": "Po kelių susidėliotų dienų pamatysite, ar dienos darosi lengvesnės.",
+      "lighter": "Lengviau nei anksčiau. Kad ir ką darote, tai padeda.",
+      "heavier": "Sunkiau nei anksčiau. Dabar daug visko. Tai ne nuosprendis jums.",
+      "steady": "Maždaug taip pat kaip anksčiau.",
+      "frequentAreas": "Dažniausiai galvoje: {areas}"
+    },
+    "empty": {
+      "title": "Kol kas nė vienos dienos",
+      "body": "Pirmoji užtruks dvi minutes.",
+      "cta": "Susidėlioti dieną"
+    },
+    "overwhelm": "Perkrova {value} iš 10",
+    "completion": "Atlikta {percent}% šiandienos sąrašo",
+    "open": "Atidaryti",
+    "delete": "Ištrinti",
+    "guestNote": "Ši istorija saugoma tik šiame įrenginyje.",
+    "guestCta": "Susikurkite paskyrą, kad ją išsaugotumėte."
+  },
+  "community": {
+    "title": "Bendruomenė",
+    "subtitle": "Pasakykite garsiai tai, kas nutylima.",
+    "intro": "Maža, pirmiausia anonimiška vieta tėvams. Jokių sekėjų, jokių begalinių srautų, jokių tobulų šeimų.",
+    "write": "Rašyti įrašą",
+    "anonymousNote": "Prie įrašų rodomas atsitiktinis vardas, niekada ne jūsų el. paštas.",
+    "categoriesLabel": "Kategorijos",
+    "all": "Visi",
+    "categories": {
+      "toddlers": "Mažyliai",
+      "school_age": "Mokyklinukai",
+      "money_stress": "Pinigų stresas",
+      "no_time": "Nėra laiko",
+      "relationships": "Santykiai",
+      "dads": "Tėčiai",
+      "mums": "Mamos",
+      "single_parents": "Vieniši tėvai",
+      "moving": "Persikraustymas",
+      "general": "Bendra"
+    },
+    "support": "{count, plural, =0 {Palaikyti} one {# palaikymas} few {# palaikymai} many {# palaikymo} other {# palaikymų}}",
+    "comments": "{count, plural, =0 {Komentarų dar nėra} one {# komentaras} few {# komentarai} many {# komentaro} other {# komentarų}}",
+    "back": "Grįžti į bendruomenę",
+    "delete": "Ištrinti įrašą",
+    "deleteConfirm": "Ištrinti šį įrašą ir jo komentarus?",
+    "unavailable": {
+      "title": "Bendruomenė čia dar neįjungta",
+      "body": "Ji atsiras, kai ši Parent Reset kopija bus prijungta prie Supabase. Visa kita veikia ir be to."
+    },
+    "empty": {
+      "title": "Čia kol kas nieko nėra",
+      "body": "Būkite pirmi. Net vienas nuoširdus sakinys padeda kitam tėvui ar mamai, kurie jį perskaitys."
+    },
+    "safetyNote": "Jei dėl įrašo nerimaujate dėl kieno nors saugumo, paraginkite kreiptis į vietos pagalbos tarnybas. Tai vieta pasikalbėti, o ne krizių tarnyba.",
+    "new": {
+      "heading": "Rašyti įrašą",
+      "intro": "Kas jums šiuo metu tikra? Rašykite tiek trumpai ar ilgai, kiek reikia.",
+      "category": "Kategorija",
+      "title": "Pavadinimas",
+      "titlePlaceholder": "Niekas nesakė, kad antri metai bus sunkesni",
+      "body": "Jūsų įrašas",
+      "bodyPlaceholder": "Kas vyksta, ką bandėte, ko jums reikia.",
+      "guidelines": "Būkite geranoriški. Jokių kitų žmonių vardų, adresų ar medicininių patarimų. Įrašai vieši.",
+      "posting": "Skelbiama…",
+      "submit": "Paskelbti"
+    },
+    "comment": {
+      "label": "Atsakyti",
+      "placeholder": "Keli geri, nuoširdūs žodžiai.",
+      "posting": "Siunčiama…",
+      "submit": "Atsakyti",
+      "empty": "Atsakymų dar nėra. Jūsų galėtų būti pirmas.",
+      "signInPrompt": "Prisijunkite, kad galėtumėte atsakyti ir palaikyti įrašus.",
+      "signIn": "Prisijungti"
+    },
+    "report": {
+      "button": "Pranešti",
+      "reasons": {
+        "spam": "Šlamštas ar reklama",
+        "harmful": "Žalinga ar nemalonu",
+        "personal_info": "Atskleidžia asmeninę informaciją",
+        "other": "Kas nors kita"
+      },
+      "thanks": "Ačiū. Peržiūrėsime.",
+      "failed": "Nepavyko išsiųsti pranešimo. Bandykite dar kartą."
+    },
+    "errors": {
+      "invalid": "Įrašykite pavadinimą ir žinutę.",
+      "titleTooLong": "Pavadinimas kiek per ilgas. Sutrumpinkite iki 140 simbolių.",
+      "bodyTooLong": "Kiek per ilga. Sutrumpinkite iki 4000 simbolių.",
+      "tooLong": "Kiek per ilga. Sutrumpinkite iki 2000 simbolių.",
+      "rejected": "Nepavyko paskelbti. Pašalinkite nuorodas ir bandykite dar kartą.",
+      "rateLimited": "Skelbiate per dažnai. Palaukite kelias minutes.",
+      "signIn": "Pirmiausia prisijunkite.",
+      "generic": "Kažkas nepavyko. Bandykite dar kartą."
+    }
   }
 }

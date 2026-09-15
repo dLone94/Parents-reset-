@@ -18,6 +18,22 @@
     "result": {
       "title": "Il-ġurnata tiegħek – Parent Reset",
       "description": "Il-lista qasira tiegħek għal-lum, x'jista' jistenna sa din il-ġimgħa, u x'tista' tħalli."
+    },
+    "load": {
+      "title": "Il-piż tal-familja – Parent Reset",
+      "description": "Ħarsa sempliċi lejn x'qed jieħu spazju f'rasek: it-tfal, il-flus, id-dar, ix-xogħol, ir-relazzjoni u int."
+    },
+    "account": {
+      "title": "Il-kont tiegħek – Parent Reset",
+      "description": "Idħol biex iżżomm il-ġranet irranġati u l-piż tal-familja fuq kull apparat."
+    },
+    "history": {
+      "title": "L-istorja tiegħek – Parent Reset",
+      "description": "Ġranet li rranġajt qabel, u jekk il-ġranet humiex qed isiru eħfef."
+    },
+    "community": {
+      "title": "Komunità – Parent Reset",
+      "description": "Post żgħir, anonimu qabel kollox, fejn il-ġenituri jistgħu jgħidu b'leħen għoli dak li normalment jibqa' mistur."
     }
   },
   "common": {
@@ -37,7 +53,20 @@
     "home": "Paġna ewlenija",
     "startReset": "Irranġa l-ġurnata tiegħi",
     "howItWorks": "Kif jaħdem",
-    "menuTitle": "Menu"
+    "menuTitle": "Menu",
+    "familyLoad": "Il-piż tal-familja",
+    "community": "Komunità",
+    "history": "Storja",
+    "account": "Kont",
+    "signIn": "Idħol",
+    "tabs": {
+      "label": "Navigazzjoni ewlenija",
+      "home": "Dar",
+      "reset": "Ġurnata",
+      "load": "Piż",
+      "community": "Komunità",
+      "account": "Int"
+    }
   },
   "home": {
     "hero": {
@@ -92,6 +121,25 @@
       "title": "Lest meta tkun int.",
       "body": "Żewġ minuti issa jistgħu jagħmlu l-bqija tal-ġurnata eħfef.",
       "cta": "Irranġa l-ġurnata tiegħi"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "L-għodwa t-tajba",
+        "afternoon": "Il-wara nofsinhar it-tajjeb",
+        "evening": "Il-lejla t-tajba",
+        "night": "Għadek imqajjem?"
+      },
+      "title": "Merħba lura. Minn fejn trid tibda?",
+      "todayDone": "Illum diġà rranġajt il-ġurnata. Prosit.",
+      "lastReset": "L-aħħar darba: {date}",
+      "progress": "{percent}% tal-lista tal-lum lesta",
+      "openLast": "Iftaħ dik il-ġurnata",
+      "loadLabel": "Il-piż tal-familja",
+      "openItems": "{count, plural, =0 {Bħalissa m'hemm xejn miftuħ} one {ħaġa waħda miftuħa} few {# affarijiet miftuħa} many {# affarijiet miftuħa} other {# affarijiet miftuħa}}",
+      "openLoad": "Iftaħ il-piż tal-familja",
+      "cta": "Irranġa l-ġurnata tal-lum",
+      "ctaAgain": "Erġa' rranġa",
+      "history": "Storja ({count})"
     }
   },
   "reset": {
@@ -165,7 +213,11 @@
     "dateLabel": "Lista ta' {date}",
     "today": {
       "label": "Illum",
-      "intro": "Dawn biss. Jekk tlestihom, il-ġurnata għoddha."
+      "intro": "Dawn biss. Jekk tlestihom, il-ġurnata għoddha.",
+      "allDone": "Kollox lest. Dik kienet il-ġurnata.",
+      "markDone": "Immarka bħala lesta",
+      "undo": "Immarka bħala mhux lesta",
+      "focus": "Agħmilhom waħda waħda"
     },
     "thisWeek": {
       "label": "Din il-ġimgħa",
@@ -183,7 +235,12 @@
       "body": "Jista' jkun li nħolqot fuq apparat ieħor jew tħassret minn dan il-browser.",
       "cta": "Erġa' rranġa l-ġurnata"
     },
-    "disclaimer": "Parent Reset huwa għodda prattika ta' ppjanar, mhux parir mediku jew terapewtiku."
+    "disclaimer": "Parent Reset huwa għodda prattika ta' ppjanar, mhux parir mediku jew terapewtiku.",
+    "addToLoad": "Żid mal-piż tal-familja",
+    "addedShort": "Miżjuda",
+    "addedToLoad": "Miżjuda ma' {area}",
+    "goToLoad": "Iftaħ il-piż tal-familja",
+    "savedToAccount": "Salvata fil-kont tiegħek."
   },
   "planner": {
     "summary": {
@@ -247,5 +304,260 @@
     "title": "Dik il-paġna ma teżistix",
     "body": "Il-link jista' jkun antik jew miktub ħażin.",
     "cta": "Mur għall-bidu"
+  },
+  "load": {
+    "title": "Il-piż tal-familja",
+    "subtitle": "X'qed jieħu spazju f'rasek, skont il-qasam. Żidu, lestih, jew ħallih għal għada.",
+    "summary": "{count, plural, =0 {Bħalissa m'hemm xejn miftuħ.} one {# ħaġa miftuħa fl-oqsma kollha.} few {# affarijiet miftuħa fl-oqsma kollha.} many {# ħaġa miftuħa fl-oqsma kollha.} other {# ħaġa miftuħa fl-oqsma kollha.}}",
+    "categories": {
+      "kids": "It-tfal",
+      "money": "Il-flus",
+      "home": "Id-dar",
+      "work": "Ix-xogħol",
+      "relationship": "Ir-relazzjoni",
+      "me": "Jien"
+    },
+    "levels": {
+      "clear": "Vojt",
+      "light": "Ħafif",
+      "busy": "Mimli",
+      "heavy": "Tqil"
+    },
+    "openCount": "{count, plural, =0 {Xejn miftuħ} one {# miftuħa} few {# miftuħa} many {# miftuħa} other {# miftuħa}}",
+    "selectCategory": "Agħżel qasam",
+    "add": {
+      "label": "Żid: {category}",
+      "placeholder": "X'għandek f'moħħok?",
+      "button": "Żid",
+      "hint": "Qasir huwa tajjeb. Ftit kliem aħjar minn paragrafu."
+    },
+    "examples": {
+      "kids": "Żraben ġodda, ħlas tal-iskola, appuntament għand id-dentist",
+      "money": "Kont tad-dawl, xirja tal-ikel, assigurazzjoni tal-karozza",
+      "home": "Ħasil tal-ħwejjeġ, tindif, il-lampa mkissra",
+      "work": "Wieġeb lill-manager, timesheet, il-laqgħa tal-Ħamis",
+      "relationship": "Ippjana lejla flimkien, id-diskursata dwar il-weekends",
+      "me": "Irqad, mixja, ċempel lil ħabib"
+    },
+    "empty": {
+      "title": "Għad m'hawn xejn",
+      "body": "Żid kull ma jibqa' jdur f'rasek. Pereżempju: {examples}."
+    },
+    "actions": {
+      "done": "Lest",
+      "undo": "Annulla",
+      "postpone": "Aktar tard",
+      "bringBack": "Ġib lura",
+      "move": "Mexxi għal",
+      "remove": "Neħħi",
+      "clearDone": "Naddaf il-lesti"
+    },
+    "sections": {
+      "open": "Miftuħ",
+      "postponed": "Għal aktar tard",
+      "done": "Lesti"
+    },
+    "postponedUntil": "Lura nhar {date}",
+    "completedOn": "Lest nhar {date}",
+    "errors": {
+      "required": "Ikteb xi ħaġa l-ewwel.",
+      "tooLong": "Jekk jogħġbok żommu taħt {max} karattru."
+    },
+    "savedLocally": "Salvat fuq dan l-apparat. Oħloq kont aktar tard biex iżżommu fuq l-apparati kollha.",
+    "notProjectTool": "Din mhix sistema ta' affarijiet x'tagħmel. Hija post fejn tpoġġi l-affarijiet biex jieqfu jduru f'rasek.",
+    "savedToAccount": "Salvata fil-kont tiegħek. Disponibbli fuq kull apparat li tidħol fih."
+  },
+  "focus": {
+    "title": "Ħaġa waħda kull darba",
+    "close": "Agħlaq",
+    "progress": "{done} minn {total} lesti",
+    "next": "Bħalissa, din biss:",
+    "hint": "Xejn iżjed ma jeżisti sakemm din tkun lesta jew maqbuża.",
+    "skip": "Aqbeż għalissa",
+    "done": "Lesta",
+    "allDone": {
+      "title": "Il-ġurnata tal-lum irranġata.",
+      "body": "Kull ħaġa oħra tista' tistenna. Mur agħmel xi ħaġa li mhix biċċa xogħol.",
+      "cta": "Lura għall-ġurnata tiegħi"
+    }
+  },
+  "account": {
+    "title": "Kont",
+    "unavailable": {
+      "title": "Il-kontijiet għadhom mhumiex attivati hawn",
+      "body": "Din il-kopja ta' Parent Reset taħdem mingħajr database. Kull ma tagħmel jiġi salvat fuq dan l-apparat, u dan jaħdem tajjeb. Il-kontijiet, l-istorja fuq kull apparat u l-komunità jidhru meta Supabase ikun konness."
+    },
+    "signedOut": {
+      "title": "Żomm il-ġranet tiegħek miegħek",
+      "body": "Kont isalva l-ġranet irranġati u l-piż tal-familja fuq kull apparat. M'hemmx bżonn kont biex tuża l-app."
+    },
+    "signedIn": {
+      "title": "Il-kont tiegħek",
+      "body": "Il-ġranet irranġati u l-piż tal-familja huma salvati hawn u fuq kull apparat li tidħol fih."
+    },
+    "auth": {
+      "modeLabel": "Idħol jew oħloq kont",
+      "signIn": {
+        "tab": "Idħol",
+        "submit": "Idħol"
+      },
+      "signUp": {
+        "tab": "Oħloq kont",
+        "submit": "Oħloq kont"
+      },
+      "email": "Email",
+      "password": "Password",
+      "passwordHint": "Mill-inqas 8 karattri.",
+      "working": "Mument wieħed…",
+      "privacy": "Naħżnu l-email tiegħek u l-ġranet li salvajt. Xejn ma jiġi kondiviż jew mibjugħ.",
+      "checkEmail": {
+        "title": "Iċċekkja l-inbox tiegħek",
+        "body": "Bgħatnielek link biex tikkonferma l-email tiegħek. Iftaħha fuq dan l-apparat biex tlesti r-reġistrazzjoni."
+      },
+      "errors": {
+        "invalid": "Jekk jogħġbok daħħal email valida u password ta' mill-inqas 8 karattri.",
+        "credentials": "Dik l-email u dik il-password ma jaqblux.",
+        "exists": "Diġà hemm kont b'dik l-email. Ipprova idħol.",
+        "rateLimited": "Wisq tentattivi. Jekk jogħġbok stenna minuta.",
+        "unavailable": "Il-kontijiet mhumiex disponibbli fuq din l-installazzjoni.",
+        "generic": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova.",
+        "link": "Dik il-link biex tidħol ma ħadmitx. Jekk jogħġbok itlob waħda ġdida."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profil",
+        "displayName": "Isem fil-komunità",
+        "displayNameHint": "Jidher fuq il-posts tiegħek fil-komunità minflok l-email. Ħawwad għal wieħed każwali.",
+        "shuffle": "Ħawwad",
+        "save": "Salva",
+        "saved": "Salvat.",
+        "invalid": "Uża bejn 2 u 40 ittra, numru jew spazju."
+      },
+      "data": {
+        "title": "Id-data tiegħek",
+        "body": "Niżżel kull ma għandna dwarek, jew ħassar l-istorja tiegħek u żomm il-kont.",
+        "export": "Niżżel id-data tiegħi",
+        "deleteHistory": "Ħassar l-istorja tiegħi"
+      },
+      "exportDone": "Id-data tiegħek tniżżlet.",
+      "deleteHistoryConfirm": "Tħassar il-ġranet irranġati kollha u l-piż tal-familja? Dan ma jistax jitreġġa' lura.",
+      "deleteHistoryDone": "L-istorja tħassret.",
+      "genericError": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova.",
+      "signOut": "Oħroġ",
+      "danger": {
+        "title": "Ħassar il-kont",
+        "body": "Ineħħi l-kont tiegħek u kull ma fih, inklużi l-posts fil-komunità. M'hemmx triq lura.",
+        "delete": "Ħassar il-kont tiegħi",
+        "confirm": "Iva, ħassar kollox",
+        "cancel": "Żomm il-kont tiegħi"
+      }
+    },
+    "sync": {
+      "merged": "Minn dan l-apparat għall-kont tiegħek ġew imċaqilqa {resets} ġranet irranġati u {items} affarijiet tal-piż tal-familja."
+    }
+  },
+  "history": {
+    "title": "Storja",
+    "subtitle": "Kif sejrin il-ġranet.",
+    "count": "{count, plural, =0 {Għad m'hemm l-ebda ġurnata rranġata.} one {Ġurnata waħda rranġata s'issa.} few {# ġranet irranġati s'issa.} many {# ġranet irranġati s'issa.} other {# ġranet irranġati s'issa.}}",
+    "trend": {
+      "label": "Ġranet eħfef",
+      "chartLabel": "Kemm ħassejtek mgħobbi fl-aħħar ġranet irranġati",
+      "average": "Medja riċenti: {value} / 10",
+      "needMore": "Wara ftit ġranet oħra tara jekk il-ġranet humiex qed isiru eħfef.",
+      "lighter": "Eħfef minn qabel. Kull ma qed tagħmel, qed jgħin.",
+      "heavier": "Itqal minn qabel. Hemm ħafna għaddej bħalissa. Dak mhux ġudizzju fuqek.",
+      "steady": "Bejn wieħed u ieħor bħal qabel.",
+      "frequentAreas": "L-aktar spiss f'moħħok: {areas}"
+    },
+    "empty": {
+      "title": "Għad m'hemm l-ebda ġurnata rranġata",
+      "body": "L-ewwel waħda tieħu żewġ minuti.",
+      "cta": "Irranġa l-ġurnata tiegħi"
+    },
+    "overwhelm": "Mgħobbi {value} minn 10",
+    "completion": "{percent}% tal-lista tal-lum lesta",
+    "open": "Iftaħ",
+    "delete": "Ħassar",
+    "guestNote": "Din l-istorja tinżamm fuq dan l-apparat biss.",
+    "guestCta": "Oħloq kont biex iżżommha."
+  },
+  "community": {
+    "title": "Komunità",
+    "subtitle": "Għid b'leħen għoli dak li jibqa' mistur.",
+    "intro": "Post żgħir, anonimu qabel kollox, għall-ġenituri. L-ebda followers, l-ebda feeds bla tmiem, l-ebda familji perfetti.",
+    "write": "Ikteb post",
+    "anonymousNote": "Il-posts juru isem każwali, qatt l-email tiegħek.",
+    "categoriesLabel": "Kategoriji",
+    "all": "Kollha",
+    "categories": {
+      "toddlers": "Tfal żgħar",
+      "school_age": "Tfal tal-iskola",
+      "money_stress": "Stress tal-flus",
+      "no_time": "Bla ħin",
+      "relationships": "Relazzjonijiet",
+      "dads": "Missirijiet",
+      "mums": "Ommijiet",
+      "single_parents": "Ġenituri waħedhom",
+      "moving": "Ġarr / trasferiment",
+      "general": "Ġenerali"
+    },
+    "support": "{count, plural, =0 {Appoġġ} one {appoġġ wieħed} few {# appoġġi} many {# appoġġi} other {# appoġġi}}",
+    "comments": "{count, plural, =0 {Għad m'hemm l-ebda kumment} one {kumment wieħed} few {# kummenti} many {# kummenti} other {# kummenti}}",
+    "back": "Lura għall-komunità",
+    "delete": "Ħassar il-post",
+    "deleteConfirm": "Tħassar dan il-post u l-kummenti tiegħu?",
+    "unavailable": {
+      "title": "Il-komunità għadha mhix attivata hawn",
+      "body": "Tidher meta din il-kopja ta' Parent Reset tkun konnessa ma' Supabase. Kull ħaġa oħra taħdem mingħajrha."
+    },
+    "empty": {
+      "title": "Għad m'hemm xejn hawn",
+      "body": "Kun l-ewwel. Anke sentenza onesta waħda tgħin lill-ġenitur li jmiss li jaqraha."
+    },
+    "safetyNote": "Jekk post iħassbek dwar is-sigurtà ta' xi ħadd, għidlu jikkuntattja s-servizzi tal-emerġenza lokali. Dan hu post fejn titkellem, mhux servizz ta' kriżi.",
+    "new": {
+      "heading": "Ikteb post",
+      "intro": "X'inhu minnu għalik bħalissa? Żommu qasir jew twil kemm ikun hemm bżonn.",
+      "category": "Kategorija",
+      "title": "Titlu",
+      "titlePlaceholder": "Ħadd ma qalli li t-tieni sena kienet se tkun aktar diffiċli",
+      "body": "Il-post tiegħek",
+      "bodyPlaceholder": "X'qed jiġri, x'ippruvajt, x'għandek bżonn.",
+      "guidelines": "Kun ġentili. L-ebda ismijiet ta' nies oħra, l-ebda indirizzi, l-ebda pariri mediċi. Il-posts huma pubbliċi.",
+      "posting": "Qed jitpoġġa…",
+      "submit": "Ippubblika"
+    },
+    "comment": {
+      "label": "Wieġeb",
+      "placeholder": "Ftit kliem ġentili u onest.",
+      "posting": "Qed jintbagħat…",
+      "submit": "Wieġeb",
+      "empty": "Għad m'hemm l-ebda tweġiba. Tiegħek tista' tkun l-ewwel waħda.",
+      "signInPrompt": "Idħol biex twieġeb u biex tappoġġja l-posts.",
+      "signIn": "Idħol"
+    },
+    "report": {
+      "button": "Irrapporta",
+      "reasons": {
+        "spam": "Spam jew reklamar",
+        "harmful": "Ta' ħsara jew mhux ġentili",
+        "personal_info": "Jaqsam informazzjoni personali",
+        "other": "Xi ħaġa oħra"
+      },
+      "thanks": "Grazzi. Se nagħtu ħarsa.",
+      "failed": "Ir-rapport ma setax jintbagħat. Jekk jogħġbok erġa' pprova."
+    },
+    "errors": {
+      "invalid": "Jekk jogħġbok imla titlu u messaġġ.",
+      "titleTooLong": "It-titlu ftit twil. Jekk jogħġbok żommu taħt 140 karattru.",
+      "bodyTooLong": "Dan ftit twil. Jekk jogħġbok żommu taħt 4000 karattru.",
+      "tooLong": "Dan ftit twil. Jekk jogħġbok żommu taħt 2000 karattru.",
+      "rejected": "Ma stajniex nippubblikaw dan. Jekk jogħġbok neħħi kull link u erġa' pprova.",
+      "rateLimited": "Qed tippubblika malajr wisq. Jekk jogħġbok stenna ftit minuti.",
+      "signIn": "Jekk jogħġbok idħol l-ewwel.",
+      "generic": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
+    }
   }
 }

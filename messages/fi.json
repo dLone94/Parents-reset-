@@ -18,6 +18,22 @@
     "result": {
       "title": "Sinun nollauksesi – Parent Reset",
       "description": "Lyhyt lista tälle päivälle, se mikä voi odottaa tähän viikkoon, ja se mistä voit päästää irti."
+    },
+    "load": {
+      "title": "Perheen kuorma – Parent Reset",
+      "description": "Yksinkertainen näkymä siihen, mikä vie tilaa päässäsi: lapset, raha, koti, työ, parisuhde ja sinä itse."
+    },
+    "account": {
+      "title": "Tilisi – Parent Reset",
+      "description": "Kirjaudu sisään, niin nollauksesi ja perheen kuorma säilyvät eri laitteilla."
+    },
+    "history": {
+      "title": "Historiasi – Parent Reset",
+      "description": "Aiemmat nollaukset ja se, ovatko päivät keventyneet."
+    },
+    "community": {
+      "title": "Yhteisö – Parent Reset",
+      "description": "Pieni, nimettömyyteen perustuva paikka, jossa vanhemmat voivat sanoa ääneen sen, mistä ei yleensä puhuta."
     }
   },
   "common": {
@@ -37,7 +53,20 @@
     "home": "Etusivu",
     "startReset": "Aloita nollaus",
     "howItWorks": "Miten se toimii",
-    "menuTitle": "Valikko"
+    "menuTitle": "Valikko",
+    "familyLoad": "Perheen kuorma",
+    "community": "Yhteisö",
+    "history": "Historia",
+    "account": "Tili",
+    "signIn": "Kirjaudu",
+    "tabs": {
+      "label": "Päävalikko",
+      "home": "Etusivu",
+      "reset": "Nollaus",
+      "load": "Kuorma",
+      "community": "Yhteisö",
+      "account": "Sinä"
+    }
   },
   "home": {
     "hero": {
@@ -92,6 +121,25 @@
       "title": "Valmiina, kun sinä olet.",
       "body": "Kaksi minuuttia nyt voi tehdä loppupäivästä kevyemmän.",
       "cta": "Aloita nollaus"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Hyvää huomenta",
+        "afternoon": "Hyvää päivää",
+        "evening": "Hyvää iltaa",
+        "night": "Vieläkö valvot?"
+      },
+      "title": "Tervetuloa takaisin. Mistä haluat aloittaa?",
+      "todayDone": "Teit nollauksen jo tänään. Hienoa.",
+      "lastReset": "Viimeisin nollaus: {date}",
+      "progress": "{percent} % tämän päivän listasta tehty",
+      "openLast": "Avaa se nollaus",
+      "loadLabel": "Perheen kuorma",
+      "openItems": "{count, plural, =0 {Ei mitään avoinna juuri nyt} one {# asia avoinna} other {# asiaa avoinna}}",
+      "openLoad": "Avaa perheen kuorma",
+      "cta": "Aloita tämän päivän nollaus",
+      "ctaAgain": "Nollaa uudelleen",
+      "history": "Historia ({count})"
     }
   },
   "reset": {
@@ -165,7 +213,11 @@
     "dateLabel": "Nollaus {date}",
     "today": {
       "label": "Tänään",
-      "intro": "Vain nämä. Jos saat ne tehtyä, päivä on onnistunut."
+      "intro": "Vain nämä. Jos saat ne tehtyä, päivä on onnistunut.",
+      "allDone": "Kaikki tehty. Siinä oli tämä päivä.",
+      "markDone": "Merkitse tehdyksi",
+      "undo": "Merkitse tekemättömäksi",
+      "focus": "Tee ne yksi kerrallaan"
     },
     "thisWeek": {
       "label": "Tällä viikolla",
@@ -183,7 +235,12 @@
       "body": "Se on ehkä tehty toisella laitteella tai poistettu tästä selaimesta.",
       "cta": "Aloita uusi nollaus"
     },
-    "disclaimer": "Parent Reset on käytännön suunnittelutyökalu, ei lääketieteellistä tai terapeuttista neuvontaa."
+    "disclaimer": "Parent Reset on käytännön suunnittelutyökalu, ei lääketieteellistä tai terapeuttista neuvontaa.",
+    "addToLoad": "Lisää perheen kuormaan",
+    "addedShort": "Lisätty",
+    "addedToLoad": "Lisätty kohtaan {area}",
+    "goToLoad": "Avaa perheen kuorma",
+    "savedToAccount": "Tallennettu tilillesi."
   },
   "planner": {
     "summary": {
@@ -247,5 +304,260 @@
     "title": "Tuota sivua ei ole olemassa",
     "body": "Linkki voi olla vanha tai kirjoitettu väärin.",
     "cta": "Siirry alkuun"
+  },
+  "load": {
+    "title": "Perheen kuorma",
+    "subtitle": "Mikä vie tilaa päässäsi, alueittain. Lisää se, hoida se pois tai siirrä huomiseen.",
+    "summary": "{count, plural, =0 {Ei mitään avoinna juuri nyt.} one {# avoin asia kaikilla alueilla yhteensä.} other {# avointa asiaa kaikilla alueilla yhteensä.}}",
+    "categories": {
+      "kids": "Lapset",
+      "money": "Raha",
+      "home": "Koti",
+      "work": "Työ",
+      "relationship": "Parisuhde",
+      "me": "Minä"
+    },
+    "levels": {
+      "clear": "Tyhjä",
+      "light": "Kevyt",
+      "busy": "Kiireinen",
+      "heavy": "Raskas"
+    },
+    "openCount": "{count, plural, =0 {Ei avoimia} one {# avoinna} other {# avoinna}}",
+    "selectCategory": "Valitse alue",
+    "add": {
+      "label": "Lisää kohtaan {category}",
+      "placeholder": "Mitä sinulla on mielessä?",
+      "button": "Lisää",
+      "hint": "Lyhyt riittää. Pari sanaa on parempi kuin kappale."
+    },
+    "examples": {
+      "kids": "Uudet kengät, koulumaksu, hammaslääkäriaika",
+      "money": "Sähkölasku, ruokaostokset, autovakuutus",
+      "home": "Pyykit, siivous, se rikkinäinen lamppu",
+      "work": "Vastaus esihenkilölle, tuntikirjaus, torstain palaveri",
+      "relationship": "Yhteinen ilta, keskustelu viikonlopuista",
+      "me": "Uni, kävely, soitto ystävälle"
+    },
+    "empty": {
+      "title": "Täällä ei ole vielä mitään",
+      "body": "Lisää se, mikä pyörii mielessä. Esimerkiksi: {examples}."
+    },
+    "actions": {
+      "done": "Valmis",
+      "undo": "Kumoa",
+      "postpone": "Myöhemmin",
+      "bringBack": "Palauta",
+      "move": "Siirrä",
+      "remove": "Poista",
+      "clearDone": "Tyhjennä valmiit"
+    },
+    "sections": {
+      "open": "Avoinna",
+      "postponed": "Siirretty",
+      "done": "Valmiit"
+    },
+    "postponedUntil": "Palaa {date}",
+    "completedOn": "Valmis {date}",
+    "errors": {
+      "required": "Kirjoita ensin jotain.",
+      "tooLong": "Enintään {max} merkkiä, kiitos."
+    },
+    "savedLocally": "Tallennettu tälle laitteelle. Luo tili myöhemmin, niin tiedot säilyvät kaikilla laitteillasi.",
+    "notProjectTool": "Tämä ei ole tehtävälistajärjestelmä. Tämä on paikka, johon voit laskea asiat, jotta ne lakkaavat pyörimästä mielessä.",
+    "savedToAccount": "Tallennettu tilillesi. Käytettävissä kaikilla laitteilla, joille kirjaudut sisään."
+  },
+  "focus": {
+    "title": "Yksi asia kerrallaan",
+    "close": "Sulje",
+    "progress": "{done} / {total} tehty",
+    "next": "Juuri nyt vain tämä:",
+    "hint": "Mitään muuta ei ole olemassa, ennen kuin tämä on tehty tai ohitettu.",
+    "skip": "Ohita nyt",
+    "done": "Tehty",
+    "allDone": {
+      "title": "Tämä päivä on hoidettu.",
+      "body": "Kaikki muu voi odottaa. Mene tekemään jotain, mikä ei ole tehtävä.",
+      "cta": "Takaisin nollaukseen"
+    }
+  },
+  "account": {
+    "title": "Tili",
+    "unavailable": {
+      "title": "Tilit eivät ole vielä käytössä täällä",
+      "body": "Tämä Parent Reset -versio toimii ilman tietokantaa. Kaikki tekemäsi tallennetaan tälle laitteelle, ja se toimii hyvin. Tilit, laitteiden välinen historia ja yhteisö tulevat käyttöön, kun Supabase on yhdistetty."
+    },
+    "signedOut": {
+      "title": "Pidä nollauksesi mukanasi",
+      "body": "Tili tallentaa nollauksesi ja perheen kuorman eri laitteille. Sovelluksen käyttöön ei tarvita tiliä."
+    },
+    "signedIn": {
+      "title": "Tilisi",
+      "body": "Nollauksesi ja perheen kuorma tallennetaan tänne ja kaikille laitteille, joille kirjaudut sisään."
+    },
+    "auth": {
+      "modeLabel": "Kirjaudu sisään tai luo tili",
+      "signIn": {
+        "tab": "Kirjaudu sisään",
+        "submit": "Kirjaudu sisään"
+      },
+      "signUp": {
+        "tab": "Luo tili",
+        "submit": "Luo tili"
+      },
+      "email": "Sähköposti",
+      "password": "Salasana",
+      "passwordHint": "Vähintään 8 merkkiä.",
+      "working": "Hetki…",
+      "privacy": "Tallennamme sähköpostiosoitteesi ja tallentamasi nollaukset. Mitään ei jaeta eikä myydä.",
+      "checkEmail": {
+        "title": "Tarkista sähköpostisi",
+        "body": "Lähetimme sinulle linkin sähköpostin vahvistamiseksi. Avaa se tällä laitteella, niin rekisteröityminen on valmis."
+      },
+      "errors": {
+        "invalid": "Anna kelvollinen sähköpostiosoite ja vähintään 8 merkin salasana.",
+        "credentials": "Sähköposti ja salasana eivät täsmää.",
+        "exists": "Tällä sähköpostilla on jo tili. Kokeile kirjautua sisään.",
+        "rateLimited": "Liian monta yritystä. Odota hetki.",
+        "unavailable": "Tilit eivät ole käytettävissä tässä asennuksessa.",
+        "generic": "Jokin meni pieleen. Yritä uudelleen.",
+        "link": "Kirjautumislinkki ei toiminut. Pyydä uusi."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profiili",
+        "displayName": "Nimi yhteisössä",
+        "displayNameHint": "Näytetään yhteisöjulkaisuissasi sähköpostin sijaan. Arvo satunnainen nimi painamalla Arvo.",
+        "shuffle": "Arvo",
+        "save": "Tallenna",
+        "saved": "Tallennettu.",
+        "invalid": "Käytä 2–40 kirjainta, numeroa tai välilyöntiä."
+      },
+      "data": {
+        "title": "Omat tietosi",
+        "body": "Lataa kaikki, mitä meillä on sinusta, tai tyhjennä historiasi ja pidä tili.",
+        "export": "Lataa tietoni",
+        "deleteHistory": "Poista historiani"
+      },
+      "exportDone": "Tietosi on ladattu.",
+      "deleteHistoryConfirm": "Poistetaanko kaikki nollauksesi ja perheen kuorman kohteet? Tätä ei voi perua.",
+      "deleteHistoryDone": "Historia poistettu.",
+      "genericError": "Jokin meni pieleen. Yritä uudelleen.",
+      "signOut": "Kirjaudu ulos",
+      "danger": {
+        "title": "Poista tili",
+        "body": "Poistaa tilisi ja kaiken sen sisällön, myös yhteisöjulkaisut. Tätä ei voi perua.",
+        "delete": "Poista tilini",
+        "confirm": "Kyllä, poista kaikki",
+        "cancel": "Säilytä tilini"
+      }
+    },
+    "sync": {
+      "merged": "Siirrettiin {resets} nollausta ja {items} perheen kuorman kohdetta tältä laitteelta tilillesi."
+    }
+  },
+  "history": {
+    "title": "Historia",
+    "subtitle": "Miten päivät ovat sujuneet.",
+    "count": "{count, plural, =0 {Ei vielä nollauksia.} one {# nollaus tähän mennessä.} other {# nollausta tähän mennessä.}}",
+    "trend": {
+      "label": "Kevyemmät päivät",
+      "chartLabel": "Kuormitus viimeisimmissä nollauksissa",
+      "average": "Viimeaikainen keskiarvo: {value} / 10",
+      "needMore": "Muutaman nollauksen jälkeen näet, ovatko päivät keventymässä.",
+      "lighter": "Kevyempää kuin ennen. Mitä ikinä teetkin, se auttaa.",
+      "heavier": "Raskaampaa kuin ennen. Nyt on paljon. Se ei ole tuomio sinusta.",
+      "steady": "Suunnilleen samaa kuin ennen.",
+      "frequentAreas": "Useimmin mielessäsi: {areas}"
+    },
+    "empty": {
+      "title": "Ei vielä nollauksia",
+      "body": "Ensimmäinen vie kaksi minuuttia.",
+      "cta": "Aloita nollaus"
+    },
+    "overwhelm": "Kuormitus {value} / 10",
+    "completion": "{percent} % tämän päivän listasta tehty",
+    "open": "Avaa",
+    "delete": "Poista",
+    "guestNote": "Tämä historia on vain tällä laitteella.",
+    "guestCta": "Luo tili, niin se säilyy."
+  },
+  "community": {
+    "title": "Yhteisö",
+    "subtitle": "Sano ääneen se, mistä ei puhuta.",
+    "intro": "Pieni, nimettömyyteen perustuva paikka vanhemmille. Ei seuraajia, ei loputtomia syötteitä, ei täydellisiä perheitä.",
+    "write": "Kirjoita julkaisu",
+    "anonymousNote": "Julkaisuissa näkyy satunnainen nimi, ei koskaan sähköpostisi.",
+    "categoriesLabel": "Aiheet",
+    "all": "Kaikki",
+    "categories": {
+      "toddlers": "Taaperot",
+      "school_age": "Kouluikäiset",
+      "money_stress": "Rahahuolet",
+      "no_time": "Ei aikaa",
+      "relationships": "Ihmissuhteet",
+      "dads": "Isät",
+      "mums": "Äidit",
+      "single_parents": "Yksinhuoltajat",
+      "moving": "Muutto",
+      "general": "Yleistä"
+    },
+    "support": "{count, plural, =0 {Tukea} one {# tuki} other {# tukea}}",
+    "comments": "{count, plural, =0 {Ei vielä kommentteja} one {# kommentti} other {# kommenttia}}",
+    "back": "Takaisin yhteisöön",
+    "delete": "Poista julkaisu",
+    "deleteConfirm": "Poistetaanko tämä julkaisu ja sen kommentit?",
+    "unavailable": {
+      "title": "Yhteisö ei ole vielä käytössä täällä",
+      "body": "Se tulee käyttöön, kun tämä Parent Reset -versio on yhdistetty Supabaseen. Kaikki muu toimii ilman sitä."
+    },
+    "empty": {
+      "title": "Täällä ei ole vielä mitään",
+      "body": "Ole ensimmäinen. Yksikin rehellinen lause auttaa seuraavaa vanhempaa, joka lukee sen."
+    },
+    "safetyNote": "Jos julkaisu saa sinut huolestumaan jonkun turvallisuudesta, kehota häntä ottamaan yhteyttä paikalliseen hätänumeroon. Tämä on paikka puhua, ei kriisipalvelu.",
+    "new": {
+      "heading": "Kirjoita julkaisu",
+      "intro": "Mikä on sinulle totta juuri nyt? Kirjoita niin lyhyesti tai pitkästi kuin tarvitsee.",
+      "category": "Aihe",
+      "title": "Otsikko",
+      "titlePlaceholder": "Kukaan ei kertonut, että toinen vuosi olisi rankempi",
+      "body": "Julkaisusi",
+      "bodyPlaceholder": "Mitä on meneillään, mitä olet kokeillut, mitä tarvitset.",
+      "guidelines": "Ole ystävällinen. Ei muiden ihmisten nimiä, ei osoitteita, ei lääketieteellisiä neuvoja. Julkaisut ovat julkisia.",
+      "posting": "Julkaistaan…",
+      "submit": "Julkaise"
+    },
+    "comment": {
+      "label": "Vastaa",
+      "placeholder": "Muutama ystävällinen, rehellinen sana.",
+      "posting": "Lähetetään…",
+      "submit": "Vastaa",
+      "empty": "Ei vielä vastauksia. Sinun voisi olla ensimmäinen.",
+      "signInPrompt": "Kirjaudu sisään, niin voit vastata ja tukea julkaisuja.",
+      "signIn": "Kirjaudu sisään"
+    },
+    "report": {
+      "button": "Ilmoita",
+      "reasons": {
+        "spam": "Roskapostia tai mainontaa",
+        "harmful": "Vahingollista tai epäystävällistä",
+        "personal_info": "Jakaa henkilötietoja",
+        "other": "Jotain muuta"
+      },
+      "thanks": "Kiitos. Katsomme asian.",
+      "failed": "Ilmoitusta ei voitu lähettää. Yritä uudelleen."
+    },
+    "errors": {
+      "invalid": "Täytä otsikko ja viesti.",
+      "titleTooLong": "Otsikko on hieman pitkä. Pidä se alle 140 merkissä.",
+      "bodyTooLong": "Tuo on hieman pitkä. Pidä se alle 4000 merkissä.",
+      "tooLong": "Tuo on hieman pitkä. Pidä se alle 2000 merkissä.",
+      "rejected": "Emme voineet julkaista tuota. Poista linkit ja yritä uudelleen.",
+      "rateLimited": "Julkaiset nopeaan tahtiin. Odota muutama minuutti.",
+      "signIn": "Kirjaudu ensin sisään.",
+      "generic": "Jokin meni pieleen. Yritä uudelleen."
+    }
   }
 }

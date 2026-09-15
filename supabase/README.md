@@ -12,8 +12,8 @@ Load and Community in later milestones.
    NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
    ```
 
-3. Apply the schema. Either paste `migrations/0001_init.sql` into the SQL
-   editor, or with the CLI:
+3. Apply the schema. Either paste each file in `migrations/` into the SQL
+   editor in order (0001, 0002, 0003), or with the CLI:
 
    ```
    supabase link --project-ref <ref>
@@ -22,6 +22,14 @@ Load and Community in later milestones.
 
 4. In Authentication → Providers enable Email. Disable "Confirm email" for
    local testing if you prefer.
+5. In Authentication → URL Configuration set the Site URL to your deployment
+   (for example `https://parents-reset.vercel.app`) and add
+   `https://<your-domain>/api/auth/callback` and
+   `http://localhost:3000/api/auth/callback` to the redirect allow list.
+   Confirmation emails link back through that callback.
+6. Optional: add `SUPABASE_SERVICE_ROLE_KEY` as a server-only variable so
+   "Delete my account" can also remove the auth user. Never prefix it with
+   `NEXT_PUBLIC_`.
 
 Row Level Security is enabled on every table. Users can only read and write
 their own resets, reset items and load items. Community posts and comments

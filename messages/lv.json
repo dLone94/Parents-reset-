@@ -18,6 +18,22 @@
     "result": {
       "title": "Tavs restarts – Parent Reset",
       "description": "Tavs īsais saraksts šodienai, kas var pagaidīt līdz nedēļas beigām un ko vari atlaist."
+    },
+    "load": {
+      "title": "Ģimenes slodze – Parent Reset",
+      "description": "Vienkāršs skats uz to, kas aizņem vietu tavā galvā: bērni, nauda, mājas, darbs, attiecības un tu."
+    },
+    "account": {
+      "title": "Tavs konts – Parent Reset",
+      "description": "Pieslēdzies, lai saglabātu restartus un ģimenes slodzi visās ierīcēs."
+    },
+    "history": {
+      "title": "Tava vēsture – Parent Reset",
+      "description": "Iepriekšējie restarti un tas, vai dienas kļūst vieglākas."
+    },
+    "community": {
+      "title": "Kopiena – Parent Reset",
+      "description": "Maza, pēc noklusējuma anonīma vieta vecākiem, kur pateikt skaļi to, kas parasti paliek nepateikts."
     }
   },
   "common": {
@@ -37,7 +53,20 @@
     "home": "Sākums",
     "startReset": "Sākt manu restartu",
     "howItWorks": "Kā tas darbojas",
-    "menuTitle": "Izvēlne"
+    "menuTitle": "Izvēlne",
+    "familyLoad": "Ģimenes slodze",
+    "community": "Kopiena",
+    "history": "Vēsture",
+    "account": "Konts",
+    "signIn": "Pieslēgties",
+    "tabs": {
+      "label": "Galvenā navigācija",
+      "home": "Sākums",
+      "reset": "Restarts",
+      "load": "Slodze",
+      "community": "Kopiena",
+      "account": "Tu"
+    }
   },
   "home": {
     "hero": {
@@ -92,6 +121,25 @@
       "title": "Kad vien vēlies.",
       "body": "Divas minūtes tagad var padarīt atlikušo dienu vieglāku.",
       "cta": "Sākt manu restartu"
+    },
+    "welcome": {
+      "greeting": {
+        "morning": "Labrīt",
+        "afternoon": "Labdien",
+        "evening": "Labvakar",
+        "night": "Vēl nomodā?"
+      },
+      "title": "Prieks tevi redzēt atkal. Ar ko vēlies sākt?",
+      "todayDone": "Šodienas restarts jau ir paveikts. Lieliski.",
+      "lastReset": "Pēdējais restarts: {date}",
+      "progress": "{percent}% no šodienas saraksta izdarīti",
+      "openLast": "Atvērt to restartu",
+      "loadLabel": "Ģimenes slodze",
+      "openItems": "{count, plural, =0 {Šobrīd nekas nav atvērts} zero {# atvērtu lietu} one {# atvērta lieta} other {# atvērtas lietas}}",
+      "openLoad": "Atvērt ģimenes slodzi",
+      "cta": "Sākt šodienas restartu",
+      "ctaAgain": "Restartēt vēlreiz",
+      "history": "Vēsture ({count})"
     }
   },
   "reset": {
@@ -165,7 +213,11 @@
     "dateLabel": "Restarts no {date}",
     "today": {
       "label": "Šodien",
-      "intro": "Tikai šīs. Ja tās paveiksi, diena ir izdevusies."
+      "intro": "Tikai šīs. Ja tās paveiksi, diena ir izdevusies.",
+      "allDone": "Viss izdarīts. Tāda bija šī diena.",
+      "markDone": "Atzīmēt kā izdarītu",
+      "undo": "Atzīmēt kā neizdarītu",
+      "focus": "Darīt pa vienam"
     },
     "thisWeek": {
       "label": "Šonedēļ",
@@ -183,7 +235,12 @@
       "body": "Iespējams, tas izveidots citā ierīcē vai izdzēsts no šī pārlūka.",
       "cta": "Sākt jaunu restartu"
     },
-    "disclaimer": "Parent Reset ir praktisks plānošanas rīks, nevis medicīnisks vai terapeitisks padoms."
+    "disclaimer": "Parent Reset ir praktisks plānošanas rīks, nevis medicīnisks vai terapeitisks padoms.",
+    "addToLoad": "Pievienot ģimenes slodzei",
+    "addedShort": "Pievienots",
+    "addedToLoad": "Pievienots: {area}",
+    "goToLoad": "Atvērt ģimenes slodzi",
+    "savedToAccount": "Saglabāts tavā kontā."
   },
   "planner": {
     "summary": {
@@ -247,5 +304,260 @@
     "title": "Šāda lapa neeksistē",
     "body": "Saite var būt novecojusi vai nepareizi ierakstīta.",
     "cta": "Uz sākumu"
+  },
+  "load": {
+    "title": "Ģimenes slodze",
+    "subtitle": "Kas aizņem vietu tavā galvā, pa jomām. Pievieno, pabeidz vai atliec uz rītdienu.",
+    "summary": "{count, plural, =0 {Šobrīd nekas nav atvērts.} zero {# atvērtu lietu visās jomās.} one {# atvērta lieta visās jomās.} other {# atvērtas lietas visās jomās.}}",
+    "categories": {
+      "kids": "Bērni",
+      "money": "Nauda",
+      "home": "Mājas",
+      "work": "Darbs",
+      "relationship": "Attiecības",
+      "me": "Es"
+    },
+    "levels": {
+      "clear": "Brīvi",
+      "light": "Viegli",
+      "busy": "Saspringti",
+      "heavy": "Smagi"
+    },
+    "openCount": "{count, plural, =0 {Nekas nav atvērts} zero {# atvērtu} one {# atvērta} other {# atvērtas}}",
+    "selectCategory": "Izvēlies jomu",
+    "add": {
+      "label": "Pievienot: {category}",
+      "placeholder": "Kas tev ir prātā?",
+      "button": "Pievienot",
+      "hint": "Īsi ir labi. Daži vārdi ir labāk nekā vesela rindkopa."
+    },
+    "examples": {
+      "kids": "Jaunas kurpes, skolas maksājums, zobārsta vizīte",
+      "money": "Elektrības rēķins, pārtika, auto apdrošināšana",
+      "home": "Veļa, uzkopšana, salauztā lampa",
+      "work": "Atbilde vadītājam, darba laika uzskaite, ceturtdienas sapulce",
+      "relationship": "Saplānot kopīgu vakaru, saruna par nedēļas nogalēm",
+      "me": "Miegs, pastaiga, piezvanīt draugam"
+    },
+    "empty": {
+      "title": "Šeit vēl nekā nav",
+      "body": "Pievieno to, kas visu laiku griežas galvā. Piemēram: {examples}."
+    },
+    "actions": {
+      "done": "Izdarīts",
+      "undo": "Atsaukt",
+      "postpone": "Vēlāk",
+      "bringBack": "Atgriezt",
+      "move": "Pārvietot uz",
+      "remove": "Noņemt",
+      "clearDone": "Notīrīt izdarīto"
+    },
+    "sections": {
+      "open": "Atvērts",
+      "postponed": "Atlikts",
+      "done": "Izdarīts"
+    },
+    "postponedUntil": "Atgriezīsies {date}",
+    "completedOn": "Izdarīts {date}",
+    "errors": {
+      "required": "Vispirms kaut ko uzraksti.",
+      "tooLong": "Lūdzu, ne vairāk par {max} rakstzīmēm."
+    },
+    "savedLocally": "Saglabāts šajā ierīcē. Vēlāk izveido kontu, lai tas būtu pieejams arī citās ierīcēs.",
+    "notProjectTool": "Šī nav uzdevumu sistēma. Šī ir vieta, kur nolikt lietas, lai tās vairs negrieztos galvā.",
+    "savedToAccount": "Saglabāts tavā kontā. Pieejams katrā ierīcē, kurā pieslēdzies."
+  },
+  "focus": {
+    "title": "Viena lieta vienlaikus",
+    "close": "Aizvērt",
+    "progress": "{done} no {total} izdarīti",
+    "next": "Šobrīd tikai šis:",
+    "hint": "Nekas cits neeksistē, kamēr šis nav izdarīts vai izlaists.",
+    "skip": "Izlaist pagaidām",
+    "done": "Izdarīts",
+    "allDone": {
+      "title": "Šodiena ir nokārtota.",
+      "body": "Viss pārējais var pagaidīt. Ej dari kaut ko, kas nav uzdevums.",
+      "cta": "Atpakaļ uz manu restartu"
+    }
+  },
+  "account": {
+    "title": "Konts",
+    "unavailable": {
+      "title": "Konti šeit vēl nav ieslēgti",
+      "body": "Šī Parent Reset kopija darbojas bez datubāzes. Viss, ko dari, tiek saglabāts šajā ierīcē, un tas darbojas labi. Konti, vēsture visās ierīcēs un kopiena parādīsies, kad būs pieslēgts Supabase."
+    },
+    "signedOut": {
+      "title": "Paturi savus restartus līdzi",
+      "body": "Konts saglabā tavus restartus un ģimenes slodzi visās ierīcēs. Lai lietotu lietotni, konts nav vajadzīgs."
+    },
+    "signedIn": {
+      "title": "Tavs konts",
+      "body": "Tavi restarti un ģimenes slodze tiek saglabāti šeit un katrā ierīcē, kurā pieslēdzies."
+    },
+    "auth": {
+      "modeLabel": "Pieslēgties vai izveidot kontu",
+      "signIn": {
+        "tab": "Pieslēgties",
+        "submit": "Pieslēgties"
+      },
+      "signUp": {
+        "tab": "Izveidot kontu",
+        "submit": "Izveidot kontu"
+      },
+      "email": "E-pasts",
+      "password": "Parole",
+      "passwordHint": "Vismaz 8 rakstzīmes.",
+      "working": "Mirkli…",
+      "privacy": "Mēs glabājam tavu e-pastu un saglabātos restartus. Nekas netiek kopīgots vai pārdots.",
+      "checkEmail": {
+        "title": "Pārbaudi savu e-pastu",
+        "body": "Nosūtījām tev saiti e-pasta apstiprināšanai. Atver to šajā ierīcē, lai pabeigtu reģistrāciju."
+      },
+      "errors": {
+        "invalid": "Lūdzu, ievadi derīgu e-pastu un paroli ar vismaz 8 rakstzīmēm.",
+        "credentials": "Šis e-pasts un parole nesakrīt.",
+        "exists": "Ar šo e-pastu konts jau ir. Mēģini pieslēgties.",
+        "rateLimited": "Pārāk daudz mēģinājumu. Lūdzu, pagaidi minūti.",
+        "unavailable": "Konti šajā versijā nav pieejami.",
+        "generic": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz.",
+        "link": "Šī pieslēgšanās saite nenostrādāja. Lūdzu, pieprasi jaunu."
+      }
+    },
+    "settings": {
+      "profile": {
+        "title": "Profils",
+        "displayName": "Vārds kopienā",
+        "displayNameHint": "Tiek rādīts tavos kopienas ierakstos e-pasta vietā. Sajauc, lai iegūtu nejaušu.",
+        "shuffle": "Sajaukt",
+        "save": "Saglabāt",
+        "saved": "Saglabāts.",
+        "invalid": "Izmanto 2 līdz 40 burtus, ciparus vai atstarpes."
+      },
+      "data": {
+        "title": "Tavi dati",
+        "body": "Lejupielādē visu, ko par tevi glabājam, vai dzēs savu vēsturi, paturot kontu.",
+        "export": "Lejupielādēt manus datus",
+        "deleteHistory": "Dzēst manu vēsturi"
+      },
+      "exportDone": "Tavi dati ir lejupielādēti.",
+      "deleteHistoryConfirm": "Dzēst visus restartus un ģimenes slodzes ierakstus? To nevar atsaukt.",
+      "deleteHistoryDone": "Vēsture dzēsta.",
+      "genericError": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz.",
+      "signOut": "Iziet",
+      "danger": {
+        "title": "Dzēst kontu",
+        "body": "Noņem tavu kontu un visu tajā esošo, arī kopienas ierakstus. Atpakaļceļa nav.",
+        "delete": "Dzēst manu kontu",
+        "confirm": "Jā, dzēst visu",
+        "cancel": "Paturēt manu kontu"
+      }
+    },
+    "sync": {
+      "merged": "No šīs ierīces uz tavu kontu pārvietoti {resets} restarti un {items} ģimenes slodzes ieraksti."
+    }
+  },
+  "history": {
+    "title": "Vēsture",
+    "subtitle": "Kā ir gājis pa dienām.",
+    "count": "{count, plural, =0 {Vēl nav neviena restarta.} zero {Līdz šim # restartu.} one {Līdz šim # restarts.} other {Līdz šim # restarti.}}",
+    "trend": {
+      "label": "Vieglākas dienas",
+      "chartLabel": "Pārslodze tavos pēdējos restartos",
+      "average": "Nesenais vidējais: {value} / 10",
+      "needMore": "Pēc vēl dažiem restartiem redzēsi, vai dienas kļūst vieglākas.",
+      "lighter": "Vieglāk nekā iepriekš. Lai ko tu darītu, tas palīdz.",
+      "heavier": "Smagāk nekā iepriekš. Šobrīd ir daudz. Tas nav spriedums par tevi.",
+      "steady": "Apmēram tāpat kā iepriekš.",
+      "frequentAreas": "Visbiežāk prātā: {areas}"
+    },
+    "empty": {
+      "title": "Vēl nav neviena restarta",
+      "body": "Pirmais aizņem divas minūtes.",
+      "cta": "Sākt manu restartu"
+    },
+    "overwhelm": "Pārslodze {value} no 10",
+    "completion": "{percent}% no šodienas saraksta izdarīti",
+    "open": "Atvērt",
+    "delete": "Dzēst",
+    "guestNote": "Šī vēsture glabājas tikai šajā ierīcē.",
+    "guestCta": "Izveido kontu, lai to paturētu."
+  },
+  "community": {
+    "title": "Kopiena",
+    "subtitle": "Pasaki skaļi to, kas parasti paliek nepateikts.",
+    "intro": "Maza, pēc noklusējuma anonīma vieta vecākiem. Bez sekotājiem, bez bezgalīgām plūsmām, bez perfektām ģimenēm.",
+    "write": "Rakstīt ierakstu",
+    "anonymousNote": "Ierakstos redzams nejaušs vārds, nekad tavs e-pasts.",
+    "categoriesLabel": "Kategorijas",
+    "all": "Visi",
+    "categories": {
+      "toddlers": "Mazuļi",
+      "school_age": "Skolēni",
+      "money_stress": "Naudas stress",
+      "no_time": "Nav laika",
+      "relationships": "Attiecības",
+      "dads": "Tēti",
+      "mums": "Mammas",
+      "single_parents": "Vientuļie vecāki",
+      "moving": "Pārcelšanās",
+      "general": "Vispārīgi"
+    },
+    "support": "{count, plural, =0 {Atbalstīt} zero {# atbalsta} one {# atbalsts} other {# atbalsti}}",
+    "comments": "{count, plural, =0 {Vēl nav komentāru} zero {# komentāru} one {# komentārs} other {# komentāri}}",
+    "back": "Atpakaļ uz kopienu",
+    "delete": "Dzēst ierakstu",
+    "deleteConfirm": "Dzēst šo ierakstu un tā komentārus?",
+    "unavailable": {
+      "title": "Kopiena šeit vēl nav ieslēgta",
+      "body": "Tā parādīsies, kad šī Parent Reset kopija būs pieslēgta Supabase. Viss pārējais darbojas arī bez tās."
+    },
+    "empty": {
+      "title": "Šeit vēl nekā nav",
+      "body": "Sāc tu. Pat viens godīgs teikums palīdz nākamajam vecākam, kas to izlasa."
+    },
+    "safetyNote": "Ja kāds ieraksts liek uztraukties par kāda drošību, aicini šo cilvēku sazināties ar vietējiem neatliekamās palīdzības dienestiem. Šī ir vieta sarunai, nevis krīzes dienests.",
+    "new": {
+      "heading": "Rakstīt ierakstu",
+      "intro": "Kas tev šobrīd ir patiesi? Lai tas ir tik īss vai garš, cik vajag.",
+      "category": "Kategorija",
+      "title": "Virsraksts",
+      "titlePlaceholder": "Neviens man neteica, ka otrais gads būs grūtāks",
+      "body": "Tavs ieraksts",
+      "bodyPlaceholder": "Kas notiek, kas jau izmēģināts, kas tev vajadzīgs.",
+      "guidelines": "Ar laipnību. Bez citu cilvēku vārdiem, bez adresēm, bez medicīniskiem padomiem. Ieraksti ir publiski.",
+      "posting": "Publicē…",
+      "submit": "Publicēt"
+    },
+    "comment": {
+      "label": "Atbildēt",
+      "placeholder": "Daži laipni, godīgi vārdi.",
+      "posting": "Sūta…",
+      "submit": "Atbildēt",
+      "empty": "Vēl nav atbilžu. Tava var būt pirmā.",
+      "signInPrompt": "Pieslēdzies, lai atbildētu un atbalstītu ierakstus.",
+      "signIn": "Pieslēgties"
+    },
+    "report": {
+      "button": "Ziņot",
+      "reasons": {
+        "spam": "Surogātpasts vai reklāma",
+        "harmful": "Kaitīgs vai nelaipns",
+        "personal_info": "Atklāj personas datus",
+        "other": "Kas cits"
+      },
+      "thanks": "Paldies. Mēs apskatīsim.",
+      "failed": "Ziņojumu neizdevās nosūtīt. Lūdzu, mēģini vēlreiz."
+    },
+    "errors": {
+      "invalid": "Lūdzu, aizpildi virsrakstu un ziņu.",
+      "titleTooLong": "Virsraksts ir mazliet par garu. Lūdzu, ne vairāk kā 140 rakstzīmes.",
+      "bodyTooLong": "Tas ir mazliet par garu. Lūdzu, ne vairāk kā 4000 rakstzīmes.",
+      "tooLong": "Tas ir mazliet par garu. Lūdzu, ne vairāk kā 2000 rakstzīmes.",
+      "rejected": "To neizdevās publicēt. Lūdzu, noņem saites un mēģini vēlreiz.",
+      "rateLimited": "Tu publicē ātri. Lūdzu, pagaidi dažas minūtes.",
+      "signIn": "Lūdzu, vispirms pieslēdzies.",
+      "generic": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
+    }
   }
 }

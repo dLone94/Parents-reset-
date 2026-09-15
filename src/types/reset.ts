@@ -69,4 +69,6 @@ export interface ResetRecord {
   answers: ResetAnswers;
   plan: ResetPlan;
   safetyFlag: boolean;
+  /** Ids of today items the user ticked off on the result page. */
+  completedItemIds?: string[];
 }
