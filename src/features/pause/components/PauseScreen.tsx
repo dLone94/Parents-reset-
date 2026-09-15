@@ -89,7 +89,7 @@ export function PauseScreen({ initialPattern }: { initialPattern?: BreathPattern
               <button
                 type="button"
                 onClick={() => start(id)}
-                className="tap focus-ring w-full rounded-2xl border border-line bg-paper p-5 text-left shadow-soft transition-colors hover:border-clay"
+                className="tap focus-ring w-full rounded-2xl border border-field bg-paper p-5 text-left shadow-soft transition-colors hover:border-clay"
               >
                 <span className="flex items-baseline justify-between gap-3">
                   <span className="text-xl font-semibold">{t(`patterns.${id}.name`)}</span>

@@ -562,6 +562,13 @@
       "weeks": "Espalhados por {weeks} semanas diferentes.",
       "growing": "Vai somando em silêncio.",
       "longestGap": "A tua pausa mais longa foi de {days} dias. Dessa também voltaste."
+    },
+    "week": {
+      "label": "A tua semana",
+      "closed": "{count, plural, one {Um dia fechado} other {# dias fechados}}",
+      "notClosed": "por fechar",
+      "closedNoWeather": "fechado",
+      "empty": "Fecha um dia e isto começa a encher-se."
     }
   },
   "community": {
@@ -789,5 +796,20 @@
       "pause": "Respirar um minuto",
       "home": "Voltar ao início"
     }
+  },
+  "offline": {
+    "banner": "Sem ligação. Tudo o que está neste aparelho continua a funcionar.",
+    "eyebrow": "Sem ligação",
+    "title": "Estás offline",
+    "body": "O teu telemóvel está sem rede. A maior parte do Parent Reset nunca precisou dela: o que escreves fica neste aparelho.",
+    "works": {
+      "pause": "Respirar funciona",
+      "reset": "Um reset inteiro funciona",
+      "load": "A carga familiar funciona",
+      "evening": "Fechar o dia funciona"
+    },
+    "needsSignal": "A comunidade e o início de sessão precisam de ligação. Estarão lá quando voltares.",
+    "cta": "Respirar um minuto",
+    "home": "Voltar ao início"
   }
 }

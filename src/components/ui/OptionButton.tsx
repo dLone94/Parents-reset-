@@ -29,7 +29,7 @@ export function OptionButton({
           : "inline-flex items-center rounded-full px-4 py-2.5 text-base font-medium",
         selected
           ? "border-clay bg-clay-soft text-ink"
-          : "border-line bg-paper text-ink hover:border-ink-muted",
+          : "border-field bg-paper text-ink hover:border-ink-muted",
         className,
       )}
       {...rest}
@@ -40,7 +40,7 @@ export function OptionButton({
           aria-hidden
           className={cn(
             "inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full border",
-            selected ? "border-clay bg-clay text-paper" : "border-line bg-paper",
+            selected ? "border-clay bg-clay text-paper" : "border-field bg-paper",
           )}
         >
           {selected && (

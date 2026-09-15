@@ -82,7 +82,7 @@ export function AccountSettings({ email, displayName }: AccountSettingsProps) {
               value={name}
               onChange={(e) => setName(e.target.value)}
               maxLength={40}
-              className="tap focus-ring w-full flex-1 rounded-full border border-line bg-paper px-5 text-lg text-ink"
+              className="tap focus-ring w-full flex-1 rounded-full border border-field bg-paper px-5 text-lg text-ink"
             />
             <Button type="button" variant="secondary" onClick={() => setName(generatePseudonym())}>
               {t("profile.shuffle")}

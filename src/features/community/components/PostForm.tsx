@@ -29,7 +29,7 @@ export function PostForm({ defaultCategory }: { defaultCategory?: CommunityCateg
           id="category"
           name="category"
           defaultValue={defaultCategory ?? "general"}
-          className="tap focus-ring w-full cursor-pointer rounded-full border border-line bg-paper px-5 text-lg text-ink"
+          className="tap focus-ring w-full cursor-pointer rounded-full border border-field bg-paper px-5 text-lg text-ink"
         >
           {communityCategories.map((c) => (
             <option key={c} value={c}>

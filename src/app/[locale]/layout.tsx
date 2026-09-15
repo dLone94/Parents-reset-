@@ -7,6 +7,8 @@ import { ToastProvider } from "@/components/feedback/Toast";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileTabBar } from "@/components/layout/MobileTabBar";
+import { OfflineBanner } from "@/components/layout/OfflineBanner";
+import { ServiceWorkerRegistration } from "@/components/layout/ServiceWorkerRegistration";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { routing } from "@/i18n/routing";
 import { themeScript } from "@/lib/theme";
@@ -96,10 +98,12 @@ export default async function LocaleLayout({
                 >
                   {t("skipToContent")}
                 </a>
+                <OfflineBanner />
                 <Header userEmail={user?.email ?? null} />
                 <main id="content" className="flex flex-1 flex-col">
                   {children}
                 </main>
+                <ServiceWorkerRegistration />
                 <Footer />
                 <MobileTabBar />
               </PersistenceProvider>

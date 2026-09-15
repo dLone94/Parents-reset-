@@ -562,6 +562,13 @@
       "weeks": "Répartis sur {weeks} semaines différentes.",
       "growing": "Ça s'accumule tout doucement.",
       "longestGap": "Votre plus longue absence a duré {days} jours. Vous en êtes revenu aussi."
+    },
+    "week": {
+      "label": "Votre semaine",
+      "closed": "{count, plural, one {Un jour clos} other {# jours clos}}",
+      "notClosed": "non close",
+      "closedNoWeather": "close",
+      "empty": "Clôturez une journée et ceci commence à se remplir."
     }
   },
   "community": {
@@ -789,5 +796,20 @@
       "pause": "Respirer une minute",
       "home": "Retour à l'accueil"
     }
+  },
+  "offline": {
+    "banner": "Pas de connexion. Tout ce qui est sur cet appareil fonctionne encore.",
+    "eyebrow": "Pas de connexion",
+    "title": "Vous êtes hors ligne",
+    "body": "Votre téléphone n'a pas de réseau. L'essentiel de Parent Reset n'en a jamais eu besoin : ce que vous écrivez reste sur cet appareil.",
+    "works": {
+      "pause": "Respirer fonctionne",
+      "reset": "Un reset complet fonctionne",
+      "load": "La charge familiale fonctionne",
+      "evening": "Clore la journée fonctionne"
+    },
+    "needsSignal": "La communauté et la connexion au compte ont besoin du réseau. Elles seront là à votre retour.",
+    "cta": "Respirer une minute",
+    "home": "Retour à l'accueil"
   }
 }

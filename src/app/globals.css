@@ -11,17 +11,25 @@
   --color-line: #e5dccf;
   --color-ink: #2a2420;
   --color-ink-soft: #6b605a;
-  --color-ink-muted: #9a8f87;
+  --color-ink-muted: #746962;
 
-  --color-clay: #c4664a;
-  --color-clay-deep: #a5523a;
+  /*
+    Accent values are measured, not eyeballed: each one clears 4.5:1 as text on
+    cream, paper and its own soft tint, and clay also clears it under white so
+    a primary button's label is readable. Tired eyes at 11pm are the point.
+  */
+  --color-clay: #b3563a;
+  --color-clay-deep: #a35139;
   --color-clay-soft: #f6e5dc;
 
-  --color-honey: #b98a35;
+  --color-honey: #886527;
   --color-honey-soft: #f7ecd4;
 
-  --color-moss: #6b8566;
+  --color-moss: #5a7056;
   --color-moss-soft: #e7eee3;
+
+  /* Borders that carry meaning (a field's edge) need 3:1; decorative rules do not. */
+  --color-field: #a88a5f;
 
   --font-sans:
     var(--font-body), "Manrope", "Segoe UI", "Helvetica Neue", Arial,
@@ -69,6 +77,8 @@
     --color-moss: #9cb894;
     --color-moss-soft: #22301f;
 
+    --color-field: #786151;
+
     --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px -12px rgba(0, 0, 0, 0.6);
     --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.35), 0 18px 40px -16px rgba(0, 0, 0, 0.7);
   }
@@ -93,6 +103,8 @@
 
   --color-moss: #9cb894;
   --color-moss-soft: #22301f;
+
+  --color-field: #786151;
 
   --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px -12px rgba(0, 0, 0, 0.6);
   --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.35), 0 18px 40px -16px rgba(0, 0, 0, 0.7);

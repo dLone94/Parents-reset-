@@ -562,6 +562,13 @@
       "weeks": "Rozložené do {weeks} rôznych týždňov.",
       "growing": "Potichu sa to spočítava.",
       "longestGap": "Tvoja najdlhšia pauza bola {days} dní. Aj z tej si sa vrátil."
+    },
+    "week": {
+      "label": "Tvoj týždeň",
+      "closed": "{count, plural, one {Jeden deň uzavretý} few {# dni uzavreté} many {# dňa uzavretých} other {# dní uzavretých}}",
+      "notClosed": "neuzavretý",
+      "closedNoWeather": "uzavretý",
+      "empty": "Uzavri deň a toto sa začne plniť."
     }
   },
   "community": {
@@ -789,5 +796,20 @@
       "pause": "Minúta dychu",
       "home": "Späť domov"
     }
+  },
+  "offline": {
+    "banner": "Bez pripojenia. Všetko v tomto zariadení funguje ďalej.",
+    "eyebrow": "Bez pripojenia",
+    "title": "Si offline",
+    "body": "Tvoj telefón teraz nemá signál. Väčšina Parent Resetu ho nikdy nepotrebovala: to, čo napíšeš, zostáva v tomto zariadení.",
+    "works": {
+      "pause": "Dýchanie funguje",
+      "reset": "Celý reset funguje",
+      "load": "Rodinná záťaž funguje",
+      "evening": "Uzavretie dňa funguje"
+    },
+    "needsSignal": "Komunita a prihlásenie potrebujú pripojenie. Počkajú, kým sa vrátiš.",
+    "cta": "Minúta dychu",
+    "home": "Späť domov"
   }
 }

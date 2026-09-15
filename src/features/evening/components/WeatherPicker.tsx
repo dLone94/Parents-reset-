@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { RadioGroup } from "@/components/ui/RadioGroup";
 import { dayWeather, type DayWeather } from "@/types/journal";
 import { cn } from "@/lib/utils/cn";
 
@@ -25,7 +26,7 @@ export function WeatherPicker({
   const t = useTranslations("evening.weather");
 
   return (
-    <div role="radiogroup" aria-label={t("question")} className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+    <RadioGroup label={t("question")} className="grid grid-cols-2 gap-3 sm:grid-cols-4">
       {dayWeather.map((option) => {
         const selected = value === option;
         return (
@@ -38,7 +39,7 @@ export function WeatherPicker({
             onClick={() => onChange(selected ? undefined : option)}
             className={cn(
               "tap focus-ring flex flex-col items-center gap-2 rounded-2xl border p-4 text-center transition-colors",
-              selected ? tone[option] : "border-line bg-paper text-ink-soft hover:border-ink-muted",
+              selected ? tone[option] : "border-field bg-paper text-ink-soft hover:border-ink-muted",
             )}
           >
             <WeatherIcon weather={option} />
@@ -46,7 +47,7 @@ export function WeatherPicker({
           </button>
         );
       })}
-    </div>
+    </RadioGroup>
   );
 }
 

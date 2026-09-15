@@ -562,6 +562,13 @@
       "weeks": "Utspridda över {weeks} olika veckor.",
       "growing": "Det växer tyst.",
       "longestGap": "Ditt längsta uppehåll var {days} dagar. Du kom tillbaka från det också."
+    },
+    "week": {
+      "label": "Din vecka",
+      "closed": "{count, plural, one {En dag avslutad} other {# dagar avslutade}}",
+      "notClosed": "inte avslutad",
+      "closedNoWeather": "avslutad",
+      "empty": "Avsluta en dag så börjar det här fyllas i."
     }
   },
   "community": {
@@ -789,5 +796,20 @@
       "pause": "Andas en minut",
       "home": "Tillbaka hem"
     }
+  },
+  "offline": {
+    "banner": "Ingen uppkoppling. Allt som ligger på den här enheten fungerar ändå.",
+    "eyebrow": "Ingen uppkoppling",
+    "title": "Du är offline",
+    "body": "Din telefon har ingen täckning just nu. Det mesta i Parent Reset har aldrig behövt någon: det du skriver stannar på den här enheten.",
+    "works": {
+      "pause": "Andningen fungerar",
+      "reset": "En hel reset fungerar",
+      "load": "Familjelasten fungerar",
+      "evening": "Att avsluta dagen fungerar"
+    },
+    "needsSignal": "Gemenskapen och inloggningen behöver uppkoppling. De finns kvar när du är tillbaka.",
+    "cta": "Andas en minut",
+    "home": "Tillbaka hem"
   }
 }

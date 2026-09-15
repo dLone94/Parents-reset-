@@ -12,6 +12,7 @@ import { useRepositories } from "@/services/persistence/PersistenceProvider";
 import type { DayNote } from "@/types/journal";
 import type { ResetRecord } from "@/types/reset";
 import { returnsKey, summariseReturns } from "../returns";
+import { WeekStrip } from "./WeekStrip";
 import { completionRatio, summariseHistory } from "../summarise";
 
 export function HistoryView() {
@@ -67,6 +68,8 @@ export function HistoryView() {
           {records === null ? tc("loading") : t("count", { count: summary.count })}
         </p>
       </header>
+
+      {notes.length > 0 && <WeekStrip notes={notes} today={today} />}
 
       {returns.total > 0 && (
         <section

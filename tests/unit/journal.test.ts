@@ -3,6 +3,7 @@ import { closingKey } from "@/features/evening/closing";
 import { dayNoteSchema } from "@/features/evening/schema";
 import { isoWeekKey, returnsKey, summariseReturns } from "@/features/history/returns";
 import { pickResurfaced } from "@/features/kept/resurface";
+import { closedThisWeek, weekStrip } from "@/features/history/week";
 import { daysBetween, dayToDate, localDay } from "@/lib/utils/day";
 import { isNightHour, resolveTheme } from "@/lib/theme";
 import { LocalDayNoteRepository } from "@/services/persistence";
@@ -213,5 +214,40 @@ describe("local day note repository", () => {
     const repo = new LocalDayNoteRepository(null);
     expect(await repo.list()).toEqual([]);
     await expect(repo.save(note("2026-03-01"))).resolves.toBeUndefined();
+  });
+});
+
+describe("week strip", () => {
+  const notes = [
+    note("2026-03-18", { weather: "storm" }),
+    note("2026-03-20", { weather: "sun" }),
+    note("2026-03-09", { weather: "rain" }),
+  ];
+
+  it("always shows seven days, oldest first, marking today", () => {
+    const days = weekStrip(notes, "2026-03-20");
+    expect(days).toHaveLength(7);
+    expect(days[0].day).toBe("2026-03-14");
+    expect(days[6].day).toBe("2026-03-20");
+    expect(days[6].isToday).toBe(true);
+    expect(days.filter((d) => d.isToday)).toHaveLength(1);
+  });
+
+  it("fills in the days that were closed and leaves the rest blank", () => {
+    const days = weekStrip(notes, "2026-03-20");
+    expect(days.find((d) => d.day === "2026-03-18")?.weather).toBe("storm");
+    expect(days.find((d) => d.day === "2026-03-19")?.closed).toBe(false);
+    // Older than the window: not shown at all rather than clamped into it.
+    expect(days.some((d) => d.day === "2026-03-09")).toBe(false);
+  });
+
+  it("counts only the days inside the window", () => {
+    expect(closedThisWeek(notes, "2026-03-20")).toBe(2);
+  });
+
+  it("crosses a month boundary", () => {
+    const days = weekStrip([note("2026-02-28")], "2026-03-02");
+    expect(days[0].day).toBe("2026-02-24");
+    expect(days.find((d) => d.day === "2026-02-28")?.closed).toBe(true);
   });
 });

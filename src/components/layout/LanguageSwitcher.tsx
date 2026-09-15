@@ -49,7 +49,7 @@ export function LanguageSwitcher({
         value={locale}
         disabled={isPending}
         onChange={(event) => onChange(event.target.value)}
-        className="tap focus-ring max-w-[12rem] cursor-pointer rounded-full border border-line bg-paper py-2 pl-3 pr-8 text-base text-ink"
+        className="tap focus-ring max-w-[12rem] cursor-pointer rounded-full border border-field bg-paper py-2 pl-3 pr-8 text-base text-ink"
       >
         {locales.map((code) => (
           <option key={code} value={code} lang={code}>

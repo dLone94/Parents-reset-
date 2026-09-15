@@ -562,6 +562,13 @@
       "weeks": "Împrăștiate în {weeks} săptămâni diferite.",
       "growing": "Se adună pe tăcute.",
       "longestGap": "Cea mai lungă pauză a fost de {days} zile. Te-ai întors și din aia."
+    },
+    "week": {
+      "label": "Săptămâna ta",
+      "closed": "{count, plural, one {O zi închisă} few {# zile închise} other {# de zile închise}}",
+      "notClosed": "neînchisă",
+      "closedNoWeather": "închisă",
+      "empty": "Închide o zi și locul ăsta începe să se umple."
     }
   },
   "community": {
@@ -789,5 +796,20 @@
       "pause": "Respiră un minut",
       "home": "Înapoi acasă"
     }
+  },
+  "offline": {
+    "banner": "Fără conexiune. Tot ce e pe telefonul tău merge mai departe.",
+    "eyebrow": "Fără conexiune",
+    "title": "Ești offline",
+    "body": "Telefonul tău n-are semnal acum. Cea mai mare parte din Parent Reset n-a avut niciodată nevoie de el: ce scrii rămâne pe acest telefon.",
+    "works": {
+      "pause": "Respirația merge",
+      "reset": "Un reset întreg merge",
+      "load": "Încărcătura familiei merge",
+      "evening": "Închiderea zilei merge"
+    },
+    "needsSignal": "Comunitatea și autentificarea au nevoie de conexiune. Te așteaptă când revii.",
+    "cta": "Respiră un minut",
+    "home": "Înapoi acasă"
   }
 }

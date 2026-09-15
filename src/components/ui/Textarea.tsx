@@ -12,7 +12,7 @@ export function Textarea({ className, invalid, ...rest }: TextareaProps) {
     <textarea
       className={cn(
         "focus-ring block w-full resize-y rounded-2xl border bg-paper px-4 py-3.5 text-lg leading-relaxed text-ink placeholder:text-ink-muted",
-        invalid ? "border-clay" : "border-line",
+        invalid ? "border-clay" : "border-field",
         className,
       )}
       lang={undefined}

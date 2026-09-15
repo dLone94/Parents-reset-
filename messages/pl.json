@@ -562,6 +562,13 @@
       "weeks": "Rozłożone na {weeks} różnych tygodni.",
       "growing": "To po cichu się sumuje.",
       "longestGap": "Twoja najdłuższa przerwa to {days} dni. Z niej też wróciłeś."
+    },
+    "week": {
+      "label": "Twój tydzień",
+      "closed": "{count, plural, one {Jeden dzień zamknięty} few {# dni zamknięte} many {# dni zamkniętych} other {# dnia zamkniętych}}",
+      "notClosed": "niezamknięty",
+      "closedNoWeather": "zamknięty",
+      "empty": "Zamknij dzień, a to zacznie się wypełniać."
     }
   },
   "community": {
@@ -789,5 +796,20 @@
       "pause": "Pooddychaj minutę",
       "home": "Wróć na start"
     }
+  },
+  "offline": {
+    "banner": "Brak połączenia. Wszystko, co jest na tym urządzeniu, nadal działa.",
+    "eyebrow": "Brak połączenia",
+    "title": "Jesteś offline",
+    "body": "Twój telefon nie ma teraz zasięgu. Większość Parent Reset nigdy go nie potrzebowała: to, co piszesz, zostaje na tym urządzeniu.",
+    "works": {
+      "pause": "Oddychanie działa",
+      "reset": "Cały reset działa",
+      "load": "Obciążenie rodziny działa",
+      "evening": "Zamykanie dnia działa"
+    },
+    "needsSignal": "Społeczność i logowanie wymagają połączenia. Będą czekać, kiedy wrócisz.",
+    "cta": "Pooddychaj minutę",
+    "home": "Wróć na start"
   }
 }

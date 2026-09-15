@@ -559,6 +559,13 @@
       "weeks": "Spread across {weeks} different weeks.",
       "growing": "It adds up quietly.",
       "longestGap": "Your longest gap was {days} days. You came back from that one too."
+    },
+    "week": {
+      "label": "Your week",
+      "closed": "{count, plural, one {One day closed} other {# days closed}}",
+      "notClosed": "not closed",
+      "closedNoWeather": "closed",
+      "empty": "Close a day and this starts filling in."
     }
   },
   "community": {
@@ -786,5 +793,20 @@
       "pause": "Breathe for a minute",
       "home": "Back home"
     }
+  },
+  "offline": {
+    "banner": "No connection. Everything on this device still works.",
+    "eyebrow": "No connection",
+    "title": "You're offline",
+    "body": "Your phone has no signal right now. Most of Parent Reset never needed one: everything you write stays on this device.",
+    "works": {
+      "pause": "Breathing works",
+      "reset": "A full reset works",
+      "load": "Family load works",
+      "evening": "Closing the day works"
+    },
+    "needsSignal": "The community and signing in need a connection. They will be there when you are back.",
+    "cta": "Breathe for a minute",
+    "home": "Back home"
   }
 }

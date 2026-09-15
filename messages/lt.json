@@ -562,6 +562,13 @@
       "weeks": "Pasiskirstę per {weeks} skirtingas savaites.",
       "growing": "Tyliai kaupiasi.",
       "longestGap": "Ilgiausia tavo pertrauka buvo {days} dienų. Ir iš jos sugrįžai."
+    },
+    "week": {
+      "label": "Tavo savaitė",
+      "closed": "{count, plural, one {Viena diena užbaigta} few {# dienos užbaigtos} many {# dienos užbaigta} other {# dienų užbaigta}}",
+      "notClosed": "neužbaigta",
+      "closedNoWeather": "užbaigta",
+      "empty": "Užbaik dieną ir tai pradės pildytis."
     }
   },
   "community": {
@@ -789,5 +796,20 @@
       "pause": "Kvėpuok minutę",
       "home": "Atgal į pradžią"
     }
+  },
+  "offline": {
+    "banner": "Nėra ryšio. Viskas šiame įrenginyje vis tiek veikia.",
+    "eyebrow": "Nėra ryšio",
+    "title": "Esi neprisijungęs",
+    "body": "Tavo telefonas dabar neturi ryšio. Didžiajai daliai Parent Reset jo niekada ir nereikėjo: tai, ką rašai, lieka šiame įrenginyje.",
+    "works": {
+      "pause": "Kvėpavimas veikia",
+      "reset": "Visas reset veikia",
+      "load": "Šeimos našta veikia",
+      "evening": "Dienos užbaigimas veikia"
+    },
+    "needsSignal": "Bendruomenei ir prisijungimui reikia ryšio. Jie lauks, kai grįši.",
+    "cta": "Kvėpuok minutę",
+    "home": "Atgal į pradžią"
   }
 }
