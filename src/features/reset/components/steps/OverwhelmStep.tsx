@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils/cn";
 import { StepHeading } from "./StepHeading";
+import { RadioGroup } from "@/components/ui/RadioGroup";
 
 const SCALE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -11,7 +12,7 @@ export function OverwhelmStep({ value, onChange }: { value: number | null; onCha
   return (
     <section aria-labelledby="q-overwhelm" className="space-y-6">
       <StepHeading id="q-overwhelm" title={t("title")} help={t("help")} />
-      <div role="radiogroup" aria-labelledby="q-overwhelm" className="grid grid-cols-5 gap-2.5">
+      <RadioGroup labelledBy="q-overwhelm" className="grid grid-cols-5 gap-2.5">
         {SCALE.map((n) => {
           const selected = value === n;
           return (
@@ -25,14 +26,14 @@ export function OverwhelmStep({ value, onChange }: { value: number | null; onCha
                 "tap focus-ring aspect-square rounded-2xl border text-xl font-semibold transition-colors",
                 selected
                   ? "border-clay bg-clay text-paper shadow-soft"
-                  : "border-line bg-paper text-ink hover:border-ink-muted",
+                  : "border-field bg-paper text-ink hover:border-ink-muted",
               )}
             >
               {n}
             </button>
           );
         })}
-      </div>
+      </RadioGroup>
       <div className="flex justify-between text-sm text-ink-muted">
         <span>{t("low")}</span>
         <span>{t("high")}</span>

@@ -60,7 +60,7 @@ export function AuthForm({ next }: { next?: string }) {
             autoComplete="email"
             required
             inputMode="email"
-            className="tap focus-ring w-full rounded-full border border-line bg-paper px-5 text-lg text-ink"
+            className="tap focus-ring w-full rounded-full border border-field bg-paper px-5 text-lg text-ink"
           />
         </div>
         <div className="space-y-1.5">
@@ -74,7 +74,7 @@ export function AuthForm({ next }: { next?: string }) {
             autoComplete={mode === "signIn" ? "current-password" : "new-password"}
             required
             minLength={8}
-            className="tap focus-ring w-full rounded-full border border-line bg-paper px-5 text-lg text-ink"
+            className="tap focus-ring w-full rounded-full border border-field bg-paper px-5 text-lg text-ink"
           />
           {mode === "signUp" && <p className="text-sm text-ink-muted">{t("passwordHint")}</p>}
         </div>

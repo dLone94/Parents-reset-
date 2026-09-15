@@ -789,5 +789,20 @@
       "pause": "Análaigh ar feadh nóiméid",
       "home": "Ar ais abhaile"
     }
+  },
+  "offline": {
+    "banner": "Gan nasc. Oibríonn gach rud ar an ngléas seo mar is gnách.",
+    "eyebrow": "Gan nasc",
+    "title": "Tá tú as líne",
+    "body": "Níl comhartha ag do ghuthán faoi láthair. Níor theastaigh ceann ó fhormhór Parent Reset riamh: fanann a scríobhann tú ar an ngléas seo.",
+    "works": {
+      "pause": "Oibríonn an análú",
+      "reset": "Oibríonn reset iomlán",
+      "load": "Oibríonn ualach an teaghlaigh",
+      "evening": "Oibríonn dúnadh an lae"
+    },
+    "needsSignal": "Teastaíonn nasc ón bpobal agus ón síniú isteach. Beidh siad ann nuair a bheidh tú ar ais.",
+    "cta": "Análaigh ar feadh nóiméid",
+    "home": "Ar ais abhaile"
   }
 }

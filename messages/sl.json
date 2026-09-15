@@ -789,5 +789,20 @@
       "pause": "Dihaj minuto",
       "home": "Nazaj na začetek"
     }
+  },
+  "offline": {
+    "banner": "Ni povezave. Vse na tej napravi še vedno deluje.",
+    "eyebrow": "Ni povezave",
+    "title": "Nisi povezan",
+    "body": "Tvoj telefon trenutno nima signala. Večina Parent Reseta ga nikoli ni potrebovala: kar napišeš, ostane na tej napravi.",
+    "works": {
+      "pause": "Dihanje deluje",
+      "reset": "Cel reset deluje",
+      "load": "Družinsko breme deluje",
+      "evening": "Zaključevanje dneva deluje"
+    },
+    "needsSignal": "Skupnost in prijava potrebujeta povezavo. Tu bosta, ko se vrneš.",
+    "cta": "Dihaj minuto",
+    "home": "Nazaj na začetek"
   }
 }

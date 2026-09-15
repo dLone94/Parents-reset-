@@ -789,5 +789,20 @@
       "pause": "Ħu n-nifs għal minuta",
       "home": "Lura d-dar"
     }
+  },
+  "offline": {
+    "banner": "L-ebda konnessjoni. Kollox fuq dan l-apparat għadu jaħdem.",
+    "eyebrow": "L-ebda konnessjoni",
+    "title": "Int offline",
+    "body": "It-telefon tiegħek bħalissa m'għandux sinjal. Il-biċċa l-kbira ta' Parent Reset qatt ma kellha bżonnu: dak li tikteb jibqa' fuq dan l-apparat.",
+    "works": {
+      "pause": "It-teħid tan-nifs jaħdem",
+      "reset": "Reset sħiħ jaħdem",
+      "load": "Il-piż tal-familja jaħdem",
+      "evening": "L-għeluq tal-ġurnata jaħdem"
+    },
+    "needsSignal": "Il-komunità u l-illoggjar jeħtieġu konnessjoni. Ikunu hemm meta terġa' tiġi.",
+    "cta": "Ħu n-nifs għal minuta",
+    "home": "Lura d-dar"
   }
 }

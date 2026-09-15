@@ -789,5 +789,20 @@
       "pause": "Minuta dechu",
       "home": "Zpátky domů"
     }
+  },
+  "offline": {
+    "banner": "Bez připojení. Všechno v tomhle zařízení funguje dál.",
+    "eyebrow": "Bez připojení",
+    "title": "Jsi offline",
+    "body": "Tvůj telefon teď nemá signál. Většina Parent Resetu ho nikdy nepotřebovala: co napíšeš, zůstává v tomhle zařízení.",
+    "works": {
+      "pause": "Dýchání funguje",
+      "reset": "Celý reset funguje",
+      "load": "Rodinná zátěž funguje",
+      "evening": "Uzavření dne funguje"
+    },
+    "needsSignal": "Komunita a přihlášení potřebují připojení. Počkají, až se vrátíš.",
+    "cta": "Minuta dechu",
+    "home": "Zpátky domů"
   }
 }

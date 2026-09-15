@@ -789,5 +789,20 @@
       "pause": "Lélegezz egy percet",
       "home": "Vissza a kezdéshez"
     }
+  },
+  "offline": {
+    "banner": "Nincs kapcsolat. Minden, ami ezen az eszközön van, továbbra is működik.",
+    "eyebrow": "Nincs kapcsolat",
+    "title": "Offline vagy",
+    "body": "A telefonodnak most nincs térereje. A Parent Reset nagy részének sosem kellett: amit írsz, ezen az eszközön marad.",
+    "works": {
+      "pause": "A légzés működik",
+      "reset": "Egy teljes reset működik",
+      "load": "A családi teher működik",
+      "evening": "A napzárás működik"
+    },
+    "needsSignal": "A közösséghez és a belépéshez kapcsolat kell. Ott lesznek, amikor visszatérsz.",
+    "cta": "Lélegezz egy percet",
+    "home": "Vissza a kezdéshez"
   }
 }

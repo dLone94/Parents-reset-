@@ -789,5 +789,20 @@
       "pause": "Eine Minute atmen",
       "home": "Zurück zum Start"
     }
+  },
+  "offline": {
+    "banner": "Keine Verbindung. Alles auf diesem Gerät funktioniert weiter.",
+    "eyebrow": "Keine Verbindung",
+    "title": "Du bist offline",
+    "body": "Dein Handy hat gerade kein Netz. Das meiste von Parent Reset brauchte nie welches: Was du schreibst, bleibt auf diesem Gerät.",
+    "works": {
+      "pause": "Atmen geht",
+      "reset": "Ein ganzer Reset geht",
+      "load": "Familien-Last geht",
+      "evening": "Den Tag abschließen geht"
+    },
+    "needsSignal": "Die Community und das Anmelden brauchen eine Verbindung. Sie sind da, wenn du wieder Netz hast.",
+    "cta": "Eine Minute atmen",
+    "home": "Zurück zum Start"
   }
 }

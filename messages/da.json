@@ -789,5 +789,20 @@
       "pause": "Træk vejret et minut",
       "home": "Tilbage til start"
     }
+  },
+  "offline": {
+    "banner": "Ingen forbindelse. Alt på denne enhed virker stadig.",
+    "eyebrow": "Ingen forbindelse",
+    "title": "Du er offline",
+    "body": "Din telefon har ikke dækning lige nu. Det meste af Parent Reset har aldrig haft brug for det: det, du skriver, bliver på denne enhed.",
+    "works": {
+      "pause": "Vejrtrækningen virker",
+      "reset": "En hel reset virker",
+      "load": "Familiens byrde virker",
+      "evening": "At lukke dagen virker"
+    },
+    "needsSignal": "Fællesskabet og login kræver forbindelse. De er der, når du er tilbage.",
+    "cta": "Træk vejret et minut",
+    "home": "Tilbage til start"
   }
 }

@@ -789,5 +789,20 @@
       "pause": "Hinga minut",
       "home": "Tagasi avalehele"
     }
+  },
+  "offline": {
+    "banner": "Ühendust pole. Kõik selles seadmes töötab edasi.",
+    "eyebrow": "Ühendust pole",
+    "title": "Oled võrguühenduseta",
+    "body": "Su telefonil pole praegu levi. Suurem osa Parent Resetist pole seda kunagi vajanudki: see, mida kirjutad, jääb siia seadmesse.",
+    "works": {
+      "pause": "Hingamine töötab",
+      "reset": "Terve reset töötab",
+      "load": "Pere koormus töötab",
+      "evening": "Päeva sulgemine töötab"
+    },
+    "needsSignal": "Kogukond ja sisselogimine vajavad ühendust. Need on olemas, kui tagasi tuled.",
+    "cta": "Hinga minut",
+    "home": "Tagasi avalehele"
   }
 }

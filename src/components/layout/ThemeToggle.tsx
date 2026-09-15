@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { RadioGroup } from "@/components/ui/RadioGroup";
 import { themeChoices, type ThemeChoice } from "@/lib/theme";
 import { cn } from "@/lib/utils/cn";
 import { useTheme } from "./ThemeProvider";
@@ -15,11 +16,7 @@ export function ThemeToggle({ className }: { className?: string }) {
 
   return (
     <div className={className}>
-      <div
-        role="radiogroup"
-        aria-label={t("label")}
-        className="inline-flex rounded-full border border-line bg-paper p-1"
-      >
+      <RadioGroup label={t("label")} className="inline-flex rounded-full border border-field bg-paper p-1">
         {themeChoices.map((option) => (
           <button
             key={option}
@@ -36,7 +33,7 @@ export function ThemeToggle({ className }: { className?: string }) {
             <span>{t(option)}</span>
           </button>
         ))}
-      </div>
+      </RadioGroup>
       <p className="mt-2 text-sm text-ink-muted">{t("autoHint")}</p>
     </div>
   );

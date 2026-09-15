@@ -789,5 +789,20 @@
       "pause": "Diši minutu",
       "home": "Natrag na početak"
     }
+  },
+  "offline": {
+    "banner": "Nema veze. Sve na ovom uređaju i dalje radi.",
+    "eyebrow": "Nema veze",
+    "title": "Bez mreže si",
+    "body": "Tvoj telefon trenutno nema signal. Većini Parent Reseta on nikad nije ni trebao: ono što napišeš ostaje na ovom uređaju.",
+    "works": {
+      "pause": "Disanje radi",
+      "reset": "Cijeli reset radi",
+      "load": "Obiteljski teret radi",
+      "evening": "Zatvaranje dana radi"
+    },
+    "needsSignal": "Zajednica i prijava trebaju vezu. Bit će tu kad se vratiš.",
+    "cta": "Diši minutu",
+    "home": "Natrag na početak"
   }
 }

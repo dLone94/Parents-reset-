@@ -789,5 +789,20 @@
       "pause": "Een minuut ademen",
       "home": "Terug naar start"
     }
+  },
+  "offline": {
+    "banner": "Geen verbinding. Alles op dit apparaat werkt gewoon door.",
+    "eyebrow": "Geen verbinding",
+    "title": "Je bent offline",
+    "body": "Je telefoon heeft even geen bereik. Het meeste van Parent Reset had dat nooit nodig: wat je schrijft blijft op dit apparaat.",
+    "works": {
+      "pause": "Ademen werkt",
+      "reset": "Een hele reset werkt",
+      "load": "Gezinslast werkt",
+      "evening": "De dag afsluiten werkt"
+    },
+    "needsSignal": "De community en inloggen hebben verbinding nodig. Die staan klaar als je terug bent.",
+    "cta": "Een minuut ademen",
+    "home": "Terug naar start"
   }
 }

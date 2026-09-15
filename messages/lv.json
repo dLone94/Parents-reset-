@@ -789,5 +789,20 @@
       "pause": "Paelpo minūti",
       "home": "Atpakaļ uz sākumu"
     }
+  },
+  "offline": {
+    "banner": "Nav savienojuma. Viss šajā ierīcē joprojām darbojas.",
+    "eyebrow": "Nav savienojuma",
+    "title": "Tu esi bezsaistē",
+    "body": "Tavam telefonam pašlaik nav signāla. Lielākajai daļai Parent Reset tas nekad nav bijis vajadzīgs: tas, ko raksti, paliek šajā ierīcē.",
+    "works": {
+      "pause": "Elpošana darbojas",
+      "reset": "Vesels resets darbojas",
+      "load": "Ģimenes slodze darbojas",
+      "evening": "Dienas noslēgšana darbojas"
+    },
+    "needsSignal": "Kopienai un pieteikšanās ir vajadzīgs savienojums. Tie būs klāt, kad atgriezīsies.",
+    "cta": "Paelpo minūti",
+    "home": "Atpakaļ uz sākumu"
   }
 }

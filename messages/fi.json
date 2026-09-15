@@ -789,5 +789,20 @@
       "pause": "Hengitä minuutti",
       "home": "Takaisin alkuun"
     }
+  },
+  "offline": {
+    "banner": "Ei yhteyttä. Kaikki tällä laitteella toimii silti.",
+    "eyebrow": "Ei yhteyttä",
+    "title": "Olet offline-tilassa",
+    "body": "Puhelimessasi ei ole nyt kenttää. Suurin osa Parent Resetistä ei ole koskaan tarvinnut sitä: kirjoittamasi pysyy tällä laitteella.",
+    "works": {
+      "pause": "Hengitys toimii",
+      "reset": "Koko reset toimii",
+      "load": "Perheen kuorma toimii",
+      "evening": "Päivän sulkeminen toimii"
+    },
+    "needsSignal": "Yhteisö ja kirjautuminen tarvitsevat yhteyden. Ne odottavat, kun palaat.",
+    "cta": "Hengitä minuutti",
+    "home": "Takaisin alkuun"
   }
 }

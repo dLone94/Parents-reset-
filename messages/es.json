@@ -789,5 +789,20 @@
       "pause": "Respirar un minuto",
       "home": "Volver al inicio"
     }
+  },
+  "offline": {
+    "banner": "Sin conexión. Todo lo que está en este dispositivo sigue funcionando.",
+    "eyebrow": "Sin conexión",
+    "title": "Estás sin conexión",
+    "body": "Tu móvil no tiene cobertura ahora mismo. La mayor parte de Parent Reset nunca la necesitó: lo que escribes se queda en este dispositivo.",
+    "works": {
+      "pause": "Respirar funciona",
+      "reset": "Un reset entero funciona",
+      "load": "La carga familiar funciona",
+      "evening": "Cerrar el día funciona"
+    },
+    "needsSignal": "La comunidad y el inicio de sesión necesitan conexión. Estarán ahí cuando vuelvas.",
+    "cta": "Respirar un minuto",
+    "home": "Volver al inicio"
   }
 }

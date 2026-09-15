@@ -789,5 +789,20 @@
       "pause": "Pooddychaj minutę",
       "home": "Wróć na start"
     }
+  },
+  "offline": {
+    "banner": "Brak połączenia. Wszystko, co jest na tym urządzeniu, nadal działa.",
+    "eyebrow": "Brak połączenia",
+    "title": "Jesteś offline",
+    "body": "Twój telefon nie ma teraz zasięgu. Większość Parent Reset nigdy go nie potrzebowała: to, co piszesz, zostaje na tym urządzeniu.",
+    "works": {
+      "pause": "Oddychanie działa",
+      "reset": "Cały reset działa",
+      "load": "Obciążenie rodziny działa",
+      "evening": "Zamykanie dnia działa"
+    },
+    "needsSignal": "Społeczność i logowanie wymagają połączenia. Będą czekać, kiedy wrócisz.",
+    "cta": "Pooddychaj minutę",
+    "home": "Wróć na start"
   }
 }

@@ -789,5 +789,20 @@
       "pause": "Respira un minuto",
       "home": "Torna alla home"
     }
+  },
+  "offline": {
+    "banner": "Nessuna connessione. Tutto quello che è su questo dispositivo funziona ancora.",
+    "eyebrow": "Nessuna connessione",
+    "title": "Sei offline",
+    "body": "Il telefono non ha campo in questo momento. Quasi tutto Parent Reset non ne ha mai avuto bisogno: quello che scrivi resta su questo dispositivo.",
+    "works": {
+      "pause": "Respirare funziona",
+      "reset": "Un reset intero funziona",
+      "load": "Il carico familiare funziona",
+      "evening": "Chiudere la giornata funziona"
+    },
+    "needsSignal": "La community e l'accesso hanno bisogno della rete. Ci saranno quando torni.",
+    "cta": "Respira un minuto",
+    "home": "Torna alla home"
   }
 }
