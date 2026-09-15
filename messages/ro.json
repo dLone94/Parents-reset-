@@ -34,6 +34,22 @@
     "community": {
       "title": "Comunitate – Parent Reset",
       "description": "Un loc mic, în primul rând anonim, unde părinții pot spune cu voce tare ce țin de obicei pentru ei."
+    },
+    "pause": {
+      "title": "Un minut de respirat – Parent Reset",
+      "description": "Un minut de respirație ghidată. Fără scris, fără decizii, merge și cu copilul în brațe."
+    },
+    "evening": {
+      "title": "Închide ziua – Parent Reset",
+      "description": "Un lucru greu, un lucru de păstrat, un lucru pentru mâine."
+    },
+    "kept": {
+      "title": "Ce ai păstrat – Parent Reset",
+      "description": "Momentele pe care le-ai considerat demne de păstrat, întoarse la tine după săptămâni."
+    },
+    "vent": {
+      "title": "Spune aici – Parent Reset",
+      "description": "Scrie ce nu poți spune cu voce tare, apoi rupe. Nu se salvează și nu se trimite nicăieri."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Griji",
       "community": "Comunitate",
-      "account": "Tu"
-    }
+      "account": "Tu",
+      "pause": "Respiră"
+    },
+    "pause": "Respiră",
+    "evening": "Închide ziua",
+    "kept": "Păstrate"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Deschide grijile familiei",
       "cta": "Începe resetul de azi",
       "ctaAgain": "Resetează din nou",
-      "history": "Istoric ({count})"
+      "history": "Istoric ({count})",
+      "tomorrowLabel": "Ieri ai spus, pentru azi:",
+      "returns": {
+        "welcomeBack": "Ai lipsit {days} zile. Întoarcerea contează mai mult decât să nu fi plecat.",
+        "often": "Sunt {thisWeek} zile săptămâna asta.",
+        "weeks": "Ai fost aici în {weeks} săptămâni diferite.",
+        "growing": "Sunt {total} zile în care ți-ai luat un minut pentru tine."
+      },
+      "kept": {
+        "label": "Acum {days} zile ai scris"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Respiră",
+        "hint": "Un minut"
+      },
+      "vent": {
+        "label": "Spune",
+        "hint": "Apoi rupe"
+      },
+      "evening": {
+        "label": "Închide ziua",
+        "hint": "Patru atingeri"
+      },
+      "kept": {
+        "label": "Ce ai păstrat",
+        "hint": "Părțile bune"
+      }
+    },
+    "ways": {
+      "title": "Trei căi de intrare",
+      "subtitle": "În funcție de cât a mai rămas din tine azi.",
+      "pause": {
+        "time": "1 minut",
+        "title": "Respiră",
+        "body": "Un minut ghidat. Nimic de scris, nimic de decis, merge și cu copilul în brațe."
+      },
+      "reset": {
+        "time": "5 minute",
+        "title": "Reset",
+        "body": "Șase întrebări scurte și o listă mică: azi, săptămâna asta, și ce poți lăsa să treacă."
+      },
+      "evening": {
+        "time": "2 minute",
+        "title": "Închide ziua",
+        "body": "Un lucru greu, unul bun, unul pentru mâine. Cele bune se întorc la tine mai târziu."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Șterge contul meu",
         "confirm": "Da, șterge tot",
         "cancel": "Păstrează contul"
+      },
+      "appearance": {
+        "title": "Aspect",
+        "body": "Aplicația urmează telefonul tău și se întunecă singură seara târziu."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Deschide",
     "delete": "Șterge",
     "guestNote": "Acest istoric există doar pe acest dispozitiv.",
-    "guestCta": "Creează un cont ca să-l păstrezi."
+    "guestCta": "Creează un cont ca să-l păstrezi.",
+    "returns": {
+      "label": "Reveniri",
+      "total": "{count, plural, one {O zi în care ai fost aici} few {# zile în care ai fost aici} other {# de zile în care ai fost aici}}",
+      "first": "E ziua întâi. Încă nu ai cu ce compara.",
+      "welcomeBack": "Ai lipsit {days} zile și te-ai întors. Exact așa e gândit.",
+      "often": "{thisWeek} zile în ultima săptămână.",
+      "weeks": "Împrăștiate în {weeks} săptămâni diferite.",
+      "growing": "Se adună pe tăcute.",
+      "longestGap": "Cea mai lungă pauză a fost de {days} zile. Te-ai întors și din aia."
+    }
   },
   "community": {
     "title": "Comunitate",
@@ -558,6 +639,155 @@
       "rateLimited": "Postezi cam repede. Te rugăm să aștepți câteva minute.",
       "signIn": "Te rugăm să te conectezi mai întâi.",
       "generic": "Ceva n-a mers. Te rugăm să încerci din nou."
+    }
+  },
+  "theme": {
+    "label": "Aspect",
+    "light": "Luminos",
+    "dark": "Întunecat",
+    "auto": "Auto",
+    "autoHint": "Auto urmează telefonul tău și se întunecă singur seara târziu."
+  },
+  "pause": {
+    "eyebrow": "Un minut",
+    "title": "Respiră cu mine",
+    "intro": "Nimic de scris și nimic de decis. Alege una și urmărește cercul. Merge și cu copilul în brațe.",
+    "seconds": "{count} secunde",
+    "note": "Nu se salvează nimic din asta. E doar un minut care e al tău.",
+    "stop": "Ajunge",
+    "cycleOf": "Runda {current} din {total}",
+    "patterns": {
+      "settle": {
+        "name": "Așezare",
+        "body": "Patru pe inspir, șase pe expir. Cea de zi cu zi."
+      },
+      "steady": {
+        "name": "Liniștire",
+        "body": "Patru inspir, patru ținut, patru expir, patru pauză. Când mintea îți aleargă."
+      },
+      "sleep": {
+        "name": "Spre somn",
+        "body": "Patru, șapte, opt. Pentru clipa din întuneric, la capătul unei zile lungi."
+      }
+    },
+    "phase": {
+      "in": "Inspiră",
+      "hold": "Ține",
+      "out": "Expiră",
+      "rest": "Odihnește"
+    },
+    "done": {
+      "title": "Gata.",
+      "body": "Corpul tău e puțin mai lent decât acum un minut. Ăsta e tot trucul – și funcționează chiar dacă nimic altceva nu s-a schimbat.",
+      "countToday": "{count, plural, one {E prima ta pauză de azi.} few {Sunt # pauze azi. Nu e o slăbiciune că ai nevoie de ele.} other {Sunt # de pauze azi. Nu e o slăbiciune că ai nevoie de ele.}}",
+      "again": "Încă o dată",
+      "reset": "Fă un reset",
+      "home": "Înapoi acasă"
+    }
+  },
+  "evening": {
+    "eyebrow": "Închiderea zilei",
+    "title": "Cum a fost azi?",
+    "intro": "Patru lucruri, toate opționale. Apasă vremea și lasă telefonul, dacă atât mai ai.",
+    "save": "Închide ziua",
+    "saveAgain": "Salvează modificările",
+    "privacy": "Doar tu vezi asta.",
+    "weather": {
+      "question": "Cum a fost ziua?",
+      "options": {
+        "storm": "Furtună",
+        "rain": "Ploaie",
+        "cloudy": "Înnorat",
+        "sun": "Soare"
+      }
+    },
+    "hard": {
+      "label": "Ce a fost greu?",
+      "hint": "Spune-o o dată, aici, în loc s-o duci mai departe în ziua de mâine.",
+      "placeholder": "Dimineața. Toată."
+    },
+    "kept": {
+      "label": "Ce merită păstrat?",
+      "hint": "Și mărunt contează. Tocmai asta se întoarce la tine peste câteva săptămâni.",
+      "placeholder": "M-a luat singură de mână la trecerea de pietoni."
+    },
+    "tomorrow": {
+      "label": "Un lucru pentru mâine",
+      "hint": "Doar unul. Te așteaptă dimineață pe pagina principală.",
+      "placeholder": "Sun la dentist."
+    },
+    "errors": {
+      "tooLong": "E mai lung decât încape aici. Mai scurtează puțin.",
+      "save": "Nu s-a salvat. Mai încearcă o dată."
+    },
+    "closed": {
+      "eyebrow": "Zi închisă",
+      "tomorrowLabel": "Mâine, un lucru:",
+      "edit": "Schimbă ceva",
+      "kept": "Vezi ce ai păstrat",
+      "home": "Înapoi acasă"
+    },
+    "closing": {
+      "storm": {
+        "title": "A fost o furtună.",
+        "body": "I-ai dus pe toți până la capătul ei, și asta a fost treaba de azi. Mâine e altă zi, iar în seara asta nu mai ai nimic de reparat."
+      },
+      "stormKept": {
+        "title": "Furtună – și tot ai găsit ceva.",
+        "body": "O zi grea cu un moment bun în ea rămâne o zi grea. Dar tu ai văzut momentul, și asta nu e puțin."
+      },
+      "rainHard": {
+        "title": "Greu de dus.",
+        "body": "Ai pus-o în cuvinte în loc s-o cari în tăcere. Pentru seara asta, e destul."
+      },
+      "kept": {
+        "title": "Ai păstrat ceva.",
+        "body": "Peste câteva săptămâni se va întoarce la tine, mult după ce o vei fi uitat. Exact de aceea merită scris."
+      },
+      "heard": {
+        "title": "E scris.",
+        "body": "A ieșit din capul tău și a rămas pe pagină, unde nu-l citește nimeni altcineva."
+      },
+      "afterReset": {
+        "title": "Azi ai venit de două ori.",
+        "body": "Un reset peste zi și o închidere seara. E o zi întreagă în care ai avut grijă de tine – într-o zi care probabil nu s-a simțit așa."
+      },
+      "steady": {
+        "title": "Te întorci mereu.",
+        "body": "Închiderea zilei devine un obicei, și e unul dintre cele mai tăcute obiceiuri bune."
+      },
+      "plain": {
+        "title": "Zi închisă.",
+        "body": "Atât trebuie. Somn ușor."
+      }
+    }
+  },
+  "kept": {
+    "title": "Ce ai păstrat",
+    "subtitle": "{count, plural, one {Un moment pe care ai vrut să-l păstrezi.} few {# momente pe care ai vrut să le păstrezi.} other {# de momente pe care ai vrut să le păstrezi.}}",
+    "loading": "O clipă…",
+    "empty": {
+      "body": "Încă nu e nimic aici. Când închizi o zi, ce scrii la „merită păstrat” ajunge aici – și se întoarce la tine peste săptămâni, când ai uitat de el.",
+      "cta": "Închide ziua de azi"
+    },
+    "resurfaced": {
+      "label": "Acum {days} zile ai scris"
+    }
+  },
+  "vent": {
+    "eyebrow": "Doar pentru tine",
+    "title": "Spune aici",
+    "intro": "Lucrul pe care nu-l poți spune în bucătărie. Scrie-l cât de urât vrei, apoi rupe-l.",
+    "label": "Ce vrei să spui",
+    "placeholder": "Scrie. Nu citește nimeni.",
+    "tear": "Rupe",
+    "promise": "Nu se salvează, nu se trimite, nici măcar pe telefonul tău.",
+    "gone": {
+      "title": "S-a dus.",
+      "body": "Nu e păstrat nicăieri. L-ai spus, iar acum nu-l mai duce nimeni în tăcere – nici tu.",
+      "again": "Mai spune",
+      "pause": "Respiră un minut",
+      "home": "Înapoi acasă"
     }
   }
 }

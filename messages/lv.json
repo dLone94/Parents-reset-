@@ -34,6 +34,22 @@
     "community": {
       "title": "Kopiena – Parent Reset",
       "description": "Maza, pēc noklusējuma anonīma vieta vecākiem, kur pateikt skaļi to, kas parasti paliek nepateikts."
+    },
+    "pause": {
+      "title": "Minūte elpošanas – Parent Reset",
+      "description": "Vadīta elpošanas minūte. Nekas nav jāraksta un jāizlemj, izdodas arī ar bērnu uz rokām."
+    },
+    "evening": {
+      "title": "Noslēdz dienu – Parent Reset",
+      "description": "Viena grūta lieta, viena, ko vērts paturēt, viena rītdienai."
+    },
+    "kept": {
+      "title": "Ko esi paturējis – Parent Reset",
+      "description": "Mirkļi, ko uzskatīji par vērtīgiem, atgriežas pie tevis pēc nedēļām."
+    },
+    "vent": {
+      "title": "Pasaki to šeit – Parent Reset",
+      "description": "Uzraksti to, ko nevari pateikt skaļi, un tad saplēs. Nekad netiek saglabāts un nosūtīts."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Restarts",
       "load": "Slodze",
       "community": "Kopiena",
-      "account": "Tu"
-    }
+      "account": "Tu",
+      "pause": "Elpa"
+    },
+    "pause": "Elpo",
+    "evening": "Noslēdz dienu",
+    "kept": "Paturētais"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Atvērt ģimenes slodzi",
       "cta": "Sākt šodienas restartu",
       "ctaAgain": "Restartēt vēlreiz",
-      "history": "Vēsture ({count})"
+      "history": "Vēsture ({count})",
+      "tomorrowLabel": "Vakar tu šodienai teici:",
+      "returns": {
+        "welcomeBack": "Tevis nebija {days} dienas. Atgriezties nozīmē vairāk nekā nekad neaiziet.",
+        "often": "Tās ir {thisWeek} dienas šonedēļ.",
+        "weeks": "Tu biji šeit {weeks} dažādās nedēļās.",
+        "growing": "Tās ir {total} dienas, kad veltīji sev minūti."
+      },
+      "kept": {
+        "label": "Pirms {days} dienām tu rakstīji"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Elpo",
+        "hint": "Viena minūte"
+      },
+      "vent": {
+        "label": "Pasaki",
+        "hint": "Un tad saplēs"
+      },
+      "evening": {
+        "label": "Noslēdz dienu",
+        "hint": "Četri pieskārieni"
+      },
+      "kept": {
+        "label": "Ko paturēji",
+        "hint": "Tavi labie brīži"
+      }
+    },
+    "ways": {
+      "title": "Trīs ieejas",
+      "subtitle": "Atkarībā no tā, cik daudz no tevis šodien palicis.",
+      "pause": {
+        "time": "1 minūte",
+        "title": "Elpo",
+        "body": "Vadīta minūte. Nekas nav jāraksta un jāizlemj, izdodas arī ar bērnu uz rokām."
+      },
+      "reset": {
+        "time": "5 minūtes",
+        "title": "Reset",
+        "body": "Seši īsi jautājumi un mazs saraksts: šodien, šonedēļ un tas, ko vari palaist vaļā."
+      },
+      "evening": {
+        "time": "2 minūtes",
+        "title": "Noslēdz dienu",
+        "body": "Viena grūta lieta, viena laba, viena rītdienai. Labās atgriežas pie tevis vēlāk."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Dzēst manu kontu",
         "confirm": "Jā, dzēst visu",
         "cancel": "Paturēt manu kontu"
+      },
+      "appearance": {
+        "title": "Izskats",
+        "body": "Lietotne seko tavam telefonam un vēlā vakarā pati kļūst tumšāka."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Atvērt",
     "delete": "Dzēst",
     "guestNote": "Šī vēsture glabājas tikai šajā ierīcē.",
-    "guestCta": "Izveido kontu, lai to paturētu."
+    "guestCta": "Izveido kontu, lai to paturētu.",
+    "returns": {
+      "label": "Atgriešanās",
+      "total": "{count, plural, zero {# dienu, kad tu biji šeit} one {Viena diena, kad tu biji šeit} other {# dienas, kad tu biji šeit}}",
+      "first": "Šī ir pirmā diena. Vēl nav ar ko salīdzināt.",
+      "welcomeBack": "Tevis nebija {days} dienas, un tu atgriezies. Tieši tā tas ir domāts.",
+      "often": "{thisWeek} dienas pēdējās nedēļas laikā.",
+      "weeks": "Izkliedētas {weeks} dažādās nedēļās.",
+      "growing": "Tas klusi krājas.",
+      "longestGap": "Tavs garākais pārtraukums bija {days} dienas. Arī no tā tu atgriezies."
+    }
   },
   "community": {
     "title": "Kopiena",
@@ -558,6 +639,155 @@
       "rateLimited": "Tu publicē ātri. Lūdzu, pagaidi dažas minūtes.",
       "signIn": "Lūdzu, vispirms pieslēdzies.",
       "generic": "Kaut kas nogāja greizi. Lūdzu, mēģini vēlreiz."
+    }
+  },
+  "theme": {
+    "label": "Izskats",
+    "light": "Gaišs",
+    "dark": "Tumšs",
+    "auto": "Auto",
+    "autoHint": "Auto seko tavam telefonam un vēlā vakarā pati kļūst tumšāka."
+  },
+  "pause": {
+    "eyebrow": "Viena minūte",
+    "title": "Elpo kopā ar mani",
+    "intro": "Nekas nav jāraksta un nekas jāizlemj. Izvēlies vienu un seko aplim. Tas izdodas arī ar bērnu uz rokām.",
+    "seconds": "{count} sekundes",
+    "note": "No šī nekas netiek saglabāts. Tā vienkārši ir minūte, kas pieder tev.",
+    "stop": "Pietiks",
+    "cycleOf": "{current}. aplis no {total}",
+    "patterns": {
+      "settle": {
+        "name": "Nosēšanās",
+        "body": "Četri ieelpā, seši izelpā. Ikdienas."
+      },
+      "steady": {
+        "name": "Nomierināšanās",
+        "body": "Četri iekšā, četri aizturot, četri ārā, četri mierā. Kad galva skrien."
+      },
+      "sleep": {
+        "name": "Palēnināšanās",
+        "body": "Četri, septiņi, astoņi. Tumsai, garas dienas beigās."
+      }
+    },
+    "phase": {
+      "in": "Ieelpo",
+      "hold": "Aiztur",
+      "out": "Izelpo",
+      "rest": "Atpūties"
+    },
+    "done": {
+      "title": "Gatavs.",
+      "body": "Tavs ķermenis ir mazliet lēnāks nekā pirms minūtes. Tajā arī ir viss triks, un tas darbojas pat tad, kad nekas cits nav mainījies.",
+      "countToday": "{count, plural, zero {Šodien tie ir # pārtraukumu. Tie nav vājuma pazīme.} one {Šī bija tava pirmā pauze šodien.} other {Šodien tie ir # pārtraukumi. Tie nav vājuma pazīme.}}",
+      "again": "Vēlreiz",
+      "reset": "Izdari resetu",
+      "home": "Atpakaļ uz sākumu"
+    }
+  },
+  "evening": {
+    "eyebrow": "Dienas noslēgšana",
+    "title": "Kāda bija šodiena?",
+    "intro": "Četras lietas, visas brīvprātīgas. Pieskaries laikapstākļiem un noliec telefonu, ja vairāk vairs nav.",
+    "save": "Noslēgt dienu",
+    "saveAgain": "Saglabāt izmaiņas",
+    "privacy": "To redzi tikai tu.",
+    "weather": {
+      "question": "Kādi šodien bija laikapstākļi?",
+      "options": {
+        "storm": "Vētra",
+        "rain": "Lietus",
+        "cloudy": "Mākoņains",
+        "sun": "Saule"
+      }
+    },
+    "hard": {
+      "label": "Kas bija grūti?",
+      "hint": "Nosauc to vienreiz, šeit, tā vietā lai nestu līdzi rītdienā.",
+      "placeholder": "Rīts. Viss."
+    },
+    "kept": {
+      "label": "Ko ir vērts paturēt?",
+      "hint": "Arī mazais skaitās. Tieši šī daļa atgriezīsies pie tevis pēc dažām nedēļām.",
+      "placeholder": "Uz pārejas pati satvēra manu roku."
+    },
+    "tomorrow": {
+      "label": "Viena lieta rītdienai",
+      "hint": "Tikai viena. No rīta tā gaidīs sākuma lapā.",
+      "placeholder": "Piezvanīt zobārstam."
+    },
+    "errors": {
+      "tooLong": "Tas ir garāks, nekā šeit ietilpst. Mazliet saīsini.",
+      "save": "Netika saglabāts. Pamēģini vēlreiz."
+    },
+    "closed": {
+      "eyebrow": "Diena noslēgta",
+      "tomorrowLabel": "Rīt, viena lieta:",
+      "edit": "Kaut ko mainīt",
+      "kept": "Apskati, ko esi paturējis",
+      "home": "Atpakaļ uz sākumu"
+    },
+    "closing": {
+      "storm": {
+        "title": "Tā bija vētra.",
+        "body": "Tu izvedi visus tai cauri līdz galam, un šodien tas arī bija uzdevums. Rīt ir cita diena, un šovakar nekas nav jālabo."
+      },
+      "stormKept": {
+        "title": "Vētra – un tomēr tu kaut ko atradi.",
+        "body": "Grūta diena ar vienu labu mirkli joprojām ir grūta diena. Bet tu to mirkli pamanīji, un tas nav maz."
+      },
+      "rainHard": {
+        "title": "Gāja smagi.",
+        "body": "Tu ietērpi to vārdos, nevis nesi klusējot. Šim vakaram ar to pietiek."
+      },
+      "kept": {
+        "title": "Tu kaut ko paturēji.",
+        "body": "Pēc dažām nedēļām tas atgriezīsies pie tevis, ilgi pēc tam, kad būsi to aizmirsis. Tieši tāpēc ir vērts to pierakstīt."
+      },
+      "heard": {
+        "title": "Tas ir pierakstīts.",
+        "body": "Tas ir ārā no tavas galvas un uz lapas, kur neviens cits to nelasa."
+      },
+      "afterReset": {
+        "title": "Šodien tu atnāci divreiz.",
+        "body": "Resets dienas laikā un noslēgums šovakar. Tā ir vesela diena rūpju par sevi – dienā, kas, visticamāk, nemaz tā neizskatījās."
+      },
+      "steady": {
+        "title": "Tu atgriezies atkal un atkal.",
+        "body": "Dienas noslēgšana kļūst par ieradumu, un tas ir viens no klusākajiem noderīgajiem ieradumiem."
+      },
+      "plain": {
+        "title": "Diena noslēgta.",
+        "body": "Vairāk nevajag. Labu miegu."
+      }
+    }
+  },
+  "kept": {
+    "title": "Ko esi paturējis",
+    "subtitle": "{count, plural, zero {# mirkļu, ko gribēji paturēt.} one {Viens mirklis, ko gribēji paturēt.} other {# mirkļi, ko gribēji paturēt.}}",
+    "loading": "Mirklīti…",
+    "empty": {
+      "body": "Šeit vēl nekā nav. Kad noslēdz dienu, tas, ko ieraksti pie „vērts paturēt”, nonāk šeit – un atgriežas pie tevis pēc nedēļām, kad būsi to aizmirsis.",
+      "cta": "Noslēgt šodienu"
+    },
+    "resurfaced": {
+      "label": "Pirms {days} dienām tu rakstīji"
+    }
+  },
+  "vent": {
+    "eyebrow": "Tikai tev",
+    "title": "Pasaki to šeit",
+    "intro": "Tas, ko nevari pateikt virtuvē. Uzraksti tik neglīti, cik gribi, un tad saplēs.",
+    "label": "Ko gribi pateikt",
+    "placeholder": "Raksti. Neviens nelasa.",
+    "tear": "Saplēst",
+    "promise": "Nekad netiek saglabāts, nekad nosūtīts, pat ne šajā ierīcē.",
+    "gone": {
+      "title": "Prom.",
+      "body": "Tas nav nekur saglabāts. Tu to pateici, un tagad neviens to vairs nenes klusējot – arī tu ne.",
+      "again": "Pateikt vēl",
+      "pause": "Paelpo minūti",
+      "home": "Atpakaļ uz sākumu"
     }
   }
 }

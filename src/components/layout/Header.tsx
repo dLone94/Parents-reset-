@@ -8,6 +8,7 @@ import { Container } from "@/components/ui/Container";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface HeaderProps {
   /** Signed-in user's email, or null for guests. */
@@ -34,11 +35,17 @@ export function Header({ userEmail }: HeaderProps) {
   }, [open]);
 
   const inReset = pathname.startsWith("/reset");
+  // Everything lives in the mobile sheet; the desktop bar keeps only three so
+  // the header never wraps in German or Finnish.
   const links = [
+    { href: "/pause", label: t("nav.pause") },
     { href: "/load", label: t("nav.familyLoad") },
+    { href: "/evening", label: t("nav.evening") },
+    { href: "/kept", label: t("nav.kept") },
     { href: "/community", label: t("nav.community") },
     { href: "/history", label: t("nav.history") },
   ] as const;
+  const desktopLinks = links.filter((link) => ["/pause", "/load", "/community"].includes(link.href));
   const initial = userEmail ? userEmail.slice(0, 1).toUpperCase() : null;
 
   return (
@@ -50,7 +57,7 @@ export function Header({ userEmail }: HeaderProps) {
 
         {/* Desktop */}
         <nav aria-label={t("nav.menuTitle")} className="hidden items-center gap-1 md:flex">
-          {links.map((link) => (
+          {desktopLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -125,6 +132,7 @@ export function Header({ userEmail }: HeaderProps) {
               <span className="text-base text-ink-soft">{t("common.language")}</span>
               <LanguageSwitcher id="language-switcher-mobile" />
             </div>
+            <ThemeToggle className="pt-1" />
           </Container>
         </div>
       </div>

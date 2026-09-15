@@ -13,7 +13,7 @@ Load and Community in later milestones.
    ```
 
 3. Apply the schema. Either paste each file in `migrations/` into the SQL
-   editor in order (0001, 0002, 0003), or with the CLI:
+   editor in order (0001, 0002, 0003, 0004), or with the CLI:
 
    ```
    supabase link --project-ref <ref>

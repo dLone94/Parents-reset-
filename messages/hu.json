@@ -34,6 +34,22 @@
     "community": {
       "title": "Közösség – Parent Reset",
       "description": "Egy kis, alapból névtelen hely szülőknek, ahol ki lehet mondani, amit máshol nem."
+    },
+    "pause": {
+      "title": "Egy perc légzés – Parent Reset",
+      "description": "Egy vezetett perc légzés. Nincs mit írni, nincs mit eldönteni, gyerekkel a karodon is megy."
+    },
+    "evening": {
+      "title": "Zárd le a napot – Parent Reset",
+      "description": "Egy nehéz dolog, egy megőrzésre érdemes, egy holnapra."
+    },
+    "kept": {
+      "title": "Amit megőriztél – Parent Reset",
+      "description": "A pillanatok, amelyeket megőrzésre érdemesnek találtál, hetekkel később visszatérnek hozzád."
+    },
+    "vent": {
+      "title": "Mondd ki itt – Parent Reset",
+      "description": "Írd le, amit hangosan nem tudsz kimondani, aztán tépd össze. Soha nem mentjük, soha nem küldjük el."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Terhek",
       "community": "Közösség",
-      "account": "Te"
-    }
+      "account": "Te",
+      "pause": "Légzés"
+    },
+    "pause": "Lélegezz",
+    "evening": "Napzárás",
+    "kept": "Megőrzött"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Családi terhek megnyitása",
       "cta": "Kezdem a mai újraindítást",
       "ctaAgain": "Újraindítás még egyszer",
-      "history": "Előzmények ({count})"
+      "history": "Előzmények ({count})",
+      "tomorrowLabel": "Tegnap ezt mondtad mára:",
+      "returns": {
+        "welcomeBack": "{days} napig nem voltál itt. A visszatérés többet ér, mint az, hogy el se menj.",
+        "often": "Ez {thisWeek} nap ezen a héten.",
+        "weeks": "{weeks} különböző héten voltál itt.",
+        "growing": "Ez {total} nap, amikor szántál magadra egy percet."
+      },
+      "kept": {
+        "label": "{days} napja ezt írtad"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Lélegezz",
+        "hint": "Egy perc"
+      },
+      "vent": {
+        "label": "Mondd ki",
+        "hint": "Aztán tépd össze"
+      },
+      "evening": {
+        "label": "Napzárás",
+        "hint": "Négy érintés"
+      },
+      "kept": {
+        "label": "Amit megőriztél",
+        "hint": "A jó részek"
+      }
+    },
+    "ways": {
+      "title": "Három bejárat",
+      "subtitle": "Attól függően, mennyi maradt ma belőled.",
+      "pause": {
+        "time": "1 perc",
+        "title": "Lélegezz",
+        "body": "Egy vezetett perc. Nincs mit írni, nincs mit eldönteni, gyerekkel a karodon is megy."
+      },
+      "reset": {
+        "time": "5 perc",
+        "title": "Reset",
+        "body": "Hat rövid kérdés és egy kis lista: ma, ezen a héten, és amit elengedhetsz."
+      },
+      "evening": {
+        "time": "2 perc",
+        "title": "Napzárás",
+        "body": "Egy nehéz dolog, egy jó, egy holnapra. A jók később visszatérnek hozzád."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Fiókom törlése",
         "confirm": "Igen, törölj mindent",
         "cancel": "Megtartom a fiókom"
+      },
+      "appearance": {
+        "title": "Megjelenés",
+        "body": "Az alkalmazás a telefonodat követi, és késő este magától elsötétül."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Megnyitás",
     "delete": "Törlés",
     "guestNote": "Ezek az előzmények csak ezen az eszközön élnek.",
-    "guestCta": "Hozz létre fiókot, hogy megmaradjanak."
+    "guestCta": "Hozz létre fiókot, hogy megmaradjanak.",
+    "returns": {
+      "label": "Visszatérések",
+      "total": "{count, plural, one {Egy nap, amikor itt voltál} other {# nap, amikor itt voltál}}",
+      "first": "Ez az első nap. Még nincs mihez hasonlítani.",
+      "welcomeBack": "{days} napig nem voltál itt, és visszajöttél. Pontosan így működik ez.",
+      "often": "{thisWeek} nap az elmúlt héten.",
+      "weeks": "{weeks} különböző hétre elosztva.",
+      "growing": "Csendben gyűlik.",
+      "longestGap": "A leghosszabb szüneted {days} nap volt. Abból is visszatértél."
+    }
   },
   "community": {
     "title": "Közösség",
@@ -558,6 +639,155 @@
       "rateLimited": "Gyorsan posztolsz. Kérlek, várj néhány percet.",
       "signIn": "Kérlek, először jelentkezz be.",
       "generic": "Valami hiba történt. Kérlek, próbáld újra."
+    }
+  },
+  "theme": {
+    "label": "Megjelenés",
+    "light": "Világos",
+    "dark": "Sötét",
+    "auto": "Auto",
+    "autoHint": "Az Auto a telefonodat követi, és késő este magától elsötétül."
+  },
+  "pause": {
+    "eyebrow": "Egy perc",
+    "title": "Lélegezz velem",
+    "intro": "Nincs mit írni és nincs mit eldönteni. Válassz egyet, és kövesd a kört. Gyerekkel a karodon is megy.",
+    "seconds": "{count} másodperc",
+    "note": "Ebből semmi nem kerül mentésre. Ez csak egy perc, ami a tiéd.",
+    "stop": "Ennyi elég",
+    "cycleOf": "{total}. kör közül a {current}.",
+    "patterns": {
+      "settle": {
+        "name": "Megérkezés",
+        "body": "Négy be, hat ki. A mindennapokra."
+      },
+      "steady": {
+        "name": "Lenyugvás",
+        "body": "Négy be, négy tartás, négy ki, négy csend. Amikor pörög a fejed."
+      },
+      "sleep": {
+        "name": "Lelassulás",
+        "body": "Négy, hét, nyolc. A sötétben, egy hosszú nap végén."
+      }
+    },
+    "phase": {
+      "in": "Belégzés",
+      "hold": "Tartsd",
+      "out": "Kilégzés",
+      "rest": "Pihenj"
+    },
+    "done": {
+      "title": "Kész.",
+      "body": "A tested egy kicsit lassabb, mint egy perce volt. Ennyi az egész trükk, és akkor is működik, ha semmi más nem változott.",
+      "countToday": "{count, plural, one {Ez volt ma az első szüneted.} other {Ez ma # szünet. Nem gyengeség, ha szükséged van rájuk.}}",
+      "again": "Még egyszer",
+      "reset": "Csinálj egy resetet",
+      "home": "Vissza a kezdéshez"
+    }
+  },
+  "evening": {
+    "eyebrow": "A nap lezárása",
+    "title": "Milyen volt a mai nap?",
+    "intro": "Négy dolog, mind opcionális. Érintsd meg az időjárást, és tedd le a telefont, ha csak ennyi maradt.",
+    "save": "Nap lezárása",
+    "saveAgain": "Módosítások mentése",
+    "privacy": "Ezt csak te látod.",
+    "weather": {
+      "question": "Milyen idő volt ma?",
+      "options": {
+        "storm": "Vihar",
+        "rain": "Eső",
+        "cloudy": "Felhős",
+        "sun": "Napsütés"
+      }
+    },
+    "hard": {
+      "label": "Mi volt nehéz?",
+      "hint": "Mondd ki egyszer, itt, ahelyett hogy átvinnéd a holnapba.",
+      "placeholder": "A reggel. Az egész."
+    },
+    "kept": {
+      "label": "Mit érdemes megőrizni?",
+      "hint": "A kicsi is számít. Pont ez a rész tér vissza hozzád pár hét múlva.",
+      "placeholder": "Magától fogta meg a kezem az átkelőnél."
+    },
+    "tomorrow": {
+      "label": "Egy dolog holnapra",
+      "hint": "Csak egy. Reggel ott vár a kezdőoldalon.",
+      "placeholder": "Felhívni a fogorvost."
+    },
+    "errors": {
+      "tooLong": "Ez hosszabb, mint amennyi ide fér. Rövidítsd egy kicsit.",
+      "save": "Nem mentődött el. Próbáld meg még egyszer."
+    },
+    "closed": {
+      "eyebrow": "Nap lezárva",
+      "tomorrowLabel": "Holnap, egy dolog:",
+      "edit": "Módosíts valamit",
+      "kept": "Nézd meg, mit őriztél meg",
+      "home": "Vissza a kezdéshez"
+    },
+    "closing": {
+      "storm": {
+        "title": "Ez vihar volt.",
+        "body": "Mindenkit végigvittél rajta, és ma ez volt a feladat. A holnap másik nap, és ma este már nem kell megjavítanod semmit."
+      },
+      "stormKept": {
+        "title": "Vihar – és mégis találtál valamit.",
+        "body": "Egy nehéz nap egyetlen jó pillanattal még mindig nehéz nap. De észrevetted azt a pillanatot, és ez nem semmi."
+      },
+      "rainHard": {
+        "title": "Nehezen ment.",
+        "body": "Szavakba öntötted ahelyett, hogy némán cipelnéd. Mára ennyi elég."
+      },
+      "kept": {
+        "title": "Megőriztél valamit.",
+        "body": "Pár hét múlva visszatér hozzád, jóval azután, hogy elfelejtetted. Pont ezért érdemes leírni."
+      },
+      "heard": {
+        "title": "Le van írva.",
+        "body": "Kikerült a fejedből az oldalra, ahol senki más nem olvassa."
+      },
+      "afterReset": {
+        "title": "Ma kétszer is megjelentél.",
+        "body": "Egy reset napközben és egy zárás ma este. Ez egy teljes napnyi törődés magaddal – egy olyan napon, ami valószínűleg egyáltalán nem ilyennek tűnt."
+      },
+      "steady": {
+        "title": "Újra és újra visszatérsz.",
+        "body": "A napzárás szokássá kezd válni, és ez az egyik legcsendesebb hasznos szokás, ami létezik."
+      },
+      "plain": {
+        "title": "Nap lezárva.",
+        "body": "Ennyi kell hozzá. Aludj jól."
+      }
+    }
+  },
+  "kept": {
+    "title": "Amit megőriztél",
+    "subtitle": "{count, plural, one {Egy pillanat, amit megőrzésre érdemesnek találtál.} other {# pillanat, amit megőrzésre érdemesnek találtál.}}",
+    "loading": "Egy pillanat…",
+    "empty": {
+      "body": "Itt még nincs semmi. Amikor lezársz egy napot, amit a „megőrzésre érdemes” mezőbe írsz, ide kerül – és hetekkel később visszatér hozzád, amikor már elfelejtetted.",
+      "cta": "Mai nap lezárása"
+    },
+    "resurfaced": {
+      "label": "{days} napja ezt írtad"
+    }
+  },
+  "vent": {
+    "eyebrow": "Csak neked",
+    "title": "Mondd ki itt",
+    "intro": "Az, amit a konyhában nem tudsz kimondani. Írd le olyan csúnyán, ahogy csak akarod, aztán tépd össze.",
+    "label": "Amit ki akarsz mondani",
+    "placeholder": "Írd. Senki nem olvassa.",
+    "tear": "Tépd össze",
+    "promise": "Soha nem mentjük, soha nem küldjük el, még erre az eszközre sem.",
+    "gone": {
+      "title": "Elment.",
+      "body": "Sehol nincs eltárolva. Kimondtad, és most már senki nem cipeli némán – te sem.",
+      "again": "Mondj még",
+      "pause": "Lélegezz egy percet",
+      "home": "Vissza a kezdéshez"
     }
   }
 }

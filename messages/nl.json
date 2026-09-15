@@ -34,6 +34,22 @@
     "community": {
       "title": "Community – Parent Reset",
       "description": "Een kleine, anonieme plek waar ouders hardop kunnen zeggen wat ze meestal voor zich houden."
+    },
+    "pause": {
+      "title": "Een minuut ademen – Parent Reset",
+      "description": "Een begeleide minuut ademen. Niets typen, niets beslissen, kan met een kind op je arm."
+    },
+    "evening": {
+      "title": "De dag afsluiten – Parent Reset",
+      "description": "Eén zware ding, één om te bewaren, één voor morgen."
+    },
+    "kept": {
+      "title": "Wat je bewaard hebt – Parent Reset",
+      "description": "De momenten die je de moeite waard vond, weken later teruggegeven."
+    },
+    "vent": {
+      "title": "Zeg het hier – Parent Reset",
+      "description": "Schrijf op wat je hardop niet kunt zeggen en scheur het dan. Nooit opgeslagen, nooit verstuurd."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Gezin",
       "community": "Community",
-      "account": "Jij"
-    }
+      "account": "Jij",
+      "pause": "Ademen"
+    },
+    "pause": "Ademen",
+    "evening": "Dag afsluiten",
+    "kept": "Bewaard"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Open gezinslast",
       "cta": "Start de reset van vandaag",
       "ctaAgain": "Opnieuw resetten",
-      "history": "Geschiedenis ({count})"
+      "history": "Geschiedenis ({count})",
+      "tomorrowLabel": "Gisteren zei je, voor vandaag:",
+      "returns": {
+        "welcomeBack": "Je was {days} dagen weg. Terugkomen telt zwaarder dan nooit weggaan.",
+        "often": "Dat zijn {thisWeek} dagen deze week.",
+        "weeks": "Je was er in {weeks} verschillende weken.",
+        "growing": "Dat zijn {total} dagen waarop je een minuut voor jezelf nam."
+      },
+      "kept": {
+        "label": "{days} dagen geleden schreef je"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Ademen",
+        "hint": "Eén minuut"
+      },
+      "vent": {
+        "label": "Zeg het",
+        "hint": "En scheur het"
+      },
+      "evening": {
+        "label": "Dag afsluiten",
+        "hint": "Vier tikken"
+      },
+      "kept": {
+        "label": "Wat je bewaarde",
+        "hint": "Je goede stukken"
+      }
+    },
+    "ways": {
+      "title": "Drie manieren om te beginnen",
+      "subtitle": "Afhankelijk van hoeveel er vandaag nog van je over is.",
+      "pause": {
+        "time": "1 minuut",
+        "title": "Ademen",
+        "body": "Een begeleide minuut. Niets typen, niets beslissen, kan met een kind op je arm."
+      },
+      "reset": {
+        "time": "5 minuten",
+        "title": "Reset",
+        "body": "Zes korte vragen en een klein lijstje: vandaag, deze week, en wat je los mag laten."
+      },
+      "evening": {
+        "time": "2 minuten",
+        "title": "Dag afsluiten",
+        "body": "Eén zwaar ding, één goed ding, één voor morgen. De goede komen later bij je terug."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Verwijder mijn account",
         "confirm": "Ja, verwijder alles",
         "cancel": "Mijn account houden"
+      },
+      "appearance": {
+        "title": "Weergave",
+        "body": "De app volgt je telefoon en wordt laat op de avond vanzelf donkerder."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Openen",
     "delete": "Verwijderen",
     "guestNote": "Deze geschiedenis staat alleen op dit apparaat.",
-    "guestCta": "Maak een account aan om hem te bewaren."
+    "guestCta": "Maak een account aan om hem te bewaren.",
+    "returns": {
+      "label": "Terugkomen",
+      "total": "{count, plural, one {Eén dag dat je er was} other {# dagen dat je er was}}",
+      "first": "Dit is dag één. Nog niets om mee te vergelijken.",
+      "welcomeBack": "Je was {days} dagen weg en je kwam terug. Zo hoort het te werken.",
+      "often": "{thisWeek} dagen in de afgelopen week.",
+      "weeks": "Verspreid over {weeks} verschillende weken.",
+      "growing": "Het telt stilletjes op.",
+      "longestGap": "Je langste pauze was {days} dagen. Ook daarvan ben je teruggekomen."
+    }
   },
   "community": {
     "title": "Community",
@@ -558,6 +639,155 @@
       "rateLimited": "Je plaatst snel achter elkaar. Wacht een paar minuten.",
       "signIn": "Log eerst in.",
       "generic": "Er ging iets mis. Probeer het opnieuw."
+    }
+  },
+  "theme": {
+    "label": "Weergave",
+    "light": "Licht",
+    "dark": "Donker",
+    "auto": "Auto",
+    "autoHint": "Auto volgt je telefoon en wordt laat op de avond vanzelf donkerder."
+  },
+  "pause": {
+    "eyebrow": "Eén minuut",
+    "title": "Adem met me mee",
+    "intro": "Niets te typen en niets te beslissen. Kies er een en volg de cirkel. Dit kan met een kind op je arm.",
+    "seconds": "{count} seconden",
+    "note": "Hier wordt niets van bewaard. Het is gewoon een minuut die van jou is.",
+    "stop": "Zo is het genoeg",
+    "cycleOf": "Ronde {current} van {total}",
+    "patterns": {
+      "settle": {
+        "name": "Landen",
+        "body": "Vier in, zes uit. Die voor elke dag."
+      },
+      "steady": {
+        "name": "Rustig worden",
+        "body": "Vier in, vier vast, vier uit, vier stil. Als je hoofd op hol slaat."
+      },
+      "sleep": {
+        "name": "Uitzakken",
+        "body": "Vier, zeven, acht. Voor het donker, aan het eind van een lange dag."
+      }
+    },
+    "phase": {
+      "in": "Adem in",
+      "hold": "Houd vast",
+      "out": "Adem uit",
+      "rest": "Rust"
+    },
+    "done": {
+      "title": "Klaar.",
+      "body": "Je lichaam is iets trager dan een minuut geleden. Meer is het niet, en het werkt zelfs als er verder niets veranderd is.",
+      "countToday": "{count, plural, one {Dat is je eerste pauze vandaag.} other {Dat zijn # pauzes vandaag. Ze nodig hebben is geen zwakte.}}",
+      "again": "Nog een keer",
+      "reset": "Een reset doen",
+      "home": "Terug naar start"
+    }
+  },
+  "evening": {
+    "eyebrow": "De dag afsluiten",
+    "title": "Hoe was vandaag?",
+    "intro": "Vier dingen, allemaal vrijblijvend. Tik het weer aan en leg je telefoon weg als dat alles is wat je nog hebt.",
+    "save": "Dag afsluiten",
+    "saveAgain": "Wijzigingen opslaan",
+    "privacy": "Alleen jij ziet dit.",
+    "weather": {
+      "question": "Wat voor weer was vandaag?",
+      "options": {
+        "storm": "Storm",
+        "rain": "Regen",
+        "cloudy": "Bewolkt",
+        "sun": "Zon"
+      }
+    },
+    "hard": {
+      "label": "Wat was zwaar?",
+      "hint": "Benoem het één keer, hier, in plaats van het mee te nemen naar morgen.",
+      "placeholder": "De ochtend. De hele."
+    },
+    "kept": {
+      "label": "Wat is het bewaren waard?",
+      "hint": "Klein telt ook. Dit is het stuk dat over een paar weken bij je terugkomt.",
+      "placeholder": "Ze pakte mijn hand bij het oversteken, uit zichzelf."
+    },
+    "tomorrow": {
+      "label": "Eén ding voor morgen",
+      "hint": "Eentje maar. Morgenochtend staat het op je startscherm.",
+      "placeholder": "De tandarts bellen."
+    },
+    "errors": {
+      "tooLong": "Dat is langer dan hier in past. Maak het iets korter.",
+      "save": "Dat is niet opgeslagen. Probeer het nog een keer."
+    },
+    "closed": {
+      "eyebrow": "Dag afgesloten",
+      "tomorrowLabel": "Morgen, één ding:",
+      "edit": "Iets veranderen",
+      "kept": "Bekijk wat je bewaard hebt",
+      "home": "Terug naar start"
+    },
+    "closing": {
+      "storm": {
+        "title": "Dat was een storm.",
+        "body": "Je hebt iedereen tot het eind gebracht, en dat was vandaag de opdracht. Morgen is een andere dag, en vanavond hoef je niets meer te repareren."
+      },
+      "stormKept": {
+        "title": "Een storm, en toch vond je iets.",
+        "body": "Een zware dag met één goed moment erin blijft een zware dag. Maar je zag dat moment, en dat is niet niks."
+      },
+      "rainHard": {
+        "title": "Zwaar gaan.",
+        "body": "Je hebt het in woorden gezet in plaats van het zwijgend mee te dragen. Voor vanavond is dat genoeg."
+      },
+      "kept": {
+        "title": "Je hebt iets bewaard.",
+        "body": "Over een paar weken komt dit bij je terug, lang nadat je het vergeten bent. Precies daarom is het het opschrijven waard."
+      },
+      "heard": {
+        "title": "Het staat er.",
+        "body": "Het is je hoofd uit en op de pagina, waar niemand anders het leest."
+      },
+      "afterReset": {
+        "title": "Je was er vandaag twee keer.",
+        "body": "Een reset overdag en een afsluiting vanavond. Dat is een hele dag goed voor jezelf zorgen, op een dag die waarschijnlijk niet zo voelde."
+      },
+      "steady": {
+        "title": "Je blijft terugkomen.",
+        "body": "De dag afsluiten wordt een gewoonte, en het is een van de stilste nuttige die er zijn."
+      },
+      "plain": {
+        "title": "Dag afgesloten.",
+        "body": "Meer is het niet. Slaap lekker."
+      }
+    }
+  },
+  "kept": {
+    "title": "Wat je bewaard hebt",
+    "subtitle": "{count, plural, one {Eén moment dat je wilde bewaren.} other {# momenten die je wilde bewaren.}}",
+    "loading": "Een momentje…",
+    "empty": {
+      "body": "Hier staat nog niets. Als je een dag afsluit, komt wat je onder \"het bewaren waard\" schrijft hier terecht, en het komt weken later bij je terug, als je het allang vergeten bent.",
+      "cta": "Vandaag afsluiten"
+    },
+    "resurfaced": {
+      "label": "{days} dagen geleden schreef je"
+    }
+  },
+  "vent": {
+    "eyebrow": "Alleen voor jou",
+    "title": "Zeg het hier",
+    "intro": "Dat wat je in de keuken niet kunt zeggen. Schrijf het zo lelijk op als je wilt en scheur het dan.",
+    "label": "Wat je wilt zeggen",
+    "placeholder": "Typ maar. Niemand leest mee.",
+    "tear": "Verscheuren",
+    "promise": "Nooit opgeslagen, nooit verstuurd, ook niet op dit apparaat.",
+    "gone": {
+      "title": "Weg.",
+      "body": "Het staat nergens. Je hebt het gezegd, en nu draagt niemand het meer zwijgend mee, jij ook niet.",
+      "again": "Meer zeggen",
+      "pause": "Een minuut ademen",
+      "home": "Terug naar start"
     }
   }
 }

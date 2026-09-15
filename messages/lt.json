@@ -34,6 +34,22 @@
     "community": {
       "title": "Bendruomenė – Parent Reset",
       "description": "Maža, pirmiausia anonimiška vieta tėvams garsiai pasakyti tai, kas nutylima."
+    },
+    "pause": {
+      "title": "Minutė kvėpavimo – Parent Reset",
+      "description": "Vedama kvėpavimo minutė. Nieko nereikia rašyti ar spręsti, pavyks ir su vaiku ant rankų."
+    },
+    "evening": {
+      "title": "Užbaik dieną – Parent Reset",
+      "description": "Vienas sunkus dalykas, vienas vertas išsaugoti, vienas rytojui."
+    },
+    "kept": {
+      "title": "Ką išsaugojai – Parent Reset",
+      "description": "Akimirkos, kurias norėjai išsaugoti, sugrįžta pas tave po kelių savaičių."
+    },
+    "vent": {
+      "title": "Pasakyk čia – Parent Reset",
+      "description": "Parašyk tai, ko negali pasakyti garsiai, ir suplėšyk. Niekada neišsaugoma ir nesiunčiama."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Diena",
       "load": "Rūpesčiai",
       "community": "Bendruomenė",
-      "account": "Jūs"
-    }
+      "account": "Jūs",
+      "pause": "Kvėpavimas"
+    },
+    "pause": "Kvėpuok",
+    "evening": "Užbaik dieną",
+    "kept": "Išsaugota"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Atidaryti šeimos rūpesčius",
       "cta": "Susidėlioti šiandienos dieną",
       "ctaAgain": "Susidėlioti iš naujo",
-      "history": "Istorija ({count})"
+      "history": "Istorija ({count})",
+      "tomorrowLabel": "Vakar šiai dienai pasakei:",
+      "returns": {
+        "welcomeBack": "Nebuvai {days} dienas. Sugrįžti reiškia daugiau nei niekada neišeiti.",
+        "often": "Tai {thisWeek} dienos šią savaitę.",
+        "weeks": "Buvai čia {weeks} skirtingomis savaitėmis.",
+        "growing": "Tai {total} dienų, kai skyrei sau minutę."
+      },
+      "kept": {
+        "label": "Prieš {days} dienas parašei"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Kvėpuok",
+        "hint": "Viena minutė"
+      },
+      "vent": {
+        "label": "Pasakyk",
+        "hint": "Tada suplėšyk"
+      },
+      "evening": {
+        "label": "Užbaik dieną",
+        "hint": "Keturi paspaudimai"
+      },
+      "kept": {
+        "label": "Ką išsaugojai",
+        "hint": "Tavo geros akimirkos"
+      }
+    },
+    "ways": {
+      "title": "Trys įėjimai",
+      "subtitle": "Priklausomai nuo to, kiek tavęs šiandien beliko.",
+      "pause": {
+        "time": "1 minutė",
+        "title": "Kvėpuok",
+        "body": "Vedama minutė. Nieko nereikia rašyti ar spręsti, pavyks ir su vaiku ant rankų."
+      },
+      "reset": {
+        "time": "5 minutės",
+        "title": "Reset",
+        "body": "Šeši trumpi klausimai ir mažas sąrašas: šiandien, šią savaitę ir tai, ką gali paleisti."
+      },
+      "evening": {
+        "time": "2 minutės",
+        "title": "Užbaik dieną",
+        "body": "Vienas sunkus dalykas, vienas geras, vienas rytojui. Geri sugrįžta pas tave vėliau."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Ištrinti mano paskyrą",
         "confirm": "Taip, ištrinti viską",
         "cancel": "Palikti paskyrą"
+      },
+      "appearance": {
+        "title": "Išvaizda",
+        "body": "Programėlė seka tavo telefoną ir vėlai vakare pati pritemsta."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Atidaryti",
     "delete": "Ištrinti",
     "guestNote": "Ši istorija saugoma tik šiame įrenginyje.",
-    "guestCta": "Susikurkite paskyrą, kad ją išsaugotumėte."
+    "guestCta": "Susikurkite paskyrą, kad ją išsaugotumėte.",
+    "returns": {
+      "label": "Sugrįžimai",
+      "total": "{count, plural, one {Viena diena, kai buvai čia} few {# dienos, kai buvai čia} many {# dienos, kai buvai čia} other {# dienų, kai buvai čia}}",
+      "first": "Tai pirma diena. Dar nėra su kuo palyginti.",
+      "welcomeBack": "Nebuvai {days} dienas ir sugrįžai. Būtent taip tai ir turi veikti.",
+      "often": "{thisWeek} dienos per pastarąją savaitę.",
+      "weeks": "Pasiskirstę per {weeks} skirtingas savaites.",
+      "growing": "Tyliai kaupiasi.",
+      "longestGap": "Ilgiausia tavo pertrauka buvo {days} dienų. Ir iš jos sugrįžai."
+    }
   },
   "community": {
     "title": "Bendruomenė",
@@ -558,6 +639,155 @@
       "rateLimited": "Skelbiate per dažnai. Palaukite kelias minutes.",
       "signIn": "Pirmiausia prisijunkite.",
       "generic": "Kažkas nepavyko. Bandykite dar kartą."
+    }
+  },
+  "theme": {
+    "label": "Išvaizda",
+    "light": "Šviesi",
+    "dark": "Tamsi",
+    "auto": "Auto",
+    "autoHint": "Auto seka tavo telefoną ir vėlai vakare pati pritemsta."
+  },
+  "pause": {
+    "eyebrow": "Viena minutė",
+    "title": "Kvėpuok su manimi",
+    "intro": "Nieko nereikia rašyti ir nieko spręsti. Pasirink vieną ir sek apskritimą. Pavyks ir su vaiku ant rankų.",
+    "seconds": "{count} sekundžių",
+    "note": "Nieko iš to neišsaugoma. Tai tiesiog minutė, kuri priklauso tau.",
+    "stop": "Užteks",
+    "cycleOf": "{current} ratas iš {total}",
+    "patterns": {
+      "settle": {
+        "name": "Nusėdimas",
+        "body": "Keturi įkvėpiant, šeši iškvepiant. Kasdienis."
+      },
+      "steady": {
+        "name": "Nurimimas",
+        "body": "Keturi įkvėpti, keturi sulaikyti, keturi iškvėpti, keturi ramiai. Kai galva lekia."
+      },
+      "sleep": {
+        "name": "Nuraminimas",
+        "body": "Keturi, septyni, aštuoni. Tamsai, ilgos dienos pabaigoje."
+      }
+    },
+    "phase": {
+      "in": "Įkvėpk",
+      "hold": "Sulaikyk",
+      "out": "Iškvėpk",
+      "rest": "Ilsėkis"
+    },
+    "done": {
+      "title": "Baigta.",
+      "body": "Tavo kūnas šiek tiek lėtesnis nei prieš minutę. Tame ir visa esmė, ir tai veikia net tada, kai niekas kitas nepasikeitė.",
+      "countToday": "{count, plural, one {Tai buvo pirmoji tavo pertrauka šiandien.} few {Tai # pertraukos šiandien. Jų poreikis nėra silpnumas.} many {Tai # pertraukos šiandien. Jų poreikis nėra silpnumas.} other {Tai # pertraukų šiandien. Jų poreikis nėra silpnumas.}}",
+      "again": "Dar kartą",
+      "reset": "Padaryk reset",
+      "home": "Atgal į pradžią"
+    }
+  },
+  "evening": {
+    "eyebrow": "Dienos užbaigimas",
+    "title": "Kokia buvo šiandiena?",
+    "intro": "Keturi dalykai, visi neprivalomi. Palieskite orą ir padėk telefoną, jei tik tiek beliko.",
+    "save": "Užbaigti dieną",
+    "saveAgain": "Išsaugoti pakeitimus",
+    "privacy": "Tai matai tik tu.",
+    "weather": {
+      "question": "Koks šiandien buvo oras?",
+      "options": {
+        "storm": "Audra",
+        "rain": "Lietus",
+        "cloudy": "Debesuota",
+        "sun": "Saulė"
+      }
+    },
+    "hard": {
+      "label": "Kas buvo sunku?",
+      "hint": "Įvardyk tai vieną kartą, čia, užuot nešęsis į rytojų.",
+      "placeholder": "Rytas. Visas."
+    },
+    "kept": {
+      "label": "Ką verta išsaugoti?",
+      "hint": "Skaičiuojasi ir smulkmena. Būtent ši dalis sugrįš pas tave po kelių savaičių.",
+      "placeholder": "Perėjoje pati paėmė mane už rankos."
+    },
+    "tomorrow": {
+      "label": "Vienas dalykas rytojui",
+      "hint": "Tik vienas. Rytą jis lauks pradžios puslapyje.",
+      "placeholder": "Paskambinti odontologui."
+    },
+    "errors": {
+      "tooLong": "Tai ilgiau, nei čia telpa. Šiek tiek sutrumpink.",
+      "save": "Neišsaugota. Pabandyk dar kartą."
+    },
+    "closed": {
+      "eyebrow": "Diena užbaigta",
+      "tomorrowLabel": "Rytoj, vienas dalykas:",
+      "edit": "Pakeisk ką nors",
+      "kept": "Pažiūrėk, ką išsaugojai",
+      "home": "Atgal į pradžią"
+    },
+    "closing": {
+      "storm": {
+        "title": "Tai buvo audra.",
+        "body": "Pervedei visus per ją iki galo, ir šiandien tai ir buvo užduotis. Rytoj kita diena, o šįvakar nieko taisyti nereikia."
+      },
+      "stormKept": {
+        "title": "Audra – ir vis tiek radai kai ką.",
+        "body": "Sunki diena su viena gera akimirka tebėra sunki diena. Bet tą akimirką pastebėjai, o tai nėra mažai."
+      },
+      "rainHard": {
+        "title": "Ėjo sunkiai.",
+        "body": "Įvardijai tai žodžiais, užuot nešęsis tyloje. Šiam vakarui to pakanka."
+      },
+      "kept": {
+        "title": "Kai ką išsaugojai.",
+        "body": "Po kelių savaičių tai sugrįš pas tave, gerokai po to, kai būsi pamiršęs. Būtent todėl verta užrašyti."
+      },
+      "heard": {
+        "title": "Užrašyta.",
+        "body": "Išėjo iš tavo galvos ir liko puslapyje, kur niekas kitas to neskaito."
+      },
+      "afterReset": {
+        "title": "Šiandien pasirodei du kartus.",
+        "body": "Reset per dieną ir užbaigimas vakare. Tai visa diena rūpinimosi savimi – dieną, kuri tikriausiai visai taip neatrodė."
+      },
+      "steady": {
+        "title": "Vis grįžti.",
+        "body": "Dienos užbaigimas tampa įpročiu, ir tai vienas tyliausių naudingų įpročių."
+      },
+      "plain": {
+        "title": "Diena užbaigta.",
+        "body": "Daugiau nereikia. Gero miego."
+      }
+    }
+  },
+  "kept": {
+    "title": "Ką išsaugojai",
+    "subtitle": "{count, plural, one {Viena akimirka, kurią norėjai išsaugoti.} few {# akimirkos, kurias norėjai išsaugoti.} many {# akimirkos, kurias norėjai išsaugoti.} other {# akimirkų, kurias norėjai išsaugoti.}}",
+    "loading": "Akimirką…",
+    "empty": {
+      "body": "Čia dar nieko nėra. Kai užbaigi dieną, tai, ką parašai prie „verta išsaugoti”, atsiduria čia – ir sugrįžta pas tave po kelių savaičių, kai jau būsi pamiršęs.",
+      "cta": "Užbaigti šiandieną"
+    },
+    "resurfaced": {
+      "label": "Prieš {days} dienas parašei"
+    }
+  },
+  "vent": {
+    "eyebrow": "Tik tau",
+    "title": "Pasakyk čia",
+    "intro": "Tai, ko negali pasakyti virtuvėje. Parašyk taip bjauriai, kaip nori, ir suplėšyk.",
+    "label": "Ką nori pasakyti",
+    "placeholder": "Rašyk. Niekas neskaito.",
+    "tear": "Suplėšyk",
+    "promise": "Niekada neišsaugoma, niekada nesiunčiama, net ir į šį įrenginį.",
+    "gone": {
+      "title": "Dingo.",
+      "body": "Niekur tai nesaugoma. Pasakei, ir dabar niekas to nebeneša tyloje – nei tu.",
+      "again": "Pasakyk daugiau",
+      "pause": "Kvėpuok minutę",
+      "home": "Atgal į pradžią"
     }
   }
 }

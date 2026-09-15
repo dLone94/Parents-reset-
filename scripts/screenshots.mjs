@@ -120,6 +120,92 @@ async function runMilestone3(context, locale, prefix) {
   await page.close();
 }
 
+// Milestone 4 screens: the one-minute pause, saying it and tearing it up,
+// closing the day, and what came back. Also one dark-palette landing shot.
+const m4Locales = { mobile: ["en", "de", "ja"], desktop: ["en", "de"] };
+
+const rx = (value) => new RegExp(value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+
+async function runMilestone4(context, locale, prefix) {
+  const m = messagesFor(locale);
+  const pause = { ...en.pause, ...(m.pause ?? {}) };
+  const vent = { ...en.vent, ...(m.vent ?? {}) };
+  const evening = { ...en.evening, ...(m.evening ?? {}) };
+  const page = await context.newPage();
+  await page.emulateMedia({ reducedMotion: "reduce" });
+
+  // Pause: the pattern picker, then a run in progress.
+  await page.goto(`${BASE_URL}/${locale}/pause`, { waitUntil: "networkidle" });
+  await shot(page, `${prefix}${locale}-pause`);
+  await page.getByRole("button", { name: rx(pause.patterns.settle.name) }).click();
+  await page.waitForTimeout(900);
+  await shot(page, `${prefix}${locale}-pause-running`);
+
+  // Say it here, and the empty screen after tearing it up.
+  await page.goto(`${BASE_URL}/${locale}/vent`, { waitUntil: "networkidle" });
+  await page.getByRole("textbox").fill(sampleVent[locale] ?? sampleVent.en);
+  await shot(page, `${prefix}${locale}-vent`);
+  await page.getByRole("button", { name: vent.tear, exact: true }).click();
+  await page.waitForTimeout(1200);
+  await shot(page, `${prefix}${locale}-vent-gone`);
+
+  // Closing the day, and the ending it answers with.
+  await page.goto(`${BASE_URL}/${locale}/evening`, { waitUntil: "networkidle" });
+  await page.getByRole("radio", { name: evening.weather.options.rain, exact: true }).click();
+  const fields = page.getByRole("textbox");
+  await fields.nth(0).fill(sampleEvening[locale]?.hard ?? sampleEvening.en.hard);
+  await fields.nth(1).fill(sampleEvening[locale]?.kept ?? sampleEvening.en.kept);
+  await fields.nth(2).fill(sampleEvening[locale]?.tomorrow ?? sampleEvening.en.tomorrow);
+  await shot(page, `${prefix}${locale}-evening`, true);
+  await page.getByRole("button", { name: evening.save, exact: true }).click();
+  await page.waitForTimeout(500);
+  await shot(page, `${prefix}${locale}-evening-closed`);
+
+  // What has been kept, including the older moment lifted to the top.
+  await page.goto(`${BASE_URL}/${locale}/kept`, { waitUntil: "networkidle" });
+  await page.waitForTimeout(400);
+  await shot(page, `${prefix}${locale}-kept`, true);
+  await page.close();
+}
+
+const sampleVent = {
+  en: "I have asked four times. FOUR. And I am still the only one who sees the mess.",
+  de: "Ich habe es viermal gesagt. VIERMAL. Und ich bin immer noch die Einzige, die das Chaos sieht.",
+  ja: "四回も言った。四回。それでも散らかりに気づくのは私だけ。",
+};
+
+const sampleEvening = {
+  en: {
+    hard: "The morning. All of it. Nobody could find shoes and I shouted.",
+    kept: "She took my hand crossing the road without being asked.",
+    tomorrow: "Call the dentist.",
+  },
+  de: {
+    hard: "Der Morgen. Der ganze. Niemand hat Schuhe gefunden und ich habe geschrien.",
+    kept: "Sie hat an der Straße von selbst meine Hand genommen.",
+    tomorrow: "Beim Zahnarzt anrufen.",
+  },
+  ja: {
+    hard: "朝。まるごと全部。誰も靴が見つからなくて、怒鳴ってしまった。",
+    kept: "横断歩道で、言わなくても手をつないできた。",
+    tomorrow: "歯医者に電話する。",
+  },
+};
+
+/** One landing shot in the night palette, to prove the dark theme holds up. */
+async function shotDarkLanding(context, locale, prefix) {
+  const page = await context.newPage();
+  await page.emulateMedia({ reducedMotion: "reduce", colorScheme: "dark" });
+  await page.goto(`${BASE_URL}/${locale}`, { waitUntil: "networkidle" });
+  await page.evaluate(() => {
+    localStorage.setItem("parent-reset:theme", "dark");
+  });
+  await page.reload({ waitUntil: "networkidle" });
+  await page.waitForTimeout(400);
+  await shot(page, `${prefix}${locale}-landing-dark`, true);
+  await page.close();
+}
+
 const browser = await chromium.launch(executablePath ? { executablePath } : {});
 
 async function shot(page, name, fullPage = false) {
@@ -198,6 +284,11 @@ for (const [device, options] of Object.entries(viewports)) {
 
     if (m3Locales[device].includes(locale)) {
       await runMilestone3(context, locale, prefix);
+    }
+
+    if (m4Locales[device].includes(locale)) {
+      await runMilestone4(context, locale, prefix);
+      await shotDarkLanding(context, locale, prefix);
     }
     await context.close();
   }

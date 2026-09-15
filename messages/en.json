@@ -32,6 +32,22 @@
     "community": {
       "title": "Community – Parent Reset",
       "description": "A small, anonymous-first place for parents to say the quiet part out loud."
+    },
+    "pause": {
+      "title": "Breathe for a minute – Parent Reset",
+      "description": "A guided minute of breathing. No typing, no decisions, and it works with a child on your hip."
+    },
+    "evening": {
+      "title": "Close the day – Parent Reset",
+      "description": "One hard thing, one thing worth keeping, one thing for tomorrow."
+    },
+    "kept": {
+      "title": "What you've kept – Parent Reset",
+      "description": "The moments you decided were worth keeping, handed back to you weeks later."
+    },
+    "vent": {
+      "title": "Say it here – Parent Reset",
+      "description": "Write the thing you cannot say out loud, then tear it up. Never saved, never sent."
     }
   },
   "common": {
@@ -62,9 +78,12 @@
       "home": "Home",
       "reset": "Reset",
       "load": "Load",
-      "community": "Community",
-      "account": "You"
-    }
+      "account": "You",
+      "pause": "Breathe"
+    },
+    "pause": "Breathe",
+    "evening": "Close the day",
+    "kept": "Kept"
   },
   "home": {
     "hero": {
@@ -137,7 +156,54 @@
       "openLoad": "Open family load",
       "cta": "Start today's reset",
       "ctaAgain": "Reset again",
-      "history": "History ({count})"
+      "history": "History ({count})",
+      "tomorrowLabel": "Yesterday you said, for today:",
+      "returns": {
+        "welcomeBack": "You were away {days} days. Coming back counts for more than never leaving.",
+        "often": "That is {thisWeek} days this week.",
+        "weeks": "You have shown up across {weeks} different weeks.",
+        "growing": "That is {total} days you took a minute for yourself."
+      },
+      "kept": {
+        "label": "{days} days ago you wrote"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Breathe",
+        "hint": "One minute"
+      },
+      "vent": {
+        "label": "Say it",
+        "hint": "Then tear it up"
+      },
+      "evening": {
+        "label": "Close the day",
+        "hint": "Four taps"
+      },
+      "kept": {
+        "label": "What you kept",
+        "hint": "Your good bits"
+      }
+    },
+    "ways": {
+      "title": "Three ways in",
+      "subtitle": "Depending on how much of you is left today.",
+      "pause": {
+        "time": "1 minute",
+        "title": "Breathe",
+        "body": "A guided minute. No typing, nothing to decide, and it works with a child on your hip."
+      },
+      "reset": {
+        "time": "5 minutes",
+        "title": "Reset",
+        "body": "Six short questions, and a small list: today, this week, and what you can let go."
+      },
+      "evening": {
+        "time": "2 minutes",
+        "title": "Close the day",
+        "body": "One hard thing, one good thing, one thing for tomorrow. The good ones come back to you later."
+      }
     }
   },
   "reset": {
@@ -449,6 +515,10 @@
         "delete": "Delete my account",
         "confirm": "Yes, delete everything",
         "cancel": "Keep my account"
+      },
+      "appearance": {
+        "title": "Appearance",
+        "body": "The app follows your phone, and dims itself late in the evening."
       }
     },
     "sync": {
@@ -479,7 +549,17 @@
     "open": "Open",
     "delete": "Delete",
     "guestNote": "This history lives on this device only.",
-    "guestCta": "Create an account to keep it."
+    "guestCta": "Create an account to keep it.",
+    "returns": {
+      "label": "Coming back",
+      "total": "{count, plural, one {One day you showed up} other {# days you showed up}}",
+      "first": "This is day one. Nothing to compare it with yet.",
+      "welcomeBack": "You were away {days} days and you came back. That is how this is supposed to work.",
+      "often": "{thisWeek} days in the last week.",
+      "weeks": "Spread across {weeks} different weeks.",
+      "growing": "It adds up quietly.",
+      "longestGap": "Your longest gap was {days} days. You came back from that one too."
+    }
   },
   "community": {
     "title": "Community",
@@ -556,6 +636,155 @@
       "rateLimited": "You are posting quickly. Please wait a few minutes.",
       "signIn": "Please sign in first.",
       "generic": "Something went wrong. Please try again."
+    }
+  },
+  "theme": {
+    "label": "Appearance",
+    "light": "Light",
+    "dark": "Dark",
+    "auto": "Auto",
+    "autoHint": "Auto follows your phone, and dims itself late in the evening."
+  },
+  "pause": {
+    "eyebrow": "One minute",
+    "title": "Breathe with me",
+    "intro": "No typing and nothing to decide. Pick one and follow the circle. This works with a child on your hip.",
+    "seconds": "{count} seconds",
+    "note": "Nothing from this is saved. It is just a minute that belongs to you.",
+    "stop": "That's enough",
+    "cycleOf": "Round {current} of {total}",
+    "patterns": {
+      "settle": {
+        "name": "Settle",
+        "body": "In for four, out for six. The everyday one."
+      },
+      "steady": {
+        "name": "Steady",
+        "body": "Four in, four held, four out, four still. For when your head is racing."
+      },
+      "sleep": {
+        "name": "Wind down",
+        "body": "Four, seven, eight. For lying in the dark at the end of a long day."
+      }
+    },
+    "phase": {
+      "in": "Breathe in",
+      "hold": "Hold",
+      "out": "Breathe out",
+      "rest": "Rest"
+    },
+    "done": {
+      "title": "That's done.",
+      "body": "Your body is a little slower than it was a minute ago. That is the whole trick, and it works even when nothing else has changed.",
+      "countToday": "{count, plural, one {That is your first pause today.} other {That is # pauses today. Needing them is not a weakness.}}",
+      "again": "Again",
+      "reset": "Do a reset",
+      "home": "Back home"
+    }
+  },
+  "evening": {
+    "eyebrow": "Closing the day",
+    "title": "How was today?",
+    "intro": "Four things, all optional. Tap the weather and put the phone down if that is all you have left.",
+    "save": "Close the day",
+    "saveAgain": "Save changes",
+    "privacy": "Only you ever see this.",
+    "weather": {
+      "question": "What was today like?",
+      "options": {
+        "storm": "Storm",
+        "rain": "Rain",
+        "cloudy": "Cloudy",
+        "sun": "Sun"
+      }
+    },
+    "hard": {
+      "label": "What was hard?",
+      "hint": "Name it once, here, instead of carrying it into tomorrow.",
+      "placeholder": "The morning. All of it."
+    },
+    "kept": {
+      "label": "What is worth keeping?",
+      "hint": "Small counts. This is the part that comes back to you in a few weeks.",
+      "placeholder": "She took my hand crossing the road without being asked."
+    },
+    "tomorrow": {
+      "label": "One thing for tomorrow",
+      "hint": "Just one. It will be waiting on your home screen in the morning.",
+      "placeholder": "Call the dentist."
+    },
+    "errors": {
+      "tooLong": "That is longer than this box holds. Shorten it a little.",
+      "save": "That did not save. Try once more."
+    },
+    "closed": {
+      "eyebrow": "Day closed",
+      "tomorrowLabel": "Tomorrow, one thing:",
+      "edit": "Change something",
+      "kept": "See what you've kept",
+      "home": "Back home"
+    },
+    "closing": {
+      "storm": {
+        "title": "That was a storm.",
+        "body": "You got everyone to the end of it, and that was the job today. Tomorrow is a different day and you do not have to fix tonight."
+      },
+      "stormKept": {
+        "title": "A storm, and you still found something.",
+        "body": "A hard day with one good moment in it is still a hard day. But you noticed the moment, and that is not nothing."
+      },
+      "rainHard": {
+        "title": "Heavy going.",
+        "body": "You put it down in words instead of carrying it silently. For tonight, that is enough."
+      },
+      "kept": {
+        "title": "You kept something.",
+        "body": "In a few weeks this will come back to you, long after you have forgotten it. That is exactly why it is worth writing."
+      },
+      "heard": {
+        "title": "That's written down.",
+        "body": "It is out of your head and on the page, where nobody else will read it."
+      },
+      "afterReset": {
+        "title": "You showed up twice today.",
+        "body": "A reset earlier and a close tonight. That is a whole day of looking after yourself, on a day that probably did not feel like it."
+      },
+      "steady": {
+        "title": "You keep coming back.",
+        "body": "Closing the day is becoming a habit, and it is one of the quietest useful ones there is."
+      },
+      "plain": {
+        "title": "Day closed.",
+        "body": "That is all it takes. Sleep well."
+      }
+    }
+  },
+  "kept": {
+    "title": "What you've kept",
+    "subtitle": "{count, plural, one {One moment you decided was worth keeping.} other {# moments you decided were worth keeping.}}",
+    "loading": "One moment…",
+    "empty": {
+      "body": "Nothing here yet. When you close a day, whatever you write under \"worth keeping\" lands here — and comes back to you weeks later, when you have forgotten it.",
+      "cta": "Close today"
+    },
+    "resurfaced": {
+      "label": "{days} days ago you wrote"
+    }
+  },
+  "vent": {
+    "eyebrow": "Just for you",
+    "title": "Say it here",
+    "intro": "The thing you cannot say in the kitchen. Write it as badly as you like, then tear it up.",
+    "label": "What you want to say",
+    "placeholder": "Type it. Nobody is reading.",
+    "tear": "Tear it up",
+    "promise": "Never saved, never sent, not even to this device.",
+    "gone": {
+      "title": "Gone.",
+      "body": "That is not stored anywhere. You said it, and now you are not the only one holding it in silence — because nobody is holding it at all.",
+      "again": "Say more",
+      "pause": "Breathe for a minute",
+      "home": "Back home"
     }
   }
 }

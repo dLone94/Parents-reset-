@@ -34,6 +34,22 @@
     "community": {
       "title": "Zajednica – Parent Reset",
       "description": "Malo, prvenstveno anonimno mjesto gdje roditelji mogu naglas reći ono o čemu se šuti."
+    },
+    "pause": {
+      "title": "Minuta disanja – Parent Reset",
+      "description": "Vođena minuta disanja. Ništa se ne piše, ništa ne odlučuje, ide i s djetetom u naručju."
+    },
+    "evening": {
+      "title": "Zatvori dan – Parent Reset",
+      "description": "Jedna teška stvar, jedna koju vrijedi sačuvati, jedna za sutra."
+    },
+    "kept": {
+      "title": "Što si sačuvao – Parent Reset",
+      "description": "Trenuci koje si smatrao vrijednima čuvanja vraćaju ti se tjednima kasnije."
+    },
+    "vent": {
+      "title": "Reci to ovdje – Parent Reset",
+      "description": "Napiši ono što ne možeš reći naglas, a onda poderi. Nikad se ne sprema i ne šalje."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Brige",
       "community": "Zajednica",
-      "account": "Ti"
-    }
+      "account": "Ti",
+      "pause": "Dah"
+    },
+    "pause": "Diši",
+    "evening": "Zatvori dan",
+    "kept": "Sačuvano"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Otvori obiteljske brige",
       "cta": "Započni današnji reset",
       "ctaAgain": "Ponovi reset",
-      "history": "Povijest ({count})"
+      "history": "Povijest ({count})",
+      "tomorrowLabel": "Jučer si za danas rekao:",
+      "returns": {
+        "welcomeBack": "Nije te bilo {days} dana. Vratiti se znači više nego nikad ne otići.",
+        "often": "To je {thisWeek} dana ovaj tjedan.",
+        "weeks": "Bio si tu u {weeks} različitih tjedana.",
+        "growing": "To je {total} dana u kojima si uzeo minutu za sebe."
+      },
+      "kept": {
+        "label": "Prije {days} dana napisao si"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Diši",
+        "hint": "Jedna minuta"
+      },
+      "vent": {
+        "label": "Reci",
+        "hint": "Pa poderi"
+      },
+      "evening": {
+        "label": "Zatvori dan",
+        "hint": "Četiri dodira"
+      },
+      "kept": {
+        "label": "Što si sačuvao",
+        "hint": "Tvoji dobri dijelovi"
+      }
+    },
+    "ways": {
+      "title": "Tri ulaza",
+      "subtitle": "Ovisno o tome koliko je tebe danas ostalo.",
+      "pause": {
+        "time": "1 minuta",
+        "title": "Diši",
+        "body": "Vođena minuta. Ništa se ne piše, ništa ne odlučuje, ide i s djetetom u naručju."
+      },
+      "reset": {
+        "time": "5 minuta",
+        "title": "Reset",
+        "body": "Šest kratkih pitanja i mali popis: danas, ovaj tjedan i ono što možeš pustiti."
+      },
+      "evening": {
+        "time": "2 minute",
+        "title": "Zatvori dan",
+        "body": "Jedna teška stvar, jedna dobra, jedna za sutra. Dobre ti se kasnije vraćaju."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Obriši moj račun",
         "confirm": "Da, obriši sve",
         "cancel": "Zadrži moj račun"
+      },
+      "appearance": {
+        "title": "Izgled",
+        "body": "Aplikacija prati tvoj telefon i kasno navečer sama potamni."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Otvori",
     "delete": "Obriši",
     "guestNote": "Ova povijest postoji samo na ovom uređaju.",
-    "guestCta": "Otvori račun da je zadržiš."
+    "guestCta": "Otvori račun da je zadržiš.",
+    "returns": {
+      "label": "Povratci",
+      "total": "{count, plural, one {Jedan dan kad si bio tu} few {# dana kad si bio tu} other {# dana kad si bio tu}}",
+      "first": "Ovo je prvi dan. Još nema s čim usporediti.",
+      "welcomeBack": "Nije te bilo {days} dana i vratio si se. Upravo tako to i treba ići.",
+      "often": "{thisWeek} dana u posljednjem tjednu.",
+      "weeks": "Raspoređeno na {weeks} različitih tjedana.",
+      "growing": "Tiho se zbraja.",
+      "longestGap": "Tvoja najdulja pauza bila je {days} dana. I iz nje si se vratio."
+    }
   },
   "community": {
     "title": "Zajednica",
@@ -558,6 +639,155 @@
       "rateLimited": "Objavljuješ brzo. Pričekaj nekoliko minuta.",
       "signIn": "Najprije se prijavi.",
       "generic": "Nešto je pošlo po zlu. Pokušaj ponovno."
+    }
+  },
+  "theme": {
+    "label": "Izgled",
+    "light": "Svijetlo",
+    "dark": "Tamno",
+    "auto": "Auto",
+    "autoHint": "Auto prati tvoj telefon i kasno navečer sam potamni."
+  },
+  "pause": {
+    "eyebrow": "Jedna minuta",
+    "title": "Diši sa mnom",
+    "intro": "Ništa se ne piše i ništa ne odlučuje. Odaberi jedno i prati krug. Ide i s djetetom u naručju.",
+    "seconds": "{count} sekundi",
+    "note": "Ništa od ovoga se ne sprema. To je samo minuta koja je tvoja.",
+    "stop": "Dosta je",
+    "cycleOf": "Krug {current} od {total}",
+    "patterns": {
+      "settle": {
+        "name": "Slijeganje",
+        "body": "Četiri udah, šest izdah. Za svaki dan."
+      },
+      "steady": {
+        "name": "Smirivanje",
+        "body": "Četiri udah, četiri zadrži, četiri izdah, četiri mirno. Kad ti glava juri."
+      },
+      "sleep": {
+        "name": "Spuštanje",
+        "body": "Četiri, sedam, osam. Za mrak, na kraju dugog dana."
+      }
+    },
+    "phase": {
+      "in": "Udahni",
+      "hold": "Zadrži",
+      "out": "Izdahni",
+      "rest": "Odmori"
+    },
+    "done": {
+      "title": "Gotovo.",
+      "body": "Tvoje tijelo je malo sporije nego prije minutu. U tome je cijeli trik i djeluje čak i kad se ništa drugo nije promijenilo.",
+      "countToday": "{count, plural, one {To ti je danas bila prva pauza.} few {To su danas # pauze. Trebati ih nije slabost.} other {To je danas # pauza. Trebati ih nije slabost.}}",
+      "again": "Još jednom",
+      "reset": "Napravi reset",
+      "home": "Natrag na početak"
+    }
+  },
+  "evening": {
+    "eyebrow": "Zatvaranje dana",
+    "title": "Kakav je bio danas?",
+    "intro": "Četiri stvari, sve neobavezne. Dodirni vrijeme i spusti telefon ako ti je to sve što je ostalo.",
+    "save": "Zatvori dan",
+    "saveAgain": "Spremi promjene",
+    "privacy": "Ovo vidiš samo ti.",
+    "weather": {
+      "question": "Kakvo je danas bilo vrijeme?",
+      "options": {
+        "storm": "Oluja",
+        "rain": "Kiša",
+        "cloudy": "Oblačno",
+        "sun": "Sunce"
+      }
+    },
+    "hard": {
+      "label": "Što je bilo teško?",
+      "hint": "Imenuj to jednom, ovdje, umjesto da to nosiš u sutra.",
+      "placeholder": "Jutro. Cijelo."
+    },
+    "kept": {
+      "label": "Što vrijedi sačuvati?",
+      "hint": "I malo se broji. Baš taj dio ti se vraća za nekoliko tjedana.",
+      "placeholder": "Sama me uhvatila za ruku na prijelazu."
+    },
+    "tomorrow": {
+      "label": "Jedna stvar za sutra",
+      "hint": "Samo jedna. Ujutro te čeka na početnoj stranici.",
+      "placeholder": "Nazvati zubara."
+    },
+    "errors": {
+      "tooLong": "To je dulje nego što ovdje stane. Skrati malo.",
+      "save": "Nije se spremilo. Pokušaj još jednom."
+    },
+    "closed": {
+      "eyebrow": "Dan zatvoren",
+      "tomorrowLabel": "Sutra, jedna stvar:",
+      "edit": "Promijeni nešto",
+      "kept": "Pogledaj što si sačuvao",
+      "home": "Natrag na početak"
+    },
+    "closing": {
+      "storm": {
+        "title": "To je bila oluja.",
+        "body": "Proveo si sve kroz nju do kraja i to je danas bio zadatak. Sutra je drugi dan i večeras ne moraš ništa popravljati."
+      },
+      "stormKept": {
+        "title": "Oluja – a ipak si nešto našao.",
+        "body": "Težak dan s jednim dobrim trenutkom i dalje je težak dan. Ali taj si trenutak primijetio, a to nije malo."
+      },
+      "rainHard": {
+        "title": "Išlo je teško.",
+        "body": "Stavio si to u riječi umjesto da nosiš u tišini. Za večeras je to dovoljno."
+      },
+      "kept": {
+        "title": "Sačuvao si nešto.",
+        "body": "Za nekoliko tjedana vratit će ti se, dugo nakon što zaboraviš. Upravo zato to vrijedi zapisati."
+      },
+      "heard": {
+        "title": "Zapisano je.",
+        "body": "Izašlo je iz tvoje glave i ostalo na stranici gdje to nitko drugi ne čita."
+      },
+      "afterReset": {
+        "title": "Danas si se pojavio dvaput.",
+        "body": "Reset tijekom dana i zatvaranje večeras. To je cijeli dan brige o sebi – u danu koji vjerojatno nije tako izgledao."
+      },
+      "steady": {
+        "title": "Stalno se vraćaš.",
+        "body": "Zatvaranje dana postaje navika, a to je jedna od najtiših korisnih navika koje postoje."
+      },
+      "plain": {
+        "title": "Dan zatvoren.",
+        "body": "Više nije potrebno. Dobro spavaj."
+      }
+    }
+  },
+  "kept": {
+    "title": "Što si sačuvao",
+    "subtitle": "{count, plural, one {Jedan trenutak koji si htio sačuvati.} few {# trenutka koja si htio sačuvati.} other {# trenutaka koje si htio sačuvati.}}",
+    "loading": "Trenutak…",
+    "empty": {
+      "body": "Ovdje još nema ničega. Kad zatvoriš dan, ono što napišeš pod „vrijedi sačuvati” završi ovdje – i vrati ti se tjednima kasnije, kad si to zaboravio.",
+      "cta": "Zatvori današnji dan"
+    },
+    "resurfaced": {
+      "label": "Prije {days} dana napisao si"
+    }
+  },
+  "vent": {
+    "eyebrow": "Samo za tebe",
+    "title": "Reci to ovdje",
+    "intro": "Ono što ne možeš reći u kuhinji. Napiši to koliko god ružno želiš, a onda poderi.",
+    "label": "Što želiš reći",
+    "placeholder": "Piši. Nitko ne čita.",
+    "tear": "Poderi",
+    "promise": "Nikad se ne sprema, nikad ne šalje, ni na ovaj uređaj.",
+    "gone": {
+      "title": "Nestalo.",
+      "body": "Nigdje nije pohranjeno. Rekao si to i sad to nitko ne nosi u tišini – ni ti.",
+      "again": "Reci još",
+      "pause": "Diši minutu",
+      "home": "Natrag na početak"
     }
   }
 }

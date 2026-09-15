@@ -4,7 +4,9 @@ import { getSiteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = getSiteUrl();
-  const paths = ["", "/load"];
+  // Only pages that make sense to a stranger arriving from a search result.
+  // Private surfaces (history, kept, evening, vent) stay out and are noindex.
+  const paths = ["", "/load", "/pause"];
   return paths.flatMap((path) => {
     const languages = Object.fromEntries(locales.map((l) => [l, `${base}/${l}${path}`]));
     return locales.map((locale) => ({

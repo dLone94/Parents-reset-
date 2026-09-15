@@ -34,6 +34,22 @@
     "community": {
       "title": "社区 – Parent Reset",
       "description": "一个小小的、默认匿名的地方，让父母把心里话说出来。"
+    },
+    "pause": {
+      "title": "一分钟呼吸 – Parent Reset",
+      "description": "一分钟的引导呼吸。不用打字，不用做决定，抱着孩子也能做。"
+    },
+    "evening": {
+      "title": "结束这一天 – Parent Reset",
+      "description": "一件难的事，一件值得留下的事，一件留给明天的事。"
+    },
+    "kept": {
+      "title": "你留下的 – Parent Reset",
+      "description": "你认为值得留下的片刻，会在几周后回到你身边。"
+    },
+    "vent": {
+      "title": "在这里说出来 – Parent Reset",
+      "description": "把说不出口的话写下来，然后撕掉。永不保存，永不发送。"
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "整理",
       "load": "家事",
       "community": "社区",
-      "account": "我"
-    }
+      "account": "我",
+      "pause": "呼吸"
+    },
+    "pause": "呼吸",
+    "evening": "结束这一天",
+    "kept": "留下的"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "打开家里的事",
       "cta": "开始今天的整理",
       "ctaAgain": "再整理一次",
-      "history": "记录（{count}）"
+      "history": "记录（{count}）",
+      "tomorrowLabel": "昨天你为今天写下：",
+      "returns": {
+        "welcomeBack": "你离开了 {days} 天。回来比从未离开更重要。",
+        "often": "这周已经 {thisWeek} 天了。",
+        "weeks": "你在 {weeks} 个不同的星期来过。",
+        "growing": "已经有 {total} 天，你为自己留了一分钟。"
+      },
+      "kept": {
+        "label": "{days} 天前你写道"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "呼吸",
+        "hint": "一分钟"
+      },
+      "vent": {
+        "label": "说出来",
+        "hint": "然后撕掉"
+      },
+      "evening": {
+        "label": "结束这一天",
+        "hint": "四次点击"
+      },
+      "kept": {
+        "label": "你留下的",
+        "hint": "那些好片刻"
+      }
+    },
+    "ways": {
+      "title": "三种进入方式",
+      "subtitle": "看今天还剩下多少你自己。",
+      "pause": {
+        "time": "1 分钟",
+        "title": "呼吸",
+        "body": "一分钟引导。不用打字，不用做决定，抱着孩子也能做。"
+      },
+      "reset": {
+        "time": "5 分钟",
+        "title": "Reset",
+        "body": "六个简短的问题，和一个很短的清单：今天、这周、以及可以放下的。"
+      },
+      "evening": {
+        "time": "2 分钟",
+        "title": "结束这一天",
+        "body": "一件难的事，一件好的事，一件留给明天的事。好的那些以后会回到你身边。"
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "删除我的账号",
         "confirm": "是的，全部删除",
         "cancel": "保留我的账号"
+      },
+      "appearance": {
+        "title": "外观",
+        "body": "应用会跟随你的手机，并在深夜自己变暗。"
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "打开",
     "delete": "删除",
     "guestNote": "这份记录只保存在这台设备上。",
-    "guestCta": "创建账号来保留它。"
+    "guestCta": "创建账号来保留它。",
+    "returns": {
+      "label": "回来",
+      "total": "{count, plural, other {你来过 # 天}}",
+      "first": "这是第一天。还没有可以比较的。",
+      "welcomeBack": "你离开了 {days} 天，又回来了。本来就该是这样。",
+      "often": "最近一周有 {thisWeek} 天。",
+      "weeks": "分布在 {weeks} 个不同的星期里。",
+      "growing": "它在悄悄累积。",
+      "longestGap": "你最长的一次间隔是 {days} 天。那一次你也回来了。"
+    }
   },
   "community": {
     "title": "社区",
@@ -558,6 +639,155 @@
       "rateLimited": "你发得有点快。请等几分钟。",
       "signIn": "请先登录。",
       "generic": "出了点问题。请再试一次。"
+    }
+  },
+  "theme": {
+    "label": "外观",
+    "light": "浅色",
+    "dark": "深色",
+    "auto": "自动",
+    "autoHint": "自动会跟随你的手机，并在深夜自己变暗。"
+  },
+  "pause": {
+    "eyebrow": "一分钟",
+    "title": "跟我一起呼吸",
+    "intro": "不用打字，也不用做任何决定。选一个，跟着圆圈走。抱着孩子也能做。",
+    "seconds": "{count} 秒",
+    "note": "这里不会保存任何东西。这只是属于你的一分钟。",
+    "stop": "够了",
+    "cycleOf": "第 {current} 轮，共 {total} 轮",
+    "patterns": {
+      "settle": {
+        "name": "安定",
+        "body": "吸四拍，呼六拍。日常用的那个。"
+      },
+      "steady": {
+        "name": "平稳",
+        "body": "吸四、屏四、呼四、停四。当脑子停不下来的时候。"
+      },
+      "sleep": {
+        "name": "放下来",
+        "body": "四、七、八。给漫长一天结束后的黑暗。"
+      }
+    },
+    "phase": {
+      "in": "吸气",
+      "hold": "屏住",
+      "out": "呼气",
+      "rest": "停"
+    },
+    "done": {
+      "title": "结束了。",
+      "body": "你的身体比一分钟前慢了一点。诀窍就这么简单，即使其他什么都没有改变，它依然有效。",
+      "countToday": "{count, plural, other {今天已经是第 # 次暂停了。需要它们不是软弱。}}",
+      "again": "再来一次",
+      "reset": "做一次 reset",
+      "home": "回到首页"
+    }
+  },
+  "evening": {
+    "eyebrow": "结束这一天",
+    "title": "今天怎么样？",
+    "intro": "四件事，全都可以跳过。如果只剩下这点力气，点一下天气就可以放下手机。",
+    "save": "结束这一天",
+    "saveAgain": "保存修改",
+    "privacy": "只有你能看到。",
+    "weather": {
+      "question": "今天是什么天气？",
+      "options": {
+        "storm": "暴风雨",
+        "rain": "下雨",
+        "cloudy": "多云",
+        "sun": "晴天"
+      }
+    },
+    "hard": {
+      "label": "什么最难？",
+      "hint": "在这里说一次，而不是把它带进明天。",
+      "placeholder": "早上。一整个早上。"
+    },
+    "kept": {
+      "label": "什么值得留下？",
+      "hint": "再小也算。正是这一部分会在几周后回到你身边。",
+      "placeholder": "过马路时她自己牵了我的手。"
+    },
+    "tomorrow": {
+      "label": "明天的一件事",
+      "hint": "只要一件。明早它会在首页等你。",
+      "placeholder": "给牙医打电话。"
+    },
+    "errors": {
+      "tooLong": "这比这里能放下的长。稍微缩短一点。",
+      "save": "没有保存成功。再试一次。"
+    },
+    "closed": {
+      "eyebrow": "这一天已结束",
+      "tomorrowLabel": "明天，一件事：",
+      "edit": "改点什么",
+      "kept": "看看你留下了什么",
+      "home": "回到首页"
+    },
+    "closing": {
+      "storm": {
+        "title": "那是一场暴风雨。",
+        "body": "你把所有人带到了它的尽头，而今天的任务就是这个。明天是另一天，今晚你不需要再修补什么。"
+      },
+      "stormKept": {
+        "title": "一场暴风雨，你还是找到了一点什么。",
+        "body": "有一个好片刻的难熬一天，仍然是难熬的一天。但你看见了那个片刻，这并不算小事。"
+      },
+      "rainHard": {
+        "title": "很沉。",
+        "body": "你把它说成了文字，而不是沉默地背着。对今晚来说，这就够了。"
+      },
+      "kept": {
+        "title": "你留下了一点什么。",
+        "body": "几周后它会回到你身边，那时你早已忘记。这正是写下来的意义。"
+      },
+      "heard": {
+        "title": "写下来了。",
+        "body": "它离开了你的脑子，留在纸上，没有别人会读到。"
+      },
+      "afterReset": {
+        "title": "你今天来了两次。",
+        "body": "白天一次 reset，晚上一次收尾。这是一整天对自己的照顾——在一个大概完全不像这样的日子里。"
+      },
+      "steady": {
+        "title": "你一直在回来。",
+        "body": "结束这一天正在变成一种习惯，而它是最安静也最有用的习惯之一。"
+      },
+      "plain": {
+        "title": "这一天结束了。",
+        "body": "这样就够了。好好睡。"
+      }
+    }
+  },
+  "kept": {
+    "title": "你留下的",
+    "subtitle": "{count, plural, other {# 个你认为值得留下的片刻。}}",
+    "loading": "稍等…",
+    "empty": {
+      "body": "这里还没有东西。当你结束一天时，你写在「值得留下」里的内容会落在这里——并在几周后、你已经忘记的时候回到你身边。",
+      "cta": "结束今天"
+    },
+    "resurfaced": {
+      "label": "{days} 天前你写道"
+    }
+  },
+  "vent": {
+    "eyebrow": "只给你",
+    "title": "在这里说出来",
+    "intro": "那些在厨房里说不出口的话。想写得多难听都可以，然后撕掉。",
+    "label": "你想说的话",
+    "placeholder": "写吧。没有人在看。",
+    "tear": "撕掉",
+    "promise": "永不保存，永不发送，连这台设备上也不会留下。",
+    "gone": {
+      "title": "没了。",
+      "body": "它没有被存在任何地方。你说出来了，现在没有人再沉默地背着它——你也不用。",
+      "again": "再说一些",
+      "pause": "呼吸一分钟",
+      "home": "回到首页"
     }
   }
 }

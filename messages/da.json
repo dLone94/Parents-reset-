@@ -34,6 +34,22 @@
     "community": {
       "title": "Fællesskab – Parent Reset",
       "description": "Et lille, anonymt sted, hvor forældre kan sige det højt, som ellers bliver usagt."
+    },
+    "pause": {
+      "title": "Et minuts vejrtrækning – Parent Reset",
+      "description": "Et guidet minut med vejrtrækning. Intet at skrive, intet at beslutte, og det kan lade sig gøre med et barn på armen."
+    },
+    "evening": {
+      "title": "Luk dagen – Parent Reset",
+      "description": "En ting der var svær, en der er værd at gemme, en til i morgen."
+    },
+    "kept": {
+      "title": "Det du har gemt – Parent Reset",
+      "description": "De øjeblikke du syntes var værd at gemme, tilbage hos dig uger senere."
+    },
+    "vent": {
+      "title": "Sig det her – Parent Reset",
+      "description": "Skriv det, du ikke kan sige højt, og riv det så i stykker. Bliver aldrig gemt og aldrig sendt."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Familie",
       "community": "Forum",
-      "account": "Dig"
-    }
+      "account": "Dig",
+      "pause": "Vejrtrækning"
+    },
+    "pause": "Træk vejret",
+    "evening": "Luk dagen",
+    "kept": "Gemt"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Åbn alt du bærer på",
       "cta": "Start dagens reset",
       "ctaAgain": "Lav en ny reset",
-      "history": "Historik ({count})"
+      "history": "Historik ({count})",
+      "tomorrowLabel": "I går sagde du, til i dag:",
+      "returns": {
+        "welcomeBack": "Du var væk i {days} dage. At komme tilbage tæller mere end aldrig at gå.",
+        "often": "Det er {thisWeek} dage i denne uge.",
+        "weeks": "Du har været her i {weeks} forskellige uger.",
+        "growing": "Det er {total} dage, hvor du tog et minut til dig selv."
+      },
+      "kept": {
+        "label": "For {days} dage siden skrev du"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Træk vejret",
+        "hint": "Et minut"
+      },
+      "vent": {
+        "label": "Sig det",
+        "hint": "Og riv det så"
+      },
+      "evening": {
+        "label": "Luk dagen",
+        "hint": "Fire tryk"
+      },
+      "kept": {
+        "label": "Det du gemte",
+        "hint": "Dine gode stunder"
+      }
+    },
+    "ways": {
+      "title": "Tre veje ind",
+      "subtitle": "Alt efter hvor meget der er tilbage af dig i dag.",
+      "pause": {
+        "time": "1 minut",
+        "title": "Træk vejret",
+        "body": "Et guidet minut. Intet at skrive, intet at beslutte, og det kan lade sig gøre med et barn på armen."
+      },
+      "reset": {
+        "time": "5 minutter",
+        "title": "Reset",
+        "body": "Seks korte spørgsmål og en lille liste: i dag, denne uge, og det du kan slippe."
+      },
+      "evening": {
+        "time": "2 minutter",
+        "title": "Luk dagen",
+        "body": "En svær ting, en god ting, en til i morgen. De gode kommer tilbage til dig senere."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Slet min konto",
         "confirm": "Ja, slet det hele",
         "cancel": "Behold min konto"
+      },
+      "appearance": {
+        "title": "Udseende",
+        "body": "Appen følger din telefon og bliver mørkere af sig selv sent om aftenen."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Åbn",
     "delete": "Slet",
     "guestNote": "Denne historik findes kun på denne enhed.",
-    "guestCta": "Opret en konto for at beholde den."
+    "guestCta": "Opret en konto for at beholde den.",
+    "returns": {
+      "label": "At komme tilbage",
+      "total": "{count, plural, one {Én dag hvor du var her} other {# dage hvor du var her}}",
+      "first": "Det her er dag et. Der er ikke noget at sammenligne med endnu.",
+      "welcomeBack": "Du var væk i {days} dage og kom tilbage. Sådan er det tænkt.",
+      "often": "{thisWeek} dage i den seneste uge.",
+      "weeks": "Fordelt over {weeks} forskellige uger.",
+      "growing": "Det lægger sig stille sammen.",
+      "longestGap": "Din længste pause var {days} dage. Den kom du også tilbage fra."
+    }
   },
   "community": {
     "title": "Fællesskab",
@@ -558,6 +639,155 @@
       "rateLimited": "Du slår op hurtigt. Vent et par minutter.",
       "signIn": "Log ind først.",
       "generic": "Noget gik galt. Prøv igen."
+    }
+  },
+  "theme": {
+    "label": "Udseende",
+    "light": "Lys",
+    "dark": "Mørk",
+    "auto": "Auto",
+    "autoHint": "Auto følger din telefon og bliver mørkere af sig selv sent om aftenen."
+  },
+  "pause": {
+    "eyebrow": "Et minut",
+    "title": "Træk vejret med mig",
+    "intro": "Intet at skrive og intet at beslutte. Vælg en, og følg cirklen. Det kan lade sig gøre med et barn på armen.",
+    "seconds": "{count} sekunder",
+    "note": "Der bliver ikke gemt noget fra det her. Det er bare et minut, der er dit.",
+    "stop": "Det er nok",
+    "cycleOf": "Runde {current} af {total}",
+    "patterns": {
+      "settle": {
+        "name": "Lande",
+        "body": "Fire ind, seks ud. Den til hverdagen."
+      },
+      "steady": {
+        "name": "Falde til ro",
+        "body": "Fire ind, fire hold, fire ud, fire stille. Når hovedet kører rundt."
+      },
+      "sleep": {
+        "name": "Køre ned",
+        "body": "Fire, syv, otte. Til mørket, efter en lang dag."
+      }
+    },
+    "phase": {
+      "in": "Træk vejret ind",
+      "hold": "Hold",
+      "out": "Pust ud",
+      "rest": "Hvil"
+    },
+    "done": {
+      "title": "Så er det gjort.",
+      "body": "Din krop er lidt langsommere, end den var for et minut siden. Mere er tricket ikke, og det virker, selv når intet andet har ændret sig.",
+      "countToday": "{count, plural, one {Det var din første pause i dag.} other {Det er # pauser i dag. At have brug for dem er ikke en svaghed.}}",
+      "again": "Igen",
+      "reset": "Lav en reset",
+      "home": "Tilbage til start"
+    }
+  },
+  "evening": {
+    "eyebrow": "At lukke dagen",
+    "title": "Hvordan var i dag?",
+    "intro": "Fire ting, alle frivillige. Tryk på vejret og læg telefonen, hvis det er alt, du har tilbage.",
+    "save": "Luk dagen",
+    "saveAgain": "Gem ændringer",
+    "privacy": "Kun du ser det her.",
+    "weather": {
+      "question": "Hvordan var vejret i dag?",
+      "options": {
+        "storm": "Storm",
+        "rain": "Regn",
+        "cloudy": "Overskyet",
+        "sun": "Sol"
+      }
+    },
+    "hard": {
+      "label": "Hvad var svært?",
+      "hint": "Sig det én gang, her, i stedet for at bære det med ind i morgendagen.",
+      "placeholder": "Morgenen. Det hele."
+    },
+    "kept": {
+      "label": "Hvad er værd at gemme?",
+      "hint": "Småt tæller. Det er den del, der kommer tilbage til dig om et par uger.",
+      "placeholder": "Hun tog min hånd ved fodgængerfeltet helt af sig selv."
+    },
+    "tomorrow": {
+      "label": "Én ting til i morgen",
+      "hint": "Kun én. Den venter på startsiden i morgen tidlig.",
+      "placeholder": "Ringe til tandlægen."
+    },
+    "errors": {
+      "tooLong": "Det er længere, end der er plads til. Kort det lidt ned.",
+      "save": "Det blev ikke gemt. Prøv en gang til."
+    },
+    "closed": {
+      "eyebrow": "Dagen er lukket",
+      "tomorrowLabel": "I morgen, én ting:",
+      "edit": "Ændr noget",
+      "kept": "Se hvad du har gemt",
+      "home": "Tilbage til start"
+    },
+    "closing": {
+      "storm": {
+        "title": "Det var en storm.",
+        "body": "Du fik alle igennem den, og det var opgaven i dag. I morgen er en anden dag, og du skal ikke reparere noget i aften."
+      },
+      "stormKept": {
+        "title": "En storm, og alligevel fandt du noget.",
+        "body": "En hård dag med ét godt øjeblik i er stadig en hård dag. Men du så øjeblikket, og det er ikke ingenting."
+      },
+      "rainHard": {
+        "title": "Tungt.",
+        "body": "Du satte ord på det i stedet for at bære det i stilhed. For i aften er det nok."
+      },
+      "kept": {
+        "title": "Du gemte noget.",
+        "body": "Om et par uger kommer det tilbage til dig, længe efter du har glemt det. Det er præcis derfor, det er værd at skrive ned."
+      },
+      "heard": {
+        "title": "Det står skrevet.",
+        "body": "Det er ude af hovedet og ned på siden, hvor ingen andre læser det."
+      },
+      "afterReset": {
+        "title": "Du var her to gange i dag.",
+        "body": "En reset i løbet af dagen og en afslutning i aften. Det er en hel dag med omsorg for dig selv – på en dag, der sikkert ikke føltes sådan."
+      },
+      "steady": {
+        "title": "Du bliver ved med at komme tilbage.",
+        "body": "At lukke dagen er ved at blive en vane, og det er en af de mest stilfærdigt nyttige, der findes."
+      },
+      "plain": {
+        "title": "Dagen er lukket.",
+        "body": "Mere skal der ikke til. Sov godt."
+      }
+    }
+  },
+  "kept": {
+    "title": "Det du har gemt",
+    "subtitle": "{count, plural, one {Ét øjeblik, du syntes var værd at gemme.} other {# øjeblikke, du syntes var værd at gemme.}}",
+    "loading": "Et øjeblik…",
+    "empty": {
+      "body": "Her er ikke noget endnu. Når du lukker en dag, havner det, du skriver under \"værd at gemme\", her – og kommer tilbage til dig uger senere, når du har glemt det.",
+      "cta": "Luk dagen i dag"
+    },
+    "resurfaced": {
+      "label": "For {days} dage siden skrev du"
+    }
+  },
+  "vent": {
+    "eyebrow": "Kun til dig",
+    "title": "Sig det her",
+    "intro": "Det, du ikke kan sige i køkkenet. Skriv det så grimt, du vil, og riv det så i stykker.",
+    "label": "Det du vil sige",
+    "placeholder": "Skriv. Ingen læser med.",
+    "tear": "Riv det i stykker",
+    "promise": "Bliver aldrig gemt, aldrig sendt, heller ikke på denne enhed.",
+    "gone": {
+      "title": "Væk.",
+      "body": "Det ligger ingen steder. Du sagde det, og nu bærer ingen rundt på det i stilhed – heller ikke dig.",
+      "again": "Sig mere",
+      "pause": "Træk vejret et minut",
+      "home": "Tilbage til start"
     }
   }
 }

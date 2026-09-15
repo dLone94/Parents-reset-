@@ -34,6 +34,22 @@
     "community": {
       "title": "Community – Parent Reset",
       "description": "Ein kleiner, anonymer Ort für Eltern, um das auszusprechen, was sonst keiner sagt."
+    },
+    "pause": {
+      "title": "Eine Minute atmen – Parent Reset",
+      "description": "Eine geführte Minute Atmen. Kein Tippen, keine Entscheidungen, geht auch mit Kind auf dem Arm."
+    },
+    "evening": {
+      "title": "Den Tag abschließen – Parent Reset",
+      "description": "Eine schwere Sache, eine, die bleiben darf, eine für morgen."
+    },
+    "kept": {
+      "title": "Was du behalten hast – Parent Reset",
+      "description": "Die Momente, die dir wichtig waren – Wochen später wieder da."
+    },
+    "vent": {
+      "title": "Sag es hier – Parent Reset",
+      "description": "Schreib auf, was du laut nicht sagen kannst, und zerreiß es dann. Nie gespeichert, nie gesendet."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Last",
       "community": "Community",
-      "account": "Du"
-    }
+      "account": "Du",
+      "pause": "Atmen"
+    },
+    "pause": "Atmen",
+    "evening": "Tag abschließen",
+    "kept": "Behalten"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Familienlast öffnen",
       "cta": "Reset für heute starten",
       "ctaAgain": "Noch einmal resetten",
-      "history": "Verlauf ({count})"
+      "history": "Verlauf ({count})",
+      "tomorrowLabel": "Gestern hast du für heute gesagt:",
+      "returns": {
+        "welcomeBack": "Du warst {days} Tage weg. Wiederkommen zählt mehr als nie weggehen.",
+        "often": "Das sind {thisWeek} Tage in dieser Woche.",
+        "weeks": "Du warst in {weeks} verschiedenen Wochen da.",
+        "growing": "Das sind {total} Tage, an denen du dir eine Minute genommen hast."
+      },
+      "kept": {
+        "label": "Vor {days} Tagen hast du geschrieben"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Atmen",
+        "hint": "Eine Minute"
+      },
+      "vent": {
+        "label": "Sag es",
+        "hint": "Dann zerreißen"
+      },
+      "evening": {
+        "label": "Tag abschließen",
+        "hint": "Vier Tipps"
+      },
+      "kept": {
+        "label": "Was blieb",
+        "hint": "Deine guten Stellen"
+      }
+    },
+    "ways": {
+      "title": "Drei Wege hinein",
+      "subtitle": "Je nachdem, wie viel von dir heute noch übrig ist.",
+      "pause": {
+        "time": "1 Minute",
+        "title": "Atmen",
+        "body": "Eine geführte Minute. Nichts zu tippen, nichts zu entscheiden, geht auch mit Kind auf dem Arm."
+      },
+      "reset": {
+        "time": "5 Minuten",
+        "title": "Reset",
+        "body": "Sechs kurze Fragen und eine kleine Liste: heute, diese Woche, und was du loslassen kannst."
+      },
+      "evening": {
+        "time": "2 Minuten",
+        "title": "Tag abschließen",
+        "body": "Eine schwere Sache, eine gute, eine für morgen. Die guten kommen später zu dir zurück."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Mein Konto löschen",
         "confirm": "Ja, alles löschen",
         "cancel": "Konto behalten"
+      },
+      "appearance": {
+        "title": "Darstellung",
+        "body": "Die App folgt deinem Handy und wird am späten Abend von selbst dunkler."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Öffnen",
     "delete": "Löschen",
     "guestNote": "Dieser Verlauf ist nur auf diesem Gerät gespeichert.",
-    "guestCta": "Erstelle ein Konto, um ihn zu behalten."
+    "guestCta": "Erstelle ein Konto, um ihn zu behalten.",
+    "returns": {
+      "label": "Wiederkommen",
+      "total": "{count, plural, one {An einem Tag warst du da} other {An # Tagen warst du da}}",
+      "first": "Das ist Tag eins. Noch nichts zum Vergleichen.",
+      "welcomeBack": "Du warst {days} Tage weg und bist wiedergekommen. Genau so ist das gedacht.",
+      "often": "{thisWeek} Tage in der letzten Woche.",
+      "weeks": "Verteilt auf {weeks} verschiedene Wochen.",
+      "growing": "Das summiert sich ganz leise.",
+      "longestGap": "Deine längste Pause waren {days} Tage. Auch davon bist du zurückgekommen."
+    }
   },
   "community": {
     "title": "Community",
@@ -558,6 +639,155 @@
       "rateLimited": "Du postest sehr schnell. Bitte warte ein paar Minuten.",
       "signIn": "Bitte melde dich zuerst an.",
       "generic": "Etwas ist schiefgelaufen. Bitte versuch es noch einmal."
+    }
+  },
+  "theme": {
+    "label": "Darstellung",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "auto": "Auto",
+    "autoHint": "Auto folgt deinem Handy und wird am späten Abend von selbst dunkler."
+  },
+  "pause": {
+    "eyebrow": "Eine Minute",
+    "title": "Atme mit mir",
+    "intro": "Nichts zu tippen, nichts zu entscheiden. Wähl eine Übung und folge dem Kreis. Das geht auch mit Kind auf dem Arm.",
+    "seconds": "{count} Sekunden",
+    "note": "Davon wird nichts gespeichert. Es ist einfach eine Minute, die dir gehört.",
+    "stop": "Das reicht",
+    "cycleOf": "Runde {current} von {total}",
+    "patterns": {
+      "settle": {
+        "name": "Ankommen",
+        "body": "Vier ein, sechs aus. Die für jeden Tag."
+      },
+      "steady": {
+        "name": "Ruhig werden",
+        "body": "Vier ein, vier halten, vier aus, vier still. Wenn der Kopf rast."
+      },
+      "sleep": {
+        "name": "Runterkommen",
+        "body": "Vier, sieben, acht. Für den Moment im Dunkeln nach einem langen Tag."
+      }
+    },
+    "phase": {
+      "in": "Einatmen",
+      "hold": "Halten",
+      "out": "Ausatmen",
+      "rest": "Ruhen"
+    },
+    "done": {
+      "title": "Fertig.",
+      "body": "Dein Körper ist ein bisschen langsamer als vor einer Minute. Mehr ist der Trick nicht – und er wirkt, auch wenn sich sonst nichts geändert hat.",
+      "countToday": "{count, plural, one {Das war heute deine erste Pause.} other {Das sind heute # Pausen. Sie zu brauchen ist keine Schwäche.}}",
+      "again": "Nochmal",
+      "reset": "Reset machen",
+      "home": "Zurück zum Start"
+    }
+  },
+  "evening": {
+    "eyebrow": "Den Tag abschließen",
+    "title": "Wie war heute?",
+    "intro": "Vier Dinge, alle freiwillig. Tipp aufs Wetter und leg das Handy weg, wenn mehr nicht drin ist.",
+    "save": "Tag abschließen",
+    "saveAgain": "Änderungen speichern",
+    "privacy": "Das sieht nur du.",
+    "weather": {
+      "question": "Wie war der Tag?",
+      "options": {
+        "storm": "Sturm",
+        "rain": "Regen",
+        "cloudy": "Bewölkt",
+        "sun": "Sonne"
+      }
+    },
+    "hard": {
+      "label": "Was war schwer?",
+      "hint": "Einmal benennen, hier – statt es mit in den nächsten Tag zu nehmen.",
+      "placeholder": "Der Morgen. Der ganze."
+    },
+    "kept": {
+      "label": "Was darf bleiben?",
+      "hint": "Klein zählt. Genau das kommt in ein paar Wochen zu dir zurück.",
+      "placeholder": "Sie hat an der Straße von selbst meine Hand genommen."
+    },
+    "tomorrow": {
+      "label": "Eine Sache für morgen",
+      "hint": "Nur eine. Sie wartet morgen früh auf deiner Startseite.",
+      "placeholder": "Beim Zahnarzt anrufen."
+    },
+    "errors": {
+      "tooLong": "Das ist länger, als hier hineinpasst. Mach es ein Stück kürzer.",
+      "save": "Das wurde nicht gespeichert. Versuch es noch einmal."
+    },
+    "closed": {
+      "eyebrow": "Tag abgeschlossen",
+      "tomorrowLabel": "Morgen, eine Sache:",
+      "edit": "Etwas ändern",
+      "kept": "Ansehen, was geblieben ist",
+      "home": "Zurück zum Start"
+    },
+    "closing": {
+      "storm": {
+        "title": "Das war ein Sturm.",
+        "body": "Du hast alle bis zum Ende gebracht, und mehr war heute nicht die Aufgabe. Morgen ist ein anderer Tag, und du musst heute Abend nichts mehr reparieren."
+      },
+      "stormKept": {
+        "title": "Ein Sturm – und du hast trotzdem etwas gefunden.",
+        "body": "Ein schwerer Tag mit einem guten Moment bleibt ein schwerer Tag. Aber du hast den Moment gesehen, und das ist nicht nichts."
+      },
+      "rainHard": {
+        "title": "Zäher Tag.",
+        "body": "Du hast es in Worte gefasst, statt es stumm weiterzutragen. Für heute Abend reicht das."
+      },
+      "kept": {
+        "title": "Du hast etwas behalten.",
+        "body": "In ein paar Wochen kommt das zu dir zurück, längst nachdem du es vergessen hast. Genau deshalb lohnt es sich aufzuschreiben."
+      },
+      "heard": {
+        "title": "Es steht geschrieben.",
+        "body": "Es ist raus aus deinem Kopf und auf der Seite, wo es niemand sonst liest."
+      },
+      "afterReset": {
+        "title": "Du warst heute zweimal da.",
+        "body": "Ein Reset am Tag und ein Abschluss am Abend. Das ist ein ganzer Tag, an dem du auf dich geachtet hast – an einem Tag, der sich vermutlich nicht so angefühlt hat."
+      },
+      "steady": {
+        "title": "Du kommst immer wieder.",
+        "body": "Den Tag abzuschließen wird zur Gewohnheit, und es ist eine der leisesten nützlichen, die es gibt."
+      },
+      "plain": {
+        "title": "Tag abgeschlossen.",
+        "body": "Mehr braucht es nicht. Schlaf gut."
+      }
+    }
+  },
+  "kept": {
+    "title": "Was du behalten hast",
+    "subtitle": "{count, plural, one {Ein Moment, der bleiben durfte.} other {# Momente, die bleiben durften.}}",
+    "loading": "Einen Moment …",
+    "empty": {
+      "body": "Hier ist noch nichts. Wenn du einen Tag abschließt, landet hier, was du unter „darf bleiben“ schreibst – und kommt Wochen später zu dir zurück, wenn du es längst vergessen hast.",
+      "cta": "Heute abschließen"
+    },
+    "resurfaced": {
+      "label": "Vor {days} Tagen hast du geschrieben"
+    }
+  },
+  "vent": {
+    "eyebrow": "Nur für dich",
+    "title": "Sag es hier",
+    "intro": "Das, was du in der Küche nicht sagen kannst. Schreib es so hässlich, wie du willst, und zerreiß es dann.",
+    "label": "Was du sagen willst",
+    "placeholder": "Schreib. Es liest niemand.",
+    "tear": "Zerreißen",
+    "promise": "Nie gespeichert, nie gesendet, nicht einmal auf diesem Gerät.",
+    "gone": {
+      "title": "Weg.",
+      "body": "Das liegt nirgends. Du hast es gesagt, und jetzt trägt es niemand mehr mit sich herum – auch du nicht.",
+      "again": "Noch etwas sagen",
+      "pause": "Eine Minute atmen",
+      "home": "Zurück zum Start"
     }
   }
 }

@@ -34,6 +34,22 @@
     "community": {
       "title": "Komunita – Parent Reset",
       "description": "Malé, predovšetkým anonymné miesto, kde rodičia môžu nahlas povedať to, o čom sa mlčí."
+    },
+    "pause": {
+      "title": "Minúta dychu – Parent Reset",
+      "description": "Vedená minúta dýchania. Nič sa nepíše, nič nerozhoduje, zvládneš to aj s dieťaťom v náručí."
+    },
+    "evening": {
+      "title": "Uzavri deň – Parent Reset",
+      "description": "Jedna ťažká vec, jedna, ktorú si oplatí nechať, jedna na zajtra."
+    },
+    "kept": {
+      "title": "Čo si si nechal – Parent Reset",
+      "description": "Chvíle, ktoré si si chcel nechať, sa ti vrátia o pár týždňov."
+    },
+    "vent": {
+      "title": "Povedz to tu – Parent Reset",
+      "description": "Napíš to, čo nemôžeš povedať nahlas, a potom to roztrhaj. Nikdy sa neukladá ani neodosiela."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Starosti",
       "community": "Komunita",
-      "account": "Ty"
-    }
+      "account": "Ty",
+      "pause": "Dych"
+    },
+    "pause": "Dýchaj",
+    "evening": "Uzavri deň",
+    "kept": "Nechané"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Otvoriť rodinné starosti",
       "cta": "Začať dnešný reset",
       "ctaAgain": "Resetovať znova",
-      "history": "História ({count})"
+      "history": "História ({count})",
+      "tomorrowLabel": "Včera si na dnešok povedal:",
+      "returns": {
+        "welcomeBack": "Nebol si tu {days} dní. Vrátiť sa znamená viac než neodísť.",
+        "often": "To je {thisWeek} dní tento týždeň.",
+        "weeks": "Bol si tu v {weeks} rôznych týždňoch.",
+        "growing": "To je {total} dní, keď si si vzal minútu pre seba."
+      },
+      "kept": {
+        "label": "Pred {days} dňami si napísal"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Dýchaj",
+        "hint": "Minúta"
+      },
+      "vent": {
+        "label": "Povedz to",
+        "hint": "A roztrhaj"
+      },
+      "evening": {
+        "label": "Uzavri deň",
+        "hint": "Štyri ťuknutia"
+      },
+      "kept": {
+        "label": "Čo si nechal",
+        "hint": "Tvoje dobré chvíle"
+      }
+    },
+    "ways": {
+      "title": "Tri vstupy",
+      "subtitle": "Podľa toho, koľko z teba dnes zostalo.",
+      "pause": {
+        "time": "1 minúta",
+        "title": "Dýchaj",
+        "body": "Vedená minúta. Nič sa nepíše, nič nerozhoduje, zvládneš to aj s dieťaťom v náručí."
+      },
+      "reset": {
+        "time": "5 minút",
+        "title": "Reset",
+        "body": "Šesť krátkych otázok a malý zoznam: dnes, tento týždeň a to, čo môžeš pustiť."
+      },
+      "evening": {
+        "time": "2 minúty",
+        "title": "Uzavri deň",
+        "body": "Jedna ťažká vec, jedna dobrá, jedna na zajtra. Tie dobré sa ti neskôr vrátia."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Vymazať môj účet",
         "confirm": "Áno, vymazať všetko",
         "cancel": "Nechať si účet"
+      },
+      "appearance": {
+        "title": "Vzhľad",
+        "body": "Aplikácia sa riadi tvojím telefónom a neskoro večer sama stmavne."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Otvoriť",
     "delete": "Vymazať",
     "guestNote": "Táto história je len v tomto zariadení.",
-    "guestCta": "Vytvor si účet a ostane ti."
+    "guestCta": "Vytvor si účet a ostane ti.",
+    "returns": {
+      "label": "Návraty",
+      "total": "{count, plural, one {Jeden deň, keď si tu bol} few {# dni, keď si tu bol} many {# dňa, keď si tu bol} other {# dní, keď si tu bol}}",
+      "first": "Toto je deň jeden. Zatiaľ nie je s čím porovnávať.",
+      "welcomeBack": "Nebol si tu {days} dní a vrátil si sa. Presne tak je to myslené.",
+      "often": "{thisWeek} dní za posledný týždeň.",
+      "weeks": "Rozložené do {weeks} rôznych týždňov.",
+      "growing": "Potichu sa to spočítava.",
+      "longestGap": "Tvoja najdlhšia pauza bola {days} dní. Aj z tej si sa vrátil."
+    }
   },
   "community": {
     "title": "Komunita",
@@ -558,6 +639,155 @@
       "rateLimited": "Prispievaš rýchlo. Počkaj prosím pár minút.",
       "signIn": "Najprv sa prosím prihlás.",
       "generic": "Niečo sa pokazilo. Skús to prosím znova."
+    }
+  },
+  "theme": {
+    "label": "Vzhľad",
+    "light": "Svetlý",
+    "dark": "Tmavý",
+    "auto": "Auto",
+    "autoHint": "Auto sa riadi tvojím telefónom a neskoro večer samo stmavne."
+  },
+  "pause": {
+    "eyebrow": "Jedna minúta",
+    "title": "Dýchaj so mnou",
+    "intro": "Nič sa nepíše a nič nerozhoduje. Vyber si jedno a sleduj kruh. Zvládneš to aj s dieťaťom v náručí.",
+    "seconds": "{count} sekúnd",
+    "note": "Nič z toho sa neukladá. Je to jednoducho minúta, ktorá patrí tebe.",
+    "stop": "To stačí",
+    "cycleOf": "Kolo {current} z {total}",
+    "patterns": {
+      "settle": {
+        "name": "Usadenie",
+        "body": "Štyri nádych, šesť výdych. Ten na každý deň."
+      },
+      "steady": {
+        "name": "Upokojenie",
+        "body": "Štyri nádych, štyri zadržať, štyri výdych, štyri pokoj. Keď hlava beží na plné obrátky."
+      },
+      "sleep": {
+        "name": "Spomalenie",
+        "body": "Štyri, sedem, osem. Do tmy, na konci dlhého dňa."
+      }
+    },
+    "phase": {
+      "in": "Nádych",
+      "hold": "Zadrž",
+      "out": "Výdych",
+      "rest": "Oddych"
+    },
+    "done": {
+      "title": "Hotovo.",
+      "body": "Tvoje telo je o čosi pomalšie než pred minútou. V tom je celý trik a funguje to aj vtedy, keď sa nič iné nezmenilo.",
+      "countToday": "{count, plural, one {To bola dnes tvoja prvá pauza.} few {Sú to dnes # pauzy. Potrebovať ich nie je slabosť.} many {Je to dnes # pauzy. Potrebovať ich nie je slabosť.} other {Je to dnes # páuz. Potrebovať ich nie je slabosť.}}",
+      "again": "Ešte raz",
+      "reset": "Urobiť reset",
+      "home": "Späť domov"
+    }
+  },
+  "evening": {
+    "eyebrow": "Uzatváranie dňa",
+    "title": "Aké bolo dnes?",
+    "intro": "Štyri veci, všetky dobrovoľné. Ťukni na počasie a odlož telefón, ak viac už nemáš.",
+    "save": "Uzavrieť deň",
+    "saveAgain": "Uložiť zmeny",
+    "privacy": "Vidíš to iba ty.",
+    "weather": {
+      "question": "Aké bolo dnes počasie?",
+      "options": {
+        "storm": "Búrka",
+        "rain": "Dážď",
+        "cloudy": "Zamračené",
+        "sun": "Slnko"
+      }
+    },
+    "hard": {
+      "label": "Čo bolo ťažké?",
+      "hint": "Pomenuj to raz, tu, namiesto toho, aby si to niesol do zajtra.",
+      "placeholder": "Ráno. Celé."
+    },
+    "kept": {
+      "label": "Čo si oplatí nechať?",
+      "hint": "Aj malé sa počíta. Práve táto časť sa ti o pár týždňov vráti.",
+      "placeholder": "Sama ma na priechode chytila za ruku."
+    },
+    "tomorrow": {
+      "label": "Jedna vec na zajtra",
+      "hint": "Len jedna. Ráno ťa počká na hlavnej stránke.",
+      "placeholder": "Zavolať zubárovi."
+    },
+    "errors": {
+      "tooLong": "Je to dlhšie, než sa sem zmestí. Trochu to skráť.",
+      "save": "Neuložilo sa to. Skús to ešte raz."
+    },
+    "closed": {
+      "eyebrow": "Deň uzavretý",
+      "tomorrowLabel": "Zajtra, jedna vec:",
+      "edit": "Niečo zmeniť",
+      "kept": "Pozri, čo si si nechal",
+      "home": "Späť domov"
+    },
+    "closing": {
+      "storm": {
+        "title": "To bola búrka.",
+        "body": "Previedol si ňou všetkých až do konca a to bola dnešná úloha. Zajtra je iný deň a dnes večer už nemusíš nič opravovať."
+      },
+      "stormKept": {
+        "title": "Búrka – a aj tak si niečo našiel.",
+        "body": "Ťažký deň s jednou dobrou chvíľou je stále ťažký deň. Ale tú chvíľu si zachytil, a to nie je málo."
+      },
+      "rainHard": {
+        "title": "Išlo to ťažko.",
+        "body": "Dal si to do slov namiesto toho, aby si to niesol ticho. Na dnešný večer to stačí."
+      },
+      "kept": {
+        "title": "Niečo si si nechal.",
+        "body": "O pár týždňov sa ti to vráti, dávno potom, ako na to zabudneš. Práve preto sa oplatí to zapísať."
+      },
+      "heard": {
+        "title": "Je to zapísané.",
+        "body": "Je to von z tvojej hlavy a na stránke, kde to nikto iný nečíta."
+      },
+      "afterReset": {
+        "title": "Dnes si sa ozval dvakrát.",
+        "body": "Reset cez deň a uzavretie večer. To je celý deň starostlivosti o seba – v deň, ktorý tak zrejme vôbec nevyzeral."
+      },
+      "steady": {
+        "title": "Stále sa vraciaš.",
+        "body": "Uzatváranie dňa sa stáva zvykom a je to jeden z najtichších užitočných zvykov, aké existujú."
+      },
+      "plain": {
+        "title": "Deň uzavretý.",
+        "body": "Viac netreba. Dobre sa vyspi."
+      }
+    }
+  },
+  "kept": {
+    "title": "Čo si si nechal",
+    "subtitle": "{count, plural, one {Jedna chvíľa, ktorú si si chcel nechať.} few {# chvíle, ktoré si si chcel nechať.} many {# chvíle, ktoré si si chcel nechať.} other {# chvíľ, ktoré si si chcel nechať.}}",
+    "loading": "Moment…",
+    "empty": {
+      "body": "Zatiaľ tu nič nie je. Keď uzavrieš deň, to, čo napíšeš do „oplatí sa nechať“, skončí tu – a vráti sa ti o pár týždňov, keď na to zabudneš.",
+      "cta": "Uzavrieť dnešok"
+    },
+    "resurfaced": {
+      "label": "Pred {days} dňami si napísal"
+    }
+  },
+  "vent": {
+    "eyebrow": "Len pre teba",
+    "title": "Povedz to tu",
+    "intro": "To, čo nemôžeš povedať v kuchyni. Napíš to tak škaredo, ako chceš, a potom to roztrhaj.",
+    "label": "Čo chceš povedať",
+    "placeholder": "Píš. Nikto to nečíta.",
+    "tear": "Roztrhať",
+    "promise": "Nikdy sa neukladá, nikdy neodosiela, ani do tohto zariadenia.",
+    "gone": {
+      "title": "Preč.",
+      "body": "Nikde to nie je. Povedal si to a teraz to nikto nenosí ticho – ani ty.",
+      "again": "Povedať viac",
+      "pause": "Minúta dychu",
+      "home": "Späť domov"
     }
   }
 }

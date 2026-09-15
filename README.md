@@ -53,6 +53,37 @@ Everything above degrades gracefully: without Supabase the app is fully
 usable as a guest, and the account and community pages explain why they are
 not available on that deployment.
 
+## Status: Milestone 4 (the calm loop)
+
+Four ways to use the app in under two minutes, and a palette that knows what
+time it is.
+
+- **Pause** (`/pause`): one minute of guided breathing, full screen, no
+  typing and nothing to decide. Three slow-exhale patterns; the ring is driven
+  by wall-clock time so it never drifts out of step with the count. Pauses are
+  logged on the device only and never sent anywhere.
+- **Close the day** (`/evening`): the weather of the day in one tap, then
+  optionally what was hard, what is worth keeping, and one thing for tomorrow.
+  Everything is optional — tapping only the weather closes the day. The closing
+  line is chosen deterministically from what the parent wrote and returned as a
+  translation key, like the planner, so a storm is answered before any habit is
+  praised.
+- **Kept** (`/kept`): what a parent decided was worth keeping, with one older
+  moment lifted back to the top. Nothing is scored or counted — it is their own
+  words handed back weeks later, when they have forgotten them.
+- **Say it here** (`/vent`): write the thing you cannot say out loud, then tear
+  it up. There is no repository, no server action and no draft key behind this
+  screen: the text lives in React state and dies with the component.
+- **Returns**: the anti-streak. It counts days a parent came back, never resets
+  after a gap, and keeps the longest gap as evidence that coming back is normal.
+- **Night mode**: light, dark, or auto — and auto follows the phone *and* dims
+  late in the evening, because that is when this app is used most. The palette
+  is set before first paint, so a night visit never flashes a bright screen.
+
+Tomorrow's one thing written the night before appears on the home page the
+next morning, and the home hub gains a three-tap row: breathe, say it, close
+the day.
+
 ## Run it
 
 ```bash
@@ -91,7 +122,11 @@ src/
       reset/page.tsx    Reset flow
       reset/[id]/       Result page (reads the saved reset on the device)
       load/page.tsx     Family Load
-      history/          Previous resets and trend
+      pause/page.tsx    One minute of guided breathing
+      evening/page.tsx  Closing the day
+      kept/page.tsx     Moments worth keeping, and one brought back
+      vent/page.tsx     Say it, then tear it up (never stored)
+      history/          Previous resets, trend and returns
       account/          Sign in / sign up / settings
       community/        List, new post, post detail
     api/auth/callback   Supabase email-confirmation callback
@@ -99,12 +134,25 @@ src/
     robots.ts, sitemap.ts
   components/
     ui/                 Button, Card, Textarea, OptionButton, ProgressBar...
-    layout/             Header (mobile sheet), Footer, LanguageSwitcher
+    layout/             Header (mobile sheet), Footer, LanguageSwitcher,
+                        MobileTabBar, ThemeProvider + ThemeToggle
   features/
     account/            Auth actions, schema, pseudonyms, forms, settings
     community/          Queries (server), actions, schema, components
-    history/            Summary maths and the history view
-    landing/            Landing page sections + Welcome-back hub
+    evening/
+      closing.ts        Deterministic closing line (returns a message key)
+      schema.ts         Zod validation; every field optional on purpose
+      components/       EveningClose, WeatherPicker
+    history/            Summary maths, returns (the anti-streak), history view
+    kept/
+      resurface.ts      Picks one older kept moment, stable per day
+      components/       KeptView
+    landing/            Landing page sections, Welcome-back hub, QuickActions
+    pause/
+      patterns.ts       Breath patterns and where a run is at, as pure functions
+      log.ts            Pauses counted on the device only, never synced
+      components/       PauseScreen
+    vent/               Write it, tear it up; no repository by design
     load/
       logic.ts          Load score, levels, postponed-until behaviour
       schema.ts         Zod validation for item titles
@@ -191,6 +239,11 @@ file with a reviewed version and update its `_meta` to change the status. Run
 - Moderation hook in place for future community features.
 - Security headers set in `next.config.ts`.
 - Only the public Supabase URL and anon key ever reach the browser.
+- Nothing written on "Say it here" is stored, sent or counted: that screen has
+  no repository and no server action behind it.
+- Pauses are logged on the device only, never in an account. How often someone
+  needed to breathe is the most private thing this app could know, and nothing
+  in the product needs it on a server.
 - Guests keep everything on their device (max 20 resets). Accounts will use
   RLS-protected tables; deleting a user cascades everywhere.
 

@@ -34,6 +34,22 @@
     "community": {
       "title": "Kogukond – Parent Reset",
       "description": "Väike, vaikimisi anonüümne koht vanematele, kus öelda välja see, mis tavaliselt jääb ütlemata."
+    },
+    "pause": {
+      "title": "Minut hingamist – Parent Reset",
+      "description": "Juhendatud minut hingamist. Midagi pole vaja kirjutada ega otsustada, saab teha laps süles."
+    },
+    "evening": {
+      "title": "Sulge päev – Parent Reset",
+      "description": "Üks raske asi, üks hoidmist väärt, üks homseks."
+    },
+    "kept": {
+      "title": "Mida oled hoidnud – Parent Reset",
+      "description": "Hetked, mida pidasid hoidmist väärt, tulevad nädalate pärast sinu juurde tagasi."
+    },
+    "vent": {
+      "title": "Ütle see siia – Parent Reset",
+      "description": "Kirjuta see, mida valjusti öelda ei saa, ja rebi siis katki. Ei salvestata ega saadeta kunagi."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Koorem",
       "community": "Kogukond",
-      "account": "Sina"
-    }
+      "account": "Sina",
+      "pause": "Hinga"
+    },
+    "pause": "Hinga",
+    "evening": "Sulge päev",
+    "kept": "Hoitud"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Ava pere koorem",
       "cta": "Alusta tänast taaskäivitust",
       "ctaAgain": "Taaskäivita uuesti",
-      "history": "Ajalugu ({count})"
+      "history": "Ajalugu ({count})",
+      "tomorrowLabel": "Eile ütlesid tänase kohta:",
+      "returns": {
+        "welcomeBack": "Sind polnud {days} päeva. Tagasitulek loeb rohkem kui see, et poleks ära läinud.",
+        "often": "See teeb {thisWeek} päeva sel nädalal.",
+        "weeks": "Oled kohal olnud {weeks} eri nädalal.",
+        "growing": "See on {total} päeva, mil võtsid endale minuti."
+      },
+      "kept": {
+        "label": "{days} päeva tagasi kirjutasid"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Hinga",
+        "hint": "Üks minut"
+      },
+      "vent": {
+        "label": "Ütle välja",
+        "hint": "Ja rebi katki"
+      },
+      "evening": {
+        "label": "Sulge päev",
+        "hint": "Neli puudutust"
+      },
+      "kept": {
+        "label": "Mida hoidsid",
+        "hint": "Sinu head hetked"
+      }
+    },
+    "ways": {
+      "title": "Kolm sissepääsu",
+      "subtitle": "Olenevalt sellest, kui palju sind täna veel alles on.",
+      "pause": {
+        "time": "1 minut",
+        "title": "Hinga",
+        "body": "Juhendatud minut. Midagi pole vaja kirjutada ega otsustada, saab teha laps süles."
+      },
+      "reset": {
+        "time": "5 minutit",
+        "title": "Reset",
+        "body": "Kuus lühikest küsimust ja väike nimekiri: täna, sel nädalal ja see, mille võid lahti lasta."
+      },
+      "evening": {
+        "time": "2 minutit",
+        "title": "Sulge päev",
+        "body": "Üks raske asi, üks hea, üks homseks. Head tulevad hiljem sinu juurde tagasi."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Kustuta mu konto",
         "confirm": "Jah, kustuta kõik",
         "cancel": "Jäta mu konto alles"
+      },
+      "appearance": {
+        "title": "Välimus",
+        "body": "Rakendus järgib sinu telefoni ja muutub hilisõhtul ise tumedamaks."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Ava",
     "delete": "Kustuta",
     "guestNote": "See ajalugu elab ainult selles seadmes.",
-    "guestCta": "Loo konto, et see alles hoida."
+    "guestCta": "Loo konto, et see alles hoida.",
+    "returns": {
+      "label": "Tagasitulekud",
+      "total": "{count, plural, one {Üks päev, mil olid kohal} other {# päeva, mil olid kohal}}",
+      "first": "See on esimene päev. Veel pole millegagi võrrelda.",
+      "welcomeBack": "Sind polnud {days} päeva ja sa tulid tagasi. Täpselt nii see mõeldud ongi.",
+      "often": "{thisWeek} päeva viimase nädala jooksul.",
+      "weeks": "Jaotunud {weeks} eri nädalale.",
+      "growing": "See koguneb tasapisi.",
+      "longestGap": "Sinu pikim vahe oli {days} päeva. Ka sellest tulid sa tagasi."
+    }
   },
   "community": {
     "title": "Kogukond",
@@ -558,6 +639,155 @@
       "rateLimited": "Postitad kiiresti. Palun oota paar minutit.",
       "signIn": "Palun logi enne sisse.",
       "generic": "Midagi läks valesti. Palun proovi uuesti."
+    }
+  },
+  "theme": {
+    "label": "Välimus",
+    "light": "Hele",
+    "dark": "Tume",
+    "auto": "Auto",
+    "autoHint": "Auto järgib sinu telefoni ja muutub hilisõhtul ise tumedamaks."
+  },
+  "pause": {
+    "eyebrow": "Üks minut",
+    "title": "Hinga koos minuga",
+    "intro": "Midagi pole vaja kirjutada ega otsustada. Vali üks ja järgi ringi. Seda saab teha laps süles.",
+    "seconds": "{count} sekundit",
+    "note": "Sellest ei salvestata midagi. See on lihtsalt minut, mis kuulub sulle.",
+    "stop": "Aitab küll",
+    "cycleOf": "Ring {current} / {total}",
+    "patterns": {
+      "settle": {
+        "name": "Maandumine",
+        "body": "Neli sisse, kuus välja. Igapäevane."
+      },
+      "steady": {
+        "name": "Rahunemine",
+        "body": "Neli sisse, neli kinni, neli välja, neli paigal. Kui pea kihutab."
+      },
+      "sleep": {
+        "name": "Maha rahunemine",
+        "body": "Neli, seitse, kaheksa. Pimedusse, pika päeva lõpus."
+      }
+    },
+    "phase": {
+      "in": "Hinga sisse",
+      "hold": "Hoia",
+      "out": "Hinga välja",
+      "rest": "Puhka"
+    },
+    "done": {
+      "title": "Valmis.",
+      "body": "Su keha on veidi aeglasem kui minut tagasi. Kogu trikk ongi selles ja see toimib ka siis, kui midagi muud pole muutunud.",
+      "countToday": "{count, plural, one {See oli täna su esimene paus.} other {See on täna # pausi. Nende vajamine ei ole nõrkus.}}",
+      "again": "Veel kord",
+      "reset": "Tee reset",
+      "home": "Tagasi avalehele"
+    }
+  },
+  "evening": {
+    "eyebrow": "Päeva sulgemine",
+    "title": "Milline tänane päev oli?",
+    "intro": "Neli asja, kõik vabatahtlikud. Puuduta ilma ja pane telefon käest, kui rohkemaks jõudu pole.",
+    "save": "Sulge päev",
+    "saveAgain": "Salvesta muudatused",
+    "privacy": "Seda näed ainult sina.",
+    "weather": {
+      "question": "Milline ilm täna oli?",
+      "options": {
+        "storm": "Torm",
+        "rain": "Vihm",
+        "cloudy": "Pilves",
+        "sun": "Päike"
+      }
+    },
+    "hard": {
+      "label": "Mis oli raske?",
+      "hint": "Ütle see korra välja siin, selle asemel et see homsesse kaasa võtta.",
+      "placeholder": "Hommik. Terve hommik."
+    },
+    "kept": {
+      "label": "Mida tasub hoida?",
+      "hint": "Ka väike loeb. Just see osa tuleb mõne nädala pärast sinu juurde tagasi.",
+      "placeholder": "Ta võttis ülekäigurajal ise mu käest kinni."
+    },
+    "tomorrow": {
+      "label": "Üks asi homseks",
+      "hint": "Ainult üks. Hommikul ootab see sind avalehel.",
+      "placeholder": "Helistada hambaarstile."
+    },
+    "errors": {
+      "tooLong": "See on pikem, kui siia mahub. Lühenda pisut.",
+      "save": "See ei salvestunud. Proovi veel korra."
+    },
+    "closed": {
+      "eyebrow": "Päev suletud",
+      "tomorrowLabel": "Homme, üks asi:",
+      "edit": "Muuda midagi",
+      "kept": "Vaata, mida oled hoidnud",
+      "home": "Tagasi avalehele"
+    },
+    "closing": {
+      "storm": {
+        "title": "See oli torm.",
+        "body": "Sa viisid kõik sellest läbi ja tänane ülesanne oligi see. Homme on teine päev ja täna õhtul ei pea sa midagi parandama."
+      },
+      "stormKept": {
+        "title": "Torm – ja sa leidsid ikkagi midagi.",
+        "body": "Raske päev, kus on üks hea hetk, on ikka raske päev. Aga sa märkasid seda hetke ja see pole vähe."
+      },
+      "rainHard": {
+        "title": "Raske minek.",
+        "body": "Sa panid selle sõnadesse, selle asemel et vaikides kanda. Tänaseks õhtuks piisab sellest."
+      },
+      "kept": {
+        "title": "Sa hoidsid midagi alles.",
+        "body": "Mõne nädala pärast tuleb see sinu juurde tagasi, ammu pärast seda, kui oled selle unustanud. Just seepärast tasub see kirja panna."
+      },
+      "heard": {
+        "title": "See on kirjas.",
+        "body": "See on peast väljas ja paberil, kus keegi teine seda ei loe."
+      },
+      "afterReset": {
+        "title": "Sa olid täna kohal kaks korda.",
+        "body": "Reset päeval ja sulgemine õhtul. See on terve päev enda eest hoolitsemist – päeval, mis ilmselt sellisena ei tundunud."
+      },
+      "steady": {
+        "title": "Sa tuled ikka tagasi.",
+        "body": "Päeva sulgemisest saab harjumus ja see on üks vaiksemaid kasulikke harjumusi, mis olemas on."
+      },
+      "plain": {
+        "title": "Päev suletud.",
+        "body": "Rohkemat polegi vaja. Maga hästi."
+      }
+    }
+  },
+  "kept": {
+    "title": "Mida oled hoidnud",
+    "subtitle": "{count, plural, one {Üks hetk, mida pidasid hoidmist väärt.} other {# hetke, mida pidasid hoidmist väärt.}}",
+    "loading": "Üks hetk…",
+    "empty": {
+      "body": "Siin pole veel midagi. Kui päeva sulged, jõuab see, mida kirjutad lahtri „hoidmist väärt“ alla, siia – ja tuleb nädalate pärast tagasi, kui oled selle unustanud.",
+      "cta": "Sulge tänane päev"
+    },
+    "resurfaced": {
+      "label": "{days} päeva tagasi kirjutasid"
+    }
+  },
+  "vent": {
+    "eyebrow": "Ainult sulle",
+    "title": "Ütle see siia",
+    "intro": "See, mida köögis välja öelda ei saa. Kirjuta nii inetult kui tahad ja rebi siis katki.",
+    "label": "Mida tahad öelda",
+    "placeholder": "Kirjuta. Keegi ei loe.",
+    "tear": "Rebi katki",
+    "promise": "Ei salvestata, ei saadeta, isegi mitte siia seadmesse.",
+    "gone": {
+      "title": "Läinud.",
+      "body": "Seda pole kuskil. Sa ütlesid selle välja ja nüüd ei kanna keegi seda enam vaikides – ka sina mitte.",
+      "again": "Ütle veel",
+      "pause": "Hinga minut",
+      "home": "Tagasi avalehele"
     }
   }
 }
