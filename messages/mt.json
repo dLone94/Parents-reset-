@@ -34,6 +34,22 @@
     "community": {
       "title": "Komunità – Parent Reset",
       "description": "Post żgħir, anonimu qabel kollox, fejn il-ġenituri jistgħu jgħidu b'leħen għoli dak li normalment jibqa' mistur."
+    },
+    "pause": {
+      "title": "Minuta nifs – Parent Reset",
+      "description": "Minuta ta' teħid tan-nifs bi gwida. Xejn x'tikteb, xejn x'tiddeċiedi, u taħdem b'tarbija f'idejk."
+    },
+    "evening": {
+      "title": "Agħlaq il-ġurnata – Parent Reset",
+      "description": "Ħaġa waħda iebsa, waħda li tistħoqqilha tinżamm, waħda għal għada."
+    },
+    "kept": {
+      "title": "Dak li żammejt – Parent Reset",
+      "description": "Il-mumenti li ħsibt li kien jiswa li żżomm, jiġu lura għandek ġimgħat wara."
+    },
+    "vent": {
+      "title": "Għidha hawn – Parent Reset",
+      "description": "Ikteb dak li ma tistax tgħid b'leħen għoli, imbagħad ċarrtu. Qatt ma jinżamm u qatt ma jintbagħat."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Ġurnata",
       "load": "Piż",
       "community": "Komunità",
-      "account": "Int"
-    }
+      "account": "Int",
+      "pause": "Nifs"
+    },
+    "pause": "Ħu n-nifs",
+    "evening": "Agħlaq il-ġurnata",
+    "kept": "Miżmum"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Iftaħ il-piż tal-familja",
       "cta": "Irranġa l-ġurnata tal-lum",
       "ctaAgain": "Erġa' rranġa",
-      "history": "Storja ({count})"
+      "history": "Storja ({count})",
+      "tomorrowLabel": "Ilbieraħ għedt, għal-lum:",
+      "returns": {
+        "welcomeBack": "Kont nieqes {days} ijiem. Li terġa' tiġi jgħodd aktar milli qatt ma titlaq.",
+        "often": "Dawk {thisWeek} ijiem din il-ġimgħa.",
+        "weeks": "Kont hawn f'{weeks} ġimgħat differenti.",
+        "growing": "Dawk {total} ijiem li fihom tajt minuta lilek innifsek."
+      },
+      "kept": {
+        "label": "{days} ijiem ilu ktibt"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Ħu n-nifs",
+        "hint": "Minuta"
+      },
+      "vent": {
+        "label": "Għidha",
+        "hint": "Imbagħad ċarrtha"
+      },
+      "evening": {
+        "label": "Agħlaq il-ġurnata",
+        "hint": "Erba' għafsiet"
+      },
+      "kept": {
+        "label": "Dak li żammejt",
+        "hint": "Il-partijiet tajba"
+      }
+    },
+    "ways": {
+      "title": "Tliet modi kif tidħol",
+      "subtitle": "Skont kemm fadal minnek illum.",
+      "pause": {
+        "time": "1 minuta",
+        "title": "Ħu n-nifs",
+        "body": "Minuta bi gwida. Xejn x'tikteb, xejn x'tiddeċiedi, u taħdem b'tarbija f'idejk."
+      },
+      "reset": {
+        "time": "5 minuti",
+        "title": "Reset",
+        "body": "Sitt mistoqsijiet qosra u lista żgħira: illum, din il-ġimgħa, u dak li tista' tħalli jmur."
+      },
+      "evening": {
+        "time": "2 minuti",
+        "title": "Agħlaq il-ġurnata",
+        "body": "Ħaġa iebsa, waħda tajba, waħda għal għada. It-tajbin jiġu lura għandek aktar tard."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Ħassar il-kont tiegħi",
         "confirm": "Iva, ħassar kollox",
         "cancel": "Żomm il-kont tiegħi"
+      },
+      "appearance": {
+        "title": "Dehra",
+        "body": "L-app issegwi t-telefon tiegħek u tiddallam waħedha tard filgħaxija."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Iftaħ",
     "delete": "Ħassar",
     "guestNote": "Din l-istorja tinżamm fuq dan l-apparat biss.",
-    "guestCta": "Oħloq kont biex iżżommha."
+    "guestCta": "Oħloq kont biex iżżommha.",
+    "returns": {
+      "label": "Li terġa' tiġi",
+      "total": "{count, plural, one {Ġurnata waħda li kont hawn} few {# ijiem li kont hawn} many {# ijiem li kont hawn} other {# ijiem li kont hawn}}",
+      "first": "Din hija l-ewwel ġurnata. Għad m'hemm xejn x'tqabbel magħha.",
+      "welcomeBack": "Kont nieqes {days} ijiem u erġajt ġejt. Hekk eżatt suppost jaħdem.",
+      "often": "{thisWeek} ijiem fl-aħħar ġimgħa.",
+      "weeks": "Mifruxa fuq {weeks} ġimgħat differenti.",
+      "growing": "Jiżdied bil-kwiet.",
+      "longestGap": "L-itwal waqfa tiegħek kienet {days} ijiem. Minn dik ukoll erġajt ġejt."
+    }
   },
   "community": {
     "title": "Komunità",
@@ -558,6 +639,155 @@
       "rateLimited": "Qed tippubblika malajr wisq. Jekk jogħġbok stenna ftit minuti.",
       "signIn": "Jekk jogħġbok idħol l-ewwel.",
       "generic": "Xi ħaġa marret ħażin. Jekk jogħġbok erġa' pprova."
+    }
+  },
+  "theme": {
+    "label": "Dehra",
+    "light": "Ċara",
+    "dark": "Skura",
+    "auto": "Awto",
+    "autoHint": "Awto ssegwi t-telefon tiegħek u tiddallam waħedha tard filgħaxija."
+  },
+  "pause": {
+    "eyebrow": "Minuta waħda",
+    "title": "Ħu n-nifs miegħi",
+    "intro": "Xejn x'tikteb u xejn x'tiddeċiedi. Agħżel waħda u segwi ċ-ċirku. Dan jaħdem b'tarbija f'idejk.",
+    "seconds": "{count} sekondi",
+    "note": "Xejn minn dan ma jinżamm. Hija sempliċement minuta li hi tiegħek.",
+    "stop": "Biżżejjed",
+    "cycleOf": "Rawnd {current} minn {total}",
+    "patterns": {
+      "settle": {
+        "name": "Tistrieħ",
+        "body": "Erbgħa 'l ġewwa, sitta 'l barra. Dik ta' kuljum."
+      },
+      "steady": {
+        "name": "Tikkalma",
+        "body": "Erbgħa 'l ġewwa, erbgħa żomm, erbgħa 'l barra, erbgħa kwiet. Meta moħħok jiġri."
+      },
+      "sleep": {
+        "name": "Tbaxxi r-ritmu",
+        "body": "Erbgħa, sebgħa, tmienja. Għad-dlam, fi tmiem ġurnata twila."
+      }
+    },
+    "phase": {
+      "in": "Iġbed in-nifs",
+      "hold": "Żomm",
+      "out": "Oħroġ in-nifs",
+      "rest": "Strieħ"
+    },
+    "done": {
+      "title": "Lest.",
+      "body": "Ġismek huwa ftit aktar bil-mod milli kien minuta ilu. Dak hu t-trick kollu, u jaħdem anke meta xejn aktar ma nbidel.",
+      "countToday": "{count, plural, one {Dik kienet l-ewwel waqfa tiegħek illum.} few {Dawk # waqfiet illum. Li teħtieġhom mhijiex dgħufija.} many {Dawk # waqfiet illum. Li teħtieġhom mhijiex dgħufija.} other {Dawk # waqfiet illum. Li teħtieġhom mhijiex dgħufija.}}",
+      "again": "Erġa'",
+      "reset": "Agħmel reset",
+      "home": "Lura d-dar"
+    }
+  },
+  "evening": {
+    "eyebrow": "L-għeluq tal-ġurnata",
+    "title": "Kif kienet illum?",
+    "intro": "Erba' affarijiet, kollha mhux obbligatorji. Agħfas it-temp u poġġi t-telefon jekk dak hu kollox li fadallek.",
+    "save": "Agħlaq il-ġurnata",
+    "saveAgain": "Issejvja l-bidliet",
+    "privacy": "Dan tarah int biss.",
+    "weather": {
+      "question": "Kif kien it-temp illum?",
+      "options": {
+        "storm": "Maltempata",
+        "rain": "Xita",
+        "cloudy": "Imsaħħab",
+        "sun": "Xemx"
+      }
+    },
+    "hard": {
+      "label": "X'kien iebes?",
+      "hint": "Semmih darba, hawn, minflok tieħdu miegħek għal għada.",
+      "placeholder": "Filgħodu. Kollu."
+    },
+    "kept": {
+      "label": "X'jistħoqqlu jinżamm?",
+      "hint": "Iż-żgħir jgħodd. Din hi l-parti li tiġi lura għandek fi ftit ġimgħat.",
+      "placeholder": "Qabditli idi fuq il-qsim waħedha."
+    },
+    "tomorrow": {
+      "label": "Ħaġa waħda għal għada",
+      "hint": "Waħda biss. Tistenniek fil-paġna ewlenija filgħodu.",
+      "placeholder": "Ċempel lid-dentist."
+    },
+    "errors": {
+      "tooLong": "Dak itwal minn kemm jidħol hawn. Qassru ftit.",
+      "save": "Dak ma ġiex issejvjat. Erġa' pprova."
+    },
+    "closed": {
+      "eyebrow": "Il-ġurnata magħluqa",
+      "tomorrowLabel": "Għada, ħaġa waħda:",
+      "edit": "Ibdel xi ħaġa",
+      "kept": "Ara x'żammejt",
+      "home": "Lura d-dar"
+    },
+    "closing": {
+      "storm": {
+        "title": "Dik kienet maltempata.",
+        "body": "Ħadt lil kulħadd sal-aħħar tagħha, u dik kienet il-biċċa xogħol illum. Għada hija ġurnata oħra, u llejla m'għandek xejn x'issewwi."
+      },
+      "stormKept": {
+        "title": "Maltempata – u xorta sibt xi ħaġa.",
+        "body": "Ġurnata iebsa b'mument tajjeb wieħed fiha xorta hija ġurnata iebsa. Imma int rajt dak il-mument, u dak mhux ftit."
+      },
+      "rainHard": {
+        "title": "Tqila.",
+        "body": "Poġġejtha fi kliem minflok ġarrejtha fis-skiet. Għal-lejla, dak biżżejjed."
+      },
+      "kept": {
+        "title": "Żammejt xi ħaġa.",
+        "body": "Fi ftit ġimgħat din tiġi lura għandek, ħafna wara li tkun insejtha. Għalhekk eżatt jiswa li tinkiteb."
+      },
+      "heard": {
+        "title": "Hija miktuba.",
+        "body": "Ħarġet minn moħħok u qiegħda fuq il-paġna, fejn ħadd aktar ma jaqraha."
+      },
+      "afterReset": {
+        "title": "Illum dhert darbtejn.",
+        "body": "Reset matul il-ġurnata u għeluq illejla. Dik ġurnata sħiħa li ħadt ħsieb tiegħek innifsek – f'ġurnata li probabbilment ma ħassitx hekk."
+      },
+      "steady": {
+        "title": "Tkompli tiġi lura.",
+        "body": "L-għeluq tal-ġurnata qed isir drawwa, u hija waħda mill-aktar drawwiet siekta u utli li hemm."
+      },
+      "plain": {
+        "title": "Il-ġurnata magħluqa.",
+        "body": "Dak biss hemm bżonn. Orqod tajjeb."
+      }
+    }
+  },
+  "kept": {
+    "title": "Dak li żammejt",
+    "subtitle": "{count, plural, one {Mument wieħed li ridt iżżomm.} few {# mumenti li ridt iżżomm.} many {# mumenti li ridt iżżomm.} other {# mumenti li ridt iżżomm.}}",
+    "loading": "Mument…",
+    "empty": {
+      "body": "Hawn għad m'hemm xejn. Meta tagħlaq ġurnata, dak li tikteb taħt „jistħoqqlu jinżamm” jispiċċa hawn – u jiġi lura għandek ġimgħat wara, meta tkun insejtu.",
+      "cta": "Agħlaq illum"
+    },
+    "resurfaced": {
+      "label": "{days} ijiem ilu ktibt"
+    }
+  },
+  "vent": {
+    "eyebrow": "Għalik biss",
+    "title": "Għidha hawn",
+    "intro": "Dik il-ħaġa li ma tistax tgħid fil-kċina. Iktibha kemm trid ikrah, imbagħad ċarrtha.",
+    "label": "Dak li trid tgħid",
+    "placeholder": "Ikteb. Ħadd mhu jaqra.",
+    "tear": "Ċarrtha",
+    "promise": "Qatt ma tinżamm, qatt ma tintbagħat, lanqas fuq dan l-apparat.",
+    "gone": {
+      "title": "Marret.",
+      "body": "Mhi maħżuna mkien. Għidtha, u issa ħadd ma qed iġorrha fis-skiet – lanqas int.",
+      "again": "Għid aktar",
+      "pause": "Ħu n-nifs għal minuta",
+      "home": "Lura d-dar"
     }
   }
 }

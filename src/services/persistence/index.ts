@@ -1,3 +1,5 @@
+import type { DayNoteRepository } from "./DayNoteRepository";
+import { LocalDayNoteRepository } from "./LocalDayNoteRepository";
 import { LocalLoadRepository } from "./LocalLoadRepository";
 import type { LoadRepository } from "./LoadRepository";
 import { LocalResetRepository } from "./LocalResetRepository";
@@ -9,6 +11,9 @@ export { SupabaseResetRepository } from "./SupabaseResetRepository";
 export type { LoadRepository } from "./LoadRepository";
 export { LocalLoadRepository, LOCAL_LOAD_KEY } from "./LocalLoadRepository";
 export { SupabaseLoadRepository } from "./SupabaseLoadRepository";
+export type { DayNoteRepository } from "./DayNoteRepository";
+export { LocalDayNoteRepository, LOCAL_DAY_NOTES_KEY } from "./LocalDayNoteRepository";
+export { SupabaseDayNoteRepository } from "./SupabaseDayNoteRepository";
 
 let localInstance: ResetRepository | null = null;
 
@@ -28,4 +33,12 @@ let localLoadInstance: LoadRepository | null = null;
 export function getLoadRepository(): LoadRepository {
   if (!localLoadInstance) localLoadInstance = new LocalLoadRepository();
   return localLoadInstance;
+}
+
+let localDayNoteInstance: DayNoteRepository | null = null;
+
+/** Evening closes. Guests keep them on the device; accounts sync them. */
+export function getDayNoteRepository(): DayNoteRepository {
+  if (!localDayNoteInstance) localDayNoteInstance = new LocalDayNoteRepository();
+  return localDayNoteInstance;
 }

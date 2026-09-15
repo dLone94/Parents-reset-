@@ -34,6 +34,22 @@
     "community": {
       "title": "Yhteisö – Parent Reset",
       "description": "Pieni, nimettömyyteen perustuva paikka, jossa vanhemmat voivat sanoa ääneen sen, mistä ei yleensä puhuta."
+    },
+    "pause": {
+      "title": "Minuutti hengitystä – Parent Reset",
+      "description": "Ohjattu minuutti hengitystä. Ei kirjoittamista, ei päätöksiä, onnistuu lapsi sylissä."
+    },
+    "evening": {
+      "title": "Sulje päivä – Parent Reset",
+      "description": "Yksi raskas asia, yksi säilyttämisen arvoinen, yksi huomiselle."
+    },
+    "kept": {
+      "title": "Mitä olet säilyttänyt – Parent Reset",
+      "description": "Hetket, jotka halusit säilyttää, palautettuina sinulle viikkoja myöhemmin."
+    },
+    "vent": {
+      "title": "Sano se tässä – Parent Reset",
+      "description": "Kirjoita se, mitä et voi sanoa ääneen, ja revi se sitten. Ei tallenneta koskaan, ei lähetetä koskaan."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Nollaus",
       "load": "Kuorma",
       "community": "Yhteisö",
-      "account": "Sinä"
-    }
+      "account": "Sinä",
+      "pause": "Hengitä"
+    },
+    "pause": "Hengitä",
+    "evening": "Sulje päivä",
+    "kept": "Säilytetyt"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Avaa perheen kuorma",
       "cta": "Aloita tämän päivän nollaus",
       "ctaAgain": "Nollaa uudelleen",
-      "history": "Historia ({count})"
+      "history": "Historia ({count})",
+      "tomorrowLabel": "Eilen sanoit tälle päivälle:",
+      "returns": {
+        "welcomeBack": "Olit poissa {days} päivää. Paluu merkitsee enemmän kuin se, ettei koskaan lähde.",
+        "often": "Se on {thisWeek} päivää tällä viikolla.",
+        "weeks": "Olet käynyt {weeks} eri viikolla.",
+        "growing": "Se on {total} päivää, jolloin otit minuutin itsellesi."
+      },
+      "kept": {
+        "label": "{days} päivää sitten kirjoitit"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Hengitä",
+        "hint": "Minuutti"
+      },
+      "vent": {
+        "label": "Sano se",
+        "hint": "Ja revi"
+      },
+      "evening": {
+        "label": "Sulje päivä",
+        "hint": "Neljä napautusta"
+      },
+      "kept": {
+        "label": "Mitä säilytit",
+        "hint": "Hyvät hetkesi"
+      }
+    },
+    "ways": {
+      "title": "Kolme tapaa aloittaa",
+      "subtitle": "Sen mukaan, paljonko sinusta on tänään jäljellä.",
+      "pause": {
+        "time": "1 minuutti",
+        "title": "Hengitä",
+        "body": "Ohjattu minuutti. Ei kirjoittamista, ei päätöksiä, onnistuu lapsi sylissä."
+      },
+      "reset": {
+        "time": "5 minuuttia",
+        "title": "Reset",
+        "body": "Kuusi lyhyttä kysymystä ja pieni lista: tänään, tällä viikolla, ja se mistä voit päästää irti."
+      },
+      "evening": {
+        "time": "2 minuuttia",
+        "title": "Sulje päivä",
+        "body": "Yksi raskas asia, yksi hyvä, yksi huomiselle. Hyvät palaavat sinulle myöhemmin."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Poista tilini",
         "confirm": "Kyllä, poista kaikki",
         "cancel": "Säilytä tilini"
+      },
+      "appearance": {
+        "title": "Ulkoasu",
+        "body": "Sovellus seuraa puhelintasi ja tummenee itsestään myöhään illalla."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Avaa",
     "delete": "Poista",
     "guestNote": "Tämä historia on vain tällä laitteella.",
-    "guestCta": "Luo tili, niin se säilyy."
+    "guestCta": "Luo tili, niin se säilyy.",
+    "returns": {
+      "label": "Paluut",
+      "total": "{count, plural, one {Yksi päivä, jolloin olit täällä} other {# päivää, jolloin olit täällä}}",
+      "first": "Tämä on päivä yksi. Vertailtavaa ei vielä ole.",
+      "welcomeBack": "Olit poissa {days} päivää ja palasit. Juuri näin tämän on tarkoitus toimia.",
+      "often": "{thisWeek} päivää viime viikon aikana.",
+      "weeks": "Jakautuneena {weeks} eri viikolle.",
+      "growing": "Se kertyy hiljalleen.",
+      "longestGap": "Pisin taukosi oli {days} päivää. Siitäkin palasit."
+    }
   },
   "community": {
     "title": "Yhteisö",
@@ -558,6 +639,155 @@
       "rateLimited": "Julkaiset nopeaan tahtiin. Odota muutama minuutti.",
       "signIn": "Kirjaudu ensin sisään.",
       "generic": "Jokin meni pieleen. Yritä uudelleen."
+    }
+  },
+  "theme": {
+    "label": "Ulkoasu",
+    "light": "Vaalea",
+    "dark": "Tumma",
+    "auto": "Auto",
+    "autoHint": "Auto seuraa puhelintasi ja tummenee itsestään myöhään illalla."
+  },
+  "pause": {
+    "eyebrow": "Yksi minuutti",
+    "title": "Hengitä kanssani",
+    "intro": "Ei mitään kirjoitettavaa eikä päätettävää. Valitse yksi ja seuraa ympyrää. Tämä onnistuu lapsi sylissä.",
+    "seconds": "{count} sekuntia",
+    "note": "Tästä ei tallenneta mitään. Se on vain minuutti, joka on sinun.",
+    "stop": "Tuo riittää",
+    "cycleOf": "Kierros {current}/{total}",
+    "patterns": {
+      "settle": {
+        "name": "Asettuminen",
+        "body": "Neljä sisään, kuusi ulos. Arjen harjoitus."
+      },
+      "steady": {
+        "name": "Rauhoittuminen",
+        "body": "Neljä sisään, neljä pidätys, neljä ulos, neljä paikallaan. Kun pää käy ylikierroksilla."
+      },
+      "sleep": {
+        "name": "Alas tuleminen",
+        "body": "Neljä, seitsemän, kahdeksan. Pimeään, pitkän päivän päätteeksi."
+      }
+    },
+    "phase": {
+      "in": "Hengitä sisään",
+      "hold": "Pidätä",
+      "out": "Hengitä ulos",
+      "rest": "Lepää"
+    },
+    "done": {
+      "title": "Valmista.",
+      "body": "Kehosi on hieman hitaampi kuin minuutti sitten. Siinä on koko juju, ja se toimii, vaikka mikään muu ei olisi muuttunut.",
+      "countToday": "{count, plural, one {Tämä oli ensimmäinen taukosi tänään.} other {Tämä on # taukoa tänään. Niiden tarve ei ole heikkoutta.}}",
+      "again": "Uudestaan",
+      "reset": "Tee reset",
+      "home": "Takaisin alkuun"
+    }
+  },
+  "evening": {
+    "eyebrow": "Päivän sulkeminen",
+    "title": "Millainen tänään oli?",
+    "intro": "Neljä asiaa, kaikki vapaaehtoisia. Napauta säätä ja laske puhelin, jos enempään ei ole voimia.",
+    "save": "Sulje päivä",
+    "saveAgain": "Tallenna muutokset",
+    "privacy": "Tämän näet vain sinä.",
+    "weather": {
+      "question": "Millainen sää tänään oli?",
+      "options": {
+        "storm": "Myrsky",
+        "rain": "Sade",
+        "cloudy": "Pilvistä",
+        "sun": "Aurinko"
+      }
+    },
+    "hard": {
+      "label": "Mikä oli raskasta?",
+      "hint": "Sano se kerran, tässä, sen sijaan että kantaisit sen huomiseen.",
+      "placeholder": "Aamu. Koko aamu."
+    },
+    "kept": {
+      "label": "Mikä kannattaa säilyttää?",
+      "hint": "Pienikin kelpaa. Juuri tämä palaa sinulle muutaman viikon päästä.",
+      "placeholder": "Hän otti kädestäni suojatiellä ihan itse."
+    },
+    "tomorrow": {
+      "label": "Yksi asia huomiselle",
+      "hint": "Vain yksi. Se odottaa etusivulla huomenaamuna.",
+      "placeholder": "Soita hammaslääkäriin."
+    },
+    "errors": {
+      "tooLong": "Tuo on pidempi kuin tähän mahtuu. Lyhennä hieman.",
+      "save": "Tallennus ei onnistunut. Yritä vielä kerran."
+    },
+    "closed": {
+      "eyebrow": "Päivä suljettu",
+      "tomorrowLabel": "Huomenna, yksi asia:",
+      "edit": "Muuta jotain",
+      "kept": "Katso mitä olet säilyttänyt",
+      "home": "Takaisin alkuun"
+    },
+    "closing": {
+      "storm": {
+        "title": "Tuo oli myrsky.",
+        "body": "Veit kaikki sen läpi, ja se oli tämän päivän tehtävä. Huominen on eri päivä, eikä tänä iltana tarvitse korjata mitään."
+      },
+      "stormKept": {
+        "title": "Myrsky, ja silti löysit jotain.",
+        "body": "Raskas päivä, jossa on yksi hyvä hetki, on yhä raskas päivä. Mutta sinä huomasit hetken, eikä se ole vähän."
+      },
+      "rainHard": {
+        "title": "Raskasta menoa.",
+        "body": "Puit sen sanoiksi sen sijaan että kantaisit sitä hiljaa. Tälle illalle se riittää."
+      },
+      "kept": {
+        "title": "Säilytit jotain.",
+        "body": "Muutaman viikon päästä tämä palaa sinulle, kauan sen jälkeen kun olet unohtanut sen. Juuri siksi se kannattaa kirjoittaa."
+      },
+      "heard": {
+        "title": "Se on kirjoitettu.",
+        "body": "Se on poissa päästäsi ja paperilla, missä kukaan muu ei sitä lue."
+      },
+      "afterReset": {
+        "title": "Kävit tänään kahdesti.",
+        "body": "Reset päivällä ja päätös illalla. Se on kokonainen päivä itsestä huolehtimista – päivänä, joka tuskin tuntui siltä."
+      },
+      "steady": {
+        "title": "Palaat aina uudelleen.",
+        "body": "Päivän sulkemisesta on tulossa tapa, ja se on yksi hiljaisimmista hyödyllisistä tavoista."
+      },
+      "plain": {
+        "title": "Päivä suljettu.",
+        "body": "Enempää ei tarvita. Nuku hyvin."
+      }
+    }
+  },
+  "kept": {
+    "title": "Mitä olet säilyttänyt",
+    "subtitle": "{count, plural, one {Yksi hetki, jonka halusit säilyttää.} other {# hetkeä, jotka halusit säilyttää.}}",
+    "loading": "Hetki…",
+    "empty": {
+      "body": "Täällä ei ole vielä mitään. Kun suljet päivän, se mitä kirjoitat kohtaan \"säilyttämisen arvoista\", päätyy tänne – ja palaa sinulle viikkojen päästä, kun olet unohtanut sen.",
+      "cta": "Sulje tämä päivä"
+    },
+    "resurfaced": {
+      "label": "{days} päivää sitten kirjoitit"
+    }
+  },
+  "vent": {
+    "eyebrow": "Vain sinulle",
+    "title": "Sano se tässä",
+    "intro": "Se, mitä et voi sanoa keittiössä. Kirjoita niin rumasti kuin haluat ja revi se sitten.",
+    "label": "Mitä haluat sanoa",
+    "placeholder": "Kirjoita. Kukaan ei lue.",
+    "tear": "Revi se",
+    "promise": "Ei tallenneta koskaan, ei lähetetä koskaan, ei edes tälle laitteelle.",
+    "gone": {
+      "title": "Poissa.",
+      "body": "Sitä ei ole missään. Sanoit sen, eikä kukaan kanna sitä enää hiljaa – et sinäkään.",
+      "again": "Sano lisää",
+      "pause": "Hengitä minuutti",
+      "home": "Takaisin alkuun"
     }
   }
 }

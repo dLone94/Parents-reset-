@@ -4,11 +4,16 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
 
+/**
+ * Five slots, and Pause takes one of them: it is the thing most likely to be
+ * needed in a hurry. Community moved into the header, where it is still one
+ * tap away but not competing with the calm-down tools.
+ */
 const tabs = [
   { href: "/", key: "home", icon: HomeIcon },
+  { href: "/pause", key: "pause", icon: BreathIcon },
   { href: "/reset", key: "reset", icon: ResetIcon },
   { href: "/load", key: "load", icon: LoadIcon },
-  { href: "/community", key: "community", icon: CommunityIcon },
   { href: "/account", key: "account", icon: AccountIcon },
 ] as const;
 
@@ -78,10 +83,11 @@ function LoadIcon({ active }: { active: boolean }) {
     </svg>
   );
 }
-function CommunityIcon({ active }: { active: boolean }) {
+function BreathIcon({ active }: { active: boolean }) {
   return (
     <svg {...iconProps(active)}>
-      <path d="M4 6h16v9H9l-4 4v-4H4z" />
+      <circle cx="12" cy="12" r="8.4" />
+      <circle cx="12" cy="12" r="3.6" />
     </svg>
   );
 }

@@ -34,6 +34,22 @@
     "community": {
       "title": "Comunidad – Parent Reset",
       "description": "Un lugar pequeño y anónimo para que madres y padres digan en voz alta lo que suelen callar."
+    },
+    "pause": {
+      "title": "Un minuto para respirar – Parent Reset",
+      "description": "Un minuto de respiración guiada. Sin escribir, sin decidir, y funciona con un niño en brazos."
+    },
+    "evening": {
+      "title": "Cerrar el día – Parent Reset",
+      "description": "Algo difícil, algo que merece la pena guardar, algo para mañana."
+    },
+    "kept": {
+      "title": "Lo que has guardado – Parent Reset",
+      "description": "Los momentos que decidiste guardar, devueltos semanas después."
+    },
+    "vent": {
+      "title": "Dilo aquí – Parent Reset",
+      "description": "Escribe lo que no puedes decir en voz alta y luego rómpelo. Nunca se guarda ni se envía."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Carga",
       "community": "Comunidad",
-      "account": "Tú"
-    }
+      "account": "Tú",
+      "pause": "Respirar"
+    },
+    "pause": "Respirar",
+    "evening": "Cerrar el día",
+    "kept": "Guardado"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Abrir la carga familiar",
       "cta": "Empezar el reset de hoy",
       "ctaAgain": "Hacer otro reset",
-      "history": "Historial ({count})"
+      "history": "Historial ({count})",
+      "tomorrowLabel": "Ayer dijiste, para hoy:",
+      "returns": {
+        "welcomeBack": "Has estado {days} días fuera. Volver cuenta más que no haberse ido.",
+        "often": "Son {thisWeek} días esta semana.",
+        "weeks": "Has aparecido en {weeks} semanas distintas.",
+        "growing": "Son {total} días en los que te has dado un minuto."
+      },
+      "kept": {
+        "label": "Hace {days} días escribiste"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Respirar",
+        "hint": "Un minuto"
+      },
+      "vent": {
+        "label": "Dilo",
+        "hint": "Y luego rómpelo"
+      },
+      "evening": {
+        "label": "Cerrar el día",
+        "hint": "Cuatro toques"
+      },
+      "kept": {
+        "label": "Lo que guardaste",
+        "hint": "Tus partes buenas"
+      }
+    },
+    "ways": {
+      "title": "Tres maneras de entrar",
+      "subtitle": "Según lo que te quede hoy.",
+      "pause": {
+        "time": "1 minuto",
+        "title": "Respirar",
+        "body": "Un minuto guiado. Nada que escribir, nada que decidir, y funciona con un niño en brazos."
+      },
+      "reset": {
+        "time": "5 minutos",
+        "title": "Reset",
+        "body": "Seis preguntas cortas y una lista pequeña: hoy, esta semana y lo que puedes soltar."
+      },
+      "evening": {
+        "time": "2 minutos",
+        "title": "Cerrar el día",
+        "body": "Algo difícil, algo bueno, algo para mañana. Lo bueno te vuelve más adelante."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Eliminar mi cuenta",
         "confirm": "Sí, eliminar todo",
         "cancel": "Conservar mi cuenta"
+      },
+      "appearance": {
+        "title": "Apariencia",
+        "body": "La app sigue a tu móvil y se oscurece sola a última hora de la noche."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Abrir",
     "delete": "Borrar",
     "guestNote": "Este historial solo vive en este dispositivo.",
-    "guestCta": "Crea una cuenta para conservarlo."
+    "guestCta": "Crea una cuenta para conservarlo.",
+    "returns": {
+      "label": "Volver",
+      "total": "{count, plural, one {Un día en el que apareciste} other {# días en los que apareciste}}",
+      "first": "Este es el día uno. Todavía no hay con qué compararlo.",
+      "welcomeBack": "Estuviste {days} días fuera y volviste. Así es exactamente como funciona.",
+      "often": "{thisWeek} días en la última semana.",
+      "weeks": "Repartidos en {weeks} semanas distintas.",
+      "growing": "Va sumando en silencio.",
+      "longestGap": "Tu pausa más larga fue de {days} días. De esa también volviste."
+    }
   },
   "community": {
     "title": "Comunidad",
@@ -558,6 +639,155 @@
       "rateLimited": "Estás publicando muy rápido. Espera unos minutos, por favor.",
       "signIn": "Inicia sesión primero, por favor.",
       "generic": "Algo ha fallado. Inténtalo de nuevo, por favor."
+    }
+  },
+  "theme": {
+    "label": "Apariencia",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "auto": "Auto",
+    "autoHint": "Auto sigue a tu móvil y se oscurece solo a última hora de la noche."
+  },
+  "pause": {
+    "eyebrow": "Un minuto",
+    "title": "Respira conmigo",
+    "intro": "Nada que escribir y nada que decidir. Elige una y sigue el círculo. Funciona con un niño en brazos.",
+    "seconds": "{count} segundos",
+    "note": "De esto no se guarda nada. Es solo un minuto que es tuyo.",
+    "stop": "Ya está bien",
+    "cycleOf": "Ronda {current} de {total}",
+    "patterns": {
+      "settle": {
+        "name": "Asentarse",
+        "body": "Cuatro al inspirar, seis al soltar. La de cada día."
+      },
+      "steady": {
+        "name": "Calmarse",
+        "body": "Cuatro dentro, cuatro sostenido, cuatro fuera, cuatro quieto. Cuando la cabeza va a mil."
+      },
+      "sleep": {
+        "name": "Bajar revoluciones",
+        "body": "Cuatro, siete, ocho. Para la oscuridad, al final de un día largo."
+      }
+    },
+    "phase": {
+      "in": "Inspira",
+      "hold": "Sostén",
+      "out": "Suelta",
+      "rest": "Descansa"
+    },
+    "done": {
+      "title": "Ya está.",
+      "body": "Tu cuerpo va un poco más lento que hace un minuto. Ese es todo el truco, y funciona aunque no haya cambiado nada más.",
+      "countToday": "{count, plural, one {Es tu primera pausa de hoy.} other {Son # pausas hoy. Necesitarlas no es debilidad.}}",
+      "again": "Otra vez",
+      "reset": "Hacer un reset",
+      "home": "Volver al inicio"
+    }
+  },
+  "evening": {
+    "eyebrow": "Cerrando el día",
+    "title": "¿Cómo ha ido hoy?",
+    "intro": "Cuatro cosas, todas opcionales. Toca el tiempo y deja el móvil si es lo único que te queda.",
+    "save": "Cerrar el día",
+    "saveAgain": "Guardar cambios",
+    "privacy": "Esto solo lo ves tú.",
+    "weather": {
+      "question": "¿Qué tiempo ha hecho hoy?",
+      "options": {
+        "storm": "Tormenta",
+        "rain": "Lluvia",
+        "cloudy": "Nublado",
+        "sun": "Sol"
+      }
+    },
+    "hard": {
+      "label": "¿Qué ha sido difícil?",
+      "hint": "Dilo una vez, aquí, en vez de llevarlo contigo a mañana.",
+      "placeholder": "La mañana. Entera."
+    },
+    "kept": {
+      "label": "¿Qué merece la pena guardar?",
+      "hint": "Lo pequeño cuenta. Esto es lo que te volverá dentro de unas semanas.",
+      "placeholder": "Me dio la mano al cruzar sin que se lo pidiera."
+    },
+    "tomorrow": {
+      "label": "Una cosa para mañana",
+      "hint": "Solo una. Te estará esperando mañana en la pantalla de inicio.",
+      "placeholder": "Llamar al dentista."
+    },
+    "errors": {
+      "tooLong": "Eso es más largo de lo que cabe aquí. Acórtalo un poco.",
+      "save": "No se ha guardado. Prueba otra vez."
+    },
+    "closed": {
+      "eyebrow": "Día cerrado",
+      "tomorrowLabel": "Mañana, una cosa:",
+      "edit": "Cambiar algo",
+      "kept": "Ver lo que has guardado",
+      "home": "Volver al inicio"
+    },
+    "closing": {
+      "storm": {
+        "title": "Eso ha sido una tormenta.",
+        "body": "Has llevado a todos hasta el final, y ese era el trabajo de hoy. Mañana es otro día y esta noche no tienes que arreglar nada."
+      },
+      "stormKept": {
+        "title": "Una tormenta, y aun así encontraste algo.",
+        "body": "Un día duro con un buen momento dentro sigue siendo un día duro. Pero viste el momento, y eso no es poco."
+      },
+      "rainHard": {
+        "title": "Cuesta arriba.",
+        "body": "Lo has puesto en palabras en vez de cargarlo en silencio. Por esta noche, es suficiente."
+      },
+      "kept": {
+        "title": "Has guardado algo.",
+        "body": "Dentro de unas semanas te volverá, mucho después de haberlo olvidado. Justo por eso merece la pena escribirlo."
+      },
+      "heard": {
+        "title": "Está escrito.",
+        "body": "Ha salido de tu cabeza y está en la página, donde nadie más lo va a leer."
+      },
+      "afterReset": {
+        "title": "Hoy has venido dos veces.",
+        "body": "Un reset durante el día y un cierre esta noche. Es un día entero cuidándote, en un día que seguramente no lo parecía."
+      },
+      "steady": {
+        "title": "Vuelves una y otra vez.",
+        "body": "Cerrar el día se está volviendo costumbre, y es una de las más silenciosas y útiles que hay."
+      },
+      "plain": {
+        "title": "Día cerrado.",
+        "body": "No hace falta más. Que duermas bien."
+      }
+    }
+  },
+  "kept": {
+    "title": "Lo que has guardado",
+    "subtitle": "{count, plural, one {Un momento que decidiste guardar.} other {# momentos que decidiste guardar.}}",
+    "loading": "Un momento…",
+    "empty": {
+      "body": "Aquí todavía no hay nada. Cuando cierras un día, lo que escribes en «merece la pena guardar» acaba aquí, y te vuelve semanas después, cuando ya lo habías olvidado.",
+      "cta": "Cerrar hoy"
+    },
+    "resurfaced": {
+      "label": "Hace {days} días escribiste"
+    }
+  },
+  "vent": {
+    "eyebrow": "Solo para ti",
+    "title": "Dilo aquí",
+    "intro": "Eso que no puedes decir en la cocina. Escríbelo tan mal como quieras y luego rómpelo.",
+    "label": "Lo que quieres decir",
+    "placeholder": "Escribe. Nadie está leyendo.",
+    "tear": "Romperlo",
+    "promise": "Nunca se guarda, nunca se envía, ni siquiera en este dispositivo.",
+    "gone": {
+      "title": "Fuera.",
+      "body": "No está guardado en ninguna parte. Lo has dicho, y ahora ya no lo carga nadie en silencio, tú tampoco.",
+      "again": "Decir más",
+      "pause": "Respirar un minuto",
+      "home": "Volver al inicio"
     }
   }
 }

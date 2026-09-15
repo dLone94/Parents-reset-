@@ -7,7 +7,9 @@ import { ToastProvider } from "@/components/feedback/Toast";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileTabBar } from "@/components/layout/MobileTabBar";
+import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { routing } from "@/i18n/routing";
+import { themeScript } from "@/lib/theme";
 import { buildAlternates, getSiteUrl } from "@/lib/seo";
 import { getCurrentUser } from "@/lib/supabase/user";
 import { PersistenceProvider } from "@/services/persistence/PersistenceProvider";
@@ -78,24 +80,31 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${body.variable} ${display.variable} h-full antialiased`}>
+      <head>
+        {/* Sets the palette before the first paint, so a night visit never
+            flashes a bright screen. */}
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="flex min-h-full flex-col pb-16 md:pb-0">
         <NextIntlClientProvider>
-          <ToastProvider>
-            <PersistenceProvider userId={user?.id ?? null}>
-              <a
-                href="#content"
-                className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-paper focus:px-4 focus:py-2"
-              >
-                {t("skipToContent")}
-              </a>
-              <Header userEmail={user?.email ?? null} />
-              <main id="content" className="flex flex-1 flex-col">
-                {children}
-              </main>
-              <Footer />
-              <MobileTabBar />
-            </PersistenceProvider>
-          </ToastProvider>
+          <ThemeProvider>
+            <ToastProvider>
+              <PersistenceProvider userId={user?.id ?? null}>
+                <a
+                  href="#content"
+                  className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-paper focus:px-4 focus:py-2"
+                >
+                  {t("skipToContent")}
+                </a>
+                <Header userEmail={user?.email ?? null} />
+                <main id="content" className="flex flex-1 flex-col">
+                  {children}
+                </main>
+                <Footer />
+                <MobileTabBar />
+              </PersistenceProvider>
+            </ToastProvider>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

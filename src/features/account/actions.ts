@@ -138,7 +138,7 @@ export async function updateProfileLocale(locale: string): Promise<void> {
 
 export type DangerState = { status: "idle" } | { status: "done" } | { status: "error" };
 
-/** Deletes every reset and load item of the signed-in user. */
+/** Deletes every reset, load item and evening close of the signed-in user. */
 export async function deleteHistory(): Promise<DangerState> {
   const supabase = await createSupabaseServerClient();
   if (!supabase) return { status: "error" };
@@ -146,7 +146,8 @@ export async function deleteHistory(): Promise<DangerState> {
   if (!auth.user) return { status: "error" };
   const a = await supabase.from("resets").delete().eq("user_id", auth.user.id);
   const b = await supabase.from("load_items").delete().eq("user_id", auth.user.id);
-  return a.error || b.error ? { status: "error" } : { status: "done" };
+  const c = await supabase.from("day_notes").delete().eq("user_id", auth.user.id);
+  return a.error || b.error || c.error ? { status: "error" } : { status: "done" };
 }
 
 /**
@@ -166,6 +167,7 @@ export async function deleteAccount(formData: FormData): Promise<void> {
 
   await supabase!.from("resets").delete().eq("user_id", userId);
   await supabase!.from("load_items").delete().eq("user_id", userId);
+  await supabase!.from("day_notes").delete().eq("user_id", userId);
   await supabase!.from("community_supports").delete().eq("user_id", userId);
   await supabase!.from("community_comments").delete().eq("author_id", userId);
   await supabase!.from("community_posts").delete().eq("author_id", userId);

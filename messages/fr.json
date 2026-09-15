@@ -34,6 +34,22 @@
     "community": {
       "title": "Communauté – Parent Reset",
       "description": "Un petit espace, anonyme avant tout, où les parents peuvent dire tout haut ce qu'ils gardent pour eux."
+    },
+    "pause": {
+      "title": "Une minute pour respirer – Parent Reset",
+      "description": "Une minute de respiration guidée. Rien à écrire, rien à décider, possible avec un enfant dans les bras."
+    },
+    "evening": {
+      "title": "Clore la journée – Parent Reset",
+      "description": "Une chose difficile, une chose à garder, une chose pour demain."
+    },
+    "kept": {
+      "title": "Ce que vous avez gardé – Parent Reset",
+      "description": "Les moments que vous avez jugés bons à garder, qui vous reviennent des semaines plus tard."
+    },
+    "vent": {
+      "title": "Dites-le ici – Parent Reset",
+      "description": "Écrivez ce que vous ne pouvez pas dire à voix haute, puis déchirez-le. Jamais enregistré, jamais envoyé."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Charge",
       "community": "Entraide",
-      "account": "Vous"
-    }
+      "account": "Vous",
+      "pause": "Respirer"
+    },
+    "pause": "Respirer",
+    "evening": "Clore la journée",
+    "kept": "Gardé"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Ouvrir la charge familiale",
       "cta": "Commencer le reset du jour",
       "ctaAgain": "Refaire un reset",
-      "history": "Historique ({count})"
+      "history": "Historique ({count})",
+      "tomorrowLabel": "Hier, vous avez dit, pour aujourd'hui :",
+      "returns": {
+        "welcomeBack": "Vous êtes parti {days} jours. Revenir compte plus que ne jamais partir.",
+        "often": "Ça fait {thisWeek} jours cette semaine.",
+        "weeks": "Vous êtes venu sur {weeks} semaines différentes.",
+        "growing": "Ça fait {total} jours où vous avez pris une minute pour vous."
+      },
+      "kept": {
+        "label": "Il y a {days} jours, vous avez écrit"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Respirer",
+        "hint": "Une minute"
+      },
+      "vent": {
+        "label": "Dites-le",
+        "hint": "Puis déchirez"
+      },
+      "evening": {
+        "label": "Clore la journée",
+        "hint": "Quatre touches"
+      },
+      "kept": {
+        "label": "Ce que vous gardez",
+        "hint": "Vos bons moments"
+      }
+    },
+    "ways": {
+      "title": "Trois façons d'entrer",
+      "subtitle": "Selon ce qu'il vous reste aujourd'hui.",
+      "pause": {
+        "time": "1 minute",
+        "title": "Respirer",
+        "body": "Une minute guidée. Rien à écrire, rien à décider, possible avec un enfant dans les bras."
+      },
+      "reset": {
+        "time": "5 minutes",
+        "title": "Reset",
+        "body": "Six questions courtes, et une petite liste : aujourd'hui, cette semaine, et ce que vous pouvez lâcher."
+      },
+      "evening": {
+        "time": "2 minutes",
+        "title": "Clore la journée",
+        "body": "Une chose dure, une bonne, une pour demain. Les bonnes vous reviennent plus tard."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Supprimer mon compte",
         "confirm": "Oui, tout supprimer",
         "cancel": "Garder mon compte"
+      },
+      "appearance": {
+        "title": "Apparence",
+        "body": "L'application suit votre téléphone et s'assombrit d'elle-même tard le soir."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Ouvrir",
     "delete": "Supprimer",
     "guestNote": "Cet historique n'existe que sur cet appareil.",
-    "guestCta": "Créez un compte pour le conserver."
+    "guestCta": "Créez un compte pour le conserver.",
+    "returns": {
+      "label": "Les retours",
+      "total": "{count, plural, one {Un jour où vous êtes venu} other {# jours où vous êtes venu}}",
+      "first": "C'est le premier jour. Rien à comparer encore.",
+      "welcomeBack": "Vous êtes parti {days} jours et vous êtes revenu. C'est exactement comme ça que ça marche.",
+      "often": "{thisWeek} jours sur la dernière semaine.",
+      "weeks": "Répartis sur {weeks} semaines différentes.",
+      "growing": "Ça s'accumule tout doucement.",
+      "longestGap": "Votre plus longue absence a duré {days} jours. Vous en êtes revenu aussi."
+    }
   },
   "community": {
     "title": "Communauté",
@@ -558,6 +639,155 @@
       "rateLimited": "Vous publiez vite. Veuillez patienter quelques minutes.",
       "signIn": "Veuillez d'abord vous connecter.",
       "generic": "Quelque chose n'a pas fonctionné. Veuillez réessayer."
+    }
+  },
+  "theme": {
+    "label": "Apparence",
+    "light": "Clair",
+    "dark": "Sombre",
+    "auto": "Auto",
+    "autoHint": "Auto suit votre téléphone et s'assombrit tout seul tard le soir."
+  },
+  "pause": {
+    "eyebrow": "Une minute",
+    "title": "Respirez avec moi",
+    "intro": "Rien à écrire, rien à décider. Choisissez et suivez le cercle. Ça marche avec un enfant dans les bras.",
+    "seconds": "{count} secondes",
+    "note": "Rien n'est enregistré ici. C'est juste une minute qui vous appartient.",
+    "stop": "Ça suffit",
+    "cycleOf": "Tour {current} sur {total}",
+    "patterns": {
+      "settle": {
+        "name": "Se poser",
+        "body": "Quatre à l'inspiration, six à l'expiration. Celle de tous les jours."
+      },
+      "steady": {
+        "name": "Se calmer",
+        "body": "Quatre, quatre, quatre, quatre. Quand la tête tourne à plein régime."
+      },
+      "sleep": {
+        "name": "Redescendre",
+        "body": "Quatre, sept, huit. Pour le noir, au bout d'une longue journée."
+      }
+    },
+    "phase": {
+      "in": "Inspirez",
+      "hold": "Retenez",
+      "out": "Expirez",
+      "rest": "Repos"
+    },
+    "done": {
+      "title": "C'est fait.",
+      "body": "Votre corps est un peu plus lent qu'il y a une minute. Tout est là, et ça marche même quand rien d'autre n'a changé.",
+      "countToday": "{count, plural, one {C'est votre première pause aujourd'hui.} other {Ça fait # pauses aujourd'hui. En avoir besoin n'est pas une faiblesse.}}",
+      "again": "Encore",
+      "reset": "Faire un reset",
+      "home": "Retour à l'accueil"
+    }
+  },
+  "evening": {
+    "eyebrow": "Clore la journée",
+    "title": "Comment était aujourd'hui ?",
+    "intro": "Quatre choses, toutes facultatives. Touchez la météo et posez le téléphone s'il ne vous reste que ça.",
+    "save": "Clore la journée",
+    "saveAgain": "Enregistrer les modifications",
+    "privacy": "Vous seul verrez ceci.",
+    "weather": {
+      "question": "Quel temps faisait-il aujourd'hui ?",
+      "options": {
+        "storm": "Tempête",
+        "rain": "Pluie",
+        "cloudy": "Nuageux",
+        "sun": "Soleil"
+      }
+    },
+    "hard": {
+      "label": "Qu'est-ce qui a été dur ?",
+      "hint": "Nommez-le une fois, ici, plutôt que de l'emporter jusqu'à demain.",
+      "placeholder": "La matinée. Toute la matinée."
+    },
+    "kept": {
+      "label": "Qu'est-ce qui mérite d'être gardé ?",
+      "hint": "Le petit compte. C'est cette partie qui vous reviendra dans quelques semaines.",
+      "placeholder": "Elle a pris ma main au passage piéton, sans qu'on lui demande."
+    },
+    "tomorrow": {
+      "label": "Une chose pour demain",
+      "hint": "Une seule. Elle vous attendra demain matin sur l'accueil.",
+      "placeholder": "Appeler le dentiste."
+    },
+    "errors": {
+      "tooLong": "C'est plus long que ce que ce champ peut contenir. Raccourcissez un peu.",
+      "save": "Ça n'a pas été enregistré. Réessayez."
+    },
+    "closed": {
+      "eyebrow": "Journée close",
+      "tomorrowLabel": "Demain, une chose :",
+      "edit": "Changer quelque chose",
+      "kept": "Voir ce que vous avez gardé",
+      "home": "Retour à l'accueil"
+    },
+    "closing": {
+      "storm": {
+        "title": "C'était une tempête.",
+        "body": "Vous avez mené tout le monde jusqu'au bout, et c'était le travail du jour. Demain est un autre jour, et vous n'avez rien à réparer ce soir."
+      },
+      "stormKept": {
+        "title": "Une tempête, et vous avez quand même trouvé quelque chose.",
+        "body": "Une journée dure avec un bon moment dedans reste une journée dure. Mais vous avez vu le moment, et ce n'est pas rien."
+      },
+      "rainHard": {
+        "title": "Journée lourde.",
+        "body": "Vous l'avez mise en mots au lieu de la porter en silence. Pour ce soir, c'est assez."
+      },
+      "kept": {
+        "title": "Vous avez gardé quelque chose.",
+        "body": "Dans quelques semaines, ça vous reviendra, bien après l'avoir oublié. C'est exactement pour ça que ça vaut la peine de l'écrire."
+      },
+      "heard": {
+        "title": "C'est écrit.",
+        "body": "C'est sorti de votre tête et posé sur la page, là où personne d'autre ne le lira."
+      },
+      "afterReset": {
+        "title": "Vous êtes venu deux fois aujourd'hui.",
+        "body": "Un reset dans la journée et une clôture ce soir. C'est une journée entière à prendre soin de vous, un jour qui n'en avait probablement pas l'air."
+      },
+      "steady": {
+        "title": "Vous revenez, encore et encore.",
+        "body": "Clore la journée devient une habitude, et c'est l'une des plus discrètes et des plus utiles qui soient."
+      },
+      "plain": {
+        "title": "Journée close.",
+        "body": "Il n'en faut pas plus. Dormez bien."
+      }
+    }
+  },
+  "kept": {
+    "title": "Ce que vous avez gardé",
+    "subtitle": "{count, plural, one {Un moment que vous avez jugé bon à garder.} other {# moments que vous avez jugés bons à garder.}}",
+    "loading": "Un instant…",
+    "empty": {
+      "body": "Rien ici pour l'instant. Quand vous clôturez une journée, ce que vous écrivez sous « à garder » atterrit ici – et vous revient des semaines plus tard, quand vous l'avez oublié.",
+      "cta": "Clore aujourd'hui"
+    },
+    "resurfaced": {
+      "label": "Il y a {days} jours, vous avez écrit"
+    }
+  },
+  "vent": {
+    "eyebrow": "Rien que pour vous",
+    "title": "Dites-le ici",
+    "intro": "Ce que vous ne pouvez pas dire dans la cuisine. Écrivez-le aussi mal que vous voulez, puis déchirez-le.",
+    "label": "Ce que vous voulez dire",
+    "placeholder": "Écrivez. Personne ne lit.",
+    "tear": "Déchirer",
+    "promise": "Jamais enregistré, jamais envoyé, même pas sur cet appareil.",
+    "gone": {
+      "title": "Parti.",
+      "body": "Ce n'est stocké nulle part. Vous l'avez dit, et maintenant plus personne ne le porte en silence – vous non plus.",
+      "again": "Dire autre chose",
+      "pause": "Respirer une minute",
+      "home": "Retour à l'accueil"
     }
   }
 }

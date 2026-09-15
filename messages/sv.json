@@ -34,6 +34,22 @@
     "community": {
       "title": "Gemenskap – Parent Reset",
       "description": "En liten, anonym plats där föräldrar kan säga högt det som annars förblir osagt."
+    },
+    "pause": {
+      "title": "En minut att andas – Parent Reset",
+      "description": "En guidad minut med andning. Inget att skriva, inget att bestämma, funkar med ett barn i famnen."
+    },
+    "evening": {
+      "title": "Avsluta dagen – Parent Reset",
+      "description": "En sak som var tung, en som är värd att spara, en till i morgon."
+    },
+    "kept": {
+      "title": "Det du sparat – Parent Reset",
+      "description": "Stunderna du tyckte var värda att spara, tillbaka hos dig veckor senare."
+    },
+    "vent": {
+      "title": "Säg det här – Parent Reset",
+      "description": "Skriv det du inte kan säga högt och riv sedan sönder det. Sparas aldrig, skickas aldrig."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Reset",
       "load": "Familj",
       "community": "Gemenskap",
-      "account": "Du"
-    }
+      "account": "Du",
+      "pause": "Andas"
+    },
+    "pause": "Andas",
+    "evening": "Avsluta dagen",
+    "kept": "Sparat"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Öppna allt du bär på",
       "cta": "Starta dagens reset",
       "ctaAgain": "Gör en ny reset",
-      "history": "Historik ({count})"
+      "history": "Historik ({count})",
+      "tomorrowLabel": "I går sa du, för i dag:",
+      "returns": {
+        "welcomeBack": "Du var borta {days} dagar. Att komma tillbaka räknas mer än att aldrig ha gått.",
+        "often": "Det blir {thisWeek} dagar den här veckan.",
+        "weeks": "Du har dykt upp under {weeks} olika veckor.",
+        "growing": "Det är {total} dagar då du tog en minut för dig själv."
+      },
+      "kept": {
+        "label": "För {days} dagar sedan skrev du"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Andas",
+        "hint": "En minut"
+      },
+      "vent": {
+        "label": "Säg det",
+        "hint": "Riv sedan sönder"
+      },
+      "evening": {
+        "label": "Avsluta dagen",
+        "hint": "Fyra tryck"
+      },
+      "kept": {
+        "label": "Det du sparat",
+        "hint": "Dina bra stunder"
+      }
+    },
+    "ways": {
+      "title": "Tre sätt in",
+      "subtitle": "Beroende på hur mycket som finns kvar av dig i dag.",
+      "pause": {
+        "time": "1 minut",
+        "title": "Andas",
+        "body": "En guidad minut. Inget att skriva, inget att bestämma, funkar med ett barn i famnen."
+      },
+      "reset": {
+        "time": "5 minuter",
+        "title": "Reset",
+        "body": "Sex korta frågor och en liten lista: i dag, den här veckan, och det du kan släppa."
+      },
+      "evening": {
+        "time": "2 minuter",
+        "title": "Avsluta dagen",
+        "body": "En tung sak, en bra, en till i morgon. De bra kommer tillbaka till dig senare."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Radera mitt konto",
         "confirm": "Ja, radera allt",
         "cancel": "Behåll mitt konto"
+      },
+      "appearance": {
+        "title": "Utseende",
+        "body": "Appen följer din telefon och mörknar av sig själv sent på kvällen."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Öppna",
     "delete": "Radera",
     "guestNote": "Den här historiken finns bara på den här enheten.",
-    "guestCta": "Skapa ett konto för att behålla den."
+    "guestCta": "Skapa ett konto för att behålla den.",
+    "returns": {
+      "label": "Att komma tillbaka",
+      "total": "{count, plural, one {En dag då du dök upp} other {# dagar då du dök upp}}",
+      "first": "Det här är dag ett. Inget att jämföra med än.",
+      "welcomeBack": "Du var borta {days} dagar och kom tillbaka. Det är precis så det ska funka.",
+      "often": "{thisWeek} dagar den senaste veckan.",
+      "weeks": "Utspridda över {weeks} olika veckor.",
+      "growing": "Det växer tyst.",
+      "longestGap": "Ditt längsta uppehåll var {days} dagar. Du kom tillbaka från det också."
+    }
   },
   "community": {
     "title": "Gemenskap",
@@ -558,6 +639,155 @@
       "rateLimited": "Du publicerar snabbt. Vänta några minuter.",
       "signIn": "Logga in först.",
       "generic": "Något gick fel. Försök igen."
+    }
+  },
+  "theme": {
+    "label": "Utseende",
+    "light": "Ljust",
+    "dark": "Mörkt",
+    "auto": "Auto",
+    "autoHint": "Auto följer din telefon och mörknar av sig själv sent på kvällen."
+  },
+  "pause": {
+    "eyebrow": "En minut",
+    "title": "Andas med mig",
+    "intro": "Inget att skriva och inget att bestämma. Välj en och följ cirkeln. Det här funkar med ett barn i famnen.",
+    "seconds": "{count} sekunder",
+    "note": "Inget av det här sparas. Det är bara en minut som är din.",
+    "stop": "Det räcker",
+    "cycleOf": "Varv {current} av {total}",
+    "patterns": {
+      "settle": {
+        "name": "Landa",
+        "body": "Fyra in, sex ut. Den för vanliga dagar."
+      },
+      "steady": {
+        "name": "Lugna ner",
+        "body": "Fyra in, fyra håll, fyra ut, fyra stilla. När huvudet rusar."
+      },
+      "sleep": {
+        "name": "Varva ner",
+        "body": "Fyra, sju, åtta. För mörkret, i slutet av en lång dag."
+      }
+    },
+    "phase": {
+      "in": "Andas in",
+      "hold": "Håll",
+      "out": "Andas ut",
+      "rest": "Vila"
+    },
+    "done": {
+      "title": "Klart.",
+      "body": "Din kropp är lite långsammare än för en minut sedan. Mer är det inte, och det funkar även när inget annat har förändrats.",
+      "countToday": "{count, plural, one {Det var din första paus i dag.} other {Det är # pauser i dag. Att behöva dem är ingen svaghet.}}",
+      "again": "En gång till",
+      "reset": "Gör en reset",
+      "home": "Tillbaka hem"
+    }
+  },
+  "evening": {
+    "eyebrow": "Avsluta dagen",
+    "title": "Hur var i dag?",
+    "intro": "Fyra saker, alla frivilliga. Tryck på vädret och lägg ifrån dig telefonen om det är allt du har kvar.",
+    "save": "Avsluta dagen",
+    "saveAgain": "Spara ändringar",
+    "privacy": "Bara du ser det här.",
+    "weather": {
+      "question": "Vilket väder var det i dag?",
+      "options": {
+        "storm": "Storm",
+        "rain": "Regn",
+        "cloudy": "Molnigt",
+        "sun": "Sol"
+      }
+    },
+    "hard": {
+      "label": "Vad var tungt?",
+      "hint": "Säg det en gång, här, i stället för att bära det in i morgondagen.",
+      "placeholder": "Morgonen. Hela."
+    },
+    "kept": {
+      "label": "Vad är värt att spara?",
+      "hint": "Smått räknas. Det är den här delen som kommer tillbaka till dig om några veckor.",
+      "placeholder": "Hon tog min hand vid övergångsstället, helt själv."
+    },
+    "tomorrow": {
+      "label": "En sak till i morgon",
+      "hint": "Bara en. Den väntar på startsidan i morgon bitti.",
+      "placeholder": "Ringa tandläkaren."
+    },
+    "errors": {
+      "tooLong": "Det är längre än vad som får plats här. Korta ner det lite.",
+      "save": "Det sparades inte. Försök en gång till."
+    },
+    "closed": {
+      "eyebrow": "Dagen avslutad",
+      "tomorrowLabel": "I morgon, en sak:",
+      "edit": "Ändra något",
+      "kept": "Se vad du sparat",
+      "home": "Tillbaka hem"
+    },
+    "closing": {
+      "storm": {
+        "title": "Det där var en storm.",
+        "body": "Du fick alla igenom den, och det var dagens uppgift. I morgon är en annan dag, och i kväll behöver du inte laga något."
+      },
+      "stormKept": {
+        "title": "En storm, och ändå hittade du något.",
+        "body": "En tung dag med en bra stund i sig är fortfarande en tung dag. Men du såg stunden, och det är inte ingenting."
+      },
+      "rainHard": {
+        "title": "Trögt.",
+        "body": "Du satte ord på det i stället för att bära det tyst. För i kväll räcker det."
+      },
+      "kept": {
+        "title": "Du sparade något.",
+        "body": "Om några veckor kommer det tillbaka till dig, långt efter att du glömt bort det. Det är precis därför det är värt att skriva ner."
+      },
+      "heard": {
+        "title": "Det står nedskrivet.",
+        "body": "Det är ute ur huvudet och nere på sidan, där ingen annan läser det."
+      },
+      "afterReset": {
+        "title": "Du dök upp två gånger i dag.",
+        "body": "En reset under dagen och ett avslut i kväll. Det är en hel dag av att ta hand om dig själv, en dag som antagligen inte kändes så."
+      },
+      "steady": {
+        "title": "Du fortsätter komma tillbaka.",
+        "body": "Att avsluta dagen håller på att bli en vana, och det är en av de tystaste nyttiga som finns."
+      },
+      "plain": {
+        "title": "Dagen avslutad.",
+        "body": "Mer krävs inte. Sov gott."
+      }
+    }
+  },
+  "kept": {
+    "title": "Det du sparat",
+    "subtitle": "{count, plural, one {En stund du tyckte var värd att spara.} other {# stunder du tyckte var värda att spara.}}",
+    "loading": "Ett ögonblick…",
+    "empty": {
+      "body": "Här finns inget än. När du avslutar en dag hamnar det du skriver under \"värt att spara\" här – och kommer tillbaka till dig veckor senare, när du glömt bort det.",
+      "cta": "Avsluta i dag"
+    },
+    "resurfaced": {
+      "label": "För {days} dagar sedan skrev du"
+    }
+  },
+  "vent": {
+    "eyebrow": "Bara för dig",
+    "title": "Säg det här",
+    "intro": "Det du inte kan säga i köket. Skriv det hur fult du vill och riv sedan sönder det.",
+    "label": "Det du vill säga",
+    "placeholder": "Skriv. Ingen läser.",
+    "tear": "Riv sönder",
+    "promise": "Sparas aldrig, skickas aldrig, inte ens på den här enheten.",
+    "gone": {
+      "title": "Borta.",
+      "body": "Det ligger ingenstans. Du sa det, och nu bär ingen det tyst längre, inte du heller.",
+      "again": "Säg mer",
+      "pause": "Andas en minut",
+      "home": "Tillbaka hem"
     }
   }
 }

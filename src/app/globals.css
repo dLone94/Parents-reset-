@@ -43,6 +43,61 @@
   color-scheme: light;
 }
 
+/*
+  Night palette. Same warmth, lower light: a kitchen lamp, not a switched-off
+  screen. `data-theme` is written before first paint by the inline script in
+  the layout; the media query keeps the app kind when JavaScript never runs.
+*/
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-cream: #17130f;
+    --color-sand: #221b16;
+    --color-paper: #1f1915;
+    --color-line: #352b24;
+    --color-ink: #f4ece2;
+    --color-ink-soft: #c2b3a7;
+    --color-ink-muted: #94857b;
+
+    --color-clay: #e08a6c;
+    --color-clay-deep: #f0a184;
+    --color-clay-soft: #3a2119;
+
+    --color-honey: #d9a851;
+    --color-honey-soft: #362a15;
+
+    --color-moss: #9cb894;
+    --color-moss-soft: #22301f;
+
+    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+    --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.35), 0 18px 40px -16px rgba(0, 0, 0, 0.7);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-cream: #17130f;
+  --color-sand: #221b16;
+  --color-paper: #1f1915;
+  --color-line: #352b24;
+  --color-ink: #f4ece2;
+  --color-ink-soft: #c2b3a7;
+  --color-ink-muted: #94857b;
+
+  --color-clay: #e08a6c;
+  --color-clay-deep: #f0a184;
+  --color-clay-soft: #3a2119;
+
+  --color-honey: #d9a851;
+  --color-honey-soft: #362a15;
+
+  --color-moss: #9cb894;
+  --color-moss-soft: #22301f;
+
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  --shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.35), 0 18px 40px -16px rgba(0, 0, 0, 0.7);
+}
+
 html {
   background: var(--color-cream);
   -webkit-text-size-adjust: 100%;
@@ -108,5 +163,56 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/*
+  The breathing ring. The scale is driven by a CSS variable the Pause screen
+  sets per phase, so the ring follows the real timing of the pattern instead of
+  an animation that would drift out of step with the counter.
+*/
+.breath-ring {
+  --breath-scale: 0.62;
+  transform: scale(var(--breath-scale));
+  transition: transform var(--breath-duration, 4s) cubic-bezier(0.37, 0, 0.63, 1);
+  will-change: transform;
+}
+
+/* Slow drift behind the hero. Decorative only, and it stops for reduced motion. */
+.drift {
+  animation: drift 26s ease-in-out infinite alternate;
+}
+.drift-slow {
+  animation: drift 38s ease-in-out infinite alternate-reverse;
+}
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(2.5rem, -1.5rem, 0) scale(1.12);
+  }
+}
+
+/* Used when a written-out worry is torn up. Nothing is stored either way. */
+.dissolve {
+  animation: dissolve 900ms ease-in forwards;
+}
+@keyframes dissolve {
+  from {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    filter: blur(14px);
+    transform: translateY(-1.5rem) scale(0.96);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .breath-ring {
+    transition-duration: 0.001ms !important;
   }
 }

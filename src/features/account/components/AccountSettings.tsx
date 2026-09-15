@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useActionState, useState } from "react";
 import { useToast } from "@/components/feedback/Toast";
 import { Button } from "@/components/ui/Button";
+import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { useRepositories } from "@/services/persistence/PersistenceProvider";
 import { deleteAccount, deleteHistory, signOut, updateDisplayName, type ProfileState } from "../actions";
 import { generatePseudonym } from "../pseudonym";
@@ -26,9 +27,19 @@ export function AccountSettings({ email, displayName }: AccountSettingsProps) {
   async function exportData() {
     setBusy(true);
     try {
-      const [resets, load] = await Promise.all([repos.resets.list(), repos.load.list()]);
+      const [resets, load, dayNotes] = await Promise.all([
+        repos.resets.list(),
+        repos.load.list(),
+        repos.dayNotes.list().catch(() => []),
+      ]);
       const blob = new Blob(
-        [JSON.stringify({ exportedAt: new Date().toISOString(), email, resets, familyLoad: load }, null, 2)],
+        [
+          JSON.stringify(
+            { exportedAt: new Date().toISOString(), email, resets, familyLoad: load, evenings: dayNotes },
+            null,
+            2,
+          ),
+        ],
         { type: "application/json" },
       );
       const url = URL.createObjectURL(blob);
@@ -101,6 +112,12 @@ export function AccountSettings({ email, displayName }: AccountSettingsProps) {
             {t("data.deleteHistory")}
           </Button>
         </div>
+      </section>
+
+      <section className="rounded-3xl border border-line bg-paper p-5 shadow-soft md:p-6">
+        <h2 className="font-display text-2xl">{t("appearance.title")}</h2>
+        <p className="mt-1 text-base text-ink-soft">{t("appearance.body")}</p>
+        <ThemeToggle className="mt-4" />
       </section>
 
       <section className="rounded-3xl border border-line bg-paper p-5 shadow-soft md:p-6">

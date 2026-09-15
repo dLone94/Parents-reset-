@@ -34,6 +34,22 @@
     "community": {
       "title": "Pobal – Parent Reset",
       "description": "Áit bheag, gan ainm ar dtús, do thuismitheoirí an rud nach ndeirtear a rá os ard."
+    },
+    "pause": {
+      "title": "Nóiméad análaithe – Parent Reset",
+      "description": "Nóiméad análaithe le treoir. Gan scríobh, gan cinneadh, agus oibríonn sé le leanbh i do bhaclainn."
+    },
+    "evening": {
+      "title": "Dún an lá – Parent Reset",
+      "description": "Rud amháin a bhí deacair, rud amháin is fiú a choinneáil, rud amháin don lá amárach."
+    },
+    "kept": {
+      "title": "A bhfuil coinnithe agat – Parent Reset",
+      "description": "Na nóiméid ar shíl tú gurbh fhiú iad a choinneáil, ag filleadh ort seachtainí ina dhiaidh sin."
+    },
+    "vent": {
+      "title": "Abair anseo é – Parent Reset",
+      "description": "Scríobh an rud nach féidir leat a rá os ard, agus stróic ansin é. Ní shábháiltear é riamh agus ní sheoltar é riamh."
     }
   },
   "common": {
@@ -65,8 +81,12 @@
       "reset": "Mo lá",
       "load": "Cúraimí",
       "community": "Pobal",
-      "account": "Tusa"
-    }
+      "account": "Tusa",
+      "pause": "Anáil"
+    },
+    "pause": "Análaigh",
+    "evening": "Dún an lá",
+    "kept": "Coinnithe"
   },
   "home": {
     "hero": {
@@ -139,7 +159,54 @@
       "openLoad": "Oscail cúraimí an teaghlaigh",
       "cta": "Cuir ord ar an lá inniu",
       "ctaAgain": "Cuir ord air arís",
-      "history": "Stair ({count})"
+      "history": "Stair ({count})",
+      "tomorrowLabel": "Inné dúirt tú, don lá inniu:",
+      "returns": {
+        "welcomeBack": "Bhí tú as láthair {days} lá. Is mó is fiú filleadh ná gan imeacht riamh.",
+        "often": "Sin {thisWeek} lá an tseachtain seo.",
+        "weeks": "Bhí tú anseo i {weeks} seachtain éagsúla.",
+        "growing": "Sin {total} lá ar thug tú nóiméad duit féin."
+      },
+      "kept": {
+        "label": "{days} lá ó shin scríobh tú"
+      }
+    },
+    "quick": {
+      "pause": {
+        "label": "Análaigh",
+        "hint": "Nóiméad"
+      },
+      "vent": {
+        "label": "Abair é",
+        "hint": "Agus stróic é"
+      },
+      "evening": {
+        "label": "Dún an lá",
+        "hint": "Ceithre thapáil"
+      },
+      "kept": {
+        "label": "A choinnigh tú",
+        "hint": "Na píosaí maithe"
+      }
+    },
+    "ways": {
+      "title": "Trí bhealach isteach",
+      "subtitle": "Ag brath ar a bhfuil fágtha díot inniu.",
+      "pause": {
+        "time": "1 nóiméad",
+        "title": "Análaigh",
+        "body": "Nóiméad le treoir. Gan scríobh, gan cinneadh, agus oibríonn sé le leanbh i do bhaclainn."
+      },
+      "reset": {
+        "time": "5 nóiméad",
+        "title": "Reset",
+        "body": "Sé cheist ghearra agus liosta beag: inniu, an tseachtain seo, agus an rud is féidir leat a scaoileadh."
+      },
+      "evening": {
+        "time": "2 nóiméad",
+        "title": "Dún an lá",
+        "body": "Rud amháin deacair, rud amháin maith, rud amháin don lá amárach. Filleann na cinn mhaithe ort níos déanaí."
+      }
     }
   },
   "reset": {
@@ -451,6 +518,10 @@
         "delete": "Scrios mo chuntas",
         "confirm": "Scrios gach rud, cinnte",
         "cancel": "Coinnigh mo chuntas"
+      },
+      "appearance": {
+        "title": "Cuma",
+        "body": "Leanann an aip do ghuthán agus éiríonn sí dorcha as a stuaim féin go déanach san oíche."
       }
     },
     "sync": {
@@ -481,7 +552,17 @@
     "open": "Oscail",
     "delete": "Scrios",
     "guestNote": "Ní mhaireann an stair seo ach ar an ngléas seo.",
-    "guestCta": "Cruthaigh cuntas chun í a choinneáil."
+    "guestCta": "Cruthaigh cuntas chun í a choinneáil.",
+    "returns": {
+      "label": "Ag filleadh",
+      "total": "{count, plural, one {Lá amháin a bhí tú anseo} two {# lá a bhí tú anseo} few {# lá a bhí tú anseo} many {# lá a bhí tú anseo} other {# lá a bhí tú anseo}}",
+      "first": "Seo an chéad lá. Níl aon rud le cur i gcomparáid leis fós.",
+      "welcomeBack": "Bhí tú as láthair {days} lá agus tháinig tú ar ais. Sin go díreach mar atá sé beartaithe.",
+      "often": "{thisWeek} lá sa tseachtain seo caite.",
+      "weeks": "Scaipthe thar {weeks} seachtain éagsúla.",
+      "growing": "Cruinníonn sé go ciúin.",
+      "longestGap": "Ba é {days} lá an bhearna is faide a bhí agat. Tháinig tú ar ais ón gceann sin freisin."
+    }
   },
   "community": {
     "title": "Pobal",
@@ -558,6 +639,155 @@
       "rateLimited": "Tá tú ag postáil go tapa. Fan cúpla nóiméad, le do thoil.",
       "signIn": "Sínigh isteach ar dtús, le do thoil.",
       "generic": "Chuaigh rud éigin amú. Bain triail eile as, le do thoil."
+    }
+  },
+  "theme": {
+    "label": "Cuma",
+    "light": "Geal",
+    "dark": "Dorcha",
+    "auto": "Uath",
+    "autoHint": "Leanann Uath do ghuthán agus éiríonn sé dorcha as a stuaim féin go déanach san oíche."
+  },
+  "pause": {
+    "eyebrow": "Nóiméad amháin",
+    "title": "Análaigh liom",
+    "intro": "Níl aon rud le scríobh ná le cinneadh. Roghnaigh ceann agus lean an ciorcal. Oibríonn sé seo le leanbh i do bhaclainn.",
+    "seconds": "{count} soicind",
+    "note": "Ní shábháiltear aon rud as seo. Nóiméad atá ann atá leatsa, sin uile.",
+    "stop": "Sin a dhóthain",
+    "cycleOf": "Babhta {current} as {total}",
+    "patterns": {
+      "settle": {
+        "name": "Socrú",
+        "body": "Ceathair isteach, sé amach. An ceann laethúil."
+      },
+      "steady": {
+        "name": "Ciúnú",
+        "body": "Ceathair isteach, ceathair coinnithe, ceathair amach, ceathair socair. Nuair atá do cheann ag rásaíocht."
+      },
+      "sleep": {
+        "name": "Maolú",
+        "body": "Ceathair, seacht, ocht. Don dorchadas, ag deireadh lae fhada."
+      }
+    },
+    "phase": {
+      "in": "Anáil isteach",
+      "hold": "Coinnigh",
+      "out": "Anáil amach",
+      "rest": "Sos"
+    },
+    "done": {
+      "title": "Sin é.",
+      "body": "Tá do chorp beagán níos moille ná mar a bhí nóiméad ó shin. Sin an cleas ar fad, agus oibríonn sé fiú nuair nach bhfuil aon rud eile athraithe.",
+      "countToday": "{count, plural, one {Sin do chéad sos inniu.} two {Sin # shos inniu. Ní laige iad a bheith uait.} few {Sin # shos inniu. Ní laige iad a bheith uait.} many {Sin # sos inniu. Ní laige iad a bheith uait.} other {Sin # sos inniu. Ní laige iad a bheith uait.}}",
+      "again": "Arís",
+      "reset": "Déan reset",
+      "home": "Ar ais abhaile"
+    }
+  },
+  "evening": {
+    "eyebrow": "An lá a dhúnadh",
+    "title": "Conas a bhí an lá inniu?",
+    "intro": "Ceithre rud, gach ceann roghnach. Tapáil an aimsir agus cuir uait an guthán más é sin a bhfuil fágtha agat.",
+    "save": "Dún an lá",
+    "saveAgain": "Sábháil na hathruithe",
+    "privacy": "Ní fheiceann ach tusa é seo.",
+    "weather": {
+      "question": "Cén sórt aimsire a bhí ann inniu?",
+      "options": {
+        "storm": "Stoirm",
+        "rain": "Báisteach",
+        "cloudy": "Scamallach",
+        "sun": "Grian"
+      }
+    },
+    "hard": {
+      "label": "Cad a bhí deacair?",
+      "hint": "Ainmnigh uair amháin é, anseo, seachas é a iompar isteach sa lá amárach.",
+      "placeholder": "An mhaidin. An mhaidin ar fad."
+    },
+    "kept": {
+      "label": "Cad is fiú a choinneáil?",
+      "hint": "Cuntasann rudaí beaga. Is é seo an chuid a fhillfidh ort i gceann cúpla seachtain.",
+      "placeholder": "Rug sí ar mo lámh ag an trasrian gan iarraidh."
+    },
+    "tomorrow": {
+      "label": "Rud amháin don lá amárach",
+      "hint": "Ceann amháin. Beidh sé ag fanacht ar an leathanach baile ar maidin.",
+      "placeholder": "Glaoch ar an bhfiaclóir."
+    },
+    "errors": {
+      "tooLong": "Tá sé sin níos faide ná mar a fheileann anseo. Giorraigh beagán é.",
+      "save": "Níor sábháladh é sin. Bain triail eile as."
+    },
+    "closed": {
+      "eyebrow": "An lá dúnta",
+      "tomorrowLabel": "Amárach, rud amháin:",
+      "edit": "Athraigh rud éigin",
+      "kept": "Féach ar a bhfuil coinnithe agat",
+      "home": "Ar ais abhaile"
+    },
+    "closing": {
+      "storm": {
+        "title": "Stoirm a bhí ansin.",
+        "body": "Thug tú gach duine tríthi go dtí an deireadh, agus sin a bhí le déanamh inniu. Lá eile is ea amárach, agus níl aon rud le deisiú agat anocht."
+      },
+      "stormKept": {
+        "title": "Stoirm – agus fuair tú rud éigin mar sin féin.",
+        "body": "Is lá crua fós é lá crua a bhfuil nóiméad maith amháin ann. Ach chonaic tú an nóiméad sin, agus ní beag sin."
+      },
+      "rainHard": {
+        "title": "Trom go leor.",
+        "body": "Chuir tú i bhfocail é seachas é a iompar faoi thost. Don oíche anocht, is leor sin."
+      },
+      "kept": {
+        "title": "Choinnigh tú rud éigin.",
+        "body": "I gceann cúpla seachtain fillfidh sé ort, i bhfad tar éis duit dearmad a dhéanamh air. Sin go díreach an fáth gur fiú é a scríobh."
+      },
+      "heard": {
+        "title": "Tá sé scríofa.",
+        "body": "Tá sé amuigh as do cheann agus ar an leathanach, áit nach léann aon duine eile é."
+      },
+      "afterReset": {
+        "title": "Tháinig tú faoi dhó inniu.",
+        "body": "Reset i rith an lae agus dúnadh anocht. Sin lá iomlán ag tabhairt aire duit féin – ar lá nár bhraith mar sin, is dócha."
+      },
+      "steady": {
+        "title": "Leanann tú ort ag filleadh.",
+        "body": "Tá an lá a dhúnadh ag éirí ina nós, agus is ceann de na nósanna ciúine úsáideacha é."
+      },
+      "plain": {
+        "title": "An lá dúnta.",
+        "body": "Sin a theastaíonn. Codladh sámh."
+      }
+    }
+  },
+  "kept": {
+    "title": "A bhfuil coinnithe agat",
+    "subtitle": "{count, plural, one {Nóiméad amháin ar shíl tú gurbh fhiú é a choinneáil.} two {# nóiméad ar shíl tú gurbh fhiú iad a choinneáil.} few {# nóiméad ar shíl tú gurbh fhiú iad a choinneáil.} many {# nóiméad ar shíl tú gurbh fhiú iad a choinneáil.} other {# nóiméad ar shíl tú gurbh fhiú iad a choinneáil.}}",
+    "loading": "Nóiméad…",
+    "empty": {
+      "body": "Níl aon rud anseo fós. Nuair a dhúnann tú lá, tagann an rud a scríobhann tú faoi „is fiú a choinneáil” anseo – agus filleann sé ort seachtainí ina dhiaidh sin, nuair atá dearmad déanta agat air.",
+      "cta": "Dún an lá inniu"
+    },
+    "resurfaced": {
+      "label": "{days} lá ó shin scríobh tú"
+    }
+  },
+  "vent": {
+    "eyebrow": "Duitse amháin",
+    "title": "Abair anseo é",
+    "intro": "An rud nach féidir leat a rá sa chistin. Scríobh chomh gránna agus is mian leat é, agus stróic ansin é.",
+    "label": "An rud atá le rá agat",
+    "placeholder": "Scríobh. Níl aon duine á léamh.",
+    "tear": "Stróic é",
+    "promise": "Ní shábháiltear riamh é, ní sheoltar riamh é, fiú ar an ngléas seo.",
+    "gone": {
+      "title": "Imithe.",
+      "body": "Níl sé stóráilte in aon áit. Dúirt tú é, agus anois níl aon duine á iompar faoi thost – tusa san áireamh.",
+      "again": "Abair tuilleadh",
+      "pause": "Análaigh ar feadh nóiméid",
+      "home": "Ar ais abhaile"
     }
   }
 }

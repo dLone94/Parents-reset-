@@ -7,8 +7,11 @@ import { Narrow } from "@/components/ui/Container";
 import { Link } from "@/i18n/navigation";
 import { formatDate } from "@/lib/intl/format";
 import { cn } from "@/lib/utils/cn";
+import { localDay } from "@/lib/utils/day";
 import { useRepositories } from "@/services/persistence/PersistenceProvider";
+import type { DayNote } from "@/types/journal";
 import type { ResetRecord } from "@/types/reset";
+import { returnsKey, summariseReturns } from "../returns";
 import { completionRatio, summariseHistory } from "../summarise";
 
 export function HistoryView() {
@@ -16,8 +19,9 @@ export function HistoryView() {
   const tr = useTranslations("reset.questions.areas.options");
   const tc = useTranslations("common");
   const locale = useLocale();
-  const { resets, userId } = useRepositories();
+  const { resets, dayNotes, userId } = useRepositories();
   const [records, setRecords] = useState<ResetRecord[] | null>(null);
+  const [notes, setNotes] = useState<DayNote[]>([]);
 
   useEffect(() => {
     let cancelled = false;
@@ -25,10 +29,14 @@ export function HistoryView() {
       .list()
       .then((list) => !cancelled && setRecords(list))
       .catch(() => !cancelled && setRecords([]));
+    dayNotes
+      .list()
+      .then((list) => !cancelled && setNotes(list))
+      .catch(() => !cancelled && setNotes([]));
     return () => {
       cancelled = true;
     };
-  }, [resets]);
+  }, [resets, dayNotes]);
 
   async function remove(id: string) {
     await resets.remove(id);
@@ -36,6 +44,15 @@ export function HistoryView() {
   }
 
   const summary = summariseHistory(records ?? []);
+  const today = localDay();
+  const returns = summariseReturns(
+    [
+      ...(records ?? []).map((record) => localDay(new Date(record.createdAt))),
+      ...notes.map((note) => note.day),
+    ],
+    today,
+  );
+  const returnsMessage = returnsKey(returns);
   const lighter =
     summary.recentAverage !== null && summary.earlierAverage !== null
       ? summary.earlierAverage - summary.recentAverage
@@ -50,6 +67,29 @@ export function HistoryView() {
           {records === null ? tc("loading") : t("count", { count: summary.count })}
         </p>
       </header>
+
+      {returns.total > 0 && (
+        <section
+          aria-label={t("returns.label")}
+          className="rounded-3xl border border-moss/40 bg-moss-soft p-5 shadow-soft md:p-6"
+        >
+          <h2 className="text-sm font-semibold uppercase tracking-[0.12em] text-moss">{t("returns.label")}</h2>
+          <p className="font-display mt-2 text-2xl md:text-3xl">
+            {t("returns.total", { count: returns.total })}
+          </p>
+          <p className="mt-2 text-base text-ink-soft">
+            {t(`returns.${returnsMessage}`, {
+              total: returns.total,
+              weeks: returns.weeks,
+              days: returns.sinceLast,
+              thisWeek: returns.thisWeek,
+            })}
+          </p>
+          {returns.longestGap >= 7 && (
+            <p className="mt-1 text-sm text-ink-muted">{t("returns.longestGap", { days: returns.longestGap })}</p>
+          )}
+        </section>
+      )}
 
       {records && records.length > 0 && (
         <section aria-label={t("trend.label")} className="rounded-3xl border border-line bg-paper p-5 shadow-soft md:p-6">

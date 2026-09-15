@@ -15,11 +15,11 @@ export function LandingPage() {
       <section className="relative overflow-hidden">
         <div
           aria-hidden
-          className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-clay-soft/70 blur-3xl md:h-[28rem] md:w-[28rem]"
+          className="drift pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-clay-soft/70 blur-3xl md:h-[28rem] md:w-[28rem]"
         />
         <div
           aria-hidden
-          className="pointer-events-none absolute -bottom-32 -left-24 h-64 w-64 rounded-full bg-honey-soft/70 blur-3xl"
+          className="drift-slow pointer-events-none absolute -bottom-32 -left-24 h-64 w-64 rounded-full bg-honey-soft/70 blur-3xl"
         />
         <Container className="relative flex flex-col gap-8 py-16 md:py-28">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-clay">
@@ -43,8 +43,36 @@ export function LandingPage() {
         </Container>
       </section>
 
+      {/* Three ways in: a minute, ten minutes, or the end of the day */}
+      <section className="border-t border-line bg-paper/60">
+        <Container className="py-16 md:py-24">
+          <div className="max-w-2xl space-y-3">
+            <h2 className="font-display text-3xl md:text-5xl">{t("ways.title")}</h2>
+            <p className="text-lg text-ink-soft">{t("ways.subtitle")}</p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {(["pause", "reset", "evening"] as const).map((way) => (
+              <Link
+                key={way}
+                href={ways[way].href}
+                className="focus-ring group flex flex-col gap-3 rounded-2xl border border-line bg-paper p-6 shadow-soft transition-all hover:-translate-y-0.5 hover:border-clay hover:shadow-lift"
+              >
+                <span className={cn("inline-flex h-11 w-11 items-center justify-center rounded-full", ways[way].tone)}>
+                  {ways[way].glyph}
+                </span>
+                <span className="text-sm font-semibold uppercase tracking-[0.16em] text-ink-muted">
+                  {t(`ways.${way}.time`)}
+                </span>
+                <span className="text-xl font-semibold leading-snug">{t(`ways.${way}.title`)}</span>
+                <span className="text-base leading-relaxed text-ink-soft">{t(`ways.${way}.body`)}</span>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       {/* Three steps */}
-      <section id="how-it-works" className="scroll-mt-20 border-t border-line bg-paper/60">
+      <section id="how-it-works" className="scroll-mt-20 border-t border-line">
         <Container className="py-16 md:py-24">
           <div className="max-w-2xl space-y-3">
             <h2 className="font-display text-3xl md:text-5xl">{t("steps.title")}</h2>
@@ -115,6 +143,59 @@ export function LandingPage() {
     </>
   );
 }
+
+/** Entry points, in the order a day tends to need them. */
+const ways = {
+  pause: {
+    href: "/pause",
+    tone: "bg-clay-soft text-clay-deep",
+    glyph: (
+      <svg width={22} height={22} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} aria-hidden>
+        <circle cx="12" cy="12" r="8.4" />
+        <circle cx="12" cy="12" r="3.6" />
+      </svg>
+    ),
+  },
+  reset: {
+    href: "/reset",
+    tone: "bg-honey-soft text-honey",
+    glyph: (
+      <svg
+        width={22}
+        height={22}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.7}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden
+      >
+        <path d="M4 12a8 8 0 0113.7-5.6M20 12a8 8 0 01-13.7 5.6" />
+        <path d="M17 3v4h-4M7 21v-4h4" />
+      </svg>
+    ),
+  },
+  evening: {
+    href: "/evening",
+    tone: "bg-moss-soft text-moss",
+    glyph: (
+      <svg
+        width={22}
+        height={22}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.7}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden
+      >
+        <path d="M20 13.4A8.2 8.2 0 1110.6 4a6.6 6.6 0 009.4 9.4z" />
+      </svg>
+    ),
+  },
+} as const;
 
 const tones = {
   clay: { chip: "bg-clay-soft text-clay-deep", bar: "bg-clay" },
