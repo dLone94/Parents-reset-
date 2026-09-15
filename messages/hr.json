@@ -562,6 +562,13 @@
       "weeks": "Raspoređeno na {weeks} različitih tjedana.",
       "growing": "Tiho se zbraja.",
       "longestGap": "Tvoja najdulja pauza bila je {days} dana. I iz nje si se vratio."
+    },
+    "week": {
+      "label": "Tvoj tjedan",
+      "closed": "{count, plural, one {Jedan dan zatvoren} few {# dana zatvorena} other {# dana zatvoreno}}",
+      "notClosed": "nije zatvoren",
+      "closedNoWeather": "zatvoren",
+      "empty": "Zatvori dan i ovo se počinje puniti."
     }
   },
   "community": {

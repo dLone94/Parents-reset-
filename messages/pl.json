@@ -562,6 +562,13 @@
       "weeks": "Rozłożone na {weeks} różnych tygodni.",
       "growing": "To po cichu się sumuje.",
       "longestGap": "Twoja najdłuższa przerwa to {days} dni. Z niej też wróciłeś."
+    },
+    "week": {
+      "label": "Twój tydzień",
+      "closed": "{count, plural, one {Jeden dzień zamknięty} few {# dni zamknięte} many {# dni zamkniętych} other {# dnia zamkniętych}}",
+      "notClosed": "niezamknięty",
+      "closedNoWeather": "zamknięty",
+      "empty": "Zamknij dzień, a to zacznie się wypełniać."
     }
   },
   "community": {

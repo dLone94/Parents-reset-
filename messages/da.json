@@ -562,6 +562,13 @@
       "weeks": "Fordelt over {weeks} forskellige uger.",
       "growing": "Det lægger sig stille sammen.",
       "longestGap": "Din længste pause var {days} dage. Den kom du også tilbage fra."
+    },
+    "week": {
+      "label": "Din uge",
+      "closed": "{count, plural, one {Én dag lukket} other {# dage lukket}}",
+      "notClosed": "ikke lukket",
+      "closedNoWeather": "lukket",
+      "empty": "Luk en dag, så begynder det her at fylde sig ud."
     }
   },
   "community": {

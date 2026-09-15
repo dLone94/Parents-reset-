@@ -562,6 +562,13 @@
       "weeks": "Scaipthe thar {weeks} seachtain éagsúla.",
       "growing": "Cruinníonn sé go ciúin.",
       "longestGap": "Ba é {days} lá an bhearna is faide a bhí agat. Tháinig tú ar ais ón gceann sin freisin."
+    },
+    "week": {
+      "label": "Do sheachtain",
+      "closed": "{count, plural, one {Lá amháin dúnta} two {# lá dúnta} few {# lá dúnta} many {# lá dúnta} other {# lá dúnta}}",
+      "notClosed": "gan dúnadh",
+      "closedNoWeather": "dúnta",
+      "empty": "Dún lá agus tosóidh sé seo ag líonadh."
     }
   },
   "community": {

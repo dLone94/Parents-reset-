@@ -562,6 +562,13 @@
       "weeks": "Espalhados por {weeks} semanas diferentes.",
       "growing": "Vai somando em silêncio.",
       "longestGap": "A tua pausa mais longa foi de {days} dias. Dessa também voltaste."
+    },
+    "week": {
+      "label": "A tua semana",
+      "closed": "{count, plural, one {Um dia fechado} other {# dias fechados}}",
+      "notClosed": "por fechar",
+      "closedNoWeather": "fechado",
+      "empty": "Fecha um dia e isto começa a encher-se."
     }
   },
   "community": {

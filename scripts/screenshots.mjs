@@ -165,6 +165,36 @@ async function runMilestone4(context, locale, prefix) {
   await page.goto(`${BASE_URL}/${locale}/kept`, { waitUntil: "networkidle" });
   await page.waitForTimeout(400);
   await shot(page, `${prefix}${locale}-kept`, true);
+
+  // A week with something in it, so the strip on history shows what it is for.
+  // Demo data, like the sample answers used in the reset flow above.
+  await page.evaluate(() => {
+    const key = "parent-reset:day-notes:v1";
+    const iso = (offset) => {
+      const d = new Date();
+      d.setDate(d.getDate() - offset);
+      const pad = (n) => `${n}`.padStart(2, "0");
+      return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+    };
+    const existing = JSON.parse(localStorage.getItem(key) ?? "[]");
+    const seeded = [
+      { day: iso(1), weather: "storm" },
+      { day: iso(2), weather: "cloudy" },
+      { day: iso(4), weather: "sun" },
+      { day: iso(6), weather: "rain" },
+    ].map((note, index) => ({
+      id: `seed-${index}`,
+      day: note.day,
+      createdAt: `${note.day}T20:00:00.000Z`,
+      updatedAt: `${note.day}T20:00:00.000Z`,
+      locale: document.documentElement.lang,
+      weather: note.weather,
+    }));
+    localStorage.setItem(key, JSON.stringify([...existing, ...seeded]));
+  });
+  await page.goto(`${BASE_URL}/${locale}/history`, { waitUntil: "networkidle" });
+  await page.waitForTimeout(500);
+  await shot(page, `${prefix}${locale}-history-week`, true);
   await page.close();
 }
 

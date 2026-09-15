@@ -562,6 +562,13 @@
       "weeks": "Utspridda över {weeks} olika veckor.",
       "growing": "Det växer tyst.",
       "longestGap": "Ditt längsta uppehåll var {days} dagar. Du kom tillbaka från det också."
+    },
+    "week": {
+      "label": "Din vecka",
+      "closed": "{count, plural, one {En dag avslutad} other {# dagar avslutade}}",
+      "notClosed": "inte avslutad",
+      "closedNoWeather": "avslutad",
+      "empty": "Avsluta en dag så börjar det här fyllas i."
     }
   },
   "community": {

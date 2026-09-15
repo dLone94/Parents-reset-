@@ -562,6 +562,13 @@
       "weeks": "Verteilt auf {weeks} verschiedene Wochen.",
       "growing": "Das summiert sich ganz leise.",
       "longestGap": "Deine längste Pause waren {days} Tage. Auch davon bist du zurückgekommen."
+    },
+    "week": {
+      "label": "Deine Woche",
+      "closed": "{count, plural, one {Ein Tag abgeschlossen} other {# Tage abgeschlossen}}",
+      "notClosed": "nicht abgeschlossen",
+      "closedNoWeather": "abgeschlossen",
+      "empty": "Schließ einen Tag ab, dann füllt sich das hier."
     }
   },
   "community": {

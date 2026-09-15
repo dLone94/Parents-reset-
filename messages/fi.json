@@ -562,6 +562,13 @@
       "weeks": "Jakautuneena {weeks} eri viikolle.",
       "growing": "Se kertyy hiljalleen.",
       "longestGap": "Pisin taukosi oli {days} päivää. Siitäkin palasit."
+    },
+    "week": {
+      "label": "Sinun viikkosi",
+      "closed": "{count, plural, one {Yksi päivä suljettu} other {# päivää suljettu}}",
+      "notClosed": "ei suljettu",
+      "closedNoWeather": "suljettu",
+      "empty": "Sulje yksi päivä, niin tämä alkaa täyttyä."
     }
   },
   "community": {

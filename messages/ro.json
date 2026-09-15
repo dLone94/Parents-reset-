@@ -562,6 +562,13 @@
       "weeks": "Împrăștiate în {weeks} săptămâni diferite.",
       "growing": "Se adună pe tăcute.",
       "longestGap": "Cea mai lungă pauză a fost de {days} zile. Te-ai întors și din aia."
+    },
+    "week": {
+      "label": "Săptămâna ta",
+      "closed": "{count, plural, one {O zi închisă} few {# zile închise} other {# de zile închise}}",
+      "notClosed": "neînchisă",
+      "closedNoWeather": "închisă",
+      "empty": "Închide o zi și locul ăsta începe să se umple."
     }
   },
   "community": {

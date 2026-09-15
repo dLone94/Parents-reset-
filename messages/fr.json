@@ -562,6 +562,13 @@
       "weeks": "Répartis sur {weeks} semaines différentes.",
       "growing": "Ça s'accumule tout doucement.",
       "longestGap": "Votre plus longue absence a duré {days} jours. Vous en êtes revenu aussi."
+    },
+    "week": {
+      "label": "Votre semaine",
+      "closed": "{count, plural, one {Un jour clos} other {# jours clos}}",
+      "notClosed": "non close",
+      "closedNoWeather": "close",
+      "empty": "Clôturez une journée et ceci commence à se remplir."
     }
   },
   "community": {

@@ -562,6 +562,13 @@
       "weeks": "Izkliedētas {weeks} dažādās nedēļās.",
       "growing": "Tas klusi krājas.",
       "longestGap": "Tavs garākais pārtraukums bija {days} dienas. Arī no tā tu atgriezies."
+    },
+    "week": {
+      "label": "Tava nedēļa",
+      "closed": "{count, plural, zero {# dienu noslēgtas} one {Viena diena noslēgta} other {# dienas noslēgtas}}",
+      "notClosed": "nav noslēgta",
+      "closedNoWeather": "noslēgta",
+      "empty": "Noslēdz vienu dienu, un šī vieta sāks aizpildīties."
     }
   },
   "community": {

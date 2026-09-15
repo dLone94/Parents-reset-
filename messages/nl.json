@@ -562,6 +562,13 @@
       "weeks": "Verspreid over {weeks} verschillende weken.",
       "growing": "Het telt stilletjes op.",
       "longestGap": "Je langste pauze was {days} dagen. Ook daarvan ben je teruggekomen."
+    },
+    "week": {
+      "label": "Jouw week",
+      "closed": "{count, plural, one {Eén dag afgesloten} other {# dagen afgesloten}}",
+      "notClosed": "niet afgesloten",
+      "closedNoWeather": "afgesloten",
+      "empty": "Sluit een dag af en dit begint zich te vullen."
     }
   },
   "community": {

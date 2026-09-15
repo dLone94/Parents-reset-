@@ -562,6 +562,13 @@
       "weeks": "{weeks} különböző hétre elosztva.",
       "growing": "Csendben gyűlik.",
       "longestGap": "A leghosszabb szüneted {days} nap volt. Abból is visszatértél."
+    },
+    "week": {
+      "label": "A heted",
+      "closed": "{count, plural, one {Egy nap lezárva} other {# nap lezárva}}",
+      "notClosed": "nincs lezárva",
+      "closedNoWeather": "lezárva",
+      "empty": "Zárj le egy napot, és ez elkezd feltöltődni."
     }
   },
   "community": {

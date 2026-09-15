@@ -562,6 +562,13 @@
       "weeks": "Pasiskirstę per {weeks} skirtingas savaites.",
       "growing": "Tyliai kaupiasi.",
       "longestGap": "Ilgiausia tavo pertrauka buvo {days} dienų. Ir iš jos sugrįžai."
+    },
+    "week": {
+      "label": "Tavo savaitė",
+      "closed": "{count, plural, one {Viena diena užbaigta} few {# dienos užbaigtos} many {# dienos užbaigta} other {# dienų užbaigta}}",
+      "notClosed": "neužbaigta",
+      "closedNoWeather": "užbaigta",
+      "empty": "Užbaik dieną ir tai pradės pildytis."
     }
   },
   "community": {

@@ -562,6 +562,13 @@
       "weeks": "Rozložené do {weeks} rôznych týždňov.",
       "growing": "Potichu sa to spočítava.",
       "longestGap": "Tvoja najdlhšia pauza bola {days} dní. Aj z tej si sa vrátil."
+    },
+    "week": {
+      "label": "Tvoj týždeň",
+      "closed": "{count, plural, one {Jeden deň uzavretý} few {# dni uzavreté} many {# dňa uzavretých} other {# dní uzavretých}}",
+      "notClosed": "neuzavretý",
+      "closedNoWeather": "uzavretý",
+      "empty": "Uzavri deň a toto sa začne plniť."
     }
   },
   "community": {

@@ -562,6 +562,13 @@
       "weeks": "Razporejeno čez {weeks} različnih tednov.",
       "growing": "Tiho se sešteva.",
       "longestGap": "Tvoj najdaljši premor je bil {days} dni. Tudi iz njega si se vrnil."
+    },
+    "week": {
+      "label": "Tvoj teden",
+      "closed": "{count, plural, one {En dan zaključen} two {# dneva zaključena} few {# dnevi zaključeni} other {# dni zaključenih}}",
+      "notClosed": "ni zaključen",
+      "closedNoWeather": "zaključen",
+      "empty": "Zaključi dan in to se začne polniti."
     }
   },
   "community": {

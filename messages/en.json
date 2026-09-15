@@ -559,6 +559,13 @@
       "weeks": "Spread across {weeks} different weeks.",
       "growing": "It adds up quietly.",
       "longestGap": "Your longest gap was {days} days. You came back from that one too."
+    },
+    "week": {
+      "label": "Your week",
+      "closed": "{count, plural, one {One day closed} other {# days closed}}",
+      "notClosed": "not closed",
+      "closedNoWeather": "closed",
+      "empty": "Close a day and this starts filling in."
     }
   },
   "community": {

@@ -562,6 +562,13 @@
       "weeks": "Mifruxa fuq {weeks} ġimgħat differenti.",
       "growing": "Jiżdied bil-kwiet.",
       "longestGap": "L-itwal waqfa tiegħek kienet {days} ijiem. Minn dik ukoll erġajt ġejt."
+    },
+    "week": {
+      "label": "Il-ġimgħa tiegħek",
+      "closed": "{count, plural, one {Ġurnata waħda magħluqa} few {# ġranet magħluqa} many {# ġranet magħluqa} other {# ġranet magħluqa}}",
+      "notClosed": "mhux magħluqa",
+      "closedNoWeather": "magħluqa",
+      "empty": "Agħlaq ġurnata u dan jibda jimtela."
     }
   },
   "community": {

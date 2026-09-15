@@ -562,6 +562,13 @@
       "weeks": "Jaotunud {weeks} eri nädalale.",
       "growing": "See koguneb tasapisi.",
       "longestGap": "Sinu pikim vahe oli {days} päeva. Ka sellest tulid sa tagasi."
+    },
+    "week": {
+      "label": "Sinu nädal",
+      "closed": "{count, plural, one {Üks päev suletud} other {# päeva suletud}}",
+      "notClosed": "pole suletud",
+      "closedNoWeather": "suletud",
+      "empty": "Sulge üks päev ja see hakkab täituma."
     }
   },
   "community": {
